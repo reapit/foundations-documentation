@@ -1,4 +1,5 @@
 # Foundations
+# Getting Started
 ## How to setup
 Set up workspace experimental to true
 - `yarn config set workspaces-experimental true`
