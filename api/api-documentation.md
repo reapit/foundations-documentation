@@ -96,10 +96,6 @@ GET https://foundations.reapit.com/oauth/authorize?clientId=xxxxxxxxxxxxxxxx
 Upon success, the service will direct back to your application with an authorization code provided as a query string.
 
 ```text
-
-```
-
-```text
 https://application.company.com/?code=xxxxxxxxxxxxxxxx
 ```
 
@@ -164,7 +160,7 @@ Alternatively, our Interactive API Explorer will automatically grant access to s
 
 Unsuccessful requests return an error response in JSON format. This includes a status code, a time stamp and textual description of the error:
 
-```text
+```javascript
 Content-Type: application/json
 {
   "statusCode": 404,
@@ -175,7 +171,7 @@ Content-Type: application/json
 
 Validation errors will also include a breakdown of the problems with the submitted payload:
 
-```text
+```javascript
 Content-Type: application/json
 {
   "statusCode": 422,
@@ -204,7 +200,7 @@ You can make 1000 requests per minute to our APIs. Each response will include HT
 
 If the rate limit is hit, a response similar to below will be issued:
 
-```text
+```javascript
 HTTP/1.1 429 Too Many Requests X-RateLimit-Limit: 1000 X-RateLimit-Remaining: 0 X-RateLimit-Reset: 1402010983 Retry-After: 30Content-Type: application/json
 {
   "statusCode": 429,
@@ -229,7 +225,7 @@ http://foundations.reapit.com/contacts?pageSize=10&pageNumber=2
 
 ### Response
 
-```text
+```javascript
 Content-Type: application/json
 {
   "pageNumber": 2,
@@ -262,7 +258,7 @@ http://foundations.reapit.com/contacts?embed=identityChecks
 
 A paged response from the`/contacts`request example above:
 
-```text
+```javascript
 Content-Type: application/json
 {
   "data" :
