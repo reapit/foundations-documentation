@@ -40,7 +40,7 @@
     * [Cognito Custom Mail Lambda](Open%20Source/Packages/Cognito%20Custom%20Mail%20Lambda/README.md)
 * [API](desktop/README.md)
   * [Desktop](desktop/desktop-api.md)
-  * [Platform](platform-api/api-documentation.md)
+  * [Platform](api/api-documentation.md)
   * [Web](web/README.md)
     * [Web Components](Web/Web%20Components.md)
     * [Foundations TS Defintions](Web/Foundations%20TS%20Defintions.md)
