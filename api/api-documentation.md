@@ -2,13 +2,17 @@
 
 ## Overview
 
-The Foundations API is organised around [REST](http://en.wikipedia.org/wiki/Representational_State_Transfer). Our API has predictable resource-oriented URLs using standard HTTP response codes, authentication, and verbs. Request and responses are [JSON-encoded](http://www.json.org/) and made over SSL. 
+The Foundations API is organised around [REST](http://en.wikipedia.org/wiki/Representational_State_Transfer). Our API has predictable resource-oriented URLs using standard HTTP response codes, authentication, and verbs. All requests and responses, including errors, are [JSON-encoded](http://www.json.org/).
 
 You are able to use the Foundations API in sandbox mode to allow you to quickly test and develop your application without worrying about affecting the live data of our clients. The credentials you use to authenticate determine whether your request is issued to the sandbox environment or not. You can immediately start testing our APIs in sandbox mode by using our Interactive API Explorer. 
 
-Alternatively, if you prefer to use Postman, you can import our pre-made collection of examples directly by simply clicking the button below.
+Alternatively, if you prefer to use Postman, you can import our collection of example requests directly by simply clicking the button below.
 
 [![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/c69a1ca2deb44b40b393)
+
+{% hint style="info" %}
+The current version of our APIs is '2020-01-31'. Full details on recent changes and additions are available in our **change log**. 
+{% endhint %}
 
 ## Authentication
 
@@ -26,16 +30,18 @@ Our OpenID Connect service can issue JWT tokens using two different authenticati
 | Client credentials flow | For use by server side applications that do not have a user in context \(machine to machine apps\). Allows the implementing application to be authenticated on behalf of itself. |
 
 {% hint style="danger" %}
-**Client credentials flow** should not be used for applications that are client side only. A server side component is required to be able to securely store credentials. 
+**Client credentials flow** should not be used for applications that are client side only. A server side component is required to be able to safely store credentials. 
 {% endhint %}
 
 ### Registering your application
 
 Your application must be registered with our Marketplace before it can interact with data, functionality and assets provided by the Foundations APIs. For more information on how to register your application, see our Marketplace documentation.
 
-As part of creating your application, you'll be required to choose the [scopes](https://oauth.net/2/scope/) that you application requires. Scopes govern the actions that your application can perform against our services. 
+As part of the application registration process, you'll be required to choose the [scopes](https://oauth.net/2/scope/) that your application requires to function. After successfully authenticating, any JWT access token your application is issued will include the scopes you require, granting your application permission to the corresponding endpoints. 
 
-Once your application has been successfully registered, you will be provided with a unique client id which is required to interact with our authentication services.
+Once your application has been successfully registered, you will be provided with a unique **client id** which is required to interact with our authentication services.
+
+### Authorisation code flow
 
 ### Client installation
 
