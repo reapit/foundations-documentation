@@ -1,35 +1,14 @@
 # Platform
 
-To work with the Reapit Platform API you will need to follow these steps;
+## Overview
 
-* Register with the developer portal [here](https://reapit.cloud.tyk.io/portal/)
-* When you receive the confirmation email, login and request an API key. This is a manual process so it may take a while \(although it shouldn't!\).
-* When you have the key navigate to `./src/constants` and rename the `.env.example` file to `.env`. 
-* Copy your API key to the file next to the `REAPIT_API_KEY` variable.
+The Foundations API is organised around [REST](http://en.wikipedia.org/wiki/Representational_State_Transfer). Our API has predictable resource-oriented URLs using standard HTTP response codes, authentication, and verbs. Request and responses are [JSON-encoded](http://www.json.org/) and made over SSL. 
 
-You are good to go!
+You are able to use the Foundations API in sandbox mode allows you to quickly test and develop your application without worrying about affecting the live data of our clients. The credentials you use to authenticate determine whether your request is issued to the sandbox environment or not. 
 
-The API key should be included as an Authorisation header when fetching from the API. It is made available by webpack in the app by Webpack so you can reference it with `process.env.REAPIT_API_KEY`.
+You can immediately start testing our APIs in sandbox mode by using our interactive API explorer. Alternatively, if you prefer to use Postman, you can import our pre-made collection of examples directly by simply clicking the button below.
 
-The schema defintion is fetched from a Swagger endpoint by running the command `yarn fetch-definitions`. This then parses the Swagger defs into TypeScript definitions, complete with comments and writes to the `./src/types/tyke-api-schema.ts` file. This file should be the only reference point for API data definitions **do not write your own interfaces for data!**
-
-If you get an API runtime error because of an incorrect definition, firstly fetch the defintions again so they are up-to-date and if you still have a problem, raise an issue with the Platform Team to update the Swagger defintion.
-
-## Authentication
-
-Because the app has three distinct permissioned areas, you need different dev credentials to access each area of the site.
-
-For a client, you can login at `/login` with `cbryan@reapit.com` and `T00lb0x53` For a developer, you can login at `/login` with `wmcvay@reapit.com` and `T00lb0x53` For an admin, you can login at `/admin/login` with `rwilcox@reapit.com` and `T00lb0x53`
-
-## Foundations
-
-## API Overview
-
-The Foundations API is organised around [REST](http://en.wikipedia.org/wiki/Representational_State_Transfer) with all resources accessible using standard [HTTP methods](api-documentation.md#httpmethods) and returning predictable [response codes](api-documentation.md#statuscodes). All request and response bodies, including errors, are encoded in [JSON](https://en.wikipedia.org/wiki/JSON) and served over [HTTPS TLS v1.1+](https://en.wikipedia.org/wiki/Transport_Layer_Security) to ensure data privacy and security.
-
-Our API resources are secured and require an [authorization JWT bearer token](https://en.wikipedia.org/wiki/JSON_Web_Token) to be submitted as part of requests sent to protected endpoints. For more information how our APIs are secured, please see [Authorization](api-documentation.md#authorization).
-
-Alternatively, our [Developer Sandbox](api-documentation.md#developersandbox) provides a quick start experience to quickly get to grips with the platform and start developing.
+[![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/c69a1ca2deb44b40b393)
 
 ## REST
 
