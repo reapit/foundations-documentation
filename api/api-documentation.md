@@ -4,56 +4,38 @@
 
 The Foundations API is organised around [REST](http://en.wikipedia.org/wiki/Representational_State_Transfer). Our API has predictable resource-oriented URLs using standard HTTP response codes, authentication, and verbs. Request and responses are [JSON-encoded](http://www.json.org/) and made over SSL. 
 
-You are able to use the Foundations API in sandbox mode allows you to quickly test and develop your application without worrying about affecting the live data of our clients. The credentials you use to authenticate determine whether your request is issued to the sandbox environment or not. 
+You are able to use the Foundations API in sandbox mode to allow you to quickly test and develop your application without worrying about affecting the live data of our clients. The credentials you use to authenticate determine whether your request is issued to the sandbox environment or not. You can immediately start testing our APIs in sandbox mode by using our Interactive API Explorer. 
 
-You can immediately start testing our APIs in sandbox mode by using our interactive API explorer. Alternatively, if you prefer to use Postman, you can import our pre-made collection of examples directly by simply clicking the button below.
+Alternatively, if you prefer to use Postman, you can import our pre-made collection of examples directly by simply clicking the button below.
 
 [![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/c69a1ca2deb44b40b393)
 
-## REST
+## Authentication
 
-### HTTP Methods
+### Overview
 
-Foundation APIs present a uniform interface for performing CRUD \(create, retrieve, update, delete\) operations. Each endpoint adheres to REST guidelines to map the correct verb to the operation being performed. Our APIs support the following HTTP methods:
+The Foundation platform uses [OpenID Connect](https://openid.net/connect/faq/) for authenticating requests. OpenID Connect is a protocol for authenticating users, built on top of the OAuth 2.0 specification.
 
-| Method | Action |
+HTTP requests to our protected endpoints must be issued with a secure JSON Web Token \(JWT\) access token. Requests are fulfilled if the token is valid, unexpired and fulfills the required scopes \(permissions\) that the endpoint requires.
+
+Our OpenID Connect service can issue JWT tokens using two different authentication flows:
+
+| Flow | Description |
 | :--- | :--- |
-| GET | Retrieve a resource or collection of resources |
-| POST | Create a new resource |
-| PATCH | Partially update an existing resource by only including the fields to replace in payload |
-| DELETE | Soft delete an existing resource |
+| Authorisation code flow | For use by client and server side applications that have a user in context. Allows the implementing application to be authenticated on the behalf of the user.  |
+| Client credentials flow | For use by server side applications that do not have a user in context \(machine to machine apps\). Allows the implementing application to be authenticated on behalf of itself. |
 
-### Response status codes
-
-Foundation APIs use standardised HTTP status codes to indicate whether a request has been successful or has resulted in an error. Below is a listing of the codes our APIs may return and their meaning:
-
-| Code | Title | Description |
-| :--- | :--- | :--- |
-| 200 | OK | The request has been fulfilled. |
-| 201 | Created | The request has been fulfilled and a new resource has been created. This status code is returned after a successful POST operation. |
-| 204 | No content | The request has been fulfilled but there is no need to send any data back. This status code is returned after a successful PATCH or DELETE operation. |
-| 400 | Bad request | The request was not understood by the server. This is generally due to bad request syntax. |
-| 401 | Unauthorized | The provided authentication credentials are incorrect or not present. Generally, this is due to the lack of an "Authorization" header |
-| 403 | Forbidden | The authentication credentials request do not provide sufficient scope to fulfill the request |
-| 404 | Not found | The requested resource was not found. |
-| 422 | Unprocessable entity | A validation error has occurred. The error response body will provide additional information on the failure\(s\). |
-| 429 | Too many requests | The request was not accepted because the application has exceeded the rate limit. See Rate Limit for an overview of this mechanism |
-
-
-
-## Authorization
-
-The Foundation platform uses [OpenID Connect](https://openid.net/connect/faq/) \(OIDC\) as it's Authentication protocol, based on the OAuth 2.0 specification.
-
-Our authentication mechanisms allow you to quickly build apps on top of our platform and provide a seamless authentication experience for your end users.
+{% hint style="danger" %}
+**Client credentials flow** should not be used for applications that are client side only. A server side component is required to be able to securely store credentials. 
+{% endhint %}
 
 ### Registering your application
 
-Your application must be registered with our Marketplace before it can interact with data, functionality and assets provided by the Foundations API. For more information on how to register your application, see our Marketplace documentation.
+Your application must be registered with our Marketplace before it can interact with data, functionality and assets provided by the Foundations APIs. For more information on how to register your application, see our Marketplace documentation.
 
-As part of creating your application, you'll be required to choose the [scopes](https://oauth.net/2/scope/) that you application requires. Scopes govern the actions that your application can perform against our services. Each endpoint will detail the scopes that an application must be granted in order to interact with it.
+As part of creating your application, you'll be required to choose the [scopes](https://oauth.net/2/scope/) that you application requires. Scopes govern the actions that your application can perform against our services. 
 
-Once your application has been successfully registered, you will be provided with a unique application id which is required to interact with our authorization services.
+Once your application has been successfully registered, you will be provided with a unique client id which is required to interact with our authentication services.
 
 ### Client installation
 
@@ -121,6 +103,39 @@ Upon recieving an access token, the Foundation will validate the token to ensure
 * The access token is valid, issued from the correct source and not tampered with&gt;
 * The access token contains the required scopes to perform the action that the endpoint requires
 * The applications access to the end users data has not been revoked.
+
+## REST
+
+### HTTP Methods
+
+Our APIs present a uniform interface for performing CRUD \(create, retrieve, update, delete\) operations. Each endpoint adheres to REST guidelines to map the correct verb to the operation being performed. Our APIs support the following HTTP methods:
+
+| Method | Action |
+| :--- | :--- |
+| GET | Retrieve a resource or collection of resources |
+| POST | Create a new resource |
+| PUT | Update an existing resource by replacing it with the content of the payload |
+| PATCH | Partially update an existing resource by only including the fields to replace in payload |
+| DELETE | Soft delete an existing resource |
+
+### Response status codes
+
+We use standardised HTTP status codes to indicate the outcome of a request. Below is a listing of the codes our APIs may return and their meaning:
+
+| Code | Title | Description |
+| :--- | :--- | :--- |
+| 200 | OK | The request has been fulfilled. |
+| 201 | Created | The request has been fulfilled and a new resource has been created. This status code is returned after a successful POST operation. |
+| 204 | No content | The request has been fulfilled but there is no need to send any data back. This status code is returned after a successful PATCH or DELETE operation. |
+| 400 | Bad request | The request was not understood by the server. This is generally due to bad request syntax. |
+| 401 | Unauthorized | The provided authentication credentials are incorrect or not present. Generally, this is due to the lack of an "Authorization" header |
+| 403 | Forbidden | The authentication credentials request do not provide sufficient scope to fulfill the request |
+| 404 | Not found | The requested resource was not found. |
+| 422 | Unprocessable entity | A validation error has occurred. The error response body will provide additional information on the failure\(s\). |
+| 429 | Too many requests | The request was not accepted because the application has exceeded the rate limit. See Rate Limit for an overview of this mechanism |
+| 500 | Internal error | The request triggered an unexpected error which will be logged and investigated. |
+
+
 
 ## Developer Sandbox
 
@@ -276,6 +291,10 @@ Metadata should be used to store additional, structured information against an o
 Once metadata has been submitted to a representation, a JSON schema is built and used to validate future metadata submissions to the same endpoint to keep ensure that data is valid and consistent.
 
 Information stored in metadata is specific to your application and is not available to other Reapit or third party applications. Do not store any sensitive information \(personally identifiable information, bank details, etc.\) as metadata.
+
+{% hint style="info" %}
+**Coming soon**: We will soon add functionality into our metadata enabled APIs to be able to search our resources for specific metadata content
+{% endhint %}
 
 ## Versioning
 
