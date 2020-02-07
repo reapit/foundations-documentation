@@ -11,7 +11,7 @@ Alternatively, if you prefer to use Postman, you can import our collection of ex
 [![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/c69a1ca2deb44b40b393)
 
 {% hint style="info" %}
-The current version of our APIs is '2020-01-31'. Up to date information on recent changes are available in our **change log**. 
+The current version of our APIs is '**2020-01-31**'. Up to date information on recent changes are available in our change log. 
 {% endhint %}
 
 ## Authentication
