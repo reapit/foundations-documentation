@@ -301,24 +301,10 @@ Once metadata has been submitted to a representation, a JSON schema is built and
 Information stored in metadata is specific to your application and is not available to other Reapit or third party applications. Do not store any sensitive information \(personally identifiable information, bank details, etc.\) as metadata.
 
 {% hint style="info" %}
-**Coming soon**: We will soon add functionality into our metadata enabled APIs to be able to search our resources for specific metadata content
+**Coming soon**: We will soon add functionality to be able to search our resources for specific metadata content
 {% endhint %}
 
 ## Versioning
 
-## Elements
 
-The Elements UI toolkit you can browse [here](https://github.com/reapit/foundations-documentation/tree/db0718c9be27b7760dfae34e69518806acf0e855/developer/elements/README.md) is available as an NPM package. We also support an AMD \(require.js\), version that may suit your needs better, especially when serving content from a CDN or CMS.
-
-## React App Scaffolder
-
-Content
-
-## Cognito Auth
-
-Content
-
-## Foundations TS Definitions
-
-If you are using TypeScript \(and we recommend you do!\), for your front end project, we provide full type definitions for the API documented in the [API explorer](https://github.com/reapit/foundations-documentation/tree/db0718c9be27b7760dfae34e69518806acf0e855/developer/swagger/README.md). We generate these types from the Swagger contracts direct so you can be sure that when the API changes, your types will be updated also. This allows for a much closer alignment between front and back end development and ultimately more robust applications.
 
