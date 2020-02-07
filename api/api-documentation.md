@@ -4,14 +4,14 @@
 
 The Foundations API is organised around [REST](http://en.wikipedia.org/wiki/Representational_State_Transfer). Our API has predictable resource-oriented URLs using standard HTTP response codes, authentication, and verbs. All requests and responses, including errors, are [JSON-encoded](http://www.json.org/).
 
-You are able to use the Foundations API in sandbox mode to allow you to quickly test and develop your application without worrying about affecting the live data of our clients. The credentials you use to authenticate determine whether your request is issued to the sandbox environment or not. You can immediately start testing our APIs in sandbox mode by using our Interactive API Explorer. 
+You are able to use the Foundations API in sandbox mode to allow you to quickly test and develop your application without worrying about affecting the live data of our clients. The credentials you use to authenticate determine whether your request is issued to the sandbox environment or not. 
 
-Alternatively, if you prefer to use Postman, you can import our collection of example requests directly by simply clicking the button below.
+You can immediately start testing our APIs in sandbox mode by using our Interactive API Explorer. Alternatively, if you prefer to test using Postman, you can import our collection of example requests directly by simply clicking the button below.
 
 [![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/c69a1ca2deb44b40b393)
 
 {% hint style="info" %}
-The current version of our APIs is '**2020-01-31**'. Up to date information on recent changes are available in our change log. 
+The current version of our APIs is '**2020-01-31**'. For details on our latest enhancements and fixes, see whats new.
 {% endhint %}
 
 ## Authentication
@@ -301,7 +301,7 @@ Once metadata has been submitted to a representation, a JSON schema is built and
 Information stored in metadata is specific to your application and is not available to other Reapit or third party applications. Do not store any sensitive information \(personally identifiable information, bank details, etc.\) as metadata.
 
 {% hint style="info" %}
-**Coming soon**: We will soon add functionality to be able to search our resources for specific metadata content
+**Coming soon**: we will add the ability to search for resources that match specific metadata content
 {% endhint %}
 
 ## Versioning
