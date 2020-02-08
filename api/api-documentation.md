@@ -311,6 +311,10 @@ As we evolve our platform, new features will be added and fixes will be made. We
 
 Whenever a breaking change is introduced into our platform we release a new, dated version. The current version is **2020-01-31.** 
 
+### Setting a version
+
+Our APIs require that requests are issued with a valid version
+
 ### Breaking changes
 
 We consider the following to be examples of breaking changes:
