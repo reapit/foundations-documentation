@@ -307,5 +307,21 @@ Information stored in metadata is specific to your application and is not availa
 
 ## Versioning
 
+As we evolve our platform, new features will be added and fixes will be made. We categorise changes in two ways: **breaking** and **non-breaking** changes. We make every effort to implement changes as non-breaking wherever possible, however, there are sometimes situations that require this. 
+
+Whenever a breaking change is introduced into our platform
+
+### Breaking changes
+
+We consider the following to be examples of breaking changes:
+
+* Renaming or removing an existing field or endpoint
+* Changing the URL structure of an existing endpoint
+* Changing the filters that an existing endpoint provides
+* Changing error response codes or messages that an endpoint provides
+* Modifying or adding a new validation to an existing resource
+* Changing the data type of an existing field
+* Requiring a parameter that wasn't previously required
+
 
 
