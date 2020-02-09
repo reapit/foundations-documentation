@@ -150,10 +150,10 @@ In addition to the relevant response code, unsuccessful requests will return a J
 
 | Attribute | Description |
 | :--- | :--- |
-| statusCode | An integer response code that issued by this error |
-| dateTime | UTC formatted timestamp of when error response was issued |
-| description | Human readable message providing more details about the error. |
-| errors | A collection of validation issues with the provided payload. Only populated for `422 Unprocessable entity` errors. |
+| `statusCode` | An integer response code that issued by this error |
+| `dateTime` | UTC formatted timestamp of when error response was issued |
+| `description` | Human readable message providing more details about the error. |
+| `errors` | A collection of validation issues with the provided payload. Only populated for `422 Unprocessable entity` errors. |
 
 ## Developer Sandbox
 
@@ -193,9 +193,19 @@ HTTP/1.1 429 Too Many Requests X-RateLimit-Limit: 1000 X-RateLimit-Remaining: 0 
 
 ## Pagination
 
-Top level API resources provide functionality to return a list of resources. For example, `GET /contacts` will return a list of contact resources. 
+Top level API resources provide functionality to return a list of resources in bulk. For example, `GET /contacts` will return a list of contact resources in a single response.
 
-These APIs enforce paging and require a standardised set of query strings in their requests and issue a common structure in their response. 
+For reasons of performance and practicality, these APIs enforce paging and require a standardised set of query strings in their requests. The `pageSize` and `pageNumber` parameters are used to cycle through the available results from a top level API. 
+
+Paged responses are issued in the following structure:
+
+| Attribute | Description |
+| :--- | :--- |
+| `pageSize` | The number of records that have been retrieved by this response |
+| `pageNumber` | The page number that this response represents |
+| `pageCount` | The number of available pages worth of data, based on the current responses `pageSize` |
+| `totalCount` | The total number of resources available that fulfill the criteria of the current request |
+| `_embedded` | The list of resources that have been returned in this paged response |
 
 ### Request
 
