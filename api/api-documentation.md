@@ -153,7 +153,7 @@ In addition to the relevant response code, unsuccessful requests will return a J
 | `statusCode` | An integer response code that issued by this error |
 | `dateTime` | UTC formatted timestamp of when error response was issued |
 | `description` | Human readable message providing more details about the error. |
-| `errors` | A collection of validation issues with the provided payload. Only populated for `422 Unprocessable entity` errors. |
+| `errors` | A collection of validation issues with the provided payload. Only populated for `422 Unprocessable Entity` errors. |
 
 ## Developer Sandbox
 
