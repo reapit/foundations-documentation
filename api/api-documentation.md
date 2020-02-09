@@ -240,57 +240,6 @@ Content-Type: application/json
 }
 ```
 
-## Resource expansion
-
-Some of the top level resources made available by the platform include resource expansion functionality. When fetching data from a resource expansion enabled endpoint, clients can optionally request that a response includes data from one or more related resources.
-
-This ability is to designed to reduce the number of required client-server roundtrips to obtain the data that a client needs for a specific use-case.
-
-Query parameters are used to govern this functionality, please see the specific documention of each end point for details.
-
-### Request
-
-The example request below will fetch a list of contacts with resource expansion enabled for the identity checks nested collection:
-
-```text
-http://foundations.reapit.com/contacts?embed=identityChecks
-```
-
-### Response
-
-A paged response from the`/contacts`request example above:
-
-```javascript
-Content-Type: application/json
-{
-  "data" :
-  [
-    {
-      "id" : "RPT1900001",
-      "title" : "Mr",
-      "forename" : "David",
-      "surname" : "Smith",
-      ...
-      "embedded": {
-          "identityChecks" :
-          [
-            {
-              "id" : "RPT1900050",
-              "contactId" : "RPT1900001",
-              "status" : "pending",
-              ...
-              }
-            ]
-        }
-      }
-  ],
-  "pageNumber": 1,
-  "pageSize": 25,
-  "pageCount": 25,
-  "totalCount" : 142,
-}
-```
-
 ## Metadata
 
 Resources that support editing have a`metadata`attribute available in their payload. This attribute can be used to set a JSON data fragment against a specific resource by including the metadata attribute in POST and PATCH requests. This will subsequently be included in future fetches of that resource.
