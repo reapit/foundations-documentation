@@ -10,13 +10,7 @@ You can immediately start testing our APIs in sandbox mode by using our Interact
 
 [![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/c69a1ca2deb44b40b393)
 
-{% hint style="info" %}
-The current version of our APIs is '**2020-01-31**'. For details on our latest enhancements and fixes, see whats new.
-{% endhint %}
-
 ## Authentication
-
-### Overview
 
 The Foundation platform uses [OpenID Connect](https://openid.net/connect/faq/) for authenticating requests. OpenID Connect is a protocol for authenticating users, built on top of the OAuth 2.0 specification.
 
@@ -112,11 +106,13 @@ Upon recieving an access token, the Foundation will validate the token to ensure
 * The access token contains the required scopes to perform the action that the endpoint requires
 * The applications access to the end users data has not been revoked.
 
-## REST
+## API Reference
 
-### HTTP Methods
+### Request methods
 
-Our APIs present a uniform interface for performing CRUD \(create, retrieve, update, delete\) operations. Each endpoint adheres to REST guidelines to map the correct verb to the operation being performed. Our APIs support the following HTTP methods:
+Our APIs present a uniform interface for performing CRUD \(create, retrieve, update, delete\) operations. Each endpoint adheres to REST guidelines to map the correct verb to the operation being performed. 
+
+Our APIs support the following HTTP request methods:
 
 | Method | Action |
 | :--- | :--- |
@@ -126,39 +122,31 @@ Our APIs present a uniform interface for performing CRUD \(create, retrieve, upd
 | PATCH | Partially update an existing resource by only including the fields to replace in payload |
 | DELETE | Soft delete an existing resource |
 
-### Response status codes
+### Response codes
 
-We use standardised HTTP status codes to indicate the outcome of a request. Below is a listing of the codes our APIs may return and their meaning:
+We use standardised HTTP status codes to indicate the outcome of a request. 
+
+* Codes in the `2xx` range indicate that the request was fulfilled successfully. 
+* Codes in the `4xx` range indicate an error caused by the information provided.
+* Codes in the `5xx` range indicate an error with our APIs.
+
+Below is a listing of the codes our APIs may return and their meaning:
 
 | Code | Title | Description |
 | :--- | :--- | :--- |
 | 200 | OK | The request has been fulfilled. |
-| 201 | Created | The request has been fulfilled and a new resource has been created. This status code is returned after a successful POST operation. |
-| 204 | No content | The request has been fulfilled but there is no need to send any data back. This status code is returned after a successful PATCH or DELETE operation. |
+| 201 | Created | The request has been fulfilled and a new resource has been created. This status code is returned after a successful POST request. |
+| 204 | No content | The request has been fulfilled but there is no need to send any data back. This status code is returned after a successful PATCH or DELETE request. |
 | 400 | Bad request | The request was not understood by the server. This is generally due to bad request syntax. |
 | 401 | Unauthorized | The provided authentication credentials are incorrect or not present. Generally, this is due to the lack of an "Authorization" header |
 | 403 | Forbidden | The authentication credentials request do not provide sufficient scope to fulfill the request |
 | 404 | Not found | The requested resource was not found. |
 | 412 | Precondition failed | The was not fulfilled because preconditions provided bu the client could not bet met. Usually occurs during PATCH operations when the eTag provided in the 'If-Match' header is out of date. |
 | 422 | Unprocessable entity | A validation error has occurred. The error response body will provide additional information on the failure\(s\). |
-| 429 | Too many requests | The request was not accepted because the application has exceeded the rate limit. See Rate Limit for an overview of this mechanism |
+| 429 | Too many requests | The request was not accepted because the application has exceeded the rate limit.  |
 | 500 | Internal error | The request triggered an unexpected error which will be logged and investigated. |
 
-
-
-## Developer Sandbox
-
-You can use the Foundation API in Sandbox mode which provides a set of demonstration data that can be interacted with without affecting any client environment.
-
-Upon registering with our developer portal, you can immediately get familiar with the functionality our APIs offer and enjoy a hurdle free route to start developing your application
-
-Sandbox mode supports processing of all read and write requests so that you can build and test in confidence before submitting your application to our Marketplace.
-
-To access the sandbox, you'll need to register for a developer account at our Portal. You're then able to simply use those credentials provide them to our Authorization services in the normal way. The access token generated for your developer credentials will point our APIs at your sandbox data.
-
-Alternatively, our Interactive API Explorer will automatically grant access to sandbox data when you're logged into the Developer Portal.
-
-## Errors
+### Errors
 
 Unsuccessful requests return an error response in JSON format. This includes a status code, a time stamp and textual description of the error:
 
@@ -188,6 +176,18 @@ Content-Type: application/json
   ]
 }
 ```
+
+## Developer Sandbox
+
+You can use the Foundation API in Sandbox mode which provides a set of demonstration data that can be interacted with without affecting any client environment.
+
+Upon registering with our developer portal, you can immediately get familiar with the functionality our APIs offer and enjoy a hurdle free route to start developing your application
+
+Sandbox mode supports processing of all read and write requests so that you can build and test in confidence before submitting your application to our Marketplace.
+
+To access the sandbox, you'll need to register for a developer account at our Portal. You're then able to simply use those credentials provide them to our Authorization services in the normal way. The access token generated for your developer credentials will point our APIs at your sandbox data.
+
+Alternatively, our Interactive API Explorer will automatically grant access to sandbox data when you're logged into the Developer Portal.
 
 ## Rate limits
 
