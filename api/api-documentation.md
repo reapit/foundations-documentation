@@ -124,13 +124,11 @@ Our APIs support the following HTTP request methods:
 
 ### Response codes
 
-We use standardised HTTP status codes to indicate the outcome of a request. 
+We use standardised HTTP status codes to indicate the outcome of a request. Below is a listing of the codes our APIs may return and their meaning.
 
 * Codes in the `2xx` range indicate that the request was fulfilled successfully. 
 * Codes in the `4xx` range indicate an error caused by the information provided.
 * Codes in the `5xx` range indicate an error with our APIs.
-
-Below is a listing of the codes our APIs may return and their meaning:
 
 | Code | Title | Description |
 | :--- | :--- | :--- |
@@ -141,7 +139,7 @@ Below is a listing of the codes our APIs may return and their meaning:
 | 401 | Unauthorized | The provided authentication credentials are incorrect or not present. Generally, this is due to the lack of an "Authorization" header |
 | 403 | Forbidden | The authentication credentials request do not provide sufficient scope to fulfill the request |
 | 404 | Not found | The requested resource was not found. |
-| 412 | Precondition failed | The was not fulfilled because preconditions provided bu the client could not bet met. Usually occurs during PATCH operations when the eTag provided in the 'If-Match' header is out of date. |
+| 412 | Precondition failed | The was not fulfilled because preconditions provided bu the client could not be met. Usually occurs during PATCH operations when the eTag provided in the 'If-Match' header is out of date. |
 | 422 | Unprocessable entity | A validation error has occurred. The error response body will provide additional information on the failure\(s\). |
 | 429 | Too many requests | The request was not accepted because the application has exceeded the rate limit.  |
 | 500 | Internal error | The request triggered an unexpected error which will be logged and investigated. |
@@ -281,6 +279,6 @@ Whenever a new version is released, the previous version enters its sunset perio
 At the end of a versions sunset period it will become depreciated and you will be required to adopt more recent version. You will be notified if your application is using a version that is soon to be depreciated.
 
 {% hint style="info" %}
-**Stay up to date:** please see the [help section](https://dev.marketplace.reapit.cloud/developer/help) of our developer portal for information on recent and upcoming changes
+**Stay up to date:** please see the [help section](https://dev.marketplace.reapit.cloud/developer/help) of our developer portal for information on recent and upcoming changes.
 {% endhint %}
 
