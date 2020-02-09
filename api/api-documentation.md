@@ -155,33 +155,6 @@ In addition to the relevant response code, unsuccessful requests will return a J
 | description | Human readable message providing more details about the error. |
 | errors | A collection of validation issues with the provided payload. Only populated for `422 Unprocessable entity` errors. |
 
-```javascript
-Content-Type: application/json
-{
-  "statusCode": 404,
-  "dateTime": "2019-04-23T18:25:43.511Z",
-  "description": "Contact RPT19000001 was not found."
-}
-```
-
-Validation errors will also include a breakdown of the problems with the submitted payload:
-
-```javascript
-Content-Type: application/json
-{
-  "statusCode": 422,
-  "dateTime": "2019-04-23T18:25:43.511Z",
-  "description": "The submitted payload has failed validation.
-                  See the errors list for more information.",
-  "errors": [
-    {
-      "field" : "caption",
-      "message" : "Must be less than 50 characters in length."
-    }
-  ]
-}
-```
-
 ## Developer Sandbox
 
 You can use the Foundation API in Sandbox mode which provides a set of demonstration data that can be interacted with without affecting any client environment.
