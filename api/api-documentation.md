@@ -302,7 +302,7 @@ Once metadata has been submitted to a representation, a JSON schema is built and
 Information stored in metadata is specific to your application and is not available to other Reapit or third party applications. Do not store any sensitive information \(personally identifiable information, bank details, etc.\) as metadata.
 
 {% hint style="info" %}
-**Coming soon**: we will add the ability to search for resources that match specific metadata content
+**Coming soon**: we will add the ability to search for resources that match specific metadata content. See our [project milestone](https://github.com/reapit/foundations/milestone/10) for further details.
 {% endhint %}
 
 ## Versioning
@@ -311,9 +311,7 @@ As we evolve our platform, new features will be added and fixes will be made. We
 
 Whenever a breaking change is introduced into our platform we release a new, dated version. The current version is **2020-01-31.** 
 
-### Setting a version
-
-Our APIs require that requests are issued with a valid version
+Our APIs require that requests are issued with the header '
 
 ### Breaking changes
 
