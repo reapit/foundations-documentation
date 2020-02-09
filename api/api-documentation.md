@@ -329,5 +329,9 @@ We consider the following to be examples of breaking changes:
 
 Whenever a new version is released, the previous version enters it's sunset period. This is presently six months though will be reviewed as our platform continues to grow and evolve.
 
-At the end of a versions sunset period it will become depreciated and you will be required to adopt more recent version. You will be notified when this date approaches and you can keep up to date by checking out our [whats new](www.google.com) area of the site.  
+At the end of a versions sunset period it will become depreciated and you will be required to adopt more recent version. You will be notified if your application is using a version that is soon to be depreciated.
+
+{% hint style="info" %}
+**Stay up to date:** please see the [help section](https://dev.marketplace.reapit.cloud/developer/help) of our developer portal for information on recent and upcoming changes
+{% endhint %}
 
