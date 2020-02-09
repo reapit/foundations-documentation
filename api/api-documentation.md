@@ -311,7 +311,7 @@ As we evolve our platform, new features will be added and fixes will be made. We
 
 Whenever a breaking change is introduced into our platform we release a new, dated version. The current version is **2020-01-31.** 
 
-Our APIs require that requests are issued with the header '
+All requests should indicate the version that should be used to fulfill them. You can do this by including the header `api-version` set to the dated version required.  
 
 ### Breaking changes
 
@@ -325,7 +325,9 @@ We consider the following to be examples of breaking changes:
 * Changing the data type of an existing field
 * Requiring a parameter that wasn't previously required
 
-### Version depreciation
+### Depreciation
 
+Whenever a new version is released, the previous version enters it's sunset period. This is presently six months though will be reviewed as our platform continues to grow and evolve.
 
+At the end of a versions sunset period it will become depreciated and you will be required to adopt more recent version. You will be notified when this date approaches and you can keep up to date by checking out our [whats new](www.google.com) area of the site.  
 
