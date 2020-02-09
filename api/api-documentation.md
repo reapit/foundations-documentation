@@ -193,7 +193,9 @@ HTTP/1.1 429 Too Many Requests X-RateLimit-Limit: 1000 X-RateLimit-Remaining: 0 
 
 ## Pagination
 
-All collection API resources can be paged and share a common structure in their responses. Page size and offset is controlled by use of standardised query strings.
+Top level API resources provide functionality to return a list of resources. For example, `GET /contacts` will return a list of contact resources. 
+
+These APIs enforce paging and require a standardised set of query strings in their requests and issue a common structure in their response. 
 
 ### Request
 
