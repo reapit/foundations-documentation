@@ -132,21 +132,28 @@ We use standardised HTTP status codes to indicate the outcome of a request. Belo
 
 | Code | Title | Description |
 | :--- | :--- | :--- |
-| 200 | OK | The request has been fulfilled. |
-| 201 | Created | The request has been fulfilled and a new resource has been created. This status code is returned after a successful POST request. |
-| 204 | No content | The request has been fulfilled but there is no need to send any data back. This status code is returned after a successful PATCH or DELETE request. |
-| 400 | Bad request | The request was not understood by the server. This is generally due to bad request syntax. |
-| 401 | Unauthorized | The provided authentication credentials are incorrect or not present. Generally, this is due to the lack of an "Authorization" header |
-| 403 | Forbidden | The authentication credentials request do not provide sufficient scope to fulfill the request |
-| 404 | Not found | The requested resource was not found. |
-| 412 | Precondition failed | The was not fulfilled because preconditions provided bu the client could not be met. Usually occurs during PATCH operations when the eTag provided in the 'If-Match' header is out of date. |
-| 422 | Unprocessable entity | A validation error has occurred. The error response body will provide additional information on the failure\(s\). |
-| 429 | Too many requests | The request was not accepted because the application has exceeded the rate limit.  |
-| 500 | Internal error | The request triggered an unexpected error which will be logged and investigated. |
+| `200` | `OK` | The request has been fulfilled. |
+| `201` | `Created` | The request has been fulfilled and a new resource has been created.  |
+| `204` | `No content` | The request has been fulfilled but there is no need to send any data back.  |
+| `400` | `Bad request` | The request was not understood by the server. This is generally due to bad request syntax. |
+| `401` | `Unauthorized` | The provided authentication credentials are incorrect or not present. Generally, this is due to the lack of an "Authorization" header |
+| `403` | `Forbidden` | The authentication credentials request do not provide sufficient scope to fulfill the request |
+| `404` | `Not found` | The requested resource was not found. |
+| `412` | `Precondition failed` | The was not fulfilled because preconditions provided bu the client could not be met. Usually occurs during PATCH operations when the eTag provided in the 'If-Match' header is out of date. |
+| `422` | `Unprocessable entity` | A validation error has occurred. The error response body will provide additional information on the failure\(s\). |
+| `429` | `Too many requests` | The request was not accepted because the application has exceeded the rate limit.  |
+| `500` | `Internal error` | The request triggered an unexpected error which will be logged and investigated. |
 
 ### Errors
 
-Unsuccessful requests return an error response in JSON format. This includes a status code, a time stamp and textual description of the error:
+In addition to the relevant response code, unsuccessful requests will return a JSON encoded error response:
+
+| Attribute | Description |
+| :--- | :--- |
+| statusCode | An integer response code that issued by this error |
+| dateTime | UTC formatted timestamp of when error response was issued |
+| description | Human readable message providing more details about the error. |
+| errors | A collection of validation issues with the provided payload. Only populated for `422 Unprocessable entity` errors. |
 
 ```javascript
 Content-Type: application/json
