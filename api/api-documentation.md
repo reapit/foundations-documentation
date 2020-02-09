@@ -220,7 +220,11 @@ Content-Type: application/json
 
 ## Metadata
 
-Resources that support editing have a`metadata`attribute available in their payload. This attribute can be used to set a JSON data fragment against a specific resource by including the metadata attribute in POST and PATCH requests. This will subsequently be included in future fetches of that resource.
+Our resources that can be updated support a `metadata` attribute in their request and response payload. This attribute can be used to attach key-value data against resources specific resource 
+
+
+
+a JSON data fragment against a specific resource by including the metadata attribute in POST and PATCH requests. This will subsequently be included in future fetches of that resource.
 
 Metadata should be used to store additional, structured information against an object. This allows our clients to build upon the resource returned by the API and create a point of integration between our platform and third party applications. A common use case would be to store a unique identifier from an external system.
 
