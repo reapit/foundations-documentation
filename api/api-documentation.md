@@ -203,7 +203,7 @@ Paged responses are issued in the following structure:
 | :--- | :--- |
 | `pageSize` | The number of records that have been retrieved by this response |
 | `pageNumber` | The page number that this response represents |
-| `pageCount` | The number of available pages worth of data, based on the current responses `pageSize` |
+| `pageCount` | The number of available pages based on the current responses `pageSize` |
 | `totalCount` | The total number of resources available that fulfill the criteria of the current request |
 | `_embedded` | The list of resources that have been returned in this paged response |
 
