@@ -193,7 +193,11 @@ HTTP/1.1 429 Too Many Requests X-RateLimit-Limit: 1000 X-RateLimit-Remaining: 0 
 
 ## Performing updates
 
-To preserve the integrity of our clients data, the endpoints we present for update functionality enforce optimistic concurrency control. 
+It is incredibly important for our platform to preserve the integrity of our clients data whilst serving  functionality to our various different applications/users. 
+
+In some systems, when multiple users perform updates at the same time without knowledge of each others changes, you can be left with the problem of **lost updates** whereby the last update "wins" and previous updates are lost.
+
+In conjunction with using the PATCH verb for updates, our APIs enforce o[ptimistic concurrency control](https://en.wikipedia.org/wiki/Optimistic_concurrency_control) to help avoid this problem.
 
 
 
@@ -225,8 +229,8 @@ The `metadata` attribute is populated in POST/PATCH payloads as below:
 {
   ...
   "metadata": {
-    "CustomField1": "CustomValue1",
-    "CustomField2": true
+    "MyCustomField1": "MyCustomValue1",
+    "MyCustomField2": true
   }
 }
 ```
