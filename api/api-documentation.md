@@ -2,7 +2,7 @@
 
 ## Overview
 
-The Foundations API is organised around [REST](http://en.wikipedia.org/wiki/Representational_State_Transfer). Our API has predictable resource-oriented URLs using standard HTTP response codes, authentication, and verbs. All requests and responses, including errors, are [JSON-encoded](http://www.json.org/).
+The Foundations API is organised around [REST](http://en.wikipedia.org/wiki/Representational_State_Transfer). Our API has predictable resource-oriented URLs using standard HTTP response codes and verbs. All requests and responses, including errors, are [JSON-encoded](http://www.json.org/).
 
 You are able to use the Foundations API in sandbox mode to allow you to quickly test and develop your application without worrying about affecting the live data of our clients. The credentials you use to authenticate determine whether your request is issued to the sandbox environment or not. 
 
@@ -14,30 +14,30 @@ You can immediately start testing our APIs in sandbox mode by using our Interact
 
 The Foundation platform uses [OpenID Connect](https://openid.net/connect/faq/) for authenticating requests. OpenID Connect is a protocol for authenticating users, built on top of the OAuth 2.0 specification.
 
-HTTP requests to our protected endpoints must be issued with a secure JSON Web Token \(JWT\) access token. Requests are fulfilled if the token is valid, unexpired and fulfills the required scopes \(permissions\) that the endpoint requires.
+HTTP requests to our protected endpoints must be issued with a secure JSON Web Token access token. Requests are fulfilled if the JWT access token is valid, unexpired and fulfills the required scopes \(permissions\) that the endpoint requires.
 
-Our OpenID Connect service can issue JWT tokens using two different authentication flows:
+### Registering your application
+
+Registering your application with our Marketplace is the first step for it to be able to interact with our clients data. Once your application has been successfully registered, you will be provided with a unique **client id** which is required to interact with our authentication services.
+
+For more information on how to register your application, see our [welcome guide](https://dev.marketplace.reapit.cloud/developer/welcome).
+
+As part of the application registration process, you'll be required to choose the [scopes](https://oauth.net/2/scope/) that your application requires to function. After successfully authenticating, any JWT access token your application is issued will include the scopes you require, granting your application permission to the corresponding endpoints. 
+
+We support the use of two different authentication flows for platform applications:
 
 | Flow | Description |
 | :--- | :--- |
 | Authorisation code flow | For use by client and server side applications that have a user in context. Allows the implementing application to be authenticated on the behalf of the user.  |
 | Client credentials flow | For use by server side applications that do not have a user in context \(machine to machine apps\). Allows the implementing application to be authenticated on behalf of itself. |
 
+### Authorisation code flow
+
+### Client credentials flow
+
 {% hint style="danger" %}
 **Client credentials flow** should not be used for applications that are client side only. A server side component is required to be able to safely store credentials. 
 {% endhint %}
-
-### Registering your application
-
-Your application must be registered with our Marketplace before it can interact with data, functionality and assets provided by the Foundations APIs. For more information on how to register your application, see our Marketplace documentation.
-
-As part of the application registration process, you'll be required to choose the [scopes](https://oauth.net/2/scope/) that your application requires to function. After successfully authenticating, any JWT access token your application is issued will include the scopes you require, granting your application permission to the corresponding endpoints. 
-
-Once your application has been successfully registered, you will be provided with a unique **client id** which is required to interact with our authentication services.
-
-### Authorisation code flow
-
-
 
 ### Client installation
 
@@ -75,16 +75,6 @@ POST https://foundations.reapit.com/oauth/access_token
 
 Issuing a request with a valid authorization code and client id will provide a response in the following format:
 
-```javascript
-Content-Type: application/json
-{
-  "id_token" : "xxxxxxxxxxxxxx"
-  "refresh_token" : "xxxxxxxxxxxxxx",
-  "access_token" : "xxxxxxxxxxxxxx",
-  "expires_in" : 3600,
-}
-```
-
 | Attribute | Description |
 | :--- | :--- |
 | id\_token | A JWT containing claims about the users identity. |
@@ -100,9 +90,9 @@ The access token must then be sent in the Authorization header to be able to acc
 Authorization : Bearer <access token>
 ```
 
-Upon recieving an access token, the Foundation will validate the token to ensure:
+Upon receiving an access token, our servers will validate the token to ensure:
 
-* The access token is valid, issued from the correct source and not tampered with&gt;
+* The access token is valid, issued from the correct source and not tampered with
 * The access token contains the required scopes to perform the action that the endpoint requires
 * The applications access to the end users data has not been revoked.
 
@@ -138,7 +128,7 @@ We use standardised HTTP status codes to indicate the outcome of a request. Belo
 | `401 Unauthorized` | The provided authentication credentials are incorrect or not present. Generally, this is due to the lack of an "Authorization" header |
 | `403 Forbidden` | The authentication credentials request do not provide sufficient scope to fulfill the request |
 | `404 Not Found` | The requested resource was not found. |
-| `412 Precondition Failed` | The was not fulfilled because preconditions provided bu the client could not be met. Usually occurs when \[optimistic concurrency\]\(\#optimistic-concurrency\) has failed during PATCH operations when the eTag provided in the 'If-Match' header is out of date. |
+| `412 Precondition Failed` | The was not fulfilled because preconditions provided by the client could not be met. Usually occurs [optimistic concurrency control ](api-documentation.md#optimistic-concurrency)rejects the request.    |
 | `422 Unprocessable Entity` | A validation error has occurred. The error response body will provide additional information on the failure\(s\). |
 | `429 Too Many Requests` | The request was not accepted because the application has exceeded the rate limit.  |
 | `500 Internal Error` | The request triggered an unexpected error which will be logged and investigated. |
@@ -152,7 +142,7 @@ In addition to the relevant response code, unsuccessful requests will return a J
 | `statusCode` | An integer response code that issued by this error |
 | `dateTime` | UTC formatted timestamp of when error response was issued |
 | `description` | Human readable message providing more details about the error. |
-| `errors` | A collection of validation issues with the provided payload. Only populated for `422 Unprocessable Entity` errors. |
+| `errors` | A collection of validation issues with the provided payload. Only populated for `422 Unprocessable Entity` responses. |
 
 {% hint style="info" %}
 **All responses** are issued with a unique request id, regardless of whether they were successful or not. You can find this in the `x-amzn-RequestId` response header. If you [report a bug](https://dev.marketplace.reapit.cloud/developer/help), be sure to include this id to allow us to examine your problem in greater depth.
@@ -217,7 +207,7 @@ Paged responses are issued in the following structure:
 
 | Attribute | Description |
 | :--- | :--- |
-| `pageSize` | The number of records that have been retrieved by this response. Default is usually 25 and the maximum is usually 100. |
+| `pageSize` | The number of records that have been retrieved by this response. Default is 25 and maximum 100 unless specified |
 | `pageNumber` | The page number that this response represents |
 | `pageCount` | The number of available pages based on the current response `pageSize` |
 | `totalCount` | The total number of resources available that fulfill the criteria of the current request |
@@ -226,6 +216,10 @@ Paged responses are issued in the following structure:
 ## Metadata
 
 Most resources that can be updated support a `metadata` attribute in their request and response payload. This attribute can be used to attach additional key-value data against a specific resource that your application can later use. 
+
+{% hint style="danger" %}
+**Please do not** store any sensitive information \(personally identifiable information, bank details, etc.\) as metadata.
+{% endhint %}
 
 The `metadata` attribute is populated in POST/PATCH payloads as below:
 
@@ -239,11 +233,9 @@ The `metadata` attribute is populated in POST/PATCH payloads as below:
 }
 ```
 
-Once `metadata` has been set against a resource, it will automatically be included as part of that resource for future fetches originating from the same application. Metadata is application specific and will not be presented to other applications. 
+Once `metadata` has been set against a resource, it will automatically be included as part of that resource for future fetches originating from the same application. **Metadata is application specific** and will not be presented to other applications. 
 
-Our metadata system allows you to easily extend the data that our resources present. You can create a richer point of integration between your application and our platform and integrations are simplified the process by storing all relevant data in a single place. 
-
-Please do not store any sensitive information \(personally identifiable information, bank details, etc.\) as metadata.
+Our metadata system allows you to easily extend the data that our resources present. You can create a richer integration between your application and our Platform and the process is simplified by storing all relevant data in a single place. 
 
 {% hint style="info" %}
 **Coming soon**: we will add the ability to search for resources that match specific metadata content. See our [project milestones](https://github.com/reapit/foundations/milestones) for further details.
