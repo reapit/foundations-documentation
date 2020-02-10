@@ -197,18 +197,18 @@ It is incredibly important for our platform to preserve the integrity of our cli
 
 In some systems, when multiple systems perform updates at the same time without knowledge of each others changes, you can be left with the problem of **lost updates** whereby the last update "wins" and previous updates are lost. Our APIs enforce o[ptimistic concurrency control](https://en.wikipedia.org/wiki/Optimistic_concurrency_control) to help avoid this problem.
 
-When a singular representation is served by any of our `GET` endpoints, it will include an `eTag` response header. For convenience, we also this as an `_eTag` attribute in the response for each object for both singular and collection based resources. 
+We use [entity tags](https://tools.ietf.org/html/rfc7232#section-2.3) as an indicator of the current version of any resource returned from our APIs and whenever a singular representation is served by any of our `GET` endpoints, it will include `eTag` in the response header. For convenience, we also this as an `_eTag` attribute in the response for each object for both singular and collection based resources. 
 
-The `eTag` is an indicator of the version of the representation that your request has retrieved and will change every time the resource is updated.  This value is required when you perform any subsequent updates and you must include an `If-Match` header in your `PATCH` request containing the `eTag` value exactly as you received it, **including quotation marks.** The server will then compare it's version of the resource with the `eTag` provided:
+This gives both client and server a means of understanding the version of a particular resource an application has received. When a resource is updated, it's `eTag` value will also be updated.
+
+To ensure that no updates can be lost, you must include an `If-Match` header in your `PATCH` request containing the `eTag` value exactly as you received it, **including quotation marks.** The server will then compare its version of the resource with the `eTag` provided:
 
 * If they match, then the update will be processed. 
 * If they do not match, then the update will be rejected with a `412 Precondition Failed` error. You  need to retrieve the latest version from the resource before attempting another update.
 
-
-
-{% embed url="https://tools.ietf.org/html/rfc7232\#section-2.3" %}
-
-
+{% hint style="info" %}
+**For more information** about entity tags and the implementation of conditional requests, please see [RFC 7232](https://tools.ietf.org/html/rfc7232)
+{% endhint %}
 
 ## Pagination
 
