@@ -191,13 +191,27 @@ HTTP/1.1 429 Too Many Requests X-RateLimit-Limit: 1000 X-RateLimit-Remaining: 0 
 }
 ```
 
+## Validation
+
+Our APIs allow you to extensively write data into the Platform as well as reading it back. To protect the integrity of our clients data, we enforce proper validation on all `POST` and `PATCH` requests
+
+Should your request not pass the validation requirements of the endpoint, then you'll be issued a `422 Unprocessable Entity` error response. This will include a listing of validation problems and how you can solve. 
+
 ## Creation APIs
 
+Our APIs support resource creation using the `POST` verb. When a creation request has been successfully fulfilled, you will receive a `201 Created` response. 
 
+Since the creation of new resources is often asynchronous, we do not include the payload of the newly created resource in the `POST` response. Instead, we include the the location of where the new resource can be retrieved from in the `Location` header of the `POST` response.
 
 ## Update APIs
 
-It is incredibly important for our platform to preserve the integrity of our clients data whilst serving  functionality to our various different applications and users. 
+Our APIs support resource updates using the `PATCH` verb. When an update request has been successfully fulfilled, you will receive a `204 No Content` response.
+
+As with resource creation, we do not include the update resource in the `PATCH` response. Instead, to receive the latest version of a resource after updating it, simply re-fetch the resource from using a `GET` request.
+
+## Optimistic concurrency
+
+Our APIs serve Platform functionality and data to various different applications and users at the same time, which needs to be managed carefully to avoid concurrency problems. 
 
 In some systems, when multiple systems perform updates at the same time without knowledge of each others changes, you can be left with the problem of **lost updates** whereby the last update "wins" and previous updates are lost. Our APIs enforce o[ptimistic concurrency control](https://en.wikipedia.org/wiki/Optimistic_concurrency_control) to help avoid this problem.
 
@@ -207,8 +221,8 @@ This gives both client and server a means of understanding the version of a part
 
 To ensure that updates aren't lost, you must include an `If-Match` header in your `PATCH` request containing the `eTag` value exactly as you received it **including quotation marks.** The server will then compare its version of the resource with the `eTag` you provided.
 
-* If they match, then the update is intended for the same version of the resource and the request will be processed. 
-* If they do not match, then the update will be rejected with a `412 Precondition Failed` error. You  should retrieve the latest version of the resource and replay your changes before attempting another update.
+* If they match, then the update is intended for the same version of the resource and the request will be processed 
+* If they do not match, then the resource has been updated since it was fetched. The request will be rejected with a `412 Precondition Failed` error response. You need to retrieve the latest version of the resource and replay your changes before attempting another update.
 
 {% hint style="info" %}
 **For more information** about entity tags and the implementation of conditional requests, please see [RFC 7232](https://tools.ietf.org/html/rfc7232)
@@ -218,7 +232,7 @@ To ensure that updates aren't lost, you must include an `If-Match` header in you
 
 Top level API resources provide functionality to return a list of resources in bulk. For example, `GET /contacts` will return a list of contact resources in a single response.
 
-For practicality and performance reasons, these APIs enforce paging and require a standardised set of query strings in their requests. The `pageSize` and `pageNumber` parameters are used to cycle through the available results from a top level API. 
+For practical and performance reasons, these APIs enforce paging and require a standardised set of query strings in their requests. The `pageSize` and `pageNumber` parameters are used to cycle through the available results from a top level API. 
 
 Paged responses are issued in the following structure:
 
