@@ -1,4 +1,4 @@
-# Platform
+# Foundations Platform
 
 ## Overview
 
@@ -195,7 +195,7 @@ HTTP/1.1 429 Too Many Requests X-RateLimit-Limit: 1000 X-RateLimit-Remaining: 0 
 
 Top level API resources provide functionality to return a list of resources in bulk. For example, `GET /contacts` will return a list of contact resources in a single response.
 
-For reasons of performance and practicality, these APIs enforce paging and require a standardised set of query strings in their requests. The `pageSize` and `pageNumber` parameters are used to cycle through the available results from a top level API. 
+For practicality and performance reasons, these APIs enforce paging and require a standardised set of query strings in their requests. The `pageSize` and `pageNumber` parameters are used to cycle through the available results from a top level API. 
 
 Paged responses are issued in the following structure:
 
@@ -203,36 +203,13 @@ Paged responses are issued in the following structure:
 | :--- | :--- |
 | `pageSize` | The number of records that have been retrieved by this response |
 | `pageNumber` | The page number that this response represents |
-| `pageCount` | The number of available pages based on the current responses `pageSize` |
+| `pageCount` | The number of available pages based on the current response `pageSize` |
 | `totalCount` | The total number of resources available that fulfill the criteria of the current request |
 | `_embedded` | The list of resources that have been returned in this paged response |
 
-### Request
-
-Unless documented, the default page size is 25 and the maximum is 50.
-
-```text
-http://foundations.reapit.com/contacts?pageSize=10&pageNumber=2
-```
-
-### Response
-
-```javascript
-Content-Type: application/json
-{
-  "pageNumber": 2,
-  "pageSize": 10,
-  "pageCount": 10,
-  "totalCount" : 142,
-  "data" : [
-    ...
-  ]
-}
-```
-
 ## Metadata
 
-Our resources that can be updated support a `metadata` attribute in their request and response payload. This attribute can be used to attach key-value data against resources specific resource 
+Our resources that can be updated support a `metadata` attribute in their request and response payload. This attribute can be used to attach key-value data against a specific resource that your application can later use. 
 
 
 

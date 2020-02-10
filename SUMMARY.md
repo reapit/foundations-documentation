@@ -41,7 +41,7 @@
 * [API](desktop/README.md)
   * [Will stuff backup](api/will-stuff-backup.md)
   * [Desktop](desktop/desktop-api.md)
-  * [Platform](api/api-documentation.md)
+  * [Foundations Platform](api/api-documentation.md)
   * [Reapit Connect](api/reapit-connect.md)
   * [Web](web/README.md)
     * [Web Components](Web/Web%20Components.md)
