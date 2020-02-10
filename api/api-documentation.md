@@ -191,6 +191,14 @@ HTTP/1.1 429 Too Many Requests X-RateLimit-Limit: 1000 X-RateLimit-Remaining: 0 
 }
 ```
 
+## Performing updates
+
+To preserve the integrity of our clients data, the endpoints we present for update functionality enforce optimistic concurrency control. 
+
+
+
+[https://tools.ietf.org/html/rfc7232\#section-2.3](https://tools.ietf.org/html/rfc7232#section-2.3)
+
 ## Pagination
 
 Top level API resources provide functionality to return a list of resources in bulk. For example, `GET /contacts` will return a list of contact resources in a single response.
@@ -201,7 +209,7 @@ Paged responses are issued in the following structure:
 
 | Attribute | Description |
 | :--- | :--- |
-| `pageSize` | The number of records that have been retrieved by this response |
+| `pageSize` | The number of records that have been retrieved by this response. Default is usually 25 and the maximum is usually 100. |
 | `pageNumber` | The page number that this response represents |
 | `pageCount` | The number of available pages based on the current response `pageSize` |
 | `totalCount` | The total number of resources available that fulfill the criteria of the current request |
@@ -209,17 +217,25 @@ Paged responses are issued in the following structure:
 
 ## Metadata
 
-Our resources that can be updated support a `metadata` attribute in their request and response payload. This attribute can be used to attach key-value data against a specific resource that your application can later use. 
+Most resources that can be updated support a `metadata` attribute in their request and response payload. This attribute can be used to attach additional key-value data against a specific resource that your application can later use. 
 
+The `metadata` attribute is populated in POST/PATCH payloads as below:
 
+```javascript
+{
+  ...
+  "metadata": {
+    "CustomField1": "CustomValue1",
+    "CustomField2": true
+  }
+}
+```
 
-a JSON data fragment against a specific resource by including the metadata attribute in POST and PATCH requests. This will subsequently be included in future fetches of that resource.
+Once `metadata` has been set against a resource, it will automatically be included as part of that resource for future fetches originating from the same application. Metadata is application specific and will not be presented to other applications. 
 
-Metadata should be used to store additional, structured information against an object. This allows our clients to build upon the resource returned by the API and create a point of integration between our platform and third party applications. A common use case would be to store a unique identifier from an external system.
+Our metadata system allows you to easily extend the data that our resources present. You can create a richer point of integration between your application and our platform and integrations are simplified the process by storing all relevant data in a single place. 
 
-Once metadata has been submitted to a representation, a JSON schema is built and used to validate future metadata submissions to the same endpoint to keep ensure that data is valid and consistent.
-
-Information stored in metadata is specific to your application and is not available to other Reapit or third party applications. Do not store any sensitive information \(personally identifiable information, bank details, etc.\) as metadata.
+Please do not store any sensitive information \(personally identifiable information, bank details, etc.\) as metadata.
 
 {% hint style="info" %}
 **Coming soon**: we will add the ability to search for resources that match specific metadata content. See our [project milestone](https://github.com/reapit/foundations/milestone/10) for further details.
