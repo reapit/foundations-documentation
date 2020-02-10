@@ -146,7 +146,7 @@ We use standardised HTTP status codes to indicate the outcome of a request. Belo
 
 ### Errors
 
-In addition to the relevant response code, unsuccessful requests will return a JSON encoded error response:
+In addition to the relevant response code, unsuccessful requests will return a JSON encoded error response as outlined below:
 
 | Attribute | Description |
 | :--- | :--- |
@@ -191,7 +191,11 @@ HTTP/1.1 429 Too Many Requests X-RateLimit-Limit: 1000 X-RateLimit-Remaining: 0 
 }
 ```
 
-## Performing updates
+## Creation APIs
+
+
+
+## Update APIs
 
 It is incredibly important for our platform to preserve the integrity of our clients data whilst serving  functionality to our various different applications and users. 
 
@@ -201,10 +205,10 @@ We use [entity tags](https://tools.ietf.org/html/rfc7232#section-2.3) as an indi
 
 This gives both client and server a means of understanding the version of a particular resource an application has received. When a resource is updated, it's `eTag` value will also be updated.
 
-To ensure that no updates can be lost, you must include an `If-Match` header in your `PATCH` request containing the `eTag` value exactly as you received it, **including quotation marks.** The server will then compare its version of the resource with the `eTag` provided:
+To ensure that updates aren't lost, you must include an `If-Match` header in your `PATCH` request containing the `eTag` value exactly as you received it **including quotation marks.** The server will then compare its version of the resource with the `eTag` you provided.
 
-* If they match, then the update will be processed. 
-* If they do not match, then the update will be rejected with a `412 Precondition Failed` error. You  need to retrieve the latest version from the resource before attempting another update.
+* If they match, then the update is intended for the same version of the resource and the request will be processed. 
+* If they do not match, then the update will be rejected with a `412 Precondition Failed` error. You  should retrieve the latest version of the resource and replay your changes before attempting another update.
 
 {% hint style="info" %}
 **For more information** about entity tags and the implementation of conditional requests, please see [RFC 7232](https://tools.ietf.org/html/rfc7232)
