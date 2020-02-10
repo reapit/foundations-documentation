@@ -160,6 +160,16 @@ To access the sandbox, you just need to be registered as a developer on our Port
 
 Alternatively, our Interactive API Explorer will automatically grant access to sandbox data when you're logged into the Developer Portal.
 
+## Hypermedia
+
+Our APIs are **fully RESTful**[ ](https://restfulapi.net/richardson-maturity-model/)and implement [hypermedia controls](https://restfulapi.net/richardson-maturity-model/) to improve the developer experience of using our platform. Each `GET`response provides a uniform interface to express relationships between our APIs by use of a collection of hypermedia links.
+
+These links make our responses improve discoverability and make our APIs self documenting. We're able to use this mechanism to demonstrate which data is related and how that data can be retrieved. This is particularly useful for APIs such as ours that present complex systems of interrelated data.
+
+
+
+
+
 ## Validation
 
 Our APIs allow you to extensively write data into the Platform as well as reading it back. To protect the integrity of our clients data, we enforce proper validation on all `POST` and `PATCH` requests
