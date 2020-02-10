@@ -138,7 +138,7 @@ We use standardised HTTP status codes to indicate the outcome of a request. Belo
 | `401 Unauthorized` | The provided authentication credentials are incorrect or not present. Generally, this is due to the lack of an "Authorization" header |
 | `403 Forbidden` | The authentication credentials request do not provide sufficient scope to fulfill the request |
 | `404 Not Found` | The requested resource was not found. |
-| `412 Precondition Failed` | The was not fulfilled because preconditions provided bu the client could not be met. Usually occurs during PATCH operations when the eTag provided in the 'If-Match' header is out of date. |
+| `412 Precondition Failed` | The was not fulfilled because preconditions provided bu the client could not be met. Usually occurs when \[optimistic concurrency\]\(\#optimistic-concurrency\) has failed during PATCH operations when the eTag provided in the 'If-Match' header is out of date. |
 | `422 Unprocessable Entity` | A validation error has occurred. The error response body will provide additional information on the failure\(s\). |
 | `429 Too Many Requests` | The request was not accepted because the application has exceeded the rate limit.  |
 | `500 Internal Error` | The request triggered an unexpected error which will be logged and investigated. |
