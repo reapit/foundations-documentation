@@ -116,11 +116,10 @@ Our APIs support the following HTTP request methods:
 
 | Method | Action |
 | :--- | :--- |
-| GET | Retrieve a resource or collection of resources |
-| POST | Create a new resource |
-| PUT | Update an existing resource by replacing it with the content of the payload |
-| PATCH | Partially update an existing resource by only including the fields to replace in payload |
-| DELETE | Soft delete an existing resource |
+| `GET` | Retrieve a resource or collection of resources |
+| `POST` | Create a new resource |
+| `PATCH` | Partially update an existing resource by only including the fields to replace in payload |
+| `DELETE` | Soft delete an existing resource |
 
 ### Response codes
 
@@ -130,19 +129,19 @@ We use standardised HTTP status codes to indicate the outcome of a request. Belo
 * Codes in the `4xx` range indicate an error caused by the information provided.
 * Codes in the `5xx` range indicate an error with our APIs which will be logged and investigated.
 
-| Code | Title | Description |
-| :--- | :--- | :--- |
-| `200` | `OK` | The request has been fulfilled. |
-| `201` | `Created` | The request has been fulfilled and a new resource has been created.  |
-| `204` | `No content` | The request has been fulfilled but there is no need to send any data back.  |
-| `400` | `Bad request` | The request was not understood by the server. This is generally due to bad request syntax. |
-| `401` | `Unauthorized` | The provided authentication credentials are incorrect or not present. Generally, this is due to the lack of an "Authorization" header |
-| `403` | `Forbidden` | The authentication credentials request do not provide sufficient scope to fulfill the request |
-| `404` | `Not found` | The requested resource was not found. |
-| `412` | `Precondition failed` | The was not fulfilled because preconditions provided bu the client could not be met. Usually occurs during PATCH operations when the eTag provided in the 'If-Match' header is out of date. |
-| `422` | `Unprocessable entity` | A validation error has occurred. The error response body will provide additional information on the failure\(s\). |
-| `429` | `Too many requests` | The request was not accepted because the application has exceeded the rate limit.  |
-| `500` | `Internal error` | The request triggered an unexpected error which will be logged and investigated. |
+| Code | Description |
+| :--- | :--- |
+| `200 OK` | The request has been fulfilled. |
+| `201 Created` | The request has been fulfilled and a new resource has been created.  |
+| `204 No Content` | The request has been fulfilled but there is no need to send any data back.  |
+| `400 Bad Request` | The request was not understood by the server. This is generally due to bad request syntax. |
+| `401 Unauthorized` | The provided authentication credentials are incorrect or not present. Generally, this is due to the lack of an "Authorization" header |
+| `403 Forbidden` | The authentication credentials request do not provide sufficient scope to fulfill the request |
+| `404 Not Found` | The requested resource was not found. |
+| `412 Precondition Failed` | The was not fulfilled because preconditions provided bu the client could not be met. Usually occurs during PATCH operations when the eTag provided in the 'If-Match' header is out of date. |
+| `422 Unprocessable Entity` | A validation error has occurred. The error response body will provide additional information on the failure\(s\). |
+| `429 Too Many Requests` | The request was not accepted because the application has exceeded the rate limit.  |
+| `500 Internal Error` | The request triggered an unexpected error which will be logged and investigated. |
 
 ### Errors
 
@@ -155,7 +154,11 @@ In addition to the relevant response code, unsuccessful requests will return a J
 | `description` | Human readable message providing more details about the error. |
 | `errors` | A collection of validation issues with the provided payload. Only populated for `422 Unprocessable Entity` errors. |
 
-## Developer Sandbox
+{% hint style="info" %}
+**All responses** are issued with a unique request id, regardless of whether they were successful or not. You can find this in the `x-amzn-RequestId` response header. If you [report a bug](https://dev.marketplace.reapit.cloud/developer/help), be sure to include this id to allow us to examine your problem in greater depth.
+{% endhint %}
+
+## Sandbox Mode
 
 You can use the Foundation API in Sandbox mode which provides a set of demonstration data that can be interacted with without affecting any client environment.
 
@@ -163,33 +166,9 @@ Upon registering with our developer portal, you can immediately get familiar wit
 
 Sandbox mode supports processing of all read and write requests so that you can build and test in confidence before submitting your application to our Marketplace.
 
-To access the sandbox, you'll need to register for a developer account at our Portal. You're then able to simply use those credentials provide them to our Authorization services in the normal way. The access token generated for your developer credentials will point our APIs at your sandbox data.
+To access the sandbox, you just need to be registered as a developer on our Portal. You're then able to simply provide those credentials to our Authorization services in the normal way. The access token generated for your developer credentials will point our APIs at your sandbox data.
 
 Alternatively, our Interactive API Explorer will automatically grant access to sandbox data when you're logged into the Developer Portal.
-
-## Rate limits
-
-You can make 1000 requests per minute to our APIs. Each response will include HTTP headers to provide information on the current rate limit statistics.
-
-| Header | Attribute |
-| :--- | :--- |
-| X-RateLimit-Limit | The number of requests that a client is allowed to issue per minute |
-| X-RateLimit-Remaining | The number of requests that a client is allowed to issue in the current rate limit window before hitting the limit |
-| X-RateLimit-Reset | The unix timestamp at which the current rate limit window resets |
-| Retry-After | When the rate limit is hit, this header presents the number of seconds to wait before attempting another request |
-
-If the rate limit is hit, a response similar to below will be issued:
-
-```javascript
-HTTP/1.1 429 Too Many Requests X-RateLimit-Limit: 1000 X-RateLimit-Remaining: 0 X-RateLimit-Reset: 1402010983 Retry-After: 30Content-Type: application/json
-{
-  "statusCode": 429,
-  "dateTime": "2019-04-23T18:25:43.511Z",
-  "description": "Rate limit for API requests has been hit.
-                  Your limit is 1000 requests per minute.
-                  This limit will be reset in 30 seconds."
-}
-```
 
 ## Validation
 
@@ -267,7 +246,7 @@ Our metadata system allows you to easily extend the data that our resources pres
 Please do not store any sensitive information \(personally identifiable information, bank details, etc.\) as metadata.
 
 {% hint style="info" %}
-**Coming soon**: we will add the ability to search for resources that match specific metadata content. See our [project milestone](https://github.com/reapit/foundations/milestone/10) for further details.
+**Coming soon**: we will add the ability to search for resources that match specific metadata content. See our [project milestones](https://github.com/reapit/foundations/milestones) for further details.
 {% endhint %}
 
 ## Versioning
