@@ -5,7 +5,7 @@
   * [Contributing](open-source/contributing/README.md)
     * [Code Style](Open%20Source/Contributing/Code%20Style.md)
     * [Definition of Done](Open%20Source/Contributing/Definition%20of%20Done.md)
-    * [GETTING\_STARTED](Open%20Source/Contributing/Getting%20Started.md)
+    * [Getting Started](open-source/contributing/getting-started.md)
     * [Deployment](Open%20Source/Contributing/Releases.md)
     * [Version Control](Open%20Source/Contributing/Version%20Control.md)
   * [Packages](open-source/packages/README.md)
