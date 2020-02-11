@@ -1,14 +1,18 @@
 # Foundations Platform
 
-## Overview
+
+
+{% hint style="warning" %}
+Our Platform is in **alpha** and we'll be continually building new features during this phase. Please see our [help section](https://dev.marketplace.reapit.cloud/developer/help) to view our milestones or to submit a feature request / bug.
+{% endhint %}
+
+## Introduction
 
 The Foundations API is organised around [REST](http://en.wikipedia.org/wiki/Representational_State_Transfer). Our API has predictable resource-oriented URLs using standard HTTP response codes and verbs. All requests and responses, including errors, are [JSON-encoded](http://www.json.org/).
 
 You are able to use the Foundations API in sandbox mode to allow you to quickly test and develop your application without worrying about affecting the live data of our clients. The credentials you use to authenticate determine whether your request is issued to the sandbox environment or not. 
 
 You can immediately start testing our APIs in sandbox mode by using our Interactive API Explorer. Alternatively, if you prefer to test using Postman, you can import our collection of example requests directly by simply clicking the button below.
-
-[![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/c69a1ca2deb44b40b393)
 
 ## Authentication
 
@@ -96,7 +100,7 @@ Upon receiving an access token, our servers will validate the token to ensure:
 * The access token contains the required scopes to perform the action that the endpoint requires
 * The applications access to the end users data has not been revoked.
 
-## API Reference
+## General Principles
 
 ### Request methods
 
@@ -139,9 +143,9 @@ In addition to the relevant response code, unsuccessful requests will return a J
 
 | Attribute | Description |
 | :--- | :--- |
-| `statusCode` | An integer response code that issued by this error |
+| `statusCode` | The integer response code issued by this response |
 | `dateTime` | UTC formatted timestamp of when error response was issued |
-| `description` | Human readable message providing more details about the error. |
+| `description` | Human readable message providing details about the error. |
 | `errors` | A collection of validation issues with the provided payload. Only populated for `422 Unprocessable Entity` responses. |
 
 {% hint style="info" %}
@@ -160,13 +164,84 @@ To access the sandbox, you just need to be registered as a developer on our Port
 
 Alternatively, our Interactive API Explorer will automatically grant access to sandbox data when you're logged into the Developer Portal.
 
+## Request format
+
+### Fetching resources
+
+Our APIs support retrieval of resources using the `GET` verb. When a GET request has been successfully fulfilled, you will receive a `200 OK` response with results included as a JSON encoded payload. 
+
+For practical and performance reasons, our top level APIs enforce paging and require a standardised set of query strings in their requests. The `pageSize` and `pageNumber` parameters are used to cycle through the available results from a top level API. 
+
+For example, `GET /contacts?pageSize=10&pageNumber=2` will return the second page of ten contact resources.
+
+Paged responses are issued in the following structure:
+
+| Attribute | Description |
+| :--- | :--- |
+| `pageSize` | The number of records that have been retrieved by this response. Default is 25 and maximum 100 unless specified |
+| `pageNumber` | The page number that this response represents |
+| `pageCount` | The number of available pages based on the current response `pageSize` |
+| `totalCount` | The total number of resources available that fulfill the criteria of the current request |
+| `_embedded` | The list of resources that have been returned in this paged response |
+
+### Creating resources
+
+Our APIs support resource creation using the `POST` verb. When a creation request has been successfully fulfilled, you will receive a `201 Created` response. 
+
+Since the creation of new resources is often asynchronous, we do not include the payload of the newly created resource in the `POST` response. Instead, we include the the location of where the new resource can be retrieved from in the `Location` header of the `POST` response.
+
+### Updating resources
+
+Our APIs support resource updates using the `PATCH` verb. When an update request has been successfully fulfilled, you will receive a `204 No Content` response.
+
+As with resource creation, we do not include the update resource in the `PATCH` response. Instead, to receive the latest version of a resource after updating it, simply re-fetch the resource from using a `GET` request.
+
+### Request validation
+
+To protect the integrity of our clients data, we enforce proper validation on all `POST` and `PATCH` requests
+
+Should your request not pass the validation requirements of the endpoint, then you'll be issued a `422 Unprocessable Entity` code. The[ error response ](api-documentation.md#errors)will include a listing of validation problems and how you can solve them.
+
+```javascript
+{
+  "errors": [
+    {
+      "field": "type",
+      "message": "The enum value provided for AreaType is incorrect"
+    }
+  ],
+  "statusCode": 422,
+  "dateTime": "2020-02-11T13:32:03.6759302Z",
+  "description": "One or more validation failures have occurred. Please refer to Errors list for details"
+}
+```
+
+### Optimistic concurrency
+
+Our APIs serve Platform functionality and data to various different applications and users at the same time, which needs to be managed carefully to avoid concurrency problems. 
+
+In some systems, when multiple systems perform updates at the same time without knowledge of each others changes, you can be left with the problem of **lost updates** whereby the last update "wins" and previous updates are lost. Our APIs enforce o[ptimistic concurrency control](https://en.wikipedia.org/wiki/Optimistic_concurrency_control) to help avoid this problem.
+
+We use [entity tags](https://tools.ietf.org/html/rfc7232#section-2.3) as an indicator of the current version of any resource returned from our APIs and whenever a singular representation is served by any of our `GET` endpoints, it will include `eTag` in the response header. For convenience, we also this as an `_eTag` attribute in the response for each object for both singular and collection based resources. 
+
+This gives both client and server a means of understanding the version of a particular resource an application has received. When a resource is updated, it's `eTag` value will also be updated.
+
+To ensure that updates aren't lost, you must include an `If-Match` header in your `PATCH` request containing the `eTag` value exactly as you received it **including quotation marks.** The server will then compare its version of the resource with the `eTag` you provided.
+
+* If they match, then the update is intended for the same version of the resource and the request will be processed 
+* If they do not match, then the resource has been updated since it was fetched. The request will be rejected with a `412 Precondition Failed` error response. You need to retrieve the latest version of the resource and replay your changes before attempting another update.
+
+{% hint style="info" %}
+**For more information** about entity tags and our implementation of conditional requests, please see [RFC 7232](https://tools.ietf.org/html/rfc7232)
+{% endhint %}
+
 ## Hypermedia
 
-Our APIs are **fully RESTful**[ ](https://restfulapi.net/richardson-maturity-model/)and implement [hypermedia controls](https://restfulapi.net/richardson-maturity-model/) to improve the developer experience of using our platform. Each `GET`response provides a uniform interface to express relationships between our APIs by use of a collection of hypermedia links.
+Our APIs are **fully RESTful**[ ](https://restfulapi.net/richardson-maturity-model/)and implement [hypermedia controls](https://restfulapi.net/richardson-maturity-model/) to improve the developer experience of using our platform. 
 
-Hypermedia makes our APIs self documenting and aids discovery. We're able to use links to demonstrate which data is related and how that data can be retrieved. This is particularly useful for APIs that present complex systems of interrelated data, such as the Foundations platform. 
+Hypermedia makes our APIs self documenting and aids discovery. Each `GET` response provides a uniform interface to present links to demonstrate **which** data is related and **how** that data can be retrieved. This is particularly useful for APIs that present complex systems of interrelated data, such as ours. 
 
-We adopt the [HAL hypertext application language](http://stateless.co/hal_specification.html) to serve as our message format. Each resource, including [collection resources](api-documentation.md#pagination), include a `_links` collection to present related data. The condensed `GET` contact payload example below demonstrates how relationships are surfaced:
+We adopt the [HAL hypertext application language](http://stateless.co/hal_specification.html) to serve as our message format. Each resource, including [collection resources](api-documentation.md#pagination), include a `_links` collection to present related data. The **condensed** `GET` contact payload example below demonstrates how relationships are surfaced:
 
 ```text
 {
@@ -213,68 +288,13 @@ We adopt the [HAL hypertext application language](http://stateless.co/hal_specif
 **Coming soon**: we will add the ability to embed related data in our API responses. See our [milestones](https://github.com/reapit/foundations/milestones) for more information.
 {% endhint %}
 
-## Validation
-
-Our APIs allow you to extensively write data into the Platform as well as reading it back. To protect the integrity of our clients data, we enforce proper validation on all `POST` and `PATCH` requests
-
-Should your request not pass the validation requirements of the endpoint, then you'll be issued a `422 Unprocessable Entity` error response. This will include a listing of validation problems and how you can solve. 
-
-## Creation APIs
-
-Our APIs support resource creation using the `POST` verb. When a creation request has been successfully fulfilled, you will receive a `201 Created` response. 
-
-Since the creation of new resources is often asynchronous, we do not include the payload of the newly created resource in the `POST` response. Instead, we include the the location of where the new resource can be retrieved from in the `Location` header of the `POST` response.
-
-## Update APIs
-
-Our APIs support resource updates using the `PATCH` verb. When an update request has been successfully fulfilled, you will receive a `204 No Content` response.
-
-As with resource creation, we do not include the update resource in the `PATCH` response. Instead, to receive the latest version of a resource after updating it, simply re-fetch the resource from using a `GET` request.
-
-## Optimistic concurrency
-
-Our APIs serve Platform functionality and data to various different applications and users at the same time, which needs to be managed carefully to avoid concurrency problems. 
-
-In some systems, when multiple systems perform updates at the same time without knowledge of each others changes, you can be left with the problem of **lost updates** whereby the last update "wins" and previous updates are lost. Our APIs enforce o[ptimistic concurrency control](https://en.wikipedia.org/wiki/Optimistic_concurrency_control) to help avoid this problem.
-
-We use [entity tags](https://tools.ietf.org/html/rfc7232#section-2.3) as an indicator of the current version of any resource returned from our APIs and whenever a singular representation is served by any of our `GET` endpoints, it will include `eTag` in the response header. For convenience, we also this as an `_eTag` attribute in the response for each object for both singular and collection based resources. 
-
-This gives both client and server a means of understanding the version of a particular resource an application has received. When a resource is updated, it's `eTag` value will also be updated.
-
-To ensure that updates aren't lost, you must include an `If-Match` header in your `PATCH` request containing the `eTag` value exactly as you received it **including quotation marks.** The server will then compare its version of the resource with the `eTag` you provided.
-
-* If they match, then the update is intended for the same version of the resource and the request will be processed 
-* If they do not match, then the resource has been updated since it was fetched. The request will be rejected with a `412 Precondition Failed` error response. You need to retrieve the latest version of the resource and replay your changes before attempting another update.
-
-{% hint style="info" %}
-**For more information** about entity tags and the implementation of conditional requests, please see [RFC 7232](https://tools.ietf.org/html/rfc7232)
-{% endhint %}
-
-## Pagination
-
-Top level API resources provide functionality to return a list of resources in bulk. For example, `GET /contacts` will return a list of contact resources in a single response.
-
-For practical and performance reasons, these APIs enforce paging and require a standardised set of query strings in their requests. The `pageSize` and `pageNumber` parameters are used to cycle through the available results from a top level API. 
-
-Paged responses are issued in the following structure:
-
-| Attribute | Description |
-| :--- | :--- |
-| `pageSize` | The number of records that have been retrieved by this response. Default is 25 and maximum 100 unless specified |
-| `pageNumber` | The page number that this response represents |
-| `pageCount` | The number of available pages based on the current response `pageSize` |
-| `totalCount` | The total number of resources available that fulfill the criteria of the current request |
-| `_embedded` | The list of resources that have been returned in this paged response |
-
 ## Metadata
 
 Most resources that can be updated support a `metadata` attribute in their request and response payload. This attribute can be used to attach additional key-value data against a specific resource that your application can later use. 
 
-{% hint style="danger" %}
-**Please do not** store any sensitive information \(personally identifiable information, bank details, etc.\) as metadata.
-{% endhint %}
+Our metadata system allows you to easily extend the data that our resources present. You can create a richer integration between your application and our Platform and the process is simplified by storing all relevant data in a single place. 
 
-The `metadata` attribute is populated in POST/PATCH payloads as below:
+The `metadata` attribute is populated in `POST` and `PATCH` payloads as below:
 
 ```javascript
 {
@@ -286,9 +306,7 @@ The `metadata` attribute is populated in POST/PATCH payloads as below:
 }
 ```
 
-Once `metadata` has been set against a resource, it will automatically be included as part of that resource for future fetches originating from the same application. **Metadata is application specific** and will not be presented to other applications. 
-
-Our metadata system allows you to easily extend the data that our resources present. You can create a richer integration between your application and our Platform and the process is simplified by storing all relevant data in a single place. 
+Once `metadata` has been set against a resource, it will be automatically returned in the same format for future `GET` requests. **Metadata is application specific** and any data that your application sets will not be presented to other Reapit or other Platform applications. Metadata storage should not be used for any sensitive information \(personally identifiable details, bank accounts, etc\).
 
 {% hint style="info" %}
 **Coming soon**: we will add the ability to search for resources that match specific metadata content. See our [project milestones](https://github.com/reapit/foundations/milestones) for further details.
