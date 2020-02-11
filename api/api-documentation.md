@@ -164,11 +164,54 @@ Alternatively, our Interactive API Explorer will automatically grant access to s
 
 Our APIs are **fully RESTful**[ ](https://restfulapi.net/richardson-maturity-model/)and implement [hypermedia controls](https://restfulapi.net/richardson-maturity-model/) to improve the developer experience of using our platform. Each `GET`response provides a uniform interface to express relationships between our APIs by use of a collection of hypermedia links.
 
-These links make our responses improve discoverability and make our APIs self documenting. We're able to use this mechanism to demonstrate which data is related and how that data can be retrieved. This is particularly useful for APIs such as ours that present complex systems of interrelated data.
+Hypermedia makes our APIs self documenting and aids discovery. We're able to use links to demonstrate which data is related and how that data can be retrieved. This is particularly useful for APIs that present complex systems of interrelated data, such as the Foundations platform. 
 
+We adopt the [HAL hypertext application language](http://stateless.co/hal_specification.html) to serve as our message format. Each resource, including [collection resources](api-documentation.md#pagination), include a `_links` collection to present related data. The condensed `GET` contact payload example below demonstrates how relationships are surfaced:
 
+```text
+{
+  "id": "OXF18000001",
+  "created": "2018-02-12T09:45:01.0000000Z",
+  "modified": "2019-06-23T12:30:12.0000000Z",
+  "title": "Mr",
+  "forename": "John",
+  "surname": "Smith",
+  "dateOfBirth": "1992-08-12",
+  "active": true,
+  "homePhone": "01234 567890",
+  "mobilePhone": "07890 123456",
+  "email": "example@email.com",
+  "officeIds": [
+    "OXF"
+  ],
+  "negotiatorIds": [
+    "JAS"
+  ],
+  "_eTag": ""33a64df551425fcc55e4d42a148795d9f25f89d4"",
+  "_links": {
+    "self": {
+      "href": "/contacts/OXF18000001"
+    },
+    "documents": {
+      "href": "/documents/?ownerType=contact&ownerId=OXF18000001"
+    },
+    "identityChecks": {
+      "href": "/identityChecks/?contactId=OXF18000001"
+    },
+    "offices": {
+      "href": "/offices/?id=OXF"
+    },
+    "negotiators": {
+      "href": "/negotiators/?id=JAS"
+    }
+  },
+  "_embedded": null
+}
+```
 
-
+{% hint style="info" %}
+**Coming soon**: we will add the ability to embed related data in our API responses. See our [milestones](https://github.com/reapit/foundations/milestones) for more information.
+{% endhint %}
 
 ## Validation
 
