@@ -1,7 +1,5 @@
 # Foundations Platform
 
-
-
 {% hint style="warning" %}
 Our Platform is in **alpha** and we'll be continually building new features during this phase. Please see our [help section](https://dev.marketplace.reapit.cloud/developer/help) to view our milestones or to submit a feature request / bug.
 {% endhint %}
