@@ -1,1 +1,0 @@
-# Small Medium Business App

@@ -1,3 +1,7 @@
+---
+description: How to manage authentication painlessly in your Reapit Marketplace Application
+---
+
 # Reapit Connect
 
 ## Overview

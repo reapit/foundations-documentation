@@ -1,7 +1,13 @@
-# Desktop API
+---
+description: >-
+  An API to interact between the Reapit Agency Cloud CRM and a Marketplace Web
+  Application
+---
+
+# Desktop
 
 {% hint style="info" %}
-To obtain a copy of Reapit's Agency Cloud CRM, you must be sponsored by a Reapit Client. For more information on how to start a sponsorship, please[ click here](http://www.link.co.uk). Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at bibendum nibh, vel fringilla dolor. Fusce a pretium mauris.
+To obtain a copy of Reapit's Agency Cloud CRM, you must be sponsored by a Reapit Client. For more information on how to start a sponsorship, please[ click here](http://www.link.co.uk).
 {% endhint %}
 
 ### Overview 
