@@ -66,9 +66,7 @@ Once you have successfully registered, you will be issued with a client id. You 
 
 ### Application installation
 
-Users must belong to a Reapit customer that has opted to allow your application access to their data. They can control application access by installing your application in our Marketplace. 
-
-
+In order for Reapit Connect to authenticate your application on a users behalf, the user must belong to a Reapit customer that has opted to allow your application access to their data. Customer administrators are able to control your applications access by choosing to install from our Marketplace. 
 
 ## Integration
 
