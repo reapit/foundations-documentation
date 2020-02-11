@@ -79,11 +79,9 @@ To initiate a login, you application should redirect users to our authorize endp
 
 The user will be presented with a Reapit branded login screen where they are required to input their credentials and submit. They can also initiate password recovery for their Reapit identity from this form. 
 
-![](../.gitbook/assets/image%20%281%29.png)
+This step will be automatically skipped if the user has an authenticated session with Reapit Connect. The user will immediately directed back to your app. 
 
-{% hint style="info" %}
-**This step will be automatically skipped** if the user has an authenticated session with Reapit Connect. The user will immediately directed back to your app. 
-{% endhint %}
+![](../.gitbook/assets/image%20%281%29.png)
 
 ### Redirect back to your app
 

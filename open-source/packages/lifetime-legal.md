@@ -1,2 +1,0 @@
-# Lifetime Legal App
-
