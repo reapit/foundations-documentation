@@ -98,7 +98,7 @@ Upon receiving an access token, our servers will validate the token to ensure:
 * The access token contains the required scopes to perform the action that the endpoint requires
 * The applications access to the end users data has not been revoked.
 
-## General Principles
+## REST reference
 
 ### Request methods
 
@@ -164,7 +164,7 @@ Alternatively, our Interactive API Explorer will automatically grant access to s
 
 ## Request format
 
-### Fetching resources
+### Retrieving data
 
 Our APIs support retrieval of resources using the `GET` verb. When a GET request has been successfully fulfilled, you will receive a `200 OK` response with results included as a JSON encoded payload. 
 
@@ -182,13 +182,13 @@ Paged responses are issued in the following structure:
 | `totalCount` | The total number of resources available that fulfill the criteria of the current request |
 | `_embedded` | The list of resources that have been returned in this paged response |
 
-### Creating resources
+### Creating data
 
 Our APIs support resource creation using the `POST` verb. When a creation request has been successfully fulfilled, you will receive a `201 Created` response. 
 
 Since the creation of new resources is often asynchronous, we do not include the payload of the newly created resource in the `POST` response. Instead, we include the the location of where the new resource can be retrieved from in the `Location` header of the `POST` response.
 
-### Updating resources
+### Updating data
 
 Our APIs support resource updates using the `PATCH` verb. When an update request has been successfully fulfilled, you will receive a `204 No Content` response.
 
@@ -222,7 +222,7 @@ In some systems, when multiple systems perform updates at the same time without 
 
 We use [entity tags](https://tools.ietf.org/html/rfc7232#section-2.3) as an indicator of the current version of any resource returned from our APIs and whenever a singular representation is served by any of our `GET` endpoints, it will include `eTag` in the response header. For convenience, we also this as an `_eTag` attribute in the response for each object for both singular and collection based resources. 
 
-This gives both client and server a means of understanding the version of a particular resource an application has received. When a resource is updated, it's `eTag` value will also be updated.
+This gives both client and server a means of understanding the version of a particular resource an application has received. Subsequently when a resource is updated, it's `eTag` value will also be updated.
 
 To ensure that updates aren't lost, you must include an `If-Match` header in your `PATCH` request containing the `eTag` value exactly as you received it **including quotation marks.** The server will then compare its version of the resource with the `eTag` you provided.
 
@@ -239,7 +239,9 @@ Our APIs are **fully RESTful**[ ](https://restfulapi.net/richardson-maturity-mod
 
 Hypermedia makes our APIs self documenting and aids discovery. Each `GET` response provides a uniform interface to present links to demonstrate **which** data is related and **how** that data can be retrieved. This is particularly useful for APIs that present complex systems of interrelated data, such as ours. 
 
-We adopt the [HAL hypertext application language](http://stateless.co/hal_specification.html) to serve as our message format. Each resource, including [collection resources](api-documentation.md#pagination), include a `_links` collection to present related data. The **condensed** `GET` contact payload example below demonstrates how relationships are surfaced:
+We adopt the [HAL hypertext application language](http://stateless.co/hal_specification.html) to serve as our message format. Each resource, including [collection resources](api-documentation.md#pagination), include a `_links` collection to present related data. The responses `_links` dictionary will include a **key** to represent the type of relationship and a **value** to represent the location where the related resources can be obtained from. 
+
+The **condensed** `GET` contact payload example below demonstrates how relationships are surfaced:
 
 ```text
 {
@@ -281,6 +283,8 @@ We adopt the [HAL hypertext application language](http://stateless.co/hal_specif
   "_embedded": null
 }
 ```
+
+In the example above, the presence of the `identityChecks` **key** indicates that there is a related resource available. The **value** contains the service location and query string parameters required to retrieve the related identity check resources.
 
 {% hint style="info" %}
 **Coming soon**: we will add the ability to embed related data in our API responses. See our [milestones](https://github.com/reapit/foundations/milestones) for more information.
