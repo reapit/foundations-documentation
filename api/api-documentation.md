@@ -319,7 +319,6 @@ The **condensed** `GET` contact payload example below demonstrates how relations
   "forename": "John",
   "surname": "Smith",
   "dateOfBirth": "1992-08-12",
-  "active": true,
   "homePhone": "01234 567890",
   "mobilePhone": "07890 123456",
   "email": "example@email.com",
