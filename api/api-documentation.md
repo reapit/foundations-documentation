@@ -164,14 +164,14 @@ To access the sandbox, you just need to be registered as a developer on our Port
 
 The Foundations platform exclusively works with UTC date times to allow us to present a uniform interface and ensure that behavior remains predictable, regardless of your application or user timezone.
 
-Our APIs enforce that any date time information that your application issues to us adheres to the [ISO-8601](https://www.iso.org/iso-8601-date-and-time-format.html) format. If you provide a request body, query string or header that does not adhere to this standard, you will receive a validation error reporting the problem. Any date time data issued from our endpoints will be returned to you in the same format. 
+Our APIs enforce that any date time information that your application issues to us adheres to the [ISO-8601](https://www.iso.org/iso-8601-date-and-time-format.html) format. If you provide a request body, query string or header that does not adhere to this standard, you will receive a validation error reporting the problem. Any date times issued from our endpoints will be returned to you in the same format. 
 
 Some of the fields we provide are date-only and have no time component. Date only fields will not accept a time component in a request and will not include a time component in their response. You can see which fields these are by examining the model documentation and example responses provided by our [Interactive API Explorer](https://dev.marketplace.reapit.cloud/developer/swagger). 
 
 ```javascript
 {
-  "dateTime": "2020-02-11T13:32:03.6759302Z",
-  "dateOnly": "2020-02-11"
+  "myDateAndTimeField": "2020-02-11T13:32:03.6759302Z",
+  "myDateOnlyField": "2020-02-11"
 }
 ```
 
