@@ -139,7 +139,7 @@ Once you have been issued an access token from our token endpoint, your applicat
 
 ### Accessing customer data
 
-Requests issued with access codes issued by the client credentials flow must also indicate which customers data they wish to interact with. 
+Requests issued with access codes gained from the client credentials flow must also indicate which customers data they wish to interact with. 
 
 You must additionally include a `reapit-customer` header in your request so that it can be fulfilled appropriately. The header should be set to the customers unique id which becomes available to view after a customer has chosen to install your application. This information is available in the [Analytics](https://dev.marketplace.reapit.cloud/developer/analytics) area of the developer portal.
 
