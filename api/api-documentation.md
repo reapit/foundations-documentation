@@ -12,9 +12,9 @@ Our Platform is in **alpha** and we'll be continually building new features duri
 
 The Foundations API is organised around [REST](http://en.wikipedia.org/wiki/Representational_State_Transfer). Our API has predictable resource-oriented URLs using standard HTTP response codes and verbs. All requests and responses, including errors, are [JSON-encoded](http://www.json.org/).
 
-You are able to use the Foundations API in sandbox mode to allow you to quickly test and develop your application without worrying about affecting the live data of our clients. The credentials you use to authenticate determine whether your request is issued to the sandbox environment or not. 
+You can immediately start testing our APIs in [sandbox mode](api-documentation.md#sandbox-data) by using our [Interactive API Explorer](https://dev.marketplace.reapit.cloud/developer/swagger). 
 
-You can immediately start testing our APIs in sandbox mode by using our Interactive API Explorer. Alternatively, if you prefer to test using Postman, you can import our collection of example requests directly by simply clicking the button below.
+The current version of our APIs is **2020-01-31.** Please see our [help page](https://dev.marketplace.reapit.cloud/developer/help) for support and information on preview / upcoming changes.
 
 ## REST reference
 
@@ -33,7 +33,7 @@ Our APIs support the following HTTP request methods:
 
 ### Response codes
 
-We use standardised HTTP status codes to indicate the outcome of a request. Below is a listing of the codes our APIs may return and their meaning.
+We use standardized HTTP status codes to indicate the outcome of a request. Below is a listing of the codes our APIs may return and their meaning.
 
 * Codes in the `2xx` range indicate that the request was fulfilled successfully. 
 * Codes in the `4xx` range indicate an error caused by the information provided.
@@ -154,7 +154,7 @@ To access the sandbox, you just need to be registered as a developer on our Port
 * You can use **authorization code flow** by providing your developer portal credentials to our [Reapit Connect](reapit-connect.md#overview) service
 * You can use **client credentials flow** by providing `DXX` as your `reapit-customer` request header
 
-## Request format
+## Issuing requests
 
 ### Retrieving data
 
@@ -287,7 +287,7 @@ Hypermedia makes our APIs self documenting and aids discovery. Each `GET` respon
 
 We adopt the [HAL hypertext application language](http://stateless.co/hal_specification.html) to serve as our message format. Each resource, including [collection resources](api-documentation.md#pagination), include a `_links` collection to present related data. The responses `_links` dictionary will include a **key** to represent the type of relationship and a **value** to represent the location where the related resources can be obtained from. 
 
-The **condensed** `GET` contact payload example below demonstrates how relationships are surfaced:
+The **condensed** `GET` contact payload example below demonstrates how relationships are presented:
 
 ```text
 {
