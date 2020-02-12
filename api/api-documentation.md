@@ -45,7 +45,7 @@ We support the use of two different OAuth 2.0 grants for applications built on o
 
 ### Client credentials flow
 
-To obtain tokens for your application to interact with our protected endpoints, you must send a `POST` request to the endpoint below:
+To obtain tokens for your application to interact with our protected endpoints, you must send a `POST` request to our token endpoint, as below:
 
 `https://dev.connect.reapit.cloud/oauth2/token`
 
@@ -54,9 +54,36 @@ To obtain tokens for your application to interact with our protected endpoints, 
 | `client_id` | The unique client id that was issued to your application after registration |
 | `grant_type` | Must be set to `client_credentials` |
 
+If your request is properly formed and valid, you'll receive a response similar to below.
+
+```text
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{ 
+ "access_token" : "eyJz9sdfsdfsdfsd", 
+ "token_type" : "Bearer", 
+ "expires_in" : 3600
+}
+```
+
+| Attribute | Description |
+| :--- | :--- |
+| `access_token` | Token to grant access to protected Foundations endpoints |
+| `expires_in` | The number of seconds that the access token is valid for |
+| `token_type` | The type of tokens issued. Will always be set to `bearer` |
+
 {% hint style="danger" %}
 **Client credentials flow** must not be used for applications that are client side only. A server side component is required to be able to safely store credentials. 
 {% endhint %}
+
+### Using access tokens
+
+Access tokens \(also known as bearer tokens\) are designed to provide your application with access to protected resources.
+
+You can access Foundations API endpoints by including the access token as an `Authorization` header in all requests your application issues, subject to the scopes that your application requested during registration.
+
+
 
 ## REST reference
 
