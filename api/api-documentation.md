@@ -40,7 +40,7 @@ We support the use of two different OAuth 2.0 grants for applications built on o
 
 | Grant | Description |
 | :--- | :--- |
-| Authorization code flow | For use by client and server side applications that have a user in context. Allows the implementing application to be authenticated on the behalf of the user. **Please see our documentation for our** [**Reapit Connect**](reapit-connect.md#overview) **service.** |
+| Authorization code flow | For use by client and server side applications that have a user in context. Allows the implementing application to be authenticated on the behalf of the user. **For this flow, please see the documentation for our** [**Reapit Connect**](reapit-connect.md#overview) **service.** |
 | Client credentials flow | For use by server side machine to machine applications that do not have a user in context. Allows the implementing application to be authenticated on behalf of itself. |
 
 ### Client credentials flow
@@ -67,7 +67,7 @@ Content-Type: application/json
 }
 ```
 
-| Attribute | Description |
+| Response payload | Description |
 | :--- | :--- |
 | `access_token` | Token to grant access to protected Foundations endpoints |
 | `expires_in` | The number of seconds that the access token is valid for |
@@ -83,7 +83,17 @@ Access tokens \(also known as bearer tokens\) are designed to provide your appli
 
 You can access Foundations API endpoints by including the access token as an `Authorization` header in all requests your application issues, subject to the scopes that your application requested during registration.
 
+### Customer data
 
+Requests that include `Authorization` with access codes issued by the client credentials flow must also indicate which customers data they wish to interact with. 
+
+You must additionally include a `reapit-customer` header in your request so that it may be directed to the correct data. The contents of this header must be set to the customers unique id which becomes available to you after they have chosen to install your application. This information is available in the [Analytics](https://dev.marketplace.reapit.cloud/developer/analytics) area of the developer portal.
+
+If a customer chooses to uninstall your application then your access to their data will be revoked.
+
+{% hint style="info" %}
+To direct your request to our sandbox data, set your `reapit-customer` header to `DXX`
+{% endhint %}
 
 ## REST reference
 
