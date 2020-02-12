@@ -8,7 +8,9 @@ description: How to manage authentication of Reapit users with our identity solu
 
 Reapit Connect is our hosted identity solution designed to allow applications to securely authenticate Reapit users against a single, trusted identity. Backed by our OpenID Connect compliant system, it is quick and easy to build applications that adhere to best security practices and extend an excellent experience to your users.
 
-Building your application with Reapit Connect is our **recommended way** to interact with our Platform. Here's why:
+**Building your application with Reapit Connect is our recommended way to interact with our Platform.** 
+
+## Why use Reapit Connect
 
 #### Simplicity
 
@@ -30,7 +32,7 @@ You can use Reapit Connect to authenticate users regardless of your front or bac
 
 Your users will be presented with a unified login screen from a brand they already know and trust. They will receive the same user experience as they do from other Reapit applications and of those that exist in our marketplace. 
 
-## Marketplace 
+## Marketplace integration
 
 ### Registering your application
 
@@ -131,7 +133,7 @@ Content-Type: application/json
 
 If the user successfully logged in and your application performed the code exchange, you will receive a JSON payload containing a series of tamper proof [JWT tokens](https://tools.ietf.org/html/rfc7519):
 
-| Attribute | Description |
+| Response payload | Description |
 | :--- | :--- |
 | `access_token` | Token to grant access to protected Foundations resources |
 | `id_token` | Token containing claims about the users identity. |

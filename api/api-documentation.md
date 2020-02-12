@@ -168,7 +168,7 @@ For practical and performance reasons, our top level APIs enforce paging and req
 
 For example, `GET /contacts?pageSize=10&pageNumber=2` will return the second page of ten contact resources in the following structure:
 
-| Response attribute | Description |
+| Response payload | Description |
 | :--- | :--- |
 | `pageSize` | The number of records that have been retrieved by this response. Default is 25 and maximum 100 unless specified |
 | `pageNumber` | The page number that this response represents |
