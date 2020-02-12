@@ -34,7 +34,7 @@ Your users will be presented with a unified login screen from a brand they alrea
 
 ### Registering your application
 
-Registering your app in our Marketplace is the first step for it to be able to interact with our clients data.
+Registering your app in our Marketplace is the first step for it to be able to interact with Reapit customer data.
 
 Our [application submission page](https://dev.marketplace.reapit.cloud/developer/submit-app) will capture information about your application, including the details required for integration with Reapit Connect. 
 
@@ -170,6 +170,6 @@ To use a refresh token, issue a `POST` request to the endpoint below:
 | `grant_type` | Must be set to `refresh_token` |
 
 {% hint style="warning" %}
-For recommendations on how to store and interact with tokens, please see &lt;refer to wills docs&gt;
+For recommendations on how to safely store and interact with tokens, please see &lt;refer to wills docs&gt;
 {% endhint %}
 

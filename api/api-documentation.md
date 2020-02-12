@@ -5,7 +5,7 @@ description: How to work with the Foundations REST API
 # Foundations Platform
 
 {% hint style="warning" %}
-Our Platform is in **alpha** and we'll be continually building new features during this phase. Please see our [help section](https://dev.marketplace.reapit.cloud/developer/help) to view our milestones or to submit a feature request / bug.
+**Our Platform is in** **alpha** and we'll be continually building new features during this phase. Please see our [help section](https://dev.marketplace.reapit.cloud/developer/help) to view our milestones or to submit a feature request / bug.
 {% endhint %}
 
 ## Introduction
@@ -74,7 +74,7 @@ The Foundation platform uses [OpenID Connect](https://openid.net/connect/faq/) f
 
 ### Registering your app
 
-Submitting your application to our Marketplace is the first step for it to be able to interact with our clients data. After you have [successfully submitted your app](https://dev.marketplace.reapit.cloud/developer/submit-app), you will be issued with a **client id** and **secret** which required for authentication. You can obtain these by clicking your app in the [My Apps](https://dev.marketplace.reapit.cloud/developer/apps) area of our developer portal.
+Submitting your application to our Marketplace is the first step for it to be able to interact with our clients data. After you have [successfully submitted your app](https://dev.marketplace.reapit.cloud/developer/submit-app), you will be issued with a **client id** and **secret.** You can obtain these by clicking your app in the [My Apps](https://dev.marketplace.reapit.cloud/developer/apps) area of our developer portal.
 
 {% hint style="info" %}
 **For more information** on how to register your application with our Marketplace, please see our [welcome guide](https://dev.marketplace.reapit.cloud/developer/welcome).
@@ -135,7 +135,7 @@ Content-Type: application/json
 
 Access tokens \(also known as bearer tokens\) are designed to provide your application with access to protected resources.
 
-You can access Foundations API endpoints by including the access token as an `Authorization` header in all requests your application issues, subject to the scopes that your application requested during registration.
+Once you have been issued an access token from our token endpoint, your application can access Foundations APIs by including it in a`Authorization` header. Our servers will validate this token and fulfill the request, subject to your application application requesting the relevant endpoint scope during registration.
 
 ### Accessing customer data
 
@@ -149,10 +149,14 @@ If a customer chooses to uninstall your application then your access to their da
 
 You can use the Foundation APIs in Sandbox mode which provides a set of demonstration data that can be interacted with without requiring a customer to install your application. Sandbox mode supports processing of all read and write requests so that you can build and test in confidence without impacting customer data. 
 
-To access the sandbox, you just need to be registered as a developer on our Portal. Our [interactive API explorer](https://dev.marketplace.reapit.cloud/developer/swagger) is connected to the sandbox automatically.
+To access the sandbox, you just need to be registered as a developer on our Portal. 
 
 * You can use **authorization code flow** by providing your developer portal credentials to our [Reapit Connect](reapit-connect.md#overview) service
 * You can use **client credentials flow** by providing `DXX` as your `reapit-customer` request header
+
+{% hint style="info" %}
+**For a quick start experience**, our [interactive API explorer](https://dev.marketplace.reapit.cloud/developer/swagger) is connected to the sandbox automatically
+{% endhint %}
 
 ## Issuing requests
 
@@ -162,11 +166,9 @@ Our APIs support retrieval of resources using the `GET` verb. When a GET request
 
 For practical and performance reasons, our top level APIs enforce paging and require a standardised set of query strings in their requests. The `pageSize` and `pageNumber` parameters are used to cycle through the available results from a top level API. 
 
-For example, `GET /contacts?pageSize=10&pageNumber=2` will return the second page of ten contact resources.
+For example, `GET /contacts?pageSize=10&pageNumber=2` will return the second page of ten contact resources in the following structure:
 
-Paged responses are issued in the following structure:
-
-| Attribute | Description |
+| Response attribute | Description |
 | :--- | :--- |
 | `pageSize` | The number of records that have been retrieved by this response. Default is 25 and maximum 100 unless specified |
 | `pageNumber` | The page number that this response represents |
@@ -184,7 +186,7 @@ Since the creation of new resources is often asynchronous, we do not include the
 
 Our APIs support resource updates using the `PATCH` verb. When an update request has been successfully fulfilled, you will receive a `204 No Content` response.
 
-As with resource creation, we do not include the update resource in the `PATCH` response. Instead, to receive the latest version of a resource after updating it, simply re-fetch the resource from using a `GET` request.
+As with resource creation, we do not include the updated resource in the `PATCH` response. Instead, to receive the latest version of a resource after updating it, simply re-fetch the resource from using a `GET` request.
 
 ### Request validation
 
@@ -212,14 +214,16 @@ Our APIs serve Platform functionality and data to various different applications
 
 In some systems, when multiple systems perform updates at the same time without knowledge of each others changes, you can be left with the problem of **lost updates** whereby the last update "wins" and previous updates are lost. Our APIs enforce o[ptimistic concurrency control](https://en.wikipedia.org/wiki/Optimistic_concurrency_control) to help avoid this problem.
 
-We use [entity tags](https://tools.ietf.org/html/rfc7232#section-2.3) as an indicator of the current version of any resource returned from our APIs and whenever a singular representation is served by any of our `GET` endpoints, it will include `eTag` in the response header. For convenience, we also this as an `_eTag` attribute in the response for each object for both singular and collection based resources. 
+We use [entity tags](https://tools.ietf.org/html/rfc7232#section-2.3) as an indicator of the current version of any resource returned from our APIs and whenever a singular representation is served by any of our `GET` endpoints, it will include `eTag` in the response header. For convenience, we also this as an `_eTag` attribute in the response for each object.
 
 This gives both client and server a means of understanding the version of a particular resource an application has received. Subsequently when a resource is updated, it's `eTag` value will also be updated.
 
 To ensure that updates aren't lost, you must include an `If-Match` header in your `PATCH` request containing the `eTag` value exactly as you received it **including quotation marks.** The server will then compare its version of the resource with the `eTag` you provided.
 
 * If they match, then the update is intended for the same version of the resource and the request will be processed 
-* If they do not match, then the resource has been updated since it was fetched. The request will be rejected with a `412 Precondition Failed` error response. You need to retrieve the latest version of the resource and replay your changes before attempting another update.
+* If they do not match, then the resource has been updated since it was fetched and the request will be rejected with a `412 Precondition Failed` error response
+
+If rejected, you need to retrieve the latest version of the resource and replay your changes before attempting another update.
 
 {% hint style="info" %}
 **For more information** about entity tags and our implementation of conditional requests, please see [RFC 7232](https://tools.ietf.org/html/rfc7232)
@@ -273,7 +277,9 @@ The `metadata` attribute is populated in `POST` and `PATCH` payloads as below:
 }
 ```
 
-Once `metadata` has been set against a resource, it will be automatically returned in the same format for future `GET` requests. **Metadata is application specific** and any data that your application sets will not be presented to other Reapit or other Platform applications. Metadata storage should not be used for any sensitive information \(personally identifiable details, bank accounts, etc\).
+Once `metadata` has been set against a resource, it will be automatically returned in the same format for future `GET` requests. **Metadata is application specific** and any data that your application sets will not be presented to other Reapit or other applications built on our platform. 
+
+Metadata storage should not be used for any sensitive information \(personally identifiable details, bank accounts, etc\).
 
 {% hint style="info" %}
 **Coming soon**: we will add the ability to search for resources that match specific metadata content. See our [project milestones](https://github.com/reapit/foundations/milestones) for further details.
@@ -281,7 +287,7 @@ Once `metadata` has been set against a resource, it will be automatically return
 
 ## Hypermedia
 
-Our APIs are **fully RESTful**[ ](https://restfulapi.net/richardson-maturity-model/)and implement [hypermedia controls](https://restfulapi.net/richardson-maturity-model/) to improve the developer experience of using our platform. 
+Our APIs are ****REST level 3[ ](https://restfulapi.net/richardson-maturity-model/)and implement [hypermedia controls](https://restfulapi.net/richardson-maturity-model/) to improve the developer experience of using our platform. 
 
 Hypermedia makes our APIs self documenting and aids discovery. Each `GET` response provides a uniform interface to present links to demonstrate **which** data is related and **how** that data can be retrieved. This is particularly useful for APIs that present complex systems of interrelated data, such as ours. 
 
