@@ -12,9 +12,9 @@ description: How to work with the Foundations REST API
 
 The Foundations API is organised around [REST](http://en.wikipedia.org/wiki/Representational_State_Transfer). Our API has predictable resource-oriented URLs using standard HTTP response codes and verbs. All requests and responses, including errors, are [JSON-encoded](http://www.json.org/).
 
-You can immediately start testing our APIs in [sandbox mode](api-documentation.md#sandbox-mode) by using our [Interactive API Explorer](https://dev.marketplace.reapit.cloud/developer/swagger). 
+You can immediately start testing our APIs in [sandbox mode](api-documentation.md#sandbox-mode) by using our [Interactive API Explorer](https://dev.marketplace.reapit.cloud/developer/swagger). Please see our [help page](https://dev.marketplace.reapit.cloud/developer/help) for support and information on preview / upcoming changes. 
 
-The current version of our APIs is **2020-01-31.** Please see our [help page](https://dev.marketplace.reapit.cloud/developer/help) for support and information on preview / upcoming changes.
+The current version of our APIs is **2020-01-31.**
 
 ## REST
 
