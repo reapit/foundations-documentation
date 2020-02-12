@@ -70,7 +70,7 @@ In addition to the relevant response code, unsuccessful requests will return a J
 
 ## Authentication
 
-The Foundation platform uses [OpenID Connect](https://openid.net/connect/faq/) for authenticating requests. OpenID Connect is a protocol for authenticating users, built on top of the OAuth 2.0 specification.
+The Foundations platform uses [OpenID Connect](https://openid.net/connect/faq/) for authenticating requests. OpenID Connect is a protocol for authenticating users, built on top of the OAuth 2.0 specification.
 
 ### Registering your app
 
@@ -84,7 +84,7 @@ Submitting your application to our Marketplace is the first step for it to be ab
 
 In order to be authorized to access a customers data your application must be installed.
 
-Customer administrators are able to control your applications access by choosing to install from our Marketplace. As part of this process, they will grant your application with any permissions \(scopes\) it requires to interact with Foundation API endpoints.
+Customer administrators are able to control your applications access by choosing to install from our Marketplace. As part of this process, they will grant your application with any permissions \(scopes\) it requires to interact with Foundations API endpoints.
 
 ### OAuth 2.0 Grants
 
@@ -92,7 +92,7 @@ We support the use of two different OAuth 2.0 grants for applications built on o
 
 | Grant | Description |
 | :--- | :--- |
-| Authorization code flow | For use by client and server side applications that have a user in context. Allows the implementing application to be authenticated on the behalf of the user. **For this flow, please see the documentation for our** [**Reapit Connect**](reapit-connect.md#overview) **service.** |
+| Authorization code flow | For use by client and server side applications that have a user in context. Allows the implementing application to be authenticated on the behalf of the user. **To use this grant, please see the documentation for our** [**Reapit Connect**](reapit-connect.md#overview) **service.** |
 | Client credentials flow | For use by server side machine to machine applications that do not have a user in context. Allows the implementing application to be authenticated on behalf of itself. |
 
 ### Client credentials flow
@@ -147,7 +147,7 @@ If a customer chooses to uninstall your application then your access to their da
 
 ## Sandbox data
 
-You can use the Foundation APIs in Sandbox mode which provides a set of demonstration data that can be interacted with without requiring a customer to install your application. Sandbox mode supports processing of all read and write requests so that you can build and test in confidence without impacting customer data. 
+You can use the Foundations APIs in Sandbox mode which provides a set of demonstration data that can be interacted with without requiring a customer to install your application. Sandbox mode supports processing of all read and write requests so that you can build and test in confidence without impacting customer data. 
 
 To access the sandbox, you just need to be registered as a developer on our Portal. 
 
