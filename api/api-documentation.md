@@ -22,9 +22,7 @@ The Foundation platform uses [OpenID Connect](https://openid.net/connect/faq/) f
 
 ### Registering your application
 
-Registering your app in our Marketplace is the first step for it to be able to interact with our clients data.
-
-After you have [successfully submitted your app](https://dev.marketplace.reapit.cloud/developer/submit-app), you will be issued with a client id which required for authentication. You can obtain this by clicking your app in the [My Apps](https://dev.marketplace.reapit.cloud/developer/apps) area of our developer portal.
+Registering your app in our Marketplace is the first step for it to be able to interact with our clients data. After you have [successfully submitted your app](https://dev.marketplace.reapit.cloud/developer/submit-app), you will be issued with a client id which required for authentication. You can obtain this by clicking your app in the [My Apps](https://dev.marketplace.reapit.cloud/developer/apps) area of our developer portal.
 
 {% hint style="info" %}
 **For more information** on how to register your application with our Marketplace, please see our [welcome guide](https://dev.marketplace.reapit.cloud/developer/welcome).
@@ -32,9 +30,9 @@ After you have [successfully submitted your app](https://dev.marketplace.reapit.
 
 ### Client installation
 
-After your application submission has been approved by Reapit, it will appear as a listing in our Marketplace. Reapit clients will then be able to interact with your application's details and potentially choose to install it.
+In order for Reapit Connect to authenticate your application on a users behalf, the user must belong to a Reapit customer that has opted to allow your application access to their data. 
 
-As part of the installation process, clients are required to agree to the scopes that your application requires before your application becomes accessible to end users. Applications cannot interact with client data or assets without prior approval from the client.
+Customer administrators are able to control your applications access by choosing to install from our Marketplace. As part of this process, they will grant your application with any permissions \(scopes\) it requires to interact with Foundation API endpoints.
 
 ### OAuth 2.0 Grants
 
@@ -42,13 +40,22 @@ We support the use of two different OAuth 2.0 grants for applications built on o
 
 | Grant | Description |
 | :--- | :--- |
-| Authorization code flow | For use by client and server side applications that have a user in context. Allows the implementing application to be authenticated on the behalf of the user. Please see our documentation for our [Reapit Connect](reapit-connect.md#overview) service. |
+| Authorization code flow | For use by client and server side applications that have a user in context. Allows the implementing application to be authenticated on the behalf of the user. **Please see our documentation for our** [**Reapit Connect**](reapit-connect.md#overview) **service.** |
 | Client credentials flow | For use by server side machine to machine applications that do not have a user in context. Allows the implementing application to be authenticated on behalf of itself. |
 
-### 
+### Client credentials flow
+
+To obtain tokens for your application to interact with our protected endpoints, you must send a `POST` request to the endpoint below:
+
+`https://dev.connect.reapit.cloud/oauth2/token`
+
+| Request payload | Description |
+| :--- | :--- |
+| `client_id` | The unique client id that was issued to your application after registration |
+| `grant_type` | Must be set to `client_credentials` |
 
 {% hint style="danger" %}
-**Client credentials flow** should not be used for applications that are client side only. A server side component is required to be able to safely store credentials. 
+**Client credentials flow** must not be used for applications that are client side only. A server side component is required to be able to safely store credentials. 
 {% endhint %}
 
 ## REST reference
