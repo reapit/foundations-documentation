@@ -227,7 +227,7 @@ To ensure that updates aren't lost, you must include an `If-Match` header in you
 
 ## Versioning
 
-As we evolve our platform, new features will be added and fixes will be made. We categorise changes in two ways: **breaking** and **non-breaking** changes. We make every effort to implement changes as non-breaking wherever possible, however, there are sometimes situations that require this. 
+As we evolve our platform, new features will be added and fixes will be made. We categorize changes in two ways: **breaking** and **non-breaking** changes. We make every effort to implement changes as non-breaking wherever possible, however, there are sometimes situations that require this. 
 
 Whenever a breaking change is introduced into our platform we release a new, dated version. The current version is **2020-01-31.** 
 
