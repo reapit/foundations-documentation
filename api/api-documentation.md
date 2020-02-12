@@ -12,7 +12,7 @@ description: How to work with the Foundations REST API
 
 The Foundations API is organised around [REST](http://en.wikipedia.org/wiki/Representational_State_Transfer). Our API has predictable resource-oriented URLs using standard HTTP response codes and verbs. All requests and responses, including errors, are [JSON-encoded](http://www.json.org/).
 
-You can immediately start testing our APIs in [sandbox mode](api-documentation.md#sandbox-data) by using our [Interactive API Explorer](https://dev.marketplace.reapit.cloud/developer/swagger). 
+You can immediately start testing our APIs in [sandbox mode](api-documentation.md#sandbox-mode) by using our [Interactive API Explorer](https://dev.marketplace.reapit.cloud/developer/swagger). 
 
 The current version of our APIs is **2020-01-31.** Please see our [help page](https://dev.marketplace.reapit.cloud/developer/help) for support and information on preview / upcoming changes.
 
@@ -145,7 +145,7 @@ You must additionally include a `reapit-customer` header in your request so that
 
 If a customer chooses to uninstall your application then your access to their data will be revoked.
 
-## Sandbox data
+## Sandbox mode
 
 You can use the Foundations APIs in Sandbox mode which provides a set of demonstration data that can be interacted with without requiring a customer to install your application. Sandbox mode supports processing of all read and write requests so that you can build and test in confidence without impacting customer data. 
 
@@ -162,7 +162,7 @@ To access the sandbox, you just need to be registered as a developer on our Port
 
 ### Timestamps
 
-The Foundations platform exclusively works with UTC date times to allow us to present a uniform interface and ensure that behavior remains predictable, regardless of your application or user locale.
+The Foundations platform exclusively works with UTC date times to allow us to present a uniform interface and ensure that behavior remains predictable, regardless of your application or user timezone.
 
 Our APIs enforce that any date time information that your application issues to us adheres to the [ISO-8601](https://www.iso.org/iso-8601-date-and-time-format.html) format. If you provide a request body, query string or header that does not adhere to this standard, you will receive a validation error reporting the problem. Any date time data issued from our endpoints will be returned to you in the same format. 
 
