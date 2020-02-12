@@ -101,7 +101,7 @@ A `code` parameter will be appended to the redirected URL, as well as any `state
 
 ### Exchange code for tokens
 
-Once your application has successfully guided the user through the OAuth flow, you can extract the authorization code from the redirected URL. You are then able to use this code to exchange for JWT tokens for proof of authentication and access for Foundations resources. Authorization codes can only be exchanged once and will expire 10 minutes after they have been issued. 
+Once your application has successfully guided the user through the OAuth flow, you can extract the authorization code from the redirected URL. You are then able to use this code to exchange for JWT tokens for proof of authentication and access for Foundations resources. You can only attempt to exchange authorization codes once and they will expire 10 minutes after they have been issued. 
 
 To make the exchange, send a `POST` request to the endpoint below:
 
