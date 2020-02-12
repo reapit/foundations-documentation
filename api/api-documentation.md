@@ -4,8 +4,6 @@ description: How to work with the Foundations REST API
 
 # Foundations Platform
 
-
-
 {% hint style="warning" %}
 Our Platform is in **alpha** and we'll be continually building new features during this phase. Please see our [help section](https://dev.marketplace.reapit.cloud/developer/help) to view our milestones or to submit a feature request / bug.
 {% endhint %}
@@ -22,87 +20,36 @@ You can immediately start testing our APIs in sandbox mode by using our Interact
 
 The Foundation platform uses [OpenID Connect](https://openid.net/connect/faq/) for authenticating requests. OpenID Connect is a protocol for authenticating users, built on top of the OAuth 2.0 specification.
 
-HTTP requests to our protected endpoints must be issued with a secure JSON Web Token access token. Requests are fulfilled if the JWT access token is valid, unexpired and fulfills the required scopes \(permissions\) that the endpoint requires.
-
 ### Registering your application
 
-Registering your application with our Marketplace is the first step for it to be able to interact with our clients data. Once your application has been successfully registered, you will be provided with a unique **client id** which is required to interact with our authentication services.
+Registering your app in our Marketplace is the first step for it to be able to interact with our clients data.
 
-For more information on how to register your application, see our [welcome guide](https://dev.marketplace.reapit.cloud/developer/welcome).
+After you have [successfully submitted your app](https://dev.marketplace.reapit.cloud/developer/submit-app), you will be issued with a client id which required for authentication. You can obtain this by clicking your app in the [My Apps](https://dev.marketplace.reapit.cloud/developer/apps) area of our developer portal.
 
-As part of the application registration process, you'll be required to choose the [scopes](https://oauth.net/2/scope/) that your application requires to function. After successfully authenticating, any JWT access token your application is issued will include the scopes you require, granting your application permission to the corresponding endpoints. 
-
-We support the use of two different authentication flows for platform applications:
-
-| Flow | Description |
-| :--- | :--- |
-| Authorisation code flow | For use by client and server side applications that have a user in context. Allows the implementing application to be authenticated on the behalf of the user.  |
-| Client credentials flow | For use by server side applications that do not have a user in context \(machine to machine apps\). Allows the implementing application to be authenticated on behalf of itself. |
-
-### Authorisation code flow
-
-### Client credentials flow
-
-{% hint style="danger" %}
-**Client credentials flow** should not be used for applications that are client side only. A server side component is required to be able to safely store credentials. 
+{% hint style="info" %}
+**For more information** on how to register your application with our Marketplace, please see our [welcome guide](https://dev.marketplace.reapit.cloud/developer/welcome).
 {% endhint %}
 
 ### Client installation
 
-Once your application submission has been approved by Reapit, it will appear as a listing in our Marketplace. Reapit clients will then be able to interact with your application's details and potentially choose to install it.
+After your application submission has been approved by Reapit, it will appear as a listing in our Marketplace. Reapit clients will then be able to interact with your application's details and potentially choose to install it.
 
 As part of the installation process, clients are required to agree to the scopes that your application requires before your application becomes accessible to end users. Applications cannot interact with client data or assets without prior approval from the client.
 
-Once installed, an application can access Foundation services on an end users behalf. The recommended way to achieve this is to use one of our Client Libraries, however you can interact directly with our APIs as detailed below.
+### OAuth 2.0 Grants
 
-### Create an authorization code
+We support the use of two different OAuth 2.0 grants for applications built on our Platform:
 
-To create an OAuth [authorization code](https://oauth.net/2/grant-types/authorization-code/), direct users to the URL documented below where they'll be prompted to enter their credentials. The clientId parameter is required and provided during the Marketplace app registration process.
-
-```http
-GET https://foundations.reapit.com/oauth/authorize?clientId=xxxxxxxxxxxxxxxx
-```
-
-Upon success, the service will direct back to your application with an authorization code provided as a query string.
-
-```text
-https://application.company.com/?code=xxxxxxxxxxxxxxxx
-```
-
-### Exchange code for tokens
-
-If your application has successfully guided the end user through the OAuth flow and obtained an authorization code, you need to send it along with the client id issued to your application during Marketplace registration to the following endpoint:
-
-```text
-POST https://foundations.reapit.com/oauth/access_token
-  {
-    "clientId" : "xxxxxxxxxxxxxxxx",
-    "code" : "xxxxxxxxxxxxxxx"
-  }
-```
-
-Issuing a request with a valid authorization code and client id will provide a response in the following format:
-
-| Attribute | Description |
+| Grant | Description |
 | :--- | :--- |
-| id\_token | A JWT containing claims about the users identity. |
-| refresh\_token | A refresh token that can be issued to get a new id and access token. |
-| access\_token | A JWT to grant access to secured API resources for given set of scopes |
-| expires\_in | A JWT to grant access to secured API resources for given set of scopes |
+| Authorization code flow | For use by client and server side applications that have a user in context. Allows the implementing application to be authenticated on the behalf of the user. Please see our documentation for our [Reapit Connect](reapit-connect.md#overview) service. |
+| Client credentials flow | For use by server side machine to machine applications that do not have a user in context. Allows the implementing application to be authenticated on behalf of itself. |
 
-### Create a request
+### 
 
-The access token must then be sent in the Authorization header to be able to access protected Foundation APIs.
-
-```text
-Authorization : Bearer <access token>
-```
-
-Upon receiving an access token, our servers will validate the token to ensure:
-
-* The access token is valid, issued from the correct source and not tampered with
-* The access token contains the required scopes to perform the action that the endpoint requires
-* The applications access to the end users data has not been revoked.
+{% hint style="danger" %}
+**Client credentials flow** should not be used for applications that are client side only. A server side component is required to be able to safely store credentials. 
+{% endhint %}
 
 ## REST reference
 
