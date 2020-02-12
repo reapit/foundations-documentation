@@ -277,7 +277,7 @@ The `metadata` attribute is populated in `POST` and `PATCH` payloads as below:
 }
 ```
 
-Once `metadata` has been set against a resource, it will be automatically returned in the same format for future `GET` requests. **Metadata is application specific** and any data that your application sets will not be presented to other Reapit or other applications built on our platform. 
+Once `metadata` has been set against a resource, it will be automatically returned in the same format for future `GET` requests. **Metadata is application specific** and any data that your application sets will not be presented to Reapit or other applications built on the Foundations platform.
 
 Metadata storage should not be used for any sensitive information \(personally identifiable details, bank accounts, etc\).
 
