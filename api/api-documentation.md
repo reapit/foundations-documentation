@@ -4,17 +4,105 @@ description: How to work with the Foundations REST API
 
 # Foundations Platform
 
+
+
 {% hint style="warning" %}
-**Our Platform is in** **alpha** and we'll be continually building new features during this phase. Please see our [help section](https://dev.marketplace.reapit.cloud/developer/help) to view our milestones or to submit a feature request / bug.
+Our Platform is in **alpha** and we'll be continually building new features during this phase. Please see our [help section](https://dev.marketplace.reapit.cloud/developer/help) to view our milestones or to submit a feature request / bug.
 {% endhint %}
 
 ## Introduction
 
 The Foundations API is organised around [REST](http://en.wikipedia.org/wiki/Representational_State_Transfer). Our API has predictable resource-oriented URLs using standard HTTP response codes and verbs. All requests and responses, including errors, are [JSON-encoded](http://www.json.org/).
 
-You can immediately start testing our APIs in [sandbox mode](api-documentation.md#sandbox-data) by using our [Interactive API Explorer](https://dev.marketplace.reapit.cloud/developer/swagger). 
+You are able to use the Foundations API in sandbox mode to allow you to quickly test and develop your application without worrying about affecting the live data of our clients. The credentials you use to authenticate determine whether your request is issued to the sandbox environment or not. 
 
-The current version of our APIs is **2020-01-31.** Please see our [help page](https://dev.marketplace.reapit.cloud/developer/help) for support and information on preview / upcoming changes.
+You can immediately start testing our APIs in sandbox mode by using our Interactive API Explorer. Alternatively, if you prefer to test using Postman, you can import our collection of example requests directly by simply clicking the button below.
+
+## Authentication
+
+The Foundation platform uses [OpenID Connect](https://openid.net/connect/faq/) for authenticating requests. OpenID Connect is a protocol for authenticating users, built on top of the OAuth 2.0 specification.
+
+HTTP requests to our protected endpoints must be issued with a secure JSON Web Token access token. Requests are fulfilled if the JWT access token is valid, unexpired and fulfills the required scopes \(permissions\) that the endpoint requires.
+
+### Registering your application
+
+Registering your application with our Marketplace is the first step for it to be able to interact with our clients data. Once your application has been successfully registered, you will be provided with a unique **client id** which is required to interact with our authentication services.
+
+For more information on how to register your application, see our [welcome guide](https://dev.marketplace.reapit.cloud/developer/welcome).
+
+As part of the application registration process, you'll be required to choose the [scopes](https://oauth.net/2/scope/) that your application requires to function. After successfully authenticating, any JWT access token your application is issued will include the scopes you require, granting your application permission to the corresponding endpoints. 
+
+We support the use of two different authentication flows for platform applications:
+
+| Flow | Description |
+| :--- | :--- |
+| Authorisation code flow | For use by client and server side applications that have a user in context. Allows the implementing application to be authenticated on the behalf of the user.  |
+| Client credentials flow | For use by server side applications that do not have a user in context \(machine to machine apps\). Allows the implementing application to be authenticated on behalf of itself. |
+
+### Authorisation code flow
+
+### Client credentials flow
+
+{% hint style="danger" %}
+**Client credentials flow** should not be used for applications that are client side only. A server side component is required to be able to safely store credentials. 
+{% endhint %}
+
+### Client installation
+
+Once your application submission has been approved by Reapit, it will appear as a listing in our Marketplace. Reapit clients will then be able to interact with your application's details and potentially choose to install it.
+
+As part of the installation process, clients are required to agree to the scopes that your application requires before your application becomes accessible to end users. Applications cannot interact with client data or assets without prior approval from the client.
+
+Once installed, an application can access Foundation services on an end users behalf. The recommended way to achieve this is to use one of our Client Libraries, however you can interact directly with our APIs as detailed below.
+
+### Create an authorization code
+
+To create an OAuth [authorization code](https://oauth.net/2/grant-types/authorization-code/), direct users to the URL documented below where they'll be prompted to enter their credentials. The clientId parameter is required and provided during the Marketplace app registration process.
+
+```http
+GET https://foundations.reapit.com/oauth/authorize?clientId=xxxxxxxxxxxxxxxx
+```
+
+Upon success, the service will direct back to your application with an authorization code provided as a query string.
+
+```text
+https://application.company.com/?code=xxxxxxxxxxxxxxxx
+```
+
+### Exchange code for tokens
+
+If your application has successfully guided the end user through the OAuth flow and obtained an authorization code, you need to send it along with the client id issued to your application during Marketplace registration to the following endpoint:
+
+```text
+POST https://foundations.reapit.com/oauth/access_token
+  {
+    "clientId" : "xxxxxxxxxxxxxxxx",
+    "code" : "xxxxxxxxxxxxxxx"
+  }
+```
+
+Issuing a request with a valid authorization code and client id will provide a response in the following format:
+
+| Attribute | Description |
+| :--- | :--- |
+| id\_token | A JWT containing claims about the users identity. |
+| refresh\_token | A refresh token that can be issued to get a new id and access token. |
+| access\_token | A JWT to grant access to secured API resources for given set of scopes |
+| expires\_in | A JWT to grant access to secured API resources for given set of scopes |
+
+### Create a request
+
+The access token must then be sent in the Authorization header to be able to access protected Foundation APIs.
+
+```text
+Authorization : Bearer <access token>
+```
+
+Upon receiving an access token, our servers will validate the token to ensure:
+
+* The access token is valid, issued from the correct source and not tampered with
+* The access token contains the required scopes to perform the action that the endpoint requires
+* The applications access to the end users data has not been revoked.
 
 ## REST reference
 
@@ -33,7 +121,7 @@ Our APIs support the following HTTP request methods:
 
 ### Response codes
 
-We use standardized HTTP status codes to indicate the outcome of a request. Below is a listing of the codes our APIs may return and their meaning.
+We use standardised HTTP status codes to indicate the outcome of a request. Below is a listing of the codes our APIs may return and their meaning.
 
 * Codes in the `2xx` range indicate that the request was fulfilled successfully. 
 * Codes in the `4xx` range indicate an error caused by the information provided.
@@ -65,100 +153,22 @@ In addition to the relevant response code, unsuccessful requests will return a J
 | `errors` | A collection of validation issues with the provided payload. Only populated for `422 Unprocessable Entity` responses. |
 
 {% hint style="info" %}
-**All responses** are issued with a unique request id, regardless of whether they were successful or not. You can find this in the `x-amzn-RequestId` response header. If you [report a bug](https://dev.marketplace.reapit.cloud/developer/help) be sure to include this id to allow us to examine your problem in greater depth.
+**All responses** are issued with a unique request id, regardless of whether they were successful or not. You can find this in the `x-amzn-RequestId` response header. If you [report a bug](https://dev.marketplace.reapit.cloud/developer/help), be sure to include this id to allow us to examine your problem in greater depth.
 {% endhint %}
 
-## Authentication
+## Sandbox Mode
 
-The Foundation platform uses [OpenID Connect](https://openid.net/connect/faq/) for authenticating requests. OpenID Connect is a protocol for authenticating users, built on top of the OAuth 2.0 specification.
+You can use the Foundation API in Sandbox mode which provides a set of demonstration data that can be interacted with without affecting any client environment.
 
-### Registering your app
+Upon registering with our developer portal, you can immediately get familiar with the functionality our APIs offer and enjoy a hurdle free route to start developing your application
 
-Submitting your application to our Marketplace is the first step for it to be able to interact with our clients data. After you have [successfully submitted your app](https://dev.marketplace.reapit.cloud/developer/submit-app), you will be issued with a **client id** and **secret.** You can obtain these by clicking your app in the [My Apps](https://dev.marketplace.reapit.cloud/developer/apps) area of our developer portal.
+Sandbox mode supports processing of all read and write requests so that you can build and test in confidence before submitting your application to our Marketplace.
 
-{% hint style="info" %}
-**For more information** on how to register your application with our Marketplace, please see our [welcome guide](https://dev.marketplace.reapit.cloud/developer/welcome).
-{% endhint %}
+To access the sandbox, you just need to be registered as a developer on our Portal. You're then able to simply provide those credentials to our Authorization services in the normal way. The access token generated for your developer credentials will point our APIs at your sandbox data.
 
-### Customer installation
+Alternatively, our Interactive API Explorer will automatically grant access to sandbox data when you're logged into the Developer Portal.
 
-In order to be authorized to access a customers data your application must be installed.
-
-Customer administrators are able to control your applications access by choosing to install from our Marketplace. As part of this process, they will grant your application with any permissions \(scopes\) it requires to interact with Foundation API endpoints.
-
-### OAuth 2.0 Grants
-
-We support the use of two different OAuth 2.0 grants for applications built on our Platform:
-
-| Grant | Description |
-| :--- | :--- |
-| Authorization code flow | For use by client and server side applications that have a user in context. Allows the implementing application to be authenticated on the behalf of the user. **For this flow, please see the documentation for our** [**Reapit Connect**](reapit-connect.md#overview) **service.** |
-| Client credentials flow | For use by server side machine to machine applications that do not have a user in context. Allows the implementing application to be authenticated on behalf of itself. |
-
-### Client credentials flow
-
-To obtain tokens for your application to interact with our protected endpoints, you must send a `POST` request to our token endpoint, as below:
-
-`https://dev.connect.reapit.cloud/oauth2/token`
-
-| Request payload | Description |
-| :--- | :--- |
-| `client_id` | The unique client id that was issued to your application after registration |
-| `grant_type` | Must be set to `client_credentials` |
-
-Additionally, the `Authorization` header should be set to `Basic <base64 secret>`where `<base64 secret>` is the base64 representation of the client id and secret concatenated with a colon. You can obtain client id and secret by clicking your app in the [My Apps](https://dev.marketplace.reapit.cloud/developer/apps) area of our developer portal.
-
-If your request is properly formed and valid, you'll receive a response similar to below.
-
-```text
-HTTP/1.1 200 OK
-Content-Type: application/json
-
-{ 
- "access_token" : "eyJz9sdfsdfsdfsd", 
- "token_type" : "Bearer", 
- "expires_in" : 3600
-}
-```
-
-| Response payload | Description |
-| :--- | :--- |
-| `access_token` | Token to grant access to protected Foundations endpoints |
-| `expires_in` | The number of seconds that the access token is valid for |
-| `token_type` | The type of tokens issued. Will always be set to `bearer` |
-
-{% hint style="danger" %}
-**Client credentials flow** must not be used for applications that are client side only. A server side component is required to be able to safely store credentials. 
-{% endhint %}
-
-### Using access tokens
-
-Access tokens \(also known as bearer tokens\) are designed to provide your application with access to protected resources.
-
-Once you have been issued an access token from our token endpoint, your application can access Foundations APIs by including it in a`Authorization` header. Our servers will validate this token and fulfill the request, subject to your application application requesting the relevant endpoint scope during registration.
-
-### Accessing customer data
-
-Requests issued with access codes issued by the client credentials flow must also indicate which customers data they wish to interact with. 
-
-You must additionally include a `reapit-customer` header in your request so that it can be fulfilled appropriately. The header should be set to the customers unique id which becomes available to view after a customer has chosen to install your application. This information is available in the [Analytics](https://dev.marketplace.reapit.cloud/developer/analytics) area of the developer portal.
-
-If a customer chooses to uninstall your application then your access to their data will be revoked.
-
-## Sandbox data
-
-You can use the Foundation APIs in Sandbox mode which provides a set of demonstration data that can be interacted with without requiring a customer to install your application. Sandbox mode supports processing of all read and write requests so that you can build and test in confidence without impacting customer data. 
-
-To access the sandbox, you just need to be registered as a developer on our Portal. 
-
-* You can use **authorization code flow** by providing your developer portal credentials to our [Reapit Connect](reapit-connect.md#overview) service
-* You can use **client credentials flow** by providing `DXX` as your `reapit-customer` request header
-
-{% hint style="info" %}
-**For a quick start experience**, our [interactive API explorer](https://dev.marketplace.reapit.cloud/developer/swagger) is connected to the sandbox automatically
-{% endhint %}
-
-## Issuing requests
+## Request format
 
 ### Retrieving data
 
@@ -166,9 +176,11 @@ Our APIs support retrieval of resources using the `GET` verb. When a GET request
 
 For practical and performance reasons, our top level APIs enforce paging and require a standardised set of query strings in their requests. The `pageSize` and `pageNumber` parameters are used to cycle through the available results from a top level API. 
 
-For example, `GET /contacts?pageSize=10&pageNumber=2` will return the second page of ten contact resources in the following structure:
+For example, `GET /contacts?pageSize=10&pageNumber=2` will return the second page of ten contact resources.
 
-| Response payload | Description |
+Paged responses are issued in the following structure:
+
+| Attribute | Description |
 | :--- | :--- |
 | `pageSize` | The number of records that have been retrieved by this response. Default is 25 and maximum 100 unless specified |
 | `pageNumber` | The page number that this response represents |
@@ -186,7 +198,7 @@ Since the creation of new resources is often asynchronous, we do not include the
 
 Our APIs support resource updates using the `PATCH` verb. When an update request has been successfully fulfilled, you will receive a `204 No Content` response.
 
-As with resource creation, we do not include the updated resource in the `PATCH` response. Instead, to receive the latest version of a resource after updating it, simply re-fetch the resource from using a `GET` request.
+As with resource creation, we do not include the update resource in the `PATCH` response. Instead, to receive the latest version of a resource after updating it, simply re-fetch the resource from using a `GET` request.
 
 ### Request validation
 
@@ -214,86 +226,28 @@ Our APIs serve Platform functionality and data to various different applications
 
 In some systems, when multiple systems perform updates at the same time without knowledge of each others changes, you can be left with the problem of **lost updates** whereby the last update "wins" and previous updates are lost. Our APIs enforce o[ptimistic concurrency control](https://en.wikipedia.org/wiki/Optimistic_concurrency_control) to help avoid this problem.
 
-We use [entity tags](https://tools.ietf.org/html/rfc7232#section-2.3) as an indicator of the current version of any resource returned from our APIs and whenever a singular representation is served by any of our `GET` endpoints, it will include `eTag` in the response header. For convenience, we also this as an `_eTag` attribute in the response for each object.
+We use [entity tags](https://tools.ietf.org/html/rfc7232#section-2.3) as an indicator of the current version of any resource returned from our APIs and whenever a singular representation is served by any of our `GET` endpoints, it will include `eTag` in the response header. For convenience, we also this as an `_eTag` attribute in the response for each object for both singular and collection based resources. 
 
 This gives both client and server a means of understanding the version of a particular resource an application has received. Subsequently when a resource is updated, it's `eTag` value will also be updated.
 
 To ensure that updates aren't lost, you must include an `If-Match` header in your `PATCH` request containing the `eTag` value exactly as you received it **including quotation marks.** The server will then compare its version of the resource with the `eTag` you provided.
 
 * If they match, then the update is intended for the same version of the resource and the request will be processed 
-* If they do not match, then the resource has been updated since it was fetched and the request will be rejected with a `412 Precondition Failed` error response
-
-If rejected, you need to retrieve the latest version of the resource and replay your changes before attempting another update.
+* If they do not match, then the resource has been updated since it was fetched. The request will be rejected with a `412 Precondition Failed` error response. You need to retrieve the latest version of the resource and replay your changes before attempting another update.
 
 {% hint style="info" %}
 **For more information** about entity tags and our implementation of conditional requests, please see [RFC 7232](https://tools.ietf.org/html/rfc7232)
 {% endhint %}
 
-## Versioning
-
-As we evolve our platform, new features will be added and fixes will be made. We categorize changes in two ways: **breaking** and **non-breaking** changes. We make every effort to implement changes as non-breaking wherever possible, however, there are sometimes situations that require this. 
-
-Whenever a breaking change is introduced into our platform we release a new, dated version. The current version is **2020-01-31.** 
-
-All requests should indicate the version that should be used to fulfill them. You can do this by including the header `api-version` set to the dated version required.  
-
-### Breaking changes
-
-We consider the following to be examples of breaking changes:
-
-* Renaming or removing an existing field or endpoint
-* Changing the URL structure of an existing endpoint
-* Changing the filters that an existing endpoint provides
-* Changing error response codes or messages that an endpoint provides
-* Modifying or adding a new validation to an existing resource
-* Changing the data type of an existing field
-* Requiring a parameter that wasn't previously required
-
-### Depreciation
-
-Whenever a new version is released, the previous version enters its sunset period. This is presently six months though will be reviewed as our platform continues to grow and evolve.
-
-At the end of a versions sunset period it will become depreciated and you will be required to adopt more recent version. You will be notified if your application is using a version that is soon to be depreciated.
-
-{% hint style="info" %}
-**Stay up to date:** please see the [help section](https://dev.marketplace.reapit.cloud/developer/help) of our developer portal for information on recent and upcoming changes.
-{% endhint %}
-
-## Metadata
-
-Most resources that can be updated support a `metadata` attribute in their request and response payload. This attribute can be used to attach additional key-value data against a specific resource that your application can later use. 
-
-Our metadata system allows you to easily extend the data that our resources present. You can create a richer integration between your application and our Platform and the process is simplified by storing all relevant data in a single place. 
-
-The `metadata` attribute is populated in `POST` and `PATCH` payloads as below:
-
-```javascript
-{
-  ...
-  "metadata": {
-    "MyCustomField1": "MyCustomValue1",
-    "MyCustomField2": true
-  }
-}
-```
-
-Once `metadata` has been set against a resource, it will be automatically returned in the same format for future `GET` requests. **Metadata is application specific** and any data that your application sets will not be presented to other Reapit or other applications built on our platform. 
-
-Metadata storage should not be used for any sensitive information \(personally identifiable details, bank accounts, etc\).
-
-{% hint style="info" %}
-**Coming soon**: we will add the ability to search for resources that match specific metadata content. See our [project milestones](https://github.com/reapit/foundations/milestones) for further details.
-{% endhint %}
-
 ## Hypermedia
 
-Our APIs are ****REST level 3[ ](https://restfulapi.net/richardson-maturity-model/)and implement [hypermedia controls](https://restfulapi.net/richardson-maturity-model/) to improve the developer experience of using our platform. 
+Our APIs are **fully RESTful**[ ](https://restfulapi.net/richardson-maturity-model/)and implement [hypermedia controls](https://restfulapi.net/richardson-maturity-model/) to improve the developer experience of using our platform. 
 
 Hypermedia makes our APIs self documenting and aids discovery. Each `GET` response provides a uniform interface to present links to demonstrate **which** data is related and **how** that data can be retrieved. This is particularly useful for APIs that present complex systems of interrelated data, such as ours. 
 
 We adopt the [HAL hypertext application language](http://stateless.co/hal_specification.html) to serve as our message format. Each resource, including [collection resources](api-documentation.md#pagination), include a `_links` collection to present related data. The responses `_links` dictionary will include a **key** to represent the type of relationship and a **value** to represent the location where the related resources can be obtained from. 
 
-The **condensed** `GET` contact payload example below demonstrates how relationships are presented:
+The **condensed** `GET` contact payload example below demonstrates how relationships are surfaced:
 
 ```text
 {
@@ -340,5 +294,59 @@ In the example above, the presence of the `identityChecks` **key** indicates tha
 
 {% hint style="info" %}
 **Coming soon**: we will add the ability to embed related data in our API responses. See our [milestones](https://github.com/reapit/foundations/milestones) for more information.
+{% endhint %}
+
+## Metadata
+
+Most resources that can be updated support a `metadata` attribute in their request and response payload. This attribute can be used to attach additional key-value data against a specific resource that your application can later use. 
+
+Our metadata system allows you to easily extend the data that our resources present. You can create a richer integration between your application and our Platform and the process is simplified by storing all relevant data in a single place. 
+
+The `metadata` attribute is populated in `POST` and `PATCH` payloads as below:
+
+```javascript
+{
+  ...
+  "metadata": {
+    "MyCustomField1": "MyCustomValue1",
+    "MyCustomField2": true
+  }
+}
+```
+
+Once `metadata` has been set against a resource, it will be automatically returned in the same format for future `GET` requests. **Metadata is application specific** and any data that your application sets will not be presented to other Reapit or other Platform applications. Metadata storage should not be used for any sensitive information \(personally identifiable details, bank accounts, etc\).
+
+{% hint style="info" %}
+**Coming soon**: we will add the ability to search for resources that match specific metadata content. See our [project milestones](https://github.com/reapit/foundations/milestones) for further details.
+{% endhint %}
+
+## Versioning
+
+As we evolve our platform, new features will be added and fixes will be made. We categorise changes in two ways: **breaking** and **non-breaking** changes. We make every effort to implement changes as non-breaking wherever possible, however, there are sometimes situations that require this. 
+
+Whenever a breaking change is introduced into our platform we release a new, dated version. The current version is **2020-01-31.** 
+
+All requests should indicate the version that should be used to fulfill them. You can do this by including the header `api-version` set to the dated version required.  
+
+### Breaking changes
+
+We consider the following to be examples of breaking changes:
+
+* Renaming or removing an existing field or endpoint
+* Changing the URL structure of an existing endpoint
+* Changing the filters that an existing endpoint provides
+* Changing error response codes or messages that an endpoint provides
+* Modifying or adding a new validation to an existing resource
+* Changing the data type of an existing field
+* Requiring a parameter that wasn't previously required
+
+### Depreciation
+
+Whenever a new version is released, the previous version enters its sunset period. This is presently six months though will be reviewed as our platform continues to grow and evolve.
+
+At the end of a versions sunset period it will become depreciated and you will be required to adopt more recent version. You will be notified if your application is using a version that is soon to be depreciated.
+
+{% hint style="info" %}
+**Stay up to date:** please see the [help section](https://dev.marketplace.reapit.cloud/developer/help) of our developer portal for information on recent and upcoming changes.
 {% endhint %}
 

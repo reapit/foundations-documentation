@@ -12,23 +12,23 @@ Reapit Connect is our hosted identity solution designed to allow applications to
 
 ## Why use Reapit Connect
 
-#### Simplicity
+### Simplicity
 
 Reapit Connect removes the overhead of having to build and maintain a user credential directory for your app. Instead, users can be securely authenticated against a single, trusted Reapit identity.
 
-#### **Security**
+### **Security**
 
 Our identity provision is an implementation of OpenId Connect, the defacto industry standard for authentication and authorization for web and mobile applications. Simply put, you don't need to worry about securely capturing or storing user credentials - we do that part for you. 
 
-#### Single sign on
+### Single sign on
 
 Reapit Connect supports single sign on \(SSO\) to allow authenticated sessions to be shared between any application using Reapit Connect to manage it's authentication. The experience of interacting with your application is streamlined as users aren't re-prompted for their credentials.    
 
-#### Cross platform
+### Cross platform
 
 You can use Reapit Connect to authenticate users regardless of your front or back end technologies. Reapit Connect is agnostic of technology and integration is as simple as a redirect to our hosted login screen and a subsequent REST API call.
 
-#### Trust
+### Trust
 
 Your users will be presented with a unified login screen from a brand they already know and trust. They will receive the same user experience as they do from other Reapit applications and of those that exist in our marketplace. 
 
