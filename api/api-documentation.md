@@ -186,7 +186,7 @@ Since the creation of new resources is often asynchronous, we do not include the
 
 Our APIs support resource updates using the `PATCH` verb. When an update request has been successfully fulfilled, you will receive a `204 No Content` response.
 
-As with resource creation, we do not include the updated resource in the `PATCH` response. Instead, to receive the latest version of a resource after updating it, simply re-fetch the resource from using a `GET` request.
+As with resource creation, we do not include the updated resource in the `PATCH` response. Instead,  simply re-fetch the latest state of the resource by issuing a `GET` request.
 
 ### Request validation
 
@@ -214,7 +214,7 @@ Our APIs serve Platform functionality and data to various different applications
 
 In some systems, when multiple systems perform updates at the same time without knowledge of each others changes, you can be left with the problem of **lost updates** whereby the last update "wins" and previous updates are lost. Our APIs enforce o[ptimistic concurrency control](https://en.wikipedia.org/wiki/Optimistic_concurrency_control) to help avoid this problem.
 
-We use [entity tags](https://tools.ietf.org/html/rfc7232#section-2.3) as an indicator of the current version of any resource returned from our APIs and whenever a singular representation is served by any of our `GET` endpoints, it will include `eTag` in the response header. For convenience, we also this as an `_eTag` attribute in the response for each object.
+We use [entity tags](https://tools.ietf.org/html/rfc7232#section-2.3) as an indicator of the current version of any resource returned from our APIs and whenever a singular representation is served by any of our `GET` endpoints, it will include `eTag` in the response header. For convenience, we also include this as an `_eTag` attribute in the response for each object.
 
 This gives both client and server a means of understanding the version of a particular resource an application has received. Subsequently when a resource is updated, it's `eTag` value will also be updated.
 
