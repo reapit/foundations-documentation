@@ -356,3 +356,7 @@ In the example above, the presence of the `identityChecks` **key** indicates tha
 **Coming soon**: we will add the ability to embed related data in our API responses. See our [milestones](https://github.com/reapit/foundations/milestones) for more information.
 {% endhint %}
 
+## Webhooks
+
+We will be adding webhook functionality in the coming months, please see our [milestone](https://github.com/reapit/foundations/milestones) for details.s  
+
