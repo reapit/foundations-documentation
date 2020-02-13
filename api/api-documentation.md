@@ -1,11 +1,15 @@
 ---
-description: How to work with the Foundations REST API
+description: How to work with the Foundations REST API.
 ---
 
 # Platform
 
+{% hint style="info" %}
+The Platform REST API will in-time replace the existing REST and SOAP web services, however, **the existing REST and SOAP web services are not at this time being deprecated** and will continue to operate side-by-side and appropriate notice given.
+{% endhint %}
+
 {% hint style="warning" %}
-**Our Platform is in** **alpha** and we'll be continually building new features during this phase. Please see our [help section](https://dev.marketplace.reapit.cloud/developer/help) to view our milestones or to submit a feature request / bug.
+**Our Platform is in** **alpha** and we'll be continually building new features during this phase. Please see our [help section](https://dev.marketplace.reapit.cloud/developer/help) to view our milestones and roadmap, or to submit a feature request or bug.
 {% endhint %}
 
 ## Introduction
