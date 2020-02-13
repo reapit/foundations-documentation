@@ -18,7 +18,7 @@ As well as React Components, we also export a number of useful utilities like fo
 
 In your terminal, execute;
 
-`yarn install @reapit/elements`
+`yarn add @reapit/elements`
 
 Then insert the stylesheet, either as an import into another stylesheet;
 
@@ -74,6 +74,30 @@ You can still import the stylesheet as above, and simply apply same markup and s
 We have deliberately not diverted from Bulma's conventions where possible and where we have, we have tried to follow sensible naming conventions and predictable markup.
 
 ## Cognito Auth
+
+Authentication with OAuth and AWS Cognito, although extensively documented can be tricky to navigate. This becomes particularly difficult when establishing a seemless authenticated journey between apps with differing client Ids and therefore scopes \(permissions\). Before progressing, please read the comprehensive documentation on [Reapit Connec](reapit-connect.md)t, our OAuth service.
+
+The purpose of the Cognito Auth package is to make this process a little easier by offering a thin wrapper around the AWS SDK and OAuth protocol, with full out the box integration with our in house [React App Scaffolder.](web.md#react-app-scaffolder)
+
+### Getting Started
+
+`yarn add @reapit/cognito-auth`
+
+With the package installed, you can then import the methods using ES6 Modules or Common JS
+
+```javascript
+import { RefreshSession } from '@reapit/cognito-auth' 
+
+// or
+
+const { RefreshSessio } = require('@reapit/cognito-auth')
+```
+
+In a typical app, you will need to do three things; 
+
+1. Establish an OAuth user session in Cognito.
+2. Accept an authentication code from OAuth and exchange it for an access token, refresh token and id token.
+3. Maintain the session in the browser, refreshing it as the access token expires.
 
 ## Foundations TS Definitions
 
