@@ -79,7 +79,7 @@ Authentication with OAuth and AWS Cognito, although extensively documented can b
 
 The purpose of the Cognito Auth package is to make this process a little easier by offering a thin wrapper around the AWS SDK and OAuth protocol, with full out the box integration with our in house [React App Scaffolder.](web.md#react-app-scaffolder)
 
-### Getting Started
+### Authenticating Your App
 
 `yarn add @reapit/cognito-auth`
 
@@ -90,14 +90,162 @@ import { RefreshSession } from '@reapit/cognito-auth'
 
 // or
 
-const { RefreshSessio } = require('@reapit/cognito-auth')
+const { RefreshSession } = require('@reapit/cognito-auth')
 ```
 
-In a typical app, you will need to do three things; 
+In a typical app, you will need to do four things; 
 
 1. Establish an OAuth user session in Cognito.
-2. Accept an authentication code from OAuth and exchange it for an access token, refresh token and id token.
-3. Maintain the session in the browser, refreshing it as the access token expires.
+2. Accept an authentication code from OAuth.
+3. Exchange the code for an access token, refresh token and id token.
+4. Maintain the session in the browser, refreshing it as the access token expires.
+
+The first issue is quite simple, render a button that redirects you to the Reapit Connect login screen. The login handler tells Cognito what my client id is \(from the process.env object in this case\), and the URL I have registered to redirect back to; in this case `window.location.origin`. You can see an example of this [here.](https://github.com/reapit/foundations/blob/master/packages/geo-diary/src/components/pages/login.tsx)
+
+```jsx
+import { loginHandler } from '@reapit/cognito-auth'
+
+const loginHandler = () =>
+  redirectToLogin(
+    process.env.COGNITO_CLIENT_ID,
+    `${window.location.origin}`
+  )
+
+//...
+<Button type="button"
+  onClick={loginHandler}
+  loading={false}
+  variant="primary"
+  disabled={false} 
+  fullWidth
+>
+    Login
+</Button>
+//...
+```
+
+After a successful login, I can move to step 2, accepting an auth code from my redirect.
+
+In my redirect route, I will need to capture the token with the `getTokenFromQueryString` method and store it for exchange. You can see an example of our private route wrapper [here.](https://github.com/reapit/foundations/blob/master/packages/geo-diary/src/core/private-route-wrapper.tsx)
+
+```javascript
+import { getTokenFromQueryString } from '@reapit/cognito-auth'
+
+// Within my private component
+const cognitoClientId = process.env.COGNITO_CLIENT_ID
+const refreshParams = getTokenFromQueryString(location.search, cognitoClientId)
+
+if (refreshParams && !hasSession) {
+  // A redux action in this example, but any place you want to store the refresh
+  // session will work eg a cookie or localstorage
+  setRefreshSession(refreshParams)
+  return null
+}
+```
+
+`getTokenFromQueryString` will return an object that implements the following interface:
+
+```typescript
+export interface RefreshParams {
+  cognitoClientId: string
+  loginType: LoginType
+  mode: LoginMode
+  redirectUri: string | null
+  authorizationCode: string | null
+  refreshToken: string | null
+  userName: string | null
+  state: Object | null
+}
+```
+
+It is this object we use for ongoing authentication - at this point I can either use my `refreshParams` directly, or leverage a Redux update to perform the token exchange. We store it in a reducer [here](https://github.com/reapit/foundations/blob/master/packages/geo-diary/src/reducers/auth.ts) where it can be referenced in the code or fetched from a cookie in the default state.
+
+```typescript
+import { getSessionCookie } from '@reapit/cognito-auth'
+
+export const defaultState = (): AuthState => {
+  const refreshSession = getSessionCookie(COOKIE_SESSION_KEY)
+  return {
+    error: false,
+    loginSession: null,
+    refreshSession,
+  }
+}
+
+```
+
+When I next hit my private route, the `hasSession` flag is set to true and I can load my component. When I need to authenticate against the API, I simply call a method called `getSession` that will handle all the business logic to manage, code for token exchange \(point 3\), and when my session expires, refreshing the  access token. You can see the below example in action [here.](https://github.com/reapit/foundations/blob/master/packages/geo-diary/src/utils/session.ts)
+
+```typescript
+import store from '@/core/store'
+import { authLoginSuccess, authLogout } from '@/actions/auth'
+import { getSession } from '@reapit/cognito-auth'
+import { COOKIE_SESSION_KEY_GEO_DIARY } from '../constants/api'
+
+export const getAccessToken = async (): Promise<string | null> => {
+  // Retrieve my session from Redux
+  const { loginSession, refreshSession } = store.state.auth
+  // Call get session with my current login session if I have one, my refresh session
+  // from the last step and my unique cookie key, a constant
+  const session = await getSession(loginSession, refreshSession, COOKIE_SESSION_KEY)
+
+  // Returns a new session, sets to store, returns the access token I need for my
+  // API call and so the process continues
+  if (session) {
+    store.dispatch(authLoginSuccess(session))
+    return session.accessToken
+  }
+
+  // I did not receive a session, call my logout method
+  store.dispatch(authLogout())
+  return null
+}
+
+```
+
+An example usage for the above method, to get a token for use in an API request would look like;
+
+```typescript
+import { getAccessToken } from '@/utils/session'
+import { APPOINTMENTS_HEADERS, API_VERSION } from '@/constants/api'
+
+export const getHeaders = async () => ({
+  ...APPOINTMENTS_HEADERS,
+  'Authorization': `Bearer ${await getAccessToken()}`,
+  'api-version': API_VERSION,
+})
+```
+
+Back in my private route, I have a further case to handle. In some cases, I am an authenticated user but I haven't come from the login screen. Typically, this when I am navigating from app to app eg Marketplace to my app and back. In this case, we use the `redirectToOauth` method to return a code if I am successfully authenticated or redirect to login if not.
+
+```typescript
+import { redirectToOAuth } from '@reapit/cognito-auth'
+
+if (!hasSession) {
+  redirectToOAuth(cognitoClientId)
+  return null
+}
+
+```
+
+In this example, I would get a code in the redirect url I can exchange for a token and continue.
+
+Finally, we export a logout method which will log you out in Congnito and re-route you back to your app, typically to the login screen at point one. See below for an example:
+
+```typescript
+import { redirectToLogout, removeSession } from '@reapit/cognito-auth'
+
+export const doLogout () => {
+  // Delete my local session cookie
+  removeSession(COOKIE_SESSION_KEY)
+  // Then redirect to OAuth, passing in my client id and my return url.
+  redirectToLogout(
+    process.env.COGNITO_CLIENT_ID,
+    `${window.location.origin}/login`
+  )
+}
+
+```
 
 ## Foundations TS Definitions
 
