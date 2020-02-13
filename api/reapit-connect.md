@@ -172,6 +172,6 @@ To use a refresh token, issue a `POST` request to the endpoint below:
 | `grant_type` | Must be set to `refresh_token` |
 
 {% hint style="warning" %}
-For recommendations on how to safely store and interact with tokens, please see &lt;refer to wills docs&gt;
+For recommendations on how to safely store and interact with tokens, please see our web integration module[ Cognito Auth](web.md#cognito-auth)
 {% endhint %}
 
