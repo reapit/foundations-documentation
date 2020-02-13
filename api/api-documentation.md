@@ -86,9 +86,9 @@ Submitting your application to our Marketplace is the first step for it to be ab
 
 ### Customer installation
 
-In order to be authorized to access a customers data your application must be installed.
+You can immediately access our [sandbox environment](https://foundations-documentation.reapit.cloud/api/api-documentation#sandbox-mode) but in order to be authorized to access a customers data, they must choose to install it.
 
-Customer administrators are able to control your applications access by choosing to install from our Marketplace. As part of this process, they will grant your application with any permissions \(scopes\) it requires to interact with Foundations API endpoints.
+Customer administrators are able to control your applications access to their companies data by opted to install it once it has been listed in our Marketplace. As part of this process, they will grant your application with any permissions \(scopes\) it requires to interact with Foundations API endpoints.
 
 ### OAuth 2.0 Grants
 
@@ -156,7 +156,7 @@ You can use the Foundations APIs in Sandbox mode which provides a set of demonst
 To access the sandbox, you just need to be registered as a developer on our Portal. 
 
 * You can use **authorization code flow** by providing your developer portal credentials to our [Reapit Connect](reapit-connect.md#overview) service
-* You can use **client credentials flow** by providing `DXX` as your `reapit-customer` request header
+* You can use **client credentials flow** by providing `SBOX` as your `reapit-customer` request header
 
 {% hint style="info" %}
 **For a quick start experience**, our [interactive API explorer](https://dev.marketplace.reapit.cloud/developer/swagger) is connected to the sandbox automatically
