@@ -4,69 +4,80 @@ description: A guide to how to work with Reapit open source packages
 
 # Contributing
 
+## Intro
 
+At Reapit, we have made a company wide commitment to open sourcing as much source code as possible. There a number of reasons for this decision but with regard to the Foundations project these are principally;
+
+* Approach - we want our partners to see how we go about building things internally, to give you insight into how your own integrations may work.
+* Transparency - we want our partners to see what we are building, our future roadmap and progress against project milestones.
+* Tooling - we want to share the tools we use internally to build marketplace applications with our partners so they can get the benefits of quick-to-market efficient development.
+
+All our code is in a [mono-repo on Github](https://github.com/reapit/foundations), along with our project [Kanban boards](https://github.com/reapit/foundations/projects) and an open [issues page.](https://github.com/reapit/foundations/issues) Most people will want to use this as a resource alongside their own project, as living code as documentation but if you do want to contribute to a project, fork and extend an app or fix a bug, we welcome pull requests from all.
 
 ## Getting Started
 
-#### How to setup
+### Pre-requisites
 
-Set up workspace experimental to true
+To get started working working with Foundations, you will first need to have [Git](https://git-scm.com/), [NodeJS](https://nodejs.org/en/) and [Yarn](https://yarnpkg.com/) installed globally on your local machine.
 
-* `yarn config set workspaces-experimental true`
+Then, you will need to clone the repo with this command `git clone git@github.com:reapit/foundations.git`
 
-Install dependencies
+You then need to set up Yarn workspaces with `yarn config set workspaces-experimental true`
 
-* `yarn`
+Then install dependencies with `yarn`
 
-### How to add dependencies for root project
+### Working with the Mono Repo
 
-* `./wapp add global <dependency_name>` OR `yarn add -D <dependency_name> -W` or `yarn add <dependency_name> --ignore-workspace-root-check`
+We have a CLI binary that exists at the root of the project called `wapp` that makes working with workspaces easier. Under the hood, as well as Yarn Workspaces we also leverage [LernaJS](https://lerna.js.org/) to manage package and dependencies.
 
-### How to add dependencies to particular project
+This exports the following commands:
 
-* `./wapp add <package_name> <dependency_name>` OR `yarn workspace <package_name> add <dependency_name>`
+* To add dependencies to the project root  `./wapp add global <dependency_name>`
+* To add dependencies to an individual project `./wapp add <package_name> <dependency_name>`
+* To add dev dependencies to a particular project`/.wapp add-dev <package_name> <dependency_name>`
+* To run a particular project `./wapp start <package_name>`
+* To run the tests for a project  `./wapp test <package_name> --watch`
+* To create a new package within the main repo`yarn workspace react-app-scaffolder scaffold`
 
-### How to add dev dependencies to particular project
+### Development
 
-* `./wapp add-dev <package_name> <dependency_name>` OR `yarn workspace <package_name> add -D <dependency_name>`
 
-### How to run particular project
 
-* `./wapp start <package_name> <dependency_name>` OR `yarn workspace <package_name> start`
+### Environment & Config
 
-### How to run test particular project
 
-* `./wapp test <package_name> --watch` OR `yarn workspace <package_name> test --watch`
 
-### How to create new project on packages
+All ENVs are loaded in reapit-config.json. No .env file required to setup e2e test. Key with value type is an object won't be loaded. E.g. {load: 'load', notLoad: {key: 'value}} -&gt; key notLoad will not be loaded to Cypress as an ENV
 
-* `yarn workspace react-app-scaffolder scaffold`
+Required ENVs are:
+
+* DEVELOPER\_ACCOUNT\_EMAIL - email of the developer account that will be used to testing
+* DEVELOPER\_ACCOUNT\_PASSWORD - password of the developer account that will be used to testing
+* CLIENT\_ACCOUNT\_EMAIL - email of the client account that will be used to testing
+* CLIENT\_ACCOUNT\_PASSWORD - password of the client account that will be used to testing
+* ADMIN\_ACCOUNT\_EMAIL - email of the admin account that will be used to testing
+* ADMIN\_ACCOUNT\_PASSWORD - password of the admin account that will be used to testing
+* APPLICATION\_URL - URL of the web application to test against
+
+### Testing
+
+
+
+* Files involved e2e testing will be placed in `src/tests/cypress`.
+* Pages: Use `Page Object Model` pattern: store anything related to a specific page: selectors, reusable actions.
+* Commands: Any utility actions that not involve specific page
+*  * yarn test-e2e:dev - open cypress dashboard allowed you to choose specific test file to testing
+  * yarn test-e2e - execute cypress tests in headless mode
+
+## Code Style
+
+### Linting & Formatting
 
 The vast majority of base code style is enforced by [TSLint](https://palantir.github.io/tslint/), with sensible community presets from [StandardJS](https://standardjs.com/) and [Prettier](https://prettier.io/). The linter runs in a pre-commit hook on staged files with an auto-fix flag set to address any trivial issues. TS Lint also runs in a parallel process with the TS Compiler so you will get constant feedback in the terminal on linting issues.
 
 In addition to the lint rules, please also where possible, stick to the contribution guidelines below. These rules should be kept in mind when reviewing Pull Requests.
 
-
-
-### First
-
-```text
-brew install node
-
-brew install yarn
-```
-
-### To build for dev
-
-```text
-yarn
-
-yarn dev
-```
-
-HMR dev server available on [port 8080](http://localhost:8080)
-
-## Contribution Guidelines
+### Code Guidelines
 
 * Code should be functional in style rather than Object Orientated or Imperative unless there are no clean alternatives.
   * Use pure functions where possible to make them testable and modular.
@@ -108,9 +119,40 @@ HMR dev server available on [port 8080](http://localhost:8080)
 * File naming should be `kebab-case` for `.js(x), .ts(x), .css` files, and indeed all files where possible. No use of capitals to avoid issues where Unix systems do not respect casing when a file name is changed.
 * Exports from files can be either as variable or default exports, but please stick to naming the object before using `export default` to avoid anonomous module names in stack traces and React dev tools.
 
+## Workflow
+
+### Github Issues & Projects
 
 
 
+### Version Control
+
+
+
+When working on the project, please observe the following workflow:
+
+* Branches are of three types `feature/...`, `hotfix/...` or `task/...` mapping to the JIRA ticket types of `story`, `bug` and `task`.
+* Branch names should follow the pattern of `<issue type>/<JIRA-REF>-<brief-description>` for example `feature/LABS-1-some-cool-feature`.
+* Typically, `develop` is the base branch for all branches, the exception being a hotfix on production code. In this case, `master` is the base and the hotfix should be back merged when deployed.
+* Commits should be prefaced with the JIRA ref eg `"[LABS-1] My commit message"` so progress can be tracked on JIRA.
+* To merge back into the base branch, raise a pull request aginst this branch. All checks should pass and at least one approver is necessary to merge into base.
+* Keep your branch up to date at all times with the base branch by `rebase` only, to keep the tree clean.
+* On merging to base, use `squash and merge`, to keep the tree clean and to make rolling back changes easy.
+
+### Github Actions & CI / CD
+
+
+
+We currently deploy static assets to S3 buckets.
+
+* [Develop environment](https://d3ps8i1lmu75tx.cloudfront.net) is triggered by pushs to `develop` branch
+* [Production environment](https://dvyjx6qs1jinm.cloudfront.net) is triggered by tag
+
+  pushs with `AS-` prefix, eg. pushing `AS-0.0.1` tag will trigger a build pipeline
+
+  and deploy it's output assets to Production S3 bucket
+
+### Definition of Done
 
 A JIRA issue is considered ready to be moved to the `done` column only when the follwing checklist has been completed.
 
@@ -126,53 +168,15 @@ A JIRA issue is considered ready to be moved to the `done` column only when the 
 
 
 
-We currently deploy static assets to S3 buckets.
-
-* [Develop environment](https://d3ps8i1lmu75tx.cloudfront.net) is triggered by pushs to `develop` branch
-* [Production environment](https://dvyjx6qs1jinm.cloudfront.net) is triggered by tag
-
-  pushs with `AS-` prefix, eg. pushing `AS-0.0.1` tag will trigger a build pipeline
-
-  and deploy it's output assets to Production S3 bucket
-
-
-
-When working on the project, please observe the following workflow:
-
-* Branches are of three types `feature/...`, `hotfix/...` or `task/...` mapping to the JIRA ticket types of `story`, `bug` and `task`.
-* Branch names should follow the pattern of `<issue type>/<JIRA-REF>-<brief-description>` for example `feature/LABS-1-some-cool-feature`.
-* Typically, `develop` is the base branch for all branches, the exception being a hotfix on production code. In this case, `master` is the base and the hotfix should be back merged when deployed.
-* Commits should be prefaced with the JIRA ref eg `"[LABS-1] My commit message"` so progress can be tracked on JIRA.
-* To merge back into the base branch, raise a pull request aginst this branch. All checks should pass and at least one approver is necessary to merge into base.
-* Keep your branch up to date at all times with the base branch by `rebase` only, to keep the tree clean.
-* On merging to base, use `squash and merge`, to keep the tree clean and to make rolling back changes easy.
 
 
 
 
 
-## ENV
 
-All ENVs are loaded in reapit-config.json. No .env file required to setup e2e test. Key with value type is an object won't be loaded. E.g. {load: 'load', notLoad: {key: 'value}} -&gt; key notLoad will not be loaded to Cypress as an ENV
 
-Required ENVs are:
 
-* DEVELOPER\_ACCOUNT\_EMAIL - email of the developer account that will be used to testing
-* DEVELOPER\_ACCOUNT\_PASSWORD - password of the developer account that will be used to testing
-* CLIENT\_ACCOUNT\_EMAIL - email of the client account that will be used to testing
-* CLIENT\_ACCOUNT\_PASSWORD - password of the client account that will be used to testing
-* ADMIN\_ACCOUNT\_EMAIL - email of the admin account that will be used to testing
-* ADMIN\_ACCOUNT\_PASSWORD - password of the admin account that will be used to testing
-* APPLICATION\_URL - URL of the web application to test against
 
-## Structure
 
-* Files involved e2e testing will be placed in `src/tests/cypress`.
-* Pages: Use `Page Object Model` pattern: store anything related to a specific page: selectors, reusable actions.
-* Commands: Any utility actions that not involve specific page
 
-## Commands
-
-* yarn test-e2e:dev - open cypress dashboard allowed you to choose specific test file to testing
-* yarn test-e2e - execute cypress tests in headless mode
 
