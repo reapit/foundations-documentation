@@ -251,26 +251,34 @@ export const doLogout () => {
 
 Develop in TypeScript against the Reapit Foundations Platform with confidence
 
-If you are using TypeScript \(and we recommend you do!\), for your front end project, we provide full type definitions for the API documented in the [API explorer](https://github.com/reapit/foundations-documentation/tree/db0718c9be27b7760dfae34e69518806acf0e855/developer/swagger/README.md). We generate these types from the Swagger contracts direct so you can be sure that when the API changes, your types will be updated also. This allows for a much closer alignment between front and back end development and ultimately more robust applications.
+If you are using TypeScript \(and we recommend you do!\), for your front end project, we provide full type definitions for the API documented in the [API explorer](https://github.com/reapit/foundations-documentation/tree/db0718c9be27b7760dfae34e69518806acf0e855/developer/swagger/README.md). 
+
+We generate these types from the Swagger contracts direct with a daily CRON job, so you can be sure that when the API changes, your types will be updated too. This allows for a much closer alignment between front and back end development, with compile time feedback on definition changes. 
+
+Ultimately this should lead to more robust applications.
 
 {% hint style="warning" %}
-The definitions are updated automatically when the API changes. As such, it is recommended strongly that 
+The definitions are updated automatically when the API changes. As such, it is recommended strongly that you match by date stamp the correct version of the definitions to the API version you are using in your headers.
 {% endhint %}
 
+### Usage:
 
+For the latest version;
 
-This is a package containing both marketplace and platform defintion. They are fetched by a scheduled cronjob activity executed daily at 00:00AM UTC.
+`yarn add @reapit/foundations-ts-definitions`
 
-### Install:
+For a version tied to your API version;
 
-Beacuse this is a private scoped package, Make sure you have .npmrc in your root project folder configured with proper NPM\_TOKEN env variable Install using npm `npm install --dev @reapit/foundations-ts-definitions` Install using yarn `npm install --dev @reapit/foundations-ts-definitions`
+`yarn add @reapit/foundations-ts-definitions@2020-02-10`
 
-### Import types:
-
-Import the required type from the package named `@reapit/foundations-ts-definitions`. Eg:
+Then import the required type into your code with ES6 Modules or CommonJS. The naming maps directly to the model names in the API Explorer in the developer portal.
 
 ```javascript
-import {AppClientSecretModel} from '@reapit/foundations-ts-definitions'
+import { AppModel } from '@reapit/foundations-ts-definitions'
+
+// Or
+
+const { AppModel } = require('@reapit/foundations-ts-definitions')
 ```
 
 ## React App Scaffolder
@@ -344,6 +352,8 @@ In addition to the Elements React component toolkit, Reapit will soon be offerin
 
 These may be modular blocks of functionality that can be embedded within your site, toolsets or even CMS friendly bundles of scripts available elsewhere. The guiding principles of the project is that the components should be standalone, highly customisable and lightweight. 
 
+They are served both as NPM packages and as downloadable scripts from our CDN.
+
 These are under active development by our team with an Alpha release in the coming months. You can check on progress [here.](https://github.com/reapit/foundations/milestone/6)
 
 ### Search Component
@@ -353,44 +363,4 @@ Coming soon...
 ### Book a Valuation Component
 
 Coming soon...
-
-### Build and publish NPM package
-
-This action should be done by CI after a PR merged into master Execute npm script: `build:npm` to build package into a folder named dist-npm, then `npm publish` to publish the package \(make sure you have a required env set: NPM\_TOKEN\)
-
-### Build and publish CDN static files
-
-This action should be done by CI after a PR merged into master Execute npm script: `build:cdn` to build package into a folder named dist-cdn, then `npm publish:cdn` to publish static files into AWS s3 \(make sure you have configurated valid s3 credential: [https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-files.html](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-files.html)\)
-
-### Usage
-
-#### NPM package
-
-* Install the package `yarn add @reapit/web-components` or `npm install @reapit/web-components` \(make sure you have a correct .npmrc in your root folder\)
-* Import the widgets that you want to use
-
-  ```text
-  import { SearchWidget } from '@reapit/web-components'
-  ```
-
-#### CDN package
-
-* Add a script tag at the end of your static
-
-  ```markup
-  <script src="http://reapit-web-components.s3.amazonaws.com/search-widget.js"></script>
-  ```
-
-* Use the desired component follow the instruction of that component
-
-  ```markup
-  <div id="reapit-search-widget-container">
-  <div id="result"></div>
-  ```
-
-#### Development
-
-Create a storybook for your component, and execute `yarn storybook` to start to develop your component at `localhost:8080`undations platform.
-
-
 
