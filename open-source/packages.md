@@ -46,7 +46,7 @@ A CLI for generating React Apps, optimised for the marketplace, including Reapit
 
 ## Foundations TS Definitions
 
-Automated TypeScript definitions for the Foundations API Platform. Automatically generates up to date TypeScript type definitions from Platform API swagger documentation.
+Automated TypeScript definitions for the Foundations API Platform. Automatically generates up to date TypeScript type definitions from Platform API swagger documentation. For usage visit [here.](../api/web.md#foundations-ts-definitions)
 
 * **Tech Stack:** NodeJS
 * **Cloud Services:** NPM
@@ -72,7 +72,7 @@ An app for negotiators on the go. It geo locates the user and assists them with 
 
 ## Config Manager
 
-A thin wrapper around AWS Secrets Manager for keeping remote config secure.
+A thin wrapper around AWS Secrets Manager for keeping remote config secure. For usage visit [here.](../api/web.md#config-manager)
 
 * **Tech Stack:** AWS SDK
 * **Cloud Services:** NPM, AWS Secrets Manager
@@ -89,14 +89,14 @@ Fork of AML App, to extend functionality for Lifetime Legal client.
 
 ## Cognito Custom Mail Lambda
 
-Lambda that intercepts Cognito Emails and applies custom Reapit response
+Lambda that intercepts Cognito Emails and applies custom Reapit response.
 
 * **Tech Stack:** Serverless, EJS, NodeJS
 * **Cloud Services:** CloudForm, AWS Lambda
 
 ## Web Components
 
-Embeddable TypeScript widgets to enhance static sites. 
+Embeddable TypeScript widgets to enhance static sites. For usage visit [here.](../api/web.md#search-component)
 
 Under active development pre-alpha.
 
