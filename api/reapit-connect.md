@@ -1,5 +1,5 @@
 ---
-description: How to manage authentication of Reapit users with our identity solution
+description: How to manage authentication of Reapit users with our hosted identity solution
 ---
 
 # Reapit Connect

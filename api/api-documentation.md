@@ -1,5 +1,5 @@
 ---
-description: Complete technical guidance on how to work with the Foundations REST APIs
+description: How to work with the Foundations REST API.
 ---
 
 # Platform
