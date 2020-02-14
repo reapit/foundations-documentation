@@ -45,15 +45,15 @@ Our [application submission page](https://dev.marketplace.reapit.cloud/developer
 
 Once you have successfully registered, you will be issued with a client id. You can obtain this by clicking your app in the [My Apps](https://dev.marketplace.reapit.cloud/developer/apps) area of our developer portal.
 
-{% hint style="info" %}
-**For more information** on how to register your application with our Marketplace, please see our [welcome guide](https://dev.marketplace.reapit.cloud/developer/welcome).
-{% endhint %}
-
 ### Customer installation
 
 In order for Reapit Connect to authenticate your application on a users behalf, the user must belong to a Reapit customer that has opted to allow your application access to their data. 
 
 Customer administrators are able to control your applications access by choosing to install from our Marketplace. As part of this process, they will grant your application with any permissions \(scopes\) it requires to interact with Foundations API endpoints.
+
+{% hint style="info" %}
+**You can test Reapit Connect** with our [sandbox environment](api-documentation.md#sandbox-mode) which does not require the customer installation step. Simply provide your developer portal credentials when Reapit Connect prompts for a username and password.
+{% endhint %}
 
 ## Authentication flow
 
