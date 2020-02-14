@@ -1,5 +1,5 @@
 ---
-description: How to work with the Foundations REST API.
+description: Complete technical guidance on how to work with the Foundations REST APIs
 ---
 
 # Platform
@@ -110,7 +110,7 @@ To obtain tokens for your application to interact with our protected endpoints, 
 | `client_id` | The unique client id that was issued to your application after registration |
 | `grant_type` | Must be set to `client_credentials` |
 
-Additionally, the `Authorization` header should be set to `Basic <base64 secret>`where `<base64 secret>` is the base64 representation of the client id and secret concatenated with a colon. You can obtain client id and secret by clicking your app in the [My Apps](https://dev.marketplace.reapit.cloud/developer/apps) area of our developer portal.
+Additionally, the `Authorization` header should be set to `Basic <base64 secret>`where `<base64 secret>` is the **base64 representation of the client id and secret concatenated with a colon**. You can obtain **client id** and **secret** by clicking your app in the [My Apps](https://dev.marketplace.reapit.cloud/developer/apps) area of our developer portal.
 
 If your request is properly formed and valid, you'll receive a response similar to below.
 
