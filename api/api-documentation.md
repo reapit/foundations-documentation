@@ -137,9 +137,11 @@ Content-Type: application/json
 
 ### Using access tokens
 
-Access tokens \(also known as bearer tokens\) are designed to provide your application with access to protected resources.
+Access tokens \(also known as bearer tokens\) are designed to provide your application with access to protected resources. Once you have been issued an access token from our token endpoint, your application can access Foundations APIs by including it in a`Authorization` header, prefixed with `Bearer` 
 
-Once you have been issued an access token from our token endpoint, your application can access Foundations APIs by including it in a`Authorization` header. Our servers will validate this token and fulfill the request, subject to your application application requesting the relevant endpoint scope during registration.
+`Authorization: Bearer <your access token>`
+
+Our servers will validate this token and fulfill the request, subject to your application application requesting the relevant endpoint scope during registration.
 
 ### Accessing customer data
 
