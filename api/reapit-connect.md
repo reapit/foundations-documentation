@@ -1,5 +1,5 @@
 ---
-description: How to manage authentication of Reapit users with our identity solution
+description: How to manage authentication of Reapit users with our hosted identity solution
 ---
 
 # Reapit Connect
@@ -42,7 +42,7 @@ Our [application submission page](https://dev.marketplace.reapit.cloud/developer
 
 * Select **Authenticate with Reapit Connect** as your required authentication flow ****
 * Provide one or more **redirect URLs** and a **logout URL** to define the acceptable URLs that Reapit Connect is permitted to redirect back to after a successful authentication or logout
-* 
+
 Once you have successfully registered, you will be issued with a client id. You can obtain this by clicking your app in the [My Apps](https://dev.marketplace.reapit.cloud/developer/apps) area of our developer portal.
 
 {% hint style="info" %}
