@@ -39,25 +39,17 @@ This exports the following commands:
 * To run the tests for a project  `./wapp test <package_name> --watch`
 * To create a new package within the main repo`yarn workspace react-app-scaffolder scaffold`
 
-### Development
-
-
-
 ### Environment & Config
 
-#### 
+All of our applications load their configuration from a file called `reapit-config.json` at the root of the project, where they are either pulled and set on the server by the CI for Node projects, or for client side applications, injected at compile time by Webpack. Any secrets we set in Github's secrets manager so we can reference in the CI only. 
 
-All ENVs are loaded in reapit-config.json. No .env file required to setup e2e test. Key with value type is an object won't be loaded. E.g. {load: 'load', notLoad: {key: 'value}} -&gt; key notLoad will not be loaded to Cypress as an ENV
+Internally we manage the non confidential config using our Config Manager [see here](../api/web.md#config-manager) for info on how to do this yourself. If you are working internally on the project, you should follow these steps.
 
-Required ENVs are:
+An example of the base config file[ is here](https://github.com/reapit/foundations/blob/master/packages/config-manager/reapit-config.example.json) and by default one ships with our app scaffolder. If you are trying to build the apps yourself, you can rename this, place in the root director, add a value to the `COGNITO_CLIENT_ID` \(this is the client id, you can see in the app detail modal when you have submitted your app\), and you should have sufficient config to work in the local environment.
 
-* DEVELOPER\_ACCOUNT\_EMAIL - email of the developer account that will be used to testing
-* DEVELOPER\_ACCOUNT\_PASSWORD - password of the developer account that will be used to testing
-* CLIENT\_ACCOUNT\_EMAIL - email of the client account that will be used to testing
-* CLIENT\_ACCOUNT\_PASSWORD - password of the client account that will be used to testing
-* ADMIN\_ACCOUNT\_EMAIL - email of the admin account that will be used to testing
-* ADMIN\_ACCOUNT\_PASSWORD - password of the admin account that will be used to testing
-* APPLICATION\_URL - URL of the web application to test against
+### Development
+
+We have so
 
 ### Testing
 
@@ -139,7 +131,9 @@ When working on the project, please observe the following workflow:
 * Keep your branch up to date at all times with the base branch by `rebase` only, to keep the tree clean.
 * On merging to base, use `squash and merge`, to keep the tree clean and to make rolling back changes easy.
 
-### Github Actions & CI / CD
+
+
+### Github Actions, CI / CD & Releasing 
 
 
 
@@ -163,6 +157,10 @@ A JIRA issue is considered ready to be moved to the `done` column only when the 
 * The feature is up to date with the base branch.
 * The feature has had at least one peer reviewer and that they have approved the feature for release.
 * The feature has been merged and deployed into the base branch.
+
+### 
+
+### 
 
 
 
