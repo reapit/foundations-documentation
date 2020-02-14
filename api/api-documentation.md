@@ -205,6 +205,16 @@ Since the creation of new resources is often asynchronous, we do not include the
 
 Our APIs support resource updates using the `PATCH` verb. When an update request has been successfully fulfilled, you will receive a `204 No Content` response.
 
+When you provide an update to use using the `PATCH` verb, you're able to only update the parts of a resource that you care about, rather than completely replacing the entire resource. Usage is simple and you just need to specifically send us the data you wish to update.
+
+The below example will only update the notes field on a representation that may allow you update many other attributes:
+
+```javascript
+{
+  "notes": "Returned Mr Johnsons Call",
+}
+```
+
 As with resource creation, we do not include the updated resource in the `PATCH` response. Instead,  simply re-fetch the latest state of the resource by issuing a `GET` request.
 
 ### Request validation
