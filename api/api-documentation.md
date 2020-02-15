@@ -374,5 +374,5 @@ In the example above, the presence of the `identityChecks` **key** indicates tha
 
 ## Webhooks
 
-We will be adding webhook functionality in the coming months, please see our [milestone](https://github.com/reapit/foundations/milestones) for details.s  
+We will be adding webhook functionality in the coming months, please see our [milestone](https://github.com/reapit/foundations/milestones) for details.
 
