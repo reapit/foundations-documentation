@@ -39,25 +39,41 @@ This exports the following commands:
 * To run the tests for a project  `./wapp test <package_name> --watch`
 * To create a new package within the main repo`yarn workspace react-app-scaffolder scaffold`
 
-### Development
-
-
-
 ### Environment & Config
 
-#### 
+All of our applications load their configuration from a file called `reapit-config.json` at the root of the project, where they are either pulled and set on the server by the CI for Node projects, or for client side applications, injected at compile time by Webpack. Any secrets we set in Github's secrets manager so we can reference in the CI only. 
 
-All ENVs are loaded in reapit-config.json. No .env file required to setup e2e test. Key with value type is an object won't be loaded. E.g. {load: 'load', notLoad: {key: 'value}} -&gt; key notLoad will not be loaded to Cypress as an ENV
+Internally we manage the non confidential config using our Config Manager [see here](../api/web.md#config-manager) for info on how to do this yourself. If you are working internally on the project, you should follow these steps.
 
-Required ENVs are:
+An example of the base config file[ is here](https://github.com/reapit/foundations/blob/master/packages/config-manager/reapit-config.example.json) and by default one ships with our app scaffolder. If you are trying to build the apps yourself, you can rename this, place in the root director, add a value to the `COGNITO_CLIENT_ID` \(this is the client id, you can see in the app detail modal when you have submitted your app\), and you should have sufficient config to work in the local environment.
 
-* DEVELOPER\_ACCOUNT\_EMAIL - email of the developer account that will be used to testing
-* DEVELOPER\_ACCOUNT\_PASSWORD - password of the developer account that will be used to testing
-* CLIENT\_ACCOUNT\_EMAIL - email of the client account that will be used to testing
-* CLIENT\_ACCOUNT\_PASSWORD - password of the client account that will be used to testing
-* ADMIN\_ACCOUNT\_EMAIL - email of the admin account that will be used to testing
-* ADMIN\_ACCOUNT\_PASSWORD - password of the admin account that will be used to testing
-* APPLICATION\_URL - URL of the web application to test against
+### Development
+
+The codebase is almost exclusively written in [TypeScript](https://www.typescriptlang.org/), with the exception of some node scripts that handle deployment and tooling. This decision was taken because of the level of robustness and scalability of the language over vanilla JS.
+
+For those who have not worked with TS before, it is "just JavaScript" with type notations - we would recommend doing a couple of tutorials before digging into the codebase but for experienced JavaScript devs, you can be productive extremely quickly in TypeScript too.
+
+We use [Webpack](https://webpack.js.org/) for bundling our code the Webpack scripts are all found in the `./scripts/webpack` directory. We use the TypeScript compiler to transpile our builds to modern ESNext code in dev mode, and for production, we use [Babel](https://babeljs.io/) to target older browsers \(IE 11\). There is a base TS Config that all packages inherit from at the base of the project.
+
+We have worked to normalise our development workflows so that the majority of packages export the same predictable commands for building and running in both development and production modes.
+
+Given that you have already installed dependencies [\(see getting started\)](contributing.md#getting-started), you can `cd` into a `packages/<<package-name>>` directory and \(where relevant\);
+
+`yarn start:dev` will get you up and running with a web-server at `localhost:8080` 
+
+`yarn test:dev` will run unit tests in watch mode for the project
+
+`yarn test-e2e:dev` will run any end to end tests in watch mode
+
+`yarn build:prod` will bundle the code for production
+
+`yarn start:prod` will serve your production build with a Node web server at `localhost:8080`
+
+`yarn test:ci` will perform a single run of your tests and produce a coverage report
+
+`yarn test-e2e:ci` will run any end to end tests in headless mode
+
+
 
 ### Testing
 
@@ -68,6 +84,53 @@ Required ENVs are:
 * Commands: Any utility actions that not involve specific page
 *  * yarn test-e2e:dev - open cypress dashboard allowed you to choose specific test file to testing
   * yarn test-e2e - execute cypress tests in headless mode
+
+## Workflow
+
+### Github Issues & Projects
+
+
+
+### Version Control
+
+
+
+When working on the project, please observe the following workflow:
+
+* Branches are of three types `feature/...`, `hotfix/...` or `task/...` mapping to the JIRA ticket types of `story`, `bug` and `task`.
+* Branch names should follow the pattern of `<issue type>/<JIRA-REF>-<brief-description>` for example `feature/LABS-1-some-cool-feature`.
+* Typically, `develop` is the base branch for all branches, the exception being a hotfix on production code. In this case, `master` is the base and the hotfix should be back merged when deployed.
+* Commits should be prefaced with the JIRA ref eg `"[LABS-1] My commit message"` so progress can be tracked on JIRA.
+* To merge back into the base branch, raise a pull request aginst this branch. All checks should pass and at least one approver is necessary to merge into base.
+* Keep your branch up to date at all times with the base branch by `rebase` only, to keep the tree clean.
+* On merging to base, use `squash and merge`, to keep the tree clean and to make rolling back changes easy.
+
+
+
+### Github Actions, CI / CD & Releasing 
+
+
+
+We currently deploy static assets to S3 buckets.
+
+* [Develop environment](https://d3ps8i1lmu75tx.cloudfront.net) is triggered by pushs to `develop` branch
+* [Production environment](https://dvyjx6qs1jinm.cloudfront.net) is triggered by tag
+
+  pushs with `AS-` prefix, eg. pushing `AS-0.0.1` tag will trigger a build pipeline
+
+  and deploy it's output assets to Production S3 bucket
+
+### Definition of Done
+
+A JIRA issue is considered ready to be moved to the `done` column only when the follwing checklist has been completed.
+
+* The complete acceptance criteria or task list on the JIRA ticket has been fulfilled. To be verified by a PO if appropriate.
+* The feature has appropriate unit and end to end tests.
+* The feature has been verified as working by a QA if appropriate.
+* All tests and checks on Github are passing.
+* The feature is up to date with the base branch.
+* The feature has had at least one peer reviewer and that they have approved the feature for release.
+* The feature has been merged and deployed into the base branch.
 
 ## Code Style
 
@@ -119,50 +182,11 @@ In addition to the lint rules, please also where possible, stick to the contribu
 * File naming should be `kebab-case` for `.js(x), .ts(x), .css` files, and indeed all files where possible. No use of capitals to avoid issues where Unix systems do not respect casing when a file name is changed.
 * Exports from files can be either as variable or default exports, but please stick to naming the object before using `export default` to avoid anonomous module names in stack traces and React dev tools.
 
-## Workflow
+## 
 
-### Github Issues & Projects
+### 
 
-
-
-### Version Control
-
-
-
-When working on the project, please observe the following workflow:
-
-* Branches are of three types `feature/...`, `hotfix/...` or `task/...` mapping to the JIRA ticket types of `story`, `bug` and `task`.
-* Branch names should follow the pattern of `<issue type>/<JIRA-REF>-<brief-description>` for example `feature/LABS-1-some-cool-feature`.
-* Typically, `develop` is the base branch for all branches, the exception being a hotfix on production code. In this case, `master` is the base and the hotfix should be back merged when deployed.
-* Commits should be prefaced with the JIRA ref eg `"[LABS-1] My commit message"` so progress can be tracked on JIRA.
-* To merge back into the base branch, raise a pull request aginst this branch. All checks should pass and at least one approver is necessary to merge into base.
-* Keep your branch up to date at all times with the base branch by `rebase` only, to keep the tree clean.
-* On merging to base, use `squash and merge`, to keep the tree clean and to make rolling back changes easy.
-
-### Github Actions & CI / CD
-
-
-
-We currently deploy static assets to S3 buckets.
-
-* [Develop environment](https://d3ps8i1lmu75tx.cloudfront.net) is triggered by pushs to `develop` branch
-* [Production environment](https://dvyjx6qs1jinm.cloudfront.net) is triggered by tag
-
-  pushs with `AS-` prefix, eg. pushing `AS-0.0.1` tag will trigger a build pipeline
-
-  and deploy it's output assets to Production S3 bucket
-
-### Definition of Done
-
-A JIRA issue is considered ready to be moved to the `done` column only when the follwing checklist has been completed.
-
-* The complete acceptance criteria or task list on the JIRA ticket has been fulfilled. To be verified by a PO if appropriate.
-* The feature has appropriate unit and end to end tests.
-* The feature has been verified as working by a QA if appropriate.
-* All tests and checks on Github are passing.
-* The feature is up to date with the base branch.
-* The feature has had at least one peer reviewer and that they have approved the feature for release.
-* The feature has been merged and deployed into the base branch.
+### 
 
 
 
