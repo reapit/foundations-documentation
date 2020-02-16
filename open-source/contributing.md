@@ -101,7 +101,17 @@ Where relevant, files e2e test specs are placed in the  `src/tests/cypress` fold
 
 ### Github Issues & Projects
 
+The starting point for any development work is to raise or assign a Github Issue to yourself. The issue should be a descriptive as necessary for a future developer to understand or for a tester to properly validate. 
 
+We use labels heavily to categorise issues. Each issue should have either `bug` `feature` or `chore` added based on the type of work required. It should also have either a `platform-team` label for API issues or `cloud-team` label for web application issue and where relevant, a label for services it will effect for example `marketplace` or `elements`.
+
+When raising an issue, you should add a project to the ticket, either `Feature Triage` or `Bug Triage` . This will alert one of our Product Owners that the issue requires investigation and they will move it into one of our development streams if it is accepted and ranked by priority. Ultimately accepted issues will make it onto the main `Kanban` board where an engineer will pick it up for development.
+
+{% hint style="info" %}
+Raising an issue does not guarantee that we will work on it. In many cases we will ask for more information and in some cases we may close an issue if it does not fit with our roadmap. In all cases, we will update the ticket with an outcome so please keep an eye on it for updates.
+{% endhint %}
+
+In all cases, the more information you can give us, the better. For features, please be descriptive about the expected / intended behaviour. For bugs, please give us detailed steps to replicate including device, environment and app / page / component / endpoint where relevant.
 
 ### Version Control
 
