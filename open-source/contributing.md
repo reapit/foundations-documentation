@@ -131,16 +131,15 @@ When working on the project, we ask that contributors follow a basic git flow, w
 
 ### Github Actions, CI / CD & Releasing 
 
+We use [Github Actions](https://help.github.com/en/actions) for all our Continuous integration pipelines. You can see the various workflows being executed in [live time here](https://github.com/reapit/foundations/actions) and the [source files here](https://github.com/reapit/foundations/tree/master/.github). 
 
+The basic flow for all projects is that;
 
-We currently deploy static assets to S3 buckets.
+* **On Pull Request:** Test, build and lint tasks run to ensure the branch is sound.
+* **On Pull Request Merge:** Test, build and lint tasks run as well as `release:dev` which will push the code to the relevant development environment for the project.
+* **On Release Tag:** Again, test, build and lint tasks run and the `release:prod` task runs to deploy the relevant tagged project. The release tag [should be raised here](https://github.com/reapit/foundations/releases) and be in the format `<<package>>_v<<version-number>>` to trigger the production workflow.
 
-* [Develop environment](https://d3ps8i1lmu75tx.cloudfront.net) is triggered by pushs to `develop` branch
-* [Production environment](https://dvyjx6qs1jinm.cloudfront.net) is triggered by tag
-
-  pushs with `AS-` prefix, eg. pushing `AS-0.0.1` tag will trigger a build pipeline
-
-  and deploy it's output assets to Production S3 bucket
+Details of the development and production environments / deployments for each package [are listed here](packages.md).
 
 ### Definition of Done
 
@@ -158,7 +157,7 @@ As per the previous sections, all work on the project is performed against the s
 
 ### Linting & Formatting
 
-The vast majority of base code style is enforced by [TSLint](https://palantir.github.io/tslint/), with sensible community presets from [StandardJS](https://standardjs.com/) and [Prettier](https://prettier.io/). The linter runs in a pre-commit hook on staged files with an auto-fix flag set to address any trivial issues. TS Lint also runs in a parallel process with the TS Compiler so you will get constant feedback in the terminal on linting issues.
+The vast majority of base code style is enforced by [ESLint](https://eslint.org/) with sensible community presets from [TSLint](https://palantir.github.io/tslint/) rules, and [Prettier](https://prettier.io/). The linter runs in a pre-commit hook on staged files with an auto-fix flag set to address any trivial issues. 
 
 In addition to the lint rules, please also where possible, stick to the contribution guidelines below. These rules should be kept in mind when reviewing Pull Requests.
 
@@ -166,21 +165,21 @@ In addition to the lint rules, please also where possible, stick to the contribu
 
 * Code should be functional in style rather than Object Orientated or Imperative unless there are no clean alternatives.
   * Use pure functions where possible to make them testable and modular.
-  * Avoid mutating varibles and the `let` keyword.
+  * Avoid mutating variables and the `let` keyword.
   * React Components should be stateless functional components where possible.
   * Avoid classes and stateful modules where possible.
-  * Avoid React lifecyle hooks.
+  * Avoid React lifecycle hooks.
   * Keep all state in Redux and business logic as pure functions of Redux State.
   * The above rules can be relaxed for test scripts.
 * React components should be templates, free of logic. This is because we aim to re-use code in the future in React Native Applications so by keeping the React layer as purely presentational.
-  * Presentational logic helpers should live in a utils file in the same folder as your component so they can be re-used agnostic of the template.
+* Presentational logic helpers should live in a utils file in the same folder as your component so they can be re-used agnostic of the template.
 * Use Redux connect for nested components for better performance and reduced re-rendering over `prop drilling`. Use `React.memo` for the same reason and selectors if appropriate.
-* Typesafe everything! Use `any` and `unknown` types only when there is no alternative - try to avoid `implicit any` - types should be documentation as code for the project. We can relax this as a convenience in test scripts.
-  * Where possible use auto generated types from Swagger documentation or GraphQL defintions to ensure shared contracts with front and back end. These auto-generated types live in the main types folder.
-* Syled Components are used for styling in all cases where a third party library \(eg Bootstrap\) is not used.
-  * Styled Components should be kept out of the main components folder - they should live in the main styles folder. This is so we can easily abstract the styles into a styleguide the future, using a tool like Storybook or Bit. It also helps with reducing duplication.
-  * The styles project should make extensive use of variables and mixins for things like colors, layouts, font sizes, line heights and so on. This ensures re-usablility and maintainability.
-  * Where possible, use `rems` over `px` as a unit for layout.
+* Type-safe everything! Use `any` and `unknown` types only when there is no alternative - try to avoid `implicit any` - types should be documentation as code for the project. We can relax this as a convenience in test scripts.
+* Where possible use auto generated types from Swagger documentation or GraphQL definitions to ensure shared contracts with front and back end. These auto-generated types live in the main types folder.
+* Styled Components or CSS / Sass Modules are used for styling in all cases where a third party library \(eg Bulma\) is not used.
+* Styled Components & CSS / Sass Modules where they are generic should be kept out of the main components folder - they should live in the main styles folder to reduce duplication.
+* The styles project should make extensive use of variables and mix-ins for things like colours, layouts, font sizes, line heights and so on. This ensures re-usablility and maintainability.
+* Where possible, use `rems` over `px` as a unit for layout.
 * Maintain the separation of concerns in the folder structure laid out in the initial scaffold seen in the [React App Boilerplate](https://github.com/reapit/react-app) eg, reducers should all be in the reducers folder, global types in the types folder and so on. There are many React projects in the company and they should all follow a broadly familiar structure and architecture.
 * Make extensive use of the constants files for significant strings and other re-usable constant variables used in the app.
 * When adding third party libraries to the project consider carefully the following;
@@ -188,21 +187,21 @@ In addition to the lint rules, please also where possible, stick to the contribu
   * Is this library well supported, under active development and widely used in the community? If not, do not use.
   * Do we use a similar but different library for the same task elsewhere in the company? If so, use this library for developer familiarity and consistency.
   * Will this library impact significantly performance or bundle size eg Lodash or Moment? If so, consider carefully if it is necessary or if there is a better alternative.
-* We have two kinds of tests; Unit tests with Jest and e2e tests with Webdriver. For all new features an approprate level of test coverage is an implicit part of the feature definition.
-  * For unit tests, the expectation is;
-    * All functions / methods, especially utilities have i.o. tests, with internal conditional logic and edge cases tested.
-    * All React templates have at least a snapshot, and any calls to action are tested to call their handlers with correct params.
-    * Redux actions, reducers and sagas have test coverage for all cases.
-    * Styled components do not require tests unless necessary, likewise constants and build scripts.
-    * Tests should live in the same folder as their source in a `__tests__` folder. 
-    * Mocks and stubs should also follow the same `__mocks__` & `__stubs__` pattern.
-  * For e2e tests, the expectation is;
-    * Happy path user journeys are all tested through the app.
-    * Calls to action are all tested, verifying an appropriate change in the state of the application is observed.
-    * The page object model for selectors and methods is used to ensure re-usability.
-    * The tests should not be excessive or flaky to ensure they do not block dev workflow.
+* We have two kinds of tests; Unit tests with Jest and e2e tests with Cypress. For all new features an appropriate level of test coverage is an implicit part of the feature definition.
+* For unit tests, the expectation is;
+  * All functions / methods, especially utilities have i.o. tests, with internal conditional logic and edge cases tested.
+  * All React templates have at least a snapshot, and any calls to action are tested to call their handlers with correct params.
+  * Redux actions, reducers and sagas have test coverage for all cases.
+  * Styled components do not require tests unless necessary, likewise constants and build scripts.
+  * Tests should live in the same folder as their source in a `__tests__` folder. 
+  * Mocks and stubs should also follow the same `__mocks__` & `__stubs__` pattern.
+* For e2e tests, the expectation is;
+  * Happy path user journeys are all tested through the app.
+  * Calls to action are all tested, verifying an appropriate change in the state of the application is observed.
+  * The page object model for selectors and methods is used to ensure re-usability.
+  * The tests should not be excessive or flaky to ensure they do not block dev workflow.
 * File naming should be `kebab-case` for `.js(x), .ts(x), .css` files, and indeed all files where possible. No use of capitals to avoid issues where Unix systems do not respect casing when a file name is changed.
-* Exports from files can be either as variable or default exports, but please stick to naming the object before using `export default` to avoid anonomous module names in stack traces and React dev tools.
+* Exports from files can be either as variable or default exports, but please stick to naming the object before using `export default` to avoid anonymous module names in stack traces and React dev tools.
 
 ## 
 
