@@ -4,7 +4,7 @@ description: A step-by-step guide to getting started in the developer portal
 
 # Developer Portal
 
-We want getting started with the Developer Portal to be as frictionless as possible. There is a lot of detail in the documentation for advanced concepts but to get started in as little as 5mins with an authenticated marketplace app, you just need to follow these steps:
+We want getting started with the Developer Portal to be as frictionless as possible. There is a lot of detail in the documentation for advanced concepts but to get started in as little as 5 mins with an authenticated marketplace app, you just need to follow these steps:
 
 ### 1. Login to the Portal
 
@@ -34,7 +34,13 @@ The first step is to upload the listing details of your app. Eventually they wil
 
 ![](../.gitbook/assets/screenshot-2020-02-16-at-13.40.23.png)
 
-You then need to select an authentication flow. For web apps this is always "Authorization Code", since you will need your users to login via our OAuth service, Reapit Connect. You will need to register a main authenticated url for your app for Connect to return to, and a logout url for unauthenticated users.
+You then need to select an OAuth Authentication flow:
+
+If your application is **user facing**, you should select "Authorization Code". This will allow you to use our hosted authentication service, [Reapit Connect](reapit-connect.md#overview). As part of this flow, you need will need to register one or more call back URLs and a log out URL to allow Reapit Connect to direct traffic back to your application in a secure way.
+
+If you are developing a **server-side machine to machine** application such as a feed to another system, you should select "Client Credentials". You can find details on how these flow works in our [platform documentation](api-documentation.md#authentication).
+
+~~You then need to select an authentication flow. For web apps this is always "Authorization Code", since you will need your users to login via our OAuth service, Reapit Connect. You will need to register a main authenticated url for your app for Connect to return to, and a logout url for unauthenticated users.~~
 
 ![](../.gitbook/assets/screenshot-2020-02-16-at-13.40.37.png)
 
@@ -46,7 +52,7 @@ Then select an icon and some screengrabs for your app listing...
 
 ![](../.gitbook/assets/screenshot-2020-02-16-at-13.41.05.png)
 
-...then select the OAuth scopes you need for your app to work. They must map to the endpoints you selected at point two above.
+...then select the permissions \(OAuth scopes\) you need for your app to work. They must map to the endpoints you selected at point two above.
 
 ![](../.gitbook/assets/screenshot-2020-02-16-at-13.41.15.png)
 
