@@ -73,17 +73,29 @@ Given that you have already installed dependencies [\(see getting started\)](con
 
 `yarn test-e2e:ci` will run any end to end tests in headless mode
 
+### Styling
 
+We support two styling methods across our projects; [SASS with CSS Modules](https://sass-lang.com/) and [Styled Components](https://styled-components.com/). You are welcome to use either and both are supported by our [React App Scaffolder](../api/web.md#react-app-scaffolder), although only one by project. 
+
+By convention, we store any Styled Components that are specific to an individual component in a sub folder of that component called `__styles__` however, if a style is re-usable, generic or global to the project, please use the `src/styles` directory to reduce duplication. 
+
+For components that are genuinely generic across the estate, please take the time to add to the [Elements](../api/web.md#elements) project as a Storybook item so we can use it again. If you suspect you may be writing a common component from scratch, it is likely it will already exist in Elements so please take a look if there is anything that can be re-used or adapted with a modifier class. 
+
+Our overriding aim is to write as little CSS as possible and focus on re-usable components, both to save time and to develop a consistent look and feel across the estate.
 
 ### Testing
 
+Our code has a lot of automated testing, mostly unit tests, although we have some E2E tests and this is something we will be expanding going forward. In the previous section you saw the commands exported from each of the projects to run the test suites so this section deals with some basic conventions for working with tests on the codebase.
 
+We use [Jest](https://jestjs.io/) for our unit testing, with [Enzyme](https://airbnb.io/enzyme/) for rendering React components where relevant. If you are not familiar with these libraries, we would urge you to do some reading before getting started. Our goal is that each of our packages, where relevant, should have ~90% coverage of functions and lines. Whilst this target is an arbitrary value, the desired outcome is a high level of confidence in our CI / CD pipeline which means we can deploy straight to development and daily to production.
 
-* Files involved e2e testing will be placed in `src/tests/cypress`.
-* Pages: Use `Page Object Model` pattern: store anything related to a specific page: selectors, reusable actions.
-* Commands: Any utility actions that not involve specific page
-*  * yarn test-e2e:dev - open cypress dashboard allowed you to choose specific test file to testing
-  * yarn test-e2e - execute cypress tests in headless mode
+By convention,  we keep our test scripts in a sub folder of the source code called `__tests__` with the same file name. Where we use mocks and stubs, as with tests, they live in the same folder of the source code with the same file name and sub folder convention `__stubs__` and `__mocks__` .
+
+For React components as a bare minimum, we expect a snapshot of the shallow rendered component, with snapshots saving to the `__snapshots__` sub folder of the component.
+
+End to end functional tests are all written using the excellent Cypress framework. Whilst it does not support cross browser testing for older browsers, we feel it is a decent tradeoff owing to the speed, developer experience and reliability of the tests over conventional Selenium / Webdriver tests.
+
+Where relevant, files e2e test specs are placed in the  `src/tests/cypress` folder of the package. We use the `Page Object Model` pattern, storing anything related to a specific page; selectors and actions, to make them more re-usable and modular.
 
 ## Workflow
 
@@ -93,19 +105,13 @@ Given that you have already installed dependencies [\(see getting started\)](con
 
 ### Version Control
 
+When working on the project, we ask that contributors follow a basic git flow, with `master` as the base branch;
 
-
-When working on the project, please observe the following workflow:
-
-* Branches are of three types `feature/...`, `hotfix/...` or `task/...` mapping to the JIRA ticket types of `story`, `bug` and `task`.
-* Branch names should follow the pattern of `<issue type>/<JIRA-REF>-<brief-description>` for example `feature/LABS-1-some-cool-feature`.
-* Typically, `develop` is the base branch for all branches, the exception being a hotfix on production code. In this case, `master` is the base and the hotfix should be back merged when deployed.
-* Commits should be prefaced with the JIRA ref eg `"[LABS-1] My commit message"` so progress can be tracked on JIRA.
-* To merge back into the base branch, raise a pull request aginst this branch. All checks should pass and at least one approver is necessary to merge into base.
+* Branch names are in the convention of `feat/description-of-issue` `fix/description-of-issue` or `chore/description-of-issue` mapping to the common issue types we use in Github issues.
+* Commits should also follow this pattern in the convention `fix: what I changed` `feat: what I changed` or `chore: what I changed` we enforce this in a pre-commit hook using [CommitLint.](https://commitlint.js.org/#/) It is helpful but not essential to include the issue number you are working on in your commit messages eg `fix: #123 what I changed`.
+* To merge back into the base branch, raise a pull request against `master`. All checks should pass and at least two approvers are necessary to merge into base.
 * Keep your branch up to date at all times with the base branch by `rebase` only, to keep the tree clean.
 * On merging to base, use `squash and merge`, to keep the tree clean and to make rolling back changes easy.
-
-
 
 ### Github Actions, CI / CD & Releasing 
 
@@ -122,15 +128,15 @@ We currently deploy static assets to S3 buckets.
 
 ### Definition of Done
 
-A JIRA issue is considered ready to be moved to the `done` column only when the follwing checklist has been completed.
+As per the previous sections, all work on the project is performed against the spec as per a Github Issue ticket. A Github issue is considered ready to be moved to the `done` column only when the following checklist has been completed.
 
-* The complete acceptance criteria or task list on the JIRA ticket has been fulfilled. To be verified by a PO if appropriate.
+* The complete acceptance criteria or task list on the Issue ticket has been fulfilled. To be verified by a PO if appropriate.
 * The feature has appropriate unit and end to end tests.
 * The feature has been verified as working by a QA if appropriate.
 * All tests and checks on Github are passing.
 * The feature is up to date with the base branch.
-* The feature has had at least one peer reviewer and that they have approved the feature for release.
-* The feature has been merged and deployed into the base branch.
+* The feature has had at least two peer reviewers and that they have approved the feature for release.
+* The feature has been merged and deployed into the master branch and it has successfully deployed to the development environment.
 
 ## Code Style
 
