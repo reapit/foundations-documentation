@@ -58,13 +58,39 @@ It is important to note, the app is not live yet, both because as we in develope
 
 ### 4. Get your Client Id
 
-From the apps screen above, you will need to obtain your application's client id to auth
+From the Apps screen above, you will need to obtain your application's client id to authenticate your new app. To do this, click on the app to bring up the App Detail modal as above.
+
+![](../.gitbook/assets/screenshot-2020-02-16-at-13.45.15.png)
+
+The Client Id should now be visible. Keep this page open so you can copy the Client Id at the next step.
 
 ### 5. Scaffold your app
 
+Even if you intend to write your own app from scratch, we would recommend strongly using our React App Scaffolder as an initial playground until you feel comfortable working with the platform. There are more docs explaining the flavours of React App [here](web.md#react-app-scaffolder) but the basic steps are;
 
+First install globally both Yeoman and React App Scaffolder itself.
+
+`npm install yo @reapit/generator-react-app-scaffolder@latest -g`
+
+You may need to run this with the `sudo` prefix depending on your OS.
+
+Then;
+
+`yo @reapit/react-app-scaffolder`
+
+This will launch the scaffolder with the following options:
+
+![](../.gitbook/assets/screenshot-2020-02-16-at-13.48.28.png)
+
+Having entered the basic meta data for your app, ensure you enter the Client Id from step four before selecting the styling and state management solutions you want to work with. Hit return and the app will start building.
+
+![](../.gitbook/assets/screenshot-2020-02-16-at-13.49.21.png)
+
+This will launch an app at localhost:8080. You will be redirected again to Reapit Connect and then back to the app as an authenticated user.
+
+![](../.gitbook/assets/screenshot-2020-02-16-at-13.56.24.png)
 
 ### **6. Write some code!**
 
-
+You should now be good to go. The basic app structure and authentication are all set up to start building components and working with the platform API. 
 
