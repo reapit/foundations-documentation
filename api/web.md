@@ -283,9 +283,34 @@ const { AppModel } = require('@reapit/foundations-ts-definitions')
 
 ## React App Scaffolder
 
-A CLI application to get you started in the Reapit Marketplace with sensible but opinionated tooling and authentication out the box.
+A CLI application to get you started in the Reapit Marketplace with sensible but opinionated tooling and authentication out the box. The scaffolder asks for some basic meta information about your app then using templates generates an app based on the flavour of React you prefer.
 
-TODO - Waiting on the completed scaffolder
+Currently we support;
+
+* **State Management:** Redux or React Hooks / Context
+* **Styled Components:** Either Styled Components or CSS / Sass Modules
+
+Coming soon... Apollo GraphQL version!
+
+The app will be authenticated against Reapit Connect out the box and a basic logical skeleton flow for your app is provided. You also get Elements and in house scripts, unit tests, TS Definitions and other tooling for free. 
+
+### Usage
+
+First install globally both Yeoman and React App Scaffolder itself.
+
+`npm install yo @reapit/generator-react-app-scaffolder@latest -g`
+
+You may need to run this with the `sudo` prefix depending on your OS.
+
+Then;
+
+`yo @reapit/react-app-scaffolder`
+
+This will launch the scaffolder with the following options:
+
+![](../.gitbook/assets/screenshot-2020-02-16-at-11.59.58.png)
+
+When you have selected the correct config for you, your app will build, install dependencies and start a server on `localhost:8080` . You will then be prompted to enter your developer credentials at the Reapit Connect screen to get started.
 
 ## Config Manager
 
