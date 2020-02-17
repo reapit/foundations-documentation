@@ -9,5 +9,6 @@
 * [Open Source](open-source/README.md)
   * [Contributing](open-source/contributing.md)
   * [Packages](open-source/packages.md)
+* [What’s New](whats-new.md)
 * [Developer Portal](developer-portal.md)
 
