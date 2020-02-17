@@ -81,7 +81,7 @@ The Foundations platform uses [OpenID Connect](https://openid.net/connect/faq/) 
 Submitting your application to our Marketplace is the first step for it to be able to interact with our clients data. After you have [successfully submitted your app](https://dev.marketplace.reapit.cloud/developer/submit-app), you will be issued with a **client id** and **secret.** You can obtain these by clicking your app in the [My Apps](https://dev.marketplace.reapit.cloud/developer/apps) area of our developer portal.
 
 {% hint style="info" %}
-**For more information** on how to get started and register your application with our Marketplace, please see our[ developer portal guide](developer-portal.md).
+**For more information** on how to get started and register your application with our Marketplace, please see our[ developer portal guide](../developer-portal.md).
 {% endhint %}
 
 ### Customer installation

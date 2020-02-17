@@ -5,9 +5,9 @@
   * [Platform](api/api-documentation.md)
   * [Reapit Connect](api/reapit-connect.md)
   * [Web](api/web.md)
-  * [Developer Portal](api/developer-portal.md)
   * [Desktop](api/desktop-api.md)
 * [Open Source](open-source/README.md)
   * [Contributing](open-source/contributing.md)
   * [Packages](open-source/packages.md)
+* [Developer Portal](developer-portal.md)
 
