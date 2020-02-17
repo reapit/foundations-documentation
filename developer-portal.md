@@ -40,7 +40,7 @@ If your application is **user facing**, you should select "Authorization Code". 
 
 If you are developing a **server-side machine to machine** application such as a feed to another system, you should select "Client Credentials". You can find details on how these flow works in our [platform documentation](api/api-documentation.md#authentication).
 
-~~You then need to select an authentication flow. For web apps this is always "Authorization Code", since you will need your users to login via our OAuth service, Reapit Connect. You will need to register a main authenticated url for your app for Connect to return to, and a logout url for unauthenticated users.~~
+For the purposes of this example, because we are building a client side app, we will select "Authorization Code".
 
 ![](.gitbook/assets/screenshot-2020-02-16-at-13.40.37.png)
 
