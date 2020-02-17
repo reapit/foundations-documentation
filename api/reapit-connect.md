@@ -105,7 +105,7 @@ Once your application has successfully guided the user through the OAuth flow, y
 
 To make the exchange, send a `POST` request to the endpoint below with Content-type set to `application/x-www-form-urlencoded`:
 
-`https://dev.connect.reapit.cloud/oauth2/token`
+`https://dev.connect.reapit.cloud/token`
 
 | Request payload | Description |
 | :--- | :--- |
@@ -155,7 +155,7 @@ Once decoded, your application can inspect the claims that the id token includes
 
 You can also issue a `GET` request to the following endpoint to get information on the user. Be sure to include your access token:
 
- `https://dev.connect.reapit.cloud/oauth2/userInfo`
+ `https://dev.connect.reapit.cloud/userInfo`
 
 ### Using refresh tokens
 
@@ -163,7 +163,7 @@ Access tokens issued from Reapit Connect will expire after 60 minutes. Refresh t
 
 To use a refresh token, issue a `POST` request to the endpoint below with Content-type set to `application/x-www-form-urlencoded`:
 
-`https://dev.connect.reapit.cloud/oauth2/token`
+`https://dev.connect.reapit.cloud/token`
 
 | Request payload | Description |
 | :--- | :--- |
