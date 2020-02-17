@@ -103,7 +103,7 @@ A `code` parameter will be appended to the redirected URL, as well as any `state
 
 Once your application has successfully guided the user through the OAuth flow, you can extract the authorization code from the redirected URL. You are then able to use this code to exchange for JWT tokens for proof of authentication and access for Foundations resources. You can only attempt to exchange authorization codes once and they will expire 10 minutes after they have been issued. 
 
-To make the exchange, send a `POST` request to the endpoint below:
+To make the exchange, send a `POST` request to the endpoint below with Content-type set to `application/x-www-form-urlencoded`:
 
 `https://dev.connect.reapit.cloud/oauth2/token`
 
