@@ -38,7 +38,7 @@ You then need to select an OAuth Authentication flow:
 
 If your application is **user facing**, you should select "Authorization Code". This will allow you to use our hosted authentication service, [Reapit Connect](api/reapit-connect.md#overview). As part of this flow, you need will need to register one or more call back URLs and a log out URL to allow Reapit Connect to direct traffic back to your application in a secure way.
 
-If you are developing a **server-side machine to machine** application such as a feed to another system, you should select "Client Credentials". You can find details on how these flow works in our [platform documentation](api/api-documentation.md#authentication).
+If you are developing a **server-side machine to machine** application such as a feed to another system, you should select "Client Credentials". You can find details on how this flow works in our [platform documentation](api/api-documentation.md#authentication).
 
 For the purposes of this example, because we are building a client side app, we will select "Authorization Code".
 
