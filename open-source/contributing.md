@@ -137,7 +137,7 @@ The basic flow for all projects is that;
 
 * **On Pull Request:** Test, build and lint tasks run to ensure the branch is sound.
 * **On Pull Request Merge:** Test, build and lint tasks run as well as `release:dev` which will push the code to the relevant development environment for the project.
-* **On Release Tag:** Again, test, build and lint tasks run and the `release:prod` task runs to deploy the relevant tagged project. The release tag [should be raised here](https://github.com/reapit/foundations/releases) and be in the format `<<package>>_v<<version-number>>` to trigger the production workflow.
+* **On Release Tag:** Again, test, build and lint tasks run and the \`release:prod\` task runs to deploy the relevant tagged project. The release [tag should be raised here](https://github.com/reapit/foundations/releases) and be in the format `<<package>>_v<<version-number>>` to trigger the production workflow. For parallel deployments, you should wait for the first deployment passed checkout repository step and at that time you can continue to trigger the next deployment.
 
 Details of the development and production environments / deployments for each package [are listed here](packages.md).
 
@@ -158,6 +158,8 @@ As per the previous sections, all work on the project is performed against the s
 ### Linting & Formatting
 
 The vast majority of base code style is enforced by [ESLint](https://eslint.org/) with sensible community presets from [TSLint](https://palantir.github.io/tslint/) rules, and [Prettier](https://prettier.io/). The linter runs in a pre-commit hook on staged files with an auto-fix flag set to address any trivial issues. 
+
+If you want to run the lint command manually, you can do this from the root of the project by executing `yarn lint`
 
 In addition to the lint rules, please also where possible, stick to the contribution guidelines below. These rules should be kept in mind when reviewing Pull Requests.
 

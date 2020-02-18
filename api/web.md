@@ -100,10 +100,14 @@ In a typical app, you will need to do four things;
 3. Exchange the code for an access token, refresh token and id token.
 4. Maintain the session in the browser, refreshing it as the access token expires.
 
-The first issue is quite simple, render a button that redirects you to the Reapit Connect login screen. The login handler tells Cognito what my client id is \(from the process.env object in this case\), and the URL I have registered to redirect back to; in this case `window.location.origin`. You can see an example of this [here.](https://github.com/reapit/foundations/blob/master/packages/geo-diary/src/components/pages/login.tsx)
+The first issue is quite simple, render a button that redirects you to the Reapit Connect login screen. The login handler tells Cognito what my client id is \(from the process.env object in this case\), and the URL I have registered to redirect back to; in this case `window.location.origin`. You can see an example of this [here.](https://github.com/reapit/foundations/blob/master/packages/geo-diary/src/components/pages/login.tsx) 
+
+{% hint style="info" %}
+Although the links to our codebase refer to React apps, the cognito-auth module is totally agnostic of technology - they are just regular JavaScript methods.
+{% endhint %}
 
 ```jsx
-import { loginHandler } from '@reapit/cognito-auth'
+import { redirectToLogin } from '@reapit/cognito-auth'
 
 const loginHandler = () =>
   redirectToLogin(
@@ -177,14 +181,11 @@ export const defaultState = (): AuthState => {
 When I next hit my private route, the `hasSession` flag is set to true and I can load my component. When I need to authenticate against the API, I simply call a method called `getSession` that will handle all the business logic to manage, code for token exchange \(point 3\), and when my session expires, refreshing the  access token. You can see the below example in action [here.](https://github.com/reapit/foundations/blob/master/packages/geo-diary/src/utils/session.ts)
 
 ```typescript
-import store from '@/core/store'
 import { authLoginSuccess, authLogout } from '@/actions/auth'
 import { getSession } from '@reapit/cognito-auth'
-import { COOKIE_SESSION_KEY_GEO_DIARY } from '../constants/api'
+import { COOKIE_SESSION_KEY_GEO_DIARY } from '@/constants/api'
 
-export const getAccessToken = async (): Promise<string | null> => {
-  // Retrieve my session from Redux
-  const { loginSession, refreshSession } = store.state.auth
+export const getAccessToken = async ({ loginSession, refreshSession }): Promise<string | null> => {
   // Call get session with my current login session if I have one, my refresh session
   // from the last step and my unique cookie key, a constant
   const session = await getSession(loginSession, refreshSession, COOKIE_SESSION_KEY)
@@ -192,12 +193,13 @@ export const getAccessToken = async (): Promise<string | null> => {
   // Returns a new session, sets to store, returns the access token I need for my
   // API call and so the process continues
   if (session) {
-    store.dispatch(authLoginSuccess(session))
+    // call my success method
+    authLoginSuccess(session)
     return session.accessToken
   }
 
   // I did not receive a session, call my logout method
-  store.dispatch(authLogout())
+  authLogout()
   return null
 }
 

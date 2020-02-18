@@ -58,8 +58,8 @@ An anti-money laundering app, aimed at helping negotiators gather identity check
 
 * **Tech Stack:** React, Redux, React Router, Elements, Cognito Auth, Jest, Sass / CSS Modules.
 * **Cloud Services:** S3, CloudFront, AWS Cognito, SecretsManager, Sentry
-* **Production:** [https://dev.aml-app.reapit.cloud](https://dev.aml-app.reapit.cloud)
-* **Development:** [https://aml-app.reapit.cloud](https://aml-app.reapit.cloud)
+* **Development:** [https://dev.aml-app.reapit.cloud](https://dev.aml-app.reapit.cloud)
+* **Production:** [https://aml-app.reapit.cloud](https://aml-app.reapit.cloud)
 
 ## Geo Diary
 
@@ -67,8 +67,8 @@ An app for negotiators on the go. It geo locates the user and assists them with 
 
 * **Tech Stack:** React, Redux, React Router, Elements, Cognito Auth, Jest, Sass / CSS Modules.
 * **Cloud Services:** S3, CloudFront, AWS Cognito, SecretsManager, Sentry
-* **Production:** [https://dev.geo-diary-app.reapit.cloud](https://dev.geo-diary-app.reapit.cloud)
-* **Development:** [https://geo-diary-app.reapit.cloud](https://geo-diary-app.reapit.cloud)
+* **Development:** [https://dev.geo-diary-app.reapit.cloud](https://dev.geo-diary-app.reapit.cloud)
+* **Production:** [https://geo-diary-app.reapit.cloud](https://geo-diary-app.reapit.cloud)
 
 ## Config Manager
 
@@ -84,8 +84,8 @@ Fork of AML App, to extend functionality for Lifetime Legal client.
 
 * **Tech Stack:** React, Redux, React Router, Elements, Cognito Auth, Jest, Sass / CSS Modules.
 * **Cloud Services:** S3, CloudFront, AWS Cognito, SecretsManager, Sentry
-* **Production:** [https://dev.lifetime-legal-app.reapit.cloud](https://dev.lifetime-legal-app.reapit.cloud)
-* **Development:** [https://lifetime-legal-app.reapit.cloud](https://lifetime-legal-app.reapit.cloud)
+* **Development:** [https://dev.lifetime-legal-app.reapit.cloud](https://dev.lifetime-legal-app.reapit.cloud)
+* **Production:** [https://lifetime-legal-app.reapit.cloud](https://lifetime-legal-app.reapit.cloud)
 
 ## Cognito Custom Mail Lambda
 

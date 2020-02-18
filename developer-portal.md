@@ -70,9 +70,15 @@ From the Apps screen above, you will need to obtain your application's client id
 
 The Client Id should now be visible. Keep this page open so you can copy the Client Id at the next step.
 
-### 5. Scaffold your app
+### 5. **Write some code!**
 
-Even if you intend to write your own app from scratch, we would recommend strongly using our React App Scaffolder as an initial playground until you feel comfortable working with the platform. There are more docs explaining the flavours of React App [here](api/web.md#react-app-scaffolder) but the basic steps are;
+The first step with your application will be to authenticate it against our Platform APIs. To do this you will need to use our authentication service [Reapit Connec](api/reapit-connect.md)t which supports the OAuth protocol. To make this easier on the client side, we have some JavaScript helpers you might find useful in our [Cognito Auth ](api/web.md#cognito-auth)module, however, if you are familiar with OAuth, you can just roll your own.
+
+If you intend to use React for your Web Application, or are just interested in how we handle client side authentication at Reapit, you may want to read on as this article continues with our [React App Scaffolder.](api/web.md#react-app-scaffolder) 
+
+### 6. Scaffolding an app \(optional\)
+
+Even if you intend to write your own React app from scratch, it is worth scaffolding an app as an initial playground until you feel comfortable working with the platform. There are more docs explaining the flavours of React App [here](api/web.md#react-app-scaffolder) but the basic steps are;
 
 First install globally both Yeoman and React App Scaffolder itself.
 
@@ -95,8 +101,6 @@ Having entered the basic meta data for your app, ensure you enter the Client Id 
 This will launch an app at localhost:8080. You will be redirected again to Reapit Connect and then back to the app as an authenticated user.
 
 ![](.gitbook/assets/screenshot-2020-02-16-at-13.56.24.png)
-
-### **6. Write some code!**
 
 You should now be good to go. The basic app structure and authentication are all set up to start building components and working with the platform API. 
 
