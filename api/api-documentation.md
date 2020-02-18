@@ -72,6 +72,12 @@ In addition to the relevant response code, unsuccessful requests will return a J
 **All responses** are issued with a unique request id, regardless of whether they were successful or not. You can find this in the `x-amzn-RequestId` response header. If you [report a bug](https://dev.marketplace.reapit.cloud/developer/help) be sure to include this id to allow us to examine your problem in greater depth.
 {% endhint %}
 
+### Rate limits
+
+We apply rate limits on the API calls an application can make within a given time period. If this limit is exceeded the app will be throttled and API requests will fail.
+
+At present, your application is able to make up to 20 requests per second and up to 250,000 requests per day. If it exceeds those limits, your app will be presented with `429 Too Many Requests` responses.
+
 ## Authentication
 
 The Foundations platform uses [OpenID Connect](https://openid.net/connect/faq/) for authenticating requests. OpenID Connect is a protocol for authenticating users, built on top of the OAuth 2.0 specification.
@@ -103,14 +109,14 @@ We support the use of two different OAuth 2.0 grants for applications built on o
 
 To obtain tokens for your application to interact with our protected endpoints, you must send a `POST` request to our token endpoint, as below:
 
-`https://dev.connect.reapit.cloud/oauth2/token`
+`https://dev.connect.reapit.cloud/token`
 
 | Request payload | Description |
 | :--- | :--- |
 | `client_id` | The unique client id that was issued to your application after registration |
 | `grant_type` | Must be set to `client_credentials` |
 
-Additionally, the `Authorization` header should be set to `Basic <base64 secret>`where `<base64 secret>` is the **base64 representation of the client id and secret concatenated with a colon**. You can obtain **client id** and **secret** by clicking your app in the [My Apps](https://dev.marketplace.reapit.cloud/developer/apps) area of our developer portal.
+Content-type must be set to `application/x-www-form-urlencoded` and the `Authorization` header should be set to `Basic <base64 secret>`where `<base64 secret>` is the **base64 representation of the client id and secret concatenated with a colon**. You can obtain **client id** and **secret** by clicking your app in the [My Apps](https://dev.marketplace.reapit.cloud/developer/apps) area of our developer portal.
 
 If your request is properly formed and valid, you'll receive a response similar to below.
 
