@@ -38,12 +38,12 @@ Your users will be presented with a unified login screen from a brand they alrea
 
 Registering your app in our Marketplace is the first step for it to be able to interact with Reapit customer data.
 
-Our [application submission page](https://dev.marketplace.reapit.cloud/developer/submit-app) will capture information about your application, including the details required for integration with Reapit Connect. 
+Our [application submission page](https://marketplace.reapit.cloud/developer/submit-app) will capture information about your application, including the details required for integration with Reapit Connect. 
 
 * Select **Authenticate with Reapit Connect** as your required authentication flow ****
 * Provide one or more **redirect URLs** and a **logout URL** to define the acceptable URLs that Reapit Connect is permitted to redirect back to after a successful authentication or logout
 
-Once you have successfully registered, you will be issued with a client id. You can obtain this by clicking your app in the [My Apps](https://dev.marketplace.reapit.cloud/developer/apps) area of our developer portal.
+Once you have successfully registered, you will be issued with a client id. You can obtain this by clicking your app in the [My Apps](https://marketplace.reapit.cloud/developer/apps) area of our developer portal.
 
 ### Customer installation
 

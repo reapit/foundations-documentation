@@ -18,7 +18,7 @@ The core frontend of the Reapit Foundations platform. Contains all functionality
 * **Tech Stack:** React, Redux, React Router, Elements, Cognito Auth, Jest, Cypress, Sass / CSS Modules.
 * **Cloud Services:** S3, CloudFront, AWS Cognito, SecretsManager, Sentry
 * **Production:** [https://marketplace.reapit.cloud](https://marketplace.reapit.cloud)
-* **Development:** [https://dev.marketplace.reapit.cloud](https://dev.marketplace.reapit.cloud) ****
+* **Development:** [https://marketplace.reapit.cloud](https://marketplace.reapit.cloud) ****
 
 ## Elements
 

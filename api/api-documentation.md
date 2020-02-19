@@ -12,12 +12,12 @@ The Foundations REST API will in-time replace our existing REST and SOAP web ser
 
 The Foundations API is organised around [REST](http://en.wikipedia.org/wiki/Representational_State_Transfer). Our API has predictable resource-oriented URLs using standard HTTP response codes and verbs. All requests and responses, including errors, are [JSON-encoded](http://www.json.org/).
 
-You can immediately start testing our APIs in [sandbox mode](api-documentation.md#sandbox-mode) by using our [Interactive API Explorer](https://dev.marketplace.reapit.cloud/developer/swagger). Please see our [help page](https://dev.marketplace.reapit.cloud/developer/help) for support and information on preview / upcoming changes. 
+You can immediately start testing our APIs in [sandbox mode](api-documentation.md#sandbox-mode) by using our [Interactive API Explorer](https://marketplace.reapit.cloud/developer/swagger). Please see our [help page](https://marketplace.reapit.cloud/developer/help) for support and information on preview / upcoming changes. 
 
 The current version of our APIs is **2020-01-31.**
 
 {% hint style="success" %}
-**Our Platform is in** **alpha** and we'll be continually building new features during this phase. Please see our [help section](https://dev.marketplace.reapit.cloud/developer/help) to view our milestones or to submit a feature request or bug.
+**Our Platform is in** **alpha** and we'll be continually building new features during this phase. Please see our [help section](https://marketplace.reapit.cloud/developer/help) to view our milestones or to submit a feature request or bug.
 {% endhint %}
 
 ## REST
@@ -69,7 +69,7 @@ In addition to the relevant response code, unsuccessful requests will return a J
 | `errors` | A collection of validation issues with the provided payload. Only populated for `422 Unprocessable Entity` responses. |
 
 {% hint style="info" %}
-**All responses** are issued with a unique request id, regardless of whether they were successful or not. You can find this in the `x-amzn-RequestId` response header. If you [report a bug](https://dev.marketplace.reapit.cloud/developer/help) be sure to include this id to allow us to examine your problem in greater depth.
+**All responses** are issued with a unique request id, regardless of whether they were successful or not. You can find this in the `x-amzn-RequestId` response header. If you [report a bug](https://marketplace.reapit.cloud/developer/help) be sure to include this id to allow us to examine your problem in greater depth.
 {% endhint %}
 
 ### Rate limits
@@ -84,7 +84,7 @@ The Foundations platform uses [OpenID Connect](https://openid.net/connect/faq/) 
 
 ### Registering your app
 
-Submitting your application to our Marketplace is the first step for it to be able to interact with our clients data. After you have [successfully submitted your app](https://dev.marketplace.reapit.cloud/developer/submit-app), you will be issued with a **client id** and **secret.** You can obtain these by clicking your app in the [My Apps](https://dev.marketplace.reapit.cloud/developer/apps) area of our developer portal.
+Submitting your application to our Marketplace is the first step for it to be able to interact with our clients data. After you have [successfully submitted your app](https://marketplace.reapit.cloud/developer/submit-app), you will be issued with a **client id** and **secret.** You can obtain these by clicking your app in the [My Apps](https://marketplace.reapit.cloud/developer/apps) area of our developer portal.
 
 {% hint style="info" %}
 **For more information** on how to get started and register your application with our Marketplace, please see our[ developer portal guide](../developer-portal.md).
@@ -116,7 +116,7 @@ To obtain tokens for your application to interact with our protected endpoints, 
 | `client_id` | The unique client id that was issued to your application after registration |
 | `grant_type` | Must be set to `client_credentials` |
 
-Content-type must be set to `application/x-www-form-urlencoded` and the `Authorization` header should be set to `Basic <base64 secret>`where `<base64 secret>` is the **base64 representation of the client id and secret concatenated with a colon**. You can obtain **client id** and **secret** by clicking your app in the [My Apps](https://dev.marketplace.reapit.cloud/developer/apps) area of our developer portal.
+Content-type must be set to `application/x-www-form-urlencoded` and the `Authorization` header should be set to `Basic <base64 secret>`where `<base64 secret>` is the **base64 representation of the client id and secret concatenated with a colon**. You can obtain **client id** and **secret** by clicking your app in the [My Apps](https://marketplace.reapit.cloud/developer/apps) area of our developer portal.
 
 If your request is properly formed and valid, you'll receive a response similar to below.
 
@@ -153,7 +153,7 @@ Our servers will validate this token and fulfill the request, subject to your ap
 
 Requests issued with access codes gained from the client credentials flow must also indicate which customers data they wish to interact with. 
 
-You must additionally include a `reapit-customer` header in your request so that it can be fulfilled appropriately. The header should be set to the customers unique id which becomes available to view after a customer has chosen to install your application. This information is available in the [Analytics](https://dev.marketplace.reapit.cloud/developer/analytics) area of the developer portal.
+You must additionally include a `reapit-customer` header in your request so that it can be fulfilled appropriately. The header should be set to the customers unique id which becomes available to view after a customer has chosen to install your application. This information is available in the [Analytics](https://marketplace.reapit.cloud/developer/analytics) area of the developer portal.
 
 If a customer chooses to uninstall your application then your access to their data will be revoked.
 
@@ -167,7 +167,7 @@ To access the sandbox, you just need to be registered as a developer on our Port
 * You can use **client credentials flow** by providing `SBOX` as your `reapit-customer` request header
 
 {% hint style="info" %}
-**For a quick start experience**, our [interactive API explorer](https://dev.marketplace.reapit.cloud/developer/swagger) is connected to the sandbox automatically
+**For a quick start experience**, our [interactive API explorer](https://marketplace.reapit.cloud/developer/swagger) is connected to the sandbox automatically
 {% endhint %}
 
 ## Issuing requests
@@ -178,7 +178,7 @@ The Foundations platform exclusively works with UTC date times to allow us to pr
 
 Our APIs enforce that any date time information that your application issues to us adheres to the [ISO-8601](https://www.iso.org/iso-8601-date-and-time-format.html) format. If you provide a request body, query string or header that does not adhere to this standard, you will receive a validation error reporting the problem. Any date times issued from our endpoints will be returned to you in the same format. 
 
-Some of the fields we provide are date-only and have no time component. Date only fields will not accept a time component in a request and will not include a time component in their response. You can see which fields these are by examining the model documentation and example responses provided by our [Interactive API Explorer](https://dev.marketplace.reapit.cloud/developer/swagger). 
+Some of the fields we provide are date-only and have no time component. Date only fields will not accept a time component in a request and will not include a time component in their response. You can see which fields these are by examining the model documentation and example responses provided by our [Interactive API Explorer](https://marketplace.reapit.cloud/developer/swagger). 
 
 ```javascript
 {
@@ -293,7 +293,7 @@ Whenever a new version is released, the previous version enters its sunset perio
 At the end of a versions sunset period it will become depreciated and you will be required to adopt more recent version. You will be notified if your application is using a version that is soon to be depreciated.
 
 {% hint style="info" %}
-**Stay up to date:** please see the [help section](https://dev.marketplace.reapit.cloud/developer/help) of our developer portal for information on recent and upcoming changes.
+**Stay up to date:** please see the [help section](https://marketplace.reapit.cloud/developer/help) of our developer portal for information on recent and upcoming changes.
 {% endhint %}
 
 ## Metadata
