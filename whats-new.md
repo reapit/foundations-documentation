@@ -32,7 +32,7 @@ So, this week is the start of the very much anticipated Alpha launch. With that 
 
 ### GitBook Integration
 
-Those of you familiar with [GitBook, ](https://www.gitbook.com)will know how they are the leader in the industry for organising and detailing documentation. We’ve used the best of the best to ensure you can find and reference what you need as easily as possible. We know the importance of documentation and want you to have the right tools. You can access the documentation from within the developers' portal from the '[Docs](https://marketplace.reapit.cloud/developer/api-docs)' page. 
+Those of you familiar with [GitBook, ](https://www.gitbook.com)will know they are the leader in the industry for organising and detailing technical documentation. We’ve used the best of the best to ensure you can find and reference what you need as easily as possible. We know the importance of documentation and want you to have the right tools. You can access the documentation from within the developers' portal from the '[Docs](https://marketplace.reapit.cloud/developer/api-docs)' page. 
 
 ![](.gitbook/assets/gitbook.png)
 
@@ -46,11 +46,11 @@ Available for a **limited time only**, direct access to our Foundations Platform
 
 ![](.gitbook/assets/image%20%282%29.png)
 
-From every issue raised through to completion, you’ll have full visibility on what we’re doing. We want you to a part of this exciting new platform, which is why we’ve opened sourced our code, giving you the ability to submit feature requests or to raise bugs directly on our Foundation Repo and track the progress.
+From every issue raised through to completion, you’ll have full visibility on what we’re doing. We want you to be a part of this exciting new platform, which is why we’ve opened sourced not only our cloud applications but also our developer portal! Giving you the ability to submit feature requests or to raise bugs directly on our Foundation Repo and track the progress.
 
-These are only a but a few of the features we have included with more still yet to come.    
+These are only a but a few of the features we have included with many more still yet to come.    
   
-If you're interested,  we will also soon be including a release note section, giving you detailed information on everything that has been changed, fixed or showcasing something new.    
+If you're interested, we will also soon be including a release note section, giving you detailed information on everything that has been changed, fixed or showcasing something new.    
 
 
 #### Finally... 
