@@ -15,20 +15,20 @@ We want to share with you all we can in order to help you develop and interact w
 
 So, let's recap on a few things that we've been up to since the initial launch in Nov 19…
 
-* Open sourced code. ✔
-* Easy to understand and follow documentation. ✔
-* Interactive APIs. ✔
-* Storybook of usable components. ✔
-* Feature requesting. ✔
+* Open sourced code ✔
+* Easy to understand and follow documentation ✔
+* Interactive APIs ✔
+* Single-sign on and identity service ✔
+* New cloud infrastructure ✔
+* UI Storybook of usable components ✔
+* Feature requesting ✔
 * Public Roadmap. ✔
 
- 
+I think it's fair to say, we’ve been busy!
 
-I think it's fair to say, we’ve been busy.
+Our Developers have been working incredibly hard and we are all excited to see Reapit Foundations come to life. Each week, I’ll be featuring the best of our releases and talking about the exciting new features we have introduced into the Foundations Platform, as well as sharing updates on our APIs as they happen.
 
-Our Developers have been working incredibly hard and we are all excited to see Reapit Foundations come to life. Each week, I’ll be featuring the best of our releases and talking about the exciting new features we have introduced into the Foundations Platform, as well as sharing updates on our API’s as they happen.
-
-So, this week is the start of the very much anticipated Alpha launch. With that in mind, let me talk you through just a few of the features our Developer Portal has to offer:
+So, this week is the start of the very much anticipated Alpha launch. With that in mind, let me talk you through just a few of the features our new Developer Portal has to offer:
 
 ### GitBook Integration
 
