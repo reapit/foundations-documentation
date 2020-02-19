@@ -37,7 +37,7 @@ Our APIs support the following HTTP request methods:
 
 ### Response codes
 
-We use standardized HTTP status codes to indicate the outcome of a request. Below is a listing of the codes our APIs may return and their meaning.
+We use standardised HTTP status codes to indicate the outcome of a request. Below is a listing of the codes our APIs may return and their meaning.
 
 * Codes in the `2xx` range indicate that the request was fulfilled successfully. 
 * Codes in the `4xx` range indicate an error caused by the information provided.
@@ -49,8 +49,8 @@ We use standardized HTTP status codes to indicate the outcome of a request. Belo
 | `201 Created` | The request has been fulfilled and a new resource has been created.  |
 | `204 No Content` | The request has been fulfilled but there is no need to send any data back.  |
 | `400 Bad Request` | The request was not understood by the server. This is generally due to bad request syntax. |
-| `401 Unauthorized` | The provided authentication credentials are incorrect or not present. Generally, this is due to the lack of an "Authorization" header |
-| `403 Forbidden` | The authentication credentials request do not provide sufficient scope to fulfill the request |
+| `401 Unauthorized` | The provided authentication credentials are incorrect or not present. Generally, this is due to the lack of an "Authorisation" header |
+| `403 Forbidden` | The authentication credentials request do not provide sufficient scope to fulfil the request |
 | `404 Not Found` | The requested resource was not found. |
 | `412 Precondition Failed` | The was not fulfilled because preconditions provided by the client could not be met. Usually occurs [optimistic concurrency control ](api-documentation.md#optimistic-concurrency)rejects the request.    |
 | `422 Unprocessable Entity` | A validation error has occurred. The error response body will provide additional information on the failure\(s\). |
@@ -84,7 +84,7 @@ The Foundations platform uses [OpenID Connect](https://openid.net/connect/faq/) 
 
 ### Registering your app
 
-Submitting your application to our Marketplace is the first step for it to be able to interact with our clients data. After you have [successfully submitted your app](https://dev.marketplace.reapit.cloud/developer/submit-app), you will be issued with a **client id** and **secret.** You can obtain these by clicking your app in the [My Apps](https://dev.marketplace.reapit.cloud/developer/apps) area of our developer portal.
+Submitting your application to our Marketplace is the first step for it to be able to interact with our clients' data. After you have [successfully submitted your app](https://dev.marketplace.reapit.cloud/developer/submit-app), you will be issued with a **client id** and **secret.** You can obtain these by clicking your app in the [My Apps](https://dev.marketplace.reapit.cloud/developer/apps) area of our developer portal.
 
 {% hint style="info" %}
 **For more information** on how to get started and register your application with our Marketplace, please see our[ developer portal guide](../developer-portal.md).
@@ -92,9 +92,9 @@ Submitting your application to our Marketplace is the first step for it to be ab
 
 ### Customer installation
 
-You can immediately access our [sandbox environment](https://foundations-documentation.reapit.cloud/api/api-documentation#sandbox-mode) but in order to be authorized to access a customers data, they must choose to install it.
+You can immediately access our [sandbox environment](https://foundations-documentation.reapit.cloud/api/api-documentation#sandbox-mode) but in order to be authorised to access a customer's data, they must choose to install it.
 
-Customer administrators are able to control your applications access to their companies data by opted to install it once it has been listed in our Marketplace. As part of this process, they will grant your application with any permissions \(scopes\) it requires to interact with Foundations API endpoints.
+Customer administrators are able to control your applications access to their companies data by opting to install it once it has been listed in our Marketplace. As part of this process, they will grant your application with any permissions \(scopes\) it requires to interact with Foundations API endpoints.
 
 ### OAuth 2.0 Grants
 
@@ -102,7 +102,7 @@ We support the use of two different OAuth 2.0 grants for applications built on o
 
 | Grant | Description |
 | :--- | :--- |
-| Authorization code flow | For use by client and server side applications that have a user in context. Allows the implementing application to be authenticated on the behalf of the user. **To use this grant, please see the documentation for our** [**Reapit Connect**](reapit-connect.md#overview) **service.** |
+| Authorisation code flow | For use by client and server side applications that have a user in context. Allows the implementing application to be authenticated on the behalf of the user. **To use this grant, please see the documentation for our** [**Reapit Connect**](reapit-connect.md#overview) **service.** |
 | Client credentials flow | For use by server side machine to machine applications that do not have a user in context. Allows the implementing application to be authenticated on behalf of itself. |
 
 ### Client credentials flow
@@ -147,7 +147,7 @@ Access tokens \(also known as bearer tokens\) are designed to provide your appli
 
 `Authorization: Bearer <your access token>`
 
-Our servers will validate this token and fulfill the request, subject to your application application requesting the relevant endpoint scope during registration.
+Our servers will validate this token and fulfil the request, subject to your application application requesting the relevant endpoint scope during registration.
 
 ### Accessing customer data
 
@@ -174,7 +174,7 @@ To access the sandbox, you just need to be registered as a developer on our Port
 
 ### Timestamps
 
-The Foundations platform exclusively works with UTC date times to allow us to present a uniform interface and ensure that behavior remains predictable, regardless of your application or user timezone.
+The Foundations platform exclusively works with UTC date times to allow us to present a uniform interface and ensure that behaviour remains predictable, regardless of your application or user timezone.
 
 Our APIs enforce that any date time information that your application issues to us adheres to the [ISO-8601](https://www.iso.org/iso-8601-date-and-time-format.html) format. If you provide a request body, query string or header that does not adhere to this standard, you will receive a validation error reporting the problem. Any date times issued from our endpoints will be returned to you in the same format. 
 
@@ -253,7 +253,7 @@ In some systems, when multiple systems perform updates at the same time without 
 
 We use [entity tags](https://tools.ietf.org/html/rfc7232#section-2.3) as an indicator of the current version of any resource returned from our APIs and whenever a singular representation is served by any of our `GET` endpoints, it will include `eTag` in the response header. For convenience, we also include this as an `_eTag` attribute in the response for each object.
 
-This gives both client and server a means of understanding the version of a particular resource an application has received. Subsequently when a resource is updated, it's `eTag` value will also be updated.
+This gives both client and server a means of understanding the version of a particular resource an application has received. Subsequently when a resource is updated, its `eTag` value will also be updated.
 
 To ensure that updates aren't lost, you must include an `If-Match` header in your `PATCH` request containing the `eTag` value exactly as you received it **including quotation marks.** The server will then compare its version of the resource with the `eTag` you provided.
 
@@ -268,11 +268,11 @@ If rejected, you need to retrieve the latest version of the resource and replay 
 
 ## Versioning
 
-As we evolve our platform, new features will be added and fixes will be made. We categorize changes in two ways: **breaking** and **non-breaking** changes. We make every effort to implement changes as non-breaking wherever possible, however, there are sometimes situations that require this. 
+As we evolve our platform, new features will be added and fixes will be made. We categorise changes in two ways: **breaking** and **non-breaking** changes. We make every effort to implement changes as non-breaking wherever possible, however, there are sometimes situations that require this. 
 
 Whenever a breaking change is introduced into our platform we release a new, dated version. The current version is **2020-01-31.** 
 
-All requests should indicate the version that should be used to fulfill them. You can do this by including the header `api-version` set to the dated version required.  
+All requests should indicate the version that should be used to fulfil them. You can do this by including the header `api-version` set to the dated version required.  
 
 ### Breaking changes
 
