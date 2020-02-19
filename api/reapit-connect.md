@@ -18,11 +18,11 @@ Reapit Connect removes the overhead of having to build and maintain a user crede
 
 ### **Security**
 
-Our identity provision is an implementation of OpenId Connect, the defacto industry standard for authentication and authorization for web and mobile applications. Simply put, you don't need to worry about securely capturing or storing user credentials - we do that part for you. 
+Our identity provision is an implementation of OpenId Connect, the defacto industry standard for authentication and authorisation for web and mobile applications. Simply put, you don't need to worry about securely capturing or storing user credentials - we do that part for you. 
 
 ### Single sign on
 
-Reapit Connect supports single sign on \(SSO\) to allow authenticated sessions to be shared between any application using Reapit Connect to manage it's authentication. The experience of interacting with your application is streamlined as users aren't re-prompted for their credentials.    
+Reapit Connect supports single sign on \(SSO\) to allow authenticated sessions to be shared between any application using Reapit Connect to manage its authentication. The experience of interacting with your application is streamlined as users aren't re-prompted for their credentials.
 
 ### Cross platform
 
@@ -105,7 +105,7 @@ Once your application has successfully guided the user through the OAuth flow, y
 
 To make the exchange, send a `POST` request to the endpoint below with Content-type set to `application/x-www-form-urlencoded`:
 
-`https://dev.connect.reapit.cloud/oauth2/token`
+`https://dev.connect.reapit.cloud/token`
 
 | Request payload | Description |
 | :--- | :--- |
@@ -155,15 +155,15 @@ Once decoded, your application can inspect the claims that the id token includes
 
 You can also issue a `GET` request to the following endpoint to get information on the user. Be sure to include your access token:
 
- `https://dev.connect.reapit.cloud/oauth2/userInfo`
+ `https://dev.connect.reapit.cloud/userInfo`
 
 ### Using refresh tokens
 
 Access tokens issued from Reapit Connect will expire after 60 minutes. Refresh tokens provide your application with a means of retrieving a new set of tokens without requiring an interaction from the user. They are long lived and will continue to function until they are revoked. 
 
-To use a refresh token, issue a `POST` request to the endpoint below:
+To use a refresh token, issue a `POST` request to the endpoint below with Content-type set to `application/x-www-form-urlencoded`:
 
-`https://dev.connect.reapit.cloud/oauth2/token`
+`https://dev.connect.reapit.cloud/token`
 
 | Request payload | Description |
 | :--- | :--- |
