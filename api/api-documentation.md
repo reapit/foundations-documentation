@@ -12,7 +12,7 @@ The Foundations REST API will in-time replace our existing REST and SOAP web ser
 
 The Foundations API is organised around [REST](http://en.wikipedia.org/wiki/Representational_State_Transfer). Our API has predictable resource-oriented URLs using standard HTTP response codes and verbs. All requests and responses, including errors, are [JSON-encoded](http://www.json.org/).
 
-You can immediately start testing our APIs in [sandbox mode](api-documentation.md#sandbox-mode) by using our [Interactive API Explorer](https://marketplace.reapit.cloud/developer/swagger). Please see our [help page](https://marketplace.reapit.cloud/developer/help) for support and information on preview / upcoming changes.
+You can immediately start testing our APIs in [sandbox mode](api-documentation.md#sandbox-mode) by using our [Interactive API Explorer](https://marketplace.reapit.cloud/developer/swagger). Please see our [help page](https://marketplace.reapit.cloud/developer/help) for support and information on preview / upcoming changes. 
 
 The current version of our APIs is **2020-01-31.**
 
@@ -24,7 +24,7 @@ The current version of our APIs is **2020-01-31.**
 
 ### Request methods
 
-Our APIs present a uniform interface for performing CRUD \(create, retrieve, update, delete\) operations. Each endpoint adheres to REST guidelines to map the correct verb to the operation being performed.
+Our APIs present a uniform interface for performing CRUD \(create, retrieve, update, delete\) operations. Each endpoint adheres to REST guidelines to map the correct verb to the operation being performed. 
 
 Our APIs support the following HTTP request methods:
 
@@ -46,15 +46,15 @@ We use standardized HTTP status codes to indicate the outcome of a request. Belo
 | Code | Description |
 | :--- | :--- |
 | `200 OK` | The request has been fulfilled. |
-| `201 Created` | The request has been fulfilled and a new resource has been created. |
-| `204 No Content` | The request has been fulfilled but there is no need to send any data back. |
+| `201 Created` | The request has been fulfilled and a new resource has been created.  |
+| `204 No Content` | The request has been fulfilled but there is no need to send any data back.  |
 | `400 Bad Request` | The request was not understood by the server. This is generally due to bad request syntax. |
 | `401 Unauthorized` | The provided authentication credentials are incorrect or not present. Generally, this is due to the lack of an "Authorization" header |
 | `403 Forbidden` | The authentication credentials request do not provide sufficient scope to fulfill the request |
 | `404 Not Found` | The requested resource was not found. |
-| `412 Precondition Failed` | The was not fulfilled because preconditions provided by the client could not be met. Usually occurs [optimistic concurrency control ](api-documentation.md#optimistic-concurrency)rejects the request. |
+| `412 Precondition Failed` | The was not fulfilled because preconditions provided by the client could not be met. Usually occurs [optimistic concurrency control ](api-documentation.md#optimistic-concurrency)rejects the request.    |
 | `422 Unprocessable Entity` | A validation error has occurred. The error response body will provide additional information on the failure\(s\). |
-| `429 Too Many Requests` | The request was not accepted because the application has exceeded the rate limit. |
+| `429 Too Many Requests` | The request was not accepted because the application has exceeded the rate limit.  |
 | `500 Internal Error` | The request triggered an unexpected error which will be logged and investigated. |
 
 ### Errors
@@ -138,12 +138,12 @@ Content-Type: application/json
 | `token_type` | The type of tokens issued. Will always be set to `bearer` |
 
 {% hint style="danger" %}
-**Client credentials flow** must not be used for applications that are client side only. A server side component is required to be able to safely store credentials.
+**Client credentials flow** must not be used for applications that are client side only. A server side component is required to be able to safely store credentials. 
 {% endhint %}
 
 ### Using access tokens
 
-Access tokens \(also known as bearer tokens\) are designed to provide your application with access to protected resources. Once you have been issued an access token from our token endpoint, your application can access Foundations APIs by including it in a`Authorization` header, prefixed with `Bearer`
+Access tokens \(also known as bearer tokens\) are designed to provide your application with access to protected resources. Once you have been issued an access token from our token endpoint, your application can access Foundations APIs by including it in a`Authorization` header, prefixed with `Bearer` 
 
 `Authorization: Bearer <your access token>`
 
@@ -151,7 +151,7 @@ Our servers will validate this token and fulfill the request, subject to your ap
 
 ### Accessing customer data
 
-Requests issued with access codes gained from the client credentials flow must also indicate which customers data they wish to interact with.
+Requests issued with access codes gained from the client credentials flow must also indicate which customers data they wish to interact with. 
 
 You must additionally include a `reapit-customer` header in your request so that it can be fulfilled appropriately. The header should be set to the customers unique id which becomes available to view after a customer has chosen to install your application. This information is available in the [Analytics](https://marketplace.reapit.cloud/developer/analytics) area of the developer portal.
 
@@ -159,9 +159,9 @@ If a customer chooses to uninstall your application then your access to their da
 
 ## Sandbox mode
 
-You can use the Foundations APIs in Sandbox mode which provides a set of demonstration data that can be interacted with without requiring a customer to install your application. Sandbox mode supports processing of all read and write requests so that you can build and test in confidence without impacting customer data.
+You can use the Foundations APIs in Sandbox mode which provides a set of demonstration data that can be interacted with without requiring a customer to install your application. Sandbox mode supports processing of all read and write requests so that you can build and test in confidence without impacting customer data. 
 
-To access the sandbox, you just need to be registered as a developer on our Portal.
+To access the sandbox, you just need to be registered as a developer on our Portal. 
 
 * You can use **authorization code flow** by providing your developer portal credentials to our [Reapit Connect](reapit-connect.md#overview) service
 * You can use **client credentials flow** by providing `SBOX` as your `reapit-customer` request header
@@ -176,9 +176,9 @@ To access the sandbox, you just need to be registered as a developer on our Port
 
 The Foundations platform exclusively works with UTC date times to allow us to present a uniform interface and ensure that behavior remains predictable, regardless of your application or user timezone.
 
-Our APIs enforce that any date time information that your application issues to us adheres to the [ISO-8601](https://www.iso.org/iso-8601-date-and-time-format.html) format. If you provide a request body, query string or header that does not adhere to this standard, you will receive a validation error reporting the problem. Any date times issued from our endpoints will be returned to you in the same format.
+Our APIs enforce that any date time information that your application issues to us adheres to the [ISO-8601](https://www.iso.org/iso-8601-date-and-time-format.html) format. If you provide a request body, query string or header that does not adhere to this standard, you will receive a validation error reporting the problem. Any date times issued from our endpoints will be returned to you in the same format. 
 
-Some of the fields we provide are date-only and have no time component. Date only fields will not accept a time component in a request and will not include a time component in their response. You can see which fields these are by examining the model documentation and example responses provided by our [Interactive API Explorer](https://marketplace.reapit.cloud/developer/swagger).
+Some of the fields we provide are date-only and have no time component. Date only fields will not accept a time component in a request and will not include a time component in their response. You can see which fields these are by examining the model documentation and example responses provided by our [Interactive API Explorer](https://marketplace.reapit.cloud/developer/swagger). 
 
 ```javascript
 {
@@ -189,9 +189,9 @@ Some of the fields we provide are date-only and have no time component. Date onl
 
 ### Retrieving data
 
-Our APIs support retrieval of resources using the `GET` verb. When a GET request has been successfully fulfilled, you will receive a `200 OK` response with results included as a JSON encoded payload.
+Our APIs support retrieval of resources using the `GET` verb. When a GET request has been successfully fulfilled, you will receive a `200 OK` response with results included as a JSON encoded payload. 
 
-For practical and performance reasons, our top level APIs enforce paging and require a standardised set of query strings in their requests. The `pageSize` and `pageNumber` parameters are used to cycle through the available results from a top level API.
+For practical and performance reasons, our top level APIs enforce paging and require a standardised set of query strings in their requests. The `pageSize` and `pageNumber` parameters are used to cycle through the available results from a top level API. 
 
 For example, `GET /contacts?pageSize=10&pageNumber=2` will return the second page of ten contact resources in the following structure:
 
@@ -205,7 +205,7 @@ For example, `GET /contacts?pageSize=10&pageNumber=2` will return the second pag
 
 ### Creating data
 
-Our APIs support resource creation using the `POST` verb. When a creation request has been successfully fulfilled, you will receive a `201 Created` response.
+Our APIs support resource creation using the `POST` verb. When a creation request has been successfully fulfilled, you will receive a `201 Created` response. 
 
 Since the creation of new resources is often asynchronous, we do not include the payload of the newly created resource in the `POST` response. Instead, we include the the location of where the new resource can be retrieved from in the `Location` header of the `POST` response.
 
@@ -223,7 +223,7 @@ The below example will only update the notes field on a representation that may 
 }
 ```
 
-As with resource creation, we do not include the updated resource in the `PATCH` response. Instead, simply re-fetch the latest state of the resource by issuing a `GET` request.
+As with resource creation, we do not include the updated resource in the `PATCH` response. Instead,  simply re-fetch the latest state of the resource by issuing a `GET` request.
 
 ### Request validation
 
@@ -247,7 +247,7 @@ Should your request not pass the validation requirements of the endpoint, then y
 
 ### Optimistic concurrency
 
-Our APIs serve Platform functionality and data to various different applications and users at the same time, which needs to be managed carefully to avoid concurrency problems.
+Our APIs serve Platform functionality and data to various different applications and users at the same time, which needs to be managed carefully to avoid concurrency problems. 
 
 In some systems, when multiple systems perform updates at the same time without knowledge of each others changes, you can be left with the problem of **lost updates** whereby the last update "wins" and previous updates are lost. Our APIs enforce o[ptimistic concurrency control](https://en.wikipedia.org/wiki/Optimistic_concurrency_control) to help avoid this problem.
 
@@ -268,11 +268,11 @@ If rejected, you need to retrieve the latest version of the resource and replay 
 
 ## Versioning
 
-As we evolve our platform, new features will be added and fixes will be made. We categorize changes in two ways: **breaking** and **non-breaking** changes. We make every effort to implement changes as non-breaking wherever possible, however, there are sometimes situations that require this.
+As we evolve our platform, new features will be added and fixes will be made. We categorize changes in two ways: **breaking** and **non-breaking** changes. We make every effort to implement changes as non-breaking wherever possible, however, there are sometimes situations that require this. 
 
-Whenever a breaking change is introduced into our platform we release a new, dated version. The current version is **2020-01-31.**
+Whenever a breaking change is introduced into our platform we release a new, dated version. The current version is **2020-01-31.** 
 
-All requests should indicate the version that should be used to fulfill them. You can do this by including the header `api-version` set to the dated version required.
+All requests should indicate the version that should be used to fulfill them. You can do this by including the header `api-version` set to the dated version required.  
 
 ### Breaking changes
 
@@ -298,9 +298,9 @@ At the end of a versions sunset period it will become depreciated and you will b
 
 ## Metadata
 
-Most resources that can be updated support a `metadata` attribute in their request and response payload. This attribute can be used to attach additional key-value data against a specific resource that your application can later use.
+Most resources that can be updated support a `metadata` attribute in their request and response payload. This attribute can be used to attach additional key-value data against a specific resource that your application can later use. 
 
-Our metadata system allows you to easily extend the data that our resources present. You can create a richer integration between your application and our Platform and the process is simplified by storing all relevant data in a single place.
+Our metadata system allows you to easily extend the data that our resources present. You can create a richer integration between your application and our Platform and the process is simplified by storing all relevant data in a single place. 
 
 The `metadata` attribute is populated in `POST` and `PATCH` payloads as below:
 
@@ -324,11 +324,11 @@ Metadata storage should not be used for any sensitive information \(personally i
 
 ## Hypermedia
 
-Our APIs are _\*\*_REST level 3[ ](https://restfulapi.net/richardson-maturity-model/)and implement [hypermedia controls](https://restfulapi.net/richardson-maturity-model/) to improve the developer experience of using our platform.
+Our APIs are ****REST level 3[ ](https://restfulapi.net/richardson-maturity-model/)and implement [hypermedia controls](https://restfulapi.net/richardson-maturity-model/) to improve the developer experience of using our platform. 
 
-Hypermedia makes our APIs self documenting and aids discovery. Each `GET` response provides a uniform interface to present links to demonstrate **which** data is related and **how** that data can be retrieved. This is particularly useful for APIs that present complex systems of interrelated data, such as ours.
+Hypermedia makes our APIs self documenting and aids discovery. Each `GET` response provides a uniform interface to present links to demonstrate **which** data is related and **how** that data can be retrieved. This is particularly useful for APIs that present complex systems of interrelated data, such as ours. 
 
-We adopt the [HAL hypertext application language](http://stateless.co/hal_specification.html) to serve as our message format. Each resource, including [collection resources](api-documentation.md#pagination), include a `_links` collection to present related data. The responses `_links` dictionary will include a **key** to represent the type of relationship and a **value** to represent the location where the related resources can be obtained from.
+We adopt the [HAL hypertext application language](http://stateless.co/hal_specification.html) to serve as our message format. Each resource, including [collection resources](api-documentation.md#pagination), include a `_links` collection to present related data. The responses `_links` dictionary will include a **key** to represent the type of relationship and a **value** to represent the location where the related resources can be obtained from. 
 
 The **condensed** `GET` contact payload example below demonstrates how relationships are presented:
 

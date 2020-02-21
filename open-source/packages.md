@@ -18,7 +18,7 @@ The core frontend of the Reapit Foundations platform. Contains all functionality
 * **Tech Stack:** React, Redux, React Router, Elements, Cognito Auth, Jest, Cypress, Sass / CSS Modules.
 * **Cloud Services:** S3, CloudFront, AWS Cognito, SecretsManager, Sentry
 * **Production:** [https://marketplace.reapit.cloud](https://marketplace.reapit.cloud)
-* **Development:** [https://marketplace.reapit.cloud](https://marketplace.reapit.cloud) _\*\*_
+* **Development:** [https://marketplace.reapit.cloud](https://marketplace.reapit.cloud) ****
 
 ## Elements
 
@@ -28,7 +28,7 @@ A UI toolkit for building web applications in the Reapit Marketplace. Exports a 
 * **Cloud Services:** Github Pages
 * **Production:** [https://reapit.github.io/elements/](https://reapit.github.io/elements/)
 
-## Cognito Auth
+## Cognito Auth 
 
 A thin wrapper around the AWS SDK and OAuth flow to take the pain out of authenticating your App with Reapit Connect. For usage visit[ here.](../api/web.md#cognito-auth)
 
@@ -108,7 +108,7 @@ Under active development pre-alpha.
 
 ## GraphQL Server
 
-A GraphQL implementation of the Foundations API.
+A GraphQL implementation of the Foundations API. 
 
 Under active development pre-alpha.
 
@@ -117,4 +117,8 @@ Under active development pre-alpha.
 An application to onboard new businesses to the Reapit Agency Cloud CRM.
 
 Under active development pre-alpha.
+
+
+
+
 
