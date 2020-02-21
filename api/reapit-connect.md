@@ -8,7 +8,7 @@ description: How to manage authentication of Reapit users with our hosted identi
 
 Reapit Connect is our hosted identity solution designed to allow applications to securely authenticate Reapit users against a single, trusted identity. Backed by our OpenID Connect compliant system, it is quick and easy to build applications that adhere to best security practices and extend an excellent experience to your users.
 
-**Building your application with Reapit Connect is our recommended way to interact with our Platform.** 
+**Building your application with Reapit Connect is our recommended way to interact with our Platform.**
 
 ## Why use Reapit Connect
 
@@ -18,7 +18,7 @@ Reapit Connect removes the overhead of having to build and maintain a user crede
 
 ### **Security**
 
-Our identity provision is an implementation of OpenId Connect, the defacto industry standard for authentication and authorisation for web and mobile applications. Simply put, you don't need to worry about securely capturing or storing user credentials - we do that part for you. 
+Our identity provision is an implementation of OpenId Connect, the defacto industry standard for authentication and authorisation for web and mobile applications. Simply put, you don't need to worry about securely capturing or storing user credentials - we do that part for you.
 
 ### Single sign on
 
@@ -30,7 +30,7 @@ You can use Reapit Connect to authenticate users regardless of your front or bac
 
 ### Trust
 
-Your users will be presented with a unified login screen from a brand they already know and trust. They will receive the same user experience as they do from other Reapit applications and of those that exist in our marketplace. 
+Your users will be presented with a unified login screen from a brand they already know and trust. They will receive the same user experience as they do from other Reapit applications and of those that exist in our marketplace.
 
 ## Marketplace integration
 
@@ -38,16 +38,16 @@ Your users will be presented with a unified login screen from a brand they alrea
 
 Registering your app in our Marketplace is the first step for it to be able to interact with Reapit customer data.
 
-Our [application submission page](https://marketplace.reapit.cloud/developer/submit-app) will capture information about your application, including the details required for integration with Reapit Connect. 
+Our [application submission page](https://marketplace.reapit.cloud/developer/submit-app) will capture information about your application, including the details required for integration with Reapit Connect.
 
-* Select **Authenticate with Reapit Connect** as your required authentication flow ****
+* Select **Authenticate with Reapit Connect** as your required authentication flow _\*\*_
 * Provide one or more **redirect URLs** and a **logout URL** to define the acceptable URLs that Reapit Connect is permitted to redirect back to after a successful authentication or logout
 
 Once you have successfully registered, you will be issued with a client id. You can obtain this by clicking your app in the [My Apps](https://marketplace.reapit.cloud/developer/apps) area of our developer portal.
 
 ### Customer installation
 
-In order for Reapit Connect to authenticate your application on a users behalf, the user must belong to a Reapit customer that has opted to allow your application access to their data. 
+In order for Reapit Connect to authenticate your application on a users behalf, the user must belong to a Reapit customer that has opted to allow your application access to their data.
 
 Customer administrators are able to control your applications access by choosing to install from our Marketplace. As part of this process, they will grant your application with any permissions \(scopes\) it requires to interact with Foundations API endpoints.
 
@@ -59,7 +59,7 @@ Customer administrators are able to control your applications access by choosing
 
 OAuth 2.0 is an authorization framework that we use to allow a user to grant limited access to resources in our Foundations platform without having to expose their credentials.
 
-We use the [Authorization Code Grant](https://developer.okta.com/blog/2018/04/10/oauth-authorization-code-grant-type) ****flow to authenticate, which is broken down into the following steps.
+We use the [Authorization Code Grant](https://developer.okta.com/blog/2018/04/10/oauth-authorization-code-grant-type) _\*\*_flow to authenticate, which is broken down into the following steps.
 
 * Your application redirects the user to our Reapit Connect in the browser
 * Reapit Connect presents the user with a login screen to capture their credentials
@@ -81,11 +81,11 @@ To initiate a login, your application should redirect users to our authorize end
 
 ### Present login form
 
-The user will be presented with a Reapit branded login screen where they are required to input their credentials and submit. They can also initiate password recovery for their Reapit identity from this form. 
+The user will be presented with a Reapit branded login screen where they are required to input their credentials and submit. They can also initiate password recovery for their Reapit identity from this form.
 
-This step will be automatically skipped if the user has an authenticated session with Reapit Connect. The user will immediately be redirected back to your app. 
+This step will be automatically skipped if the user has an authenticated session with Reapit Connect. The user will immediately be redirected back to your app.
 
-![](../.gitbook/assets/image%20%283%29.png)
+![](https://github.com/reapit/foundations-documentation/tree/c093161f71a9eb9e7787ae0d2a199d6ee0a936d1/.gitbook/assets/image%20%283%29.png)
 
 ### Redirect back to your app
 
@@ -101,7 +101,7 @@ A `code` parameter will be appended to the redirected URL, as well as any `state
 
 ### Exchange code for tokens
 
-Once your application has successfully guided the user through the OAuth flow, you can extract the authorization code from the redirected URL. You are then able to use this code to exchange for JWT tokens for proof of authentication and access for Foundations resources. You can only attempt to exchange authorization codes once and they will expire 10 minutes after they have been issued. 
+Once your application has successfully guided the user through the OAuth flow, you can extract the authorization code from the redirected URL. You are then able to use this code to exchange for JWT tokens for proof of authentication and access for Foundations resources. You can only attempt to exchange authorization codes once and they will expire 10 minutes after they have been issued.
 
 To make the exchange, send a `POST` request to the endpoint below with Content-type set to `application/x-www-form-urlencoded`:
 
@@ -143,23 +143,23 @@ If the user successfully logged in and your application performed the code excha
 
 ### Using access tokens
 
-Access tokens \(also known as bearer tokens\) are designed to provide your application with access to protected resources on the users behalf. 
+Access tokens \(also known as bearer tokens\) are designed to provide your application with access to protected resources on the users behalf.
 
 You can access Foundations API endpoints by including the access token as an `Authorization` header in all requests your application issues, subject to the scopes that your application requested during registration.
 
-### Using identity tokens 
+### Using identity tokens
 
-Identity tokens are intended to provide proof of authentication with Reapit Connect. Your application should decode and [validate ](https://connect2id.com/blog/how-to-validate-an-openid-connect-id-token)the id token that it has been issued. There are a variety of [third party libraries](https://jwt.io/#libraries-io) to help accomplish this and **the token should not be trusted until validated**. 
+Identity tokens are intended to provide proof of authentication with Reapit Connect. Your application should decode and [validate ](https://connect2id.com/blog/how-to-validate-an-openid-connect-id-token)the id token that it has been issued. There are a variety of [third party libraries](https://jwt.io/#libraries-io) to help accomplish this and **the token should not be trusted until validated**.
 
 Once decoded, your application can inspect the claims that the id token includes. Claims provide information about the users identity such as email address and name which your application can make use of.
 
 You can also issue a `GET` request to the following endpoint to get information on the user. Be sure to include your access token:
 
- `https://dev.connect.reapit.cloud/userInfo`
+`https://dev.connect.reapit.cloud/oauth2/userInfo`
 
 ### Using refresh tokens
 
-Access tokens issued from Reapit Connect will expire after 60 minutes. Refresh tokens provide your application with a means of retrieving a new set of tokens without requiring an interaction from the user. They are long lived and will continue to function until they are revoked. 
+Access tokens issued from Reapit Connect will expire after 60 minutes. Refresh tokens provide your application with a means of retrieving a new set of tokens without requiring an interaction from the user. They are long lived and will continue to function until they are revoked.
 
 To use a refresh token, issue a `POST` request to the endpoint below with Content-type set to `application/x-www-form-urlencoded`:
 
