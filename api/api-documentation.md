@@ -14,12 +14,35 @@ The Foundations API is organised around [REST](http://en.wikipedia.org/wiki/Repr
 
 You can immediately start testing our APIs in [sandbox mode](api-documentation.md#sandbox-mode) by using our [Interactive API Explorer](https://marketplace.reapit.cloud/developer/swagger). Please see our [help page](https://marketplace.reapit.cloud/developer/help) for support and information on preview / upcoming changes.
 
-| Service | Base URL | Description |
-| :--- | :--- | :--- |
-| Authentication service | **https://dev.connect.reapit.cloud/** | First, use our [authentication service](api-documentation.md#authentication) to receive an access token. Include this in the header of any request you issue to our other platform services. |
-| All other platform services | **https://dev.platform.reapit.cloud/** | Once authenticated, you can issue requests to our other platform services. For details on the endpoint we provide, see our [Interactive API Explorer](https://marketplace.reapit.cloud/developer/swagger).  |
-
-The current version of our APIs is **2020-01-31.**
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">Service base location</th>
+      <th style="text-align:left">Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">
+        <p><b>Authentication service</b>
+        </p>
+        <p>https://dev.connect.reapit.cloud/</p>
+      </td>
+      <td style="text-align:left">First, use our <a href="api-documentation.md#authentication">authentication service</a> to
+        receive an access token. Include this in the header of any request you
+        issue to our other platform services.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">
+        <p><b>All other platform services</b>
+        </p>
+        <p>https://dev.platform.reapit.cloud/</p>
+      </td>
+      <td style="text-align:left">Once authenticated, you can issue requests to our other platform services.
+        For details on the endpoint we provide, see our <a href="https://marketplace.reapit.cloud/developer/swagger">Interactive API Explorer</a>.</td>
+    </tr>
+  </tbody>
+</table>The current version of our APIs is **2020-01-31.** 
 
 {% hint style="success" %}
 **Our Platform is in** **alpha** and we'll be continually building new features during this phase. Please see our [help section](https://marketplace.reapit.cloud/developer/help) to view our milestones or to submit a feature request or bug.
