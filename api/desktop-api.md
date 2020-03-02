@@ -14,55 +14,55 @@ The Desktop API is not available during the Alpha period.
 To obtain a copy of Reapit's Agency Cloud CRM, you must be sponsored by a Reapit Client. For more information on how to start a sponsorship, please[ click here](http://www.link.co.uk).
 {% endhint %}
 
-### Overview 
+### Overview
 
-Applications that are built on our Foundations Platform are able to communicate with Reapit's Agency Cloud CRM system. Using a well-defined API, you are able to trigger a wide variety of actions in our award-winning desktop application to augment your own applications and build a rich integration between systems. 
+Applications that are built on our Foundations Platform are able to communicate with Reapit's Agency Cloud CRM system. Using a well-defined API, you are able to trigger a wide variety of actions in our award-winning desktop application to augment your own applications and build a rich integration between systems.
 
-### URL Scheme 
+### URL Scheme
 
-When a Marketplace application is launched and hosted within Agency Cloud, that application can interact with Agency Cloud by using our custom URI scheme. When a user triggers a link with an agencycloud: prefix, Agency Cloud will interpret that action and perform the corresponding action. 
+When a Marketplace application is launched and hosted within Agency Cloud, that application can interact with Agency Cloud by using our custom URI scheme. When a user triggers a link with an agencycloud: prefix, Agency Cloud will interpret that action and perform the corresponding action.
 
-### Format 
+### Format
 
 Links are structured in a REST style to provide a well-defined and descriptive mechanism for interacting with the screens and functionality that Agency Cloud offers. The primary and secondary screens that exist in the Agency Cloud user interface broadly map to the REST notion of resources and sub-resources. Some actions also accept parameters which can be applied to the URI in the usual manner. Full documentation of the available interactions is listed below, grouped by primary screen.
 
 ## Property
 
-### Load Property 
+### Load Property
 
-Opens the property edit screen for the property with specified id 
+Opens the property edit screen for the property with specified id
 
 ```text
 agencycloud://properties/{id}
 ```
 
-### Perform Matching 
+### Perform Matching
 
-Performs a property to applicant match for the applicant with specified id 
+Performs a property to applicant match for the applicant with specified id
 
 ```text
-agencycloud://properties/{id}/match 
+agencycloud://properties/{id}/match
 ```
 
-### Load Journal 
+### Load Journal
 
-Opens the journal screen for the specified property 
+Opens the journal screen for the specified property
 
 ```text
 agencycloud://properties/{id}/journal
 ```
 
-### Load Offers 
+### Load Offers
 
-Opens the offers screen for the specified property 
+Opens the offers screen for the specified property
 
 ```text
-agencycloud://properties/{id}/offers 
+agencycloud://properties/{id}/offers
 ```
 
-### Property Search 
+### Property Search
 
-Opens advanced search screen in property mode and runs a search with provided parameters. At least one parameter is required. 
+Opens advanced search screen in property mode and runs a search with provided parameters. At least one parameter is required.
 
 ```text
 agencycloud://properties?address=MK43&mode=s

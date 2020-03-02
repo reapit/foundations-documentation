@@ -7,6 +7,10 @@ description: >-
 
 # Platform change log
 
+### 2020-02-24
+
+* [\#327](https://github.com/reapit/foundations/issues/327) - Added endpoints to present the available types of journal entry that have been configured a customer environment
+
 ### 2020-02-20
 
 * [\#383](https://github.com/reapit/foundations/issues/383) - Fixed issue where requests missing the required authorization header would return malformed error response
