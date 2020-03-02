@@ -7,6 +7,10 @@ description: >-
 
 # Platform change log
 
+### 2020-03-02
+
+* [\#495](https://github.com/reapit/foundations/issues/495) - It is now possible to request that related negotiator information is included with `GET /office` and `GET /office/{id}` responses by using the embed parameter 
+
 ### 2020-02-24
 
 * [\#327](https://github.com/reapit/foundations/issues/327) - Added endpoints to present the available types of journal entry that have been configured a customer environment
