@@ -61,7 +61,7 @@ When using Storybook, you can toggle between code examples and rendered output o
 
 ![](../.gitbook/assets/screenshot-2020-02-12-at-16.18.04.png)
 
-In addition to Storybook, because we have used TypeScript throughout out estate, each of our modules ships with TS definitions for free. If you use TypeScript, this is clearly a big help but even if you don't modern IDEs like VSCode will give you intellisense hints about prop types and parameters as you code. 
+In addition to Storybook, because we have used TypeScript throughout out estate, each of our modules ships with TS definitions for free. If you use TypeScript, this is clearly a big help but even if you don't modern IDEs like VSCode will give you intelligent hints about prop types and parameters as you code.
 
 ### What if I don't use React?
 
