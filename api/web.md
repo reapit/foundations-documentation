@@ -8,11 +8,11 @@ description: Components and packages to help you build a Reapit Marketplace appl
 
 Elements is a React UI Component and utility library we have developed internally and open sourced. The Developer Portal and Marketplace itself uses Elements extensively and if you are building a React app to be installed by clients, we recommend you do too.
 
-The styles are based on the excellent [Bulma UI](https://bulma.io/) library to provide sensible base defaults for common patterns. Although the components themselves are based on React, the project exports a regular stylesheet you can import as normal and markup in your preferred templating language see "What if I don't use React" below. 
+The styles are based on the excellent [Bulma UI](https://bulma.io/) library to provide sensible base defaults for common patterns. Although the components themselves are based on React, the project exports a regular stylesheet you can import as normal and markup in your preferred templating language see "What if I don't use React" below.
 
 In the future, we plan to move away from Bulma to use entirely in-house styles, supporting both Styled Components \(React CSS in JS\) and vanilla CSS. You can keep a track of Elements v2 progress against [this milestone](https://github.com/reapit/foundations/milestone/8).
 
-As well as React Components, we also export a number of useful utilities like form validators, date-time helpers and a HTTP fetch module. 
+As well as React Components, we also export a number of useful utilities like form validators, date-time helpers and a HTTP fetch module.
 
 ### Basic Usage
 
@@ -65,7 +65,7 @@ In addition to Storybook, because we have used TypeScript throughout out estate,
 
 ### What if I don't use React?
 
-Although we use React heavily at Reapit and we recommend using our tooling as the most frictionless way of building marketplace apps, we understand that it will not work for everyone. 
+Although we use React heavily at Reapit and we recommend using our tooling as the most frictionless way of building marketplace apps, we understand that it will not work for everyone.
 
 You can still import the stylesheet as above, and simply apply same markup and selectors in the [Bulma documentation](https://bulma.io/) in most cases. Where we have made exceptions, or written custom CSS, you can inspect Storybook and apply classes as they appear in the DOM tree.
 
@@ -93,14 +93,14 @@ import { RefreshSession } from '@reapit/cognito-auth'
 const { RefreshSession } = require('@reapit/cognito-auth')
 ```
 
-In a typical app, you will need to do four things; 
+In a typical app, you will need to do four things;
 
 1. Establish an OAuth user session in Cognito.
 2. Accept an authentication code from OAuth.
 3. Exchange the code for an access token, refresh token and id token.
 4. Maintain the session in the browser, refreshing it as the access token expires.
 
-The first issue is quite simple, render a button that redirects you to the Reapit Connect login screen. The login handler tells Cognito what my client id is \(from the process.env object in this case\), and the URL I have registered to redirect back to; in this case `window.location.origin`. You can see an example of this [here.](https://github.com/reapit/foundations/blob/master/packages/geo-diary/src/components/pages/login.tsx) 
+The first issue is quite simple, render a button that redirects you to the Reapit Connect login screen. The login handler tells Cognito what my client id is \(from the process.env object in this case\), and the URL I have registered to redirect back to; in this case `window.location.origin`. You can see an example of this [here.](https://github.com/reapit/foundations/blob/master/packages/geo-diary/src/components/pages/login.tsx)
 
 {% hint style="info" %}
 Although the links to our codebase refer to React apps, the cognito-auth module is totally agnostic of technology - they are just regular JavaScript methods.
@@ -175,10 +175,9 @@ export const defaultState = (): AuthState => {
     refreshSession,
   }
 }
-
 ```
 
-When I next hit my private route, the `hasSession` flag is set to true and I can load my component. When I need to authenticate against the API, I simply call a method called `getSession` that will handle all the business logic to manage, code for token exchange \(point 3\), and when my session expires, refreshing the  access token. You can see the below example in action [here.](https://github.com/reapit/foundations/blob/master/packages/geo-diary/src/utils/session.ts)
+When I next hit my private route, the `hasSession` flag is set to true and I can load my component. When I need to authenticate against the API, I simply call a method called `getSession` that will handle all the business logic to manage, code for token exchange \(point 3\), and when my session expires, refreshing the access token. You can see the below example in action [here.](https://github.com/reapit/foundations/blob/master/packages/geo-diary/src/utils/session.ts)
 
 ```typescript
 import { authLoginSuccess, authLogout } from '@/actions/auth'
@@ -202,7 +201,6 @@ export const getAccessToken = async ({ loginSession, refreshSession }): Promise<
   authLogout()
   return null
 }
-
 ```
 
 An example usage for the above method, to get a token for use in an API request would look like;
@@ -227,7 +225,6 @@ if (!hasSession) {
   redirectToOAuth(cognitoClientId)
   return null
 }
-
 ```
 
 In this example, I would get a code in the redirect url I can exchange for a token and continue.
@@ -246,16 +243,15 @@ export const doLogout () => {
     `${window.location.origin}/login`
   )
 }
-
 ```
 
 ## Foundations TS Definitions
 
 Develop in TypeScript against the Reapit Foundations Platform with confidence
 
-If you are using TypeScript \(and we recommend you do!\), for your front end project, we provide full type definitions for the API documented in the [API explorer](https://github.com/reapit/foundations-documentation/tree/db0718c9be27b7760dfae34e69518806acf0e855/developer/swagger/README.md). 
+If you are using TypeScript \(and we recommend you do!\), for your front end project, we provide full type definitions for the API documented in the [API explorer](https://github.com/reapit/foundations-documentation/tree/db0718c9be27b7760dfae34e69518806acf0e855/developer/swagger/README.md).
 
-We generate these types from the Swagger contracts direct with a daily CRON job, so you can be sure that when the API changes, your types will be updated too. This allows for a much closer alignment between front and back end development, with compile time feedback on definition changes. 
+We generate these types from the Swagger contracts direct with a daily CRON job, so you can be sure that when the API changes, your types will be updated too. This allows for a much closer alignment between front and back end development, with compile time feedback on definition changes.
 
 Ultimately this should lead to more robust applications.
 
@@ -294,7 +290,7 @@ Currently we support;
 
 Coming soon... Apollo GraphQL version!
 
-The app will be authenticated against Reapit Connect out the box and a basic logical skeleton flow for your app is provided. You also get Elements and in house scripts, unit tests, TS Definitions and other tooling for free. 
+The app will be authenticated against Reapit Connect out the box and a basic logical skeleton flow for your app is provided. You also get Elements and in house scripts, unit tests, TS Definitions and other tooling for free.
 
 ### Usage
 
@@ -328,9 +324,9 @@ You must have valid AWS IAM credentials in your current bash / zsh profile speci
 
 You can then install to your project with;
 
-`yarn install @reapit/config-manager --dev` 
+`yarn install @reapit/config-manager --dev`
 
-The project exports four CRUD methods; 
+The project exports four CRUD methods;
 
 * `getSecret` Fetches a secret by name and outputs to a local JSON file called `reapit-config.json` at the root of your project.  You can see an example of the output file at  here,
 * `createSecret` Stores a new secret by name, with the value of the secret string set to whatever is in the `reapit-config.json` at the root of your project.
@@ -347,9 +343,9 @@ Usage of all methods is in the following format:
 
 ## Web Components
 
-In addition to the Elements React component toolkit, Reapit will soon be offering a number of other downloadable Front End Resources. 
+In addition to the Elements React component toolkit, Reapit will soon be offering a number of other downloadable Front End Resources.
 
-These may be modular blocks of functionality that can be embedded within your site, toolsets or even CMS friendly bundles of scripts available elsewhere. The guiding principles of the project is that the components should be standalone, highly customisable and lightweight. 
+These may be modular blocks of functionality that can be embedded within your site, toolsets or even CMS friendly bundles of scripts available elsewhere. The guiding principles of the project is that the components should be standalone, highly customisable and lightweight.
 
 They are served both as NPM packages and as downloadable scripts from our CDN.
 
