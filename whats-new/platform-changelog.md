@@ -7,29 +7,33 @@ description: >-
 
 # Platform change log
 
-### 2020-03-06
+## March 2020
+
+#### 2020-03-06
 
 * [\#507](https://github.com/reapit/foundations/issues/507) - It is now possible to request that related document, source,  office and solicitor information is included with `GET /landlords` and `GET /landlords/{id}` responses by using the `embed` parameter
 * [\#502](https://github.com/reapit/foundations/issues/502) - It is now possible to request that related property, applicant and negotiator information is included with `GET /offers` and `GET /offers/{id}` responses by using the `embed` parameter
 
-### 2020-03-05
+#### 2020-03-05
 
 * [\#500](https://github.com/reapit/foundations/issues/500) - It is now possible to request that related document type information is included with `GET /documents` and `GET /documents/{id}` responses by using the `embed` parameter
 
-### 2020-03-03
+#### 2020-03-03
 
 * [\#504](https://github.com/reapit/foundations/issues/504) - It is now possible to request that related property information is included with `GET /propertyImages` and `GET /propertyImages/{id}` responses by using the `embed` parameter 
 
-### 2020-03-02
+#### 2020-03-02
 
 * [\#495](https://github.com/reapit/foundations/issues/495) - It is now possible to request that related negotiator information is included with `GET /offices` and `GET /offices/{id}` responses by using the `embed` parameter 
 * [\#483](https://github.com/reapit/foundations/issues/483) - It is now possible to request that related office information is included with `GET /negotiators` and `GET /negotiators/{id}` responses by using the `embed` parameter
 
-### 2020-02-24
+## February 2020
+
+#### 2020-02-24
 
 * [\#327](https://github.com/reapit/foundations/issues/327) - Added endpoints to present the available types of journal entry that have been configured a customer environment
 
-### 2020-02-20
+#### 2020-02-20
 
 * [\#383](https://github.com/reapit/foundations/issues/383) - Fixed issue where requests missing the required authorization header would return malformed error response
 
