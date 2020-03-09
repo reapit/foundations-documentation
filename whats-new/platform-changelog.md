@@ -11,6 +11,9 @@ description: >-
 
 #### 2020-03-09
 
+* [\#501](https://github.com/reapit/foundations/issues/501) - It is now possible to request that related information is included with `GET /identityChecks` and `GET /identityChecks/{id}` responses by using the `embed` parameter
+* [\#497 ](https://github.com/reapit/foundations/issues/497)-  It is now possible to request that related information is included with `GET /appointments` and `GET /appointments/{id}` responses by using the `embed` parameter
+* [\#506](https://github.com/reapit/foundations/issues/506) - It is now possible to request that related information is included with `GET /vendors` and `GET /vendors/{id}` responses by using the `embed` parameter
 * [\#551](https://github.com/reapit/foundations/issues/551) - Created additional endpoint to request the details of a specific contacts relationships on the system.
 * [\#556](https://github.com/reapit/foundations/issues/556) - Fixed issue that prevented vendor source of enquiry from being populated in the payload returned from `GET /vendors` and `GET /vendors/{id}`
 
