@@ -9,6 +9,11 @@ description: >-
 
 ## March 2020
 
+#### 2020-03-09
+
+* [\#551](https://github.com/reapit/foundations/issues/551) - Created additional endpoint to request the details of a specific contacts relationships on the system.
+* [\#556](https://github.com/reapit/foundations/issues/556) - Fixed issue that prevented vendor source of enquiry from being populated in the payload returned from `GET /vendors` and `GET /vendors/{id}`
+
 #### 2020-03-06
 
 * [\#507](https://github.com/reapit/foundations/issues/507) - It is now possible to request that related document, source,  office and solicitor information is included with `GET /landlords` and `GET /landlords/{id}` responses by using the `embed` parameter
