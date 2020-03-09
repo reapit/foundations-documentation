@@ -11,6 +11,7 @@ description: >-
 
 #### 2020-03-09
 
+* [\#563 ](https://github.com/reapit/foundations/issues/563)- Fixed issue that prevented contact source of enquiry from being populated in the payload returned from `GET /contacts` and `GET /contacts/{id}`
 * [\#482](https://github.com/reapit/foundations/issues/482) - The response from `GET /applicants` and `GET /applicants/{id}` will now include a link to the offers that the applicant has made
 * [\#501](https://github.com/reapit/foundations/issues/501) - It is now possible to request that related information is included with `GET /identityChecks` and `GET /identityChecks/{id}` responses by using the `embed` parameter
 * [\#497 ](https://github.com/reapit/foundations/issues/497)-  It is now possible to request that related information is included with `GET /appointments` and `GET /appointments/{id}` responses by using the `embed` parameter
