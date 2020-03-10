@@ -418,7 +418,7 @@ You can embed as many related data sources in a request as your application requ
 
 `GET /contacts/OXF18000001/?embed=offices&embed=negotiators`
 
-The response above illustrates the means of requesting that related office and negotiator resources are included with the response from the contacts API. The condensed response below demonstrates how these related resources are subsequently embedded within the contacts payload in the `_embedded` attribute.
+The response above illustrates the means of requesting that related office and negotiator resources are included with the response from the contacts API. The condensed response below demonstrates how these related resources are returned within the contacts payload in the `_embedded` attribute.
 
 ```text
 {
