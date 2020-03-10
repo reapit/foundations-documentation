@@ -406,7 +406,7 @@ In the example above, the presence of the `identityChecks` **key** indicates tha
 
 ### Embedding data
 
-Many of our GET APIs provide the ability to **embed related data** in their responses. You are able to compose a request that will include related data that has been automatically interleaved into your response payload. This is a convenient tool that improves performance of API interaction and allows you to write less code to work with our platform.
+Many of our GET APIs provide the ability to compose requests that automatically **embed related data** in their responses. This is a convenient tool that improves performance of API interaction and allows you to write less code to work with our platform.
 
 If your application requires data from one or more related resource\(s\) \(indicated by a link\), you can simply specify the name of the related resource in the `embed` parameter and our APIs will do the rest. **The same requests** that your application would have needed to perform will happen on the server side and the related data is returned to your app in the correct resource\(s\) `_embedded` data collection.
 
