@@ -11,11 +11,20 @@ description: >-
 
 #### 2020-03-10
 
-* [\#583](https://github.com/reapit/foundations/issues/583) - Created endpoint to retrieve information about the contact / company tenant relationships associated with a specific tenancy at `GET /tenancies/{id}/relationships`
-* [\#298](https://github.com/reapit/foundations/issues/298) - Created endpoint to retrieve information about a specific tenancy at `GET /tenancies/{id}`
-* [\#297](https://github.com/reapit/foundations/issues/297) - Created endpoint to retrieve a paged, filterable listing of tenancies at `GET /tenancies` 
+* [\#584](https://github.com/reapit/foundations/issues/584) - Created new API to allow an existign item / job associated to a works order to be soft deleted at `DELETE /worksOrders/{id}/items/{itemId}`
+* [\#410](https://github.com/reapit/foundations/issues/410) - Created new API to allow an existing item / job associated to a works order to be updated at `PATCH /worksOrders/{id}/items/{itemId}`
+* [\#409](https://github.com/reapit/foundations/issues/409) - Created new API to allow a new item / job to be associated to be created against a works order at `POST /worksOrders/{id}/items`
+* [\#408](https://github.com/reapit/foundations/issues/408) - Created new API to retrieve information about a specific item / job associated to a works order at `GET /worksOrders/{id}/items/{itemId}`
+* [\#407](https://github.com/reapit/foundations/issues/407) - Created new API to retrieve information about the item / jobs associated to a specific works order at `GET /worksOrders/{id}/items`
+* \#[406](https://github.com/reapit/foundations/issues/406) - Created new API to allow an existing works order to be updated at `PATCH /worksOrders`
+* [\#405](https://github.com/reapit/foundations/issues/405) - Created new API to allow creation of a new works order at `POST /worksOrders`
+* [\#404](https://github.com/reapit/foundations/issues/404) - Created new API to retrieve information about a specific works order at `GET /worksOrders/{id}`
+* [\#403](https://github.com/reapit/foundations/issues/403) - Created new API to retrieve a paged, filterable listing of works orders at `GET /worksOrders`
+* [\#583](https://github.com/reapit/foundations/issues/583) - Created new API to retrieve information about the contact / company tenant relationships associated with a specific tenancy at `GET /tenancies/{id}/relationships`
+* [\#298](https://github.com/reapit/foundations/issues/298) - Created new API to retrieve information about a specific tenancy at `GET /tenancies/{id}`
+* [\#297](https://github.com/reapit/foundations/issues/297) - Created new API to retrieve a paged, filterable listing of tenancies at `GET /tenancies` 
 * [\#503](https://github.com/reapit/foundations/issues/503) -  It is now possible to request that related information is included with `GET /properties` and `GET /properties/{id}` responses by using the `embed` parameter
-* [\#530](https://github.com/reapit/foundations/issues/530) - Created additional endpoints to allow retrieval of the available tenancy types that have been configured in a clients environment from `GET /configuration/tenancyTypes` and `GET /configuration/tenancyTypes/{id}`
+* [\#530](https://github.com/reapit/foundations/issues/530) - Created new API for retrieval of the available tenancy types that have been configured in a clients environment from `GET /configuration/tenancyTypes` and `GET /configuration/tenancyTypes/{id}`
 * [\#496](https://github.com/reapit/foundations/issues/496) - It is now possible to request that related information is included with `GET /applicants` and `GET /applicants/{id}` responses by using the `embed` parameter
 * [\#498](https://github.com/reapit/foundations/issues/498) - It is now possible to request that related information is included with `GET /companies` and `GET /companies/{id}` responses by using the `embed` parameter
 * [\#562](https://github.com/reapit/foundations/issues/562) - Fixed issue that meant the negotiator and office ids associated to applicant resources were sometimes populating incorrectly in the responses returned from `GET /applicants` and `GET /applicants/{id}`
@@ -27,7 +36,7 @@ description: >-
 * [\#501](https://github.com/reapit/foundations/issues/501) - It is now possible to request that related information is included with `GET /identityChecks` and `GET /identityChecks/{id}` responses by using the `embed` parameter
 * [\#497 ](https://github.com/reapit/foundations/issues/497)-  It is now possible to request that related information is included with `GET /appointments` and `GET /appointments/{id}` responses by using the `embed` parameter
 * [\#506](https://github.com/reapit/foundations/issues/506) - It is now possible to request that related information is included with `GET /vendors` and `GET /vendors/{id}` responses by using the `embed` parameter
-* [\#551](https://github.com/reapit/foundations/issues/551) - Created additional endpoint to request the details of a specific contacts relationships on the system.
+* [\#551](https://github.com/reapit/foundations/issues/551) - Created new API to request the details of a specific contacts relationships on the system at `GET /contacts/{id}/relationships`
 * [\#556](https://github.com/reapit/foundations/issues/556) - Fixed issue that prevented vendor source of enquiry from being populated in the payload returned from `GET /vendors` and `GET /vendors/{id}`
 
 #### 2020-03-06
