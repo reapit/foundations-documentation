@@ -352,13 +352,15 @@ Metadata storage should not be used for any sensitive information \(personally i
 
 ## Hypermedia
 
-Our APIs are _\*\*_REST level 3[ ](https://restfulapi.net/richardson-maturity-model/)and implement [hypermedia controls](https://restfulapi.net/richardson-maturity-model/) to improve the developer experience of using our platform.
+Our APIs are **REST level 3**[ ](https://restfulapi.net/richardson-maturity-model/)and implement [hypermedia controls](https://restfulapi.net/richardson-maturity-model/) to improve the developer experience of using our platform. Hypermedia makes our APIs self documenting, easier to use and aids discovery. We adopt the [HAL hypertext application language](http://stateless.co/hal_specification.html) to serve as our message format.
 
-Hypermedia makes our APIs self documenting and aids discovery. Each `GET` response provides a uniform interface to present links to demonstrate **which** data is related and **how** that data can be retrieved. This is particularly useful for APIs that present complex systems of interrelated data, such as ours.
+### Links
 
-We adopt the [HAL hypertext application language](http://stateless.co/hal_specification.html) to serve as our message format. Each resource, including [collection resources](api-documentation.md#pagination), include a `_links` collection to present related data. The responses `_links` dictionary will include a **key** to represent the type of relationship and a **value** to represent the location where the related resources can be obtained from.
+Each `GET` response provides a uniform interface to present links to demonstrate **which** data is related and **how** that data can be retrieved. This is particularly useful for APIs that present complex systems of interrelated data, such as ours.
 
-The **condensed** `GET` contact payload example below demonstrates how relationships are presented:
+ Each resource, including [collection resources](api-documentation.md#pagination), include a `_links` collection to present related data. The responses `_links` dictionary will include a **key** to represent the type of relationship and a **value** to represent the location where the related resources can be obtained from.
+
+The **condensed** `GET /contact/{id}` payload example below demonstrates how relationships are presented:
 
 ```text
 {
@@ -402,9 +404,82 @@ The **condensed** `GET` contact payload example below demonstrates how relations
 
 In the example above, the presence of the `identityChecks` **key** indicates that there is a related resource available. The **value** contains the service location and query string parameters required to retrieve the related identity check resources.
 
-{% hint style="info" %}
-**Coming soon**: we will add the ability to embed related data in our API responses. See our [milestones](https://github.com/reapit/foundations/milestones) for more information.
-{% endhint %}
+### Embedding data
+
+Many of our GET APIs provide the ability to **embed related data** in their responses. The links that our resources provide can optionally be interleaved into your response payload. This is a convenient tool that improves performance of API interaction and allows you to write less code to work with our platform.
+
+If your application requires data from one or more related resource\(s\) \(indicated by a link\), you can simply specify the name of the related resource in the `embed` parameter and our APIs will do the rest. **The same requests** that your application would have needed to perform will happen on the server side and the related data is returned to your app in the correct resource\(s\) `_embedded` data collection.
+
+You can embed as many related data sources in a request as you need to. Our [interactive API explorer](https://marketplace.reapit.cloud/developer/swagger) provides a user interface which demonstrates which data can be embedded in each API.
+
+![](../.gitbook/assets/image%20%282%29.png)
+
+#### Example
+
+`GET /contacts/OXF18000001/?embed=offices&embed=negotiators`
+
+The response above illustrates the means of requesting that related office and negotiator resources are included with the response from the contacts API. The condensed response below demonstrates how these related resources are subsequently embedded within the contacts payload in the `_embedded` attribute.
+
+```text
+{
+  "id": "OXF18000001",
+  "title": "Mr",
+  "forename": "John",
+  "surname": "Smith",
+  "officeIds": [
+    "OXF"
+  ],
+  "negotiatorIds": [
+    "JAS"
+  ],
+  
+  <rest of contacts payload>
+  
+  "_links": {
+    "self": {
+      "href": "/contacts/OXF18000001"
+    },
+    "offices": {
+      "href": "/offices/?id=OXF"
+    },
+    "negotiators": {
+      "href": "/negotiators/?id=JAS"
+    }
+  },
+  "_embedded": {
+    "offices" : [
+      {
+        "id": "OXF",
+        "name": "Oxford",
+        "manager": "David Brown",
+        "address": {
+          "buildingName": "",
+          "buildingNumber": "1a",
+          "line1": "Wellington Square",
+          "line2": "Brownhaven",
+          "line3": "Oxford",
+          "line4": "",
+          "postcode": "OX1 2JD"
+        },
+        
+        <rest of offices payload>
+      }
+    ],
+    "negotiators" : [
+      {
+        "id": "JAS",
+        "name": "John Smith",
+        "jobTitle": "Senior Negotiator",
+        "active": true,
+        "officeId": "OXF",
+        "email": "drew.mcculloch@reapitestates.net",
+        
+        <rest of negotiators payload>
+      }
+    ],
+  }
+}
+```
 
 ## Webhooks
 
