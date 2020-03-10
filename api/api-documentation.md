@@ -406,11 +406,11 @@ In the example above, the presence of the `identityChecks` **key** indicates tha
 
 ### Embedding data
 
-Many of our GET APIs provide the ability to **embed related data** in their responses. The links that our resources provide can optionally be interleaved into your response payload. This is a convenient tool that improves performance of API interaction and allows you to write less code to work with our platform.
+Many of our GET APIs provide the ability to **embed related data** in their responses. You are able to compose a request that will include related data that has been automatically interleaved into your response payload. This is a convenient tool that improves performance of API interaction and allows you to write less code to work with our platform.
 
 If your application requires data from one or more related resource\(s\) \(indicated by a link\), you can simply specify the name of the related resource in the `embed` parameter and our APIs will do the rest. **The same requests** that your application would have needed to perform will happen on the server side and the related data is returned to your app in the correct resource\(s\) `_embedded` data collection.
 
-You can embed as many related data sources in a request as you need to. Our [interactive API explorer](https://marketplace.reapit.cloud/developer/swagger) provides a user interface which demonstrates which data can be embedded in each API.
+You can embed as many related data sources in a request as your application requires. Our [interactive API explorer](https://marketplace.reapit.cloud/developer/swagger) provides a user interface which demonstrates the available `embed` parameter options for each API.
 
 ![](../.gitbook/assets/image%20%282%29.png)
 
