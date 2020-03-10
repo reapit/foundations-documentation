@@ -11,6 +11,7 @@ description: >-
 
 #### 2020-03-10
 
+* [\#297](https://github.com/reapit/foundations/issues/297) - Created endpoints to retrieve information about tenancies at `GET /tenancies` and `GET /tenancies/{id}`. You can also obtain information about a tenancies related contact / company tenants by using `GET /tenancies/{id}/relationships`
 * [\#576](https://github.com/reapit/foundations/issues/576) - Corrected the URL presented by the documents link in the response from 
 
   `GET /properties` and `GET /properties/{id}`
