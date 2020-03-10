@@ -11,6 +11,7 @@ description: >-
 
 #### 2020-03-10
 
+* [\#530](https://github.com/reapit/foundations/issues/530) - Created additional endpoints to allow retrieval of the available tenancy types that have been configured in a clients environment from `GET /configuration/tenancyTypes` and `GET /configuration/tenancyTypes/{id}`
 * [\#496](https://github.com/reapit/foundations/issues/496) - It is now possible to request that related information is included with `GET /applicants` and `GET /applicants/{id}` responses by using the `embed` parameter
 * [\#498](https://github.com/reapit/foundations/issues/498) - It is now possible to request that related information is included with `GET /companies` and `GET /companies/{id}` responses by using the `embed` parameter
 * [\#562](https://github.com/reapit/foundations/issues/562) - Fixed issue that meant the negotiator and office ids associated to applicant resources were sometimes populating incorrectly in the responses returned from `GET /applicants` and `GET /applicants/{id}`
