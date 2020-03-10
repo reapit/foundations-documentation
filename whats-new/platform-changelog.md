@@ -12,10 +12,6 @@ description: >-
 #### 2020-03-10
 
 * [\#297](https://github.com/reapit/foundations/issues/297) - Created endpoints to retrieve information about tenancies at `GET /tenancies` and `GET /tenancies/{id}`. You can also obtain information about a tenancies related contact / company tenants by using `GET /tenancies/{id}/relationships`
-* [\#576](https://github.com/reapit/foundations/issues/576) - Corrected the URL presented by the documents link in the response from 
-
-  `GET /properties` and `GET /properties/{id}`
-
 * [\#503](https://github.com/reapit/foundations/issues/503) -  It is now possible to request that related information is included with `GET /properties` and `GET /properties/{id}` responses by using the `embed` parameter
 * [\#530](https://github.com/reapit/foundations/issues/530) - Created additional endpoints to allow retrieval of the available tenancy types that have been configured in a clients environment from `GET /configuration/tenancyTypes` and `GET /configuration/tenancyTypes/{id}`
 * [\#496](https://github.com/reapit/foundations/issues/496) - It is now possible to request that related information is included with `GET /applicants` and `GET /applicants/{id}` responses by using the `embed` parameter
