@@ -9,6 +9,10 @@ description: >-
 
 ## March 2020
 
+#### 2020-03-10
+
+* [\#562](https://github.com/reapit/foundations/issues/562) - Fixed issue that meant the negotiator and office ids associated to applicant resources were sometimes populating incorrectly in the responses returned from `GET /applicants` and `GET /applicants/{id}`
+
 #### 2020-03-09
 
 * [\#563 ](https://github.com/reapit/foundations/issues/563)- Fixed issue that prevented contact source of enquiry from being populated in the payload returned from `GET /contacts` and `GET /contacts/{id}`
