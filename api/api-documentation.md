@@ -411,7 +411,7 @@ Many of our GET APIs provide the ability to compose requests that automatically 
 If your application requires data from one or more related resource\(s\) \(indicated by a link\), you can simply specify the name of the related resource in the `embed` parameter and our APIs will do the rest. The same requests ****that your application would have needed to perform will happen on the server side and the related data is returned to your app in the correct resource\(s\) `_embedded` data collection.
 
 {% hint style="info" %}
-This mechanism allows your application to make fewer round trips to the server by making requests on your applications behalf on the server side. Any request triggered by the embed mechanism will still contribute to your usage statistics in the same way as if they were directly issued from your application.
+This mechanism allows your application to make fewer round trips to the server by allowing our APIs to make requests on your applications behalf. Any request triggered by the embed mechanism will still contribute to your usage statistics in the same way as if they were directly issued from your application.
 {% endhint %}
 
 You can embed as many related data sources in a request as your application requires. Our [interactive API explorer](https://marketplace.reapit.cloud/developer/swagger) provides a user interface which demonstrates the available `embed` parameter options for each API.
