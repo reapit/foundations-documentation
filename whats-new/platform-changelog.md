@@ -9,6 +9,11 @@ description: >-
 
 ## March 2020
 
+#### 2020-03-11
+
+* [\#593](https://github.com/reapit/foundations/issues/593) - It is now possible to additionally request that related landlord information is included with `GET /properties` and `GET /properties/{id}` responses by using the `embed` parameter
+* [\#505](https://github.com/reapit/foundations/issues/505) - It is now possible to request that related information is included with `GET /tasks` and `GET /tasks/{id}` responses by using the `embed` parameter
+
 #### 2020-03-10
 
 * [\#584](https://github.com/reapit/foundations/issues/584) - Created new API to allow an existign item / job associated to a works order to be soft deleted at `DELETE /worksOrders/{id}/items/{itemId}`
