@@ -11,6 +11,7 @@ description: >-
 
 #### 2020-03-11
 
+* [\#595](https://github.com/reapit/foundations/issues/595) - Fixed issue when using embed functionality fetch a sales properties associated vendor
 * [\#593](https://github.com/reapit/foundations/issues/593) - It is now possible to additionally request that related landlord information is included with `GET /properties` and `GET /properties/{id}` responses by using the `embed` parameter
 * [\#505](https://github.com/reapit/foundations/issues/505) - It is now possible to request that related information is included with `GET /tasks` and `GET /tasks/{id}` responses by using the `embed` parameter
 
