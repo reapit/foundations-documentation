@@ -408,7 +408,7 @@ In the example above, the presence of the `identityChecks` **key** indicates tha
 
 Many of our GET APIs provide the ability to compose requests that automatically **embed related data** in their responses. This is a convenient tool that reduces the number of round trips your application needs to make to our Platform. Using this mechanism can result in improved application performance with less API interaction code required.
 
-If your application requires data from one or more related resource\(s\) \(indicated by a link\), you can simply specify the name of the related resource in the `embed` parameter and our APIs will do the rest. The same requests ****that your application would have needed to perform will happen on the server side and the related data is returned to your app in the correct resource\(s\) `_embedded` data collection.
+If your application requires data from one or more related resource\(s\) \(indicated by a link\), you can simply specify the name of the related resource in the `embed` parameter and our APIs will do the rest. So long as the related data exists, it is returned to your app in the correct resource\(s\) `_embedded` data collection.
 
 {% hint style="info" %}
 This mechanism allows your application to make fewer round trips to the server by allowing our APIs to make requests on your applications behalf. Any request triggered by the embed mechanism will still contribute to your usage statistics in the same way as if they were directly issued from your application.
