@@ -11,7 +11,7 @@ The Desktop API is not available during the Alpha period.
 {% endhint %}
 
 {% hint style="info" %}
-To obtain a copy of Reapit's Agency Cloud CRM, you must be sponsored by a Reapit Client. For more information on how to start a sponsorship, please[ click here](http://www.link.co.uk).
+To obtain a copy of Reapit's Agency Cloud CRM, you must be sponsored by a Reapit Client.
 {% endhint %}
 
 ### Overview
