@@ -17,7 +17,7 @@ description: >-
 
 #### 2020-03-10
 
-* [\#584](https://github.com/reapit/foundations/issues/584) - Created new API to allow an existign item / job associated to a works order to be soft deleted at `DELETE /worksOrders/{id}/items/{itemId}`
+* [\#584](https://github.com/reapit/foundations/issues/584) - Created new API to allow an existing item / job associated to a works order to be soft deleted at `DELETE /worksOrders/{id}/items/{itemId}`
 * [\#410](https://github.com/reapit/foundations/issues/410) - Created new API to allow an existing item / job associated to a works order to be updated at `PATCH /worksOrders/{id}/items/{itemId}`
 * [\#409](https://github.com/reapit/foundations/issues/409) - Created new API to allow a new item / job to be associated to be created against a works order at `POST /worksOrders/{id}/items`
 * [\#408](https://github.com/reapit/foundations/issues/408) - Created new API to retrieve information about a specific item / job associated to a works order at `GET /worksOrders/{id}/items/{itemId}`
