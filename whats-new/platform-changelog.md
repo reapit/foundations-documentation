@@ -9,6 +9,10 @@ description: >-
 
 ## March 2020
 
+#### 2020-03-12
+
+* [\#517](https://github.com/reapit/foundations/issues/517) - The `GET /properties` API no longer requires the `deparmentId` query string to be provided when using the `type`, `style`, `situation`, `age`, `parking` and `locality` parameters
+
 #### 2020-03-11
 
 * [\#576](https://github.com/reapit/foundations/issues/576) - Corrected the format of the documents link provided by the applicants, contacts, landlords, properties, tenancies and works orders read APIs
