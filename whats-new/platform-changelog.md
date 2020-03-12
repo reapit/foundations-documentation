@@ -11,7 +11,7 @@ description: >-
 
 #### 2020-03-12
 
-* [\#517](https://github.com/reapit/foundations/issues/517) - The `GET /properties` API no longer requires the `deparmentId` query string to be provided when using the `type`, `style`, `situation`, `age`, `parking` and `locality` parameters
+* [\#517](https://github.com/reapit/foundations/issues/517) - The `GET /properties` and `GET /applicants` APIs no longer requires the `deparmentId` query string to be provided when using the `type`, `style`, `situation`, `age`, `parking` and `locality` parameters
 
 #### 2020-03-11
 
