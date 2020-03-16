@@ -36,7 +36,7 @@ Now available in the Interactive API Documentation, the option to request additi
 If your application requires data from one or more related endpoints, you can simply specify the name of the related resource from the list provide in ‘Embed’ section and our APIs will do the rest.  
 
 
-![Embed Parameter example](../.gitbook/assets/image%20%287%29.png)
+![](../.gitbook/assets/embed.png)
 
 For more information of this feature, please [click here](https://foundations-documentation.reapit.cloud/api/api-documentation#embedding-data)
 
