@@ -9,6 +9,10 @@ description: >-
 
 ## March 2020
 
+#### 2020-03-17
+
+* [\#542](https://github.com/reapit/foundations/issues/542) - Improved the documentation of the parameters required for `GET /propertyPictures/{id}`
+
 #### 2020-03-16
 
 * [\#395](https://github.com/reapit/foundations/issues/395) - The interactive API explorer will now allow the `If-Match` header to issued from within the user interface. This provides the ability to test `PATCH` endpoints using this tool. Please note that you will still need to retrieve and provide the `If-Match` header from the resource you want to update.
