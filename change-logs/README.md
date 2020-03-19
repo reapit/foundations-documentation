@@ -5,5 +5,5 @@ description: >-
   bug fixes & new features.
 ---
 
-# Change Logs
+# Web Change Logs
 

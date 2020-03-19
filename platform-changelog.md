@@ -5,7 +5,7 @@ description: >-
   The current version of our APIs is 2020-01-31.
 ---
 
-# Platform
+# Platform Change Log
 
 ## March 2020
 
