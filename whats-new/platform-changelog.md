@@ -11,7 +11,7 @@ description: >-
 
 #### 2020-03-19
 
-* [\#610 ](https://github.com/reapit/foundations/issues/610)- Added the ability to filter contacts by one or more email addresses
+* [\#610 ](https://github.com/reapit/foundations/issues/610)-  It is now possible to filter contacts presented by `GET /contacts` by using the `email` parameter
 
 #### 2020-03-17
 
