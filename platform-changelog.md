@@ -12,6 +12,7 @@ description: >-
 #### 2020-03-19
 
 * [\#610 ](https://github.com/reapit/foundations/issues/610)-  It is now possible to filter contacts presented by `GET /contacts` by using the `email` parameter
+* [\#661](https://github.com/reapit/foundations/issues/661) - Fixed issue that meant a successful `POST /worksOrder/{id}/items` request would present an incorrect URL in it's location response header
 
 #### 2020-03-17
 
