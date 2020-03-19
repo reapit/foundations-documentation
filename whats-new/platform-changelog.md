@@ -9,6 +9,10 @@ description: >-
 
 ## March 2020
 
+#### 2020-03-19
+
+* [\#610 ](https://github.com/reapit/foundations/issues/610)- Added the ability to filter contacts by one or more email addresses
+
 #### 2020-03-17
 
 * [\#542](https://github.com/reapit/foundations/issues/542) - Improved the documentation of the parameters required for `GET /propertyPictures/{id}`
