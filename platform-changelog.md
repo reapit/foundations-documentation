@@ -13,6 +13,7 @@ description: >-
 
 * [\#668](https://github.com/reapit/foundations/issues/668) - The response from `GET /landlords` and `GET /landlords/{id}` will now include a link to the landlords associated properties
 * [\#666](https://github.com/reapit/foundations/issues/666) - Added `videoUrl` and `videoCaption` attributes to the payloads for `GET`, `POST`, and `PATCH` of property information.
+* [\#669](https://github.com/reapit/foundations/issues/669) - It is now possible to request that related property information is included with `GET /landlords` and `GET /landlords/{id}` responses by using the `embed` parameter
 
 #### 2020-03-19
 
