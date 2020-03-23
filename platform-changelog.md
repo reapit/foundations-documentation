@@ -9,6 +9,10 @@ description: >-
 
 ## March 2020
 
+#### 2020-03-23
+
+* [\#665](https://github.com/reapit/foundations/issues/665) - Added `letting.furnishing` attribute to the payloads for `GET`, `POST`, and `PATCH` of property information
+
 #### 2020-03-20
 
 * [\#668](https://github.com/reapit/foundations/issues/668) - The response from `GET /landlords` and `GET /landlords/{id}` will now include a link to the landlords associated properties
