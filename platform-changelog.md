@@ -9,6 +9,10 @@ description: >-
 
 ## March 2020
 
+#### 2020-03-24
+
+* [\#689](https://github.com/reapit/foundations/issues/689) -  Added `selling.exchanged` and `selling.completed` attributes to the payloads for `GET`, `POST`, and `PATCH` of property information
+
 #### 2020-03-23
 
 * [\#665](https://github.com/reapit/foundations/issues/665) - Added `letting.furnishing` attribute to the payloads for `GET`, `POST`, and `PATCH` of property information
