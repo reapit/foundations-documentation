@@ -25,6 +25,11 @@ description: >-
 
 #### 2020-03-19
 
+* [\#305](https://github.com/reapit/foundations/issues/305) - Created new API to provide a paged, filterable listing of journal entries at `GET /journalEntries`. Journal entries are timestamped events that are associated to other entities to indicate that an event has happened, such as a property price change.
+* [\#306](https://github.com/reapit/foundations/issues/306) - Created new API to allow a new journal entry to be created at `POST /journalEntries`
+* [\#463](https://github.com/reapit/foundations/issues/463) - Created new API to provide a paged, filterable listing of enquiries at `GET /enquiries`. Enquiriy details are usually captured directly in a website and represents interest from a prospective applicant about one or more properties, or interest from a prospective landlord/vendor about having a property valuation.
+* [\#464](https://github.com/reapit/foundations/issues/464) - Created new API to retrieve information about a specific enquiry at `GET /enquiries/{id}`
+* [\#465](https://github.com/reapit/foundations/issues/465) - Created new API to allow creation of a new enquiry at `POST /enquiries`
 * [\#610 ](https://github.com/reapit/foundations/issues/610)-  It is now possible to filter contacts presented by `GET /contacts` by using the `email` parameter
 * [\#661](https://github.com/reapit/foundations/issues/661) - Fixed issue that meant a successful `POST /worksOrder/{id}/items` request would present an incorrect URL in it's location response header
 * [\#540](https://github.com/reapit/foundations/issues/540) - It is now possible to query the `GET /applicants` resource with a specific rent collection frequency
