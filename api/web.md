@@ -312,7 +312,7 @@ When you have selected the correct config for you, your app will build, install 
 
 ## Config Manager
 
-Config manager is a convenience script used for managing configuration for applications in AWS Secrets manager. It is very basic but gives a simple CLI interface for performing CRUD operations on your secret or sensitive config.
+Config manager is a convenience script used for managing configuration for applications in AWS Parameter Store. It is very basic but gives a simple CLI interface for performing fetch operations on your parameter store or sensitive config.
 
 ### Usage
 
@@ -326,12 +326,26 @@ You can then install to your project with;
 
 `yarn install @reapit/config-manager --dev`
 
-The project exports four CRUD methods;
+The project exports methods;
 
-* `getSecret` Fetches a secret by name and outputs to a local JSON file called `reapit-config.json` at the root of your project.  You can see an example of the output file at  here,
-* `createSecret` Stores a new secret by name, with the value of the secret string set to whatever is in the `reapit-config.json` at the root of your project.
-* `updateSecret` Updates a secret by name, with the value of the secret string set to whatever is in the `reapit-config.json` at the root of your project. Suggest very strongly that you should use `getSecret` first then only update the values you need to change.
-* `deleteSecret` Deletes a secret by name - it is stored for a default of 7 days should you ever need to recover it before being hard deleted.
+* `fetchConfig` Fetches a secret by name and outputs to a local JSON file called `config.json` at the root of your package. Example:
+
+```
+{
+  "appEnv": "development",
+  "sentryDns": "",
+  "marketplaceApiUrl": "",
+  "marketplaceApiKey": "",
+  "uploadApiUrl": "",
+  "swaggerUrl": "",
+  "elementDocumentUrl": "",
+  "cognitoClientId": "",
+  "googleAnalyticsKey": "",
+  "cognitoOAuthUrl": "",
+  "cognitoUserPoolId": "",
+  "chatbotAppId": ""
+}
+```
 
 {% hint style="warning" %}
 Be sure to add the reapit-config.json file to your .gitignore to avoid committing sensitive info
@@ -339,7 +353,9 @@ Be sure to add the reapit-config.json file to your .gitignore to avoid committin
 
 Usage of all methods is in the following format:
 
-`yarn config-manager <<methodName>> <<secret-name>>`
+`yarn config-manager <<methodName>> <<parameter-store-name>>`
+
+For create/update/delete config. Please go to AWS console > Systems Manager > Parameter Store
 
 ## Web Components
 
