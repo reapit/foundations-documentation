@@ -41,11 +41,13 @@ This exports the following commands:
 
 ### Environment & Config
 
-All of our applications load their configuration from a file called `reapit-config.json` at the root of the project, where they are either pulled and set on the server by the CI for Node projects, or for client side applications, injected at compile time by Webpack. Any secrets we set in Github's secrets manager so we can reference in the CI only. 
+Each of our applications load their configuration from a file called `config.json` at the root of the package folder, where they are either pulled and set on the server by the CI for Node projects, or for client side applications, injected at render time by `window.reapit.config` object. Any secrets we set in Github's secrets manager so we can reference in the CI only.
 
 Internally we manage the non confidential config using our Config Manager [see here](../api/web.md#config-manager) for info on how to do this yourself. If you are working internally on the project, you should follow these steps.
 
-An example of the base config file[ is here](https://github.com/reapit/foundations/blob/master/packages/config-manager/reapit-config.example.json) and by default one ships with our app scaffolder. If you are trying to build the apps yourself, you can rename this, place in the root director, add a value to the `COGNITO_CLIENT_ID` \(this is the client id, you can see in the app detail modal when you have submitted your app\), and you should have sufficient config to work in the local environment.
+An example of the base config file[ is here](https://github.com/reapit/foundations/blob/master/packages/marketplace/config.example.json) and by default one ships with our app scaffolder. If you are trying to build the apps yourself, you can rename this, place in the root director, add a value to the `cognitoClientId`\(this is the client id, you can see in the app detail modal when you have submitted your app\), `cognitoOAuthUrl` and `cognitoUserPoolId` , and you should have sufficient config to work in the local environment.
+
+The reason why we choose to fetch the config and inject in the render time is we only build one time and the bundle can run on many environment by replacing the `config.json` file.
 
 ### Development
 
