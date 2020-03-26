@@ -9,6 +9,15 @@ description: >-
 
 ## March 2020
 
+#### 2020-03-26
+
+* [\#692](https://github.com/reapit/foundations/issues/692) - Created new API to allow an existing tenancy check to be soft deleted at `DELETE /tenancies/{id}/checks/{checkId}`
+* [\#304](https://github.com/reapit/foundations/issues/304) - Created new API to allow an existing tenancy check to be updated at `PATCH /tenancies/{id}/checks/{checkId}`
+* [\#303](https://github.com/reapit/foundations/issues/303) - Created new API to allow a new tenancy check to be created for a specific tenancy `POST /tenancies/{id}/checks`
+* [\#302](https://github.com/reapit/foundations/issues/302) - Created new API to retrieve information about a specific tenancy check associated to a tenancy at `GET /tenancies/{id}/checks/{checkId}`
+* [\#301](https://github.com/reapit/foundations/issues/301) - Created new API to provide a paged listing of pre and post tenancy checks associated to a tenancy at `GET /tenancies/{id}/checks`
+* [\#299](https://github.com/reapit/foundations/issues/299) - Created new API to allow a new tenancy to be created in an arranging status at `POST /tenancies`
+
 #### 2020-03-24
 
 * [\#689](https://github.com/reapit/foundations/issues/689) -  Added `selling.exchanged` and `selling.completed` attributes to the payloads for `GET`, `POST`, and `PATCH` of property information
