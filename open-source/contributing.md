@@ -61,7 +61,7 @@ We have worked to normalise our development workflows so that the majority of pa
 
 Given that you have already installed dependencies [\(see getting started\)](contributing.md#getting-started), you can `cd` into a `packages/<<package-name>>` directory and \(where relevant\);
 
-`yarn start:dev` will get you up and running with a web-server at `localhost:8080` 
+`yarn start:dev` will get you up and running with a web-server at `localhost:8080`
 
 `yarn test:dev` will run unit tests in watch mode for the project
 
@@ -77,11 +77,11 @@ Given that you have already installed dependencies [\(see getting started\)](con
 
 ### Styling
 
-We support two styling methods across our projects; [SASS with CSS Modules](https://sass-lang.com/) and [Styled Components](https://styled-components.com/). You are welcome to use either and both are supported by our [React App Scaffolder](../api/web.md#react-app-scaffolder), although only one by project. 
+We support two styling methods across our projects; [SASS with CSS Modules](https://sass-lang.com/) and [Styled Components](https://styled-components.com/). You are welcome to use either and both are supported by our [React App Scaffolder](../api/web.md#react-app-scaffolder), although only one by project.
 
-By convention, we store any Styled Components that are specific to an individual component in a sub folder of that component called `__styles__` however, if a style is re-usable, generic or global to the project, please use the `src/styles` directory to reduce duplication. 
+By convention, we store any Styled Components that are specific to an individual component in a sub folder of that component called `__styles__` however, if a style is re-usable, generic or global to the project, please use the `src/styles` directory to reduce duplication.
 
-For components that are genuinely generic across the estate, please take the time to add to the [Elements](../api/web.md#elements) project as a Storybook item so we can use it again. If you suspect you may be writing a common component from scratch, it is likely it will already exist in Elements so please take a look if there is anything that can be re-used or adapted with a modifier class. 
+For components that are genuinely generic across the estate, please take the time to add to the [Elements](../api/web.md#elements) project as a Storybook item so we can use it again. If you suspect you may be writing a common component from scratch, it is likely it will already exist in Elements so please take a look if there is anything that can be re-used or adapted with a modifier class.
 
 Our overriding aim is to write as little CSS as possible and focus on re-usable components, both to save time and to develop a consistent look and feel across the estate.
 
@@ -91,13 +91,13 @@ Our code has a lot of automated testing, mostly unit tests, although we have som
 
 We use [Jest](https://jestjs.io/) for our unit testing, with [Enzyme](https://airbnb.io/enzyme/) for rendering React components where relevant. If you are not familiar with these libraries, we would urge you to do some reading before getting started. Our goal is that each of our packages, where relevant, should have ~90% coverage of functions and lines. Whilst this target is an arbitrary value, the desired outcome is a high level of confidence in our CI / CD pipeline which means we can deploy straight to development and daily to production.
 
-By convention,  we keep our test scripts in a sub folder of the source code called `__tests__` with the same file name. Where we use mocks and stubs, as with tests, they live in the same folder of the source code with the same file name and sub folder convention `__stubs__` and `__mocks__` .
+By convention, we keep our test scripts in a sub folder of the source code called `__tests__` with the same file name. Where we use mocks and stubs, as with tests, they live in the same folder of the source code with the same file name and sub folder convention `__stubs__` and `__mocks__` .
 
 For React components as a bare minimum, we expect a snapshot of the shallow rendered component, with snapshots saving to the `__snapshots__` sub folder of the component.
 
 End to end functional tests are all written using the excellent Cypress framework. Whilst it does not support cross browser testing for older browsers, we feel it is a decent tradeoff owing to the speed, developer experience and reliability of the tests over conventional Selenium / Webdriver tests.
 
-Where relevant, files e2e test specs are placed in the  `src/tests/cypress` folder of the package. We use the `Page Object Model` pattern, storing anything related to a specific page; selectors and actions, to make them more re-usable and modular.
+Where relevant, files e2e test specs are placed in the `src/tests/cypress` folder of the package. We use the `Page Object Model` pattern, storing anything related to a specific page; selectors and actions, to make them more re-usable and modular.
 
 When raising a pull request, please ensure that existing tests are passing locally and that where relevant, new tests are added to maintain our overall coverage levels.
 
@@ -105,7 +105,7 @@ When raising a pull request, please ensure that existing tests are passing local
 
 ### Github Issues & Projects
 
-The starting point for any development work is to raise or assign a [Github Issue](https://github.com/reapit/foundations/issues) to yourself. The issue should be a descriptive as necessary for a future developer to understand or for a tester to properly validate. 
+The starting point for any development work is to raise or assign a [Github Issue](https://github.com/reapit/foundations/issues) to yourself. The issue should be a descriptive as necessary for a future developer to understand or for a tester to properly validate.
 
 We use labels heavily to categorise issues. Each issue should have either `bug` `feature` or `chore` added based on the type of work required. It should also have either a `platform-team` label for API issues or `cloud-team` label for web application issue and where relevant, a label for services it will effect for example `marketplace` or `elements`.
 
@@ -113,7 +113,7 @@ We use labels heavily to categorise issues. Each issue should have either `bug` 
 Raising an issue does not guarantee that we will work on it. In many cases we will ask for more information and in some cases we may close an issue if it does not fit with our roadmap. In all cases, we will update the ticket with an outcome so please keep an eye on it for updates.
 {% endhint %}
 
-When raising an issue, you should add a project to the ticket, either [`Feature Triage` ](https://github.com/reapit/foundations/projects/3)or [`Bug Triage`](https://github.com/reapit/foundations/projects/2) . This will alert one of our Product Owners that the issue requires investigation and they will move it into one of our development streams if it is accepted and ranked by priority. Ultimately accepted issues will make it onto the main [`Kanban`](https://github.com/reapit/foundations/projects/1) board where an engineer will pick it up for development. 
+When raising an issue, you should add a project to the ticket, either [`Feature Triage` ](https://github.com/reapit/foundations/projects/3)or [`Bug Triage`](https://github.com/reapit/foundations/projects/2) . This will alert one of our Product Owners that the issue requires investigation and they will move it into one of our development streams if it is accepted and ranked by priority. Ultimately accepted issues will make it onto the main [`Kanban`](https://github.com/reapit/foundations/projects/1) board where an engineer will pick it up for development.
 
 {% hint style="warning" %}
 Ensure a triage project is added to your issue to make sure we process it as quickly as possible
@@ -131,9 +131,9 @@ When working on the project, we ask that contributors follow a basic git flow, w
 * Keep your branch up to date at all times with the base branch by `rebase` only, to keep the tree clean.
 * On merging to base, use `squash and merge`, to keep the tree clean and to make rolling back changes easy.
 
-### Github Actions, CI / CD & Releasing 
+### Github Actions, CI / CD & Releasing
 
-We use [Github Actions](https://help.github.com/en/actions) for all our Continuous integration pipelines. You can see the various workflows being executed in [live time here](https://github.com/reapit/foundations/actions) and the [source files here](https://github.com/reapit/foundations/tree/master/.github). 
+We use [Github Actions](https://help.github.com/en/actions) for all our Continuous integration pipelines. You can see the various workflows being executed in [live time here](https://github.com/reapit/foundations/actions) and the [source files here](https://github.com/reapit/foundations/tree/master/.github).
 
 The basic flow for all projects is that;
 
@@ -159,7 +159,7 @@ As per the previous sections, all work on the project is performed against the s
 
 ### Linting & Formatting
 
-The vast majority of base code style is enforced by [ESLint](https://eslint.org/) with sensible community presets from [TSLint](https://palantir.github.io/tslint/) rules, and [Prettier](https://prettier.io/). The linter runs in a pre-commit hook on staged files with an auto-fix flag set to address any trivial issues. 
+The vast majority of base code style is enforced by [ESLint](https://eslint.org/) with sensible community presets from [TSLint](https://palantir.github.io/tslint/) rules, and [Prettier](https://prettier.io/). The linter runs in a pre-commit hook on staged files with an auto-fix flag set to address any trivial issues.
 
 If you want to run the lint command manually, you can do this from the root of the project by executing `yarn lint`
 
@@ -206,26 +206,4 @@ In addition to the lint rules, please also where possible, stick to the contribu
   * The tests should not be excessive or flaky to ensure they do not block dev workflow.
 * File naming should be `kebab-case` for `.js(x), .ts(x), .css` files, and indeed all files where possible. No use of capitals to avoid issues where Unix systems do not respect casing when a file name is changed.
 * Exports from files can be either as variable or default exports, but please stick to naming the object before using `export default` to avoid anonymous module names in stack traces and React dev tools.
-
-## 
-
-### 
-
-### 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

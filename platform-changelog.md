@@ -11,6 +11,7 @@ description: >-
 
 #### 2020-03-26
 
+* [\#721](https://github.com/reapit/foundations/issues/721) - Corrected issue that meant that dates passed in an incorrect format as a payload to `POST` and `PATCH` operations would result in a `500` status code rather than a `422`
 * [\#692](https://github.com/reapit/foundations/issues/692) - Created new API to allow an existing tenancy check to be soft deleted at `DELETE /tenancies/{id}/checks/{checkId}`
 * [\#304](https://github.com/reapit/foundations/issues/304) - Created new API to allow an existing tenancy check to be updated at `PATCH /tenancies/{id}/checks/{checkId}`
 * [\#303](https://github.com/reapit/foundations/issues/303) - Created new API to allow a new tenancy check to be created for a specific tenancy `POST /tenancies/{id}/checks`

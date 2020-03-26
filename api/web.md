@@ -330,7 +330,7 @@ The project exports methods;
 
 * `fetchConfig` Fetches a secret by name and outputs to a local JSON file called `config.json` at the root of your package. Example:
 
-```
+```text
 {
   "appEnv": "development",
   "sentryDns": "",
@@ -355,7 +355,7 @@ Usage of all methods is in the following format:
 
 `yarn config-manager <<methodName>> <<parameter-store-name>>`
 
-For create/update/delete config. Please go to AWS console > Systems Manager > Parameter Store
+For create/update/delete config. Please go to AWS console &gt; Systems Manager &gt; Parameter Store
 
 ## Web Components
 
