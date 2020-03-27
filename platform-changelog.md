@@ -9,6 +9,10 @@ description: >-
 
 ## March 2020
 
+#### 2020-03-27
+
+* [\#733](https://github.com/reapit/foundations/issues/733) - It is now possible to search for appointments associated to related entities by using the `attendeeId` and `attendeeType` parameters at `GET /appointments` 
+
 #### 2020-03-26
 
 * [\#721](https://github.com/reapit/foundations/issues/721) - Corrected issue that meant that dates passed in an incorrect format as a payload to `POST` and `PATCH` operations would result in a `500` status code rather than a `422`
