@@ -13,6 +13,10 @@ description: >-
 
 * [\#774](https://github.com/reapit/foundations/issues/774) - Fixed issue with the `id` field in the example property data being presented from the interactive API explorer
 * [\#767](https://github.com/reapit/foundations/issues/767) - Corrected data condition that meant that related contact information could sometimes be incorrectly presented as a company type from the vendors API
+* [\#770](https://github.com/reapit/foundations/issues/770) - Corrected data condition that meant that related contact information could sometimes be incorrectly presented as a company type from the applicants API
+* [\#771](https://github.com/reapit/foundations/issues/771) - Corrected data condition that meant that related contact information could sometimes be incorrectly presented as a company type from the landlords API
+* [\#772](https://github.com/reapit/foundations/issues/772) - Corrected data condition that meant that related contact information could sometimes be incorrectly presented as a company type from the offers API
+* [\#77](https://github.com/reapit/foundations/issues/773)3 - Corrected data condition that meant that related contact information could sometimes be incorrectly presented as a company type from the tenancies API
 
 #### 2020-03-27
 
