@@ -9,6 +9,10 @@ description: >-
 
 ## March 2020
 
+#### 2020-03-31
+
+* [\#767](https://github.com/reapit/foundations/issues/767) - Corrected data condition that meant that related contact information could sometimes be incorrectly presented as a company type from the vendors API
+
 #### 2020-03-27
 
 * [\#733](https://github.com/reapit/foundations/issues/733) - It is now possible to search for appointments associated to related entities by using the `attendeeId` and `attendeeType` parameters at `GET /appointments` 
