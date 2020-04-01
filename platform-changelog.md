@@ -11,6 +11,7 @@ description: >-
 
 #### 2020-04-01
 
+* [\#765](https://github.com/reapit/foundations/issues/765) - Added support to filter by agent role for lettings properties on `GET /properties` 
 * [\#760](https://github.com/reapit/foundations/issues/760) - The payload from `GET /vendors` and `GET /vendors/{id}` will now include the `propertyId` of the property the vendor is associated with as well as an entry to that property in the `_links` collection
 
 #### 2020-03-31
