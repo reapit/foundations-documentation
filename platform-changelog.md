@@ -9,6 +9,10 @@ description: >-
 
 ## March 2020
 
+#### 2020-04-01
+
+* [\#760](https://github.com/reapit/foundations/issues/760) - The payload from `GET /vendors` and `GET /vendors/{id}` will now include the `propertyId` of the property the vendor is associated with as well as an entry to that property in the `_links` collection
+
 #### 2020-03-31
 
 * [\#774](https://github.com/reapit/foundations/issues/774) - Fixed issue with the `id` field in the example property data being presented from the interactive API explorer
