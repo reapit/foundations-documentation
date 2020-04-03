@@ -6,6 +6,19 @@ description: >-
 ---
 
 # Elements
+### elements_v0.5.48 - 2020-04-03
+  
+Release: elements_v0.5.48
+Rollback: elements_v0.5.47
+Changes:
+commit | author |description
+  
+- 490f0b13c8e6200cd7ba98810f15af74c6372e3b | Cuong Vu <cuongvh@reapit.com> | fix: #739 cannot assign to readonly window.__REAPIT_MARKETPLACE_GLOBALS__ (#800)
+- 8d3bd81c139e1a7f5e3e903f182faf1d156e54c5 | Cuong Vu <cuongvh@reapit.com> | feat: #739 The Cloud Apps should be testable in "Desktop Mode" (#784)* feat: #739 cloud apps now testable in desktop mode
+
+approver: @willmcvay
+monitor: https://sentry.io/organizations/reapit-ltd/projects/
+    
 ### elements_v0.5.47 - 2020-04-01
   
 Release: elements_v0.5.47
