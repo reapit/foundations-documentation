@@ -6,6 +6,19 @@ description: >-
 ---
 
 # Elements
+### elements_v0.5.49 - 2020-04-03
+  
+Release: elements_v0.5.49
+Rollback: elements_v0.5.48
+Changes:
+commit | author |description
+  
+- fc33827dd41ae1f68171f73ad1346c4c709ae490 | Cuong Vu <cuongvh@reapit.com> | chore: bump elements version 0.5.49 (#810)
+- f9d7f3a34a89e5c1a2e5ab748562dba149093b3c | Cuong Vu <cuongvh@reapit.com> | fix: #739 correcr logic before restorewindow.__REAPIT_MARKETPLACE_GLOBALS__ (#809)
+
+approver: @willmcvay
+monitor: https://sentry.io/organizations/reapit-ltd/projects/
+    
 ### elements_v0.5.48 - 2020-04-03
   
 Release: elements_v0.5.48
