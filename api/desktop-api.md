@@ -177,63 +177,138 @@ Not only can Applications built on the Foundations Platform trigger events in th
 
 The most common way that this will manifest itself is by replacing a screen in Agency Cloud with an application. For example if you want to use an App to manage all of your AML and ID checking then you can associate the app with this action in Agency Cloud and every time you click to launch the ID check screen, the associated App will be presented instead.
 
-Another area which is possible to replace here is default functionality such as sending an SMS which currently is sometimes done now by hooking up to a 3rd party API, but instead purpose built app could provide a richer user experience to be able to edit the message before it is sent, and possibly choose the recipients of the message.
-
 All apps should be able to be launched from the Installed Apps screen and be ran standalone without the need to be linked to an action. They will just be hosted in the marketplace and launched in Agency Cloud – for example the Geo Diary application.
 
-### Categorisation
+### Desktop Types
 
-To be able to associate an application with an action in Agency Cloud the application will need to be given a category. This will be required so that Agency Cloud can be confident of the way the application will behave and that the application is agreeing to accept certain parameters when launched.
+To be able to associate an application with an action in Agency Cloud the application will need to be given a desktop type. This will be required so that Agency Cloud can be confident of the way the application will behave and that the application is agreeing to accept certain parameters when launched.  These parameters will be available inside the **window.REAPIT\_MARKETPLACE\_GLOBALS** javascript dictionary which is used to identify that a page is in _Desktop_ mode.
 
-For example – an AML or ID checking app will need to be able to accept a query parameter in the launch url of cntCode which tells the application which contact to show the ID checks for.
+For example – an AML or ID checking app will need to be able to accept a parameter in the dictionary with a key of **cntCode** which tells the application which contact to show the ID checks for.
 
-Possible associations;
+There are currently seven supported application desktop types which are based on the most commonly customised parts of Agency Cloud.  This list will be extended as we learn what apps developers are building;
 
+* Property
+* Applicant
 * ID Check
+* Property Marketing Information
+* Vendor Marketing Report
 * Property Detail Generation \(print wizard\)
-* Applicant Preview
+* Applicant Export
 
-## Categories
+## Types
+
+### Property
+
+The type of _Property_ will be given to an application that can be launched for a specific property from Agency Cloud. The globals dictionary will contain the below key when launched by agency cloud for a specific property:
+
+```text
+{ "prpCode": "ABC200123" }
+```
+
+| Parameter | Type | Description | Required |
+| :--- | :--- | :--- | :--- |
+| prpCode | string | The primary key of the property to load the application for \(note that this won’t be present when the app loads from the marketplace, but the app needs to be able to accept this parameter when it is launched via the desktop type route\). | Yes |
+
+When an app with a type of Property is installed then an Apps menu will appear on the Property screen.  Clicking on an app will launch it with the property code.
+
+![Property apps launch point](../.gitbook/assets/image%20%2812%29.png)
+
+### Applicant
+
+The type of _Applicant_ will be given to an application that can be launched for a specific applicant from Agency Cloud. The globals dictionary will contain the below key when launched by agency cloud for a specific property:
+
+```text
+{ "appCode": "ABC200123" }
+```
+
+| Parameter | Type | Description | Required |
+| :--- | :--- | :--- | :--- |
+| appCode | string | The primary key of the applicant to load the application for \(note that this won’t be present when the app loads from the marketplace, but the app needs to be able to accept this parameter when it is launched via the desktop type route\). | Yes |
+
+When an app with a type of Applicant is installed then an Apps menu will appear on the Applicant screen.  Clicking on an app will launch it with the applicant code.
+
+![Applicant apps launch point](../.gitbook/assets/image%20%286%29.png)
 
 ### Id Check
 
-The category of ID Check will be given to an application that can be used to replace the ID Check screen in Agency Cloud. The url that an application with this category would look like would be:
+The type of _ID Check_ will be given to an application that can be used to replace the ID Check screen in Agency Cloud. The globals dictionary will contain the below key when launched by agency cloud for a specific contact:
 
 ```text
-https://{AppLaunchUrl}?Username={loggedInUserEmail}&Desktop=true&CntCode={PrimaryKey}
+{ "cntCode": "ABC20012345" }
 ```
 
 | Parameter | Type | Description | Required |
 | :--- | :--- | :--- | :--- |
-| username | string | The username of the user logged into Agency Cloud | Yes |
-| desktop | boolean | This will always be passed as True to indicate app should run in desktop mode \(if it has/needs one\) | Yes |
-| cntCode | string | The primary key of the contact to load the ID checks for \(note that this won’t be present when the app loads from the marketplace, but the app needs to be able to accept this parameter when it is launched via the app association route\). | Yes |
+| cntCode | string | The primary key of the contact to load the ID checks for \(note that this won’t be present when the app loads from the marketplace, but the app needs to be able to accept this parameter when it is launched via the desktop type route\). | Yes |
+
+This desktop type will take affect in Agency Cloud when the following button is clicked \(this will be seen on various screens, for example contact and applicant\).
+
+![Id Check button in Agency Cloud](../.gitbook/assets/image%20%285%29.png)
+
+### Property Marketing Information
+
+The type of _Property Marketing Information_ can be given to an application that can replace the standard property marketing screen in Agency Cloud. This is the most commonly customised screen in Agency Cloud as it allows clients the opportunity to store bespoke information for their busness.  The globals dictionary will contain the below key when launched by agency cloud for a specific property:
+
+```text
+{ "prpCode": "ABC201023" }
+```
+
+| Parameter | Type | Description | Required |
+| :--- | :--- | :--- | :--- |
+| prpCode | string | The primary key of the property to load the marketing information app for \(note that this won’t be present when the app loads from the marketplace, but the app needs to be able to accept this parameter when it is launched via the app association route\). | Yes |
+
+An application of this type can be launched from the Marketing button on the property screen in Agency Cloud:
+
+![Property Marketing app launch point](../.gitbook/assets/image%20%284%29.png)
+
+### Vendor Marketing Report
+
+The type of _Vendor Marketing Report_ can be given to an application that can produce a customised Vendor Marketing Report. This is also one of the most commonly customised areas of Agency Cloud as different agents have different requirements for how their vendor marketing reports should look.  The globals dictionary will contain the below key when launched by agency cloud for a specific property:
+
+```text
+{ "prpCode": "ABC201023" }
+```
+
+| Parameter | Type | Description | Required |
+| :--- | :--- | :--- | :--- |
+| prpCode | string | The primary key of the property to generate the report for \(note that this won’t be present when the app loads from the marketplace, but the app needs to be able to accept this parameter when it is launched via the app association route\). | Yes |
+
+An application of this type can be launched from the Applicant Interest and Reports screen in Agency Cloud \(launched from the Property Journal window\):
+
+![VMR generator launch point](../.gitbook/assets/image.png)
 
 ### Property Detail Generation
 
-The category of Property Detail Generation can be given to an application that can replace the standard details template generation and brochure ordering process. This application could allow selection of a template as defined in the application – selection of pictures to include, what paper size to print the brochures on etc The url that this application would use would be like:
+The type of _Property Detail Generation_ can be given to an application that can replace the standard details template generation and brochure ordering process. This application could allow selection of a template as defined in the application – selection of pictures to include, what paper size to print the brochures on etc.  The globals dictionary will contain the below key when launched by agency cloud for a specific property:
 
 ```text
-https://{AppLaunchUrl}?Username={loggedInUserEmail}&Desktop=true&PrpCode={PrimaryKey}
+{ "prpCode": "ABC201023" }
 ```
 
 | Parameter | Type | Description | Required |
 | :--- | :--- | :--- | :--- |
-| username | string | The username of the user logged into Agency Cloud | Yes |
-| desktop | boolean | This will always be passed as True to indicate app should run in desktop mode \(if it has/needs one\) | Yes |
 | prpCode | string | The primary key of the property to load generate the brochures for \(note that this won’t be present when the app loads from the marketplace, but the app needs to be able to accept this parameter when it is launched via the app association route\). | Yes |
 
-### Applicant Preview
+An application of this type can be launched from the Property Details screen in Agency Cloud:
 
-The category of Applicant Preview would enable an application to be used to display a list of properties to a user. The application would need to be able to take a comma separated list of property codes which to display. The url that this application would use would be like:
+![Details generator app launch point ](../.gitbook/assets/image%20%2814%29.png)
+
+### Applicant Export
+
+The category of _Applicant Export_ would enable an application to be used to export the details of an applicant to a separate system.  The globals dictionary will contain the below key when launched by agency cloud for a specific property:
 
 ```text
-https://{AppLaunchUrl}?Username={loggedInUserEmail}&Desktop=true &PrpCodes={List of PrimaryKeys}
+{ "appCode": "ABC201023" }
 ```
 
 | Parameter | Type | Description | Required |
 | :--- | :--- | :--- | :--- |
-| username | string | The username of the user logged into Agency Cloud | Yes |
-| desktop | boolean | This will always be passed as True to indicate app should run in desktop mode \(if it has/needs one\) | Yes |
-| prpCodes | string | The primary key of the property to load generate the brochures for \(note that this won’t be present when the app loads from the marketplace, but the app needs to be able to accept this parameter when it is launched via the app association route\). | Yes |
+| appCode | string | The primary key of the applicant to export \(note that this won’t be present when the app loads from the marketplace, but the app needs to be able to accept this parameter when it is launched via the app association route\). | Yes |
+
+An application of this type would be triggered in two ways from Agency Cloud:
+
+1. Upon first save of the applicant
+2. As an option when clicking Print on the applicant screen:
+
+![Applicant exporter app launch point](../.gitbook/assets/image%20%288%29.png)
 

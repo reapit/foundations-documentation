@@ -20,14 +20,14 @@ Now let’s look at what we’ve been doing:
 **The release of the of Tenancies API**  
 The ‘read’ functionality of the Tenancies API is now available. We are still developing the ‘updating’ and ‘creating’ functionality, but you should now get great visibility what is available and what information you can use within your application.
 
-![Tenancies API ](.gitbook/assets/image%20%282%29.png)
+![Tenancies API ](.gitbook/assets/image%20%283%29.png)
 
 To follow the milestone to see what is still to come and follow the progress, please [**click here**](https://github.com/reapit/foundations/milestone/13)
 
 **Works Orders API**  
 In addition and ahead of schedule, the ‘Works Order API’ is now up and running and fully interactive, read, write and update with the Sandbox data to see exactly what information you can use within Property Management.
 
-![Example response of the Works Order API ](.gitbook/assets/image%20%288%29.png)
+![Example response of the Works Order API ](.gitbook/assets/image%20%2815%29.png)
 
   
 **Embedding Data**  
@@ -115,11 +115,11 @@ Those of you familiar with [GitBook, ](https://www.gitbook.com)will know they ar
 
 Available for a **limited time only**, direct access to our Foundations Platform Product Owners and Developers. You can access this feature from the ‘[Help](http://marketplace.reapit.cloud/developer/help)’ section in the developer portal. We hope you won’t need us and that everything you need can be found within our documentation but it’s nice to know we’re here if you do.
 
-![Live Chat from within the Developers Portal ](.gitbook/assets/image%20%281%29.png)
+![Live Chat from within the Developers Portal ](.gitbook/assets/image%20%282%29.png)
 
 ### Full Visibility \([Roadmap](https://github.com/reapit/foundations/milestones?direction=asc&sort=due_date&state=open)\)
 
-![](.gitbook/assets/image%20%286%29.png)
+![](.gitbook/assets/image%20%2811%29.png)
 
 From every issue raised through to completion, you’ll have full visibility on what we’re doing. We want you to be a part of this exciting new platform, which is why we’ve opened sourced not only our cloud applications but also our developer portal! Giving you the ability to submit feature requests or to raise bugs directly on our Foundation Repo and track the progress.
 
