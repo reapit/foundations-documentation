@@ -9,6 +9,10 @@ description: >-
 
 ## April 2020
 
+#### 2020-04-03
+
+* [\#760](https://github.com/reapit/foundations/issues/760) - It is now possible to request that related property information is included with `GET /vendors` and `GET /vendors/{id}` responses by using the `embed` parameter
+
 #### 2020-04-01
 
 * [\#765](https://github.com/reapit/foundations/issues/765) - Added support to filter by agent role for lettings properties on `GET /properties` 

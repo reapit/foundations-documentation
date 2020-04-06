@@ -1,11 +1,12 @@
+
 ---
 description: >-
   Below you will find a listing of the recent changes we have made to the
   Elements package. This includes details of any bugs that have been fixed or
   features/enhancements that have been added.
 ---
-
 # Elements
+
 ### elements_v0.5.49 - 2020-04-03
   
 Release: elements_v0.5.49
@@ -57,5 +58,3 @@ commit | author |description
 
 approver: @willmcvay
 monitor: https://sentry.io/organizations/reapit-ltd/projects/
-    
-
