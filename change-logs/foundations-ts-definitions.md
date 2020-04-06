@@ -34,3 +34,6 @@ commit | author |description
 - cb047516d60b6dc82e42ff2e059fc3bf56c1437e | Github Actions <GithubActions@email.com> | chore: update TypeScript definition - time stamp: 2020-02-25
 - 8c99510cc2b604e1969c59e8a89f115b06b8f57b | Github Actions <GithubActions@email.com> | chore: update TypeScript definition - time stamp: 2020-02-24
 - cd59f3e48afd5a13fea3c9ba150c1e0c80e5430a | Pham Hai Duong <duongph@reapit.com> | chore: #629 migrate to config.json for fts-definitions & scaffolder (#688)Changes- Migrate to config.json for ts definitions- Migrate to config.json for react scaffolder
+
+approver: @willmcvay
+monitor: https://sentry.io/organizations/reapit-ltd/projects/
