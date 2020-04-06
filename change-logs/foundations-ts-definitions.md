@@ -6,13 +6,26 @@ description: >-
 ---
 
 # Foundations TS Definitions
+
+### foundations-ts-definitions_v0.0.78 - 2020-04-05
+
+Release: foundations-ts-definitions_v0.0.78
+Rollback: foundations-ts-definitions_v0.0.77
+Changes:
+commit | author |description
+
+- f4d5f8853ee2b3dc2c3af9c433e8a56ba020095f | Github Actions <GithubActions@email.com> | chore: update TypeScript definition - time stamp: 2020-03-05
+
+approver: @willmcvay
+monitor: https://sentry.io/organizations/reapit-ltd/projects/
+
 ### foundations-ts-definitions_v0.0.77 - 2020-04-04
-  
+
 Release: foundations-ts-definitions_v0.0.77
 Rollback: foundations-ts-definitions_v0.0.76
 Changes:
 commit | author |description
-  
+
 - 8029b22a5da6b951835f215946dfc51a0fa62790 | Github Actions <GithubActions@email.com> | chore: update TypeScript definition - time stamp: 2020-03-04
 - ca4c46f46db6bd23918cefc84611b4e1b79b6e8e | Github Actions <GithubActions@email.com> | chore: update TypeScript definition - time stamp: 2020-03-02
 - 14fee20e1c4d52a300da840cb18246fe728c0db0 | Github Actions <GithubActions@email.com> | chore: update TypeScript definition - time stamp: 2020-03-01
@@ -24,5 +37,3 @@ commit | author |description
 
 approver: @willmcvay
 monitor: https://sentry.io/organizations/reapit-ltd/projects/
-    
-
