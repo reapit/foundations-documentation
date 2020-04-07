@@ -8,11 +8,11 @@ description: >-
 
 ### Applicant
 
-Applicants represent the [property](platform-glossary.md#property) buying or renting interests of one or more [contacts](platform-glossary.md#contact) or [companies](platform-glossary.md#company). This includes [property](platform-glossary.md#property) requirement specifics such as the number of rooms, maximum budget and the geographical areas that the applicant is interested in. Applicants are flagged as being interested in either sales or lettings [properties](platform-glossary.md#property), but not both simultaneously.
+Applicants represent the [property](platform-glossary.md#property) buying or renting interests of one or more [contacts](platform-glossary.md#contact) or [companies](platform-glossary.md#company). This includes [property](platform-glossary.md#property) requirement specifics such as the number of rooms, maximum budget and the geographical areas that the applicant is interested in. Applicants in our platform are flagged as being interested in either sales or lettings [properties](platform-glossary.md#property).
 
 ### Area
 
-Areas represent a specific geographical location that an [applicant ](platform-glossary.md#applicant)is interested in buying/renting within. Areas contain either polygon coordinates or a listing of postcodes that the area includes. Areas are hierarchical and a single area can alternatively include a list of other areas.
+Areas represent a specific geographical location that an [applicant ](platform-glossary.md#applicant)is interested in buying/renting within. Areas are comprised of either polygon coordinates or a listing of postcodes. Areas are hierarchical and a single area can alternatively include a list of other areas.
 
 ### Appointment
 
@@ -28,7 +28,7 @@ Contacts represent the details of a person that the agent has a relationship wit
 
 ### Department
 
-Departments represent a set of descriptive building attributes available in a customer’s dataset. Departments are assigned to [properties](platform-glossary.md#property) and [applicants ](platform-glossary.md#applicant)and used to map out a [properties](platform-glossary.md#property)’ attributes and an [applicants](platform-glossary.md#applicant)’ corresponding requirements.
+Departments represent a set of descriptive attributes used to describe a [property](platform-glossary.md#property). Departments are assigned to both [properties](platform-glossary.md#property) and [applicants ](platform-glossary.md#applicant)and are used to define which attributes can be used to describe a [property ](platform-glossary.md#property)or an [applicant](platform-glossary.md#applicant) property requirement.
 
 ### Document
 
