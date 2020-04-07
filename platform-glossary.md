@@ -8,7 +8,7 @@ description: >-
 
 ### Applicant
 
-Applicants represent the [property](platform-glossary.md#property) buying or renting interests of one or more [contacts](https://foundations-documentation.reapit.cloud/platform-glossary#contact) or [companies](https://foundations-documentation.reapit.cloud/platform-glossary#company). This includes [property](platform-glossary.md#property)  requirement specifics such as the number of rooms, maximum budget and the geographical areas that the applicant is interested in. Applicants are flagged as being interested in either sales or lettings [properties](platform-glossary.md#property), but not both simultaneously.
+Applicants represent the [property](platform-glossary.md#property) buying or renting interests of one or more [contacts](platform-glossary.md#contact) or [companies](https://foundations-documentation.reapit.cloud/platform-glossary#company). This includes [property](platform-glossary.md#property)  requirement specifics such as the number of rooms, maximum budget and the geographical areas that the applicant is interested in. Applicants are flagged as being interested in either sales or lettings [properties](platform-glossary.md#property), but not both simultaneously.
 
 ### Area
 
@@ -48,7 +48,7 @@ Journal entries that a timestamped event has occurred for an associated entity. 
 
 ### Landlord
 
-Landlords represent the details of one or more [contacts](https://foundations-documentation.reapit.cloud/platform-glossary#contact) or [companies](https://foundations-documentation.reapit.cloud/platform-glossary#company) that wish to rent out a [property](platform-glossary.md#property) Landlords can have a portfolio of any number of [properties](platform-glossary.md#property)[ ](https://foundations-documentation.reapit.cloud/platform-glossary#properties)on the system.
+Landlords represent the details of one or more [contacts](platform-glossary.md#contact) or [companies](https://foundations-documentation.reapit.cloud/platform-glossary#company) that wish to rent out a [property](platform-glossary.md#property) Landlords can have a portfolio of any number of [properties](platform-glossary.md#property)[ ](https://foundations-documentation.reapit.cloud/platform-glossary#properties)on the system.
 
 ### Negotiator
 
@@ -84,7 +84,7 @@ Tenancies represent a [property](platform-glossary.md#property) lease agreement 
 
 ### Vendor
 
-Vendors represents one or more [contacts](https://foundations-documentation.reapit.cloud/platform-glossary#contact) or [companies](https://foundations-documentation.reapit.cloud/platform-glossary#company) who are interested in selling a [property](platform-glossary.md#property). A vendor is always associated to a single [property](platform-glossary.md#property) record and is automatically created when a [property](platform-glossary.md#property) with sales marketing is added to the platform.
+Vendors represents one or more [contacts](platform-glossary.md#contact) or [companies](https://foundations-documentation.reapit.cloud/platform-glossary#company) who are interested in selling a [property](platform-glossary.md#property). A vendor is always associated to a single [property](platform-glossary.md#property) record and is automatically created when a [property](platform-glossary.md#property) with sales marketing is added to the platform.
 
 ### Works order
 
