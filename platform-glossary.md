@@ -8,7 +8,7 @@ description: >-
 
 ### Applicant
 
-Applicants represent the [property](platform-glossary.md#property) buying or renting interests of one or more [contacts](platform-glossary.md#contact) or [companies](platform-glossary.md#company). This includes [property](platform-glossary.md#property) requirement specifics such as the number of rooms, maximum budget and the geographical areas that the applicant is interested in. Applicants in our platform are flagged as being interested in either sales or lettings [properties](platform-glossary.md#property).
+Applicants represent the [property](platform-glossary.md#property) buying or renting interests of one or more [contacts](platform-glossary.md#contact) or [companies](platform-glossary.md#company). This includes requirements such as the number of rooms, maximum budget and the geographical areas that the applicant is interested in. 
 
 ### Area
 
@@ -16,7 +16,7 @@ Areas represent a specific geographical location that an [applicant ](platform-g
 
 ### Appointment
 
-Appointments represent calendar engagements used by [negotiators](platform-glossary.md#negotiator) to schedule meetings or arrange events, such as [property](platform-glossary.md#property) viewings and valuations. Appointments can be set to repeat by including recurrence information and can be scheduled to appear in multiple [negotiators](platform-glossary.md#negotiator)’ calendars.
+Appointments represent calendar engagements used by [negotiators](platform-glossary.md#negotiator) to schedule meetings or arrange events, such as [property](platform-glossary.md#property) viewings and valuations. Appointments can be set to recur by including recurrence information and can be scheduled to appear in multiple [negotiators](platform-glossary.md#negotiator)’ calendars.
 
 ### Company
 
