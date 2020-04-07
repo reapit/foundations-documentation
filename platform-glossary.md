@@ -8,7 +8,7 @@ description: >-
 
 ### Applicant
 
-Applicants represent the [property](https://foundations-documentation.reapit.cloud/platform-glossary#properties) buying or renting interests of one or more [contacts](https://foundations-documentation.reapit.cloud/platform-glossary#contact) or [companies](https://foundations-documentation.reapit.cloud/platform-glossary#company). This includes [property](https://foundations-documentation.reapit.cloud/platform-glossary#properties) requirement specifics such as the number of rooms, maximum budget and the geographical areas that the applicant is interested in. Applicants are flagged as being interested in either sales or lettings [properties](https://foundations-documentation.reapit.cloud/platform-glossary#properties), but not both simultaneously.
+Applicants represent the [property](https://foundations-documentation.reapit.cloud/platform-glossary#property) buying or renting interests of one or more [contacts](https://foundations-documentation.reapit.cloud/platform-glossary#contact) or [companies](https://foundations-documentation.reapit.cloud/platform-glossary#company). This includes [property](https://foundations-documentation.reapit.cloud/platform-glossary#properties) requirement specifics such as the number of rooms, maximum budget and the geographical areas that the applicant is interested in. Applicants are flagged as being interested in either sales or lettings [properties](https://foundations-documentation.reapit.cloud/platform-glossary#properties), but not both simultaneously.
 
 ### Area
 
