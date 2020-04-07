@@ -52,7 +52,7 @@ Landlords represent the details of one or more [contacts](platform-glossary.md#c
 
 ### Negotiator
 
-Negotiators represent a member of staff working for an agent. Negotiators are often assigned to other customer focused entities to indicate that they are responsible for managing that relationship. Details about the individual negotiator are captured such as name, job title and email address – as well as the singular [office](platform-glossary.md#office) to which they are assigned.
+Negotiators represent a member of staff working for an agent. Details about the individual negotiator are captured such as name, job title and email address – as well as the singular [office](platform-glossary.md#office) to which they are assigned.
 
 ### Offer
 
