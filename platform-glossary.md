@@ -70,7 +70,7 @@ Properties represent the details of a building that the agent has had an interac
 
 Property images represent a picture that has been taken of a [property](platform-glossary.md#property) to be used for marketing purposes. Property images are most frequently used for display on portals, agent web sites and for generation of printed materials.
 
-### Sources
+### Source
 
 Sources represent the origin of enquiry for a potential customer. Many entities such as [applicant](platform-glossary.md#applicant), [landlord](platform-glossary.md#landlord) and [contact](platform-glossary.md#contact) can capture source information which allows the agent to understand where their business is coming from \(for example, a portal or google search\).
 
