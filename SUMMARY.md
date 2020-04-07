@@ -11,7 +11,6 @@
   * [Packages](open-source/packages.md)
 * [What’s New](whats-new.md)
 * [Developer Portal](developer-portal.md)
-* [Platform Change Log](platform-changelog.md)
 * [Web Change Logs](change-logs/README.md)
   * [AML Checklist](change-logs/aml-checklist.md)
   * [Cognito Auth](change-logs/cognito-auth.md)
@@ -27,4 +26,6 @@
   * [Foundations TS Definitions](change-logs/foundations-ts-definitions.md)
   * [SMB](change-logs/smb.md)
   * [Web Components](change-logs/web-components.md)
+* [Platform Change Log](platform-changelog.md)
+* [Platform Glossary](platform-glossary.md)
 
