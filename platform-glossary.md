@@ -1,7 +1,7 @@
 ---
 description: >-
   This section provides further information on the concepts and terminology
-  referenced by the Reapit Foundations Platform
+  referenced by the Reapit Foundations Platform and the endpoints we provide
 ---
 
 # Platform Glossary
