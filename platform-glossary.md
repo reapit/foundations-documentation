@@ -8,7 +8,7 @@ description: >-
 
 ### Applicant
 
-Applicants represent the property buying or renting interests of one or more [contacts](https://foundations-documentation.reapit.cloud/platform-glossary#contact) or [companies](https://foundations-documentation.reapit.cloud/platform-glossary#company). This includes property requirement specifics such as the number of rooms, maximum budget and the geographical areas that the applicant is interested in. Applicants are flagged as being interested in either sales or lettings properties, but not both simultaneously.
+Applicants represent the [property](https://foundations-documentation.reapit.cloud/platform-glossary#properties) buying or renting interests of one or more [contacts](https://foundations-documentation.reapit.cloud/platform-glossary#contact) or [companies](https://foundations-documentation.reapit.cloud/platform-glossary#company). This includes [property](https://foundations-documentation.reapit.cloud/platform-glossary#properties) requirement specifics such as the number of rooms, maximum budget and the geographical areas that the applicant is interested in. Applicants are flagged as being interested in either sales or lettings [properties](https://foundations-documentation.reapit.cloud/platform-glossary#properties), but not both simultaneously.
 
 ### Area
 
@@ -16,11 +16,11 @@ Areas represent a specific geographical location that an applicant is interested
 
 ### Appointment
 
-Appointments represent calendar engagements used by negotiators to schedule meetings or arrange events, such as property viewings and valuations. Appointments can be set to repeat by including recurrence information and can be scheduled to appear in multiple negotiators’ calendars.
+Appointments represent calendar engagements used by negotiators to schedule meetings or arrange events, such as [property](https://foundations-documentation.reapit.cloud/platform-glossary#properties) viewings and valuations. Appointments can be set to repeat by including recurrence information and can be scheduled to appear in multiple negotiators’ calendars.
 
 ### Company
 
-Companies represent a business organisation that the agent has a relationship with. Companies can be assigned a type which relates to the various roles they are able to fulfil such as solicitor or supplier, as well as being able to be involved in their own property transactions.
+Companies represent a business organisation that the agent has a relationship with. Companies can be assigned a type which relates to the various roles they are able to fulfil such as solicitor or supplier, as well as being able to be involved in their own [property](https://foundations-documentation.reapit.cloud/platform-glossary#properties) transactions.
 
 ### Contact
 
@@ -28,15 +28,15 @@ Contacts represent the details of a person that the agent has a relationship wit
 
 ### Department
 
-Departments represent a set of descriptive building attributes available in a customer’s dataset. Departments are assigned to properties and applicants and used to map out a properties’ attributes and an applicants’ corresponding requirements.
+Departments represent a set of descriptive building attributes available in a customer’s dataset. Departments are assigned to [properties ](https://foundations-documentation.reapit.cloud/platform-glossary#properties)and applicants and used to map out a [properties](https://foundations-documentation.reapit.cloud/platform-glossary#properties)’ attributes and an applicants’ corresponding requirements.
 
 ### Document
 
-Documents represent the details of a file asset that has added to our platform. Documents can be assigned a type to indicate its purpose \(eg. a brochure\) and associated to an associated entity \(eg. a property\).
+Documents represent the details of a file asset that has added to our platform. Documents can be assigned a type to indicate its purpose \(eg. a brochure\) and associated to an associated entity \(eg. a [property](https://foundations-documentation.reapit.cloud/platform-glossary#properties)\).
 
 ### Enquiry
 
-Enquiries represent a potential sales or lettings lead for the agent. An enquiry can either contain information about a valuation enquiry from a vendor/landlord or can represent interest from a potential applicant.  Enquiries are vetted by the agent before they are promoted into property or applicant entities.
+Enquiries represent a potential sales or lettings lead for the agent. An enquiry can either contain information about a valuation enquiry from a vendor/landlord or can represent interest from a potential applicant.  Enquiries are vetted by the agent before they are promoted into [property](https://foundations-documentation.reapit.cloud/platform-glossary#properties) or applicant entities.
 
 ### Identity check
 
@@ -44,11 +44,11 @@ Identity checks represent the information captured to verify the identity of a [
 
 ### Journal entry
 
-Journal entries that a timestamped event has occurred for an associated entity. For example, if a property asking price was changed, this event would be recorded as a timestamped journal entry. Journal entries are used to drive the various activity feeds in our CRM systems.
+Journal entries that a timestamped event has occurred for an associated entity. For example, if a [property ](https://foundations-documentation.reapit.cloud/platform-glossary#properties)asking price was changed, this event would be recorded as a timestamped journal entry. Journal entries are used to drive the various activity feeds in our CRM systems.
 
 ### Landlord
 
-Landlords represent the details of one or more [contacts](https://foundations-documentation.reapit.cloud/platform-glossary#contact) or [companies](https://foundations-documentation.reapit.cloud/platform-glossary#company) that wish to rent out a property. Landlords can have a portfolio of any number of properties on the system.
+Landlords represent the details of one or more [contacts](https://foundations-documentation.reapit.cloud/platform-glossary#contact) or [companies](https://foundations-documentation.reapit.cloud/platform-glossary#company) that wish to rent out a [property](https://foundations-documentation.reapit.cloud/platform-glossary#properties). Landlords can have a portfolio of any number of [properties ](https://foundations-documentation.reapit.cloud/platform-glossary#properties)on the system.
 
 ### Negotiator
 
@@ -56,7 +56,7 @@ Negotiators represent a member of staff working for an agent. Negotiators are of
 
 ### Offer
 
-Offers represent the submission of a offer from an applicant to purchase a property. Offers are for sales only and represent information such as monetary amount, date of submission and a status to indicate whether the offer can proceed or not.
+Offers represent the submission of a offer from an applicant to purchase a [property](https://foundations-documentation.reapit.cloud/platform-glossary#properties). Offers are for sales only and represent information such as monetary amount, date of submission and a status to indicate whether the offer can proceed or not.
 
 ### Office
 
@@ -68,7 +68,7 @@ Properties represent the details of a building that the agent has had an interac
 
 ### Property image
 
-Property images represent a picture that has been taken of a property to be used for marketing purposes. Property images are most frequently used for display on portals, agent web sites and for generation of printed materials.
+Property images represent a picture that has been taken of a [property ](https://foundations-documentation.reapit.cloud/platform-glossary#properties)to be used for marketing purposes. Property images are most frequently used for display on portals, agent web sites and for generation of printed materials.
 
 ### Sources
 
@@ -80,13 +80,13 @@ Tasks represent details on an action that should be performed by a given date. T
 
 ### Tenancy
 
-Tenancies represent a property lease agreement between a landlord and one or more tenants. The role of the agent during the life-cycle of the tenancy will differ, depending on the agreement with the landlord. The tenancy can be managed from offer submission/arranging stage right through until the tenancy is finished.
+Tenancies represent a [property ](https://foundations-documentation.reapit.cloud/platform-glossary#properties)lease agreement between a landlord and one or more tenants. The role of the agent during the life-cycle of the tenancy will differ, depending on the agreement with the landlord. The tenancy can be managed from offer submission/arranging stage right through until the tenancy is finished.
 
 ### Vendor
 
-Vendors represents one or more [contacts](https://foundations-documentation.reapit.cloud/platform-glossary#contact) or [companies](https://foundations-documentation.reapit.cloud/platform-glossary#company) who are interested in selling a property. A vendor is always associated to a single property record and is automatically created when a property with sales marketing is added to the platform.
+Vendors represents one or more [contacts](https://foundations-documentation.reapit.cloud/platform-glossary#contact) or [companies](https://foundations-documentation.reapit.cloud/platform-glossary#company) who are interested in selling a [property](https://foundations-documentation.reapit.cloud/platform-glossary#properties). A vendor is always associated to a single [property](https://foundations-documentation.reapit.cloud/platform-glossary#properties) record and is automatically created when a [property ](https://foundations-documentation.reapit.cloud/platform-glossary#properties)with sales marketing is added to the platform.
 
 ### Works order
 
-Works orders represent one or more maintenance jobs that have been requested for a lettings property. Works orders are usually reported by the landlord or tenant and be tracked from approval until the work has been completed. Approved works orders are assigned to a [company](https://foundations-documentation.reapit.cloud/platform-glossary#company) supplier who can then provide estimates and costings for the work.
+Works orders represent one or more maintenance jobs that have been requested for a lettings [property](https://foundations-documentation.reapit.cloud/platform-glossary#properties). Works orders are usually reported by the landlord or tenant and be tracked from approval until the work has been completed. Approved works orders are assigned to a [company](https://foundations-documentation.reapit.cloud/platform-glossary#company) supplier who can then provide estimates and costings for the work.
 
