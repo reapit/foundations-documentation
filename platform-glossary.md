@@ -12,7 +12,7 @@ Applicants represent the [property](https://foundations-documentation.reapit.clo
 
 ### Area
 
-Areas represent a specific geographical location that an applicant is interested in buying/renting within. Areas contain either polygon coordinates or a listing of postcodes that the area includes. Areas are hierarchical and a single area can alternatively include a list of other areas.
+Areas represent a specific geographical location that an [applicant ](https://foundations-documentation.reapit.cloud/platform-glossary#applicant)is interested in buying/renting within. Areas contain either polygon coordinates or a listing of postcodes that the area includes. Areas are hierarchical and a single area can alternatively include a list of other areas.
 
 ### Appointment
 
@@ -24,11 +24,11 @@ Companies represent a business organisation that the agent has a relationship wi
 
 ### Contact
 
-Contacts represent the details of a person that the agent has a relationship with. Contact details are captured and managed centrally so that a single contact can fulfil multiple vendor, landlord, applicant and tenant roles on the system at the same time.
+Contacts represent the details of a person that the agent has a relationship with. Contact details are captured and managed centrally so that a single contact can fulfil multiple vendor, landlord, [applicant ](https://foundations-documentation.reapit.cloud/platform-glossary#applicant)and tenant roles on the system at the same time.
 
 ### Department
 
-Departments represent a set of descriptive building attributes available in a customer’s dataset. Departments are assigned to [properties ](https://foundations-documentation.reapit.cloud/platform-glossary#properties)and applicants and used to map out a [properties](https://foundations-documentation.reapit.cloud/platform-glossary#properties)’ attributes and an applicants’ corresponding requirements.
+Departments represent a set of descriptive building attributes available in a customer’s dataset. Departments are assigned to [properties ](https://foundations-documentation.reapit.cloud/platform-glossary#properties)and [applicants ](https://foundations-documentation.reapit.cloud/platform-glossary#applicant)and used to map out a [properties](https://foundations-documentation.reapit.cloud/platform-glossary#properties)’ attributes and an [applicants](https://foundations-documentation.reapit.cloud/platform-glossary#applicant)’ corresponding requirements.
 
 ### Document
 
@@ -36,7 +36,7 @@ Documents represent the details of a file asset that has added to our platform. 
 
 ### Enquiry
 
-Enquiries represent a potential sales or lettings lead for the agent. An enquiry can either contain information about a valuation enquiry from a vendor/landlord or can represent interest from a potential applicant.  Enquiries are vetted by the agent before they are promoted into [property](https://foundations-documentation.reapit.cloud/platform-glossary#properties) or applicant entities.
+Enquiries represent a potential sales or lettings lead for the agent. An enquiry can either contain information about a valuation enquiry from a vendor/landlord or can represent interest from a potential [applicant](https://foundations-documentation.reapit.cloud/platform-glossary#applicant).  Enquiries are vetted by the agent before they are promoted into [property](https://foundations-documentation.reapit.cloud/platform-glossary#properties) or [applicant ](https://foundations-documentation.reapit.cloud/platform-glossary#applicant)entities.
 
 ### Identity check
 
@@ -56,7 +56,7 @@ Negotiators represent a member of staff working for an agent. Negotiators are of
 
 ### Offer
 
-Offers represent the submission of a offer from an applicant to purchase a [property](https://foundations-documentation.reapit.cloud/platform-glossary#properties). Offers are for sales only and represent information such as monetary amount, date of submission and a status to indicate whether the offer can proceed or not.
+Offers represent the submission of a offer from an [applicant ](https://foundations-documentation.reapit.cloud/platform-glossary#applicant)to purchase a [property](https://foundations-documentation.reapit.cloud/platform-glossary#properties). Offers are for sales only and represent information such as monetary amount, date of submission and a status to indicate whether the offer can proceed or not.
 
 ### Office
 
@@ -72,7 +72,7 @@ Property images represent a picture that has been taken of a [property ](https:/
 
 ### Sources
 
-Sources represent the origin of enquiry for a potential customer. Many entities such as applicant, landlord and [contact](https://foundations-documentation.reapit.cloud/platform-glossary#contact) can capture source information which allows the agent to understand where their business is coming from \(for example, a portal or google search\).
+Sources represent the origin of enquiry for a potential customer. Many entities such as [applicant](https://foundations-documentation.reapit.cloud/platform-glossary#applicant), landlord and [contact](https://foundations-documentation.reapit.cloud/platform-glossary#contact) can capture source information which allows the agent to understand where their business is coming from \(for example, a portal or google search\).
 
 ### Task
 
