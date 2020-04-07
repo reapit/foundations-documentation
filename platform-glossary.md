@@ -88,5 +88,5 @@ Vendors represents one or more [contact](platform-glossary.md#contact) or [compa
 
 ### Works order
 
-Works orders represent one or more maintenance jobs that have been requested for a lettings [property](platform-glossary.md#property). Works orders are usually reported by the [landlord](platform-glossary.md#landlord) or [tenant ](platform-glossary.md#tenancy)and be tracked from approval until the work has been completed. Approved works orders are assigned to a [company](platform-glossary.md#company) supplier who can then provide estimates and costings for the work.
+Works orders represent one or more maintenance jobs that have been requested for a lettings [property](platform-glossary.md#property). Works orders are usually reported by the [landlord](platform-glossary.md#landlord) or [tenant ](platform-glossary.md#tenancy)and can be tracked from approval until the work has been completed. Approved works orders are assigned to a [company](platform-glossary.md#company) supplier who can then provide estimates and costings for the work.
 
