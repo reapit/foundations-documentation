@@ -36,11 +36,11 @@ Documents represent the details of a file asset that has added to our platform. 
 
 ### Enquiry
 
-Enquiries represent a potential sales or lettings lead for the agent. An enquiry can either contain information about a valuation request from a [vendor](platform-glossary.md#vendor)/[landlord](platform-glossary.md#landlord) or can represent interest from a potential [applicant](platform-glossary.md#applicant). Enquiries are vetted by the agent before they are promoted into [property](platform-glossary.md#property) or [applicant ](platform-glossary.md#applicant)entities.
+Enquiries represent a potential sales or lettings lead for the agent. An enquiry can either contain information about a valuation request from a [vendor](platform-glossary.md#vendor)/[landlord](platform-glossary.md#landlord) or can represent interest from a potential [applicant](platform-glossary.md#applicant) such as a viewing request. Enquiries are vetted by the agent before they are promoted into [property](platform-glossary.md#property) or [applicant ](platform-glossary.md#applicant)entities.
 
 ### Identity check
 
-Identity checks represent the information captured to verify the identity of a [contact](platform-glossary.md#contact) or [company](platform-glossary.md#company). Agents must adhere to anti-money laundering regulations and are required to capture proof of identity and address for their customers. Identity checks can capture textual information such as passport number as well as file assets associated as [documents](platform-glossary.md#document) \(such as scanned copies\).
+Identity checks represent the information captured to verify the identity of a [contact](platform-glossary.md#contact) or [company](platform-glossary.md#company). Agents must adhere to anti-money laundering regulations and are required to capture proof of identity and address for their customers. Identity checks can store textual information such as passport number as well as file assets associated as [documents](platform-glossary.md#document) \(such as scanned copies\).
 
 ### Journal entry
 
@@ -76,7 +76,7 @@ Sources represent the origin of enquiry for a potential customer. Many entities 
 
 ### Task
 
-Tasks represent details on an action that should be performed by a given date. Tasks are categorised by type and can optionally be related to another entity \(for example, a task to remind a [negotiator](platform-glossary.md#negotiator) to call a [landlord](platform-glossary.md#landlord)\). If no activation date is specified, tasks can be used to send messages to and from [negotiators](platform-glossary.md#negotiator)/offices.
+Tasks represent details on an action that should be performed by a given date. Tasks are categorised by type and can optionally be related to another entity \(for example, a task to remind a [negotiator](platform-glossary.md#negotiator) to call a [landlord](platform-glossary.md#landlord)\). If no activation date is specified, tasks can be used to send messages to and from [negotiators](platform-glossary.md#negotiator)/[offices](platform-glossary.md#office).
 
 ### Tenancy
 
