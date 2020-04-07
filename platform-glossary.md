@@ -56,7 +56,7 @@ Negotiators represent a member of staff working for an agent. Details about the 
 
 ### Offer
 
-Offers represent the submission of a offer from an [applicant ](platform-glossary.md#applicant)to purchase a [property](platform-glossary.md#property). Offers are for property sales only and represent information such as monetary amount, date of submission and a status to indicate whether the offer can proceed or not.
+Offers represent the submission of an offer from an [applicant ](platform-glossary.md#applicant)to purchase a [property](platform-glossary.md#property). Offers are for property sales only and represent information such as monetary amount, date of submission and a status to indicate whether the offer can proceed or not.
 
 ### Office
 
