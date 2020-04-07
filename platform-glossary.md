@@ -24,7 +24,7 @@ Companies represent a business organisation that the agent has a relationship wi
 
 ### Contact
 
-Contacts represent the details of a person that the agent has a relationship with. Contact details are captured and managed centrally so that a single contact can fulfill multiple [vendor](platform-glossary.md#vendor), [landlord](platform-glossary.md#landlord), [applicant ](platform-glossary.md#applicant)and [tenancy](platform-glossary.md#tenancy) roles on the system at the same time.
+Contacts represent the details of a person that the agent has a relationship with. Contact details are captured and managed centrally so that a single contact can fulfill multiple [vendor](platform-glossary.md#vendor), [landlord](platform-glossary.md#landlord), [applicant ](platform-glossary.md#applicant)and [tenancy](platform-glossary.md#tenancy) roles at the same time.
 
 ### Department
 
