@@ -9,6 +9,11 @@ description: >-
 
 ## April 2020
 
+#### 2020-04-07
+
+* [\#787](https://github.com/reapit/foundations/issues/787) - The response from `GET /appointments` and `GET /appointments/{id}` will now optionally include information about the appointments recurrence pattern
+* [\#786](https://github.com/reapit/foundations/issues/786) - The `start` and `end` parameters are no longer required when interacting with `GET /appointments`
+
 #### 2020-04-03
 
 * [\#760](https://github.com/reapit/foundations/issues/760) - It is now possible to request that related property information is included with `GET /vendors` and `GET /vendors/{id}` responses by using the `embed` parameter
