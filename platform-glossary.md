@@ -40,7 +40,7 @@ Enquiries represent a potential sales or lettings lead for the agent. An enquiry
 
 ### Identity check
 
-Identity checks represent the information captured to verify the identity of a [contact](https://foundations-documentation.reapit.cloud/platform-glossary#contact) or [company](https://foundations-documentation.reapit.cloud/platform-glossary#company). Agents must adhere to anti-money laundering regulations and are required to capture proof of identity and address for their customers. Identity checks can capture textual information such as passport number as well as file assets associated as documents \(such as scanned copies\).
+Identity checks represent the information captured to verify the identity of a [contact](platform-glossary.md#contact) or [company](https://foundations-documentation.reapit.cloud/platform-glossary#company). Agents must adhere to anti-money laundering regulations and are required to capture proof of identity and address for their customers. Identity checks can capture textual information such as passport number as well as file assets associated as documents \(such as scanned copies\).
 
 ### Journal entry
 
@@ -72,7 +72,7 @@ Property images represent a picture that has been taken of a [property](platform
 
 ### Sources
 
-Sources represent the origin of enquiry for a potential customer. Many entities such as [applicant](https://foundations-documentation.reapit.cloud/platform-glossary#applicant), landlord and [contact](https://foundations-documentation.reapit.cloud/platform-glossary#contact) can capture source information which allows the agent to understand where their business is coming from \(for example, a portal or google search\).
+Sources represent the origin of enquiry for a potential customer. Many entities such as [applicant](https://foundations-documentation.reapit.cloud/platform-glossary#applicant), landlord and [contact](platform-glossary.md#contact) can capture source information which allows the agent to understand where their business is coming from \(for example, a portal or google search\).
 
 ### Task
 
@@ -84,7 +84,7 @@ Tenancies represent a [property](platform-glossary.md#property) lease agreement 
 
 ### Vendor
 
-Vendors represents one or more [contacts](platform-glossary.md#contact) or [companies](https://foundations-documentation.reapit.cloud/platform-glossary#company) who are interested in selling a [property](platform-glossary.md#property). A vendor is always associated to a single [property](platform-glossary.md#property) record and is automatically created when a [property](platform-glossary.md#property) with sales marketing is added to the platform.
+Vendors represents one or more [contact](platform-glossary.md#contact) or [companies](https://foundations-documentation.reapit.cloud/platform-glossary#company) who are interested in selling a [property](platform-glossary.md#property). A vendor is always associated to a single [property](platform-glossary.md#property) record and is automatically created when a [property](platform-glossary.md#property) with sales marketing is added to the platform.
 
 ### Works order
 
