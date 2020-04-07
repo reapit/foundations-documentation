@@ -44,7 +44,7 @@ Identity checks represent the information captured to verify the identity of a [
 
 ### Journal entry
 
-Journal entries that a timestamped event has occurred for an associated entity. For example, if a [property](platform-glossary.md#property) asking price was changed, this event would be recorded as a timestamped journal entry. Journal entries are used to drive the various activity feeds in our CRM systems.
+Journal entries indicate that an event has occurred for an associated entity. For example, if a [property](platform-glossary.md#property) asking price was changed, this event would be recorded as a timestamped journal entry. Journal entries are used to drive the various activity feeds in our CRM systems.
 
 ### Landlord
 
