@@ -8,7 +8,7 @@ description: >-
 
 ### Applicant
 
-Applicants represent the property buying or renting interests of one or more contacts or companies. This includes property requirement specifics such as the number of rooms, maximum budget and the geographical areas that the applicant is interested in. Applicants are flagged as being interested in either sales or lettings properties, but not both simultaneously.
+Applicants represent the property buying or renting interests of one or more [contacts](https://foundations-documentation.reapit.cloud/platform-glossary#contact) or [companies](https://foundations-documentation.reapit.cloud/platform-glossary#company). This includes property requirement specifics such as the number of rooms, maximum budget and the geographical areas that the applicant is interested in. Applicants are flagged as being interested in either sales or lettings properties, but not both simultaneously.
 
 ### Area
 
@@ -40,7 +40,7 @@ Enquiries represent a potential sales or lettings lead for the agent. An enquiry
 
 ### Identity check
 
-Identity checks represent the information captured to verify the identity of a contact or company. Agents must adhere to anti-money laundering regulations and are required to capture proof of identity and address for their customers. Identity checks can capture textual information such as passport number as well as file assets associated as documents \(such as scanned copies\).
+Identity checks represent the information captured to verify the identity of a [contact](https://foundations-documentation.reapit.cloud/platform-glossary#contact) or [company](https://foundations-documentation.reapit.cloud/platform-glossary#company). Agents must adhere to anti-money laundering regulations and are required to capture proof of identity and address for their customers. Identity checks can capture textual information such as passport number as well as file assets associated as documents \(such as scanned copies\).
 
 ### Journal entry
 
@@ -48,45 +48,45 @@ Journal entries that a timestamped event has occurred for an associated entity. 
 
 ### Landlord
 
-Landlords represent the details of one or more contacts or companies that wish to rent out a property. Landlords can have a portfolio of any number of properties on the system.
+Landlords represent the details of one or more [contacts](https://foundations-documentation.reapit.cloud/platform-glossary#contact) or [companies](https://foundations-documentation.reapit.cloud/platform-glossary#company) that wish to rent out a property. Landlords can have a portfolio of any number of properties on the system.
 
 ### Negotiator
 
 Negotiators represent a member of staff working for an agent. Negotiators are often assigned to other customer focused entities to indicate that they are responsible for managing that relationship. Details about the individual negotiator are captured such as name, job title and email address – as well as the singular office to which they are assigned.
 
-### Offers
+### Offer
 
-Offers represent the submission of a offer from an applicant to purchase a property. Offers are for sales only and represent information such as monetary amount, date of submission and a status to indicate whether the offer is proceedable or not.
+Offers represent the submission of a offer from an applicant to purchase a property. Offers are for sales only and represent information such as monetary amount, date of submission and a status to indicate whether the offer can proceed or not.
 
-### Offices
+### Office
 
 Offices represent the details of a branch within an agency. Offices contain information about the office such as manager, contact details and address, though some offices may be virtual and not have a physical address. Each office can contain multiple negotiators.
 
-### Properties
+### Property
 
 Properties represent the details of a building that the agent has had an interaction with. Properties include specifics such as the number of rooms, asking price and descriptive marketing details. Properties can be flagged for both sales and lettings marketing concurrently and are associated to a single vendor and/or landlord entity.
 
-### Property images
+### Property image
 
 Property images represent a picture that has been taken of a property to be used for marketing purposes. Property images are most frequently used for display on portals, agent web sites and for generation of printed materials.
 
 ### Sources
 
-Sources represent the origin of enquiry for a potential customer. Many entities such as applicant, landlord and contact can capture source information which allows the agent to understand where their business is coming from \(for example, a portal or google search\).
+Sources represent the origin of enquiry for a potential customer. Many entities such as applicant, landlord and [contact](https://foundations-documentation.reapit.cloud/platform-glossary#contact) can capture source information which allows the agent to understand where their business is coming from \(for example, a portal or google search\).
 
-### Tasks
+### Task
 
-Tasks represent details on an action that should be performed by a given date. Tasks are categorised by type and can optionally be related to another entity \(for example, a task to remind a negotiator to call a vendor\). If no activation date is specified, tasks can be used to send messages to and from negotiators/offices.
+Tasks represent details on an action that should be performed by a given date. Tasks are categorised by type and can optionally be related to another entity \(for example, a task to remind a negotiator to call a landord\). If no activation date is specified, tasks can be used to send messages to and from negotiators/offices.
 
-### Tenancies
+### Tenancy
 
-Tenancies represent a property lease agreement between a landlord and one or more tenants. The role of the agent during the lifecycle of the tenancy will differ, depending on the agreement with the landlord. The tenancy can be managed from offer submission/arranging stage right through until the tenancy is finished.
+Tenancies represent a property lease agreement between a landlord and one or more tenants. The role of the agent during the life-cycle of the tenancy will differ, depending on the agreement with the landlord. The tenancy can be managed from offer submission/arranging stage right through until the tenancy is finished.
 
-### Vendors
+### Vendor
 
-Vendors represents one or more contacts or companies who are interested in selling a property. A vendor is always associated to a single property record and is automatically created when a property with sales marketing is added to the platform.
+Vendors represents one or more [contacts](https://foundations-documentation.reapit.cloud/platform-glossary#contact) or [companies](https://foundations-documentation.reapit.cloud/platform-glossary#company) who are interested in selling a property. A vendor is always associated to a single property record and is automatically created when a property with sales marketing is added to the platform.
 
-### Works orders
+### Works order
 
-Works orders represent one or more maintenance jobs that have been requested for a lettings property. Works orders are usually reported by the landlord or tenant and be tracked from approval until the work has been completed. Approved works orders are assigned to a company supplier who can then provide estimates and costings for the work.
+Works orders represent one or more maintenance jobs that have been requested for a lettings property. Works orders are usually reported by the landlord or tenant and be tracked from approval until the work has been completed. Approved works orders are assigned to a [company](https://foundations-documentation.reapit.cloud/platform-glossary#company) supplier who can then provide estimates and costings for the work.
 
