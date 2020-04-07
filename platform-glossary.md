@@ -48,7 +48,7 @@ Journal entries indicate that an event has occurred for an associated entity. Fo
 
 ### Landlord
 
-Landlords represent the details of one or more [contacts](platform-glossary.md#contact) or [companies](platform-glossary.md#company) that wish to rent out a [property](platform-glossary.md#property) Landlords can have a portfolio of any number of [properties](platform-glossary.md#property)[ ](https://foundations-documentation.reapit.cloud/platform-glossary#properties)on the system.
+Landlords represent the details of one or more [contacts](platform-glossary.md#contact) or [companies](platform-glossary.md#company) that wish to rent out a [property](platform-glossary.md#property). Landlords can have a portfolio of any number of [properties](platform-glossary.md#property)[ ](https://foundations-documentation.reapit.cloud/platform-glossary#properties)on the system.
 
 ### Negotiator
 
