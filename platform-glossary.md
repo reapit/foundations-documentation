@@ -16,7 +16,7 @@ Areas represent a specific geographical location that an [applicant ](https://fo
 
 ### Appointment
 
-Appointments represent calendar engagements used by negotiators to schedule meetings or arrange events, such as [property](https://foundations-documentation.reapit.cloud/platform-glossary#properties) viewings and valuations. Appointments can be set to repeat by including recurrence information and can be scheduled to appear in multiple negotiators’ calendars.
+Appointments represent calendar engagements used by [negotiators](https://foundations-documentation.reapit.cloud/platform-glossary#negotiator) to schedule meetings or arrange events, such as [property](https://foundations-documentation.reapit.cloud/platform-glossary#properties) viewings and valuations. Appointments can be set to repeat by including recurrence information and can be scheduled to appear in multiple [negotiators](https://foundations-documentation.reapit.cloud/platform-glossary#negotiator)’ calendars.
 
 ### Company
 
@@ -60,7 +60,7 @@ Offers represent the submission of a offer from an [applicant ](https://foundati
 
 ### Office
 
-Offices represent the details of a branch within an agency. Offices contain information about the office such as manager, contact details and address, though some offices may be virtual and not have a physical address. Each office can contain multiple negotiators.
+Offices represent the details of a branch within an agency. Offices contain information about the office such as manager, contact details and address, though some offices may be virtual and not have a physical address. Each office can contain multiple [negotiators](https://foundations-documentation.reapit.cloud/platform-glossary#negotiator).
 
 ### Property
 
@@ -76,7 +76,7 @@ Sources represent the origin of enquiry for a potential customer. Many entities 
 
 ### Task
 
-Tasks represent details on an action that should be performed by a given date. Tasks are categorised by type and can optionally be related to another entity \(for example, a task to remind a negotiator to call a landord\). If no activation date is specified, tasks can be used to send messages to and from negotiators/offices.
+Tasks represent details on an action that should be performed by a given date. Tasks are categorised by type and can optionally be related to another entity \(for example, a task to remind a [negotiator ](https://foundations-documentation.reapit.cloud/platform-glossary#negotiator)to call a landord\). If no activation date is specified, tasks can be used to send messages to and from [negotiators](https://foundations-documentation.reapit.cloud/platform-glossary#negotiator)/offices.
 
 ### Tenancy
 
