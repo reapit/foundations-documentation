@@ -11,6 +11,7 @@ description: >-
 
 #### 2020-04-08
 
+* [\#846](https://github.com/reapit/foundations/issues/846) - Updated the documentation for the appointments `recurrence.type` attribute to include its acceptable values listing
 * [\#804](https://github.com/reapit/foundations/issues/804) - It is now possible to request that related appointment information is included with `GET /properties` and `GET /properties/{id}` responses by using the `embed` parameter
 * [\#843](https://github.com/reapit/foundations/issues/843) - It is now possible to request that related appointment information is included with `GET /tenancies` and `GET /tenancies/{id}` responses by using the `embed` parameter
 * [\#805](https://github.com/reapit/foundations/issues/805) - It is now possible to request that related appointment information is included with `GET /applicants` and `GET /applicants/{id}` responses by using the `embed` parameter
