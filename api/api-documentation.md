@@ -416,7 +416,7 @@ This mechanism allows your application to make fewer round trips to the server b
 
 You can embed as many related data sources in a request as your application requires. Our [interactive API explorer](https://marketplace.reapit.cloud/developer/swagger) provides a user interface which demonstrates the available `embed` parameter options for each API.
 
-![](../.gitbook/assets/image%20%2810%29.png)
+![](../.gitbook/assets/image%20%2811%29.png)
 
 #### Example
 

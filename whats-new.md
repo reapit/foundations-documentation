@@ -7,6 +7,42 @@ description: >-
 
 # What’s New
 
+## 31/03/20
+
+Over the last couple of weeks we have been working on implementing a couple of new features, for example the Pending Revision modal as mentioned below. In addition and coming soon a new update to the 'Analytics' page within the developers portal which will provide additional and useful app statistics.  
+
+### Changes
+
+**Pending Revisions**
+
+We have now introduced the ability to view what revisions are currently pending and the option to ‘Cancel Pending Revision’.
+
+When you have submitted a revision on your app, you will now be able to click on the ‘Pending Revision’ button \(previously disabled\) which will present a modal with the changes you have made highlighted.
+
+![Example of the enabled &apos;Pending Revision&apos; button](.gitbook/assets/image%20%2810%29.png)
+
+For text or selections that has been added it will be highlighted in GREEN and for text deleted or options deselected, it will be highlighted in RED.
+
+![An example showing the revisions submitted](.gitbook/assets/image%20%2812%29.png)
+
+If you wish to cancel your pending revision to make additional changes for example, click ‘Cancel Pending Revision’. It will immediately cancel the revision and you will be able make any edits as usual.
+
+### Fixes
+
+#### Checkbox group feature in Elements
+
+There was a slight issue with the ‘Checkbox’ component in Elements not behaving correctly. This has been fixed and is now working as expected.
+
+![](.gitbook/assets/image%20%2814%29.png)
+
+### New
+
+#### Journal and Enquires API
+
+The Journal API is now read and write and available within the Interactive API explorer. It has the ability to read and write dated event information into the Reapit Journal system and automatic generation of these events from other services.  
+
+In addition, the Enquiries API is also available and gives the ability to read and write information about new leads into Agency Cloud.
+
 ## 11/03/20
 
 I’m pleased to confirm it has been another successful week in the Alpha Phase, not only have we been able to deliver ahead of schedule in terms of a few of our [Milestones](https://github.com/reapit/foundations/milestones), I have also had the pleasure of speaking with you all and gathering your feedback regarding the Foundations Platform. We still have a few weeks to go until the end of the Alpha and already we have had quite a few entries for the Early App Program. 
@@ -27,7 +63,7 @@ The ‘read’ functionality of the Tenancies API is now available. We are still
 **Works Orders API**  
 In addition and ahead of schedule, the ‘Works Order API’ is now up and running and fully interactive, read, write and update with the Sandbox data to see exactly what information you can use within Property Management.
 
-![Example response of the Works Order API ](.gitbook/assets/image%20%2815%29.png)
+![Example response of the Works Order API ](.gitbook/assets/image%20%2819%29.png)
 
   
 **Embedding Data**  
@@ -119,7 +155,7 @@ Available for a **limited time only**, direct access to our Foundations Platform
 
 ### Full Visibility \([Roadmap](https://github.com/reapit/foundations/milestones?direction=asc&sort=due_date&state=open)\)
 
-![](.gitbook/assets/image%20%2811%29.png)
+![](.gitbook/assets/image%20%2813%29.png)
 
 From every issue raised through to completion, you’ll have full visibility on what we’re doing. We want you to be a part of this exciting new platform, which is why we’ve opened sourced not only our cloud applications but also our developer portal! Giving you the ability to submit feature requests or to raise bugs directly on our Foundation Repo and track the progress.
 
