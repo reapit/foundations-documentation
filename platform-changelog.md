@@ -9,6 +9,11 @@ description: >-
 
 ## April 2020
 
+#### 2020-04-08
+
+* [\#735 ](https://github.com/reapit/foundations/issues/735)- Ensured that the appropriate error message and status code is returned when an incorrectly formatted date only attribute is provided in a `POST` or `PATCH` payload
+* [\#799](https://github.com/reapit/foundations/issues/799) - The `marketingConsent` and `identityCheck` parameters for `GET /contacts` are now presented as enumerations
+
 #### 2020-04-07
 
 * [\#787](https://github.com/reapit/foundations/issues/787) - The response from `GET /appointments` and `GET /appointments/{id}` will now optionally include information about the appointments recurrence pattern
