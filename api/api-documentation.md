@@ -42,10 +42,10 @@ You can immediately start testing our APIs in [sandbox mode](api-documentation.m
         For details on the endpoint we provide, see our <a href="https://marketplace.reapit.cloud/developer/swagger">Interactive API Explorer</a>.</td>
     </tr>
   </tbody>
-</table>The current version of our APIs is **2020-01-31.** 
+</table>The current version of our APIs is **2020-01-31** - please include it in your `api-version` request header. For more information, see our [versioning](api-documentation.md#versioning) information
 
 {% hint style="success" %}
-**Our Platform is in** **alpha** and we'll be continually building new features during this phase. Please see our [help section](https://marketplace.reapit.cloud/developer/help) to view our milestones or to submit a feature request or bug.
+**Our Platform is in** **beta** and we'll be continually building new features during this phase. Please see our [help section](https://marketplace.reapit.cloud/developer/help) to view our milestones or to submit a feature request or bug.
 {% endhint %}
 
 ## REST
