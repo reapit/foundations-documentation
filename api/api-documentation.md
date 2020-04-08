@@ -217,7 +217,7 @@ Some of the fields we provide are date-only and have no time component. Date onl
 
 ### Retrieving data
 
-Our APIs support retrieval of resources using the `GET` verb. When a GET request has been successfully fulfilled, you will receive a `200 OK` response with results included as a JSON encoded payload.
+Our APIs support retrieval of resources using the `GET` verb.  When a `GET` request has been successfully fulfilled, you will receive a `200 OK` response with results included as a JSON payload. To ensure that parameters that `GET` resources accept work as you expect, please ensure you URL encode the parameters you provide.
 
 For practical and performance reasons, our top level APIs enforce paging and require a standardised set of query strings in their requests. The `pageSize` and `pageNumber` parameters are used to cycle through the available results from a top level API.
 
