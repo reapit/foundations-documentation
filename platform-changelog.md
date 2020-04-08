@@ -11,6 +11,14 @@ description: >-
 
 #### 2020-04-08
 
+* [\#804](https://github.com/reapit/foundations/issues/804) - It is now possible to request that related appointment information is included with `GET /properties` and `GET /properties/{id}` responses by using the `embed` parameter
+* [\#843](https://github.com/reapit/foundations/issues/843) - It is now possible to request that related appointment information is included with `GET /tenancies` and `GET /tenancies/{id}` responses by using the `embed` parameter
+* [\#805](https://github.com/reapit/foundations/issues/805) - It is now possible to request that related appointment information is included with `GET /applicants` and `GET /applicants/{id}` responses by using the `embed` parameter
+* [\#806](https://github.com/reapit/foundations/issues/806) - It is now possible to request that related appointment information is included with `GET /landlords` and `GET /landlords/{id}` responses by using the `embed` parameter
+* [\#801](https://github.com/reapit/foundations/issues/801) - The response from `GET /properties` and `GET /properties/{id}` will now include a link to the properties associated appointments
+* [\#803](https://github.com/reapit/foundations/issues/803) - The response from `GET /landlords` and `GET /landlords/{id}` will now include a link to the landlords associated appointments
+* [\#802](https://github.com/reapit/foundations/issues/802) - The response from `GET /applicants` and `GET /applicants/{id}` will now include a link to the applicants associated appointments
+* [\#722](https://github.com/reapit/foundations/issues/722) - The response from `GET /tenancies` and `GET /tenancies/{id}` will now include a link to the tenancies associated appointments
 * [\#735 ](https://github.com/reapit/foundations/issues/735)- Ensured that the appropriate error message and status code is returned when an incorrectly formatted date only attribute is provided in a `POST` or `PATCH` payload
 * [\#799](https://github.com/reapit/foundations/issues/799) - The `marketingConsent` and `identityCheck` parameters for `GET /contacts` are now presented as enumerations
 
