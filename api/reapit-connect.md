@@ -151,7 +151,7 @@ You can access Foundations API endpoints by including the access token as an `Au
 
 Identity tokens are intended to provide proof of authentication with Reapit Connect. Your application should decode and [validate ](https://connect2id.com/blog/how-to-validate-an-openid-connect-id-token)the id token that it has been issued. There are a variety of [third party libraries](https://jwt.io/#libraries-io) to help accomplish this and **the token should not be trusted until validated**.
 
-Once decoded, your application can inspect the claims that the id token includes. Claims provide information about the users identity such as email address and name which your application can make use of.
+Once decoded, your application can inspect the claims that the id token includes. Claims provide information about the users identity such as the customer they work for, their email address and name which your application can make use of.
 
 You can also issue a `GET` request to the following endpoint to get information on the user. Be sure to include your access token:
 
