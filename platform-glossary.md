@@ -22,6 +22,12 @@ Appointments represent calendar engagements used by [negotiators](platform-gloss
 
 Companies represent a business organisation that the agent has a relationship with. Companies can be assigned a type which relates to the various roles they are able to fulfill such as solicitor or supplier, as well as being able to be involved in their own [property](platform-glossary.md#property) transactions.
 
+### Configuration
+
+Configuration represents the customisation options relevant for a customers data set, as some data can differ depending on the configuration of the customer. For example, an agent may want to add to their list of [vendor](platform-glossary.md#vendor) selling reasons so that it can be set against a particular [vendors ](platform-glossary.md#vendor)`sellingReasonId`
+
+We present lists like this as RESTful endpoints and document where a field references a configurable lists id. We also include links/embed options where appropriate to simplify consumption.
+
 ### Contact
 
 Contacts represent the details of a person that the agent has a relationship with. Contact details are captured and managed centrally so that a single contact can fulfill multiple [vendor](platform-glossary.md#vendor), [landlord](platform-glossary.md#landlord), [applicant ](platform-glossary.md#applicant)and [tenancy](platform-glossary.md#tenancy) roles at the same time.
