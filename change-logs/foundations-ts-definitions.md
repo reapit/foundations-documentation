@@ -6,6 +6,18 @@ description: >-
 ---
 
 # Foundations TS Definitions
+### foundations-ts-definitions_v0.0.79 - 2020-04-08
+  
+Release: foundations-ts-definitions_v0.0.79
+Rollback: foundations-ts-definitions_v0.0.78
+Changes:
+commit | author |description
+  
+- 787f07ce265f7b14b693923dca263d84eef68e96 | Github Actions <GithubActions@email.com> | chore: update TypeScript definition - time stamp: 2020-03-08
+
+approver: @willmcvay
+monitor: https://sentry.io/organizations/reapit-ltd/projects/
+    
 
 ## foundations-ts-definitions\_v0.0.78 - 2020-04-05
 
