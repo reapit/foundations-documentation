@@ -44,11 +44,15 @@ For the purposes of this example, because we are building a client side app, we 
 
 ![](.gitbook/assets/screenshot-2020-02-16-at-13.40.37.png)
 
+The next section is applicable only if you want to restrict the marketplace listing to a single or limited sub-set of clients, for example if you are building some private in-house tooling. For the public beta we don't support surfacing the client ids you wish to restrict to since the marketplace is not live however, if you want your app to be private, you can select "yes" and ignore the customer code list. For most users, you will select "no".
+
+![](.gitbook/assets/screenshot-2020-04-10-at-14.41.09.png)
+
 Then select an icon and some screengrabs for your app listing...
 
 ![](.gitbook/assets/screenshot-2020-02-16-at-13.40.48%20%281%29.png)
 
-...this step is for server side apps only and should be skipped...
+...this step is for server side apps only and should be skipped if you are building a web-based marketplace listed app; if however you are building an integration that you don't want to appear in the marketplace, you can select this option. You app will still be listed for permission only purposes however, it will not be possible to launch from within the Agency Cloud desktop app. For the purposes of this example, we will leave unchecked...
 
 ![](.gitbook/assets/screenshot-2020-02-16-at-13.41.05.png)
 
