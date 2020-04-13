@@ -108,3 +108,9 @@ This will launch an app at localhost:8080. You will be redirected again to Reapi
 
 You should now be good to go. The basic app structure and authentication are all set up to start building components and working with the platform API. 
 
+### 7. A word on hosting...
+
+Whilst Marketplace apps are "submitted", "listed" and "installed" by clients, they are still hosted by you, the developer. This is both to ensure the integrity of your IP / source code, and so that you maintain control over your deployment pipelines.
+
+Optional hosting as a service is something we are looking at in detail for future iterations of the platform however it is not on our immediate roadmap. You should continue to use your existing web hosting platform for your app and just submit the launch uri on the submit app form as above. 
+
