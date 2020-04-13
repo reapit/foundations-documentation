@@ -85,7 +85,7 @@ The user will be presented with a Reapit branded login screen where they are req
 
 This step will be automatically skipped if the user has an authenticated session with Reapit Connect. The user will immediately be redirected back to your app.
 
-![](https://github.com/reapit/foundations-documentation/tree/c093161f71a9eb9e7787ae0d2a199d6ee0a936d1/.gitbook/assets/image%20%283%29.png)
+![](../.gitbook/assets/image%20%2813%29.png)
 
 ### Redirect back to your app
 

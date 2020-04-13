@@ -19,11 +19,11 @@ We have now introduced the ability to view what revisions are currently pending 
 
 When you have submitted a revision on your app, you will now be able to click on the ‘Pending Revision’ button \(previously disabled\) which will present a modal with the changes you have made highlighted.
 
-![Example of the enabled &apos;Pending Revision&apos; button](.gitbook/assets/image%20%2810%29.png)
+![Example of the enabled &apos;Pending Revision&apos; button](.gitbook/assets/image%20%2811%29.png)
 
 For text or selections that has been added it will be highlighted in GREEN and for text deleted or options deselected, it will be highlighted in RED.
 
-![An example showing the revisions submitted](.gitbook/assets/image%20%2812%29.png)
+![An example showing the revisions submitted](.gitbook/assets/image%20%2814%29.png)
 
 If you wish to cancel your pending revision to make additional changes for example, click ‘Cancel Pending Revision’. It will immediately cancel the revision and you will be able make any edits as usual.
 
@@ -33,7 +33,7 @@ If you wish to cancel your pending revision to make additional changes for examp
 
 There was a slight issue with the ‘Checkbox’ component in Elements not behaving correctly. This has been fixed and is now working as expected.
 
-![](.gitbook/assets/image%20%2814%29.png)
+![](.gitbook/assets/image%20%2816%29.png)
 
 ### New
 
@@ -63,7 +63,7 @@ The ‘read’ functionality of the Tenancies API is now available. We are still
 **Works Orders API**  
 In addition and ahead of schedule, the ‘Works Order API’ is now up and running and fully interactive, read, write and update with the Sandbox data to see exactly what information you can use within Property Management.
 
-![Example response of the Works Order API ](.gitbook/assets/image%20%2819%29.png)
+![Example response of the Works Order API ](.gitbook/assets/image%20%2822%29.png)
 
   
 **Embedding Data**  
@@ -155,7 +155,7 @@ Available for a **limited time only**, direct access to our Foundations Platform
 
 ### Full Visibility \([Roadmap](https://github.com/reapit/foundations/milestones?direction=asc&sort=due_date&state=open)\)
 
-![](.gitbook/assets/image%20%2813%29.png)
+![](.gitbook/assets/image%20%2815%29.png)
 
 From every issue raised through to completion, you’ll have full visibility on what we’re doing. We want you to be a part of this exciting new platform, which is why we’ve opened sourced not only our cloud applications but also our developer portal! Giving you the ability to submit feature requests or to raise bugs directly on our Foundation Repo and track the progress.
 
