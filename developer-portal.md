@@ -96,7 +96,7 @@ Then;
 
 This will launch the scaffolder with the following options:
 
-![](.gitbook/assets/screenshot-2020-02-16-at-13.48.28.png)
+![](.gitbook/assets/screenshot-2020-04-13-at-16.03.07.png)
 
 Having entered the basic meta data for your app, ensure you enter the Client Id from step four before selecting the styling and state management solutions you want to work with. Hit return and the app will start building.
 
