@@ -6,22 +6,18 @@ description: &gt;- Below you will find a listing of the recent changes we have m
 
 ## Elements
 
-### elements_v0.5.51 - 2020-04-13
-  
-Release: elements_v0.5.51
-Rollback: elements_v0.5.49
-Changes:
-commit | author |description
-  
-- 15e849ac35b1ab8e58ab0652a3a5e2d52d286926 | Cuong Vu <cuongvh@reapit.com> | chore: bump elements version 0.5.51 (#886)
-- 4a1bfeacd2304a5000f567ac39cb55eadbd1f6c5 | Khac Vy <vytk@reapit.com> | chore: Add tooltip which display when user hover in tag (#879)* chore: Add tooltip which display when user hover in tag
-- aeac1e83a85a99c1bd72c7088ec5e3ef2995536b | leXuanNha <nhalx@reapit.com> | Feat/828 create tag component in elements (#866)* feat: #828 Add dropdown select component using rc-select* put tag component into formik and testing* fix lintCo-authored-by: Vu Nguyen <vunp@reapit.com>
-- 60de4013a36bf0fdc528b990eb5b6c106f64320d | Vu Nguyen <vunp@reapit.com> | Fix: #840 updates required to analytics tab (#861)* feat: #840: Updates required to analytics tab
-- ef2f7f2eadd6f6923d45edc2ce2b5616a57c8c1d | Vu Nguyen <vunp@reapit.com> | Feat #712 + #711 : Developer can see a list of enpoints and a graph showing my ‘Hits per Day’ (#836)* mock redux* mock redux* feat: #712: Add traffic event table component* feat: #712: Upgrade react-table to stable version - Add Footer for table element* fixing typescript* feat: #712: Update developer endpoint list + chart* feat: #712: Fix typo issues* feat: #712: Fix linting issues* feat: #712: Fix linting issues* feat: #712: Update snapshot testCo-authored-by: nhalx <nhalx@reapit.com>
+### elements\_v0.5.51 - 2020-04-13
 
-approver: @willmcvay
-monitor: https://sentry.io/organizations/reapit-ltd/projects/
-    
+Release: elements\_v0.5.51 Rollback: elements\_v0.5.49 Changes: commit \| author \|description
+
+* 15e849ac35b1ab8e58ab0652a3a5e2d52d286926 \| Cuong Vu [cuongvh@reapit.com](mailto:cuongvh@reapit.com) \| chore: bump elements version 0.5.51 \(\#886\)
+* 4a1bfeacd2304a5000f567ac39cb55eadbd1f6c5 \| Khac Vy [vytk@reapit.com](mailto:vytk@reapit.com) \| chore: Add tooltip which display when user hover in tag \(\#879\)\* chore: Add tooltip which display when user hover in tag
+* aeac1e83a85a99c1bd72c7088ec5e3ef2995536b \| leXuanNha [nhalx@reapit.com](mailto:nhalx@reapit.com) \| Feat/828 create tag component in elements \(\#866\) _feat: \#828 Add dropdown select component using rc-select_ put tag component into formik and testing\* fix lintCo-authored-by: Vu Nguyen [vunp@reapit.com](mailto:vunp@reapit.com)
+* 60de4013a36bf0fdc528b990eb5b6c106f64320d \| Vu Nguyen [vunp@reapit.com](mailto:vunp@reapit.com) \| Fix: \#840 updates required to analytics tab \(\#861\)\* feat: \#840: Updates required to analytics tab
+* ef2f7f2eadd6f6923d45edc2ce2b5616a57c8c1d \| Vu Nguyen [vunp@reapit.com](mailto:vunp@reapit.com) \| Feat \#712 + \#711 : Developer can see a list of enpoints and a graph showing my ‘Hits per Day’ \(\#836\) _mock redux_ mock redux _feat: \#712: Add traffic event table component_ feat: \#712: Upgrade react-table to stable version - Add Footer for table element _fixing typescript_ feat: \#712: Update developer endpoint list + chart _feat: \#712: Fix typo issues_ feat: \#712: Fix linting issues _feat: \#712: Fix linting issues_ feat: \#712: Update snapshot testCo-authored-by: nhalx [nhalx@reapit.com](mailto:nhalx@reapit.com)
+
+approver: @willmcvay monitor: [https://sentry.io/organizations/reapit-ltd/projects/](https://sentry.io/organizations/reapit-ltd/projects/)
+
 #### elements\_v0.5.49 - 2020-04-03
 
 Release: elements\_v0.5.49 Rollback: elements\_v0.5.48 Changes: commit \| author \|description

@@ -306,9 +306,23 @@ Then;
 
 This will launch the scaffolder with the following options:
 
-![](../.gitbook/assets/screenshot-2020-02-16-at-11.59.58.png)
+![](../.gitbook/assets/screenshot-2020-04-13-at-16.03.07.png)
 
 When you have selected the correct config for you, your app will build, install dependencies and start a server on `localhost:8080` . You will then be prompted to enter your developer credentials at the Reapit Connect screen to get started.
+
+### Internal usage
+
+You will have noticed at the previous step there is an option "for internal use" at Reapit. This allows us to scaffold new web apps for the Reapit Foundations mono-repo. For external developer usage, you can just select 'N' and continue but if you are working with a fork of foundations, you can select 'Y' after taking the following steps.
+
+In the Foundations root dir;
+
+`cd packages/react-app-scaffolder && yarn link`
+
+Then;
+
+`cd... && mkdir <<your-app-name>> && cd <<your-app-name>> && yarn link @reapit/generator-react-app-scaffolder`
+
+Then you can run `yo @reapit/react-app-scaffolder` as per the previous step.
 
 ## Config Manager
 
