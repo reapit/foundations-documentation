@@ -6,19 +6,15 @@ description: &gt;- Below you will find a listing of the recent changes we have m
 
 ## Elements
 
-### elements_v0.5.52 - 2020-04-14
-  
-Release: elements_v0.5.52
-Rollback: elements_v0.5.51
-Changes:
-commit | author |description
-  
-- 779c691f5e095e497789a126a50b8c46c5e0809a | Khac Vy <vytk@reapit.com> | bump @reapit/elements version 0.5.52 (#893)
-- a339d89e98f6dc7b5bcc5849de9f9ae19f792394 | Khac Vy <vytk@reapit.com> | chore: Update dropdown select component (#892)
+### elements\_v0.5.52 - 2020-04-14
 
-approver: @willmcvay
-monitor: https://sentry.io/organizations/reapit-ltd/projects/
-    
+Release: elements\_v0.5.52 Rollback: elements\_v0.5.51 Changes: commit \| author \|description
+
+* 779c691f5e095e497789a126a50b8c46c5e0809a \| Khac Vy [vytk@reapit.com](mailto:vytk@reapit.com) \| bump @reapit/elements version 0.5.52 \(\#893\)
+* a339d89e98f6dc7b5bcc5849de9f9ae19f792394 \| Khac Vy [vytk@reapit.com](mailto:vytk@reapit.com) \| chore: Update dropdown select component \(\#892\)
+
+approver: @willmcvay monitor: [https://sentry.io/organizations/reapit-ltd/projects/](https://sentry.io/organizations/reapit-ltd/projects/)
+
 ### elements\_v0.5.51 - 2020-04-13
 
 Release: elements\_v0.5.51 Rollback: elements\_v0.5.49 Changes: commit \| author \|description
