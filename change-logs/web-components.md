@@ -6,4 +6,15 @@ description: >-
 ---
 
 # Web Components
+### web-components_v0.0.4 - 2020-04-13
+  
+Release: web-components_v0.0.4
+Rollback: web-components_v0.0.4
+Changes:
+commit | author |description
+  
+
+approver: @willmcvay
+monitor: https://sentry.io/organizations/reapit-ltd/projects/
+    
 
