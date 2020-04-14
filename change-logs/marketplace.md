@@ -6,6 +6,17 @@ description: >-
 ---
 
 # Marketplace
+### marketplace_v1.0.20 - 2020-04-14
+  
+Release: marketplace_v1.0.20
+Rollback: marketplace_v1.0.19
+Changes:
+commit | author |description
+  
+- c46b2f0dea3da7e6dc69667de1680fede5379f15 | Will McVay <wmcvay@reapit.com> | fix: t and c update (#907)
+
+approver: @willmcvay
+monitor: https://sentry.io/organizations/reapit-ltd/projects/
 
 ### marketplace_v1.0.19 - 2020-04-14
   
@@ -19,7 +30,6 @@ commit | author |description
 approver: @willmcvay
 monitor: https://sentry.io/organizations/reapit-ltd/projects/
     
-
 ### marketplace_v1.0.18 - 2020-04-14
   
 Release: marketplace_v1.0.18
