@@ -211,7 +211,7 @@ The type of _Property_ will be given to an application that can be launched for 
 
 When an app with a type of Property is installed then an Apps menu will appear on the Property screen.  Clicking on an app will launch it with the property code.
 
-![Property apps launch point](../.gitbook/assets/image%20%2824%29.png)
+![Property apps launch point](../.gitbook/assets/image%20%2825%29.png)
 
 ### Applicant
 
@@ -227,7 +227,7 @@ The type of _Applicant_ will be given to an application that can be launched for
 
 When an app with a type of Applicant is installed then an Apps menu will appear on the Applicant screen.  Clicking on an app will launch it with the applicant code.
 
-![Applicant apps launch point](../.gitbook/assets/image%20%286%29.png)
+![Applicant apps launch point](../.gitbook/assets/image%20%287%29.png)
 
 ### Id Check
 
@@ -243,7 +243,7 @@ The type of _ID Check_ will be given to an application that can be used to repla
 
 This desktop type will take affect in Agency Cloud when the following button is clicked \(this will be seen on various screens, for example contact and applicant\).
 
-![Id Check button in Agency Cloud](../.gitbook/assets/image%20%285%29.png)
+![Id Check button in Agency Cloud](../.gitbook/assets/image%20%286%29.png)
 
 ### Property Marketing Information
 
@@ -259,7 +259,7 @@ The type of _Property Marketing Information_ can be given to an application that
 
 An application of this type can be launched from the Marketing button on the property screen in Agency Cloud:
 
-![Property Marketing app launch point](../.gitbook/assets/image%20%284%29.png)
+![Property Marketing app launch point](../.gitbook/assets/image%20%285%29.png)
 
 ### Vendor Marketing Report
 
@@ -275,7 +275,7 @@ The type of _Vendor Marketing Report_ can be given to an application that can pr
 
 An application of this type can be launched from the Applicant Interest and Reports screen in Agency Cloud \(launched from the Property Journal window\):
 
-![VMR generator launch point](../.gitbook/assets/image.png)
+![VMR generator launch point](../.gitbook/assets/image%20%281%29.png)
 
 ### Property Detail Generation
 
@@ -291,7 +291,7 @@ The type of _Property Detail Generation_ can be given to an application that can
 
 An application of this type can be launched from the Property Details screen in Agency Cloud:
 
-![Details generator app launch point ](../.gitbook/assets/image%20%2827%29.png)
+![Details generator app launch point ](../.gitbook/assets/image%20%2828%29.png)
 
 ### Applicant Export
 
@@ -310,5 +310,5 @@ An application of this type would be triggered in two ways from Agency Cloud:
 1. Upon first save of the applicant
 2. As an option when clicking Print on the applicant screen:
 
-![Applicant exporter app launch point](../.gitbook/assets/image%20%2811%29.png)
+![Applicant exporter app launch point](../.gitbook/assets/image%20%2812%29.png)
 
