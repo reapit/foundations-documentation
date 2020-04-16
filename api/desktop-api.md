@@ -211,7 +211,7 @@ The type of _Property_ will be given to an application that can be launched for 
 
 When an app with a type of Property is installed then an Apps menu will appear on the Property screen.  Clicking on an app will launch it with the property code.
 
-![Property apps launch point](../.gitbook/assets/image%20%2818%29.png)
+![Property apps launch point](../.gitbook/assets/image%20%2824%29.png)
 
 ### Applicant
 
@@ -291,7 +291,7 @@ The type of _Property Detail Generation_ can be given to an application that can
 
 An application of this type can be launched from the Property Details screen in Agency Cloud:
 
-![Details generator app launch point ](../.gitbook/assets/image%20%2821%29.png)
+![Details generator app launch point ](../.gitbook/assets/image%20%2827%29.png)
 
 ### Applicant Export
 
@@ -310,5 +310,5 @@ An application of this type would be triggered in two ways from Agency Cloud:
 1. Upon first save of the applicant
 2. As an option when clicking Print on the applicant screen:
 
-![Applicant exporter app launch point](../.gitbook/assets/image%20%289%29.png)
+![Applicant exporter app launch point](../.gitbook/assets/image%20%2811%29.png)
 

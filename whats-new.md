@@ -7,6 +7,47 @@ description: >-
 
 # What’s New
 
+## 15/04/20
+
+### Bring on the Beta.
+
+We have officially started the Beta Phase! If you had signed up to the  Alpha Phase, you will be able to continue using the platform with no interruption, this is simply the next phase for the Developers Portal.   
+  
+For our new Beta Developers, welcome to Reapit Foundations. If you didn't get the chance, have a look at our on-boarding video [here](https://www.youtube.com/watch?edufilter=NULL&feature=youtu.be&v=8TR4SoqV2-s). It has been created to help you navigate the portal and to demonstrate what is available. Remember, if you have any questions or need any assistance, you can visit the 'Help' section.  
+
+{% embed url="https://www.youtube.com/watch?edufilter=NULL&feature=youtu.be&v=8TR4SoqV2-s" caption="Foundations Developer Portal \| On-boarding" %}
+
+What’s New has been designed to give you a high-level overview of the latest features and fixes that have been included over the last couple of weeks.
+
+With that said, let us take a look at what we’ve been working on:
+
+### New Features
+
+#### Private Apps
+
+A new section is now available in on the Submit and Edit app forms, giving you the ability to specify which customers you would like to share your application with. You can enter the Customer ID or IDs and when the Marketplace is live, only those customers will see your application in the Marketplace. It is especially helpful to those building in private in-house applications. 
+
+![Private Apps section on the Submit and Edit App forms](.gitbook/assets/image%20%289%29.png)
+
+For more information, please [click here ](https://foundations-documentation.reapit.cloud/developer-portal#3-register-an-app)
+
+####  Analytics
+
+The Analytics section has had a significant update, you can now see the specific Endpoints and ‘Total’ number of hits for your App\(s\) as well as a graph displaying your ‘Hits Per Day’. As the data is Sandbox data you will see ‘SBOX’ in your client filter list, but this will include Client IDs when your app has been installed in the Marketplace.
+
+In addition, you can now search the data using a date range filter or simply select a predefined option of ‘Yesterday’, ‘Last Week’ or ‘Last Month’. More to come on the Analytics page in the coming weeks.
+
+![Example Analytics Data ](.gitbook/assets/image%20%287%29.png)
+
+#### Tags Input
+
+A new ‘Tags Input’ component has been added to Elements. We will be using this on the Submit and Edit app forms shortly, but it is available for you to use, as are all the components in Elements. Selecting an item from a drop-down list, it will automatically add as a tag in the field. It also offers a hover over state allowing the user to clearly see a brief description regarding each selection.  
+
+
+![Tags Input Component in Elements](.gitbook/assets/image%20%2823%29.png)
+
+To see the new the component, please [click here](https://elements.reapit.cloud/?path=/story/dropdownselect--primary) 
+
 ## 31/03/20
 
 Over the last couple of weeks we have been working on implementing a couple of new features, for example the Pending Revision modal as mentioned below. In addition and coming soon a new update to the 'Analytics' page within the developers portal which will provide additional and useful app statistics.  
@@ -19,11 +60,11 @@ We have now introduced the ability to view what revisions are currently pending 
 
 When you have submitted a revision on your app, you will now be able to click on the ‘Pending Revision’ button \(previously disabled\) which will present a modal with the changes you have made highlighted.
 
-![Example of the enabled &apos;Pending Revision&apos; button](.gitbook/assets/image%20%2811%29.png)
+![Example of the enabled &apos;Pending Revision&apos; button](.gitbook/assets/image%20%2814%29.png)
 
 For text or selections that has been added it will be highlighted in GREEN and for text deleted or options deselected, it will be highlighted in RED.
 
-![An example showing the revisions submitted](.gitbook/assets/image%20%2814%29.png)
+![An example showing the diffing](.gitbook/assets/image%20%2815%29.png)
 
 If you wish to cancel your pending revision to make additional changes for example, click ‘Cancel Pending Revision’. It will immediately cancel the revision and you will be able make any edits as usual.
 
@@ -33,7 +74,7 @@ If you wish to cancel your pending revision to make additional changes for examp
 
 There was a slight issue with the ‘Checkbox’ component in Elements not behaving correctly. This has been fixed and is now working as expected.
 
-![](.gitbook/assets/image%20%2816%29.png)
+![Checkbox component in Elements](.gitbook/assets/image%20%2819%29.png)
 
 ### New
 
@@ -63,7 +104,7 @@ The ‘read’ functionality of the Tenancies API is now available. We are still
 **Works Orders API**  
 In addition and ahead of schedule, the ‘Works Order API’ is now up and running and fully interactive, read, write and update with the Sandbox data to see exactly what information you can use within Property Management.
 
-![Example response of the Works Order API ](.gitbook/assets/image%20%2822%29.png)
+![Example response of the Works Order API ](.gitbook/assets/image%20%2828%29.png)
 
   
 **Embedding Data**  
@@ -155,7 +196,7 @@ Available for a **limited time only**, direct access to our Foundations Platform
 
 ### Full Visibility \([Roadmap](https://github.com/reapit/foundations/milestones?direction=asc&sort=due_date&state=open)\)
 
-![](.gitbook/assets/image%20%2815%29.png)
+![](.gitbook/assets/image%20%2820%29.png)
 
 From every issue raised through to completion, you’ll have full visibility on what we’re doing. We want you to be a part of this exciting new platform, which is why we’ve opened sourced not only our cloud applications but also our developer portal! Giving you the ability to submit feature requests or to raise bugs directly on our Foundation Repo and track the progress.
 
