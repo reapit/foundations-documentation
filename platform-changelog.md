@@ -9,6 +9,10 @@ description: >-
 
 ## April 2020
 
+#### 2020-14-15
+
+* [\#835 ](https://github.com/reapit/foundations/issues/835)- Ensured that `GET /appointments` handles an unexpected data condition more gracefully
+
 #### 2020-04-08
 
 * [\#846](https://github.com/reapit/foundations/issues/846) - Updated the documentation for the appointments `recurrence.type` attribute to include its acceptable values listing
