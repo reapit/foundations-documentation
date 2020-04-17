@@ -65,13 +65,13 @@ In addition to Storybook, because we have used TypeScript throughout out estate,
 
 ### What if I don't use React?
 
-Although we use React heavily at Reapit and we recommend using our tooling as the most frictionless way of building marketplace apps, we understand that it will not work for everyone.
+Although we use React heavily at Reapit and we recommend using our tooling as the most frictionless way of building marketplace apps, we understand that it will not work for everyone. As such our Elements Storybook also supports a vanilla HTML and CSS version, derived from the React JSX markup.
 
-You can still import the stylesheet as above, and simply apply same markup and selectors in the [Bulma documentation](https://bulma.io/) in most cases. Where we have made exceptions, or written custom CSS, you can inspect Storybook and apply classes as they appear in the DOM tree.
+As a non-React developer you should still import the stylesheet as above, and simply apply the classes to your markup as displayed in the HTML tab in each Storybook component as per below:
 
-![](../.gitbook/assets/screenshot-2020-02-12-at-16.26.23.png)
+![](../.gitbook/assets/screenshot-2020-04-17-at-15.27.20.png)
 
-We have deliberately not diverted from Bulma's conventions where possible and where we have, we have tried to follow sensible naming conventions and predictable markup.
+You can also selectors in the [Bulma documentation](https://bulma.io/) in most cases. We have deliberately not diverted from Bulma's conventions where possible and where we have, we have tried to follow sensible naming conventions and predictable markup.
 
 ## Cognito Auth
 
