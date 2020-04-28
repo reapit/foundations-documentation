@@ -7,7 +7,7 @@ description: >-
 # Desktop
 
 {% hint style="danger" %}
-The Desktop API is not available during the Alpha period.
+The Desktop API is not available during the Beta period.
 {% endhint %}
 
 {% hint style="info" %}
