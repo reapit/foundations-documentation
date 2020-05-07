@@ -7,9 +7,13 @@ description: >-
 
 # Platform Change Log
 
+## May 2020
+
+* [\#1164](https://github.com/reapit/foundations/issues/1164) - The listing of contact roles at `GET /contacts/{id}/relationships` will now include offer roles
+
 ## April 2020
 
-#### 2020-14-15
+#### 2020-04-15
 
 * [\#835 ](https://github.com/reapit/foundations/issues/835)- Ensured that `GET /appointments` handles an unexpected data condition more gracefully
 
