@@ -9,6 +9,8 @@ description: >-
 
 ## May 2020
 
+* [\#1144](https://github.com/reapit/foundations/issues/1144) - Updated interactive API exporer to indicate that `GET /documents/{id}/download` provides content using the `Content-Type` of `application/octet-stream`
+* [\#1088](https://github.com/reapit/foundations/issues/1088) - Created new API to request the details of a specific companies relationships on the system at `GET /companies/{id}/relationships`
 * [\#1164](https://github.com/reapit/foundations/issues/1164) - The listing of contact roles at `GET /contacts/{id}/relationships` will now include offer roles
 
 ## April 2020
