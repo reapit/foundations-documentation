@@ -6,6 +6,19 @@ description: >-
 ---
 
 # GEO Diary
+### geo-diary_v1.0.3 - 2020-05-11
+  
+Release: geo-diary_v1.0.3
+Rollback: geo-diary_v1.0.2
+Changes:
+commit | author |description
+  
+- 0f66915923551cff8440344ee013a627a78b9d80 | Cuong Vu <cuongvh@reapit.com> | fix: #1160 HTML Description fields fixes (#1181)* fix #1160 WIP fixing <Editor> and <HTMLRender>* fix #1160 fixing <Editor> and <HTMLRender>* fix: #1160 rem instead of em
+- 6cb9322c4d238377b98f41c9729a820f014fcf27 | NghiaPham <nghiapn@reapit.com> | fix #1065: re-instating purge unused s3 assets cronjob (#1134)fix #1065: re-instating purge unused s3 assets cronjob (#1134)
+- cdb0a9c0b29ad10ccae29cb678e65487e3de1a14 | Pham Hai Duong <duongph@reapit.com> | chore: add sentry cli to push source map to sentry.io (#1136)* chore: add sentry cli to push source map to rsentry.io* chore: add IS_RELEAASE env for sentry source map upload
+
+approver: @willmcvay
+monitor: https://sentry.io/organizations/reapit-ltd/projects/
 
 ### geo-diary_v1.0.2 - 2020-05-04
 
@@ -49,3 +62,4 @@ commit | author |description
 
 approver: @willmcvay
 monitor: https://sentry.io/organizations/reapit-ltd/projects/
+
