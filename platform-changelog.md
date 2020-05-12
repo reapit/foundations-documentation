@@ -11,7 +11,8 @@ description: >-
 
 #### 2020-05-11
 
-* [\#1207](https://github.com/reapit/foundations/issues/1207) -  The response from `GET /contacts` and `GET /contacts/{id}` will now include a link to the contacts associated relationships
+* [\#1209](https://github.com/reapit/foundations/issues/1209) - Ensured that the error response issued from `GET /documents/{id}/download` when `Accept` header is invalid is returned in the standard format
+* [\#1207](https://github.com/reapit/foundations/issues/1207) - The response from `GET /contacts` and `GET /contacts/{id}` will now include a link to the contacts associated relationships
 
 #### 2020-05-11
 
