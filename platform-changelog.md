@@ -12,6 +12,7 @@ description: >-
 #### 2020-05-11
 
 * [\#1209](https://github.com/reapit/foundations/issues/1209) - Ensured that the error response issued from `GET /documents/{id}/download` when `Accept` header is invalid is returned in the standard format
+* [\#1208 ](https://github.com/reapit/foundations/issues/1208)- The response from `GET /companies` and `GET /companies/{id}` will now include a link to the companies associated relationships
 * [\#1207](https://github.com/reapit/foundations/issues/1207) - The response from `GET /contacts` and `GET /contacts/{id}` will now include a link to the contacts associated relationships
 
 #### 2020-05-11
