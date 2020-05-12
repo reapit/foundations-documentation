@@ -11,6 +11,10 @@ description: >-
 
 #### 2020-05-11
 
+* [\#1207](https://github.com/reapit/foundations/issues/1207) -  The response from `GET /contacts` and `GET /contacts/{id}` will now include a link to the contacts associated relationships
+
+#### 2020-05-11
+
 * [\#1144](https://github.com/reapit/foundations/issues/1144) - Updated interactive API exporer to indicate that `GET /documents/{id}/download` provides content using the `Content-Type` of `application/octet-stream`
 * [\#1088](https://github.com/reapit/foundations/issues/1088) - Created new API to request the details of a specific companies relationships on the system at `GET /companies/{id}/relationships`
 
