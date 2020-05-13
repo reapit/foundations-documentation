@@ -9,6 +9,10 @@ description: >-
 
 ## May 2020
 
+#### 2020-05-13
+
+* [\#734](https://github.com/reapit/foundations/issues/734) - Added a new `modified` query string to `GET /properties` to filter properties based on the date they were last modified or created
+
 #### 2020-05-11
 
 * [\#1209](https://github.com/reapit/foundations/issues/1209) - Ensured that the error response issued from `GET /documents/{id}/download` when `Accept` header is invalid is returned in the standard format
