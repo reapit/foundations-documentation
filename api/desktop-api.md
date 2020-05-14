@@ -68,16 +68,62 @@ Opens advanced search screen in property mode and runs a search with provided pa
 agencycloud://properties?address=MK43&mode=s
 ```
 
-| Parameter | Type | Description | Required |
-| :--- | :--- | :--- | :--- |
-| name | string | A full or partial name fragment to search for | No |
-| address | string | An address fragment to search for \(eg. a postcode\) | No |
-| communication | string | An email address or phone number to search for | No |
-| mode | string | The marketing mode of the properties to search for | Yes |
-| appId | string | The GUID of the app to return the code of the selected property to \(if not present then search will not return to an app\) | No |
-| appParam | string | The key to use in the query string when returning the property primary key to an app \(required if appId is set\) | No? |
-
-## Applicants
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">Parameter</th>
+      <th style="text-align:left">Type</th>
+      <th style="text-align:left">Description</th>
+      <th style="text-align:left">Required</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">name</td>
+      <td style="text-align:left">string</td>
+      <td style="text-align:left">A full or partial name fragment to search for</td>
+      <td style="text-align:left">No</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">address</td>
+      <td style="text-align:left">string</td>
+      <td style="text-align:left">An address fragment to search for (eg. a postcode)</td>
+      <td style="text-align:left">No</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">communication</td>
+      <td style="text-align:left">string</td>
+      <td style="text-align:left">An email address or phone number to search for</td>
+      <td style="text-align:left">No</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">mode</td>
+      <td style="text-align:left">string</td>
+      <td style="text-align:left">
+        <p>The marketing mode of the properties to search for:</p>
+        <ul>
+          <li>s or sales</li>
+          <li>l or lettings</li>
+        </ul>
+      </td>
+      <td style="text-align:left">Yes</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">appId</td>
+      <td style="text-align:left">string</td>
+      <td style="text-align:left">The GUID of the app to return the code of the selected property to (if
+        not present then search will not return to an app)</td>
+      <td style="text-align:left">No</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">appParam</td>
+      <td style="text-align:left">string</td>
+      <td style="text-align:left">The key to use in the query string when returning the property primary
+        key to an app (required if appId is set)</td>
+      <td style="text-align:left">No?</td>
+    </tr>
+  </tbody>
+</table>## Applicants
 
 ### Load Applicant
 
@@ -111,16 +157,62 @@ Opens advanced search screen in applicant mode and runs a search with provided p
 agencycloud://applicants?name=smith&mode=lettings
 ```
 
-| Parameter | Type | Description | Required |
-| :--- | :--- | :--- | :--- |
-| name | string | A full or partial name fragment to search for | No |
-| address | string | An address fragment to search for \(eg. a postcode\) | No |
-| communication | string | An email address or phone number to search for | No |
-| mode | string | The marketing mode of the properties to search for | Yes |
-| appId | string | The GUID of the app to return the code of the selected property to \(if not present then search will not return to an app\) | No |
-| appParam | string | The key to use in the query string when returning the property primary key to an app \(required if appId is set\) | No? |
-
-## Appointments
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">Parameter</th>
+      <th style="text-align:left">Type</th>
+      <th style="text-align:left">Description</th>
+      <th style="text-align:left">Required</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">name</td>
+      <td style="text-align:left">string</td>
+      <td style="text-align:left">A full or partial name fragment to search for</td>
+      <td style="text-align:left">No</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">address</td>
+      <td style="text-align:left">string</td>
+      <td style="text-align:left">An address fragment to search for (eg. a postcode)</td>
+      <td style="text-align:left">No</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">communication</td>
+      <td style="text-align:left">string</td>
+      <td style="text-align:left">An email address or phone number to search for</td>
+      <td style="text-align:left">No</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">mode</td>
+      <td style="text-align:left">string</td>
+      <td style="text-align:left">
+        <p>The marketing mode of the properties to search for:</p>
+        <ul>
+          <li>s or sales</li>
+          <li>l or lettings</li>
+        </ul>
+      </td>
+      <td style="text-align:left">Yes</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">appId</td>
+      <td style="text-align:left">string</td>
+      <td style="text-align:left">The GUID of the app to return the code of the selected property to (if
+        not present then search will not return to an app)</td>
+      <td style="text-align:left">No</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">appParam</td>
+      <td style="text-align:left">string</td>
+      <td style="text-align:left">The key to use in the query string when returning the property primary
+        key to an app (required if appId is set)</td>
+      <td style="text-align:left">No?</td>
+    </tr>
+  </tbody>
+</table>## Appointments
 
 ### Load Diary
 
