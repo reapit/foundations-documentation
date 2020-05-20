@@ -225,6 +225,8 @@ The following table outlines the purpose of each property in the payload
 
 When you have an endpoint configured, you can test it by using the **Ping** function. This will send a test event with an example payload to the URL stored against the webhook for the selected topic. You will only be able to select topics that are applicable to the webhook being tested. 
 
+![](../.gitbook/assets/image%20%2840%29.png)
+
 The user interface will show a success or failure based on the response back from the endpoint. In the event of a success response, you will have received the example payload to the configured endpoint.
 
 We also recommend testing your webhooks using our sandbox environment before applying them to customers.
