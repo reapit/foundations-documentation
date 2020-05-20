@@ -6,6 +6,7 @@
   * [Reapit Connect](api/reapit-connect.md)
   * [Web](api/web.md)
   * [Desktop](api/desktop-api.md)
+  * [Webhooks](api/webhooks.md)
 * [Open Source](open-source/README.md)
   * [Contributing](open-source/contributing.md)
   * [Packages](open-source/packages.md)

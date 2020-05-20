@@ -27,7 +27,7 @@ With that said, let us take a look at what we’ve been working on:
 
 A new section is now available in on the Submit and Edit app forms, giving you the ability to specify which customers you would like to share your application with. You can enter the Customer ID or IDs and when the Marketplace is live, only those customers will see your application in the Marketplace. It is especially helpful to those building in private in-house applications. 
 
-![Private Apps section on the Submit and Edit App forms](.gitbook/assets/image%20%2811%29.png)
+![Private Apps section on the Submit and Edit App forms](.gitbook/assets/image%20%2810%29.png)
 
 For more information, please [click here ](https://foundations-documentation.reapit.cloud/developer-portal#3-register-an-app)
 
@@ -37,14 +37,14 @@ The Analytics section has had a significant update, you can now see the specific
 
 In addition, you can now search the data using a date range filter or simply select a predefined option of ‘Yesterday’, ‘Last Week’ or ‘Last Month’. More to come on the Analytics page in the coming weeks.
 
-![Example Analytics Data ](.gitbook/assets/image%20%289%29.png)
+![Example Analytics Data ](.gitbook/assets/image%20%288%29.png)
 
 #### Tags Input
 
 A new ‘Tags Input’ component has been added to Elements. We will be using this on the Submit and Edit app forms shortly, but it is available for you to use, as are all the components in Elements. Selecting an item from a drop-down list, it will automatically add as a tag in the field. It also offers a hover over state allowing the user to clearly see a brief description regarding each selection.  
 
 
-![Tags Input Component in Elements](.gitbook/assets/image%20%2827%29.png)
+![Tags Input Component in Elements](.gitbook/assets/image%20%2824%29.png)
 
 To see the new the component, please [click here](https://elements.reapit.cloud/?path=/story/dropdownselect--primary) 
 
@@ -60,11 +60,11 @@ We have now introduced the ability to view what revisions are currently pending 
 
 When you have submitted a revision on your app, you will now be able to click on the ‘Pending Revision’ button \(previously disabled\) which will present a modal with the changes you have made highlighted.
 
-![Example of the enabled &apos;Pending Revision&apos; button](.gitbook/assets/image%20%2816%29.png)
+![Example of the enabled &apos;Pending Revision&apos; button](.gitbook/assets/image%20%2815%29.png)
 
 For text or selections that has been added it will be highlighted in GREEN and for text deleted or options deselected, it will be highlighted in RED.
 
-![An example showing the diffing](.gitbook/assets/image%20%2818%29.png)
+![An example showing the diffing](.gitbook/assets/image%20%2816%29.png)
 
 If you wish to cancel your pending revision to make additional changes for example, click ‘Cancel Pending Revision’. It will immediately cancel the revision and you will be able make any edits as usual.
 
@@ -74,7 +74,7 @@ If you wish to cancel your pending revision to make additional changes for examp
 
 There was a slight issue with the ‘Checkbox’ component in Elements not behaving correctly. This has been fixed and is now working as expected.
 
-![Checkbox component in Elements](.gitbook/assets/image%20%2822%29.png)
+![Checkbox component in Elements](.gitbook/assets/image%20%2820%29.png)
 
 ### New
 
@@ -97,14 +97,14 @@ Now let’s look at what we’ve been doing:
 **The release of the of Tenancies API**  
 The ‘read’ functionality of the Tenancies API is now available. We are still developing the ‘updating’ and ‘creating’ functionality, but you should now get great visibility what is available and what information you can use within your application.
 
-![Tenancies API ](.gitbook/assets/image%20%285%29.png)
+![Tenancies API ](.gitbook/assets/image%20%284%29.png)
 
 To follow the milestone to see what is still to come and follow the progress, please [**click here**](https://github.com/reapit/foundations/milestone/13)
 
 **Works Orders API**  
 In addition and ahead of schedule, the ‘Works Order API’ is now up and running and fully interactive, read, write and update with the Sandbox data to see exactly what information you can use within Property Management.
 
-![Example response of the Works Order API ](.gitbook/assets/image%20%2832%29.png)
+![Example response of the Works Order API ](.gitbook/assets/image%20%2829%29.png)
 
   
 **Embedding Data**  
@@ -192,11 +192,11 @@ Those of you familiar with [GitBook, ](https://www.gitbook.com)will know they ar
 
 Available for a **limited time only**, direct access to our Foundations Platform Product Owners and Developers. You can access this feature from the ‘[Help](http://marketplace.reapit.cloud/developer/help)’ section in the developer portal. We hope you won’t need us and that everything you need can be found within our documentation but it’s nice to know we’re here if you do.
 
-![Live Chat feature](.gitbook/assets/image%20%281%29.png)
+![Live Chat feature](.gitbook/assets/image%20%2832%29.png)
 
 ### Full Visibility \([Roadmap](https://github.com/reapit/foundations/milestones?direction=asc&sort=due_date&state=open)\)
 
-![](.gitbook/assets/image%20%2823%29.png)
+![](.gitbook/assets/image%20%2821%29.png)
 
 From every issue raised through to completion, you’ll have full visibility on what we’re doing. We want you to be a part of this exciting new platform, which is why we’ve opened sourced not only our cloud applications but also our developer portal! Giving you the ability to submit feature requests or to raise bugs directly on our Foundation Repo and track the progress.
 

@@ -305,7 +305,7 @@ The type of _Property_ will be given to an application that can be launched for 
 
 When an app with a type of Property is installed then an Apps menu will appear on the Property screen.  Clicking on an app will launch it with the property code.
 
-![Property apps launch point](../.gitbook/assets/image%20%2828%29.png)
+![Property apps launch point](../.gitbook/assets/image%20%2825%29.png)
 
 ### Applicant
 
@@ -321,7 +321,7 @@ The type of _Applicant_ will be given to an application that can be launched for
 
 When an app with a type of Applicant is installed then an Apps menu will appear on the Applicant screen.  Clicking on an app will launch it with the applicant code.
 
-![Applicant apps launch point](../.gitbook/assets/image%20%288%29.png)
+![Applicant apps launch point](../.gitbook/assets/image%20%287%29.png)
 
 ### Id Check
 
@@ -337,7 +337,7 @@ The type of _ID Check_ will be given to an application that can be used to repla
 
 This desktop type will take affect in Agency Cloud when the following button is clicked \(this will be seen on various screens, for example contact and applicant\).
 
-![Id Check button in Agency Cloud](../.gitbook/assets/image%20%287%29.png)
+![Id Check button in Agency Cloud](../.gitbook/assets/image%20%286%29.png)
 
 ### Property Marketing Information
 
@@ -385,7 +385,7 @@ The type of _Property Detail Generation_ can be given to an application that can
 
 An application of this type can be launched from the Property Details screen in Agency Cloud:
 
-![Details generator app launch point ](../.gitbook/assets/image%20%2831%29.png)
+![Details generator app launch point ](../.gitbook/assets/image%20%2828%29.png)
 
 ### Applicant Export
 
