@@ -10,9 +10,13 @@ We want getting started with the Developer Portal to be as frictionless as possi
 
 You will receive an email with a link to the developer portal and temporary login credentials. The app will redirect you to the [Reapit Connect](api/reapit-connect.md) login screen and then back to the authenticated portal. 
 
-The first screen you will see is the apps page which initially will be empty:
+The first screen you will see is a welcome wizard. You will only see this at the first login, although you can access from the help section later if you wish to revisit. It will walk you through some basic concepts when working with the developer portal.
 
-![](.gitbook/assets/screenshot-2020-02-16-at-13.33.56.png)
+![](.gitbook/assets/screenshot-2020-05-22-at-11.44.07.png)
+
+You will then see the "My Apps" page which will initially be empty. There is also a button in the top right hand corner to submit a new app. More on that at point 3 of this guide.
+
+![](.gitbook/assets/screenshot-2020-05-22-at-11.44.36.png)
 
 When you are in the portal, navigate to the API tab on the left hand side menu. 
 
@@ -20,11 +24,11 @@ When you are in the portal, navigate to the API tab on the left hand side menu.
 
 Assuming you have an idea of the data types / entities you are interested in, ensure that the endpoints you need are available in the platform by "trying out" the API explorer. 
 
-![](.gitbook/assets/screenshot-2020-02-16-at-13.42.53.png)
+![](.gitbook/assets/screenshot-2020-05-22-at-12.00.12.png)
 
 For the purposes of this example my app will need Applicant data. Don't worry if you find you need other endpoints later, you can add them at any time.
 
-![](.gitbook/assets/screenshot-2020-02-16-at-13.43.21.png)
+![](.gitbook/assets/screenshot-2020-05-22-at-12.00.43.png)
 
 ### 3. Register an app
 
@@ -32,7 +36,11 @@ The next step is to register an app. We understand you won't have any code yet, 
 
 The first step is to upload the listing details of your app. Eventually they will be the client facing details of your application in the marketplace.
 
-![](.gitbook/assets/screenshot-2020-02-16-at-13.40.23.png)
+![](.gitbook/assets/screenshot-2020-05-22-at-11.48.55.png)
+
+Moving on, you will be asked if you wish to integrate with the Agency Cloud CRM and if so, what page you would like to integrate with. This will allow your app to be launched as a screen direct from Agency Cloud by a user. It is an optional step and is in addition to being able to launch from the top level "apps" menu in the CRM. More on this behaviour in the [Desktop](api/desktop-api.md#desktop-types) docs.
+
+![](.gitbook/assets/screenshot-2020-05-22-at-11.49.20.png)
 
 You then need to select an OAuth Authentication flow:
 
