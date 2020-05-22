@@ -6,6 +6,15 @@ description: >-
 ---
 
 # Marketplace
+### marketplace_v1.0.24 - 2020-05-22
+  
+Release: marketplace_v1.0.24
+Rollback: marketplace_v1.0.24
+Changes:
+commit | author |description
+
+approver: @willmcvay
+monitor: https://sentry.io/organizations/reapit-ltd/projects/
 
 ### marketplace_v1.0.23 - 2020-05-22
   
@@ -187,4 +196,3 @@ commit | author |description
 
 approver: @willmcvay
 monitor: https://sentry.io/organizations/reapit-ltd/projects/
-
