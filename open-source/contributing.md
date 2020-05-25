@@ -101,6 +101,33 @@ Where relevant, files e2e test specs are placed in the `src/tests/cypress` folde
 
 When raising a pull request, please ensure that existing tests are passing locally and that where relevant, new tests are added to maintain our overall coverage levels.
 
+### Monitor Web Application
+We're using https://sentry.io/ for monitoring our web applications. When build the app, webpack will push all sourcecode including sourcemap file to sentry.io for easy to monitor and catch error with the log for human readable.
+For the new project init.
+1. Go to https://sentry.io/ create the project
+2. Create `.sentryclirc` in root folder.
+```
+[defaults]
+project=<your_sentry_project_name>
+org=<your_organization>
+
+[http]
+keepalive=false
+```
+3. Add to webpack plugins  
+```
+new SentryWebpackPlugin({
+  include: './public/dist/',
+  ignore: ['node_modules'],
+  configFile: '.sentryclirc',
+  setCommits: {
+    repo: '<your_repo_name>',
+    auto: true,
+  },
+}),
+```
+For more information please reference https://github.com/getsentry/sentry-webpack-plugin
+
 ## Workflow
 
 ### Github Issues & Projects
