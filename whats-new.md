@@ -7,15 +7,89 @@ description: >-
 
 # What’s New
 
+## 22/05/20
+
+With the launch of the Beta Phase for the Foundations Developers Portal and with several more developers and PropTechs joining the Platform, we have been pretty busy the last few weeks. It has been great to see some of the applications that are being developed and also having the opportunity to see them in action with live demos . Our Development team have been concentrating on delivering the following new features in the Developers Portal which we are excited to share with you.
+
+### Webhooks
+
+With Foundations, you can now create a Webhook subscription which will allow you to be notified about changes as they happen to your chosen Endpoint.
+
+Setting up a Webhook is very simple and can be created from the new ‘Webhooks’ page in the Developers Portal [here ](https://marketplace.reapit.cloud/developer/webhooks)
+
+![Adding a new Webhook](.gitbook/assets/image%20%2823%29.png)
+
+It will give you the ability to chose which events to listen to with the option to select specific customers or all customers \(once installed\) for your selected applications.
+
+We currently support subscriptions to events for a wide range of entities. For each type, you can choose to subscribe to created events, modified events \(changes\) or both. You will only be able to select topics based on the permissions assigned to your app.
+
+Also, another very neat feature is the new ‘Ping’ option. Allowing you to test, in real time, your subscriptions to your chosen secure URL.
+
+For more information on Webhooks please click [here](https://marketplace.reapit.cloud/developer/webhooks)
+
+### Desktop Integration Types
+
+Now you may have seen how our demonstration of how the desktop integration types will work when the Desktop API is ready, if not, you can see it in action here: 
+
+{% embed url="https://www.youtube.com/watch?v=aWYmxpWf6y0&feature=youtu.be" %}
+
+
+
+In the video, it is showing how the Homeflow application set a desktop type of ‘Property’. This means that within Agency cloud, the application \(after being installed\) will appear within the native Property Screen.
+
+![Agency Cloud Integration](.gitbook/assets/image%20%2827%29.png)
+
+You can set your Integration Type when Submitting or Editing your app in the Developers Portal. Whilst we are still in Beta Phase the current Integration Types are still in development but you can follow the progress [here](https://foundations-documentation.reapit.cloud/api/desktop-api#desktop-types) 
+
+### Cost Explorer
+
+An additional tab has been added on the ‘Analytics’ page, the ‘Cost Explorer’. This will provide you with detailed information on the individual costs for each Resource, Webhook & Service.
+
+The ‘Services’ bar chart will give you a month to month total of your cost \(excluding VAT\).
+
+![Example Services Bar Chart](.gitbook/assets/image%20%2821%29.png)
+
+But for a more detailed breakdown you can use the ‘Cost Explorer: Usage & Cost’. This will provide the ability to see on a granular level, the amount you are spending on each Resource. Notably, until the Marketplace is live and you have app installations, you won’t see any traffic but you can an example below:
+
+![Example Resource Table](.gitbook/assets/image%20%2819%29.png)
+
+Selecting the ‘Configuration’ entity from the table, I can see the breakdown of the specific endpoint my apps have been interacting with, how many API calls have been made and the total cost for that month.
+
+You will also be able to download a CSV file with the full ‘Transaction History’ per month for all your applications.
+
+![Transaction History](.gitbook/assets/image%20%2828%29.png)
+
+Finally, with the Cost Explorer we have also added a new feature the ‘Cost Calculator’. The calculator is interactive and provides a quick way to see the estimated cost for endpoints used against Monthly API Calls.
+
+### Description Box
+
+As we are working on developing the Client Portal \(Marketplace\) we want to ensure your app will be presented in the best way, this means providing the ability to add a better formatted description.
+
+The ‘Description’ box when submitting or editing an App, has now been updated to support HTML. You can create headers, bulleted or numbered lists, line breaks and paragraphs.
+
+![Updated Description Box](.gitbook/assets/image%20%2822%29.png)
+
+We are also supporting ‘External Links’ which will no doubt be very handy to provide more information about your company and your app for potential clients.
+
+### HTML feature in Elements
+
+Elements Storybook now also supports a vanilla HTML. Simply apply the classes to your markup as displayed in the HTML tab in each Storybook component as per below:
+
+![HTML Tab in Elements](.gitbook/assets/image%20%2825%29.png)
+
+### Changes
+
+The ‘Submit’ button has moved to the ‘Apps’ page. To submit your app, click on ‘Apps’ from the navigation bar and use the ‘Create New App’ button.
+
 ## 15/04/20
 
 ### Bring on the Beta.
 
 We have officially started the Beta Phase! If you had signed up to the  Alpha Phase, you will be able to continue using the platform with no interruption, this is simply the next phase for the Developers Portal.   
   
-For our new Beta Developers, welcome to Reapit Foundations. If you didn't get the chance, have a look at our on-boarding video [here](https://www.youtube.com/watch?edufilter=NULL&feature=youtu.be&v=8TR4SoqV2-s). It has been created to help you navigate the portal and to demonstrate what is available. Remember, if you have any questions or need any assistance, you can visit the 'Help' section.  
+For our new Beta Developers, welcome to Reapit Foundations. If you didn't get the chance, have a look at our on-boarding video [here](https://youtu.be/YSsy5-XonHI). It has been created to help you navigate the portal and to demonstrate what is available. Remember, if you have any questions or need any assistance, you can visit the 'Help' section. 
 
-{% embed url="https://www.youtube.com/watch?edufilter=NULL&feature=youtu.be&v=8TR4SoqV2-s" caption="Foundations Developer Portal \| On-boarding" %}
+{% embed url="https://youtu.be/YSsy5-XonHI" caption="Foundations Developers Portal \| On-boarding" %}
 
 What’s New has been designed to give you a high-level overview of the latest features and fixes that have been included over the last couple of weeks.
 
@@ -60,7 +134,7 @@ We have now introduced the ability to view what revisions are currently pending 
 
 When you have submitted a revision on your app, you will now be able to click on the ‘Pending Revision’ button \(previously disabled\) which will present a modal with the changes you have made highlighted.
 
-![Example of the enabled &apos;Pending Revision&apos; button](.gitbook/assets/image%20%2815%29.png)
+![Example of the enabled &apos;Pending Revision&apos; button](.gitbook/assets/image%20%2810%29%20%281%29.png)
 
 For text or selections that has been added it will be highlighted in GREEN and for text deleted or options deselected, it will be highlighted in RED.
 
@@ -97,14 +171,14 @@ Now let’s look at what we’ve been doing:
 **The release of the of Tenancies API**  
 The ‘read’ functionality of the Tenancies API is now available. We are still developing the ‘updating’ and ‘creating’ functionality, but you should now get great visibility what is available and what information you can use within your application.
 
-![Tenancies API ](.gitbook/assets/image%20%284%29.png)
+![Tenancies API ](.gitbook/assets/image%20%282%29.png)
 
 To follow the milestone to see what is still to come and follow the progress, please [**click here**](https://github.com/reapit/foundations/milestone/13)
 
 **Works Orders API**  
 In addition and ahead of schedule, the ‘Works Order API’ is now up and running and fully interactive, read, write and update with the Sandbox data to see exactly what information you can use within Property Management.
 
-![Example response of the Works Order API ](.gitbook/assets/image%20%2829%29.png)
+![Example response of the Works Order API ](.gitbook/assets/image%20%288%29%20%283%29.png)
 
   
 **Embedding Data**  
@@ -192,11 +266,11 @@ Those of you familiar with [GitBook, ](https://www.gitbook.com)will know they ar
 
 Available for a **limited time only**, direct access to our Foundations Platform Product Owners and Developers. You can access this feature from the ‘[Help](http://marketplace.reapit.cloud/developer/help)’ section in the developer portal. We hope you won’t need us and that everything you need can be found within our documentation but it’s nice to know we’re here if you do.
 
-![Live Chat feature](.gitbook/assets/image%20%2832%29.png)
+![Live Chat feature](.gitbook/assets/image%20%283%29.png)
 
 ### Full Visibility \([Roadmap](https://github.com/reapit/foundations/milestones?direction=asc&sort=due_date&state=open)\)
 
-![](.gitbook/assets/image%20%2821%29.png)
+![](.gitbook/assets/image%20%282%29%20%282%29.png)
 
 From every issue raised through to completion, you’ll have full visibility on what we’re doing. We want you to be a part of this exciting new platform, which is why we’ve opened sourced not only our cloud applications but also our developer portal! Giving you the ability to submit feature requests or to raise bugs directly on our Foundation Repo and track the progress.
 
