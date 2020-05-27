@@ -6,6 +6,21 @@ description: >-
 ---
 
 # Marketplace
+
+### marketplace_v1.0.21 - 2020-04-15
+  
+Release: marketplace_v1.0.21
+Rollback: marketplace_v1.0.20
+Changes:
+commit | author |description
+  
+- d14b33d755b1d8a56d225f1a0a6c0cdc87f1c4e8 | Vu Nguyen <vunp@reapit.com> | Fix/905 update date filtering in analytics page (#914)* feat: #905: Update date filtering in analytics page
+- e9c804b5b5352a5ca3605f1e02eb83a98f23eec5 | Vu Nguyen <vunp@reapit.com> | feat: #908 - Fix analytics page filter issues (#913)
+- 1eca438da329598593bed4755eb18c448c606deb | Khac Vy <vytk@reapit.com> | feat: #830 submit app with desktop integration types (#895)
+
+approver: @willmcvay
+monitor: https://sentry.io/organizations/reapit-ltd/projects/
+
 ### marketplace_v1.0.20 - 2020-04-14
   
 Release: marketplace_v1.0.20
