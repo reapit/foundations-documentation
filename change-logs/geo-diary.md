@@ -6,6 +6,22 @@ description: >-
 ---
 
 # GEO Diary
+
+### geo-diary_v1.0.2 - 2020-05-04
+
+Release: geo-diary_v1.0.2
+Rollback: geo-diary_v1.0.1
+Changes:
+commit | author |description
+  
+- cdddafaa9e82fa32617a6b54c77c69a4374145af | Cuong Vu <cuongvh@reapit.com> | fix: #1051 remove agencycloud link geo-diary (#1100)
+- 579d2c515ed2df63277cd77fcbc08a45a6c5c67e | NghiaPham <nghiapn@reapit.com> | fix: #1065 fix loading chunk fail (#1092)
+- 9dd162ded67b55543835f795a2ab35371feac75d | Pham Hai Duong <duongph@reapit.com> | fix: #1071 change api-version to correct one 2020-01-31 (#1084)
+- 16c92eb246e4c2500fd5fe374bec149d79448e7a | Pham Hai Duong <duongph@reapit.com> | feat: #1009 serverless deployment for cloud apps (#1061)Changes- Clone serverless.yml for cloud apps
+
+approver: @willmcvay
+monitor: https://sentry.io/organizations/reapit-ltd/projects/
+
 ### geo-diary_v1.0.1 - 2020-04-24
   
 Release: geo-diary_v1.0.1
@@ -33,5 +49,3 @@ commit | author |description
 
 approver: @willmcvay
 monitor: https://sentry.io/organizations/reapit-ltd/projects/
-    
-
