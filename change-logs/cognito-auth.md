@@ -6,6 +6,19 @@ description: >-
 ---
 
 # Cognito Auth
+
+### cognito-auth_v2.1.4 - 2020-04-23
+  
+Release: cognito-auth_v2.1.4
+Rollback: cognito-auth_v2.1.3
+Changes:
+commit | author |description
+  
+- d546c17255e322524c78deffc311aca2120a612d | Khac Vy <vytk@reapit.com> | chore: Update agency integration type section text (#1047)* chore: Update agency integration type section text* chore: bump version cognito-auth 2.1.4
+
+approver: @willmcvay
+monitor: https://sentry.io/organizations/reapit-ltd/projects/
+
 ### cognito-auth_v2.1.2 - 2020-04-14
   
 Release: cognito-auth_v2.1.2
@@ -17,5 +30,4 @@ commit | author |description
 
 approver: @willmcvay
 monitor: https://sentry.io/organizations/reapit-ltd/projects/
-    
-
+  
