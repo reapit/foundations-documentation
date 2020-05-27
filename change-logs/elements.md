@@ -6,6 +6,19 @@ description: &gt;- Below you will find a listing of the recent changes we have m
 
 ## Elements
 
+### elements_v0.5.53 - 2020-04-15
+  
+Release: elements_v0.5.53
+Rollback: elements_v0.5.52
+Changes:
+commit | author |description
+  
+- 6a31636011bae975400fdb2719322c74a5320b00 | Khac Vy <vytk@reapit.com> | chore: bump @reapit/elements version 0.5.53 (#915)
+- 8648895ff351105096069d8a1df4fcffa3195bd8 | Khac Vy <vytk@reapit.com> | feat: #890 display html version of elements components (#912)
+
+approver: @willmcvay
+monitor: https://sentry.io/organizations/reapit-ltd/projects/
+    
 ### elements\_v0.5.52 - 2020-04-14
 
 Release: elements\_v0.5.52 Rollback: elements\_v0.5.51 Changes: commit \| author \|description
