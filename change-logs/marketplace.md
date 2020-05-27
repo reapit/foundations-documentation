@@ -6,6 +6,32 @@ description: >-
 ---
 
 # Marketplace
+### marketplace_v1.0.22 - 2020-04-23
+  
+Release: marketplace_v1.0.22
+Rollback: marketplace_v1.0.21
+Changes:
+commit | author |description
+  
+- 5e282514b01ca338f0b7b9f1d467f509abadb881 | Cuong Vu <cuongvh@reapit.com> | fix: #1040 fix pending revision image missing (#1060)
+- d546c17255e322524c78deffc311aca2120a612d | Khac Vy <vytk@reapit.com> | chore: Update agency integration type section text (#1047)* chore: Update agency integration type section text* chore: bump version cognito-auth 2.1.4
+- 02b78b007c56ee2cfb5b25c2ddf1f026b444f0d2 | Vu Nguyen <vunp@reapit.com> | Feat/956 search developer registrations by date (#1044)* feat: #956 - Search developer registrations by date
+- add5f492bd8998789fc2688f9ba2879c551341c4 | Trường An <andt@reapit.com> | chore: #957 can search just with date range (#1041)
+- 7324a2c675932d93f43d5b7978b2d13d0a705768 | Cuong Vu <cuongvh@reapit.com> | fix: #1035 swagger link color (#1045)
+- fbfbe35221e217714a5d419f9d689f4c15ed6bc8 | Cuong Vu <cuongvh@reapit.com> | fix: #939 fix e2e tests (#1048)
+- 7fb4663aa09063dc790169191277efc42523d2ec | Cuong Vu <cuongvh@reapit.com> | feat: #939 Web apps should have their own dev and prod cookie identifier (#972)- Web Apps now have three different cookie identifiers `local`,`developement` , `production`, based on `config.json`- Some methods in `cognito-auth` now have an additional `appEnv?: string` param to work with cookie for different environments- Default `refreshSession` state in `redux store` now will be set after fetch `config.json`- Fix e2e tests login after changing cookie identifiers
+- 220ffdd6fc928be16774ae046d391ecb3416de90 | Trường An <andt@reapit.com> | feat: #957search App Registrations by date in the Admin Portal (#1007)* feat: #957 As an ‘Admin’, I want to search for App Registrations by date in the Admin Portal* chore: #957update variable name
+- 623453eacf3ddf616c5b7bbdf5c3287c415ef1e4 | Trường An <andt@reapit.com> | fix: #932 Client ID not displaying on first page load - Client Portal (#967)
+- e60f9279bbc58cb6957dc5b14e64f23ea03014c5 | Cuong Vu <cuongvh@reapit.com> | fix: fix filter app flow add delay (#949)
+- d18a36a985a4c13bf0939f1eb375dd0efc9c86a5 | Cuong Vu <cuongvh@reapit.com> | fix: #122 Fix admin login e2e test (#946)
+- 3d680814746fb5c62f83cc6acdd91ef164c98cfb | Cuong Vu <cuongvh@reapit.com> | feat: #917 Desktop Integration in revision modal & Stabilize E2E tests (#941)
+- 88070783a538ef4bb2e5ad3c9983791b13db71ef | Cuong Vu <cuongvh@reapit.com> | fix: fix e2e test fail (#940)
+- 7538c11bda998f6ceed67153065eed10c29ffefa | Cuong Vu <cuongvh@reapit.com> | chore: #122Integrate E2E tests (#924)
+- 83ff778d60ed33b8753dbc58bbaf53efdcced1f8 | Vu Nguyen <vunp@reapit.com> | feat: #910: Fix whats new link in Help page (#926)
+- f5ec3ab4183ac308dc768b8e84a3b6fb29c75837 | Vu Nguyen <vunp@reapit.com> | feat: #923: Fix analytic filter date params (#929)
+
+approver: @willmcvay
+monitor: https://sentry.io/organizations/reapit-ltd/projects/
 
 ### marketplace_v1.0.21 - 2020-04-15
   
@@ -80,3 +106,4 @@ commit | author |description
 
 approver: @willmcvay
 monitor: https://sentry.io/organizations/reapit-ltd/projects/
+
