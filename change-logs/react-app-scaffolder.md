@@ -6,6 +6,19 @@ description: >-
 ---
 
 # React App Scaffolder
+
+### react-app-scaffolder_v0.0.31 - 2020-05-19
+  
+Release: react-app-scaffolder_v0.0.31
+Rollback: react-app-scaffolder_v0.0.30
+Changes:
+commit | author |description
+  
+- db13c2d88903a5a4c359c3b8be0d688d242b03aa | Cuong Vu <cuongvh@reapit.com> | fix: #1276 fix type definitions in ErrorBoundary (#1285)
+
+approver: @willmcvay
+monitor: https://sentry.io/organizations/reapit-ltd/projects/
+
 ### react-app-scaffolder_v0.0.30 - 2020-05-14
   
 Release: react-app-scaffolder_v0.0.30
@@ -20,7 +33,6 @@ commit | author |description
 
 approver: @willmcvay
 monitor: https://sentry.io/organizations/reapit-ltd/projects/
-    
 
 ## react-app-scaffolder\_v0.0.28 - 2020-04-08
 
