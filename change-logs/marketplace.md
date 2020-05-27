@@ -6,6 +6,20 @@ description: >-
 ---
 
 # Marketplace
+
+### marketplace_v1.0.19 - 2020-04-14
+  
+Release: marketplace_v1.0.19
+Rollback: marketplace_v1.0.18
+Changes:
+commit | author |description
+  
+- f9c18b620fd39f9bcef20656f9ffc1aa15c6d48b | NghiaPham <nghiapn@reapit.com> | fix: #902 Issue with text on after registering as a Developer (#903)
+
+approver: @willmcvay
+monitor: https://sentry.io/organizations/reapit-ltd/projects/
+    
+
 ### marketplace_v1.0.18 - 2020-04-14
   
 Release: marketplace_v1.0.18
@@ -41,5 +55,3 @@ commit | author |description
 
 approver: @willmcvay
 monitor: https://sentry.io/organizations/reapit-ltd/projects/
-    
-
