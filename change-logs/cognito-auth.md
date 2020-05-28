@@ -6,6 +6,19 @@ description: >-
 ---
 
 # Cognito Auth
+### cognito-auth_v2.1.6 - 2020-05-28
+  
+Release: cognito-auth_v2.1.6
+Rollback: cognito-auth_v2.1.5
+Changes:
+commit | author |description
+  
+- 3dc87f4250c21bcee7715451abbbac7ed5a6ebd0 | Pham Hai Duong <duongph@reapit.com> | chore: bump version cognito auth (#1394)
+- 75bd498a445ebb2baa0cb72594e99f5cb2b699cc | Pham Hai Duong <duongph@reapit.com> | fix: hot fix for private route (#1381)
+
+approver: @willmcvay
+monitor: https://sentry.io/organizations/reapit-ltd/projects/
+    
 
 ### cognito-auth_v2.1.5 - 2020-05-19
   
