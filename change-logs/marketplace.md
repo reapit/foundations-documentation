@@ -6,6 +6,18 @@ description: >-
 ---
 
 # Marketplace
+### marketplace_v1.0.26 - 2020-05-28
+  
+Release: marketplace_v1.0.26
+Rollback: marketplace_v1.0.25
+Changes:
+commit | author |description
+  
+- ab31bf0793df083d6782a30a5d6fe6b9442eb328 | Pham Hai Duong <duongph@reapit.com> | fix: hot fix for private route (#1381)
+
+approver: @willmcvay
+monitor: https://sentry.io/organizations/reapit-ltd/projects/
+    
 ### marketplace_v1.0.24 - 2020-05-22
   
 Release: marketplace_v1.0.24
