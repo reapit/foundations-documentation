@@ -32,6 +32,12 @@ We present lists like this as RESTful endpoints and document where a field refer
 
 Contacts represent the details of a person that the agent has a relationship with. Contact details are captured and managed centrally so that a single contact can fulfill multiple [vendor](platform-glossary.md#vendor), [landlord](platform-glossary.md#landlord), [applicant ](platform-glossary.md#applicant)and [tenancy](platform-glossary.md#tenancy) roles at the same time.
 
+### Conveyancing
+
+Conveyancing represents the process of progressing an existing, accepted [offer ](platform-glossary.md#offer)to the completion of the sale of a property. Our APIs allow key sales progression milestones to be retrieved and updated for an offer that has been created. 
+
+Our Conveyancing APIs also allow a chain to be managed, providing a means of linking dependant offers together. It's possible to link to offers added to other properties that the customer has instructed, as well as those that are external and instructed to another agent.
+
 ### Department
 
 Departments represent a set of descriptive attributes used to describe a [property](platform-glossary.md#property). Departments are assigned to both [properties](platform-glossary.md#property) and [applicants ](platform-glossary.md#applicant)and are used to define which attributes can be used to describe a [property ](platform-glossary.md#property)or an [applicant](platform-glossary.md#applicant) property requirement.
