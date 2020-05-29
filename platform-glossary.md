@@ -34,7 +34,9 @@ Contacts represent the details of a person that the agent has a relationship wit
 
 ### Conveyancing
 
-Conveyancing represents the process of progressing an existing, accepted [offer ](platform-glossary.md#offer)to the completion of the sale of a property. Our APIs allow key sales progression milestones to be retrieved and updated for an offer that has been created. 
+Conveyancing represents the process of progressing an accepted [offer ](platform-glossary.md#offer)to the completion of the sale of a property. 
+
+Submitting new offers and transitioning them to an accepted status is done using the Offers API. The Conveyancing API is responsible for transitioning that existing, accepted offer into a completed property sale. 
 
 Our Conveyancing APIs also allow a chain to be managed, providing a means of linking dependant offers together. It's possible to link to offers added to other properties that the customer has instructed, as well as those that are external and instructed to another agent.
 
