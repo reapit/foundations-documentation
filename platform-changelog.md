@@ -9,6 +9,10 @@ description: >-
 
 ## May 2020
 
+#### 2020-05-29
+
+* [\#918](https://github.com/reapit/foundations/issues/918) - Tenancy endpoints now support setting and retrieval of [additional metadata fields](https://marketplace.reapit.cloud/developer/api-docs/api/api-documentation#metadata)
+
 #### 2020-05-13
 
 * [\#734](https://github.com/reapit/foundations/issues/734) - Added a new `modified` query string to `GET /properties` to filter properties based on the date they were last modified or created
