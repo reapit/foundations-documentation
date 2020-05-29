@@ -15,7 +15,7 @@ description: >-
 
 #### 2020-05-22
 
-* It is now possible to  set up webhooks to emit event information directly to your application. [See our documentation](api/webhooks.md) for more information.
+* It is now possible to set up webhooks to emit event information directly to your application. [See our documentation](api/webhooks.md) for more information.
 
 #### 2020-05-13
 
