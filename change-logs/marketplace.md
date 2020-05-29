@@ -7,6 +7,19 @@ description: >-
 
 # Marketplace
 
+# Marketplace
+### marketplace_v1.0.27 - 2020-05-29
+  
+Release: marketplace_v1.0.27
+Rollback: marketplace_v1.0.26
+Changes:
+commit | author |description
+  
+- 45e87bb5d66bde71aed4bf484d21165acbf762fd | willmcvay@pm.me <wmcvay@reapit.com> | fix: hotfix on admin routing
+
+approver: @willmcvay
+monitor: https://sentry.io/organizations/reapit-ltd/projects/
+
 ## marketplace\_v1.0.26 - 2020-05-28
 
 Release: marketplace\_v1.0.26 Rollback: marketplace\_v1.0.25 Changes: commit \| author \|description
