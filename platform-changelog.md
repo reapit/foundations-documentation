@@ -11,6 +11,7 @@ description: >-
 
 #### 2020-05-29
 
+* [\#1205](https://github.com/reapit/foundations/issues/1205) - The response from `GET /offers` and `GET /offers/{id}` will now include a link to the offers associated conveyancing information
 * [\#918](https://github.com/reapit/foundations/issues/918) - Tenancy endpoints now support setting and retrieval of [additional metadata fields](https://marketplace.reapit.cloud/developer/api-docs/api/api-documentation#metadata)
 
 #### 2020-05-22
