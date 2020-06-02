@@ -125,7 +125,9 @@ agencycloud://properties?address=MK43&mode=s
       <td style="text-align:left">No?</td>
     </tr>
   </tbody>
-</table>## Applicants
+</table>
+
+## Applicants
 
 ### Load Applicant
 
@@ -214,7 +216,9 @@ agencycloud://applicants?name=smith&mode=lettings
       <td style="text-align:left">No?</td>
     </tr>
   </tbody>
-</table>## Appointments
+</table>
+
+## Appointments
 
 ### Load Diary
 

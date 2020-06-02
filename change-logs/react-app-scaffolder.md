@@ -7,32 +7,24 @@ description: >-
 
 # React App Scaffolder
 
-### react-app-scaffolder_v0.0.31 - 2020-05-19
-  
-Release: react-app-scaffolder_v0.0.31
-Rollback: react-app-scaffolder_v0.0.30
-Changes:
-commit | author |description
-  
-- db13c2d88903a5a4c359c3b8be0d688d242b03aa | Cuong Vu <cuongvh@reapit.com> | fix: #1276 fix type definitions in ErrorBoundary (#1285)
+### react-app-scaffolder\_v0.0.31 - 2020-05-19
 
-approver: @willmcvay
-monitor: https://sentry.io/organizations/reapit-ltd/projects/
+Release: react-app-scaffolder\_v0.0.31 Rollback: react-app-scaffolder\_v0.0.30 Changes: commit \| author \|description
 
-### react-app-scaffolder_v0.0.30 - 2020-05-14
-  
-Release: react-app-scaffolder_v0.0.30
-Rollback: react-app-scaffolder_v0.0.28
-Changes:
-commit | author |description
-  
-- fb78b9ad86b9bc4501cf4cc818f2623af3d249f8 | NghiaPham <nghiapn@reapit.com> | fix: #1258 - react scaffolder fail to compile (#1259)
-- 6cb9322c4d238377b98f41c9729a820f014fcf27 | NghiaPham <nghiapn@reapit.com> | fix #1065: re-instating purge unused s3 assets cronjob (#1134)fix #1065: re-instating purge unused s3 assets cronjob (#1134)
-- 2d7bf9bb8b43817340413d490c0986f7f500ae68 | Pham Hai Duong <duongph@reapit.com> | fix: #1072 react scaffolder should use correct api version (#1097)
-- 579d2c515ed2df63277cd77fcbc08a45a6c5c67e | NghiaPham <nghiapn@reapit.com> | fix: #1065 fix loading chunk fail (#1092)
+* db13c2d88903a5a4c359c3b8be0d688d242b03aa \| Cuong Vu [cuongvh@reapit.com](mailto:cuongvh@reapit.com) \| fix: \#1276 fix type definitions in ErrorBoundary \(\#1285\)
 
-approver: @willmcvay
-monitor: https://sentry.io/organizations/reapit-ltd/projects/
+approver: @willmcvay monitor: [https://sentry.io/organizations/reapit-ltd/projects/](https://sentry.io/organizations/reapit-ltd/projects/)
+
+### react-app-scaffolder\_v0.0.30 - 2020-05-14
+
+Release: react-app-scaffolder\_v0.0.30 Rollback: react-app-scaffolder\_v0.0.28 Changes: commit \| author \|description
+
+* fb78b9ad86b9bc4501cf4cc818f2623af3d249f8 \| NghiaPham [nghiapn@reapit.com](mailto:nghiapn@reapit.com) \| fix: \#1258 - react scaffolder fail to compile \(\#1259\)
+* 6cb9322c4d238377b98f41c9729a820f014fcf27 \| NghiaPham [nghiapn@reapit.com](mailto:nghiapn@reapit.com) \| fix \#1065: re-instating purge unused s3 assets cronjob \(\#1134\)fix \#1065: re-instating purge unused s3 assets cronjob \(\#1134\)
+* 2d7bf9bb8b43817340413d490c0986f7f500ae68 \| Pham Hai Duong [duongph@reapit.com](mailto:duongph@reapit.com) \| fix: \#1072 react scaffolder should use correct api version \(\#1097\)
+* 579d2c515ed2df63277cd77fcbc08a45a6c5c67e \| NghiaPham [nghiapn@reapit.com](mailto:nghiapn@reapit.com) \| fix: \#1065 fix loading chunk fail \(\#1092\)
+
+approver: @willmcvay monitor: [https://sentry.io/organizations/reapit-ltd/projects/](https://sentry.io/organizations/reapit-ltd/projects/)
 
 ## react-app-scaffolder\_v0.0.28 - 2020-04-08
 

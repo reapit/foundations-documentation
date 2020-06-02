@@ -175,3 +175,30 @@ To use a refresh token, issue a `POST` request to the endpoint below with Conten
 For recommendations on how to safely store and interact with tokens, please see our web integration module[ Cognito Auth](web.md#cognito-auth)
 {% endhint %}
 
+### Sign in with Reapit \(Alpha\)
+
+As an OAuth provider, Reapit is able to offer Identity as a Service to third parties, provided that an individual is already a Reapit Customer or Developer. This service is an early stage alpha and should not be used as your sole means of authentication for an application however, we are offering the tooling as an opportunity for developers to begin to integrate their existing applications with Reapit Connect.
+
+The simplest way to integrate Reapit Connect with your existing app is to add the "Sign in with Reapit" button to your site using the below code snippet:
+
+```markup
+<body>
+    <div id="id-of-container-div"></div>
+    <script src="https://web-components.reapit.cloud/login-reapit-component.js"></script>
+    <script>
+      LoginReapitComponent &&
+        new LoginReapitComponent({
+          clientId: '<<Your application clientId here>>',
+          redirectUri: 'http://localhost:8080',
+          containerId: '#id-of-container-div',
+        })
+    </script>
+</body>
+```
+
+You would first need to register an application to obtain your client id and set your redirectUri [\(steps here\)](../developer-portal.md#3-register-an-app), and insert them into the corresponding key. The remainder is taken care for you and will render a button like the below screengrab:
+
+![](../.gitbook/assets/screenshot-2020-06-02-at-10.44.39.png)
+
+In this example, you will see the code passed to the url that can be exchanged for an access token as per the "Exchange for token" step above.
+
