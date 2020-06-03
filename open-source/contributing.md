@@ -130,6 +130,13 @@ keepalive=false
 
    For more information please reference [https://github.com/getsentry/sentry-webpack-plugin](https://github.com/getsentry/sentry-webpack-plugin)
 
+### Interacting with our APIs
+We use [Insomnia](https://insomnia.rest/) for testing and interacting with our APIs. We created a configuration file called `api-doc-config.json` at `./scripts/api-documentation`, so you can just import it to your Insomnia app and use all the REST and GraphQL services we built out of the box.
+
+When communicating with APIs, it's hard to manage common values like `protocol`, `serverDomain` in multiple environments (local, development, production) and we may end up repeating those identical values across multiple requests. We solve this problem by using [Environment Variables] (https://support.insomnia.rest/article/18-environment-variables) to define common values in a single place and then referenced those values in multiple requests. Now we can use our APIs across multiple environments with ease and if we need to change the environment variables, we have the ability to modify them in a single place.
+
+For more information please reference https://support.insomnia.rest/
+
 ## Workflow
 
 ### Github Issues & Projects
