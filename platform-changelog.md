@@ -9,6 +9,10 @@ description: >-
 
 ## May 2020
 
+#### 2020-06-03
+
+* [\#1502](https://github.com/reapit/foundations/issues/1502) - Fixed issue that meant the wrong identifier could be presented in the GET /conveyancing model
+
 #### 2020-05-29
 
 * [\#1205](https://github.com/reapit/foundations/issues/1205) - The response from `GET /offers` and `GET /offers/{id}` will now include a link to the offers associated conveyancing information
