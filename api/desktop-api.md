@@ -224,14 +224,16 @@ agencycloud://applicants?name=smith&mode=lettings
 
 Opens the diary screen to provide a calendar view of appointments for the given date range. The dates don’t need to be set, but if you set one, you need to set both. If you don’t set a date range then the current default dates for the negotiator will be used.
 
+Note: the dates must be in the format _yyyy-MM-dd_ to be parsed correctly.
+
 ```text
-agencycloud://appointments?dateFrom=2019/12/25&dateTo=2019/12/26
+agencycloud://appointments?dateFrom=2019-12-25&dateTo=2019-12-26
 ```
 
 | Parameter | Type | Description | Required |
 | :--- | :--- | :--- | :--- |
-| dateFrom | date | Only display appointments scheduled after and including this date | No |
-| dateTo | date | Only display appointments scheduled before this date | No |
+| dateFrom | date | Only display appointments scheduled after and including this date \(i.e. inclusive\) | No |
+| dateTo | date | Only display appointments scheduled before this date \(i.e. exclusive\) | No |
 
 ## Contacts
 
