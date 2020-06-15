@@ -6,6 +6,26 @@ description: >-
 ---
 
 # Cognito Auth
+### cognito-auth_v2.1.7 - 2020-06-15
+  
+-----------------------------------------------------------------------------
+Release: cognito-auth_v2.1.7
+Rollback: cognito-auth_v2.1.6
+Changes:
+commit | author |description
+  
+- 3a8e389e21df9639c13d15dd75cdc5960b990318 | Will McVay <wmcvay@reapit.com> | chore: #1393bump version numbers of NPM packages to release (#1667)
+- 8dc9b71908ebaf6d582975d4e19226e9c0faac07 | Will McVay <wmcvay@reapit.com> | fix: #1393 linaria elements build (#1645)* fix: fixes elements rollup dist* fix: adds comments* fix: fixes elements build, now outputs types* fix: fixes test run by splitting tsconfigs* fix: fixes lockfile issue
+- 11b7e44040816b6e22193ccb9f8580c2feb5cb29 | Snyk bot <snyk-bot@snyk.io> | fix: packages/cognito-auth/package.json & packages/cognito-auth/.snyk to reduce vulnerabilities (#1537)The following vulnerabilities are fixed with a Snyk patch:- https://snyk.io/vuln/SNYK-JS-LODASH-567746
+- 22f53f3e4b72b4e6964739940c14ef32cea4b427 | Will McVay <wmcvay@reapit.com> | fix: #1393 fixes rollup config for elements so linaria styles are exported (#1501)* fix: resolves linaria styles bundle issue* fix: adds a couple of comments* fix: add comment* fix: fixes tests by handling sass in Jest properly* fix: re-generate lock file after merge
+- 62fb2561486eb9a05e2e0fd19a6d0677c8fd9870 | Pham Hai Duong <duongph@reapit.com> | ci: #1333 add deployment pipeline for new process (#1479)
+- 1109cc4a89dbcc242b13e216498d8784287dae49 | Cuong Vu <cuongvh@reapit.com> | fix: #1389 dead link search widget in elements (#1400)
+
+approver: @willmcvay
+monitor: https://sentry.io/organizations/reapit-ltd/projects/
+-----------------------------------------------------------------------------
+
+    
 
 ## cognito-auth\_v2.1.6 - 2020-05-28
 
