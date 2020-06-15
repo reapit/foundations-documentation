@@ -6,6 +6,35 @@ description: &gt;- Below you will find a listing of the recent changes we have m
 
 ## Elements
 
+### elements_v0.5.59 - 2020-06-15
+  
+-----------------------------------------------------------------------------
+Release: elements_v0.5.59
+Rollback: elements_v0.5.59-beta.1
+Changes:
+commit | author |description
+  
+- bd8ee558228513ee6a43937089de80423c66017b | Khac Vy <vytk@reapit.com> | fix: #1621 upload file should only accept image (#1696)
+- b969cfc95e30c58462508a2507d7c634b94e1888 | Will McVay <wmcvay@reapit.com> | fix: #1565 tiny css tweak (#1692)* fix: tiny css tweak* fix: page tweaks for app page release
+- 41010f40faa20a79292d0e837890b89be2ac18c0 | Pham Hai Duong <duongph@reapit.com> | fix: #1393 linaria issue on cx (#1713)
+- 1b36168fbdcf11418a9ed2b697b79d7b936e0476 | Cuong Vu <cuongvh@reapit.com> | fix: #1588 & #1586 AML APP validate check length & valid values (#1672)* fix: #1588 show errors if search field not filled in
+- 7b3ebcb10443fb447bce5379d64ff3bcdd0aa696 | Pham Hai Duong <duongph@reapit.com> | fix: #1629 set default zoom for maps (#1707)
+- 61fcafbb1d3edf84bdca8b5bf1a1805bc632b729 | Vu Nguyen <vunp@reapit.com> | fix: #1624 Fix phone number field validation in AML profile modal (#1687)* fix: #1624 Fix phone number field validation in profile modal* fix: #1624 Migrate profile forms validation to yup
+- 0a630b6684e8994e12e8181d653c504d7d2373cb | Pham Hai Duong <duongph@reapit.com> | fix: #1629 geo-diary should not zoom to low when no markers (#1699)
+- 65eb0dca10dfdd00aa53e711f1ae903e309ec8ae | Will McVay <wmcvay@reapit.com> | fix: #1393 ie linaria bug (#1691)* fix: ie linaraia bug* fix: re-add storybook build* fix: iframe url
+- 817133257c26d3fd8fa2595ede39a7c187e084ba | Vu Nguyen <vunp@reapit.com> | fix: #1591 Upload file button issues in AML checklist (#1674)
+- 591972e85ec6ce9ea28947c5eb8a663de4725010 | Pham Hai Duong <duongph@reapit.com> | chore: update yarn lock (#1678)
+- dfca199d9622d993bd50d88475015505094b7ad8 | Vu Nguyen <vunp@reapit.com> | fix: #1657 Standalone apps pages ui broken on ie11 (#1671)
+- f9115fe9ec5a80c70c61955d17d9b3091a0fd046 | Pham Hai Duong <duongph@reapit.com> | fix: #1584 result must return correctly (#1673)
+- 80b04db281e74b5d766f1dd19bbdfc65f8df3300 | Snyk bot <snyk-bot@snyk.io> | fix: packages/elements/package.json & packages/elements/.snyk to reduce vulnerabilities (#1665)The following vulnerabilities are fixed with a Snyk patch:- https://snyk.io/vuln/SNYK-JS-LODASH-567746
+- 3a8e389e21df9639c13d15dd75cdc5960b990318 | Will McVay <wmcvay@reapit.com> | chore: #1393bump version numbers of NPM packages to release (#1667)
+- b9519eff9a0728cd3af8e9c9d93c852427251603 | Trường An <andt@reapit.com> | fix: #1649 avoid click outside label to focus input (#1664)
+
+approver: @willmcvay
+monitor: https://sentry.io/organizations/reapit-ltd/projects/
+-----------------------------------------------------------------------------
+
+    
 ### elements_v0.5.59-beta.1 - 2020-06-10
   
 -----------------------------------------------------------------------------
