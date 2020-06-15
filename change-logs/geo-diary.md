@@ -6,6 +6,31 @@ description: >-
 ---
 
 # GEO Diary
+### geo-diary_v1.0.5 - 2020-06-15
+  
+-----------------------------------------------------------------------------
+Release: geo-diary_v1.0.5
+Rollback: geo-diary_v1.0.3
+Changes:
+commit | author |description
+  
+- 8bfd12714952344e31fff65c226f9377fb06ab78 | NghiaPham <nghiapn@reapit.com> | fix: #1577 - geo diary map control displayed incorectly (#1681)
+- dd9e470a502aa2f4e13d79f157afa13f3e907317 | Will McVay <wmcvay@reapit.com> | chore: #1414 #1488 #1413 #1412tidy app errors (#1535)* fix: tidied up Geo Diary* fix: reduces noise when running tests in AML, Marketplace and Elements
+- 32a09f7f6807e1410898221d854dde9b4864bdc7 | Snyk bot <snyk-bot@snyk.io> | fix: packages/geo-diary/package.json & packages/geo-diary/.snyk to reduce vulnerabilities (#1533)The following vulnerabilities are fixed with a Snyk patch:- https://snyk.io/vuln/SNYK-JS-LODASH-567746
+- 3a535c389b52678301538d94a2642236bd6064b1 | Trường An <andt@reapit.com> | refactor: #1327 refactor Admin Stats using new react-redux hooks (#1442)
+- 62fb2561486eb9a05e2e0fd19a6d0677c8fd9870 | Pham Hai Duong <duongph@reapit.com> | ci: #1333 add deployment pipeline for new process (#1479)
+- c34899b910fa019e76abafc8ae5081e2d0891340 | Trường An <andt@reapit.com> | refactor: #1327 Refactor Admin Dev Management using react-redux hooks (#1386)
+- 84058bd65e254a3c12957d7e7edb11c2cccb3988 | Pham Hai Duong <duongph@reapit.com> | fix: #1217 apply fix chunk errors for entire apps (#1459)
+- 78db4a6fe056181b77a49c3dbf34cda296f5b5aa | NghiaPham <nghiapn@reapit.com> | chore: remove offline plugin (#1387)
+- 65c973a0173565bf0ddb129d18964db672866e5f | Cuong Vu <cuongvh@reapit.com> | fix: #1275 layout issue on mobile (#1332)
+- db13c2d88903a5a4c359c3b8be0d688d242b03aa | Cuong Vu <cuongvh@reapit.com> | fix: #1276 fix type definitions in ErrorBoundary (#1285)
+- bb22c7a21766c1d13c308433a0529e693a6c1ad3 | Pham Hai Duong <duongph@reapit.com> | feat: #1221 add cloud alert for production env web apps (#1273)
+
+approver: @willmcvay
+monitor: https://sentry.io/organizations/reapit-ltd/projects/
+-----------------------------------------------------------------------------
+
+    
 
 ## geo-diary\_v1.0.3 - 2020-05-11
 
