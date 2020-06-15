@@ -6,6 +6,21 @@ description: >-
 ---
 
 # Marketplace
+### marketplace_v1.0.33 - 2020-06-15
+  
+-----------------------------------------------------------------------------
+Release: marketplace_v1.0.33
+Rollback: marketplace_v1.0.32
+Changes:
+commit | author |description
+  
+- 61cb3227a2454ec250dfb712eff0e61f0e2bec80 | Will McVay <wmcvay@reapit.com> | feat: #1703 adds lambda to proxy gitbook (#1736)* feat: adds lambda to proxy gitbook* chore: removed release commands so will be ignored on dev
+
+approver: @willmcvay
+monitor: https://sentry.io/organizations/reapit-ltd/projects/
+-----------------------------------------------------------------------------
+
+    
 ### marketplace_v1.0.32 - 2020-06-15
   
 -----------------------------------------------------------------------------
