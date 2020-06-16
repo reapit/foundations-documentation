@@ -6,6 +6,21 @@ description: >-
 ---
 
 # AML Checklist
+### aml-checklist_v1.0.5 - 2020-06-16
+  
+-----------------------------------------------------------------------------
+Release: aml-checklist_v1.0.5
+Rollback: aml-checklist_v1.0.4
+Changes:
+commit | author |description
+  
+- b2d19a5db019e8926dd358fb47f397fb9fd3441c | Khac Vy <vytk@reapit.com> | fix: #1727 fix birthday field validation (#1738)
+
+approver: @willmcvay
+monitor: https://sentry.io/organizations/reapit-ltd/projects/
+-----------------------------------------------------------------------------
+
+    
 
 ## aml-checklist\_v1.0.2 - 2020-05-28
 
