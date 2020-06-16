@@ -14,7 +14,5 @@ We are currently in Beta and are both making daily code changes and updating the
 
 
 
-{% embed url="https://elements.reapit.cloud/?path=/story/\*" %}
-
 
 
