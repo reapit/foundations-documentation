@@ -6,84 +6,74 @@ description: &gt;- Below you will find a listing of the recent changes we have m
 
 ## Elements
 
-### elements_v0.5.59 - 2020-06-15
-  
------------------------------------------------------------------------------
-Release: elements_v0.5.59
-Rollback: elements_v0.5.59-beta.1
-Changes:
-commit | author |description
-  
-- bd8ee558228513ee6a43937089de80423c66017b | Khac Vy <vytk@reapit.com> | fix: #1621 upload file should only accept image (#1696)
-- b969cfc95e30c58462508a2507d7c634b94e1888 | Will McVay <wmcvay@reapit.com> | fix: #1565 tiny css tweak (#1692)* fix: tiny css tweak* fix: page tweaks for app page release
-- 41010f40faa20a79292d0e837890b89be2ac18c0 | Pham Hai Duong <duongph@reapit.com> | fix: #1393 linaria issue on cx (#1713)
-- 1b36168fbdcf11418a9ed2b697b79d7b936e0476 | Cuong Vu <cuongvh@reapit.com> | fix: #1588 & #1586 AML APP validate check length & valid values (#1672)* fix: #1588 show errors if search field not filled in
-- 7b3ebcb10443fb447bce5379d64ff3bcdd0aa696 | Pham Hai Duong <duongph@reapit.com> | fix: #1629 set default zoom for maps (#1707)
-- 61fcafbb1d3edf84bdca8b5bf1a1805bc632b729 | Vu Nguyen <vunp@reapit.com> | fix: #1624 Fix phone number field validation in AML profile modal (#1687)* fix: #1624 Fix phone number field validation in profile modal* fix: #1624 Migrate profile forms validation to yup
-- 0a630b6684e8994e12e8181d653c504d7d2373cb | Pham Hai Duong <duongph@reapit.com> | fix: #1629 geo-diary should not zoom to low when no markers (#1699)
-- 65eb0dca10dfdd00aa53e711f1ae903e309ec8ae | Will McVay <wmcvay@reapit.com> | fix: #1393 ie linaria bug (#1691)* fix: ie linaraia bug* fix: re-add storybook build* fix: iframe url
-- 817133257c26d3fd8fa2595ede39a7c187e084ba | Vu Nguyen <vunp@reapit.com> | fix: #1591 Upload file button issues in AML checklist (#1674)
-- 591972e85ec6ce9ea28947c5eb8a663de4725010 | Pham Hai Duong <duongph@reapit.com> | chore: update yarn lock (#1678)
-- dfca199d9622d993bd50d88475015505094b7ad8 | Vu Nguyen <vunp@reapit.com> | fix: #1657 Standalone apps pages ui broken on ie11 (#1671)
-- f9115fe9ec5a80c70c61955d17d9b3091a0fd046 | Pham Hai Duong <duongph@reapit.com> | fix: #1584 result must return correctly (#1673)
-- 80b04db281e74b5d766f1dd19bbdfc65f8df3300 | Snyk bot <snyk-bot@snyk.io> | fix: packages/elements/package.json & packages/elements/.snyk to reduce vulnerabilities (#1665)The following vulnerabilities are fixed with a Snyk patch:- https://snyk.io/vuln/SNYK-JS-LODASH-567746
-- 3a8e389e21df9639c13d15dd75cdc5960b990318 | Will McVay <wmcvay@reapit.com> | chore: #1393bump version numbers of NPM packages to release (#1667)
-- b9519eff9a0728cd3af8e9c9d93c852427251603 | Trường An <andt@reapit.com> | fix: #1649 avoid click outside label to focus input (#1664)
+### elements\_v0.5.59 - 2020-06-15
+
+Release: elements\_v0.5.59 Rollback: elements\_v0.5.59-beta.1 Changes: commit \| author \|description
+
+* bd8ee558228513ee6a43937089de80423c66017b \| Khac Vy [vytk@reapit.com](mailto:vytk@reapit.com) \| fix: \#1621 upload file should only accept image \(\#1696\)
+* b969cfc95e30c58462508a2507d7c634b94e1888 \| Will McVay [wmcvay@reapit.com](mailto:wmcvay@reapit.com) \| fix: \#1565 tiny css tweak \(\#1692\) _fix: tiny css tweak_ fix: page tweaks for app page release
+* 41010f40faa20a79292d0e837890b89be2ac18c0 \| Pham Hai Duong [duongph@reapit.com](mailto:duongph@reapit.com) \| fix: \#1393 linaria issue on cx \(\#1713\)
+* 1b36168fbdcf11418a9ed2b697b79d7b936e0476 \| Cuong Vu [cuongvh@reapit.com](mailto:cuongvh@reapit.com) \| fix: \#1588 & \#1586 AML APP validate check length & valid values \(\#1672\)\* fix: \#1588 show errors if search field not filled in
+* 7b3ebcb10443fb447bce5379d64ff3bcdd0aa696 \| Pham Hai Duong [duongph@reapit.com](mailto:duongph@reapit.com) \| fix: \#1629 set default zoom for maps \(\#1707\)
+* 61fcafbb1d3edf84bdca8b5bf1a1805bc632b729 \| Vu Nguyen [vunp@reapit.com](mailto:vunp@reapit.com) \| fix: \#1624 Fix phone number field validation in AML profile modal \(\#1687\) _fix: \#1624 Fix phone number field validation in profile modal_ fix: \#1624 Migrate profile forms validation to yup
+* 0a630b6684e8994e12e8181d653c504d7d2373cb \| Pham Hai Duong [duongph@reapit.com](mailto:duongph@reapit.com) \| fix: \#1629 geo-diary should not zoom to low when no markers \(\#1699\)
+* 65eb0dca10dfdd00aa53e711f1ae903e309ec8ae \| Will McVay [wmcvay@reapit.com](mailto:wmcvay@reapit.com) \| fix: \#1393 ie linaria bug \(\#1691\) _fix: ie linaraia bug_ fix: re-add storybook build\* fix: iframe url
+* 817133257c26d3fd8fa2595ede39a7c187e084ba \| Vu Nguyen [vunp@reapit.com](mailto:vunp@reapit.com) \| fix: \#1591 Upload file button issues in AML checklist \(\#1674\)
+* 591972e85ec6ce9ea28947c5eb8a663de4725010 \| Pham Hai Duong [duongph@reapit.com](mailto:duongph@reapit.com) \| chore: update yarn lock \(\#1678\)
+* dfca199d9622d993bd50d88475015505094b7ad8 \| Vu Nguyen [vunp@reapit.com](mailto:vunp@reapit.com) \| fix: \#1657 Standalone apps pages ui broken on ie11 \(\#1671\)
+* f9115fe9ec5a80c70c61955d17d9b3091a0fd046 \| Pham Hai Duong [duongph@reapit.com](mailto:duongph@reapit.com) \| fix: \#1584 result must return correctly \(\#1673\)
+* 80b04db281e74b5d766f1dd19bbdfc65f8df3300 \| Snyk bot [snyk-bot@snyk.io](mailto:snyk-bot@snyk.io) \| fix: packages/elements/package.json & packages/elements/.snyk to reduce vulnerabilities \(\#1665\)The following vulnerabilities are fixed with a Snyk patch:- [https://snyk.io/vuln/SNYK-JS-LODASH-567746](https://snyk.io/vuln/SNYK-JS-LODASH-567746)
+* 3a8e389e21df9639c13d15dd75cdc5960b990318 \| Will McVay [wmcvay@reapit.com](mailto:wmcvay@reapit.com) \| chore: \#1393bump version numbers of NPM packages to release \(\#1667\)
+* b9519eff9a0728cd3af8e9c9d93c852427251603 \| Trường An [andt@reapit.com](mailto:andt@reapit.com) \| fix: \#1649 avoid click outside label to focus input \(\#1664\)
 
 approver: @willmcvay
-monitor: https://sentry.io/organizations/reapit-ltd/projects/
------------------------------------------------------------------------------
 
-    
-### elements_v0.5.59-beta.1 - 2020-06-10
-  
------------------------------------------------------------------------------
-Release: elements_v0.5.59-beta.1
-Rollback: elements_v0.5.57
-Changes:
-commit | author |description
-  
-- 8dc9b71908ebaf6d582975d4e19226e9c0faac07 | Will McVay <wmcvay@reapit.com> | fix: #1393 linaria elements build (#1645)* fix: fixes elements rollup dist* fix: adds comments* fix: fixes elements build, now outputs types* fix: fixes test run by splitting tsconfigs* fix: fixes lockfile issue
-- 86556a475ee81a956988cdd100c61ef406c6875a | Pham Hai Duong <duongph@reapit.com> | fix: #1580 add required label for text area and text description (#1655)
-- ae5e0a18209ba04781bff8937be810ab41278903 | Cuong Vu <cuongvh@reapit.com> | fix: #1585 fixed integration types (#1638)
-- dba71118fb6f2cd4fe32335a842d23c15e7010f3 | Pham Hai Duong <duongph@reapit.com> | fix: #1393 resolve problem on elements (#1633)
-- 62ea69ff21ade7db8e1a9a9429a52290a35ec9cf | Khac Vy <vytk@reapit.com> | fix: #1632 Toast doesn't display on IE (#1631)
-- bce2f7fcfa62994312c201a76a1e49e072db1f8a | Trường An <andt@reapit.com> | fix: #1595 #1526 Should be limiting the size of the input value in fields (#1609)
-- 5a56e42074fbe9a68b70bf64889a5680c11a3258 | Will McVay <wmcvay@reapit.com> | feat: #1565 standalone apps prod fixes (#1626)
-- 4c44e469d5e8fa7f68171c5e14b0fac95a666cd1 | NghiaPham <nghiapn@reapit.com> | fix: #1587 - add diff render class to purify css white list (#1622)
-- fbd560e567be54b142b81d6abfd95d719b397199 | NghiaPham <nghiapn@reapit.com> | fix: #1595 - bug select field type integration page app submit developer (#1615)
-- e49a036e3d1e28358dbeda8def2a09d53acfe539 | Cuong Vu <cuongvh@reapit.com> | fix: #1518 fix stretched desciption when inputing long text (#1589)
-- 2b49b19bfcfa6530224da46a3b3a99fe237048a4 | Khac Vy <vytk@reapit.com> | fix: #1421 fix developer portal UI bugs (#1559)
-- dd9e470a502aa2f4e13d79f157afa13f3e907317 | Will McVay <wmcvay@reapit.com> | chore: #1414 #1488 #1413 #1412tidy app errors (#1535)* fix: tidied up Geo Diary* fix: reduces noise when running tests in AML, Marketplace and Elements
-- ffc7b2cbc8dd74d8695b528a4d46ecd51e343d7b | Trường An <andt@reapit.com> | fix: #1494 #1497 fix some validate bugs on submit app page (#1521)
-- bf1e25be58832cfd42c482d6f4706eda56776903 | Snyk bot <snyk-bot@snyk.io> | fix: packages/elements/package.json & packages/elements/.snyk to reduce vulnerabilities (#1538)The following vulnerabilities are fixed with a Snyk patch:- https://snyk.io/vuln/SNYK-JS-LODASH-567746
-- 99d8c3e77fbfb8c609fd36aed625e5ae8e36993b | Will McVay <wmcvay@reapit.com> | chore: bump elements version to release (#1530)
-- 3b7d043894ec3029099224e1fdf3763f350003cc | NghiaPham <nghiapn@reapit.com> | fix: #1316 Update to Demo Site Search Widget (#1461)
-- 2b64260f4f2ceadc607f83278092b095bb77e0c2 | Cuong Vu <cuongvh@reapit.com> | fix: #1425 aml mobile and ie fixing (#1522)
-- 22f53f3e4b72b4e6964739940c14ef32cea4b427 | Will McVay <wmcvay@reapit.com> | fix: #1393 fixes rollup config for elements so linaria styles are exported (#1501)* fix: resolves linaria styles bundle issue* fix: adds a couple of comments* fix: add comment* fix: fixes tests by handling sass in Jest properly* fix: re-generate lock file after merge
-- dcc0d7a186b82c556e2e882f8b6f16173ae061a2 | Vu Nguyen <nphivu414@gmail.com> | feat: #1126 Remove old app detail modal code (#1498)* feat: #1126 Routing to the new standalone app page + Remove old app detail modal code
-- 0e831e5ec742dd60148a3acac1137b12365bcc77 | Vu Nguyen <nphivu414@gmail.com> | fix: #1422 Fix IE crashing issues due to google-maps-loader (#1519)
-- 62fb2561486eb9a05e2e0fd19a6d0677c8fd9870 | Pham Hai Duong <duongph@reapit.com> | ci: #1333 add deployment pipeline for new process (#1479)
-- 4267c156525a927e321e61d5fd468ddd3737297e | Cuong Vu <cuongvh@reapit.com> | fix: #1422 IE bug fixed (#1471)
-- c34899b910fa019e76abafc8ae5081e2d0891340 | Trường An <andt@reapit.com> | refactor: #1327 Refactor Admin Dev Management using react-redux hooks (#1386)
-- b7985c934b11410e3071430180f17ca96648a525 | Khac Vy <vytk@reapit.com> | fix: #1391 Fix warning error which display in marketplace (#1405)
-- 78db4a6fe056181b77a49c3dbf34cda296f5b5aa | NghiaPham <nghiapn@reapit.com> | chore: remove offline plugin (#1387)
-- 1109cc4a89dbcc242b13e216498d8784287dae49 | Cuong Vu <cuongvh@reapit.com> | fix: #1389 dead link search widget in elements (#1400)
-- 9373540a37132518e18045d76213c221de773293 | Pham Hai Duong <duongph@reapit.com> | fix: breadcrumb style in elements storybook (#1351)
-- 663bb21ebe2aa0fd4f367d9a18eaa9782805c42c | Trường An <andt@reapit.com> | feat: #1033 configure my web component installations in the Marketplace (#1313)* feat: #1033 configure my web component installations in the Marketplace* chore: #1033 add negotiators dropdown* chore: #1033 update app header, update snapshot* chore: #1033 fetch negotiators list* chore: #1033 update api* chore: #1033 update follow PR cmts* chore: #1033 fix test fail
-- 1a705580bf9f1d620479c642b42840f18b2b3830 | Cuong Vu <cuongvh@reapit.com> | fix: fix element page on mobile (#1345)
-- c475f3c0f9638e18664c50bc005ce22ed332448a | Cuong Vu <cuongvh@reapit.com> | fix: fix client app page css issue (#1339)
-- 09f7cadd3c627d6f0ece0a54e58eb072957d5cd7 | NghiaPham <nghiapn@reapit.com> | fix: #1206 #1210 tweak standalone page css (#1335)
-- 65c973a0173565bf0ddb129d18964db672866e5f | Cuong Vu <cuongvh@reapit.com> | fix: #1275 layout issue on mobile (#1332)
-- 906512f589cc326c3299d5446f304dcf2c41c68a | Pham Hai Duong <duongph@reapit.com> | chore: add MiniCssExtractPlugin to prod and dev webpack (#1324)
-- d15a9d9ed50ba9b51acceffb9ad829218f59cf16 | Pham Hai Duong <duongph@reapit.com> | feat: #1274 create breadcrumb components (#1303)
-- a35834aa73d5c92490913a73acc56960ab43f6a2 | Vu Nguyen <nphivu414@gmail.com> | feat: #1290 Fix issues with logging into dev and client portal (#1301)
+## monitor: [https://sentry.io/organizations/reapit-ltd/projects/](https://sentry.io/organizations/reapit-ltd/projects/)
+
+### elements\_v0.5.59-beta.1 - 2020-06-10
+
+Release: elements\_v0.5.59-beta.1 Rollback: elements\_v0.5.57 Changes: commit \| author \|description
+
+* 8dc9b71908ebaf6d582975d4e19226e9c0faac07 \| Will McVay [wmcvay@reapit.com](mailto:wmcvay@reapit.com) \| fix: \#1393 linaria elements build \(\#1645\) _fix: fixes elements rollup dist_ fix: adds comments _fix: fixes elements build, now outputs types_ fix: fixes test run by splitting tsconfigs\* fix: fixes lockfile issue
+* 86556a475ee81a956988cdd100c61ef406c6875a \| Pham Hai Duong [duongph@reapit.com](mailto:duongph@reapit.com) \| fix: \#1580 add required label for text area and text description \(\#1655\)
+* ae5e0a18209ba04781bff8937be810ab41278903 \| Cuong Vu [cuongvh@reapit.com](mailto:cuongvh@reapit.com) \| fix: \#1585 fixed integration types \(\#1638\)
+* dba71118fb6f2cd4fe32335a842d23c15e7010f3 \| Pham Hai Duong [duongph@reapit.com](mailto:duongph@reapit.com) \| fix: \#1393 resolve problem on elements \(\#1633\)
+* 62ea69ff21ade7db8e1a9a9429a52290a35ec9cf \| Khac Vy [vytk@reapit.com](mailto:vytk@reapit.com) \| fix: \#1632 Toast doesn't display on IE \(\#1631\)
+* bce2f7fcfa62994312c201a76a1e49e072db1f8a \| Trường An [andt@reapit.com](mailto:andt@reapit.com) \| fix: \#1595 \#1526 Should be limiting the size of the input value in fields \(\#1609\)
+* 5a56e42074fbe9a68b70bf64889a5680c11a3258 \| Will McVay [wmcvay@reapit.com](mailto:wmcvay@reapit.com) \| feat: \#1565 standalone apps prod fixes \(\#1626\)
+* 4c44e469d5e8fa7f68171c5e14b0fac95a666cd1 \| NghiaPham [nghiapn@reapit.com](mailto:nghiapn@reapit.com) \| fix: \#1587 - add diff render class to purify css white list \(\#1622\)
+* fbd560e567be54b142b81d6abfd95d719b397199 \| NghiaPham [nghiapn@reapit.com](mailto:nghiapn@reapit.com) \| fix: \#1595 - bug select field type integration page app submit developer \(\#1615\)
+* e49a036e3d1e28358dbeda8def2a09d53acfe539 \| Cuong Vu [cuongvh@reapit.com](mailto:cuongvh@reapit.com) \| fix: \#1518 fix stretched desciption when inputing long text \(\#1589\)
+* 2b49b19bfcfa6530224da46a3b3a99fe237048a4 \| Khac Vy [vytk@reapit.com](mailto:vytk@reapit.com) \| fix: \#1421 fix developer portal UI bugs \(\#1559\)
+* dd9e470a502aa2f4e13d79f157afa13f3e907317 \| Will McVay [wmcvay@reapit.com](mailto:wmcvay@reapit.com) \| chore: \#1414 \#1488 \#1413 \#1412tidy app errors \(\#1535\) _fix: tidied up Geo Diary_ fix: reduces noise when running tests in AML, Marketplace and Elements
+* ffc7b2cbc8dd74d8695b528a4d46ecd51e343d7b \| Trường An [andt@reapit.com](mailto:andt@reapit.com) \| fix: \#1494 \#1497 fix some validate bugs on submit app page \(\#1521\)
+* bf1e25be58832cfd42c482d6f4706eda56776903 \| Snyk bot [snyk-bot@snyk.io](mailto:snyk-bot@snyk.io) \| fix: packages/elements/package.json & packages/elements/.snyk to reduce vulnerabilities \(\#1538\)The following vulnerabilities are fixed with a Snyk patch:- [https://snyk.io/vuln/SNYK-JS-LODASH-567746](https://snyk.io/vuln/SNYK-JS-LODASH-567746)
+* 99d8c3e77fbfb8c609fd36aed625e5ae8e36993b \| Will McVay [wmcvay@reapit.com](mailto:wmcvay@reapit.com) \| chore: bump elements version to release \(\#1530\)
+* 3b7d043894ec3029099224e1fdf3763f350003cc \| NghiaPham [nghiapn@reapit.com](mailto:nghiapn@reapit.com) \| fix: \#1316 Update to Demo Site Search Widget \(\#1461\)
+* 2b64260f4f2ceadc607f83278092b095bb77e0c2 \| Cuong Vu [cuongvh@reapit.com](mailto:cuongvh@reapit.com) \| fix: \#1425 aml mobile and ie fixing \(\#1522\)
+* 22f53f3e4b72b4e6964739940c14ef32cea4b427 \| Will McVay [wmcvay@reapit.com](mailto:wmcvay@reapit.com) \| fix: \#1393 fixes rollup config for elements so linaria styles are exported \(\#1501\) _fix: resolves linaria styles bundle issue_ fix: adds a couple of comments _fix: add comment_ fix: fixes tests by handling sass in Jest properly\* fix: re-generate lock file after merge
+* dcc0d7a186b82c556e2e882f8b6f16173ae061a2 \| Vu Nguyen [nphivu414@gmail.com](mailto:nphivu414@gmail.com) \| feat: \#1126 Remove old app detail modal code \(\#1498\)\* feat: \#1126 Routing to the new standalone app page + Remove old app detail modal code
+* 0e831e5ec742dd60148a3acac1137b12365bcc77 \| Vu Nguyen [nphivu414@gmail.com](mailto:nphivu414@gmail.com) \| fix: \#1422 Fix IE crashing issues due to google-maps-loader \(\#1519\)
+* 62fb2561486eb9a05e2e0fd19a6d0677c8fd9870 \| Pham Hai Duong [duongph@reapit.com](mailto:duongph@reapit.com) \| ci: \#1333 add deployment pipeline for new process \(\#1479\)
+* 4267c156525a927e321e61d5fd468ddd3737297e \| Cuong Vu [cuongvh@reapit.com](mailto:cuongvh@reapit.com) \| fix: \#1422 IE bug fixed \(\#1471\)
+* c34899b910fa019e76abafc8ae5081e2d0891340 \| Trường An [andt@reapit.com](mailto:andt@reapit.com) \| refactor: \#1327 Refactor Admin Dev Management using react-redux hooks \(\#1386\)
+* b7985c934b11410e3071430180f17ca96648a525 \| Khac Vy [vytk@reapit.com](mailto:vytk@reapit.com) \| fix: \#1391 Fix warning error which display in marketplace \(\#1405\)
+* 78db4a6fe056181b77a49c3dbf34cda296f5b5aa \| NghiaPham [nghiapn@reapit.com](mailto:nghiapn@reapit.com) \| chore: remove offline plugin \(\#1387\)
+* 1109cc4a89dbcc242b13e216498d8784287dae49 \| Cuong Vu [cuongvh@reapit.com](mailto:cuongvh@reapit.com) \| fix: \#1389 dead link search widget in elements \(\#1400\)
+* 9373540a37132518e18045d76213c221de773293 \| Pham Hai Duong [duongph@reapit.com](mailto:duongph@reapit.com) \| fix: breadcrumb style in elements storybook \(\#1351\)
+* 663bb21ebe2aa0fd4f367d9a18eaa9782805c42c \| Trường An [andt@reapit.com](mailto:andt@reapit.com) \| feat: \#1033 configure my web component installations in the Marketplace \(\#1313\) _feat: \#1033 configure my web component installations in the Marketplace_ chore: \#1033 add negotiators dropdown _chore: \#1033 update app header, update snapshot_ chore: \#1033 fetch negotiators list _chore: \#1033 update api_ chore: \#1033 update follow PR cmts\* chore: \#1033 fix test fail
+* 1a705580bf9f1d620479c642b42840f18b2b3830 \| Cuong Vu [cuongvh@reapit.com](mailto:cuongvh@reapit.com) \| fix: fix element page on mobile \(\#1345\)
+* c475f3c0f9638e18664c50bc005ce22ed332448a \| Cuong Vu [cuongvh@reapit.com](mailto:cuongvh@reapit.com) \| fix: fix client app page css issue \(\#1339\)
+* 09f7cadd3c627d6f0ece0a54e58eb072957d5cd7 \| NghiaPham [nghiapn@reapit.com](mailto:nghiapn@reapit.com) \| fix: \#1206 \#1210 tweak standalone page css \(\#1335\)
+* 65c973a0173565bf0ddb129d18964db672866e5f \| Cuong Vu [cuongvh@reapit.com](mailto:cuongvh@reapit.com) \| fix: \#1275 layout issue on mobile \(\#1332\)
+* 906512f589cc326c3299d5446f304dcf2c41c68a \| Pham Hai Duong [duongph@reapit.com](mailto:duongph@reapit.com) \| chore: add MiniCssExtractPlugin to prod and dev webpack \(\#1324\)
+* d15a9d9ed50ba9b51acceffb9ad829218f59cf16 \| Pham Hai Duong [duongph@reapit.com](mailto:duongph@reapit.com) \| feat: \#1274 create breadcrumb components \(\#1303\)
+* a35834aa73d5c92490913a73acc56960ab43f6a2 \| Vu Nguyen [nphivu414@gmail.com](mailto:nphivu414@gmail.com) \| feat: \#1290 Fix issues with logging into dev and client portal \(\#1301\)
 
 approver: @willmcvay
-monitor: https://sentry.io/organizations/reapit-ltd/projects/
------------------------------------------------------------------------------
 
-    
+## monitor: [https://sentry.io/organizations/reapit-ltd/projects/](https://sentry.io/organizations/reapit-ltd/projects/)
+
 ### elements\_v0.5.56 - 2020-05-12
 
 Release: elements\_v0.5.56 Rollback: elements\_v0.5.53 Changes: commit \| author \|description

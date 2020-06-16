@@ -70,17 +70,17 @@ Then select an icon and some screengrabs for your app listing...
 
 Finally, submit the form and you will return via a success message to the Apps page where you will see your registered application.
 
-![](.gitbook/assets/screenshot-2020-02-16-at-13.44.57.png)
+![](.gitbook/assets/screenshot-2020-06-16-at-18.32.04.png)
 
 It is important to note, the app is not live yet, both because as we in developer beta only and because to set the live status, you need to edit your app and set the 'listed' status for approval. This behaviour is out of scope for this document.
 
 ### 4. Get your Client Id
 
-From the Apps screen above, you will need to obtain your application's client id to authenticate your new app. To do this, click on the app to bring up the App Detail modal as above.
+From the Apps screen above, you will need to obtain your application's client id to authenticate your new app. To do this, click on the app to bring up the App Detail page as per below.
 
-![](.gitbook/assets/screenshot-2020-02-16-at-13.45.15.png)
+![](.gitbook/assets/screenshot-2020-06-16-at-18.30.21.png)
 
-The Client Id should now be visible. Keep this page open so you can copy the Client Id at the next step.
+The Client Id should now be visible. Keep this page open so you can copy the Client Id at the next step. Please note, if you have selected "Client Credentials" as your authentication flow, you will also see your client secret \(hidden\), on this page.
 
 ### 5. **Write some code!**
 
