@@ -6,6 +6,21 @@ description: >-
 ---
 
 # Marketplace
+### marketplace_v1.0.34 - 2020-06-16
+  
+-----------------------------------------------------------------------------
+Release: marketplace_v1.0.34
+Rollback: marketplace_v1.0.33
+Changes:
+commit | author |description
+  
+- 686ba89b417aa67f3bdf9dde2e86c8f9970d6f56 | willmcvay@pm.me <willmcvay@pm.me> | fix: hotfix to re-add client id on prod
+
+approver: @willmcvay
+monitor: https://sentry.io/organizations/reapit-ltd/projects/
+-----------------------------------------------------------------------------
+
+    
 ### marketplace_v1.0.33 - 2020-06-15
   
 -----------------------------------------------------------------------------
