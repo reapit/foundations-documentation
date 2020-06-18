@@ -14,8 +14,6 @@ At Reapit, we have made a company wide commitment to open sourcing as much sourc
 
 All our code is in a [mono-repo on Github](https://github.com/reapit/foundations), along with our project [Kanban boards](https://github.com/reapit/foundations/projects) and an open [issues page.](https://github.com/reapit/foundations/issues) Most people will want to use this as a resource alongside their own project, as living code as documentation but if you do want to contribute to a project, fork and extend an app or fix a bug, we welcome pull requests from all.
 
-efwefefwf
-
 ## Getting Started
 
 ### Pre-requisites
