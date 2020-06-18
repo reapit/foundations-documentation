@@ -7,6 +7,81 @@ description: >-
 
 # What’s New
 
+## 18/06/20
+
+### **New App Listing Pages**
+
+We are pleased to announce that the App listing pages in the Developers Portal have been updated. This means you will now be able to add a more detailed description including bullet points, paragraphs, external links, and a featured image.
+
+The description and imagery you upload, are incredibly important to help capture the user’s attention.  
+
+With that in mind we have also added a ‘Preview’ feature. When you next open your app, you will see a ‘See Listing Preview’ option. It will open a new tab displaying your app listing exactly as it will be seen by users inside the Marketplace.
+
+To maximise the space and to truly showcase your app, we have put together the following tips/guide to help.
+
+### **Summary**
+
+The summary is a short description about your app and will be one of the first things shown in the Marketplace before a user clicks through for more information.
+
+Users should be able to clearly see what your app is about when browsing. You have a maximum of 150 character to utilise which will be displayed on both the app tiles and on your app listing.
+
+### **Icon**
+
+We will soon be adding the ability to upload a company icon in addition to your app icon. You company icon will be shown in a new section \(About Developer\) on the left hand side of your app listing.
+
+Therefore, we suggest uploading an icon relating to the app rather than your company logo.
+
+The suggested image size is 96px x 96px and the app icon is the first opportunity to communicate, along with the app summary, what you are offering. We recommend keeping the logo simple but should be recognisable and understandable. The icon will be placed on a white tile and background so ideally avoid text, screenshots or photos.
+
+### **Featured Image**
+
+The featured image is 495px x 222px and it will appear at the top of your listing page as the first graphic representations of your app before any screenshots.  
+  
+It may also be used for marketing within the portal under our ‘Recommended Apps’ or ‘Featured Apps’ sections as well as potentially used for external communications.
+
+With that in mind, we are looking for the Featured Image to be more of a graphic/advert style rather than a screen shot of the application. Ideally it should convey your app’s value proposition.
+
+### **Description**
+
+The next step after a user discovers your app in the Marketplace, is to read more about it.
+
+Creating a detailed and accurate description of your app is what will give users the full understanding of what your app has to offer. Appealing enough to encourage users to install.
+
+The description field on the app listing has been converted to support HTML. This means that you can now use paragraphs, bullet or numbered lists, headings and external links.
+
+The focus should be on conveying the value of your app and should work alongside the images you provide.
+
+A great way to think about how to format your description is to picture yourself as the user and what would appeal to you about your application, what problem exists and the solution it provides.
+
+### **Imagery**
+
+You have the option of uploading 4 screenshots on your app listing and we recommend images sizes of 598px x 457px
+
+Whilst screenshots give the user the ability to see your app in action, you can create the screenshots to include text to highlight the important features. Really maximise the space and visual impact of your app listing
+
+2 screenshots are placed directly under the ‘Summary’ and the other 2 are placed below the ‘Description’.
+
+### **Highlight Key Features**
+
+You can add a bulleted or numbered list of key features within the description.
+
+Key features should be quick, short paragraphs. Help your users to easily see the main value that your app provides.  Focus on the benefits. For example: 
+
+* Mobile Friendly
+* Easy to Install
+* Helpful Hints
+* Simple Reporting
+
+### **External Links**
+
+We are now supporting external links which allows you to navigate your users to your own website.
+
+You can use this feature to perhaps link to your own website with a dedicated page with more information or video demos of your application.
+
+Maybe even provide instructions on how to register an account with you or details on how to get in touch to your sales/support team.
+
+If you have more information you want to share with the users, external links are a great way to achieve this.  
+
 ## 22/05/20
 
 With the launch of the Beta Phase for the Foundations Developers Portal and with several more developers and PropTechs joining the Platform, we have been pretty busy the last few weeks. It has been great to see some of the applications that are being developed and also having the opportunity to see them in action with live demos . Our Development team have been concentrating on delivering the following new features in the Developers Portal which we are excited to share with you.
