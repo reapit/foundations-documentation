@@ -11,7 +11,7 @@ description: >-
 
 #### 2020-06-19
 
-* [\#1778](https://github.com/reapit/foundations/issues/1766) - The response from `GET /landlords` and `GET /landlords/{id}` will now include granular name information for any contacts that have been associated in the `related` collection
+* [\#1778](https://github.com/reapit/foundations/issues/1778) - The response from `GET /landlords` and `GET /landlords/{id}` will now include granular name information for any contacts that have been associated in the `related` collection
 * [\#177](https://github.com/reapit/foundations/issues/1777)7 - The response from `GET /vendors` and `GET /vendors/{id}` will now include granular name information for any contacts that have been associated in the `related` collection
 
 #### 2020-06-18
