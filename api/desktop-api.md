@@ -295,6 +295,16 @@ There are currently seven supported application desktop types which are based on
 * Property Detail Generation \(print wizard\)
 * Applicant Export
 
+From version 12.118.0 the following will also be available:
+
+* Landlord
+* Contact
+* Company
+* Tenancy
+* Offer
+* Sales Progression
+* Chain Management
+
 ## Types
 
 ### Property
@@ -411,4 +421,40 @@ An application of this type would be triggered in two ways from Agency Cloud:
 2. As an option when clicking Print on the applicant screen:
 
 ![Applicant Export launch point](../.gitbook/assets/image%20%2826%29.png)
+
+### Landlord
+
+The type of _Landlord_ will be given to an application that can be launched for a specific landlord from Agency Cloud
+
+### Contact
+
+The type of _Contact_ will be given to an application that can be launched for a specific contact from Agency Cloud
+
+### Company
+
+The type of _Company_ will be given to an application that can be launched for a specific company from Agency Cloud
+
+### Tenancy
+
+The type of _Tenancy_ will be given to an application that can be launched for a specific tenancy from Agency Cloud
+
+### Offer
+
+The type of _Offer_ will be given to an application that can be launched for a specific offer from Agency Cloud
+
+### Sales Progression
+
+The type of _Sales Progression_ will be given to an application that can be launched in place of the standard Sales Progression screen in Agency Cloud.
+
+### Chain Management
+
+The type of _Chain Management_ will be given to an application that can be launched in place of the standard Chain screen in Agency Cloud.
+
+### 
+
+
+
+
+
+
 
