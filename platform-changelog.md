@@ -9,6 +9,10 @@ description: >-
 
 ## May 2020
 
+#### 2020-06-23
+
+* [\#1819](https://github.com/reapit/foundations/issues/1819) - Fixed issue with the way the `marketingMode` parameter was evaluated for `GET /properties` that could cause problems with address searching
+
 #### 2020-06-19
 
 * [\#1780](https://github.com/reapit/foundations/issues/1780) - The response from `GET /offers` and `GET /offers/{id}` will now include granular name information for any contacts that have been associated in the `related` collection
