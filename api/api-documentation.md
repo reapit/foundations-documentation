@@ -328,9 +328,11 @@ At the end of a versions sunset period it will become depreciated and you will b
 
 ## Metadata
 
-Most resources that can be updated support a `metadata` attribute in their request and response payload. This attribute can be used to attach additional key-value data against a specific resource that your application can later use.
+Most resources that can be updated support a `metadata` attribute in their request and response payload. This attribute can be used to attach additional key-value data against a specific resource that your applications can later use.
 
 Our metadata system allows you to easily extend the data that our resources present. You can create a richer integration between your application and our Platform and the process is simplified by storing all relevant data in a single place.
+
+### Providing metadata
 
 The `metadata` attribute is populated in `POST` and `PATCH` payloads as below:
 
@@ -344,13 +346,87 @@ The `metadata` attribute is populated in `POST` and `PATCH` payloads as below:
 }
 ```
 
-Once `metadata` has been set against a resource, it will be automatically returned in the same format for future `GET` requests. **Metadata is application specific** and any data that your application sets will not be presented to Reapit or other applications built on the Foundations platform.
+Once `metadata` has been set against a resource, it will be automatically returned in the same format for future `GET` requests. ****Metadata is specific to a developer and any data that your application sets will not be presented to other developers who build on the Foundations platform.
 
 Metadata storage should not be used for any sensitive information \(personally identifiable details, bank accounts, etc\).
 
-{% hint style="info" %}
-**Coming soon**: we will add the ability to search for resources that match specific metadata content. See our [project milestones](https://github.com/reapit/foundations/milestones) for further details.
-{% endhint %}
+### Searching for metadata
+
+Once metadata has been set against an entity, its content can then be used to re-locate that entity by using your metadata as a search term. The `metadata` query string parameter accepts a filter expression to identity the record\(s\) required in the following prescribed format:
+
+`GET /<endpoint>?metadata=metadata.<fieldName> <operation> <criteria>`
+
+Failure to adhere to the format required will provide a `400 Bad Request` response detailing the problem. If you are having trouble, consult our example [usage guide](api-documentation.md#example-usage) below.
+
+### Search operations
+
+We support querying using up to eight different filter operations, depending on the data type of the metadata field you’re searching upon.
+
+| **Operation** | **Keyword** | **Information** |
+| :--- | :--- | :--- |
+| Equals | **$eq** | Works for all data types |
+| Not equals | **$neq** | Works for all data types |
+| Greater than | **$gt** | Works for datetime and numeric data types |
+| Less than | **$lt** | Works for datetime and numeric data types |
+| Greater than or equal to | **$gte** | Works for datetime and numeric data types |
+| Less than or equal to | **$lte** | Works for datetime and numeric data types |
+| In list | **$in** | Provide a comma separated list of values to check for the value provided within. Works for string, datetime and numeric data types. |
+| Not in list | **$nin** | Provide a comma separated list of values to check for the value provided within. Works for string, datetime and numeric data types. |
+
+### Example usage
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">Criteria Type</th>
+      <th style="text-align:left">Example filters</th>
+      <th style="text-align:left">Information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left"><b>Boolean</b>
+      </td>
+      <td style="text-align:left">metadata.myBooleanField $eq true</td>
+      <td style="text-align:left">Only works for <code>$eq</code> and <code>$neq</code>. Criteria must be either
+        true or false</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><b>Numeric</b>
+      </td>
+      <td style="text-align:left">
+        <p>metadata.myNumericField $gte 100</p>
+        <p>metadata.myNumericField $nin 30,50,60,100</p>
+      </td>
+      <td style="text-align:left">Criteria decimal places</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><b>String</b>
+      </td>
+      <td style="text-align:left">
+        <p>metadata.myStringField $neq &#x2018;London&#x2019;</p>
+        <p>metadata.myStringField $in &#x2018;red&#x2019;,&#x2019;brown&#x2019;,&#x2019;green&#x2019;</p>
+      </td>
+      <td style="text-align:left">Criteria must be contained within apostrophes</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><b>DateTime</b>
+      </td>
+      <td style="text-align:left">
+        <p>metadata.myDateField $lt 2020-11-05T13:15:30Z</p>
+        <p>metadata.myDateField $eq 2020-11-05</p>
+      </td>
+      <td style="text-align:left">Time component is optional. Must be provided in ISO 8601 format.</td>
+    </tr>
+  </tbody>
+</table>
+
+### Additional information
+
+* Metadata filtering is not case sensitive
+* Metadata filter expressions are additive and can be used any number of times by providing the `metadata` query string more than once
+* Metadata filter expressions can be used in conjunction with any other query string parameter that an endpoint makes available.  
+* Metadata filtering can use the dot notation format to search for data stored in a nested structure.
 
 ## Hypermedia
 
