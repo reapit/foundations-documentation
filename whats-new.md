@@ -7,6 +7,18 @@ description: >-
 
 # What’s New
 
+## 29/06/20
+
+### App Revisions
+
+We have changed how we handle app revisions. Previously, any revision \(edit\) would need to be approved by our Admin team. This understandably meant a slight delay and prevented any further revisions as your app was in a ‘Pending Revision’ state.
+
+Thanks to the recent update in the Developers Portal, general revisions no longer require Admin approval, meaning no more delays.
+
+The only time your app will be required to be approved by our Admin team, will be when you are ready to list your app in the Marketplace. This is triggered by the ‘Is Listed’ status when editing your App. 
+
+Along with the new app listing pages, as mentioned below, we are currently working on a simplified submit app wizard, which will change how we handle the requirements when editing your app. More on this to follow soon.
+
 ## 18/06/20
 
 ### **New App Listing Pages**
