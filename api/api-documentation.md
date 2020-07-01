@@ -227,10 +227,10 @@ For example, `GET /contacts?pageSize=10&pageNumber=2` will return the second pag
 
 | Response payload | Description |
 | :--- | :--- |
-| `pageSize` | The number of records that have been retrieved by this response. Default is 25 and maximum 100 unless specified |
+| `pageSize` | The requested number of records per page. Default is 25 and maximum 100 unless specified |
 | `pageNumber` | The page number that this response represents |
-| `pageCount` | The number of available pages based on the current response `pageSize` |
-| `totalCount` | The total number of resources available that fulfill the criteria of the current request |
+| `pageCount` | The actual number of records that the current page contains |
+| `totalCount` | The total number of resources available that fulfil the criteria of the current request |
 | `_embedded` | The list of resources that have been returned in this paged response |
 
 ### Creating data
