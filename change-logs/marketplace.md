@@ -123,26 +123,31 @@ monitor: https://sentry.io/organizations/reapit-ltd/projects/
 
 #### marketplace\_v1.0.34 - 2020-06-16
 
+-----------------------------------------------------------------------------
 Release: marketplace\_v1.0.34 Rollback: marketplace\_v1.0.33 Changes: commit \| author \|description
 
 * 686ba89b417aa67f3bdf9dde2e86c8f9970d6f56 \| willmcvay@pm.me [willmcvay@pm.me](mailto:willmcvay@pm.me) \| fix: hotfix to re-add client id on prod
 
 approver: @willmcvay
 
-### monitor: [https://sentry.io/organizations/reapit-ltd/projects/](https://sentry.io/organizations/reapit-ltd/projects/)
+monitor: [https://sentry.io/organizations/reapit-ltd/projects/](https://sentry.io/organizations/reapit-ltd/projects/)
+-----------------------------------------------------------------------------
 
 #### marketplace\_v1.0.33 - 2020-06-15
 
+-----------------------------------------------------------------------------
 Release: marketplace\_v1.0.33 Rollback: marketplace\_v1.0.32 Changes: commit \| author \|description
 
 * 61cb3227a2454ec250dfb712eff0e61f0e2bec80 \| Will McVay [wmcvay@reapit.com](mailto:wmcvay@reapit.com) \| feat: \#1703 adds lambda to proxy gitbook \(\#1736\) _feat: adds lambda to proxy gitbook_ chore: removed release commands so will be ignored on dev
 
 approver: @willmcvay
 
-### monitor: [https://sentry.io/organizations/reapit-ltd/projects/](https://sentry.io/organizations/reapit-ltd/projects/)
+monitor: [https://sentry.io/organizations/reapit-ltd/projects/](https://sentry.io/organizations/reapit-ltd/projects/)
+-----------------------------------------------------------------------------
 
 #### marketplace\_v1.0.32 - 2020-06-15
 
+-----------------------------------------------------------------------------
 Release: marketplace\_v1.0.32 Rollback: marketplace\_v1.0.27 Changes: commit \| author \|description
 
 * b145a3be9fa5abeb6b37f04867b089bca3b0bd05 \| Vu Nguyen [vunp@reapit.com](mailto:vunp@reapit.com) \| fix: \#1657 Fix standalone apps page container position on IE1 \(\#1723\)
@@ -268,32 +273,40 @@ Release: marketplace\_v1.0.32 Rollback: marketplace\_v1.0.27 Changes: commit \| 
 
 approver: @willmcvay
 
-### monitor: [https://sentry.io/organizations/reapit-ltd/projects/](https://sentry.io/organizations/reapit-ltd/projects/)
+monitor: [https://sentry.io/organizations/reapit-ltd/projects/](https://sentry.io/organizations/reapit-ltd/projects/)
+-----------------------------------------------------------------------------
 
 #### marketplace\_v1.0.27 - 2020-05-29
 
+-----------------------------------------------------------------------------
 Release: marketplace\_v1.0.27 Rollback: marketplace\_v1.0.26 Changes: commit \| author \|description
 
 * 45e87bb5d66bde71aed4bf484d21165acbf762fd \| willmcvay@pm.me [wmcvay@reapit.com](mailto:wmcvay@reapit.com) \| fix: hotfix on admin routing
 
 approver: @willmcvay monitor: [https://sentry.io/organizations/reapit-ltd/projects/](https://sentry.io/organizations/reapit-ltd/projects/)
+-----------------------------------------------------------------------------
 
 ### marketplace\_v1.0.26 - 2020-05-28
 
+-----------------------------------------------------------------------------
 Release: marketplace\_v1.0.26 Rollback: marketplace\_v1.0.25 Changes: commit \| author \|description
 
 * ab31bf0793df083d6782a30a5d6fe6b9442eb328 \| Pham Hai Duong [duongph@reapit.com](mailto:duongph@reapit.com) \| fix: hot fix for private route \(\#1381\)
 
 approver: @willmcvay monitor: [https://sentry.io/organizations/reapit-ltd/projects/](https://sentry.io/organizations/reapit-ltd/projects/)
+-----------------------------------------------------------------------------
 
 ### marketplace\_v1.0.24 - 2020-05-22
 
+-----------------------------------------------------------------------------
 Release: marketplace\_v1.0.24 Rollback: marketplace\_v1.0.24 Changes: commit \| author \|description
 
 approver: @willmcvay monitor: [https://sentry.io/organizations/reapit-ltd/projects/](https://sentry.io/organizations/reapit-ltd/projects/)
+-----------------------------------------------------------------------------
 
 ### marketplace\_v1.0.23 - 2020-05-22
 
+-----------------------------------------------------------------------------
 Release: marketplace\_v1.0.23 Rollback: marketplace\_v1.0.22 Changes: commit \| author \|description
 
 * 3d0fea7176d4e2993965192db6cff75f440af973 \| Vu Nguyen [nphivu414@gmail.com](mailto:nphivu414@gmail.com) \| refactor: \#1174 Refactor register page using new react-redux hooks \(\#1314\)\* feat: \#1174 Refactor register page to use new react-redux hooks
@@ -367,9 +380,11 @@ Release: marketplace\_v1.0.23 Rollback: marketplace\_v1.0.22 Changes: commit \| 
 * 1d307dad916b497ef3d6eb3e35510e5bafb3acfb \| NghiaPham [nghiapn@reapit.com](mailto:nghiapn@reapit.com) \| Feat \#963: Implement Developer Webhooks page \(\#1049\)
 
 approver: @willmcvay monitor: [https://sentry.io/organizations/reapit-ltd/projects/](https://sentry.io/organizations/reapit-ltd/projects/)
+-----------------------------------------------------------------------------
 
 ### marketplace\_v1.0.22 - 2020-04-23
 
+-----------------------------------------------------------------------------
 Release: marketplace\_v1.0.22 Rollback: marketplace\_v1.0.21 Changes: commit \| author \|description
 
 * 5e282514b01ca338f0b7b9f1d467f509abadb881 \| Cuong Vu [cuongvh@reapit.com](mailto:cuongvh@reapit.com) \| fix: \#1040 fix pending revision image missing \(\#1060\)
@@ -390,9 +405,11 @@ Release: marketplace\_v1.0.22 Rollback: marketplace\_v1.0.21 Changes: commit \| 
 * f5ec3ab4183ac308dc768b8e84a3b6fb29c75837 \| Vu Nguyen [vunp@reapit.com](mailto:vunp@reapit.com) \| feat: \#923: Fix analytic filter date params \(\#929\)
 
 approver: @willmcvay monitor: [https://sentry.io/organizations/reapit-ltd/projects/](https://sentry.io/organizations/reapit-ltd/projects/)
+-----------------------------------------------------------------------------
 
 ### marketplace\_v1.0.21 - 2020-04-15
 
+-----------------------------------------------------------------------------
 Release: marketplace\_v1.0.21 Rollback: marketplace\_v1.0.20 Changes: commit \| author \|description
 
 * d14b33d755b1d8a56d225f1a0a6c0cdc87f1c4e8 \| Vu Nguyen [vunp@reapit.com](mailto:vunp@reapit.com) \| Fix/905 update date filtering in analytics page \(\#914\)\* feat: \#905: Update date filtering in analytics page
@@ -400,25 +417,31 @@ Release: marketplace\_v1.0.21 Rollback: marketplace\_v1.0.20 Changes: commit \| 
 * 1eca438da329598593bed4755eb18c448c606deb \| Khac Vy [vytk@reapit.com](mailto:vytk@reapit.com) \| feat: \#830 submit app with desktop integration types \(\#895\)
 
 approver: @willmcvay monitor: [https://sentry.io/organizations/reapit-ltd/projects/](https://sentry.io/organizations/reapit-ltd/projects/)
+-----------------------------------------------------------------------------
 
 ### marketplace\_v1.0.20 - 2020-04-14
 
+-----------------------------------------------------------------------------
 Release: marketplace\_v1.0.20 Rollback: marketplace\_v1.0.19 Changes: commit \| author \|description
 
 * c46b2f0dea3da7e6dc69667de1680fede5379f15 \| Will McVay [wmcvay@reapit.com](mailto:wmcvay@reapit.com) \| fix: t and c update \(\#907\)
 
 approver: @willmcvay monitor: [https://sentry.io/organizations/reapit-ltd/projects/](https://sentry.io/organizations/reapit-ltd/projects/)
+-----------------------------------------------------------------------------
 
 ### marketplace\_v1.0.19 - 2020-04-14
 
+-----------------------------------------------------------------------------
 Release: marketplace\_v1.0.19 Rollback: marketplace\_v1.0.18 Changes: commit \| author \|description
 
 * f9c18b620fd39f9bcef20656f9ffc1aa15c6d48b \| NghiaPham [nghiapn@reapit.com](mailto:nghiapn@reapit.com) \| fix: \#902 Issue with text on after registering as a Developer \(\#903\)
 
 approver: @willmcvay monitor: [https://sentry.io/organizations/reapit-ltd/projects/](https://sentry.io/organizations/reapit-ltd/projects/)
+-----------------------------------------------------------------------------
 
 ### marketplace\_v1.0.18 - 2020-04-14
 
+-----------------------------------------------------------------------------
 Release: marketplace\_v1.0.18 Rollback: marketplace\_v1.0.17 Changes: commit \| author \|description
 
 * 75725d886427d0ce17aac4674724c9d60fe7a8f6 \| Cuong Vu [cuongvh@reapit.com](mailto:cuongvh@reapit.com) \| chore: \#889 markerplace login button is misaligned \(\#894\)
@@ -448,4 +471,5 @@ Release: marketplace\_v1.0.18 Rollback: marketplace\_v1.0.17 Changes: commit \| 
 * 05f0e8d0898d6e7142b0acf3ffe925aa74bf57c0 \| Vu Nguyen [vunp@reapit.com](mailto:vunp@reapit.com) \| feat: \#710: Add additional tab option on analytics page \(\#748\)
 
 approver: @willmcvay monitor: [https://sentry.io/organizations/reapit-ltd/projects/](https://sentry.io/organizations/reapit-ltd/projects/)
+-----------------------------------------------------------------------------
 
