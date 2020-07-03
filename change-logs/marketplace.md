@@ -6,6 +6,21 @@ description: >-
 ---
 
 # Marketplace
+### marketplace_v1.0.38 - 2020-07-03
+  
+-----------------------------------------------------------------------------
+Release: marketplace_v1.0.38
+Rollback: marketplace_v1.0.37
+Changes:
+commit | author |description
+  
+- bd664705ceafe9385b43e3004a728318ea8718b2 | NghiaPham <nghiapn@reapit.com> | fix: #1959 submit modal wizzard wrong close modal behavior (#1960)
+
+approver: @willmcvay
+monitor: https://sentry.io/organizations/reapit-ltd/projects/
+-----------------------------------------------------------------------------
+
+    
 
 ### marketplace\_v1.0.37 - 2020-07-03
 
