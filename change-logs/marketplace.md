@@ -8,9 +8,118 @@ description: >-
 # Marketplace
 ### marketplace_v1.0.37 - 2020-07-03
   
-    
+-----------------------------------------------------------------------------
+Release: marketplace_v1.0.37
+Rollback: marketplace_v1.0.34
+Changes:
+commit | author |description
+  
+- b2afd9ae08fa33ea8184b04fea7d261c9746d0a2 | Will McVay <wmcvay@reapit.com> | fix: text change (#1955)
+- 71c8c03a44b2cd1117d8a1321eed822a7db0d2ee | Vu Nguyen <vunp@reapit.com> | fix: #1953 Fix closing submit app modal issue when pressing enter (#1954)
+- 57f6f3b888056873bb3c4c147c88501bb197761f | Will McVay <wmcvay@reapit.com> | fix: addresses issues for release (#1952)
+- 286dc1c584b196f39a348e091758e384ee979bab | Will McVay <wmcvay@reapit.com> | fix: #1948 fix launch uri (#1949)
+- 8c1e97b02c10fb508b3ac4e7ba252a6e80766bbe | Will McVay <wmcvay@reapit.com> | fix: #1946 subscription sagas being loaded twice (#1947)
+- 4ecedf081bdead617f22511371b97b4b241d1700 | Will McVay <wmcvay@reapit.com> | fix: remove redundant text (#1945)
+- 33603d190a5acf7c65d24208fa94aa3004b9ae7e | Pham Hai Duong <duongph@reapit.com> | fix: #1934 validation required for non list app (#1943)
+- f192b56d8ad2b5cf4a8ac5d7999864edd5c3c220 | Will McVay <wmcvay@reapit.com> | feat: #1939 update desktop page content (#1942)* feat: #1939 update desktop page content* fix: pr feedback
+- 8159e95beefd03825935b43323413f4dfd363543 | Khac Vy <vytk@reapit.com> | chore: #1940 Update the text on the ‘Agency Cloud Developer Edition’ modal (#1941)
+- a36a77f1223b1fb01cae49cdc700488085c3464a | Cuong Vu <cuongvh@reapit.com> | fix: #1927 [Marketplace][Admin] Min & Max search date of Dev Management (#1937)
+- 6812193c15f722281aef26ac513dd273de2eebd0 | Vu Nguyen <vunp@reapit.com> | fix: #1923 Fix IE issues in developer portal (#1936)* fix: #1923 Fix UI issues on IE11
+- 2c5e57b32bcc8ea0c59a812050d0f97136df6543 | Khac Vy <vytk@reapit.com> | chore: #1921 Update ui to the submit app wizard (#1931)* chore: #1921 Update ui to the submit app wizard
+- 3dc4d9fb5f1a07c199d49dc36d1708d6ac4ea2dd | Trường An <andt@reapit.com> | fix: developer managements admin layout bug (#1935)
+- 0f5c4e668a1fb9c97abbf56c07b48e6a57672a41 | Trường An <andt@reapit.com> | fix: text overflow table element (#1932)
+- e6102a7249413ab973ff845bfff238f36bab9bd4 | Cuong Vu <cuongvh@reapit.com> | fix: #1926 [Marketplace][Admin] Dev Management search button align (#1930)
+- cc17b7a9297fd0d5dcba7bd42c3958834a69dc9b | Vu Nguyen <vunp@reapit.com> | fix: #1901 Fix UI issues on IE11 (#1914)* fix: #1901 Fix UI issues on IE11* fix: one addtional IE bug fixedCo-authored-by: willmcvay@pm.me <wmcvay@reapit.com>
+- 3ed9e3ecc32c20842b36eb589cbba0a1689d6c09 | Trường An <andt@reapit.com> | chore: #1858 update link to developer edition guide file (#1913)
+- 1a24af2c4538f0f536675ed48906155ac855a47b | NghiaPham <nghiapn@reapit.com> | fix: make submit app wizzard error non dismissable (#1909)
+- 86dd04d5312fde2c08303fdf50de9f67f86120f8 | Khac Vy <vytk@reapit.com> | fix: #1902 fix User can't edit the apps before click edit detail 3 times (#1910)
+- d0e7f7a91c14b875d28ac38bf5b2dccc0bfe18cf | Trường An <andt@reapit.com> | chore: add developer edition download uri as redirect uris (#1912)
+- 80d089ca890f6e48f85614c93ebb9e8b961fa5c3 | Cuong Vu <cuongvh@reapit.com> | feat: #1905 Update PDF pricing link in API Cost Explorer (#1906)
+- 368db1b2eab76710e355bf30923682b64a83c78f | NghiaPham <nghiapn@reapit.com> | fix: #1898 cant delete app two times continuously (#1903)
+- e2fd8f21e9cfadec5a0cfbff357324494886b2e3 | Vu Nguyen <vunp@reapit.com> | feat: #1864 Update organisation tab in dev portal (#1881)* feat: #1864 Update organisation tab in dev portal
+- 3821cdec2205cfe4f10017204186c621842cc320 | Cuong Vu <cuongvh@reapit.com> | fix: #1887 Update the text on the ‘Agency Cloud User Licence’ modal (#1897)
+- 49eab392bfd78a84a6565afbefd5227348a2cc59 | Pham Hai Duong <duongph@reapit.com> | fix: #1900 validation bug in submit app (#1904)
+- 6aac319844b539afe283efa3de3eebd18ebf5213 | NghiaPham <nghiapn@reapit.com> | fix: submit app flow (#1899)
+- a640725b16460c449d495622e68245e08c47a8cd | NghiaPham <nghiapn@reapit.com> | fix: submit app flow (#1888)
+- b31b56cc6904d717d9747d4d02fee1eb6e862e01 | Pham Hai Duong <duongph@reapit.com> | fix: #1769 change text for submit app error message on name field (#1896)
+- d1d1947c4f5ad935bd7238213906ff9a9a47a640 | Will McVay <wmcvay@reapit.com> | feat: #1889 allows developers to install their own apps (#1890)
+- 08fe54a15e67755a49629a5bb010c8fe38679ec7 | Pham Hai Duong <duongph@reapit.com> | fix: #1769 change text for submit app error message on name field (#1886)
+- 5715c187420c9139d6e7a7ad82987378bcd8700f | Will McVay <wmcvay@reapit.com> | feat: #1805 styles refactor (#1869)* feat: start of css refactor* feat: lots of progress on browse apps page* feat: more styles fixed, restructured app containers, fixed flexbox bugs* fix: fixes tests after rebase* feat: loads more styles refactoring* fix: broken test* fix: fixes tests after rebase* fix: fixes tests after rebase* feat: v1 ready for dev* feat: final style tweaks* feat: tests pass locally, ready to PR* fix: pr feedback* fix: fixes desktop page* fix: fixes a test after rebase* fix: broken tests after rebase
+- 1e51724b152bc36248fffba86f4d088feadfef86 | Khac Vy <vytk@reapit.com> | chore: #1848 add developerId to filter get app api (#1885)
+- bad53aacb8036619b46c282ab9a7393ea26044e5 | Pham Hai Duong <duongph@reapit.com> | feat: #1872 developer edition page (#1884)
+- add560a0e9ed7b7b9a60d7cbf31581a5af2687eb | Khac Vy <vytk@reapit.com> | chore: #1836 Move error message to another popup (#1861)* chore: move handle create subscription in developer edition modal
+- 9156673fbaaa56c880cb40e6ba40cbe8bbb62f74 | Trường An <andt@reapit.com> | chore: #1876 update webhook subtext (#1877)
+- 8b012e675bf5730cd7720020cdb7aa9aff45f2d3 | Khac Vy <vytk@reapit.com> | chore: #1870 show profile and billing to non-admins (#1878)* chore: #1870 show profile and billing to non-admins
+- 60f1f56948acec01de905be9729625a2952d5276 | Cuong Vu <cuongvh@reapit.com> | fix: #1294 improve OpenAPI visibility (#1865)
+- 1ecd630596b579102b8db68bd6364366c49f6838 | Cuong Vu <cuongvh@reapit.com> | feat: #1870 add feature flag to hide accounts info in setting billing tab (#1880)
+- 9930d9b699783b555909a31c6e79347ddcdec218 | Pham Hai Duong <duongph@reapit.com> | fix: #1874 button login register should on the right (#1879)
+- ae0a9dd919351f1c863ff2f103983400064616c0 | NghiaPham <nghiapn@reapit.com> | feat: #1799 #1800 submit app flow 2 3 (#1868)
+- 380d81c40af5ef9aa62768fe8d23bcc665cf2e9e | Trường An <andt@reapit.com> | feat: #1858 add Developer Edition Download page (#1867)
+- ad20e92e7841c01dd65548911e90a6d19751794b | Pham Hai Duong <duongph@reapit.com> | chore: add dashify to linaria marketplace (#1863)
+- 28d03c6d9ec400f168a27f6c88b0f15efc2fb3e3 | Khac Vy <vytk@reapit.com> | feat: #1848 filter app lists when using the marketplace in Developer Edition (#1851)* feat: #1848 filter app lists when using the marketplace in Developer Edition
+- 8d47010f9df5797a200835fd7fc325db8cb4e097 | Cuong Vu <cuongvh@reapit.com> | feat: #1824 Remove old submit app, refactor edit app page (#1849)
+- b9f6665356f90aef1eb95d10bf0c6ba3af658b2f | Pham Hai Duong <duongph@reapit.com> | fix: #1743 css issue on helper (#1844)
+- 70797b29fca16ec8e80db15c9c12355867131e5c | Trường An <andt@reapit.com> | feat: #1834 update services bar chart (#1853)
+- 2024405d909f45213bd507220afc7c43a1b32eca | Vu Nguyen <vunp@reapit.com> | refactor: #1835 Update subscriptions table (#1839)
+- 75678f744db4855114e3ffa55d2b1bfe7bcfa2ce | Trường An <andt@reapit.com> | feat: #1831 Update the Services Bar Chart & Cost Explorer to use Developer ID (#1840)
+- 47fad8b81f7f7fe65a090f7adbb892e4b0c7489d | Trường An <andt@reapit.com> | chore: #1033 update negotiator get list api params (#1846)
+- 72a76710db8201ba83c9e5d6fbd9b7a2cca8d50a | Trường An <andt@reapit.com> | chore: #1768 change text image required (#1845)
+- 1b68a32201fb3c49b5d3bc41064a15bbda4c2fe8 | NghiaPham <nghiapn@reapit.com> | feat: #1785 submit app wizard flow 1 (#1830)
+- 98622b06e38b94e73eceafff32bb02e310f841bd | Khac Vy <vytk@reapit.com> | feat: #1836 Present message to Developer when a subscription already exists (#1838)
+- 0faec0092a6c0ee98d96e29bbe9cff7019a0c728 | Trường An <andt@reapit.com> | fix: #1768 only allow select image file in ImageInput element (#1826)
+- cc8b1be9e08a5f22801d19b9e1a79689a196a341 | Vu Nguyen <vunp@reapit.com> | fix: #1742 Fix invalid consumption cost example table markup (#1828)* fix: #1742 Fix invalid consumption cost example table markup
+- e1fa2eeed03b2fc6dae3197f8d5214c3f850968d | Khac Vy <vytk@reapit.com> | feat: #1346 Create set member status modal (#1827)
+- e3aea6cf103371b1ee1e21abf445531bab9b395d | Trường An <andt@reapit.com> | feat: #1347 set another member in my organisation as the admin UI (#1700)
+- 9d6b9c67cd10a7765bbfb78181e93b042cbf8500 | Khac Vy <vytk@reapit.com> | chore: fix typo (#1825)
+- e8631e976bc81f6153222fb120d72af5ac5e670c | Vu Nguyen <vunp@reapit.com> | refactor: #1325 Refactor developer app revision modal using react-redux hooks (#1823)* refactor: #1325 Refactor app revision modal using react-redux hooks
+- 6c23ebb5d7b1a0e5c179a921f4ab573ba45fd75a | Cuong Vu <cuongvh@reapit.com> | refactor: #1670 change validation to yup schema [Markerplace] (#1820)
+- 338beff2022fa77e5d556b73917d5e5d081dae52 | Vu Nguyen <vunp@reapit.com> | refactor: #1325 Refactor installations using react-redux hooks (#1815)* refactor: #1325 Refactor installations using react-redux hooks
+- 513b1bda7a22e6ac2a9347586b173e24698f8472 | NghiaPham <nghiapn@reapit.com> | feat: #1342 ui page organisation admin (#1749)
+- de5959ea2371ad3bef8dae87fb3765d24a1e4a99 | Pham Hai Duong <duongph@reapit.com> | fix: #1770 submit app should limit number char fields (#1814)
+- 892e2f6d25d1e7d368297296bbcd2c1cfefe8e97 | Vu Nguyen <vunp@reapit.com> | refactor: #1325 Refactor confirm uninstall app using react-redux hooks (#1809)
+- 0989671990c0cebbbc8652753532b8d98cc0c66e | NghiaPham <nghiapn@reapit.com> | feat: #1661 update service bar char (#1783)
+- 509762c6b462d3d2343042c7efa754df59a8e640 | Pham Hai Duong <duongph@reapit.com> | fix: #1769 app name should not allow special char (#1813)
+- 35d5be9967dd2c127ffcfce3f1cb17994e98ce38 | Khac Vy <vytk@reapit.com> | feat: #1717 create confirm subscription model (#1786)* feat: #1717 create confirm subscription model
+- 461e9d265f4893de680767d2c2ed27f746117e94 | Cuong Vu <cuongvh@reapit.com> | feat: #1801 Apply Image Cropper to marketplace (#1810)
+- 09abd9dc010992de8a9523b36d7752a2672184f6 | Trường An <andt@reapit.com> | feat: #1660 Update the "Cost Explorer: Usage and Cost" to API v2 (#1807)
+- be4fafb42f450b836ceef380ed9aa5ba87df1485 | Pham Hai Duong <duongph@reapit.com> | fix: #1743 add animation (#1808)
+- ee88832d3edb2afed305ff742ef2437c079863df | Trường An <andt@reapit.com> | feat: #1033 update web component config(#1802)
+- d7774988b710b9ac0e31aee72e8aff76e5182452 | Vu Nguyen <vunp@reapit.com> | refactor: #1325 Refactor toast messages using react-redux hooks (#1803)
+- 4e27a693db33b507afba14be3a68eca232fb8a03 | Cuong Vu <cuongvh@reapit.com> | feat: #1746 <Menu /> component now can auto-detect mode (#1797)
+- ba5e49bf3aecfc450d968921c26d488b5f8769af | Trường An <andt@reapit.com> | feat: #1765 Updates to the ‘Account Information’ section (Billing Tab) (#1791)
+- 92cc55fef72465f5b2218564348de83747591203 | Vu Nguyen <vunp@reapit.com> | refactor: #1325 Refactor developer set status using react-redux hooks (#1798)
+- 63edf335daa9806d5e20c819a97c5e1b9910a697 | Cuong Vu <cuongvh@reapit.com> | feat: #1740 image cropping component (#1788)
+- 5287774c10b580d807ac4eda73b0ca1b0e3a797f | Khac Vy <vytk@reapit.com> | chore: #1776 Update Installations Graph and Current Installations list on ‘Analytics’ page (#1792)
+- 3a656f5ea50306b5fc476104a781738db3017ea6 | Pham Hai Duong <duongph@reapit.com> | fix: #1743 responsive error on wizard (#1796)
+- 677982252094c2cdce07adae6072498fcd45b89b | Vu Nguyen <vunp@reapit.com> | refactor: #1325 Refactor decline revision modal using react-redux hooks (#1795)
+- cb3d845a588fd7aebb4308c695fe9135659cba78 | Vu Nguyen <vunp@reapit.com> | refactor: #1325 Refactor approve revision modal using react-redux hooks (#1789)
+- d8dd75d280a25eb2f28c1bc6726147a9cd147148 | Vu Nguyen <vunp@reapit.com> | refactor: #1325 Refactor app delete using react-redux hooks (#1781)
+- 2b03e8616bab9d1f9a81b5d6c9d2e60d1537dac5 | Vu Nguyen <vunp@reapit.com> | refactor: (#1774) 1325 Refactor app confirm uninstall using react-redux hooks
+- 4dad8c47bd6c2b15cc973d9714a5b445edc908a2 | Pham Hai Duong <duongph@reapit.com> | fix: #1748 remove unuse dependencies and add use dependencies to package.json (#1775)
+- 1ff0e5ea12df8487b424a1571098be99b4b49939 | Vu Nguyen <vunp@reapit.com> | refactor: #1325 Refactor app authentication detail using react-redux hooks (#1771)refactor: #1325 Refactor app authentication detail using react-redux hooks (#1771)
+- 4abf08fa3203a43144de693ce03debc914277bfd | Trường An <andt@reapit.com> | chore: #1718 update Confirm Cancellation modal title, subtext (#1773)
+- afea7ba346eda830ef8aa0c0f0ed9721f2e0fb62 | Vu Nguyen <vunp@reapit.com> | refactor: #1325 Refactor app confirm install using react-redux hooks
+- 70ae5b4b767308fad837634554cc0bb418994863 | Trường An <andt@reapit.com> | feat: #1718 Add a ‘Subscriptions’ table on the ‘Billing’ tab in developers portal (#1739)
+- 864c59f05c75ff65a4670a76f4876896e30b7ec8 | Pham Hai Duong <duongph@reapit.com> | ci: #1748 improve speed for pipeline (#1764)
+- 048cee15c7be268f8f79d8e07032c302202737d1 | Pham Hai Duong <duongph@reapit.com> | feat: #1742 update term and condition tables (#1757)
+- c8308253c534849d6f95775063b786211df17de5 | Trường An <andt@reapit.com> | feat: #1718 The help section should be inside a responsive container (#1753)
+- 01934b60a9fee659532b86e58ef65c56dff994e7 | Cuong Vu <cuongvh@reapit.com> | feat: #1716 add pdf link to developer edition TAC (#1762)
+- e050a4321e99192bbbb2cae2e6c6934495ddbdef | Snyk bot <snyk-bot@snyk.io> | fix: packages/marketplace/package.json & packages/marketplace/.snyk to reduce vulnerabilities (#1734)The following vulnerabilities are fixed with a Snyk patch:- https://snyk.io/vuln/SNYK-JS-LODASH-567746
+- 47951f8800e7b51d7809479d41566c4dcf762f12 | Vu Nguyen <vunp@reapit.com> | refactor: #11325 Refactor admin approval modal using react-redux hooks (#1755)* refactor: #11325 Refactor admin approval modal using new react-redux hooks
+- 14434e5e9311ccd65c01517b6fed8a404297fbf8 | Khac Vy <vytk@reapit.com> | fix: #1593 fix fullname field validation (#1758)
+- f90a334434175bf6f4ca912ab295570013d4746f | Trường An <andt@reapit.com> | fix: #1494 not trim string before validate (#1756)
+- 90dde0c7c75e7d2b9bcf3417d71a2b830fd72442 | Pham Hai Duong <duongph@reapit.com> | feat: 1411 clean up the webpack config for the project (#1744)
+- 006cfe856a5527e99678078666cf29a41674cfa4 | Will McVay <wmcvay@reapit.com> | fix: hotfix to re-add client id on prod (#1752)
+- 686ba89b417aa67f3bdf9dde2e86c8f9970d6f56 | willmcvay@pm.me <willmcvay@pm.me> | fix: hotfix to re-add client id on prod
+- ae8dd50f1194ee2099157669d404b522b9c673a4 | Vu Nguyen <vunp@reapit.com> | feat: #1349 Create UI for billing tab in settings page (#1745)* feat: #1349 Create UI for billing tab
+- f1fdae3452eabab33479cd8886576a4808972869 | Cuong Vu <cuongvh@reapit.com> | feat: #1715 & #1716 Add "Desktop" to NavBar & Add Developer Edition Modal(#1724)
+- 38ed97dc909f4314ebdfbdfa6d0d73015d4c17b0 | Vu Nguyen <vunp@reapit.com> | fix: #1657 preview apps pages UI broken on ie11 (#1725)
+- 73b3c6f9ef8a2278901b54fe3593d2cc9a27bd46 | Pham Hai Duong <duongph@reapit.com> | fix: #1714 update developer registration t and c (#1722)
+- c30056776769e2bd2f0962f9dc703d77e58a92d2 | Trường An <andt@reapit.com> | feat: #1660 update cost explorer table header text (#1721)
 
-## Marketplace
+approver: @willmcvay
+monitor: https://sentry.io/organizations/reapit-ltd/projects/
+-----------------------------------------------------------------------------
 
 #### marketplace\_v1.0.34 - 2020-06-16
 
@@ -160,8 +269,6 @@ Release: marketplace\_v1.0.32 Rollback: marketplace\_v1.0.27 Changes: commit \| 
 approver: @willmcvay
 
 ### monitor: [https://sentry.io/organizations/reapit-ltd/projects/](https://sentry.io/organizations/reapit-ltd/projects/)
-
-## Marketplace
 
 #### marketplace\_v1.0.27 - 2020-05-29
 
