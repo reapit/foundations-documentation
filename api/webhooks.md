@@ -217,9 +217,11 @@ The following table outlines the purpose of each property in the payload
 | `customerId` | The unique identifier of the Reapit customer whom the data event is associated with |
 | `eventTime` | The UTC date and time the event was emitted from our Platform |
 | `topicId` | The topic the event is associated with. See the list outlined in the [Subscription topics ](webhooks.md#subscription-topics)section |
-| `new` | The new version of the entity, if applicable - this property will be null if a user has deleted or archived the entity.  |
+| `new` | The new version of the entity, if applicable - this property will be null if a user has deleted or archived the entity. |
 | `old` | The old version of the entity, if applicable - this property will be null in the event of a _.created_ event. |
 | `diff` | A diff outlining the exact changes between the new/old payloads. The diff is only populated for _.modified_ events where both `new`/`old` representations of the entity are available. |
+
+The content of the `new`, `old`, and `diff` properties in the webhook event payload use the same schema that the respective API endpoints use. For example, if the payload received has a `topicId` of `contacts.modified` then these payload properties will use the same schema as the `GET /contacts` API endpoints
 
 ### Testing
 
