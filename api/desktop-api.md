@@ -11,7 +11,7 @@ The Desktop API is not available during the Beta period.
 {% endhint %}
 
 {% hint style="info" %}
-To obtain a copy of Reapit's Agency Cloud CRM, you must be sponsored by a Reapit Client.
+To obtain a copy of Reapit's Agency Cloud CRM \(Developer Edition\), please visit the '[Desktop](https://marketplace.reapit.cloud/developer/desktop)' page within the Developers Portal.
 {% endhint %}
 
 ### Overview
