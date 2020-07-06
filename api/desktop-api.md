@@ -6,10 +6,6 @@ description: >-
 
 # Desktop
 
-{% hint style="danger" %}
-The Desktop API is not available during the Beta period.
-{% endhint %}
-
 {% hint style="info" %}
 To obtain a copy of Reapit's Agency Cloud CRM \(Developer Edition\), please visit the '[Desktop](https://marketplace.reapit.cloud/developer/desktop)' page within the Developers Portal. NOTE Reapit does not provide technical support for Developer Edition.
 {% endhint %}
