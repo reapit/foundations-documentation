@@ -10,6 +10,10 @@ description: >-
 To obtain a copy of Reapit's Agency Cloud CRM \(Developer Edition\), please visit the '[Desktop](https://marketplace.reapit.cloud/developer/desktop)' page within the Developers Portal. NOTE Reapit does not provide technical support for Developer Edition.
 {% endhint %}
 
+{% hint style="warning" %}
+During the Beta period certain elements of Agency Cloud may not function end-to-end with a web application.  For example, pictures or documents added to Agency Cloud via the desktop will not be available via the platform. 
+{% endhint %}
+
 ### Overview
 
 Applications that are built on our Foundations Platform are able to communicate with Reapit's Agency Cloud CRM system. Using a well-defined API, you are able to trigger a wide variety of actions in our award-winning desktop application to augment your own applications and build a rich integration between systems.
