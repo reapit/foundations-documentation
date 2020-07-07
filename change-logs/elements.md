@@ -6,6 +6,24 @@ description: &gt;- Below you will find a listing of the recent changes we have m
 
 ## Elements
 
+### elements_v0.5.61 - 2020-07-07
+  
+-----------------------------------------------------------------------------
+Release: elements_v0.5.61
+Rollback: elements_v0.5.60
+Changes:
+commit | author |description
+  
+- e9c775e794cd380746fc6a3de9dc6c942b59e3a1 | NghiaPham <nghiapn@reapit.com> | fix: #1978 elements production issue cant resolve reapit utils (#1979)
+- e888130ae0d5a9cc186fc735567fa1a5aed9bf15 | Vu Nguyen <vunp@reapit.com> | refactor: #1891 Apply new styles and containers to geo diary app (#1976)* refactor: #1891 Update Geo Diary styles
+- f9fd8baba4ab84e63c33bbca725bc65dde504c7e | Trường An <andt@reapit.com> | refactor: #1892 Apply new styles and containers to AML App (#1972)
+- e4858184d0fc0db0268d5adcf936dff0b2c26513 | Snyk bot <snyk-bot@snyk.io> | [Snyk] Upgrade react-table from 7.1.0 to 7.2.0 (#1922)
+
+approver: @willmcvay
+monitor: https://sentry.io/organizations/reapit-ltd/projects/
+-----------------------------------------------------------------------------
+
+    
 ### elements\_v0.5.59 - 2020-06-15
 
 Release: elements\_v0.5.59 Rollback: elements\_v0.5.59-beta.1 Changes: commit \| author \|description
