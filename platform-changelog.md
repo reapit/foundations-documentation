@@ -9,6 +9,10 @@ description: >-
 
 ## May 2020
 
+#### 2020-07-10
+
+* [\#1998](https://github.com/reapit/foundations/issues/1998) - The properties API will now allow for read and write of `selling.disposal` attribute, used to describe the method to be used to sell a property
+
 #### 2020-06-23
 
 * [\#1819](https://github.com/reapit/foundations/issues/1819) - Fixed issue with the way the `marketingMode` parameter was evaluated for `GET /properties` that could cause problems with address searching
