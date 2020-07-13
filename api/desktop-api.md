@@ -357,7 +357,7 @@ This desktop type will take affect in Agency Cloud when the following button is 
 
 ### Property Marketing Information
 
-The type of _Property Marketing Information_ can be given to an application that can replace the standard property marketing screen in Agency Cloud. This is the most commonly customised screen in Agency Cloud as it allows clients the opportunity to store bespoke information for their busness.  The globals dictionary will contain the below key when launched by agency cloud for a specific property:
+The type of _Property Marketing Information_ can be given to an application that can replace the standard property marketing screen in Agency Cloud. This is the most commonly customised screen in Agency Cloud as it allows clients the opportunity to store bespoke information for their business.  The globals dictionary will contain the below key when launched by agency cloud for a specific property:
 
 ```text
 { "prpCode": "ABC201023" }
@@ -424,33 +424,117 @@ An application of this type would be triggered in two ways from Agency Cloud:
 
 ### Landlord
 
-The type of _Landlord_ will be given to an application that can be launched for a specific landlord from Agency Cloud
+The type of _Landlord_ will be given to an application that can be launched for a specific landlord from Agency Cloud. The globals dictionary will contain the below key when launched by agency cloud for a specific landlord:
+
+```text
+{ "lldCode": "ABC200123" }
+```
+
+| Parameter | Type | Description | Required |
+| :--- | :--- | :--- | :--- |
+| lldCode | string | The primary key of the landlord to load the application for \(note that this won’t be present when the app loads from the marketplace, but the app needs to be able to accept this parameter when it is launched via the desktop type route\). | Yes |
+
+When an app with a type of Landlord is installed then an Apps menu will appear on the Landlord screen.  Clicking on an app will launch it with the landlord code.
+
+![Apps button on landlord screen \(when lettings accounts is turned off\)](../.gitbook/assets/image%20%2842%29.png)
+
+![Apps button on landlord screen \(when lettings accounts is turned on\) ](../.gitbook/assets/image%20%2841%29.png)
 
 ### Contact
 
-The type of _Contact_ will be given to an application that can be launched for a specific contact from Agency Cloud
+The type of _Contact_ will be given to an application that can be launched for a specific contact from Agency Cloud. The globals dictionary will contain the below key when launched by agency cloud for a specific contact:
+
+```text
+{ "cntCode": "ABC20012345" }
+```
+
+| Parameter | Type | Description | Required |
+| :--- | :--- | :--- | :--- |
+| cntCode | string | The primary key of the contact to load the application for \(note that this won’t be present when the app loads from the marketplace, but the app needs to be able to accept this parameter when it is launched via the desktop type route\). | Yes |
+
+When an app with a type of Contact is installed then an Apps menu will appear on the Contact screen.  Clicking on an app will launch it with the contact code.
+
+![Apps button on the contact screen](../.gitbook/assets/image%20%2829%29.png)
 
 ### Company
 
-The type of _Company_ will be given to an application that can be launched for a specific company from Agency Cloud
+The type of _Company_ will be given to an application that can be launched for a specific company from Agency Cloud. The globals dictionary will contain the below key when launched by agency cloud for a specific company:
+
+```text
+{ "cmpCode": "ABC20012345" }
+```
+
+| Parameter | Type | Description | Required |
+| :--- | :--- | :--- | :--- |
+| cmpCode | string | The primary key of the company to load the application for \(note that this won’t be present when the app loads from the marketplace, but the app needs to be able to accept this parameter when it is launched via the desktop type route\). | Yes |
+
+When an app with a type of Company is installed then an Apps menu will appear on the Company screen.  Clicking on an app will launch it with the company code.
+
+![Apps button on the c](../.gitbook/assets/image%20%2845%29.png)
 
 ### Tenancy
 
-The type of _Tenancy_ will be given to an application that can be launched for a specific tenancy from Agency Cloud
+The type of _Tenancy_ will be given to an application that can be launched for a specific tenancy from Agency Cloud. The globals dictionary will contain the below key when launched by agency cloud for a specific tenancy:
+
+```text
+{ "tenCode": "ABC200123" }
+```
+
+| Parameter | Type | Description | Required |
+| :--- | :--- | :--- | :--- |
+| tenCode | string | The primary key of the tenancy to load the application for \(note that this won’t be present when the app loads from the marketplace, but the app needs to be able to accept this parameter when it is launched via the desktop type route\). | Yes |
+
+When an app with a type of Tenancy is installed then an Apps menu will appear on the Tenancy screen.  Clicking on an app will launch it with the tenancy code.
+
+![Apps button on tenancy screen](../.gitbook/assets/image%20%2831%29.png)
 
 ### Offer
 
-The type of _Offer_ will be given to an application that can be launched for a specific offer from Agency Cloud
+The type of _Offer_ will be given to an application that can be launched for a specific offer from Agency Cloud. The globals dictionary will contain the below key when launched by agency cloud for a specific offer:
+
+```text
+{ "offerCode": "ABC200123" }
+```
+
+| Parameter | Type | Description | Required |
+| :--- | :--- | :--- | :--- |
+| offerCode | string | The primary key of the offer to load the application for \(note that this won’t be present when the app loads from the marketplace, but the app needs to be able to accept this parameter when it is launched via the desktop type route\). | Yes |
+
+When an app with a type of Offer is installed then an Apps menu will appear on the Offer screen.  Clicking on an app will launch it with the code of the **selected** offer.
+
+![Apps button on the offer screen](../.gitbook/assets/image%20%2846%29.png)
 
 ### Sales Progression
 
-The type of _Sales Progression_ will be given to an application that can be launched in place of the standard Sales Progression screen in Agency Cloud.
+The type of _Sales Progression_ will be given to an application that can be launched in place of the standard Sales Progression screen in Agency Cloud.  The globals dictionary will contain the below key when launched by agency cloud for a specific property:
+
+```text
+{ "prpCode": "ABC201023" }
+```
+
+| Parameter | Type | Description | Required |
+| :--- | :--- | :--- | :--- |
+| prpCode | string | The primary key of the property to load the sales progression information app for \(note that this won’t be present when the app loads from the marketplace, but the app needs to be able to accept this parameter when it is launched via the app association route\). | Yes |
+
+An application of this type can be launched from the _Sales Progression_ button on the offers screen in Agency Cloud:
+
+![Sales progression button on the offers screen](../.gitbook/assets/image%20%2844%29.png)
 
 ### Chain Management
 
-The type of _Chain Management_ will be given to an application that can be launched in place of the standard Chain screen in Agency Cloud.
+The type of _Chain Management_ will be given to an application that can be launched in place of the standard Chain screen in Agency Cloud.  The globals dictionary will contain the below key when launched by agency cloud for a specific property:
 
-### 
+```text
+{ "prpCode": "ABC201023" }
+```
+
+| Parameter | Type | Description | Required |
+| :--- | :--- | :--- | :--- |
+| prpCode | string | The primary key of the property to load the chain management information app for \(note that this won’t be present when the app loads from the marketplace, but the app needs to be able to accept this parameter when it is launched via the app association route\). | Yes |
+
+An application of this type can be launched from the _Chain_ button on the offers screen in Agency Cloud:
+
+![](../.gitbook/assets/image%20%2830%29.png)
 
 
 
