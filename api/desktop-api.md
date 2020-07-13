@@ -470,7 +470,7 @@ The type of _Company_ will be given to an application that can be launched for a
 
 When an app with a type of Company is installed then an Apps menu will appear on the Company screen.  Clicking on an app will launch it with the company code.
 
-![Apps button on the c](../.gitbook/assets/image%20%2845%29.png)
+![Apps button on the company screen](../.gitbook/assets/image%20%2845%29.png)
 
 ### Tenancy
 
@@ -534,7 +534,7 @@ The type of _Chain Management_ will be given to an application that can be launc
 
 An application of this type can be launched from the _Chain_ button on the offers screen in Agency Cloud:
 
-![](../.gitbook/assets/image%20%2830%29.png)
+![Chain button on the offers screen](../.gitbook/assets/image%20%2830%29.png)
 
 
 

@@ -6,14 +6,20 @@ description: >-
 ---
 
 # Foundations TS Definitions
-
-### foundations-ts-definitions\_v0.0.81 - 2020-06-17
-
-Release: foundations-ts-definitions\_v0.0.81 Rollback: foundations-ts-definitions\_v0.0.81 Changes: commit \| author \|description
+### foundations-ts-definitions_v0.0.81 - 2020-06-17
+  
+-----------------------------------------------------------------------------
+Release: foundations-ts-definitions_v0.0.81
+Rollback: foundations-ts-definitions_v0.0.81
+Changes:
+commit | author |description
+  
 
 approver: @willmcvay
+monitor: https://sentry.io/organizations/reapit-ltd/projects/
+-----------------------------------------------------------------------------
 
-## monitor: [https://sentry.io/organizations/reapit-ltd/projects/](https://sentry.io/organizations/reapit-ltd/projects/)
+    
 
 ### foundations-ts-definitions\_v0.0.79 - 2020-04-08
 
