@@ -6,6 +6,37 @@ description: >-
 ---
 
 # Marketplace
+### marketplace_v2.0.0 - 2020-07-16
+  
+-----------------------------------------------------------------------------
+Release: marketplace_v2.0.0
+Rollback: marketplace_v1.0.38
+Changes:
+commit | author |description
+  
+- d3df4f4da85d5e03855fc0d524a269ac93127a76 | Cuong Vu <cuongvh@reapit.com> | feat: #2011 Setting up Debit & integrate API in Dev Portal Setting billing tab (#2071)
+- eab694e84b670fafb7a8c4abcfbacfc37610ce2c | Vu Nguyen <vunp@reapit.com> | feat: #1917 Rework developer preview app (#2066)
+- 67ae948ea1eafc741432abab42baf0533caa2cd6 | Pham Hai Duong <duongph@reapit.com> | feat: #1920 reapit elements next init packages (#2065)
+- 55813fa697d3a2d42d0768e742459706ab9744cf | NghiaPham <nghiapn@reapit.com> | chore: #1997 update the routing and app title for the marketplace portal (#2055)
+- 300e3790d2f6e9ec4407d897c198a2f282456723 | Pham Hai Duong <duongph@reapit.com> | fix: #2026 scroll bar at element level (#2060)
+- cdb101cf7f0c8838b959c6dca0d46391642e1368 | Trường An <andt@reapit.com> | refactor: #1918 refactor marketplace component, purge unused assets (#2034)
+- 44660c1617a6b21a4a6006127702258d9d106959 | Trường An <andt@reapit.com> | chore: #1918 remove developer portal from marketplace (#2030)
+- e0dbee8b7ea6239deebbb659ec65cbfe2a3453bc | Trường An <andt@reapit.com> | chore: remove admin portal code from marketplace (#2020)
+- 93e9b343900b39b7a748ed40d29c06bfc2ffc8aa | NghiaPham <nghiapn@reapit.com> | chore: #1893 update build scripts (#2010)
+- c1189c4bd448791bb95cc285667237e7ed980965 | Trường An <andt@reapit.com> | chore: remove unused routes from marketplacey (#2016)
+- 2c5a537d75e0c846b804bc18cd792bc2cb6cff3a | Trường An <andt@reapit.com> | chore: #1918 remove unused code from marketplace login page (#2008)
+- f8350237eeee3afcc54dbe66ce5e3a4801cba3c3 | Pham Hai Duong <duongph@reapit.com> | fix: #1037 map component in reapit element (#1989)
+- ac72573cc48d7253f00eac716eb8c3f8a324bafa | NghiaPham <nghiapn@reapit.com> | chore: #1961 update the filtering options on the detailed tab in analytics (#1980)* chore: #1961 update filter by: today, last7, last30 days + default fetch is last7* chore: #1961 able to choose today in date range picker - analytics page* chore: #1961 reflect day from initialize filter bar to date range - analytics page
+- 56b2056ac25f3abd407452abd6b4f58d6f08bba0 | Trường An <andt@reapit.com> | feat: #1971 Only display endpoints (itemCount) for ‘API Requests’ (#1977)
+- d6682862ce55689d97e40f5671cb254934a500ff | Khac Vy <vytk@reapit.com> | chore: #1962 Remove email casing on the ‘Cost Explorer’ (#1974)
+- a18e8b5cb645eb19f61439cb6ed5cb00719f6871 | Cuong Vu <cuongvh@reapit.com> | fix: #1956 fix placeholder in mobile view client portal (#1973)
+- e4858184d0fc0db0268d5adcf936dff0b2c26513 | Snyk bot <snyk-bot@snyk.io> | [Snyk] Upgrade react-table from 7.1.0 to 7.2.0 (#1922)
+
+approver: @willmcvay
+monitor: https://sentry.io/organizations/reapit-ltd/projects/
+-----------------------------------------------------------------------------
+
+    
 ### marketplace_v1.0.37 - 2020-07-03
   
 -----------------------------------------------------------------------------
