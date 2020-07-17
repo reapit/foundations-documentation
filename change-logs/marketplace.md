@@ -36,6 +36,20 @@ approver: @willmcvay
 monitor: https://sentry.io/organizations/reapit-ltd/projects/
 -----------------------------------------------------------------------------
 
+### marketplace_v2.0.1 - 2020-07-17
+  
+-----------------------------------------------------------------------------
+Release: marketplace_v2.0.1
+Rollback: marketplace_v2.0.0
+Changes:
+commit | author |description
+  
+- fab59c55f5de1d3a0a0fbaa8226022c021ec69d3 | NghiaPham <nghiapn@reapit.com> | fix: #1997 fix admin redirect modal on marketplace (#2083)
+
+approver: @willmcvay
+monitor: https://sentry.io/organizations/reapit-ltd/projects/
+-----------------------------------------------------------------------------
+
     
 ### marketplace_v1.0.37 - 2020-07-03
   
