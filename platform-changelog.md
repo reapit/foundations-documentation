@@ -9,6 +9,10 @@ description: >-
 
 ## May 2020
 
+#### 2020-07-21
+
+* Added new `totalPageCount` property to paged responses to indicate the total number of pages available in the response
+
 #### 2020-07-10
 
 * [\#1998](https://github.com/reapit/foundations/issues/1998) - The properties API will now allow for read and write of `selling.disposal` attribute, used to describe the method to be used to sell a property

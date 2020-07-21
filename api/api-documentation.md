@@ -230,7 +230,6 @@ For example, `GET /contacts?pageSize=10&pageNumber=2` will return the second pag
 | `pageSize` | The requested number of records per page. Default is 25 and maximum 100 unless specified |
 | `pageNumber` | The page number that this response represents |
 | `pageCount` | The actual number of records that the current page contains |
-| `totalPageCount` | The total number of pages available in the response |
 | `totalCount` | The total number of resources available that fulfil the criteria of the current request |
 | `_embedded` | The list of resources that have been returned in this paged response |
 
