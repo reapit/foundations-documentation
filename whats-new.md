@@ -7,6 +7,32 @@ description: >-
 
 # What’s New
 
+## 06/07/20
+
+### Agency Cloud Developer Edition
+
+The highly anticipated Developer Edition of the Reapit Agency Cloud CRM is now available to download. This is an incredible milestone that we have been working very hard to deliver and is now available to our developers free of charge during the Beta Phase.
+
+![](.gitbook/assets/image%20%2849%29.png)
+
+You will have the ability to test your app and interact with sandbox data using the CRM interface. Seeing in real time how customers will use and view your app inside the desktop application.
+
+For more information, please visit the ‘[Desktop](https://marketplace.reapit.cloud/developer/desktop)’ page within the Developers Portal.
+
+### New App Registration
+
+The latest release has redesigned the way you submit an app. It is now easier to get building & testing through Foundations.
+
+When you submit an app through the Developers Portal, you will be presented with a step-by-step wizard and will only need to provide an App Name, select/provide the authentication method & permissions \(scopes\). Once completed you will be presented the relevant access tokens/ID's to work with our APIs.  
+
+![Create New App Wizard](.gitbook/assets/image%20%2847%29.png)
+
+There is no requirement at this stage to add an icon/images/description etc until you are ready to list your app in the Marketplace.
+
+When your app is ready to be listed, simple tick the ‘Is Listed’ box on the ‘Edit Details’ page. This will then let you know what information is needed to ensure your listing is meets the requirements to be available in the Marketplace. You can find more information on providing your app listing content, [here](https://foundations-documentation.reapit.cloud/developer-portal#3-register-an-app). 
+
+For more information on submitting an app, please click [here. ](https://foundations-documentation.reapit.cloud/developer-portal#3-register-an-app)
+
 ## 29/06/20
 
 ### App Revisions

@@ -6,47 +6,37 @@ description: &gt;- Below you will find a listing of the recent changes we have m
 
 ## Elements
 
-### elements_v0.5.61 - 2020-07-07
-  
------------------------------------------------------------------------------
-Release: elements_v0.5.61
-Rollback: elements_v0.5.60
-Changes:
-commit | author |description
-  
-- e9c775e794cd380746fc6a3de9dc6c942b59e3a1 | NghiaPham <nghiapn@reapit.com> | fix: #1978 elements production issue cant resolve reapit utils (#1979)
-- e888130ae0d5a9cc186fc735567fa1a5aed9bf15 | Vu Nguyen <vunp@reapit.com> | refactor: #1891 Apply new styles and containers to geo diary app (#1976)* refactor: #1891 Update Geo Diary styles
-- f9fd8baba4ab84e63c33bbca725bc65dde504c7e | Trường An <andt@reapit.com> | refactor: #1892 Apply new styles and containers to AML App (#1972)
-- e4858184d0fc0db0268d5adcf936dff0b2c26513 | Snyk bot <snyk-bot@snyk.io> | [Snyk] Upgrade react-table from 7.1.0 to 7.2.0 (#1922)
+### elements\_v0.5.61 - 2020-07-07
+
+Release: elements\_v0.5.61 Rollback: elements\_v0.5.60 Changes: commit \| author \|description
+
+* e9c775e794cd380746fc6a3de9dc6c942b59e3a1 \| NghiaPham [nghiapn@reapit.com](mailto:nghiapn@reapit.com) \| fix: \#1978 elements production issue cant resolve reapit utils \(\#1979\)
+* e888130ae0d5a9cc186fc735567fa1a5aed9bf15 \| Vu Nguyen [vunp@reapit.com](mailto:vunp@reapit.com) \| refactor: \#1891 Apply new styles and containers to geo diary app \(\#1976\)\* refactor: \#1891 Update Geo Diary styles
+* f9fd8baba4ab84e63c33bbca725bc65dde504c7e \| Trường An [andt@reapit.com](mailto:andt@reapit.com) \| refactor: \#1892 Apply new styles and containers to AML App \(\#1972\)
+* e4858184d0fc0db0268d5adcf936dff0b2c26513 \| Snyk bot [snyk-bot@snyk.io](mailto:snyk-bot@snyk.io) \| \[Snyk\] Upgrade react-table from 7.1.0 to 7.2.0 \(\#1922\)
+
+approver: @willmcvay monitor: [https://sentry.io/organizations/reapit-ltd/projects/](https://sentry.io/organizations/reapit-ltd/projects/)
+
+### elements\_v1.0.0-alpha.1 - 2020-07-16
+
+Release: elements\_v1.0.0-alpha.1 Rollback: elements\_v0.5.61 Changes: commit \| author \|description
+
+* eab694e84b670fafb7a8c4abcfbacfc37610ce2c \| Vu Nguyen [vunp@reapit.com](mailto:vunp@reapit.com) \| feat: \#1917 Rework developer preview app \(\#2066\)
+* 67ae948ea1eafc741432abab42baf0533caa2cd6 \| Pham Hai Duong [duongph@reapit.com](mailto:duongph@reapit.com) \| feat: \#1920 reapit elements next init packages \(\#2065\)
+* 55813fa697d3a2d42d0768e742459706ab9744cf \| NghiaPham [nghiapn@reapit.com](mailto:nghiapn@reapit.com) \| chore: \#1997 update the routing and app title for the marketplace portal \(\#2055\)
+* 300e3790d2f6e9ec4407d897c198a2f282456723 \| Pham Hai Duong [duongph@reapit.com](mailto:duongph@reapit.com) \| fix: \#2026 scroll bar at element level \(\#2060\)
+* 1d16de391c2eb7f4c80b531d8dcad5cc1be3514d \| Snyk bot [snyk-bot@snyk.io](mailto:snyk-bot@snyk.io) \| \[Snyk\] Upgrade react-table from 7.2.0 to 7.2.1 \(\#2040\) _fix: upgrade react-table from 7.2.0 to 7.2.1Snyk has created this PR to upgrade react-table from 7.2.0 to 7.2.1.See this package in NPM:_[https://www.npmjs.com/package/react-tableSee](https://www.npmjs.com/package/react-tableSee) _this project in Snyk:_[https://app.snyk.io/org/reapit/project/fb568965-bd93-4bc6-9a64-9b23b0c87308?utm\_source=github&utm\_medium=upgrade-pr](https://app.snyk.io/org/reapit/project/fb568965-bd93-4bc6-9a64-9b23b0c87308?utm_source=github&utm_medium=upgrade-pr) chore: upgrade react-tableCo-authored-by: Duong Pham [tanphamhaiduong@gmail.com](mailto:tanphamhaiduong@gmail.com)
+* 837f081d9875987eee52f687534808c656d38045 \| Pham Hai Duong [duongph@reapit.com](mailto:duongph@reapit.com) \| feat: \#2027 move elements v2 to v1 folder \(\#2057\)
+* d5c8ce2beae7a39640b87c562fa3a2eadd2f68e8 \| Will McVay [wmcvay@reapit.com](mailto:wmcvay@reapit.com) \| feat: \#2024 scaffolder v1 first alpha \(\#2039\) _feat: adds external scaffolded apps_ feat: adds internal scaffolds _feat: wip_ feat: wip _feat: basic structure seems to be working_ feat: rename new folder to app _feat: revert some lost files_ feat: wip _feat: external apps both working locally_ feat: internal scaffolds good, needs testing\* feat: all scaffolds working, tested
+* 2cf41c0564256354047302963b3419f50760f57e \| Pham Hai Duong [duongph@reapit.com](mailto:duongph@reapit.com) \| feat: \#1037 add style for rc dialog \(\#2028\)
+* 27d56eedbd7553a56dc728f7d9840a46ec0f3af6 \| Pham Hai Duong [duongph@reapit.com](mailto:duongph@reapit.com) \| feat: \#1037 appointment detail \(\#2006\)
+* bba71244e58215f0a1f0d012a907c6e870c3fd15 \| Pham Hai Duong [duongph@reapit.com](mailto:duongph@reapit.com) \| feat: \#1037 add modal for elements \(\#2003\)
+* f8350237eeee3afcc54dbe66ce5e3a4801cba3c3 \| Pham Hai Duong [duongph@reapit.com](mailto:duongph@reapit.com) \| fix: \#1037 map component in reapit element \(\#1989\)
 
 approver: @willmcvay
-monitor: https://sentry.io/organizations/reapit-ltd/projects/
 
-### elements_v1.0.0-alpha.1 - 2020-07-16
-  
------------------------------------------------------------------------------
-Release: elements_v1.0.0-alpha.1
-Rollback: elements_v0.5.61
-Changes:
-commit | author |description
-  
-- eab694e84b670fafb7a8c4abcfbacfc37610ce2c | Vu Nguyen <vunp@reapit.com> | feat: #1917 Rework developer preview app (#2066)
-- 67ae948ea1eafc741432abab42baf0533caa2cd6 | Pham Hai Duong <duongph@reapit.com> | feat: #1920 reapit elements next init packages (#2065)
-- 55813fa697d3a2d42d0768e742459706ab9744cf | NghiaPham <nghiapn@reapit.com> | chore: #1997 update the routing and app title for the marketplace portal (#2055)
-- 300e3790d2f6e9ec4407d897c198a2f282456723 | Pham Hai Duong <duongph@reapit.com> | fix: #2026 scroll bar at element level (#2060)
-- 1d16de391c2eb7f4c80b531d8dcad5cc1be3514d | Snyk bot <snyk-bot@snyk.io> | [Snyk] Upgrade react-table from 7.2.0 to 7.2.1 (#2040)* fix: upgrade react-table from 7.2.0 to 7.2.1Snyk has created this PR to upgrade react-table from 7.2.0 to 7.2.1.See this package in NPM:https://www.npmjs.com/package/react-tableSee this project in Snyk:https://app.snyk.io/org/reapit/project/fb568965-bd93-4bc6-9a64-9b23b0c87308?utm_source=github&utm_medium=upgrade-pr* chore: upgrade react-tableCo-authored-by: Duong Pham <tanphamhaiduong@gmail.com>
-- 837f081d9875987eee52f687534808c656d38045 | Pham Hai Duong <duongph@reapit.com> | feat: #2027 move elements v2 to v1 folder (#2057)
-- d5c8ce2beae7a39640b87c562fa3a2eadd2f68e8 | Will McVay <wmcvay@reapit.com> | feat: #2024 scaffolder v1 first alpha (#2039)* feat: adds external scaffolded apps* feat: adds internal scaffolds* feat: wip* feat: wip* feat: basic structure seems to be working* feat: rename new folder to app* feat: revert some lost files* feat: wip* feat: external apps both working locally* feat: internal scaffolds good, needs testing* feat: all scaffolds working, tested
-- 2cf41c0564256354047302963b3419f50760f57e | Pham Hai Duong <duongph@reapit.com> | feat: #1037 add style for rc dialog (#2028)
-- 27d56eedbd7553a56dc728f7d9840a46ec0f3af6 | Pham Hai Duong <duongph@reapit.com> | feat: #1037 appointment detail (#2006)
-- bba71244e58215f0a1f0d012a907c6e870c3fd15 | Pham Hai Duong <duongph@reapit.com> | feat: #1037 add modal for elements (#2003)
-- f8350237eeee3afcc54dbe66ce5e3a4801cba3c3 | Pham Hai Duong <duongph@reapit.com> | fix: #1037 map component in reapit element (#1989)
+## monitor: [https://sentry.io/organizations/reapit-ltd/projects/](https://sentry.io/organizations/reapit-ltd/projects/)
 
-approver: @willmcvay
-monitor: https://sentry.io/organizations/reapit-ltd/projects/
------------------------------------------------------------------------------
-
-    
 ### elements\_v0.5.59 - 2020-06-15
 
 Release: elements\_v0.5.59 Rollback: elements\_v0.5.59-beta.1 Changes: commit \| author \|description
