@@ -7,6 +7,28 @@ description: >-
 
 # What’s New
 
+## 23/07/20
+
+### New Agency Cloud Integration types
+
+The list of available Agency Cloud Integration types has been updated and now include the following additional options:
+
+* Landlord
+* Contact
+* Company
+* Tenancy
+* Offer
+* Sales Progression
+* Chain Management
+
+You can select the type of integration your app requires on the ‘Agency Cloud Integration’ section when you edit your app listing.
+
+![Agency Cloud Integration Section](.gitbook/assets/image%20%2850%29.png)
+
+The list will continue to grow as we understand more about what our developers are building and how they wish to integrate within Agency Cloud.
+
+For more information on Integration Types, please click [here](https://foundations-documentation.reapit.cloud/api/desktop-api#desktop-types).
+
 ## 06/07/20
 
 ### Agency Cloud Developer Edition
