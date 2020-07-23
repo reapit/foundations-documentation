@@ -6,4 +6,18 @@ description: >-
 ---
 
 # Reapit Connect Session
+### connect-session_1.0.0-alpha.1 - 2020-07-23
+  
+-----------------------------------------------------------------------------
+Release: connect-session_1.0.0-alpha.1
+Rollback: connect-session_1.0.0-alpha.1
+Changes:
+commit | author |description
+  
+
+approver: @willmcvay
+monitor: https://sentry.io/organizations/reapit-ltd/projects/
+-----------------------------------------------------------------------------
+
+    
 
