@@ -6,4 +6,7 @@ description: >-
 ---
 
 # Create react app template foundations
+### cra-template-foundations_1.0.0-alpha.2 - 2020-07-23
+  
+    
 
