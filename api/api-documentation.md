@@ -187,6 +187,10 @@ You must additionally include a `reapit-customer` header in your request so that
 
 If a customer chooses to uninstall your application then your access to their data will be revoked.
 
+{% hint style="info" %}
+We recommend using our webhooks system to be instantly notified when a Reapit customer installs your application. See our [webhooks documentation](webhooks.md)  for more information.
+{% endhint %}
+
 ## Sandbox mode
 
 You can use the Foundations APIs in Sandbox mode which provides a set of demonstration data that can be interacted with without requiring a customer to install your application. Sandbox mode supports processing of all read and write requests so that you can build and test in confidence without impacting customer data.
