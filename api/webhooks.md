@@ -75,6 +75,8 @@ We currently support the following topics, but this will increase over time. Ple
 
 | Topic | Description | Required scopes |
 | :--- | :--- | :--- |
+| **application.install** | Occurs when a customer installs an application in the Marketplace | None |
+| **application.uninstall** | Occurs when a customer uninstalls an application in the Marketplace | None |
 | **applicants.created** | Occurs when a new [applicant](https://foundations-documentation.reapit.cloud/platform-glossary#applicant) is created | `applicants.read` |
 | **applicants.modified** | Occurs when an existing [applicant](https://foundations-documentation.reapit.cloud/platform-glossary#applicant) is modified, or any of the associated [contacts](https://foundations-documentation.reapit.cloud/platform-glossary#contact) are modified | `applicants.read` |
 | **appointments.created** | Occurs when a new [appointment](https://foundations-documentation.reapit.cloud/platform-glossary#appointment) is created | `appointments.read` |
