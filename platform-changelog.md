@@ -9,6 +9,10 @@ description: >-
 
 ## May 2020
 
+**2020-07-24**
+
+* [\#1124](https://github.com/reapit/foundations/issues/1124) Added new webhook topics `application.install` and `application.uninstall` to provide notifications when a customer installs/uninstalls an app in the Marketplace. For more information see the [Webhooks documentation](api/webhooks.md#available-topics)
+
 #### 2020-07-21
 
 * Added new `totalPageCount` property to paged responses to indicate the total number of pages available in the response
