@@ -7,7 +7,7 @@ description: >-
 
 # Platform Change Log
 
-## May 2020
+## July 2020
 
 **2020-07-24**
 
@@ -20,6 +20,8 @@ description: >-
 #### 2020-07-10
 
 * [\#1998](https://github.com/reapit/foundations/issues/1998) - The properties API will now allow for read and write of `selling.disposal` attribute, used to describe the method to be used to sell a property
+
+## June 2020
 
 #### 2020-06-23
 
@@ -39,6 +41,8 @@ description: >-
 #### 2020-06-03
 
 * [\#1502](https://github.com/reapit/foundations/issues/1502) - Fixed issue that meant the wrong identifier could be presented in the GET /conveyancing model
+
+## May 2020
 
 #### 2020-05-29
 
