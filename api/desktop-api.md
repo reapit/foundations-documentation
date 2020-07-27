@@ -20,6 +20,16 @@ Applications that are built on our Foundations Platform are able to communicate 
 
 _Note_ - apps cannot rely on cookies/local storage being available between separate instances of Agency Cloud.  Therefore any data which will need to be shared between separate sessions will need to be handled outside of these methods.
 
+#### Debugging your App
+
+When you are testing your app inside of Agency Cloud Developer Edition then there is a button top left of the app window which will allow launching of the Chromium Developer Tools in a separate window.  
+
+![Remote debugging button on the app ribbon bar](../.gitbook/assets/image%20%2851%29.png)
+
+Clicking this button will launch a separate window which hosts the developer tools:
+
+![Remote debugging via the developer tools window](../.gitbook/assets/image%20%2852%29.png)
+
 ### URL Scheme
 
 When a Marketplace application is launched and hosted within Agency Cloud, that application can interact with Agency Cloud by using our custom URI scheme. When a user triggers a link with an agencycloud: prefix, Agency Cloud will interpret that action and perform the corresponding action.

@@ -6,29 +6,24 @@ description: >-
 ---
 
 # Cognito Auth
-### cognito-auth_v2.1.10 - 2020-07-27
-  
------------------------------------------------------------------------------
-Release: cognito-auth_v2.1.10
-Rollback: cognito-auth_v2.1.7
-Changes:
-commit | author |description
-  
-- 7493826dbe7b0eeab3192a8549b89abe05f62c0a | Cuong Vu <cuongvh@reapit.com> | chore: bump cognito-auth 2.1.10 (#2181)
-- e5bc1b73bf172a357f42d520c31fcb15d0e236cc | Cuong Vu <cuongvh@reapit.com> | chore: #2032 NPM broken badges, use absolute paths instead (#2179)
-- 75025e7dc36f24ddcd81497d34e6c8a0c164f1ed | Cuong Vu <cuongvh@reapit.com> | chore: #2032 elements & cognito-auth & connect-session badges broken (#2171)
-- 300e3790d2f6e9ec4407d897c198a2f282456723 | Pham Hai Duong <duongph@reapit.com> | fix: #2026 scroll bar at element level (#2060)
-- e9c775e794cd380746fc6a3de9dc6c942b59e3a1 | NghiaPham <nghiapn@reapit.com> | fix: #1978 elements production issue cant resolve reapit utils (#1979)
-- 7ef6d33f9e06a9c5239fa9bb7fd35b61bcba67bd | Trường An <andt@reapit.com> | chore: update the helper notification message (#1883)
-- 28d03c6d9ec400f168a27f6c88b0f15efc2fb3e3 | Khac Vy <vytk@reapit.com> | feat: #1848 filter app lists when using the marketplace in Developer Edition (#1851)* feat: #1848 filter app lists when using the marketplace in Developer Edition
-- 4dad8c47bd6c2b15cc973d9714a5b445edc908a2 | Pham Hai Duong <duongph@reapit.com> | fix: #1748 remove unuse dependencies and add use dependencies to package.json (#1775)
-- 864c59f05c75ff65a4670a76f4876896e30b7ec8 | Pham Hai Duong <duongph@reapit.com> | ci: #1748 improve speed for pipeline (#1764)
+
+### cognito-auth\_v2.1.10 - 2020-07-27
+
+Release: cognito-auth\_v2.1.10 Rollback: cognito-auth\_v2.1.7 Changes: commit \| author \|description
+
+* 7493826dbe7b0eeab3192a8549b89abe05f62c0a \| Cuong Vu [cuongvh@reapit.com](mailto:cuongvh@reapit.com) \| chore: bump cognito-auth 2.1.10 \(\#2181\)
+* e5bc1b73bf172a357f42d520c31fcb15d0e236cc \| Cuong Vu [cuongvh@reapit.com](mailto:cuongvh@reapit.com) \| chore: \#2032 NPM broken badges, use absolute paths instead \(\#2179\)
+* 75025e7dc36f24ddcd81497d34e6c8a0c164f1ed \| Cuong Vu [cuongvh@reapit.com](mailto:cuongvh@reapit.com) \| chore: \#2032 elements & cognito-auth & connect-session badges broken \(\#2171\)
+* 300e3790d2f6e9ec4407d897c198a2f282456723 \| Pham Hai Duong [duongph@reapit.com](mailto:duongph@reapit.com) \| fix: \#2026 scroll bar at element level \(\#2060\)
+* e9c775e794cd380746fc6a3de9dc6c942b59e3a1 \| NghiaPham [nghiapn@reapit.com](mailto:nghiapn@reapit.com) \| fix: \#1978 elements production issue cant resolve reapit utils \(\#1979\)
+* 7ef6d33f9e06a9c5239fa9bb7fd35b61bcba67bd \| Trường An [andt@reapit.com](mailto:andt@reapit.com) \| chore: update the helper notification message \(\#1883\)
+* 28d03c6d9ec400f168a27f6c88b0f15efc2fb3e3 \| Khac Vy [vytk@reapit.com](mailto:vytk@reapit.com) \| feat: \#1848 filter app lists when using the marketplace in Developer Edition \(\#1851\)\* feat: \#1848 filter app lists when using the marketplace in Developer Edition
+* 4dad8c47bd6c2b15cc973d9714a5b445edc908a2 \| Pham Hai Duong [duongph@reapit.com](mailto:duongph@reapit.com) \| fix: \#1748 remove unuse dependencies and add use dependencies to package.json \(\#1775\)
+* 864c59f05c75ff65a4670a76f4876896e30b7ec8 \| Pham Hai Duong [duongph@reapit.com](mailto:duongph@reapit.com) \| ci: \#1748 improve speed for pipeline \(\#1764\)
 
 approver: @willmcvay
-monitor: https://sentry.io/organizations/reapit-ltd/projects/
------------------------------------------------------------------------------
 
-    
+## monitor: [https://sentry.io/organizations/reapit-ltd/projects/](https://sentry.io/organizations/reapit-ltd/projects/)
 
 ### cognito-auth\_v2.1.7 - 2020-06-15
 
