@@ -6,6 +6,21 @@ description: &gt;- Below you will find a listing of the recent changes we have m
 
 ## Elements
 
+### elements_v0.5.63 - 2020-07-27
+  
+-----------------------------------------------------------------------------
+Release: elements_v0.5.63
+Rollback: elements_v0.5.62
+Changes:
+commit | author |description
+  
+- e5bc1b73bf172a357f42d520c31fcb15d0e236cc | Cuong Vu <cuongvh@reapit.com> | chore: #2032 NPM broken badges, use absolute paths instead (#2179)
+
+approver: @willmcvay
+monitor: https://sentry.io/organizations/reapit-ltd/projects/
+-----------------------------------------------------------------------------
+
+    
 ### elements_v0.5.62 - 2020-07-24
   
 -----------------------------------------------------------------------------
