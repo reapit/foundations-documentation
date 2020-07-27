@@ -20,7 +20,7 @@ Applications that are built on our Foundations Platform are able to communicate 
 
 _Note_ - apps cannot rely on cookies/local storage being available between separate instances of Agency Cloud.  Therefore any data which will need to be shared between separate sessions will need to be handled outside of these methods.
 
-#### Debugging your App
+### Debugging your App
 
 When you are testing your app inside of Agency Cloud Developer Edition then there is a button top left of the app window which will allow launching of the Chromium Developer Tools in a separate window.  
 
