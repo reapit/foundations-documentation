@@ -9,6 +9,10 @@ description: >-
 
 ## July 2020
 
+**2020-07-29**
+
+* [\#2178](https://github.com/reapit/foundations/issues/2178) - Added support to filter by `officeId` for properties on `GET /properties`
+
 **2020-07-27**
 
 * [\#2175](https://github.com/reapit/foundations/issues/2175) It is now possible to request that related tenancy information is included with `GET /properties` and `GET /properties/{id}` responses by using the `embed` parameter

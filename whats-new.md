@@ -7,6 +7,34 @@ description: >-
 
 # What’s New
 
+## 27/07/20
+
+### New Webhooks Available
+
+From today, you will now be able to subscribe to 2 new Webhooks. ‘Application Install’ and ‘Application Uninstall’.
+
+Each Webhook will trigger a notification when your app is installed or uninstalled and the payload will include the following information: 
+
+Customer ID \(ID of Estate Agent\)  
+Customer Name \(Name of Estate Agent\)  
+Customer Address \(Address of Estate Agent\)
+
+![](.gitbook/assets/image%20%2853%29.png)
+
+Setting up a Webhook is simple and easy to do. For more information on Webhooks please visit the documentation [here](https://foundations-documentation.reapit.cloud/api/webhooks)
+
+### Testing your app inside of Agency Cloud Developer Edition
+
+Following the recent successful launch of the Developer Edition of Agency Cloud, we have been gathering feedback on what we can do to help you further test your integration within our Desktop Software.
+
+ For the last couple of weeks, our Desktop Team have been working hard behind the scenes and we are pleased to announce a brand-new feature, ‘Remote Debugging’.
+
+![Remote Debugging](.gitbook/assets/image%20%2854%29.png)
+
+With the remote debugger you can inspect, in real time, Chromium Developer Tools. You will notice the button appear on your app and simply clicking this button will launch a separate window which hosts the developer tools.
+
+For more information on on the Desktop API, please click [here](https://foundations-documentation.reapit.cloud/api/desktop-api#debugging-your-app)
+
 ## 23/07/20
 
 ### New Agency Cloud Integration types
