@@ -6,6 +6,22 @@ description: >-
 ---
 
 # Cognito Auth
+### cognito-auth_v3.0.0 - 2020-07-31
+  
+-----------------------------------------------------------------------------
+Release: cognito-auth_v3.0.0
+Rollback: cognito-auth_v2.1.10
+Changes:
+commit | author |description
+  
+- 8afc7aba66d4f588f7ccea40c44d6ca4b4c579d9 | Will McVay <wmcvay@reapit.com> | fix: #2023 tweaks to go live with NPM (#2244)* fix: tweaks to go live with NPM* fix: fixed defintions
+- 21944479c9e26dfe143709e22456d75e54629248 | Will McVay <wmcvay@reapit.com> | feat: #2023 NPM packages v1.0.0 (#2234)
+
+approver: @willmcvay
+monitor: https://sentry.io/organizations/reapit-ltd/projects/
+-----------------------------------------------------------------------------
+
+    
 
 ### cognito-auth\_v2.1.10 - 2020-07-27
 
