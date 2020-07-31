@@ -9,8 +9,6 @@ description: >-
 
 ## 27/07/20
 
-![](.gitbook/assets/image%20%2855%29.png)
-
 ### New Webhooks Available
 
 From today, you will now be able to subscribe to 2 new Webhooks. ‘Application Install’ and ‘Application Uninstall’.
