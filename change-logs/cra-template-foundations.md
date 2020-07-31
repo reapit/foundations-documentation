@@ -6,6 +6,21 @@ description: >-
 ---
 
 # Create react app template foundations
+### cra-template-foundations_v1.0.1 - 2020-07-31
+  
+-----------------------------------------------------------------------------
+Release: cra-template-foundations_v1.0.1
+Rollback: cra-template-foundations_v1.0.0
+Changes:
+commit | author |description
+  
+- 8afc7aba66d4f588f7ccea40c44d6ca4b4c579d9 | Will McVay <wmcvay@reapit.com> | fix: #2023 tweaks to go live with NPM (#2244)* fix: tweaks to go live with NPM* fix: fixed defintions
+
+approver: @willmcvay
+monitor: https://sentry.io/organizations/reapit-ltd/projects/
+-----------------------------------------------------------------------------
+
+    
 ### cra-template-foundations_v1.0.0 - 2020-07-31
   
 -----------------------------------------------------------------------------
