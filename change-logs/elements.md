@@ -6,24 +6,19 @@ description: &gt;- Below you will find a listing of the recent changes we have m
 
 ## Elements
 
-### elements_v1.0.0 - 2020-07-31
-  
------------------------------------------------------------------------------
-Release: elements_v1.0.0
-Rollback: elements_v0.5.63
-Changes:
-commit | author |description
-  
-- 21944479c9e26dfe143709e22456d75e54629248 | Will McVay <wmcvay@reapit.com> | feat: #2023 NPM packages v1.0.0 (#2234)
-- 87be90fe905443ea753e348a3a2ff8aceb36ac6d | Khac Vy <vytk@reapit.com> | chore: #2190 Update the ‘Confirm Installation’ & ‘Confirm Uninstall’ modals (#2217)
-- 8580b5c9a155c5cae36a44526e32479269b8ab17 | Trường An <andt@reapit.com> | chore: #2096 update modal v2 header style (#2203)
-- 7454b16a046a8b6dd122833133370b160d4b601c | Cuong Vu <cuongvh@reapit.com> | fix: billing modal not responsive (#2196)
+### elements\_v1.0.0 - 2020-07-31
+
+Release: elements\_v1.0.0 Rollback: elements\_v0.5.63 Changes: commit \| author \|description
+
+* 21944479c9e26dfe143709e22456d75e54629248 \| Will McVay [wmcvay@reapit.com](mailto:wmcvay@reapit.com) \| feat: \#2023 NPM packages v1.0.0 \(\#2234\)
+* 87be90fe905443ea753e348a3a2ff8aceb36ac6d \| Khac Vy [vytk@reapit.com](mailto:vytk@reapit.com) \| chore: \#2190 Update the ‘Confirm Installation’ & ‘Confirm Uninstall’ modals \(\#2217\)
+* 8580b5c9a155c5cae36a44526e32479269b8ab17 \| Trường An [andt@reapit.com](mailto:andt@reapit.com) \| chore: \#2096 update modal v2 header style \(\#2203\)
+* 7454b16a046a8b6dd122833133370b160d4b601c \| Cuong Vu [cuongvh@reapit.com](mailto:cuongvh@reapit.com) \| fix: billing modal not responsive \(\#2196\)
 
 approver: @willmcvay
-monitor: https://sentry.io/organizations/reapit-ltd/projects/
------------------------------------------------------------------------------
 
-    
+## monitor: [https://sentry.io/organizations/reapit-ltd/projects/](https://sentry.io/organizations/reapit-ltd/projects/)
+
 ### elements\_v0.5.63 - 2020-07-27
 
 Release: elements\_v0.5.63 Rollback: elements\_v0.5.62 Changes: commit \| author \|description

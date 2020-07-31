@@ -114,37 +114,11 @@ The Client Id should now be visible. Keep this page open so you can copy the Cli
 
 ### 6. **Write some code!**
 
-The first step with your application will be to authenticate it against our Platform APIs. To do this you will need to use our authentication service [Reapit Connec](api/reapit-connect.md)t which supports the OAuth protocol. To make this easier on the client side, we have some JavaScript helpers you might find useful in our [Cognito Auth ](api/web.md#cognito-auth)module, however, if you are familiar with OAuth, you can just roll your own.
-
-If you intend to use React for your Web Application, or are just interested in how we handle client side authentication at Reapit, you may want to read on as this article continues with our [React App Scaffolder.](api/web.md#react-app-scaffolder) 
+The first step with your application will be to authenticate it against our Platform APIs. To do this you will need to use our authentication service [Reapit Connec](api/reapit-connect.md)t which supports the OAuth protocol. To make this easier on the client side, we have some JavaScript helpers you might find useful in our [Connect Session](app-development/connect-session.md) module, however, if you are familiar with OAuth, you can just roll your own.
 
 ### 7. Scaffolding an app \(optional\)
 
-Even if you intend to write your own React app from scratch, it is worth scaffolding an app as an initial playground until you feel comfortable working with the platform. There are more docs explaining the flavours of React App [here](api/web.md#react-app-scaffolder) but the basic steps are;
-
-First install globally both Yeoman and React App Scaffolder itself.
-
-`npm install yo @reapit/generator-react-app-scaffolder@latest -g`
-
-You may need to run this with the `sudo` prefix depending on your OS.
-
-Then;
-
-`yo @reapit/react-app-scaffolder`
-
-This will launch the scaffolder with the following options:
-
-![](.gitbook/assets/screenshot-2020-04-13-at-16.03.07.png)
-
-Having entered the basic meta data for your app, ensure you enter the Client Id from step four before selecting the styling and state management solutions you want to work with. Hit return and the app will start building.
-
-![](.gitbook/assets/screenshot-2020-02-16-at-13.49.21.png)
-
-This will launch an app at localhost:8080. You will be redirected again to Reapit Connect and then back to the app as an authenticated user.
-
-![](.gitbook/assets/screenshot-2020-02-16-at-13.56.24.png)
-
-You should now be good to go. The basic app structure and authentication are all set up to start building components and working with the platform API. 
+Even if you don't use React or intend to write your own React app from scratch, it is worth scaffolding an app with our new Create React App Template as initial playground, until you feel comfortable working with the platform. You can get full [documentation on this step here.](app-development/create-react-app-template.md)
 
 ### 8. A word on hosting...
 

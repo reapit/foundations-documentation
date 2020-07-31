@@ -53,13 +53,15 @@ export const MyCoolComponent = () => {
 }
 ```
 
+As well as React Components, we also export a number of useful utilities like form validators, date-time helpers and a HTTP fetch module.
+
 ### Storybook: Code as documentation
 
 All of the Elements modules are rendered out using [React Storybook](https://storybook.js.org/) and hosted inside the [Developer Portal](https://marketplace.reapit.cloud/developer/elements). If you are not familiar with Storybook as a tool, it allows the developer to interact in live time with the pre-rendered components and their variants. You can adjust the code and see how they behave in live time, as well as providing copy-paste snippets to insert into your project.
 
 When using Storybook, you can toggle between code examples and rendered output of components by using the ‘Canvas’ and ‘Docs’ tabs. You should also toggle the "Show add ons" option from the menu to render the code below the components, and it's variants see below:
 
-![](.gitbook/assets/screenshot-2020-02-12-at-16.18.04.png)
+![](../.gitbook/assets/screenshot-2020-02-12-at-16.18.04.png)
 
 In addition to Storybook, because we have used TypeScript throughout out estate, each of our modules ships with TS definitions for free. If you use TypeScript, this is clearly a big help but even if you don't modern IDEs like VSCode will give you intelligent hints about prop types and parameters as you code.
 
@@ -69,13 +71,22 @@ Although we use React heavily at Reapit and we recommend using our tooling as th
 
 As a non-React developer you should still import the stylesheet as above, and simply apply the classes to your markup as displayed in the HTML tab in each Storybook component as per below:
 
-![](.gitbook/assets/screenshot-2020-04-17-at-15.27.20.png)
+![](../.gitbook/assets/screenshot-2020-04-17-at-15.27.20.png)
 
 You can also selectors in the [Bulma documentation](https://bulma.io/) in most cases. We have deliberately not diverted from Bulma's conventions where possible and where we have, we have tried to follow sensible naming conventions and predictable markup.
 
 ### Future Development
 
-In the future, we plan to move away from Bulma to use entirely in-house styles, supporting both Linaria Components \(React CSS in JS\) and vanilla CSS. You can keep a track of Elements v2 progress against [this milestone](https://github.com/reapit/foundations/milestone/8).
+We are now at the first stable milestone release of Elements v1.0.x. By using the package, we will guarantee security patches and a stable API with no breaking changes for the foreseeable future.
 
-As well as React Components, we also export a number of useful utilities like form validators, date-time helpers and a HTTP fetch module.
+For version 2 of Elements, there will be a ground up re-write to address feedback from our Beta developer partners. Changes will include;
+
+* A much lighter weight solution, shipping significantly less JS and CSS
+* Better documentation, with interactive components powered by Gatsby
+* Better non-React support, with markup-only users supported as first class citizens of the documentation
+* Simpler, more predictable API with more utility classes to allow greater flexibility
+
+You can keep a track of Elements v2 progress against [this milestone](https://github.com/reapit/foundations/milestone/8).
+
+
 

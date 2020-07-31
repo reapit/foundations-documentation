@@ -43,7 +43,7 @@ This exports the following commands:
 
 Each of our applications load their configuration from a file called `config.json` at the root of the package folder, where they are either pulled and set on the server by the CI for Node projects, or for client side applications, injected at render time by `window.reapit.config` object. Any secrets we set in Github's secrets manager so we can reference in the CI only.
 
-Internally we manage the non confidential config using our Config Manager [see here](../api/web.md#config-manager) for info on how to do this yourself. If you are working internally on the project, you should follow these steps.
+Internally we manage the non confidential config using our Config Manager [see here](web.md#config-manager) for info on how to do this yourself. If you are working internally on the project, you should follow these steps.
 
 An example of the base config file[ is here](https://github.com/reapit/foundations/blob/master/packages/marketplace/config.example.json) and by default one ships with our app scaffolder. If you are trying to build the apps yourself, you can rename this, place in the root director, add a value to the `cognitoClientId`\(this is the client id, you can see in the app detail modal when you have submitted your app\), `cognitoOAuthUrl` and `cognitoUserPoolId` , and you should have sufficient config to work in the local environment.
 
@@ -77,11 +77,11 @@ Given that you have already installed dependencies [\(see getting started\)](con
 
 ### Styling
 
-We support two styling methods across our projects; [SASS with CSS Modules](https://sass-lang.com/) and [Styled Components](https://styled-components.com/). You are welcome to use either and both are supported by our [React App Scaffolder](../api/web.md#react-app-scaffolder), although only one by project.
+We support two styling methods across our projects; [SASS with CSS Modules](https://sass-lang.com/) and [Styled Components](https://styled-components.com/). You are welcome to use either and both are supported by our [React App Scaffolder](web.md#react-app-scaffolder), although only one by project.
 
 By convention, we store any Styled Components that are specific to an individual component in a sub folder of that component called `__styles__` however, if a style is re-usable, generic or global to the project, please use the `src/styles` directory to reduce duplication.
 
-For components that are genuinely generic across the estate, please take the time to add to the [Elements](../api/web.md#elements) project as a Storybook item so we can use it again. If you suspect you may be writing a common component from scratch, it is likely it will already exist in Elements so please take a look if there is anything that can be re-used or adapted with a modifier class.
+For components that are genuinely generic across the estate, please take the time to add to the [Elements](web.md#elements) project as a Storybook item so we can use it again. If you suspect you may be writing a common component from scratch, it is likely it will already exist in Elements so please take a look if there is anything that can be re-used or adapted with a modifier class.
 
 Our overriding aim is to write as little CSS as possible and focus on re-usable components, both to save time and to develop a consistent look and feel across the estate.
 
@@ -178,7 +178,7 @@ The basic flow for all projects is that;
 * **On Pull Request Merge:** Test, build and lint tasks run as well as `release:dev` which will push the code to the relevant development environment for the project.
 * **On Release Tag:** Again, test, build and lint tasks run and the \`release:prod\` task runs to deploy the relevant tagged project. The release [tag should be raised here](https://github.com/reapit/foundations/releases) and be in the format `<<package>>_v<<version-number>>` to trigger the production workflow. For parallel deployments, you should wait for the first deployment passed checkout repository step and at that time you can continue to trigger the next deployment.
 
-Details of the development and production environments / deployments for each package [are listed here](packages.md).
+Details of the development and production environments / deployments for each package [are listed here]().
 
 ### Definition of Done
 
