@@ -33,7 +33,7 @@ Following the recent successful launch of the Developer Edition of Agency Cloud,
 
 With the remote debugger you can inspect, in real time, Chromium Developer Tools. You will notice the button appear on your app and simply clicking this button will launch a separate window which hosts the developer tools.
 
-For more information on on the Desktop API, please click [here](https://foundations-documentation.reapit.cloud/api/desktop-api#debugging-your-app)
+For more information on the Desktop API, please click [here](https://foundations-documentation.reapit.cloud/api/desktop-api#debugging-your-app)
 
 ## 23/07/20
 
