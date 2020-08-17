@@ -7,6 +7,26 @@ description: >-
 
 # What’s New
 
+## 10/08/20
+
+### Reapit Foundations App Developer Experience
+
+Over the Reapit Foundations public beta period, we have been working to improve the experience for Marketplace App Developers. Today we are announcing some significant updates to our front end tooling for web developers.
+
+#### **New Create React App template**
+
+Firstly we have released a new Create React App template to replace the scaffolder we demoed at the November launch. As before the template represents the quickest way to get started building Marketplace Apps, now with the added benefit of long term support, familiar CLI and stability from the React Scripts package.
+
+#### Reapit Connect OAuth enhancements
+
+We have also given a lot of attention to making the Reapit Connect OAuth flow as smooth and simple as possible. This has taken the form of a new, lightweight NPM Package, Connect Session. The module handles all OAuth re-directs, session caching and refreshing. There is a browser version that works with any front end, a Node version for server-side apps and a convenient Hook for React users. We have also integrated Connect Session into an embeddable “Sign in With Reapit”, button that is served from a CDN and returns a Reapit Connect Session without the need for any package installation or tooling.
+
+#### Stable v1 Elements UI library
+
+Finally, we have released a stable v1 of the Elements UI library. This will guarantee long term support and a stable API for our React Components and style guide package. We haven’t stopped there though, Elements v2 is coming later this year with a much better experience for non-React users, simpler API, improved documentation and smaller bundle sizes.
+
+For full details visit the new App Development section of our documentation [here](https://developers.reapit.cloud/api-docs/app-development).
+
 ## 27/07/20
 
 ### New Webhooks Available
