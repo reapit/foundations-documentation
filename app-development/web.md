@@ -18,7 +18,7 @@ The first component we have shipped is a small but powerful "Sign In With Reapit
 
 The Component is a single script served from our CDN, you instantiate with a target div, your client credentials as per the browser API and pass in a callback to receive your session object. As per the NPM module, all caching, redirection and refreshing is taken care of by the package. When you have a session, the button will change function to be a logout which will clear your cache and end your session in Reapit Connect.
 
-The below example shows how to embed on any static or dynamic page with a single script. In the connectHasSessionCallback function we fetch a list of appointments from the Platform API to demonstrate the full flow. The  development `connectUserPoolId` is `eu-west-2_hbt0B7yys` however, for the production infrastructure this will change.
+The below example shows how to embed on any static or dynamic page with a single script. In the connectHasSessionCallback function we fetch a list of appointments from the Platform API to demonstrate the full flow.
 
 ```markup
 <div id="reapit-connect-component"></div>
@@ -42,7 +42,6 @@ The below example shows how to embed on any static or dynamic page with a single
 
   ReapitConnectComponent && new ReapitConnectComponent({
     connectClientId: '<<clientId here>>>',
-    connectUserPoolId: '<<userpool id here>>'
     connectOAuthUrl: 'https://dev.connect.reapit.cloud',
     connectLoginRedirectPath: '',
     connectLogoutRedirectPath: '/login',

@@ -24,7 +24,7 @@ Then execute
 
 `npx create-react-app <<your-app-name-here>> --template @reapit/cra-template-foundations`
 
-Open the project in your text editor and insert your Reapit Connect ClientId from the Developer Portal into the  file
+Open the project in your text editor and insert your Reapit Connect ClientId from the Developer Portal along with the  development `connectUserPoolId,` `eu-west-2_hbt0B7yys` into the config file located at:
 
 `src/reapit.config.json`
 
