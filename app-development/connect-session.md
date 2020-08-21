@@ -16,7 +16,7 @@ The module is intended to be browser framework agnostic although we ship a React
 
 For all users, in a file at the root of the source of your project, first instantiate and export the `ReapitConnectBrowserSession` class.
 
-The constructor accepts 4 parameters, of which two are optional, see comments below:
+The constructor accepts 5 parameters, of which two are optional, see comments below. The  development `connectUserPoolId` is `eu-west-2_hbt0B7yys` however, for the production infrastructure this will change.
 
 ```typescript
 import { ReapitConnectBrowserSession } from '@reapit/connect-utils'
@@ -27,6 +27,8 @@ export const reapitConnectBrowserSession = new ReapitConnectBrowserSession({
   connectClientId: 'SOME_CLIENT_ID',
   // The url to the Reapit Connect instance. While in beta this is the below URL but will need to be context aware in full prod/
   connectOAuthUrl: 'https://dev.connect.reapit.cloud',
+  // OAuth UserPoolId - refer to the foundations documentation to obtain this for the correct environment
+  connectUserPoolId: 'SOME_USER_POOL_ID',
   // The relative path you want to re-direct in your application after a successful login. You will have supplied this when you registered your app.
   // Defaults to '' or the root of your project if not supplied
   connectLoginRedirectPath: '/some-redirect-path',
@@ -145,11 +147,12 @@ import config from './config.json'
 
 const router = Router()
 
-const { connectClientId, connectClientSecret, connectOAuthUrl } = config as ReapitConnectServerSessionInitializers
+const { connectClientId, connectClientSecret, connectOAuthUrl, connectUserPoolId } = config as ReapitConnectServerSessionInitializers
 
 const reapitConnectSession = new ReapitConnectServerSession({
   connectClientId,
   connectClientSecret,
+  connectUserPoolId,
   connectOAuthUrl,
 })
 
