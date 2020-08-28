@@ -7,6 +7,50 @@ description: >-
 
 # What’s New
 
+## 28/08/20
+
+### What’s New with the Developers Portal?
+
+Well, quite a lot actually! We are now in full production, which is a huge milestone for all of us. It does also mean with the new production environment, we have been able introduce quite a few new features.
+
+### **Organisations**
+
+With the production environment in full effect, we now have the concept of organisations. Previously, if you were building or testing in the developers portal for the same company, you would have needed to share an account or setup additional users under a separate account. Now, you can setup your own organisation and invite members to join you.
+
+This means you can collaboratively build and test your integrations under one account. It’s worth mentioning that only an ‘Admin’ will have the ability to view your organisation information.
+
+### **Invite New Members**
+
+To invite members to join your organisation, simply click on the ‘Invite New Member’ button. The recipient will receive your invitation via email and will have the option to reject or accept. You can track the status of any members in the ‘Members’ table on the organisations tab:
+
+![](.gitbook/assets/image%20%2860%29.png)
+
+Within the members section you will also have the ability to disable members and to set other members as ‘Admins’.
+
+### **About your Organisation**
+
+The ‘About’ field is a text box provided for you to give a bit of information about your company. This will then be automatically included on your app listings and will be visible to users viewing your app in the Marketplace:
+
+![](.gitbook/assets/image%20%2859%29.png)
+
+### **Account Information – Billing**
+
+Admins will also have access to setup and manage the account information for their organisation.
+
+Account information will be required before an app can be listed in the Marketplace or before any subscriptions can commence.  
+
+If you are an existing customer of Reapit and already have an provided your account information, you can simply add your Reapit Reference \(you will still need to submit some additional account information such as a contact name, email address etc\). We will then send your information to our accounts department to be verified.
+
+Once verified, your account status will be set to 'Confirmed' and you can continue with any subscriptions.
+
+If you do have a Reapit Reference, you will be asked to complete an online Direct Debit mandate. Again, your information will be sent to our accounts department to be setup and once complete, you account status will be set to ‘Confirmed’ and you will automatically be provided with a unique Reapit Reference which we will add the billing page for you. 
+
+All subscriptions such as the annual App Listing fee, annual Developer registration & API Consumption Costs will then be added to your monthly Direct Debit. A break down of any subscription costs can be found on the ‘Cost Explorer’.
+
+### **Description Field**
+
+We have now increased the character limit for the ‘Description’ field on your app listings. This will provide more room for additional formatting. The character limit has been set to 1,500. Remember, as the description field is using HTML, some special characters will count against the total, so we still advise on keeping the content as direct and concise as possible.
+
 ## 10/08/20
 
 ### Reapit Foundations App Developer Experience
