@@ -139,7 +139,7 @@ We support the use of two different OAuth 2.0 grants for applications built on o
 
 To obtain tokens for your application to interact with our protected endpoints, you must send a `POST` request to our token endpoint, as below:
 
-`https://dev.connect.reapit.cloud/token`
+`https://connect.reapit.cloud/token`
 
 | Request payload | Description |
 | :--- | :--- |
