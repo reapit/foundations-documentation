@@ -26,7 +26,7 @@ You can immediately start testing our APIs in [sandbox mode](api-documentation.m
       <td style="text-align:left">
         <p><b>Authentication service</b>
         </p>
-        <p>https://dev.connect.reapit.cloud/</p>
+        <p>https://connect.reapit.cloud/</p>
       </td>
       <td style="text-align:left">First, use our <a href="api-documentation.md#authentication">authentication service</a> to
         receive an access token. Include this in the header of any request you
@@ -36,7 +36,7 @@ You can immediately start testing our APIs in [sandbox mode](api-documentation.m
       <td style="text-align:left">
         <p><b>All other platform services</b>
         </p>
-        <p>https://dev.platform.reapit.cloud/</p>
+        <p>https://platform.reapit.cloud/</p>
       </td>
       <td style="text-align:left">Once authenticated, you can issue requests to our other platform services.
         For details on the endpoint we provide, see our <a href="https://marketplace.reapit.cloud/developer/swagger">Interactive API Explorer</a>.</td>
