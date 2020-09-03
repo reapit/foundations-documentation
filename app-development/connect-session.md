@@ -16,7 +16,7 @@ The module is intended to be browser framework agnostic although we ship a React
 
 For all users, in a file at the root of the source of your project, first instantiate and export the `ReapitConnectBrowserSession` class.
 
-The constructor accepts 5 parameters, of which two are optional, see comments below. The  development `connectUserPoolId` is `eu-west-2_hbt0B7yys` however, for the production infrastructure this will change.
+The constructor accepts 5 parameters, of which two are optional, see comments below. The  production `connectUserPoolId` is `eu-west-2_eQ7dreNzJ` .
 
 ```typescript
 import { ReapitConnectBrowserSession } from '@reapit/connect-utils'
