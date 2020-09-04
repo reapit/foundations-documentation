@@ -163,7 +163,7 @@ Access tokens issued from Reapit Connect will expire after 60 minutes. Refresh t
 
 To use a refresh token, issue a `POST` request to the endpoint below with Content-type set to `application/x-www-form-urlencoded`:
 
-`https://dconnct.reapit.cloud/token`
+`https://connect.reapit.cloud/token`
 
 | Request payload | Description |
 | :--- | :--- |
