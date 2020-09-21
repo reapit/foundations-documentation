@@ -26,7 +26,7 @@ You can immediately start testing our APIs in [sandbox mode](api-documentation.m
       <td style="text-align:left">
         <p><b>Authentication service</b>
         </p>
-        <p>https://dev.connect.reapit.cloud/</p>
+        <p>https://connect.reapit.cloud/</p>
       </td>
       <td style="text-align:left">First, use our <a href="api-documentation.md#authentication">authentication service</a> to
         receive an access token. Include this in the header of any request you
@@ -36,7 +36,7 @@ You can immediately start testing our APIs in [sandbox mode](api-documentation.m
       <td style="text-align:left">
         <p><b>All other platform services</b>
         </p>
-        <p>https://dev.platform.reapit.cloud/</p>
+        <p>https://platform.reapit.cloud/</p>
       </td>
       <td style="text-align:left">Once authenticated, you can issue requests to our other platform services.
         For details on the endpoint we provide, see our <a href="https://marketplace.reapit.cloud/developer/swagger">Interactive API Explorer</a>.</td>
@@ -139,14 +139,14 @@ We support the use of two different OAuth 2.0 grants for applications built on o
 
 To obtain tokens for your application to interact with our protected endpoints, you must send a `POST` request to our token endpoint, as below:
 
-`https://dev.connect.reapit.cloud/token`
+`https://connect.reapit.cloud/token`
 
 | Request payload | Description |
 | :--- | :--- |
 | `client_id` | The unique client id that was issued to your application after registration |
 | `grant_type` | Must be set to `client_credentials` |
 
-Content-type must be set to `application/x-www-form-urlencoded` and the `Authorization` header should be set to `Basic <base64 secret>`where `<base64 secret>` is the **base64 representation of the client id and secret concatenated with a colon**. You can obtain **client id** and **secret** by clicking your app in the [My Apps](https://marketplace.reapit.cloud/developer/apps) area of our developer portal.
+Content-Type must be set to `application/x-www-form-urlencoded` and the `Authorization` header should be set to `Basic <base64 secret>`where `<base64 secret>` is the **base64 representation of the client id and secret concatenated with a colon**. You can obtain **client id** and **secret** by clicking your app in the [My Apps](https://marketplace.reapit.cloud/developer/apps) area of our developer portal.
 
 If your request is properly formed and valid, you'll receive a response similar to below.
 
