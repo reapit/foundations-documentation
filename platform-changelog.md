@@ -7,6 +7,12 @@ description: >-
 
 # Platform Change Log
 
+## September 2020
+
+**2020-09-25**
+
+* [\#2755 ](https://github.com/reapit/foundations/issues/2755)- Fixed issue with `Reapit-Webhook-Signature` header in webhook payloads
+
 ## July 2020
 
 **2020-07-29**
