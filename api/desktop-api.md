@@ -281,7 +281,7 @@ agencycloud://contacts/{id}/journal
 
 ## Process
 
-From 12.122 there will also be a resource called **process** which will have two sub processes:
+From version 12.122.0 there will also be a resource called **process** which will have two sub processes:
 
 * webpage
 * email
