@@ -279,6 +279,33 @@ Opens the journal screen for the specified contact
 agencycloud://contacts/{id}/journal
 ```
 
+## Process
+
+From 12.122 there will also be a resource called **process** which will have two sub processes:
+
+* webpage
+* email
+
+### Webpage
+
+This will allow you to launch a webpage in the local default browser.  An example would be:
+
+```text
+agencycloud://process/webpage?url=https://www.reapit.com
+```
+
+This will launch the https://www.reapit.com site in the default browser.  Note: the url parameter _must_ start with http for this to work.
+
+### E-mail
+
+This will allow you to launch the users default e-mail client and send to an address.  An example would be:
+
+```text
+agencycloud://process/email?address=help@reapit.com
+```
+
+This will create a new e-mail in the users default mail client.  It will do this by taking the value of the address parameter, prefixing it with _mailto:_ and then starting a process with that argument.
+
 ## Agency Cloud Interaction API
 
 ### Overview
