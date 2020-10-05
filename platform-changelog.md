@@ -7,6 +7,12 @@ description: >-
 
 # Platform Change Log
 
+## October 2020
+
+**2020-10-01**
+
+* [\#2768](https://github.com/reapit/foundations/issues/2768) - Fixed issue where `properties.created` webhook events would be fired twice if the property was registered via `POST /properties` and the request body contained room information
+
 ## September 2020
 
 **2020-09-25**
