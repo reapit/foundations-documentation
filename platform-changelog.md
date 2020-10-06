@@ -9,6 +9,10 @@ description: >-
 
 ## October 2020
 
+**2020-10-06**
+
+* [\#2783](https://github.com/reapit/foundations/issues/2783) - Fixed bug where the `status` query parameter was not respected when filtering results returned from `GET /worksOrders`
+
 **2020-10-01**
 
 * [\#2768](https://github.com/reapit/foundations/issues/2768) - Fixed issue where `properties.created` webhook events would be fired twice if the property was registered via `POST /properties` and the request body contained room information
