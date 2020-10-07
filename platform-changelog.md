@@ -9,6 +9,10 @@ description: >-
 
 ## October 2020
 
+**2020-10-07**
+
+* [\#2823](https://github.com/reapit/foundations/issues/2823) - The negotiator related to a new journal entry can now be set in the request body to `POST /journalEntries`
+
 **2020-10-06**
 
 * [\#2783](https://github.com/reapit/foundations/issues/2783) - Fixed bug where the `status` query parameter was not respected when filtering results returned from `GET /worksOrders`
