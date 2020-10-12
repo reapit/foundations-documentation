@@ -7,6 +7,92 @@ description: >-
 
 # What’s New
 
+## 10/10/202
+
+It has been just over a month since we went into full production for the Foundations Developer Portal and since we officially launched the Reapit Marketplace.
+
+We currently have 10 apps live and available for agents that have access to the Marketplace to install.
+
+Access to the Marketplace is dependent on the migration from our Rackspace environment to our AWS Infrastructure. The Migrations Team are still working hard on finalising the list of agents that will be part of Tranche 1. Once this has been confirmed we will share this information with our App Partners. 
+
+![](.gitbook/assets/image%20%2863%29.png)
+
+In addition to the apps that are publicly available, we also have several apps and integrations that are currently going through their final testing phase, most of which you will be able to see and following on our coming soon section. 
+
+The coming soon section is visible on the Marketplace and provides agents the ability to click on any developer or company they are interested in to send an enquiry email. 
+
+![](.gitbook/assets/image%20%2862%29.png)
+
+### Additional Testing
+
+We have recently created a internal demo environment for us to be able help test and view your integrations using our office with the Customer ID ‘RES’. This new environment not only gives us the opportunity to see your integration or app in action, but it also allows you to further understand how the user flow is handled/presented outside of the sandbox installation. 
+
+If you wish to take part or setup a demo, you will need to list your app \(tick the ‘is listed’ box on the app listing\) and set 'Private App' to ‘Yes’ using Customer ID ‘RES’.
+
+After submitting your revision, we will contact you directly to talk through the installation and what to expect.
+
+### Fixes and Changes
+
+Over the last few weeks we have been working closely with quite a few of our developers to see if we can look to improve or enhance the functionality on the Developers Portal, please see below what we’ve been working on.
+
+### Organisation & Billing
+
+When you are ready to list your app, you will first need to complete your Organisation & Billing information. The Admin of your organisation will have access to this information from the ‘Settings’ page.
+
+To complete your Organisation information, you will need to cick on ‘Settings’ and select ‘Organisation’  
+  
+ You will then be required to fill in the following information:
+
+* Company Name
+* Telephone Number
+* Website Address
+* VAT/Company Reg and or National Insurance Number
+* About Us – The section will be displayed on any app listing in the Marketplace in addition to information about the app. 
+* Company Address
+
+Once completed, please then switch to the 'Billing' tab.
+
+If you have an existing relationship with Reapit, you may already have a Reapit Reference. If so, simply enter your reference and submit. You can find your reference on any previous accounting correspondence. 
+
+We will then verify the reference and company information with our Accounts Department. This is normally completed the same day.
+
+You will receive an email once your account has been set to ‘Confirmed’.
+
+If you do not have a Reapit Reference, please then complete a Direct Debit mandate. It is an online form that will open in another tab. For those of you that have cookies disabled by default, and we know most developers do, you will need to enable them to complete the form. It’s an Adobe requirement, you can of course, disable as soon as you’ve signed the form.
+
+Again, our Accounts Department will setup your account and you’ll receive an email with your new Reapit Reference. No need to do anything with the reference,  as we will add this on your account automatically. Once received, you’ll be able to list your app or make any additional subscriptions.
+
+### Subscription fees suspended until 31st March 2021
+
+Hopefully, you should have received an email from our Marketing team last week, which included the announcement of the following subscription fees suspended until March next year:
+
+* Annual Developer Registration
+* Developer Edition
+* App Listings
+* Reapit Connect
+
+The idea and goal behind the suspension is that it should provide you a head start in the development of your app whilst the Marketplace and it’s users continue to grow.
+
+In addition to this and quite exciting for us, Matt Goddard will now be leading our Reapit Partnership program. As the email quite rightly mentions, his knowledge and experience in the business will be an incredibly asset to you whilst you develop your integrations. Of course, our developers will still be available through Live Chat and I’ll be here to help if needed. Matt will be making contact with you in the coming weeks but if you have any questions, you can contact him [here](mailto:mgoddard@reapit.com).
+
+### User Role Information
+
+As you may be aware, only Reapit Admins have the ability to install or uninstall apps from the Marketplace. The Admins of an organisation are set by the individual office and are made aware of who has been assigned to the which role when they are migrated over to the new AWS infrastructure.  However, to make it easier for you when speaking with Agents and for the users, we have introduced a ‘Role’ section within the marketplace.
+
+When on the ‘Settings’ page – accessed by clicking on the company profile or group icon, will see a new field ‘Role’:
+
+![](.gitbook/assets/image%20%2861%29.png)
+
+Those with a ‘Role’ set to ‘Admin’ or ‘Administrator’ will have the ability to install or uninstall apps.
+
+Other changes we’ve been focusing on and something that will be coming soon.
+
+### Sandbox Installation
+
+We’ve been looking at ways to help you understand the user flow and installation process better and one of the options we have been exploring is providing you the ability to create a customer installation \(using customer ID ‘SBOX’\) through the Developer portal to better present how installations will work.  
+  
+We are currently in the final stages of testing so more information to follow soon. 
+
 ## 28/08/20
 
 ### What’s New with the Developers Portal?
