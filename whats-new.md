@@ -11,17 +11,17 @@ description: >-
 
 It has been just over a month since we went into full production for the Foundations Developer Portal and since we officially launched the Reapit Marketplace.
 
-We currently have 10 apps live and available for agents that have access to the Marketplace to install.
+We currently have the following apps live and available for agents that have access to the Marketplace to install.
 
 Access to the Marketplace is dependent on the migration from our Rackspace environment to our AWS Infrastructure. The Migrations Team are still working hard on finalising the list of agents that will be part of Tranche 1. Once this has been confirmed we will share this information with our App Partners. 
 
-![](.gitbook/assets/image%20%2863%29.png)
+![](.gitbook/assets/image%20%2864%29.png)
 
-In addition to the apps that are publicly available, we also have several apps and integrations that are currently going through their final testing phase, most of which you will be able to see and following on our coming soon section. 
+In addition to the apps that are publicly available, we also have several apps and integrations that are currently going through their final testing phase, most of which you will be able to see and follow on our coming soon section. 
 
 The coming soon section is visible on the Marketplace and provides agents the ability to click on any developer or company they are interested in to send an enquiry email. 
 
-![](.gitbook/assets/image%20%2862%29.png)
+![](.gitbook/assets/comingsoon1.jpg)
 
 ### Additional Testing
 
@@ -33,7 +33,7 @@ After submitting your revision, we will contact you directly to talk through the
 
 ### Fixes and Changes
 
-Over the last few weeks we have been working closely with quite a few of our developers to see if we can look to improve or enhance the functionality on the Developers Portal, please see below what we’ve been working on.
+Over the last few weeks we have been working closely with our developers to see if we can look to improve or enhance the functionality on the Developers Portal, please see below what we’ve been working on.
 
 ### Organisation & Billing
 
@@ -85,13 +85,7 @@ When on the ‘Settings’ page – accessed by clicking on the company profile 
 
 Those with a ‘Role’ set to ‘Admin’ or ‘Administrator’ will have the ability to install or uninstall apps.
 
-Other changes we’ve been focusing on and something that will be coming soon.
-
-### Sandbox Installation
-
-We’ve been looking at ways to help you understand the user flow and installation process better and one of the options we have been exploring is providing you the ability to create a customer installation \(using customer ID ‘SBOX’\) through the Developer portal to better present how installations will work.  
-  
-We are currently in the final stages of testing so more information to follow soon. 
+Other changes we’ve been focusing on and something that will be coming soon. 
 
 ## 28/08/20
 
