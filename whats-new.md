@@ -7,6 +7,56 @@ description: >-
 
 # What’s New
 
+## 26/10/2020
+
+### **Seamless integration between the Developer Portal & the Reapit Marketplace**
+
+Access between the Marketplace & the Developer Portal with one click! When you next log into the Developer Portal, you will see a new ‘Marketplace’ icon appear on the navigation. Clicking on the icon will take you to the Reapit Marketplace and automatically log you in using your Developer credentials.
+
+To go back to the Developer Portal, simply click on the ‘Developers’ icon in the nav bar. The introduction of this flow will save time when testing and viewing your integration.
+
+![](.gitbook/assets/image%20%2865%29.png)
+
+![](.gitbook/assets/image%20%2866%29.png)
+
+###  **Full Marketplace View**
+
+Included in the new access flow, you will now see a full list of live and available apps, in addition to your own applications that are still in development. Previously, with your Developer account you could only see your own apps.
+
+Apps that belong to your organisation and that are ‘In Development’ \(not listed\) will be clearly be shown with an ‘In Development’ banner, see example below:
+
+![](.gitbook/assets/image%20%2868%29.png)
+
+The ‘In Development’ banner will be visible on the ‘Browse’ apps page, ‘Installed’ & ‘Managed’:
+
+![](.gitbook/assets/image%20%2867%29.png)
+
+###  **Third Party Installations**
+
+App installation remains the same and you still will only have the option to install apps that belong to your organisation. You can of course view apps that belong to third parties but the option to install will not be present.  
+
+### **Desktop API support for Emails & Websites**
+
+We are now supporting default mail client and browser loading for emails and external websites. If your marketplace application presents an link to an email, you will need to update the mailto link to include the new Agency Cloud scheme ‘agencycloud://process/email?’
+
+This will allow you to launch the users default email client and send to an address.  An example would be:
+
+```text
+agencycloud://process/email?address=help@reapit.com
+```
+
+This will create a new email in the user’s default mail client. It will do this by taking the value of the address parameter, prefixing it with _mailto:_ and then starting a process with that argument.
+
+Similar to the email link, using the scheme ‘agencycloud://process/webpage’ for a website page URL, will allow you to launch a webpage in the local default browser.  An example would be:
+
+```text
+agencycloud://process/webpage?url=https://www.reapit.com
+```
+
+This will launch the https://www.reapit.com site in the default browser. Note: the URL parameter _must_ start with http for this to work.
+
+For more information on the ‘Process’ scheme using the Desktop API, please click [here](https://foundations-documentation.reapit.cloud/api/desktop-api#process)
+
 ## 10/10/202
 
 It has been just over a month since we went into full production for the Foundations Developer Portal and since we officially launched the Reapit Marketplace.
