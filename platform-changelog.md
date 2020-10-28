@@ -9,6 +9,10 @@ description: >-
 
 ## October 2020
 
+**2020-10-28**
+
+* [\#2902](https://github.com/reapit/foundations/issues/2902) - It is now possible to request that related property, negotiator and/or type information is included with `GET /journalEntries`responses by using the `embed` parameter
+
 **2020-10-08**
 
 * Fixed bug where the `active` query string parameter was not respected when filtering results returned from `GET /landlords`
