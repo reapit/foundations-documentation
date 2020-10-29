@@ -57,7 +57,7 @@ This will launch the https://www.reapit.com site in the default browser. Note: t
 
 For more information on the ‘Process’ scheme using the Desktop API, please click [here](https://foundations-documentation.reapit.cloud/api/desktop-api#process)
 
-## 10/10/202
+## 10/10/2020
 
 It has been just over a month since we went into full production for the Foundations Developer Portal and since we officially launched the Reapit Marketplace.
 
