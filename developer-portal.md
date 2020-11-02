@@ -90,9 +90,7 @@ Then select an icon and a featured image for your app listing. You will be asked
 
 The next step is for external, non Marketplace apps and should be skipped if you are building a web-based marketplace listed app; if however you are building an integration that you don't want to appear in the marketplace, you can select this option. You app will still be listed for permission only purposes however, it will not be possible to launch from within the Agency Cloud desktop app. For the purposes of this example, we will leave unchecked.
 
-![](.gitbook/assets/screenshot-2020-07-02-at-14.45.24.png)
-
-The is listed check box is a critical step. This is the trigger for us at Reapit to review your application for approval and eventual listing in the Marketplace. By selecting "Is Listing", some additional validations will kick in on the form to ensure we have everything we need to properly review your app.
+![](.gitbook/assets/image%20%2871%29.png)
 
 The last step is to select any additional permissions \(OAuth scopes\) you need for your app to work. They must map to the endpoints you selected at point two above.
 
@@ -125,4 +123,89 @@ Even if you don't use React or intend to write your own React app from scratch, 
 Whilst Marketplace apps are "submitted", "listed" and "installed" by clients, they are still hosted by you, the developer. This is both to ensure the integrity of your IP / source code, and so that you maintain control over your deployment pipelines.
 
 Optional hosting as a service is something we are looking at in detail for future iterations of the platform however it is not on our immediate roadmap. You should continue to use your existing web hosting platform for your app and just submit the launch uri on the submit app form as above. 
+
+### 9. Organisation
+
+To complete your Organisation information, click on ‘Settings’ and select ‘Organisation’  
+  
+ You will then be required to fill in the following information:
+
+* Company Name
+* Telephone Number
+* Website Address
+* VAT/Company Reg and or National Insurance Number
+* About Us – The section will be displayed on any app listing in the Marketplace in addition to information about the app. 
+* Company Address
+
+Please then complete the information on the 'Billing' tab.
+
+### 10. Billing
+
+If you have an existing relationship with Reapit, you will already have a 'Reapit Reference' assigned to your company. You can find your reference on any previous accounting correspondence. Simply enter your account contact information, your reference and click 'Submit'.  
+
+![](.gitbook/assets/image%20%2873%29.png)
+
+You account status will be updated to 'Pending' whilst we verify the  information with our Accounts Department. This is normally completed the same day.
+
+You will receive an email once your account has been set to ‘Confirmed’.
+
+If you do not have a Reapit Reference, please then complete a Direct Debit mandate. It is an online form that will open in another tab. For those of you that have cookies disabled by default, and we know most developers do, you will need to enable them to complete the form. It’s an Adobe requirement, you can of course, disable as soon as you’ve signed the form.
+
+![](.gitbook/assets/image%20%2872%29.png)
+
+Again, our Accounts Department will setup your account and you’ll receive an email with your new Reapit Reference. No need to do anything with the reference,  as we will add this on your account automatically. Once received, you’ll be able to submit your app for approval or make any additional subscriptions.
+
+### 11. Listing your app in the Marketplace
+
+When you are ready to list your app in the Marketplace, either publicly or as a private app, it will first need to submitted for approval. For Marketplace apps, please see information on additional testing [here](whats-new.md#additional-testing). The approval process is started when you select the 'Submit for Approval' check box and 'Submit': 
+
+Our Admin Department will be notified and will carry out the necessary checks. This will include content for your app listing, UI compliance \(if building an application that is launched within Agency Cloud\), authentication & permissions/scopes requests. Please see below the steps to follow: 
+
+#### 1. First, make sure your app listing is ready
+
+Description, Images, Icon, Screenshots & Bullet points etc. Remember the content you add to your app will be one of the first things an agent will see when viewing apps in the Marketplace. 
+
+To help with ensuring you are ready, have a look at our guide on adding your content [here](https://foundations-documentation.reapit.cloud/whats-new#summary)
+
+#### 2. Submit for Approval
+
+Ticking the ‘Submit for Approval’ check box on your app listing, will let us know you are ready for our Admin Team to review and we will be notified immediately of your request.
+
+![](.gitbook/assets/image%20%2869%29.png)
+
+  
+Depending on your app listing or integration, this may take a couple of days.
+
+If your app is launchable inside of Agency Cloud or has a Client facing user interface, we will ask you to set your app to private, using Customer ID ‘RES’. We can then install your app as an external client \(still using sandbox data\). This step will give us the ability to test and view the following:
+
+#### Full Integrations - launchable inside of Agency Cloud
+
+* Authentication Ensuring an agent is not required to login with additional credentials or is presented with an additional login screen.
+* Onboarding Understanding the flow for existing and new users.
+* Branding We will look at your use of Elements, our UI Library, ensuring you have built the integration according to our branding guidelines
+* Functionality  Using the app in accordance with the service it is providing
+
+#### Direct API
+
+For Direct API integrations, after installing, we may request a user account to login into your website/app or arrange a demo. This will provide us with the ability to check:
+
+* Authentication If you have implemented Reapit Connect ‘Sign in with Reapit’ on your website, we will test with our user account to ensure that it is functional
+* Onboarding Understanding the flow for existing and new users
+* Functionality Using your website or app in accordance with the service it is providing
+
+#### 3. Submission Declined
+
+If the request to publish your app has been declined, you will be informed of the reason via email or we will give you a call to discuss. Sometimes, it could just be as simple as providing clearer images or that you may be missing some vital contact information. We will be on hand to help and advise you to quickly resolve any issues.
+
+#### 4. Submission Approved
+
+As soon as your app has been approved, it will be available in the Marketplace and you will be informed via email automatically. If it has been set to Private for testing, simply remove ‘RES’ from the Private section and re submit. 
+
+For more information about the requirements for listing an app in the Marketplace, please refer to your Developer Terms and Conditions. 
+
+If any changes are required you will be contacted by a member of the team.  The approval process is dependent on the level of complexity with your integration but in most cases, you will be contacted the same day. 
+
+Once your listing has been approved, you will receive an email confirming your app has been approved and will be set to a status of 'Listed'.  You app will then be listed in the Reapit Marketplace ready for client installation. 
+
+![](.gitbook/assets/image%20%2870%29.png)
 

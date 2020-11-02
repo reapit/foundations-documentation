@@ -15,11 +15,11 @@ Access between the Marketplace & the Developer Portal with one click! When you n
 
 To go back to the Developer Portal, simply click on the ‘Developers’ icon in the nav bar. The introduction of this flow will save time when testing and viewing your integration.
 
-![](.gitbook/assets/image%20%2865%29.png)
+![](.gitbook/assets/mpwn.jpg)
 
-![](.gitbook/assets/image%20%2866%29.png)
+![](.gitbook/assets/devwn.jpg)
 
-###  **Full Marketplace View**
+### **Full Marketplace View**
 
 Included in the new access flow, you will now see a full list of live and available apps, in addition to your own applications that are still in development. Previously, with your Developer account you could only see your own apps.
 
@@ -29,7 +29,7 @@ Apps that belong to your organisation and that are ‘In Development’ \(not li
 
 The ‘In Development’ banner will be visible on the ‘Browse’ apps page, ‘Installed’ & ‘Managed’:
 
-![](.gitbook/assets/image%20%2867%29.png)
+![](.gitbook/assets/epindev.png)
 
 ###  **Third Party Installations**
 
@@ -89,7 +89,7 @@ Over the last few weeks we have been working closely with our developers to see 
 
 When you are ready to list your app, you will first need to complete your Organisation & Billing information. The Admin of your organisation will have access to this information from the ‘Settings’ page.
 
-To complete your Organisation information, you will need to cick on ‘Settings’ and select ‘Organisation’  
+To complete your Organisation information, you will need to click on ‘Settings’ and select ‘Organisation’  
   
  You will then be required to fill in the following information:
 
