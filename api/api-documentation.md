@@ -370,7 +370,7 @@ We support querying using up to eight different filter operations, depending on 
 | **Operation** | **Keyword** | **Information** |
 | :--- | :--- | :--- |
 | Equals | **$eq** | Works for all data types |
-| Not equals | **$neq** | Works for all data types |
+| Not equals | **$ne** | Works for all data types |
 | Greater than | **$gt** | Works for datetime and numeric data types |
 | Less than | **$lt** | Works for datetime and numeric data types |
 | Greater than or equal to | **$gte** | Works for datetime and numeric data types |
