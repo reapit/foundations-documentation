@@ -333,16 +333,19 @@ At the end of a versions sunset period it will become depreciated and you will b
 
 ## Metadata
 
-Most resources that can be updated support a `metadata` attribute in their request and response payload. This attribute can be used to attach additional key-value data against a specific resource that your applications can later use.
+Our metadata system allows you to easily extend the data that our platform supports. Most of our POST and PATCH endpoints provide the ability to attach a JSON document to our entities which will be automatically included in future fetches of that entity. 
 
-Our metadata system allows you to easily extend the data that our resources present. You can create a richer integration between your application and our Platform and the process is simplified by storing all relevant data in a single place.
+We also provide specific metadata endpoints for more direct, granular control on the data you provide. You can use these same endpoints to build new, standalone entities that are specific to your application without needing to hosting your own datastore. 
 
-### Providing metadata
+Metadata is specific to a customer and any data that your application sets will not be made available to users of your application who represent a different customer. We do not recommend using metadata storage for any sensitive information \(personally identifiable details, bank accounts, etc\).
 
-The `metadata` attribute is populated in `POST` and `PATCH` payloads as below:
+### Attaching metadata to our entities
+
+The easiest way to work with metadata is to populate the `metadata` attribute on our existing endpoints. You can provide a JSON document in the `PATCH` or `POST` payload as below: 
 
 ```javascript
 {
+  <rest_of_payload>
   ...
   "metadata": {
     "MyCustomField1": "MyCustomValue1",
@@ -351,9 +354,28 @@ The `metadata` attribute is populated in `POST` and `PATCH` payloads as below:
 }
 ```
 
-Once `metadata` has been set against a resource, it will be automatically returned in the same format for future `GET` requests. ****Metadata is specific to a developer and any data that your application sets will not be presented to other developers who build on the Foundations platform.
+Once metadata has been set against an entity, it will be automatically returned in the same format for future `GET` requests originating from your app. 
 
-Metadata storage should not be used for any sensitive information \(personally identifiable details, bank accounts, etc\).
+For more granular control, you can use our dedicated metadata endpoints to create, update and retrieve outside of the context of one of our Foundations endpoints.
+
+### Creating custom entities
+
+You can use these metadata endpoints to use Foundations as a simple datastore. You can create a standalone entity by providing a custom `entityType` with your JSON payload:
+
+```javascript
+{
+  "entityType": "myCustomEntityType",
+  "entityId": "75c46440-5cb9-4db1-801d-f57eab8999e2",
+  "metadata": {
+    "CustomStringField": "my string",
+    "CustomBoolField": false,
+    "CustomNumericField": 100.5,
+    "CustomDateField": "2019-06-15T13:45:30Z"
+  }
+}
+```
+
+You can then fetch, filter and update your entity using the `/metadata` REST endpoints we provide.
 
 ### Searching for metadata
 
