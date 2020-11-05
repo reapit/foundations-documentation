@@ -10,7 +10,7 @@ Elements is a React UI Component and utility library we have developed internall
 
 Click the link below to visit the elements standalone site. More on this in the "Storybook" section below.
 
-{% embed url="https://elements.reapit.cloud/" %}
+{% embed url="https://elements.prod.paas.reapit.cloud/" %}
 
 The styles are based on the excellent [Bulma UI](https://bulma.io/) library to provide sensible base defaults for common patterns. Although the components themselves are based on React, the project exports a regular stylesheet you can import as normal and markup in your preferred templating language see "What if I don't use React" below.
 
