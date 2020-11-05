@@ -68,6 +68,14 @@ Landlords represent the details of one or more [contacts](platform-glossary.md#c
 
 Negotiators represent a member of staff working for an agent. Details about the individual negotiator are captured such as name, job title and email address – as well as the singular [office](platform-glossary.md#office) to which they are assigned.
 
+### Metadata
+
+Our [metadata ](api/api-documentation.md#metadata)system allows you to easily extend the data that our platform supports. Most of our POST and PATCH endpoints provide the ability to attach a JSON document to our entities which will be automatically included in future fetches of that entity. 
+
+When using our specific metadata endpoints for more direct, granular control on the data you provide, you can also build new, standalone entities that are specific to your application without needing to hosting your own datastore. 
+
+Metadata is specific to a developer and any data that your application sets will not be presented to other developers who build on the Foundations platform. We do not recommend using metadata storage for any sensitive information \(personally identifiable details, bank accounts, etc\).
+
 ### Offer
 
 Offers represent the submission of an offer from an [applicant ](platform-glossary.md#applicant)to purchase a [property](platform-glossary.md#property). Offers are for property sales only and represent information such as monetary amount, date of submission and a status to indicate whether the offer can proceed or not.
