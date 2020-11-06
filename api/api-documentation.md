@@ -360,7 +360,7 @@ For more granular control, you can use our dedicated metadata endpoints to creat
 
 ### Creating custom entities
 
-You can use these metadata endpoints to use Foundations as a simple datastore. You can create a standalone entity by providing a custom `entityType` with your JSON payload:
+You can use these metadata endpoints to use Foundations as a simple datastore. You can create a standalone entity by providing a custom `entityType` with your JSON payload. You can then fetch, filter and update your entity using the `/metadata` REST endpoints we provide.
 
 ```javascript
 {
@@ -375,7 +375,7 @@ You can use these metadata endpoints to use Foundations as a simple datastore. Y
 }
 ```
 
-You can then fetch, filter and update your entity using the `/metadata` REST endpoints we provide.
+If you'd like to associate your custom entity with an entity your hold outside of Foundations, you may pass in an `entityId` which you can later use for searching/filtering. If you do not, an `entityId` will be generated and returned to you automatically. 
 
 ### Searching for metadata
 
