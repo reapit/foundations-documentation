@@ -7,6 +7,12 @@ description: >-
 
 # Platform Change Log
 
+## November 2020
+
+#### 2020-11-06
+
+* [\#52](https://github.com/reapit/foundations/milestone/52) - New endpoints have been created to allow for metadata to be granularly managed outside the context of other endpoints and to allow standalone, custom metadata powered entities to be created. For more information, please [see our documentation](api/api-documentation.md#metadata)
+
 ## October 2020
 
 **2020-10-28**
