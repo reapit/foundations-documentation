@@ -18,5 +18,4 @@
 * [Platform Change Log](platform-changelog.md)
 * [Platform Glossary](platform-glossary.md)
 * [Developer Terms and Conditions](untitled.md)
-* [Developer Terms](developer-terms.md)
 
