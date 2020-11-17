@@ -607,5 +607,5 @@ Calculation of Total Consumption Cost - Example for representative purposes only
 
 5.     The Developer must use Reapit Connect and Reapit Elements UI component library when building Client Side Applications for the Marketplace.
 
-6.     The Developer will conduct an industry-standard penetration test on each Application at least once every calendar year and provide Reapit with the results of such test
+6.     The Developer will conduct an industry-standard penetration test on each Application at least once every calendar year and provide Reapit with the results of such test.
 
