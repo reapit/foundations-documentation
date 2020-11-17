@@ -10,7 +10,7 @@ description: >-
 
 | Date | File |
 | :--- | :--- |
-| 16th June 2020 | [Terms and Conditions.pdf](https://www.dropbox.com/s/0ivequso9qfyxrc/Foundations%20Terms%20160620.pdf?dl=0) |
+| 16th June 2020 | [Terms and Conditions.pdf](https://developers.reapit.cloud/foundations-terms-160620.pdf) |
 
 Version Date: 16th November 2020
 
