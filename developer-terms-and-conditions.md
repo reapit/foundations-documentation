@@ -6,13 +6,14 @@ description: >-
 
 # Developer Terms and Conditions
 
-### Previous Versions 
+### Versions 
 
 | Date | File |
 | :--- | :--- |
+| 17th November 2020 | [Terms and Conditions.pdf](https://developers.reapit.cloud/foundations-terms-171120.pdf) |
 | 16th June 2020 | [Terms and Conditions.pdf](https://developers.reapit.cloud/foundations-terms-160620.pdf) |
 
-Version Date: 16th November 2020
+Version Date: 17th November 2020
 
 ### 1  DEFINITIONS AND INTERPRETATION
 
@@ -76,11 +77,11 @@ Version Date: 16th November 2020
 
 1.1.26    **Intellectual Property Rights** means:
 
-\(a\)     copyright, patents, database rights and rights in trademarks, designs, know-how and confidential information \(whether registered or unregistered\);
+\(a\)          copyright, patents, database rights and rights in trademarks, designs, know-how and confidential information \(whether registered or unregistered\);
 
-\(b\)     applications for registration, and the right to apply for registration, for any of these rights; and
+\(b\)         applications for registration, and the right to apply for registration, for any of these rights; and
 
-\(c\)     ****all other intellectual property rights and equivalent or similar forms of protection existing anywhere in the world.
+\(c\)          ****all other intellectual property rights and equivalent or similar forms of protection existing anywhere in the world.
 
 1.1.27    **Loss** means claims, demands, actions, awards, judgments, settlements, costs, expenses, liabilities, damages and losses \(including all interest, fines, penalties, management time and legal and other professional costs and expenses\).
 
@@ -102,13 +103,13 @@ Version Date: 16th November 2020
 
 1.1.36    **Third Party** means any person which is not a Party.
 
-1.2           the words including and include shall mean including without limitation and include without limitation, respectively;
+1.2          the words including and include shall mean including without limitation and include without limitation, respectively;
 
-1.3           any reference to a time of day is to United Kingdom time;
+1.3          any reference to a time of day is to United Kingdom time;
 
-1.4           the Schedules form part of this Agreement;
+1.4          the Schedules form part of this Agreement;
 
-1.5           the headings do not affect the interpretation of this Agreement;
+1.5          the headings do not affect the interpretation of this Agreement;
 
 1.6           any reference to a statute or statutory provision includes, unless the context otherwise requires, a reference to that statute or statutory provision as from time to time amended, consolidated, extended, re-enacted, or replaced and to all statutory instruments, orders, regulations or rules made pursuant to it; and
 
@@ -126,7 +127,7 @@ Version Date: 16th November 2020
 
 2.2           As a condition of such continuing access, the Developer agrees that it will comply with the Developer Obligations.
 
-### 2.3        Working with other developers
+### 2.3       Working with other developers
 
 2.3.1       The Developer may, solely at its own risk, permit other developers to work on an Application on behalf of the Developer, provided that such other developer enters into a developer agreement on the same terms as this Agreement with Reapit.
 
