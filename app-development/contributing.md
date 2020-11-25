@@ -14,29 +14,34 @@ At Reapit, we have made a company wide commitment to open sourcing as much sourc
 
 All our code is in a [mono-repo on Github](https://github.com/reapit/foundations), along with our project [Kanban boards](https://github.com/reapit/foundations/projects) and an open [issues page.](https://github.com/reapit/foundations/issues) Most people will want to use this as a resource alongside their own project, as living code as documentation but if you do want to contribute to a project, fork and extend an app or fix a bug, we welcome pull requests from all.
 
+If you do want to work with the project, it is important to note there are certain configurations that are not committed to Github for security and environment reasons. Should you need to get access to a local configuration file, please contact us on the developer live chat in the Developer Portal &gt; Help section.
+
 ## Getting Started
 
 ### Pre-requisites
 
-To get started working working with Foundations, you will first need to have [Git](https://git-scm.com/), [NodeJS](https://nodejs.org/en/) and [Yarn](https://yarnpkg.com/) installed globally on your local machine.
+To get started working working with Foundations, you will first need to have [Git](https://git-scm.com/), [NodeJS](https://nodejs.org/en/) and [Yarn](https://yarnpkg.com/) installed globally on your local machine. Currently, we use `yarn@1.8.2` and `node@12.x.x` internally however, other versions may well work for you.
 
-Then, you will need to clone the repo with this command `git clone git@github.com:reapit/foundations.git`
+For a clean build, then follow the steps below;
 
-You then need to set up Yarn workspaces with `yarn config set workspaces-experimental true`
-
-Then install dependencies with `yarn`
+1. Clone the repo: `git clone git@github.com:reapit/foundations.git`
+2. CD into the root of the project: `cd foundations`
+3. Set up Yarn workspaces: `yarn config set workspaces-experimental true`
+4. Install dependencies \(on the first run, this will take a while\): `yarn`
+5. Install Git Secrets specific to your OS: [`https://github.com/awslabs/git-secrets`](https://github.com/awslabs/git-secrets)\`\`
+6. Either: Obtain developer AWS Access Keys from a Reapit Admin and add to your bash profile as per instructions here: [https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/guide\_credentials\_profiles.html](https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/guide_credentials_profiles.html) then run `yarn fetch-config` to pull in remote configs from AWS Parameter Store
+7. Or obtain a `config.json` file for the package you are working on from a Reapit Admin and add to the root of the package directory \(see Environment and Config below\).
 
 ### Working with the Mono Repo
 
-We have a CLI binary that exists at the root of the project called `wapp` that makes working with workspaces easier. Under the hood, as well as Yarn Workspaces we also leverage [LernaJS](https://lerna.js.org/) to manage package and dependencies.
+We use Yarn Workspaces and [LernaJS](https://lerna.js.org/) to manage package and dependencies.
 
-This exports the following commands:
+From the root of the project, you can run the following Workspace Commands to manage and interact with individual packages:
 
-* To add dependencies to the project root  `./wapp add global <dependency_name>`
-* To add dependencies to an individual project `./wapp add <package_name> <dependency_name>`
-* To add dev dependencies to a particular project`/.wapp add-dev <package_name> <dependency_name>`
-* To run a particular project `./wapp start <package_name>`
-* To run the tests for a project  `./wapp test <package_name> --watch`
+* To add dependencies to the project root   `yarn add <dependency_name> -W`
+* To add dependencies to an individual project  `yarn workspace <package_name> add <dependency_name>`
+* To run a particular project  `yarn workspace <package_name> start:dev`
+* To run the tests for a project   `yarn workspace <package_name> test:dev`
 * To create a new package within the main repo`yarn workspace react-app-scaffolder scaffold`
 
 ### Environment & Config
@@ -45,7 +50,7 @@ Each of our applications load their configuration from a file called `config.jso
 
 Internally we manage the non confidential config using our Config Manager [see here](web.md#config-manager) for info on how to do this yourself. If you are working internally on the project, you should follow these steps.
 
-An example of the base config file[ is here](https://github.com/reapit/foundations/blob/master/packages/marketplace/config.example.json) and by default one ships with our app scaffolder. If you are trying to build the apps yourself, you can rename this, place in the root director, add a value to the `cognitoClientId`\(this is the client id, you can see in the app detail modal when you have submitted your app\), `cognitoOAuthUrl` and `cognitoUserPoolId` , and you should have sufficient config to work in the local environment.
+An example of the base config file [is here](https://github.com/reapit/foundations/blob/master/packages/react-app-scaffolder/app/templates/graphql/config.example.json) and by default one ships with our CRA Template and React App Scaffolder packages. If you are trying to build the apps yourself, you can rename this, place in the root director, add a value to the `connectClientId`\(this is the client id, you can see in the app detail modal when you have submitted your app\), `connectOAuthUrl` and `connectUserPoolId` , and you should have sufficient config to work in the local environment.
 
 The reason why we choose to fetch the config and inject in the render time is we only build one time and the bundle can run on many environment by replacing the `config.json` file.
 
@@ -55,11 +60,11 @@ The codebase is almost exclusively written in [TypeScript](https://www.typescrip
 
 For those who have not worked with TS before, it is "just JavaScript" with type notations - we would recommend doing a couple of tutorials before digging into the codebase but for experienced JavaScript devs, you can be productive extremely quickly in TypeScript too.
 
-We use [Webpack](https://webpack.js.org/) for bundling our code the Webpack scripts are all found in the `./scripts/webpack` directory. We use the TypeScript compiler to transpile our builds to modern ESNext code in dev mode, and for production, we use [Babel](https://babeljs.io/) to target older browsers \(IE 11\). There is a base TS Config that all packages inherit from at the base of the project.
+We use [Webpack](https://webpack.js.org/) for bundling our code the Webpack scripts are all found in the `./scripts/webpack` directory. We use the TypeScript compiler to transpile our builds to modern ESNext code in dev mode, and for production, we use [Babel](https://babeljs.io/) for cross browser support - modern browsers only, no IE support. There is a base TS Config that all packages inherit from at the base of the project.
 
 We have worked to normalise our development workflows so that the majority of packages export the same predictable commands for building and running in both development and production modes.
 
-Given that you have already installed dependencies [\(see getting started\)](contributing.md#getting-started), you can `cd` into a `packages/<<package-name>>` directory and \(where relevant\);
+Given that you have already installed dependencies [\(see getting started\)](contributing.md#getting-started), you can `cd` into a `packages/<<package-name>>` directory or run `yarn workspace <<package-name>> <<command>>`  \(where relevant\);
 
 `yarn start:dev` will get you up and running with a web-server at `localhost:8080`
 
@@ -77,9 +82,9 @@ Given that you have already installed dependencies [\(see getting started\)](con
 
 ### Styling
 
-We support two styling methods across our projects; [SASS with CSS Modules](https://sass-lang.com/) and [Styled Components](https://styled-components.com/). You are welcome to use either and both are supported by our [React App Scaffolder](web.md#react-app-scaffolder), although only one by project.
+We support two styling methods across our projects; [SASS with CSS Modules](https://sass-lang.com/) and [Linaria](https://github.com/callstack/linaria) \(CSS in JS\). For new projects we favour Linaria and are aiming to eventually deprecate / refactor our SASS from our projects.
 
-By convention, we store any Styled Components that are specific to an individual component in a sub folder of that component called `__styles__` however, if a style is re-usable, generic or global to the project, please use the `src/styles` directory to reduce duplication.
+By convention, we store any Linaria components that are specific to an individual component in a sub folder of that component called `__styles__` however, if a style is re-usable, generic or global to the project, please use the `src/styles` directory to reduce duplication.
 
 For components that are genuinely generic across the estate, please take the time to add to the [Elements](web.md#elements) project as a Storybook item so we can use it again. If you suspect you may be writing a common component from scratch, it is likely it will already exist in Elements so please take a look if there is anything that can be re-used or adapted with a modifier class.
 
@@ -114,21 +119,7 @@ org=<your_organization>
 keepalive=false
 ```
 
-1. Add to webpack plugins
-
-   ```text
-   new SentryWebpackPlugin({
-   include: './public/dist/',
-   ignore: ['node_modules'],
-   configFile: '.sentryclirc',
-   setCommits: {
-    repo: '<your_repo_name>',
-    auto: true,
-   },
-   }),
-   ```
-
-   For more information please reference [https://github.com/getsentry/sentry-webpack-plugin](https://github.com/getsentry/sentry-webpack-plugin)
+For more information on how we build source maps from our Webpack builds please reference [https://github.com/getsentry/sentry-webpack-plugin](https://github.com/getsentry/sentry-webpack-plugin)
 
 ### Interacting with our APIs
 
@@ -198,7 +189,7 @@ As per the previous sections, all work on the project is performed against the s
 
 The vast majority of base code style is enforced by [ESLint](https://eslint.org/) with sensible community presets from [TSLint](https://palantir.github.io/tslint/) rules, and [Prettier](https://prettier.io/). The linter runs in a pre-commit hook on staged files with an auto-fix flag set to address any trivial issues.
 
-If you want to run the lint command manually, you can do this from the root of the project by executing `yarn lint`
+If you want to run the lint command manually, you can do this from the root of the project by executing `yarn check:all` - this will also run the TS Type Checking service and attempt to fix any errors.
 
 In addition to the lint rules, please also where possible, stick to the contribution guidelines below. These rules should be kept in mind when reviewing Pull Requests.
 
