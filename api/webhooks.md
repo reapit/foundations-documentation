@@ -4,6 +4,10 @@ description: Technical guidance for working with webhooks for real time event no
 
 # Webhooks
 
+{% hint style="warning" %}
+Please note applications developed using Webhooks will only be  available in the Marketplace to customers who have been migrated to AWS.
+{% endhint %}
+
 ## Introduction
 
 Webhooks allow you set up an endpoint in your own application to receive programmatical notifications from the Foundations Platform about changes to our customers data as it happens. 
