@@ -90,7 +90,7 @@ Then select an icon and a featured image for your app listing. You will be asked
 
 The next step is for external, non Marketplace apps and should be skipped if you are building a web-based marketplace listed app; if however you are building an integration that you don't want to appear in the marketplace, you can select this option. You app will still be listed for permission only purposes however, it will not be possible to launch from within the Agency Cloud desktop app. For the purposes of this example, we will leave unchecked.
 
-![](.gitbook/assets/image%20%2871%29.png)
+![](.gitbook/assets/image%20%2876%29.png)
 
 The last step is to select any additional permissions \(OAuth scopes\) you need for your app to work. They must map to the endpoints you selected at point two above.
 
@@ -185,9 +185,9 @@ If your app is launchable inside of Agency Cloud or has a Client facing user int
 * Branding We will look at your use of Elements, our UI Library, ensuring you have built the integration according to our branding guidelines
 * Functionality  Using the app in accordance with the service it is providing
 
-#### Direct API
+#### Integrations 
 
-For Direct API integrations, after installing, we may request a user account to login into your website/app or arrange a demo. This will provide us with the ability to check:
+For integrations, after installing, we may request a user account to login into your website/app or arrange a demo. This will provide us with the ability to check:
 
 * Authentication If you have implemented Reapit Connect ‘Sign in with Reapit’ on your website, we will test with our user account to ensure that it is functional
 * Onboarding Understanding the flow for existing and new users
