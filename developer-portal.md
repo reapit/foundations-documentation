@@ -178,7 +178,7 @@ Depending on your app listing or integration, this may take a couple of days.
 
 If your app is launchable inside of Agency Cloud or has a Client facing user interface, we will ask you to set your app to private, using Customer ID ‘RES’. We can then install your app as an external client \(still using sandbox data\). This step will give us the ability to test and view the following:
 
-#### Full Integrations - launchable inside of Agency Cloud
+#### Apps - launchable inside of Agency Cloud
 
 * Authentication Ensuring an agent is not required to login with additional credentials or is presented with an additional login screen.
 * Onboarding Understanding the flow for existing and new users.
