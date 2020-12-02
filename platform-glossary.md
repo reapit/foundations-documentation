@@ -20,7 +20,7 @@ Appointments represent calendar engagements used by [negotiators](platform-gloss
 
 ### Company
 
-Companies represent a business organisation that the agent \(customer\) has a relationship with. Companies can be assigned a type which relates to the various roles they are able to fulfill such as solicitor or supplier, as well as being able to be involved in their own [property](platform-glossary.md#property) transactions.
+Companies represent a business organisation that the agent \([customer](platform-glossary.md#customer)\) has a relationship with. Companies can be assigned a type which relates to the various roles they are able to fulfill such as solicitor or supplier, as well as being able to be involved in their own [property](platform-glossary.md#property) transactions.
 
 ### Configuration
 
