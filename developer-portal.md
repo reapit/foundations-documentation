@@ -193,6 +193,8 @@ For integrations, after installing, we may request a user account to login into 
 * Onboarding Understanding the flow for existing and new users
 * Functionality Using your website or app in accordance with the service it is providing
 
+There are also other guidelines that need to be followed, please refer to '[Schedule 3](developer-terms-and-conditions.md#schedule-3-developer-obligations)' on your Developer Terms and Conditions. 
+
 #### 3. Submission Declined
 
 If the request to publish your app has been declined, you will be informed of the reason via email or we will give you a call to discuss. Sometimes, it could just be as simple as providing clearer images or that you may be missing some vital contact information. We will be on hand to help and advise you to quickly resolve any issues.
