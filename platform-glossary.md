@@ -20,7 +20,7 @@ Appointments represent calendar engagements used by [negotiators](platform-gloss
 
 ### Company
 
-Companies represent a business organisation that the agent has a relationship with. Companies can be assigned a type which relates to the various roles they are able to fulfill such as solicitor or supplier, as well as being able to be involved in their own [property](platform-glossary.md#property) transactions.
+Companies represent a business organisation that the agent \(customer\) has a relationship with. Companies can be assigned a type which relates to the various roles they are able to fulfill such as solicitor or supplier, as well as being able to be involved in their own [property](platform-glossary.md#property) transactions.
 
 ### Configuration
 
@@ -39,6 +39,10 @@ Conveyancing represents the process of progressing an accepted [offer ](platform
 Submitting new offers and transitioning them to an accepted status is done using the Offers API. The Conveyancing API is responsible for transitioning that existing, accepted offer into a completed property sale. 
 
 Our Conveyancing APIs also allow a chain to be managed, providing a means of linking dependant offers together. It's possible to link to offers added to other properties that the customer has instructed, as well as those that are external and instructed to another agent.
+
+### Customer
+
+Customers represent estate agents who use Reapit software. We do not provide an API to obtain details of our customers, instead, their details will be known to you at the point that they install your marketplace application. 
 
 ### Department
 
