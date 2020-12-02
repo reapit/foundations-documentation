@@ -6,7 +6,7 @@ description: How to manage authentication of Reapit users with our hosted identi
 
 ## Overview
 
-Reapit Connect is our hosted identity solution designed to allow applications to securely authenticate Reapit users against a single, trusted identity. Backed by our OpenID Connect compliant system, it is quick and easy to build applications that adhere to best security practices and extend an excellent experience to your users.
+Reapit Connect is our hosted identity solution designed to allow applications to securely authenticate Reapit users against a single, trusted identity. Backed by our [OpenID Connect](https://openid.net/connect/faq/) compliant system, it is quick and easy to build applications that adhere to best security practices and extend an excellent experience to your users.
 
 **Building your application with Reapit Connect is our recommended way to interact with our Platform.**
 
