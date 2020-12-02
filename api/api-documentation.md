@@ -377,6 +377,10 @@ You can use these metadata endpoints to use Foundations as a simple datastore. Y
 
 If you'd like to associate your custom entity with an entity your hold outside of Foundations, you may pass in an `entityId` which you can later use for searching/filtering. If you do not, an `entityId` will be generated and returned to you automatically. 
 
+### Validating customer entities
+
+Our `metadataSchema` endpoints allow you to provide a [JSON Schema](https://json-schema.org/) to validate the metadata JSON document that you provide the platform. Once you associate a schema with a custom entity type, you it will be used to validate future metadata submissions for entities of that type. If this content does not conform with the JSON schema you've provided for that entity type, the request with fail with a `422 Unprocessable Entity` response and a[ listing of the reasons why validation](api-documentation.md#request-validation) failed. 
+
 ### Searching for metadata
 
 Once metadata has been set against an entity, its content can then be used to re-locate that entity by using your metadata as a search term. The `metadata` query string parameter accepts a filter expression to identity the record\(s\) required in the following prescribed format:
