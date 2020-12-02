@@ -550,7 +550,7 @@ in each case whether arising from breach of contract, negligence, under any inde
 2.2.3       whether any third parties are involved as sub-processors of the Personal Data.  
 ****
 
-### SCHE-DULE 2 – FEES 
+### SCHEDULE 2 – FEES 
 
 | **Type** | **Amount** | **Payable** |
 | :--- | :--- | :--- |
