@@ -7,6 +7,51 @@ description: >-
 
 # What’s New
 
+## 03/12/10
+
+### New fields now available
+
+We have recently updated the Developers Portal to allow for 4 new fields on your App listing which can be managed when clicking on 'Edit Details'. 
+
+* Terms and Conditions
+* Privacy Policy
+* Pricing Info
+* This Application is Free
+
+For your App/Integrations to be submitted for approval and listed in the Marketplace, you will need to provide a secure URL \(https://\) for each field.
+
+![New fields on the &apos;Edit Details&apos; app form](.gitbook/assets/image%20%2877%29.png)
+
+However, if your app is free of charge and occurs no cost to the end user, please use the ‘This Application is Free’ check box. If selected, you will not be required to enter your Pricing Information. 
+
+The information you provide in each field is then surfaced on your app listing in the Marketplace for agents to view:
+
+![Example of the new Developer Links section](.gitbook/assets/image%20%2879%29.png)
+
+If your app is ‘Free’, the pricing link will not be present on the app listing. A 'FREE' tag will be displayed when browsing the Marketplace: 
+
+![&apos;Free&apos; App in the Marketplace](.gitbook/assets/image%20%2880%29.png)
+
+The URL you provide for your ‘Pricing Information’ will also be presented to an agent on the install confirmation modal.
+
+If you have provided a URL we will display the following new section under 'Pricing Information':
+
+![Example &apos;Install&apos; confirmation modal displaying a link to pricing](.gitbook/assets/image%20%2878%29.png)
+
+### Agency Cloud Apps now launchable after installation
+
+The latest release also includes a new ‘Launch App’ button after installation.
+
+This will allow the agent to have the ability to immediately launch your App. This option is only available for Agency Cloud Apps \(not available for ‘Integrations’\)
+
+![New &apos;Launch App&apos; button](.gitbook/assets/image%20%2881%29.png)
+
+As installations are only available to 'Admins', this is a great way to accelerate the onboarding process as it can be completed immediately. 
+
+### Terminology Update
+
+‘Direct API’ has now been updated to ‘Integration’. This has been updated in the Marketplace, Developers Portal and all associated documentation.
+
 ## 26/10/2020
 
 ### **Seamless integration between the Developer Portal & the Reapit Marketplace**
