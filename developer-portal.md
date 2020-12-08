@@ -161,7 +161,7 @@ Again, our Accounts Department will setup your account and you’ll receive an e
 The review process from start to finish will typically take between 6-7 weeks. Please allow plenty of time as we often have a backlog of apps and integrations to review.
 {% endhint %}
 
-When you are ready to list your app in the Marketplace, either publicly or as a private app, it will first need to submitted for approval. For Marketplace apps, please see information on additional testing [here](whats-new.md#additional-testing). The approval process is started when you select the 'Submit for Approval' check box and 'Submit': 
+When you are ready to list your app in the Marketplace, either publicly or as a private app, it will first need to be submitted for approval. For Marketplace apps, please see information on additional testing [here](whats-new.md#additional-testing). The approval process is started when you select the 'Submit for Approval' check box and 'Submit': 
 
 Our Admin Department will be notified and will carry out the necessary checks. This includes but is not limited to content for your app listing, UI compliance \(if building an application that is launched within Agency Cloud\), authentication and permissions/scopes as well as architecture and security. There are other guidelines that also need to be followed, please refer to '[Schedule 3](developer-terms-and-conditions.md#schedule-3-developer-obligations)' on your Developer Terms and Conditions and make sure to read them carefully.
 
@@ -179,7 +179,6 @@ Ticking the ‘Submit for Approval’ check box on your app listing, will let us
 
 ![](.gitbook/assets/image%20%2869%29.png)
 
-  
 Depending on your app listing or integration and its complexity, the review process from start to finish will typically take between 6-7 weeks. Please allow plenty of time as we often have a backlog of apps and integrations to review.
 
 If your app is launchable inside of Agency Cloud or has a Client facing user interface, we will ask you to set your app to private, using Customer ID ‘RES’. We can then install your app as an external client \(still using sandbox data\). This step will give us the ability to test and view the following:
@@ -203,7 +202,7 @@ There are also other guidelines that need to be followed, please refer to '[Sche
 
 #### 3. Submission Declined
 
-If the request to publish your app has been declined, you will be informed of the reason via email or we will give you a call to discuss. Sometimes, it could just be as simple as providing clearer images or that you may be missing some vital contact information. We will be on hand to help and advise you to quickly resolve any issues.
+If the request to publish your app has been declined, you will be informed of the reason via email or we will give you a call to discuss. Sometimes, it could just be as simple as providing clearer images or that you may be missing some vital contact information. We will be on hand to help and advise you how to resolve any issues.
 
 #### 4. Submission Approved
 
@@ -211,7 +210,7 @@ As soon as your app has been approved, it will be available in the Marketplace a
 
 For more information about the requirements for listing an app in the Marketplace, please refer to your Developer Terms and Conditions. 
 
-If any changes are required you will be contacted by a member of the team.  The approval process is dependent on the level of complexity with your integration but in most cases, you will be contacted the same day. 
+If any changes are required you will be contacted by a member of the team.
 
 Once your listing has been approved, you will receive an email confirming your app has been approved and will be set to a status of 'Listed'.  You app will then be listed in the Reapit Marketplace ready for client installation. 
 
