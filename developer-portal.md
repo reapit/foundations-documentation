@@ -158,7 +158,7 @@ Again, our Accounts Department will setup your account and you’ll receive an e
 ### 11. Listing your app in the Marketplace
 
 {% hint style="info" %}
-The review process from start to finish will typically takes between 6-7 weeks. Please allow plenty of time as we often have a backlog of apps and integrations to review.
+The review process from start to finish will typically take between 6-7 weeks. Please allow plenty of time as we often have a backlog of apps and integrations to review.
 {% endhint %}
 
 When you are ready to list your app in the Marketplace, either publicly or as a private app, it will first need to be submitted for approval. For Marketplace apps, please see information on additional testing [here](whats-new.md#additional-testing). The approval process is started when you select the 'Submit for Approval' check box and 'Submit': 
@@ -179,7 +179,7 @@ Ticking the ‘Submit for Approval’ check box on your app listing, will let us
 
 ![](.gitbook/assets/image%20%2869%29.png)
 
-Depending on your app listing or integration and its complexity, the review process from start to finish will typically takes between 6-7 weeks. Please allow plenty of time as we often have a backlog of apps and integrations to review.
+Depending on your app listing or integration and its complexity, the review process from start to finish will typically take between 6-7 weeks. Please allow plenty of time as we often have a backlog of apps and integrations to review.
 
 If your app is launchable inside of Agency Cloud or has a Client facing user interface, we will ask you to set your app to private, using Customer ID ‘RES’. We can then install your app as an external client \(still using sandbox data\). This step will give us the ability to test and view the following:
 
