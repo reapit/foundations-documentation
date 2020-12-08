@@ -5,7 +5,7 @@ description: Technical guidance for working with webhooks for real time event no
 # Webhooks
 
 {% hint style="warning" %}
-Please note that apps and integrations developed using Webhooks for topics other than application install/uninstall will only be visible in the Marketplace to customers who have been migrated to AWS. 
+Please note that applications developed using Webhooks for topics other than application install/uninstall will only be visible in the Marketplace to customers who have been migrated to AWS. 
 {% endhint %}
 
 ## Introduction
