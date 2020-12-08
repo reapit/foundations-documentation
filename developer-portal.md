@@ -157,9 +157,15 @@ Again, our Accounts Department will setup your account and you’ll receive an e
 
 ### 11. Listing your app in the Marketplace
 
+{% hint style="info" %}
+The review process from start to finish will typically take between 6-7 weeks. Please allow plenty of time as we often have a backlog of apps and integrations to review.
+{% endhint %}
+
 When you are ready to list your app in the Marketplace, either publicly or as a private app, it will first need to submitted for approval. For Marketplace apps, please see information on additional testing [here](whats-new.md#additional-testing). The approval process is started when you select the 'Submit for Approval' check box and 'Submit': 
 
-Our Admin Department will be notified and will carry out the necessary checks. This will include content for your app listing, UI compliance \(if building an application that is launched within Agency Cloud\), authentication & permissions/scopes requests. Please see below the steps to follow: 
+Our Admin Department will be notified and will carry out the necessary checks. This includes but is not limited to content for your app listing, UI compliance \(if building an application that is launched within Agency Cloud\), authentication and permissions/scopes as well as architecture and security. There are other guidelines that also need to be followed, please refer to '[Schedule 3](developer-terms-and-conditions.md#schedule-3-developer-obligations)' on your Developer Terms and Conditions and make sure to read them carefully.
+
+Please see below the steps to follow to submit your app for approval: 
 
 #### 1. First, make sure your app listing is ready
 
@@ -174,7 +180,7 @@ Ticking the ‘Submit for Approval’ check box on your app listing, will let us
 ![](.gitbook/assets/image%20%2869%29.png)
 
   
-Depending on your app listing or integration, this may take a couple of days.
+Depending on your app listing or integration and its complexity, the review process from start to finish will typically take between 6-7 weeks. Please allow plenty of time as we often have a backlog of apps and integrations to review.
 
 If your app is launchable inside of Agency Cloud or has a Client facing user interface, we will ask you to set your app to private, using Customer ID ‘RES’. We can then install your app as an external client \(still using sandbox data\). This step will give us the ability to test and view the following:
 
@@ -187,7 +193,7 @@ If your app is launchable inside of Agency Cloud or has a Client facing user int
 
 #### Integrations 
 
-For integrations, after installing, we may request a user account to login into your website/app or arrange a demo. This will provide us with the ability to check:
+For integrations, after installing, we will require a test and production user account to login into your website/app so our admin team can test its functionality. This will provide us with the ability to check:
 
 * Authentication If you have implemented Reapit Connect ‘Sign in with Reapit’ on your website, we will test with our user account to ensure that it is functional
 * Onboarding Understanding the flow for existing and new users
