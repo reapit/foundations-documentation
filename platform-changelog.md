@@ -7,6 +7,12 @@ description: >-
 
 # Platform Change Log
 
+## December 2020
+
+**2020-12-15**
+
+* [\#3138 ](https://github.com/reapit/foundations/issues/3138)- Fixed issue where duplicate contacts could be displayed as part of an appointment attendee's contacts collection in certain situations when calling `GET /appointments`
+
 ## November 2020
 
 #### 2020-11-06
