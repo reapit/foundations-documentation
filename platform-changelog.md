@@ -9,6 +9,10 @@ description: >-
 
 ## December 2020
 
+**2020-12-16**
+
+* [\#2198](https://github.com/reapit/foundations/issues/2918) - `/documents` APIs will now advertise support for metadata in documentation
+
 **2020-12-15**
 
 * [\#3138 ](https://github.com/reapit/foundations/issues/3138)- Fixed issue where duplicate contacts could be displayed as part of an appointment attendee's contacts collection in certain situations when calling `GET /appointments`
