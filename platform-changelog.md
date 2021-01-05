@@ -7,7 +7,14 @@ description: >-
 
 # Platform Change Log
 
-## December 2020
+## January 2021
+
+**2020-01-05**
+
+* [\#3211](https://github.com/reapit/foundations/issues/3211) - It is now possible to filter by `propertyId` when calling `GET /journalEntries`
+* [\#3216](https://github.com/reapit/foundations/issues/3216) - The `officeIds` array return in the `AppointmentModel` will now include the id of the office the primary negotiator associated with the appointment is attached to
+
+## \#December 2020
 
 **2020-12-16**
 
