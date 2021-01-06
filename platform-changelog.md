@@ -9,6 +9,10 @@ description: >-
 
 ## January 2021
 
+2020-01-06
+
+* [\#3189](https://github.com/reapit/foundations/issues/3189) - `GET /offices` can now be filtered and sorted by created/modified
+
 **2020-01-05**
 
 * [\#3211](https://github.com/reapit/foundations/issues/3211) - It is now possible to filter by `propertyId` when calling `GET /journalEntries`
