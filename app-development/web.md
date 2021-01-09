@@ -22,13 +22,13 @@ The below example shows how to embed on any static or dynamic page with a single
 
 ```markup
 <div id="reapit-connect-component"></div>
-<script src="https://web-components.reapit.cloud/reapit-connect-component.js"></script>
+<script src="https://web-components.prod.paas.reapit.cloud/reapit-connect-component.js"></script>
 <script>
 
   const connectHasSessionCallback = (reapitConnectBrowserSession) => {
     reapitConnectBrowserSession.connectSession().then(session => {
       console.log('Session is', session)
-      fetch('https://dev.platform.reapit.cloud/appointments', {
+      fetch('https://platform.reapit.cloud/appointments', {
         headers: {
           'Content-Type': 'application/json',
           'Authorization': `Bearer ${session.accessToken}`,
@@ -43,7 +43,7 @@ The below example shows how to embed on any static or dynamic page with a single
   ReapitConnectComponent && new ReapitConnectComponent({
     connectClientId: '<<clientId here>>>',
     connectUserPoolId: '<<userpool id here>>'
-    connectOAuthUrl: 'https://dev.connect.reapit.cloud',
+    connectOAuthUrl: 'https://connect.reapit.cloud',
     connectLoginRedirectPath: '',
     connectLogoutRedirectPath: '/login',
     connectContainerId: '#reapit-connect-component',
