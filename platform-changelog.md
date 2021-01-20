@@ -9,7 +9,12 @@ description: >-
 
 ## January 2021
 
-2020-01-06
+**2020-01-20**
+
+* [\#3318](https://github.com/reapit/foundations/issues/3318) - Fixed bug where `surname` field was not being validated correct when sending payload to `POST /enquiries`
+* [\#3189](https://github.com/reapit/foundations/issues/3189) - `GET /enquiries` can now be filtered and sorted by created/modified
+
+**2020-01-06**
 
 * [\#3189](https://github.com/reapit/foundations/issues/3189) - `GET /offices` can now be filtered and sorted by created/modified
 
