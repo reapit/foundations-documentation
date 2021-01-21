@@ -9,6 +9,12 @@ description: >-
 
 ## January 2021
 
+**2020-01-21**
+
+* [\#3291](https://github.com/reapit/foundations/issues/3291) - Properties API `externalArea` models will now expose the `max` property as 0 instead of null so the representation of what is available in the Agency Cloud UI is more accurate
+* [\#3278](https://github.com/reapit/foundations/issues/3278) - Unlisted apps limit increased from 5 to 10 in the Developer Portal
+* [\#3287](https://github.com/reapit/foundations/issues/3287) - Appointment APIs now support the new Agency Cloud `virtual` appointment flag
+
 **2020-01-20**
 
 * [\#3318](https://github.com/reapit/foundations/issues/3318) - Fixed bug where `surname` field was not being validated correct when sending payload to `POST /enquiries`
