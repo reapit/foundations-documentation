@@ -11,7 +11,7 @@ description: >-
 
 **2020-01-22**
 
-* [\#3178](https://github.com/reapit/foundations/issues/3178) - Fixed issue where `PATCH /conveyancing/{id}` would fail with a 412 PreConditionFailed error
+* [\#3178](https://github.com/reapit/foundations/issues/3178) - Fixed issue where `PATCH /conveyancing/{id}` would fail with a 400 BadRequest error
 * [\#3334](https://github.com/reapit/foundations/issues/3334) - Fixed issue with eTag validation on some requests to `PATCH /documents/{id}`
 
 **2020-01-21**
