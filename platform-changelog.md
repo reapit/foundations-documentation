@@ -9,6 +9,10 @@ description: >-
 
 ## January 2021
 
+**2020-01-22**
+
+* [\#3334](https://github.com/reapit/foundations/issues/3334) - Fixed issue with eTag validation on some requests to `PATCH /documents/{id}`
+
 **2020-01-21**
 
 * [\#3291](https://github.com/reapit/foundations/issues/3291) - Properties API `externalArea` models will now expose the `max` property as 0 instead of null so the representation of what is available in the Agency Cloud UI is more accurate
