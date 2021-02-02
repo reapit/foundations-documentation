@@ -7,29 +7,35 @@ description: >-
 
 # Platform Change Log
 
+## February 2021
+
+**2021-02-02**
+
+* Fixed issue where image thumbnails were not being generated correctly when calling `POST /propertyImages`
+
 ## January 2021
 
-**2020-01-22**
+**202**1**-01-22**
 
 * [\#3178](https://github.com/reapit/foundations/issues/3178) - Fixed issue where `PATCH /conveyancing/{id}` would fail with a 400 BadRequest error
 * [\#3334](https://github.com/reapit/foundations/issues/3334) - Fixed issue with eTag validation on some requests to `PATCH /documents/{id}`
 
-**2020-01-21**
+**2021-01-21**
 
 * [\#3291](https://github.com/reapit/foundations/issues/3291) - Properties API `externalArea` models will now expose the `max` property as 0 instead of null so the representation of what is available in the Agency Cloud UI is more accurate
 * [\#3278](https://github.com/reapit/foundations/issues/3278) - Unlisted apps limit increased from 5 to 10 in the Developer Portal
 * [\#3287](https://github.com/reapit/foundations/issues/3287) - Appointment APIs now support the new Agency Cloud `virtual` appointment flag
 
-**2020-01-20**
+**2021-01-20**
 
 * [\#3318](https://github.com/reapit/foundations/issues/3318) - Fixed bug where `surname` field was not being validated correct when sending payload to `POST /enquiries`
 * [\#3189](https://github.com/reapit/foundations/issues/3189) - `GET /enquiries` can now be filtered and sorted by created/modified
 
-**2020-01-06**
+**2021-01-06**
 
 * [\#3189](https://github.com/reapit/foundations/issues/3189) - `GET /offices` can now be filtered and sorted by created/modified
 
-**2020-01-05**
+**2021-01-05**
 
 * [\#3211](https://github.com/reapit/foundations/issues/3211) - It is now possible to filter by `propertyId` when calling `GET /journalEntries`
 * [\#3216](https://github.com/reapit/foundations/issues/3216) - The `officeIds` array return in the `AppointmentModel` will now include the id of the office the primary negotiator associated with the appointment is attached to
