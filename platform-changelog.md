@@ -9,6 +9,10 @@ description: >-
 
 ## February 2021
 
+**2021-02-08**
+
+* [\#3435](https://github.com/reapit/foundations/issues/3435) - It is now possible to filter by email address when using `GET /negotiators` using the `email` query string parameter
+
 **2021-02-05**
 
 * [\#3433](https://github.com/reapit/foundations/issues/3433) - Fixed issue where `negotiatorId` of 2 characters in length would be rejected by a number of `POST` endpoints
