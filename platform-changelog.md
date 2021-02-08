@@ -9,6 +9,10 @@ description: >-
 
 ## February 2021
 
+**2021-02-05**
+
+* [\#3433](https://github.com/reapit/foundations/issues/3433) - Fixed issue where `negotiatorId` of 2 characters in length would be rejected by a number of `POST` endpoints
+
 **2021-02-02**
 
 * Fixed issue where image thumbnails were not being generated correctly when calling `POST /propertyImages`
