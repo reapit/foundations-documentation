@@ -9,6 +9,14 @@ description: >-
 
 ## February 2021
 
+**2021-02-12**
+
+* [\#3417](https://github.com/reapit/foundations/issues/3417) - It is now possible to filter by the `active` flag when calling `GET /applicants`
+
+**2021-02-11**
+
+* [\#3481](https://github.com/reapit/foundations/issues/3481) - Fixed issue where certain data states would cause a 500 error when calling `GET /tenancies`
+
 **2021-02-08**
 
 * [\#3435](https://github.com/reapit/foundations/issues/3435) - It is now possible to filter by email address when using `GET /negotiators` using the `email` query string parameter
