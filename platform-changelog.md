@@ -9,6 +9,11 @@ description: >-
 
 ## February 2021
 
+**2021-02-17**
+
+* [\#3400](https://github.com/reapit/foundations/issues/3400) - Added support for retrieval and updating of property general notes field in the properties API
+* [\#3492](https://github.com/reapit/foundations/issues/3492) - Fixed bug where 500 Internal Server Error would be returned if the physical file asset for an entity returned from `GET /documents` was no longer available. `GET /documents/{id}/download` will now return a 404 in this scenario
+
 **2021-02-12**
 
 * [\#3417](https://github.com/reapit/foundations/issues/3417) - It is now possible to filter by the `active` flag when calling `GET /applicants`
