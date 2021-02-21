@@ -9,6 +9,10 @@ description: >-
 
 ## February 2021
 
+**2021-02-21**
+
+* [\#3401](https://github.com/reapit/foundations/issues/3401) - Fixed issue where some custom configuration items would not be displayed by the `GET /configuration/identityDocumentTypes` endpoint
+
 **2021-02-17**
 
 * [\#3400](https://github.com/reapit/foundations/issues/3400) - Added support for retrieval and updating of property general notes field in the properties API
