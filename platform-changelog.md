@@ -9,6 +9,11 @@ description: >-
 
 ## February 2021
 
+**2021-02-22**
+
+* [\#3270](https://github.com/reapit/foundations/issues/3270) - Added  `DELETE /metadata/{id}`endpoint to support the deletion of metadata documents
+* [\#3346](https://github.com/reapit/foundations/issues/3346) - Updated validation messages to match the outward facing property names
+
 **2021-02-21**
 
 * [\#3401](https://github.com/reapit/foundations/issues/3401) - Fixed issue where some custom configuration items would not be displayed by the `GET /configuration/identityDocumentTypes` endpoint
