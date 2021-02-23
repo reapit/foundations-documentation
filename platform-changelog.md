@@ -9,6 +9,11 @@ description: >-
 
 ## February 2021
 
+**2021-02-23**
+
+* [\#3466](https://github.com/reapit/foundations/issues/3466) - Added support for the retrieval of archived Contacts
+* [\#3467](https://github.com/reapit/foundations/issues/3467) - Added support for the retrieval of archived Companies
+
 **2021-02-22**
 
 * [\#3270](https://github.com/reapit/foundations/issues/3270) - Added  `DELETE /metadata/{id}`endpoint to support the deletion of metadata documents
