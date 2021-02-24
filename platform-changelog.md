@@ -9,6 +9,10 @@ description: >-
 
 ## February 2021
 
+**2021-02-24**
+
+* [\#2903](https://github.com/reapit/foundations/issues/2903) - Fixed bug where there was a minor risk of a duplicate property image being generated when issuing a request to `POST /propertyImages`
+
 **2021-02-23**
 
 * [\#3466](https://github.com/reapit/foundations/issues/3466) - Added support for the retrieval of archived Contacts
