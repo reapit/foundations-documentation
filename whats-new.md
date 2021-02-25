@@ -7,6 +7,54 @@ description: >-
 
 # What’s New
 
+## 25/02/21
+
+With all enterprise customers now having access to the Marketplace, we wanted to use today’s What’s New update to highlight the features available to you on the ‘[Analytics](https://developers.reapit.cloud/analytics/)’ page in the Developers Portal.
+
+The Analytics page provides useful information on the following:
+
+### Current Installations
+
+A table to display the individual installations per client with a total number of installations per app
+
+![](.gitbook/assets/image%20%2883%29.png)
+
+### Hits Per Day
+
+A graph showing the number of endpoints that are hit per day, you can also hover over a specific point for more information :
+
+![](.gitbook/assets/image%20%2887%29.png)
+
+### Installation Details
+
+A full history of any installations or uninstallation that have occurred for your apps:
+
+![](.gitbook/assets/image%20%2886%29.png)
+
+### Transaction History
+
+For a more granular level of information, you can download a CSV per month of your transactions:
+
+![](.gitbook/assets/image%20%2885%29.png)
+
+### Services Chart
+
+Any subscriptions or services you have subscribed to will be show on the services chart and referenced by colour. Subscriptions/services may include, App Listings/Developer Edition of Agency Cloud/ Developer Registration etc:
+
+![](.gitbook/assets/image%20%2882%29.png)
+
+### Cost & Usage
+
+You can use the ‘[Cost Explorer: Cost & Usage](https://developers.reapit.cloud/analytics/costexplorer)’ section to view your currently monthly subscription charges and navigate through previous months if required. We also provide a ‘Download’ option which will download this information in a CSV.
+
+![](.gitbook/assets/image%20%2884%29.png)
+
+### New section in the documentation
+
+With an increase in apps now being submitted for approval, we have added a new section in our documentation ‘[Listing an App](listing-your-app.md)’.
+
+It covers, in detail, how to prepare your app before listing, what information is required, our testing processes and what happens when your app has been approved.  
+
 ## 03/12/10
 
 ### New fields now available

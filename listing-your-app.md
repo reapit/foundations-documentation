@@ -1,6 +1,6 @@
 # Listing your App
 
-## Listing your app in the Marketplace
+Listing your app in the Marketplace
 
 {% hint style="info" %}
 The review process from start to finish will typically take between 6-7 weeks. Please allow plenty of time as we often have a backlog of apps and integrations to review.
