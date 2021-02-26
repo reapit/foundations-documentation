@@ -9,6 +9,12 @@ description: >-
 
 ## February 2021
 
+**2021-02-26**
+
+* [\#3488 ](https://github.com/reapit/foundations/issues/3488)Add the ability to filter developers by 'status' `GET /developer`
+* [\#3496](https://github.com/reapit/foundations/issues/3496) - Added support for a Properties 'AlternateId' `GET /properties`
+* [\#3314](https://github.com/reapit/foundations/issues/3314) - Added the ability to retrieve Lost Instruction date and notes for a Property `GET /properties`
+
 **2021-02-24**
 
 * [\#2903](https://github.com/reapit/foundations/issues/2903) - Fixed bug where there was a minor risk of a duplicate property image being generated when issuing a request to `POST /propertyImages`
