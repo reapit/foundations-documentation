@@ -31,3 +31,7 @@ Issues relating to services within the [Foundations Mono Repo on Github ](https:
 
 ### Agency cloud
 
+Tickets logged for features or bugs relating to Agency Cloud, will be handled by a different department, and therefore will not be triaged in the same way or added to a specific board.
+
+We will add comments where applicable or may request, depending the requirement, that you raise a ticket/log an issue externally \(outside of Github\).
+
