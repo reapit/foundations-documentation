@@ -7,13 +7,19 @@ description: >-
 
 # Platform Change Log
 
+## March 2021
+
+**2021-03-02**
+
+* [\#3566](https://github.com/reapit/foundations/issues/3566) - Resolved issue with trailing spaces in some enumeration options listed in the OpenAPI documentation
+* [\#3472](https://github.com/reapit/foundations/issues/3472) - Added support for retrieval of archived properties using new `fromArchive` query string parameter
+
 ## February 2021
 
 **2021-02-26**
 
-* [\#3488 ](https://github.com/reapit/foundations/issues/3488)Add the ability to filter developers by 'status' `GET /developer`
-* [\#3496](https://github.com/reapit/foundations/issues/3496) - Added support for a Properties 'AlternateId' `GET /properties`
-* [\#3314](https://github.com/reapit/foundations/issues/3314) - Added the ability to retrieve Lost Instruction date and notes for a Property `GET /properties`
+* [\#3496](https://github.com/reapit/foundations/issues/3496) - Added new `alternateId` property to the model returned from `GET /properties`
+* [\#3314](https://github.com/reapit/foundations/issues/3314) - Added new properties to the model returned from `GET /properties` to expose lost instruction information
 
 **2021-02-24**
 
@@ -21,8 +27,8 @@ description: >-
 
 **2021-02-23**
 
-* [\#3466](https://github.com/reapit/foundations/issues/3466) - Added support for the retrieval of archived Contacts
-* [\#3467](https://github.com/reapit/foundations/issues/3467) - Added support for the retrieval of archived Companies
+* [\#3466](https://github.com/reapit/foundations/issues/3466) - Added support for the retrieval of archived contacts using new `fromArchive` query string parameter
+* [\#3467](https://github.com/reapit/foundations/issues/3467) - Added support for the retrieval of archived companies using new `fromArchive` query string parameter
 
 **2021-02-22**
 
