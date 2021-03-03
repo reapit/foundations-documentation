@@ -9,6 +9,10 @@ description: >-
 
 ## March 2021
 
+**2021-03-03**
+
+* [\#3571](https://github.com/reapit/foundations/issues/3571) - Implemented caching to improve load time of Swagger documentation in the Developer Portal
+
 **2021-03-02**
 
 * [\#3468](https://github.com/reapit/foundations/issues/3468) - Added support for retrieval of archived vendors using new `fromArchive` query string parameter
