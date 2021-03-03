@@ -11,6 +11,7 @@ description: >-
 
 **2021-03-02**
 
+* [\#3468](https://github.com/reapit/foundations/issues/3468) - Added support for retrieval of archived vendors using new `fromArchive` query string parameter
 * [\#3566](https://github.com/reapit/foundations/issues/3566) - Resolved issue with trailing spaces in some enumeration options listed in the OpenAPI documentation
 * [\#3472](https://github.com/reapit/foundations/issues/3472) - Added support for retrieval of archived properties using new `fromArchive` query string parameter
 
