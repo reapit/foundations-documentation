@@ -59,12 +59,6 @@ interface ReapitConnectSession {
     adminId: string | null
     userCode: string | null
     groups: string[]
-    orgName: string | null
-    orgId: string | null
-    offGroupIds: string | null
-    offGrouping: boolean
-    offGroupName: string | null
-    officeId: string | null
   }
 }
 
