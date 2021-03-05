@@ -8,7 +8,7 @@ After submitting an issue, your ticket will get triaged and categorised. From he
 
 ### Back end
 
-Issues that align to back end engineering \(such as our REST APIs and webhooks\) will be managed using [Scrum Agile Framework](https://www.scrum.org/resources/what-is-scrum) using a two week sprint cycle. 
+Issues that align to back end engineering \(such as our REST APIs and webhooks\) will be managed using [Scrum Agile Framework](https://www.scrum.org/resources/what-is-scrum) using a 1 week sprint cycle. 
 
 * Incoming issues that we identify as back end engineering will be given the `back end` label and assigned to the [Back end backlog](https://github.com/reapit/foundations/projects/6) public board
 * New issues in the board are reviewed weekly as part of our backlog refinement sessions. To ensure your issue can be progressed quickly, please provide as much relevant information as possible.
