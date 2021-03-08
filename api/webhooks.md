@@ -5,7 +5,7 @@ description: Technical guidance for working with webhooks for real time event no
 # Webhooks
 
 {% hint style="warning" %}
-Please note that applications developed using Webhooks for topics other than application install/uninstall will only be visible in the Marketplace to customers who have been migrated to AWS. 
+Please note that apps and integrations developed using Webhooks for topics other than application install/uninstall will only be visible in the Marketplace to customers who have been migrated to AWS. 
 {% endhint %}
 
 ## Introduction
@@ -110,11 +110,15 @@ We currently support the following topics, but this will increase over time. Ple
 
 ### Subscribe to customers
 
-Finally, you must configure the customer\(s\) that your webhook will respond to events for. Only customers who have installed your listed application will appear here. 
+You must configure the customer\(s\) that your webhook will respond to events for. Only customers who have installed your listed application will appear here. 
 
 * Specify one or more customers to receive only event originating from those customers
 * Specify 'SBOX' to listen to events triggered from our sandbox \(useful for testing\)
 * Leave this field blank to respond to events for all customers who have installed your application. You will immediately receive events for new customers who install your application without any configuration change required. This does not include sandbox events.
+
+### Optional webhook behaviour
+
+By default, webhooks will not be emitted when only the entity's eTag and modified timestamp has changed. If you would prefer to receive notifications in this situation, please use the **Include notifications where only the eTag has been modified option** when configuring your webhook
 
 {% hint style="info" %}
 **To test your webhook end to end with real data**, use the sandbox database available to you in the Developer Portal. Set up a webhook to listen to 'SBOX' events and make changes to the sandbox using our APIs or Interactive API Explorer.
