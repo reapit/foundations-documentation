@@ -9,6 +9,10 @@ description: >-
 
 ## March 2021
 
+**2021-03-08**
+
+* [\#3588](https://github.com/reapit/foundations/issues/3588) - `application.install` and `application.uninstall` webhooks will now include the email address of the person who has carried out the action
+
 **2021-03-03**
 
 * [\#3571](https://github.com/reapit/foundations/issues/3571) - Implemented caching to improve load time of Swagger documentation in the Developer Portal
