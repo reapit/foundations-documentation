@@ -7,6 +7,51 @@ description: >-
 
 # What’s New
 
+## 09/03/2021
+
+### Configurable Webhook Behaviour 
+
+A new configuration option is now available when editing existing/creating new webhooks. 
+
+By default, webhooks will not be emitted when only the entity's eTag and modified timestamp has changed. 
+
+If you would prefer to receive notifications in this situation, please use the '**Ignore notifications where only the eTag has been modified** toggle option when configuring your webhook. Please see the option in the example below: 
+
+![Adding a New Webhook](.gitbook/assets/image%20%2891%29.png)
+
+Existing webhooks will remain as they are and you can edit your webhooks at any stage, from the '[Webhooks](https://developers.reapit.cloud/webhooks)' page in the Developers Portal
+
+
+
+### New Developer Requests Documentation
+
+To '[Request a New Feature'](https://github.com/reapit/foundations/issues/new?assignees=&labels=feature-request%2C+needs-triage&template=feature_request.md&title=) or to '[Reporting a Bug](https://github.com/reapit/foundations/issues/new?assignees=&labels=bug%2C+needs-triage&template=bug_report.md&title=)' you can visit the '[Help](https://developers.reapit.cloud/help)' page in the Developers Portal. To help with understand the process for each new issue raised, we have added a new section in our documentation '[Developer Requests](app-development/dev-requests.md)'. 
+
+The new documentation will outline our processes, from what happens after submitting an issue to how your ticket will get triaged and categorised. Depending on the nature of the request or bug, it will determine which project board it may get assigned to. As our boards are public you will always be able to track the progress of any issue or request raised. 
+
+![Help section](.gitbook/assets/image%20%2888%29.png)
+
+### Virtual Viewing check box
+
+With the very significant increase in the number of listings carrying virtual viewings, we have introduced an additional 'Virtual' check box, on appointments inside of Agency Cloud: 
+
+![Virtual check box in Agency Cloud](.gitbook/assets/image%20%2889%29.png)
+
+The virtual field is also now available in our 'Appointments' API in the Platform: 
+
+```text
+ "accompanied": true,
+      "virtual": false,
+      "negotiatorConfirmed": true,
+      "attendeeConfirmed": true,
+      "propertyConfirmed": true,
+      "metadata": {
+        "CustomField1": "CustomValue1",
+        "CustomField2": true
+```
+
+The latest version of the Developer Edition of Agency Cloud will include the new checkbox
+
 ## 25/02/21
 
 With all enterprise customers now having access to the Marketplace, we wanted to use today’s What’s New update to highlight the features available to you on the ‘[Analytics](https://developers.reapit.cloud/analytics/)’ page in the Developers Portal.

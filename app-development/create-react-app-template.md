@@ -16,11 +16,7 @@ The fastest way to get started building a Reapit Marketplace App is with our [Cr
 
 ### Usage
 
-First install the packages 
-
-`npm install -g create-react-app @reapit/cra-template-foundations`
-
-Then execute 
+First execute 
 
 `npx create-react-app <<your-app-name-here>> --template @reapit/cra-template-foundations`
 
