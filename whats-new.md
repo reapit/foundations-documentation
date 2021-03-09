@@ -15,27 +15,27 @@ A new configuration option is now available when editing existing/creating new w
 
 By default, webhooks will not be emitted when only the entity's eTag and modified timestamp has changed. 
 
-If you would prefer to receive notifications in this situation, please use the '**Ignore notifications where only the eTag has been modified** toggle option when configuring your webhook. Please see the option in the example below: 
+If you would prefer to receive notifications in this situation, please use the '**Ignore notifications where only the eTag has been modified'** toggle option when configuring your webhook. See example below: 
 
-![Adding a New Webhook](.gitbook/assets/image%20%2891%29.png)
+![Adding a New Webhook](.gitbook/assets/image%20%2893%29.png)
 
-Existing webhooks will remain as they are and you can edit your webhooks at any stage, from the '[Webhooks](https://developers.reapit.cloud/webhooks)' page in the Developers Portal
+Existing webhooks will remain as they are and you can edit your webhooks at any stage from the '[Webhooks](https://developers.reapit.cloud/webhooks)' page in the Developers Portal
 
 
 
 ### New Developer Requests Documentation
 
-To '[Request a New Feature'](https://github.com/reapit/foundations/issues/new?assignees=&labels=feature-request%2C+needs-triage&template=feature_request.md&title=) or to '[Reporting a Bug](https://github.com/reapit/foundations/issues/new?assignees=&labels=bug%2C+needs-triage&template=bug_report.md&title=)' you can visit the '[Help](https://developers.reapit.cloud/help)' page in the Developers Portal. To help with understand the process for each new issue raised, we have added a new section in our documentation '[Developer Requests](app-development/dev-requests.md)'. 
+To '[Request a Feature'](https://github.com/reapit/foundations/issues/new?assignees=&labels=feature-request%2C+needs-triage&template=feature_request.md&title=) or to '[Report a Bug](https://github.com/reapit/foundations/issues/new?assignees=&labels=bug%2C+needs-triage&template=bug_report.md&title=)' you can visit the '[Help](https://developers.reapit.cloud/help)' page in the Developers Portal. To help with understanding the process for each new issue raised, we have added a new section in our documentation '[Developer Requests](app-development/dev-requests.md)'. 
 
 The new documentation will outline our processes, from what happens after submitting an issue to how your ticket will get triaged and categorised. Depending on the nature of the request or bug, it will determine which project board it may get assigned to. As our boards are public you will always be able to track the progress of any issue or request raised. 
 
-![Help section](.gitbook/assets/image%20%2888%29.png)
+![Help section in the Developers Portal](.gitbook/assets/image%20%2891%29.png)
 
 ### Virtual Viewing check box
 
-With the very significant increase in the number of listings carrying virtual viewings, we have introduced an additional 'Virtual' check box, on appointments inside of Agency Cloud: 
+With the very significant increase in the number of listings carrying virtual viewings, we have introduced an additional 'Virtual' check box on appointments inside of Agency Cloud: 
 
-![Virtual check box in Agency Cloud](.gitbook/assets/image%20%2889%29.png)
+![](.gitbook/assets/image%20%2892%29.png)
 
 The virtual field is also now available in our 'Appointments' API in the Platform: 
 
@@ -66,31 +66,31 @@ A table to display the individual installations per client with a total number o
 
 ### Hits Per Day
 
-A graph showing the number of endpoints that are hit per day, you can also hover over a specific point for more information :
+A graph showing the number of endpoints that are hit per day. You can also hover over a specific point for more information :
 
 ![](.gitbook/assets/image%20%2887%29.png)
 
 ### Installation Details
 
-A full history of any installations or uninstallation that have occurred for your apps:
+A full history of any installations or uninstallations that have occurred for your apps:
 
 ![](.gitbook/assets/image%20%2886%29.png)
 
 ### Transaction History
 
-For a more granular level of information, you can download a CSV per month of your transactions:
+For a more granular level of information, you can download a month by month CSV of your transactions:
 
 ![](.gitbook/assets/image%20%2885%29.png)
 
 ### Services Chart
 
-Any subscriptions or services you have subscribed to will be show on the services chart and referenced by colour. Subscriptions/services may include, App Listings/Developer Edition of Agency Cloud/ Developer Registration etc:
+Any subscriptions or services you have subscribed to will be shown on the services chart and referenced by colour. Subscriptions/services may include, App Listings/Developer Edition of Agency Cloud/ Developer Registration etc:
 
 ![](.gitbook/assets/image%20%2882%29.png)
 
 ### Cost & Usage
 
-You can use the ‘[Cost Explorer: Cost & Usage](https://developers.reapit.cloud/analytics/costexplorer)’ section to view your currently monthly subscription charges and navigate through previous months if required. We also provide a ‘Download’ option which will download this information in a CSV.
+You can use the ‘[Cost Explorer: Cost & Usage](https://developers.reapit.cloud/analytics/costexplorer)’ section to view your current monthly subscription charges and navigate through previous months if required. We also provide a ‘Download’ option which will download this information in a CSV.
 
 ![](.gitbook/assets/image%20%2884%29.png)
 
