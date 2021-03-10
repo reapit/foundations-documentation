@@ -9,6 +9,10 @@ description: >-
 
 ## March 2021
 
+**2021-03-10**
+
+* [\#3612](https://github.com/reapit/foundations/issues/3612) - Added `video2Url` and `video2Caption` properties to the property APIs
+
 **2021-03-08**
 
 * [\#3588](https://github.com/reapit/foundations/issues/3588) - `application.install` and `application.uninstall` webhooks will now include the email address of the person who has carried out the action
