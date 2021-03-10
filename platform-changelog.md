@@ -12,6 +12,7 @@ description: >-
 **2021-03-10**
 
 * [\#3612](https://github.com/reapit/foundations/issues/3612) - Added `video2Url` and `video2Caption` properties to the property APIs
+* [\#3469](https://github.com/reapit/foundations/issues/3469) - Added support for retrieval of archived applicants using new `fromArchive` query string parameter
 
 **2021-03-08**
 
