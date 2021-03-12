@@ -14,6 +14,7 @@ description: >-
 * [\#3658](https://github.com/reapit/foundations/issues/3658) - Fixed bug where using the `modifiedFrom` and/or `modifiedTo` query string filters was not always returning correct results from `GET /properties`
 * [\#3474](https://github.com/reapit/foundations/issues/3474) - Added support for retrieval of archived tenancies using new `fromArchive` query string parameter
 * [\#3602](https://github.com/reapit/foundations/issues/3602) - Added new `PATCH /tenancies/{id}` to support the updating of certain tenancy properties
+* [\#3559](https://github.com/reapit/foundations/issues/3559) - It is now possible to retrieve and set the profile image for an individual negotiator
 
 **2021-03-10**
 
