@@ -132,7 +132,7 @@ agencycloud://properties?address=MK43&mode=s
       <td style="text-align:left">string</td>
       <td style="text-align:left">The key to use in the query string when returning the property primary
         key to an app (required if appId is set)</td>
-      <td style="text-align:left">No?</td>
+      <td style="text-align:left">No</td>
     </tr>
   </tbody>
 </table>
@@ -223,7 +223,7 @@ agencycloud://applicants?name=smith&mode=lettings
       <td style="text-align:left">string</td>
       <td style="text-align:left">The key to use in the query string when returning the property primary
         key to an app (required if appId is set)</td>
-      <td style="text-align:left">No?</td>
+      <td style="text-align:left">No</td>
     </tr>
   </tbody>
 </table>
@@ -261,7 +261,7 @@ agencycloud://contacts?name=smith
 | address | string | An address fragment to search for \(eg. a postcode\) | No |
 | communication | string | An email address or phone number to search for | No |
 | appId | string | The GUID of the app to return the code of the selected contact to \(if not present then search will not return to an app\) | No |
-| appParam | string | The key to use in the query string when returning the contact primary key to an app \(required if appId is set\) | No? |
+| appParam | string | The key to use in the query string when returning the contact primary key to an app \(required if appId is set\) | No |
 
 ### Load Contact
 
