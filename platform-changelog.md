@@ -9,6 +9,10 @@ description: >-
 
 ## March 2021
 
+**2021-03-26**
+
+* [\#986](https://github.com/reapit/foundations/issues/986) / [\#987](https://github.com/reapit/foundations/issues/987) - It is now possible to view mailing and event subscriptions for a specific contact
+
 **2021-03-12**
 
 * [\#3658](https://github.com/reapit/foundations/issues/3658) - Fixed bug where using the `modifiedFrom` and/or `modifiedTo` query string filters was not always returning correct results from `GET /properties`
