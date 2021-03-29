@@ -11,7 +11,7 @@ description: >-
 
 **2021-03-29**
 
-* [\#3495](https://github.com/reapit/foundations/issues/3495) - Added support for large file uploads \(Up to 30mb\) to PropertyImages and Documents via the use of pre-signed URL's
+* [\#3495](https://github.com/reapit/foundations/issues/3495) - Added support for large file uploads \(Up to 30mb\) to Property Images and Documents via the use of pre-signed URL's
 
 **2021-03-26**
 
