@@ -9,6 +9,10 @@ description: >-
 
 ## March 2021
 
+**2021-03-29**
+
+* [\#3495](https://github.com/reapit/foundations/issues/3495) - Added support for large file uploads \(Up to 30mb\) to PropertyImages and Documents via the use of pre-signed URL's
+
 **2021-03-26**
 
 * [\#986](https://github.com/reapit/foundations/issues/986) / [\#987](https://github.com/reapit/foundations/issues/987) - It is now possible to view mailing and event subscriptions for a specific contact
