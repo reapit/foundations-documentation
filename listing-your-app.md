@@ -22,7 +22,7 @@ To help with ensuring you are ready, have a look at our guide on adding your con
 
 Ticking the ‘Submit for Approval’ check box on your app listing, will let us know you are ready for our Admin Team to review and we will be notified immediately of your request.
 
-![](.gitbook/assets/image%20%2869%29.png)
+![](.gitbook/assets/screenshot-2021-03-31-at-12.25.20.png)
 
 Depending on your app listing or integration and its complexity, the review process from start to finish will typically take between 6-7 weeks. Please allow plenty of time as we often have a backlog of apps and integrations to review.
 
@@ -59,5 +59,5 @@ If any changes are required you will be contacted by a member of the team.
 
 Once your listing has been approved, you will receive an email confirming your app has been approved and will be set to a status of 'Listed'.  You app will then be listed in the Reapit Marketplace ready for client installation. 
 
-![](.gitbook/assets/image%20%2870%29.png)
+![](.gitbook/assets/screenshot-2021-03-31-at-12.26.02.png)
 
