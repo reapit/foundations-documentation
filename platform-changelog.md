@@ -9,6 +9,10 @@ description: >-
 
 ## March 2021
 
+**2021-03-31**
+
+* [\#989](https://github.com/reapit/foundations/issues/989) - Contact subscriptions can now be updated via PUT `/contacts/{id}/subscriptions/{subscriptionId}`
+
 **2021-03-29**
 
 * [\#3495](https://github.com/reapit/foundations/issues/3495) - Added support for the uploading of files over 6MB \(Up to 30MB\) to Property Images and Documents via the use of pre-signed URL's
