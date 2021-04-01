@@ -508,7 +508,7 @@ Maybe even provide instructions on how to register an account with you or detail
 
 If you have more information you want to share with the users, external links are a great way to achieve this.  
 
-![Example Listing \(Goodlord\) ](.gitbook/assets/example-listing.jpg)
+![](.gitbook/assets/goodlordexample.jpg)
 
 ## 22/05/20
 
