@@ -53,7 +53,7 @@ We offer a user interface to allow you to manage webhooks in a simple and straig
 
 First, select the application that you want to create a webhook for. You'll then be given the option to 'Add New Webhook', as above. The modal below allows you to [input the endpoint](webhooks.md#provide-an-endpoint) where information should be pushed.
 
-![Unchecking the &apos;Active&apos; flag will stop notifications from being sent](../.gitbook/assets/image%20%2834%29.png)
+![](../.gitbook/assets/image%20%2894%29.png)
 
 Our webhooks system is designed to flexibly work with how your application is built and deployed. If you wish, you can set up a single endpoint to catch all **topics** for all **customers**. Alternatively, you may wish to set up a different webhook subscription per topic or per customer.
 
@@ -118,7 +118,7 @@ You must configure the customer\(s\) that your webhook will respond to events fo
 
 ### Optional webhook behaviour
 
-By default, webhooks will not be emitted when only the entity's eTag and modified timestamp has changed. If you would prefer to receive notifications in this situation, please use the **Include notifications where only the eTag has been modified** option when configuring your webhook
+By default, webhooks will not be emitted when only the entity's eTag and modified timestamp has changed. If you would prefer to receive notifications in this situation, please use the **Ignore notifications where only the eTag has been modified** toggle option when configuring your webhook
 
 {% hint style="info" %}
 **To test your webhook end to end with real data**, use the sandbox database available to you in the Developer Portal. Set up a webhook to listen to 'SBOX' events and make changes to the sandbox using our APIs or Interactive API Explorer.
