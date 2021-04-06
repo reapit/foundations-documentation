@@ -7,6 +7,30 @@ description: >-
 
 # What’s New
 
+## 01/04/2021
+
+### Developer Portal and Marketplace Refresh
+
+We are excited to announce today, the Developer Portal, Reapit Marketplace and Marketplace Apps UI have been updated in conjunction with the release of our Elements UI library version 2. The functionality of all apps remain the same but with UI enhancements to your user experience.
+
+The visual changes you see are the first step towards a universal design language we have been working over the first part of the year. In the coming months you will see continued incremental updates as pages and flows are re-worked for better UI consistency, polish and UX. In keeping with our open source commitment, in the coming months we plan to make available publicly the design language, sample layouts and designs so that Reapit Developers can leverage our design resource to build better user experience into their own Marketplace apps.
+
+![](.gitbook/assets/image%20%2896%29.png)
+
+Because we ask that all Marketplace Apps use our UI for visual consistency, we wanted to give the style guide a lift to ensure it best showcases of our development partner's work. This is the core of the Elements v2 release - it is a subtle evolution of the library, including a new font, typography, colour pallet, form inputs, notifications, dialogue boxes and much more.
+
+Care has been taken to avoid breaking changes both to React Components and CSS Classes so that upgrading for all developers should be trivial and painless. We will also offer ongoing long term support in terms of security and bug fixes for the v2.x.x release. You can see the updates to the React Storybook here: [https://elements.reapit.cloud/?path=/docs/](https://elements.reapit.cloud/?path=/docs/)
+
+![](.gitbook/assets/image%20%2895%29.png)
+
+This however is just the start and we are now looking ahead to version 3 of Elements. Version 3 will be a ground up re-write of the library, both implementing fully the new design language and responding to both internal and external developer feedback. The version will focus on three core areas of improvement:
+
+* Visual UI refinement and consistency, fewer components and clearer design patterns to implement.
+* Better documentation for both React and non-React users, including suggested use cases and composed components for off-the-shelf UI / UX flows.
+* Much smaller library with very little required JavaScript and very few dependencies. Elements will be about the visual presentation with developers free to make their own choices as to how to implement behaviours. This will mean a far better developer experience, especially for non-React users and a much more flexible, less opinionated library.
+
+For more information about the latest release and news about Elements 3.0 \(coming soon\) please [click here](app-development/elements.md#elements-v-3-x-x-coming-soon).
+
 ## 09/03/2021
 
 ### Configurable Webhook Behaviour 
