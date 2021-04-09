@@ -108,6 +108,10 @@ Tasks represent details on an action that should be performed by a given date. T
 
 Tenancies represent a [property](platform-glossary.md#property) lease agreement between a [landlord](platform-glossary.md#landlord) and one or more tenants. The role of the agent during the life-cycle of the tenancy will differ, depending on the agreement with the [landlord](platform-glossary.md#landlord). The tenancy can be managed from offer submission/arranging stage right through until the tenancy is finished.
 
+### Transaction
+
+Transactions represent a financial transaction that can be associated to a [property](platform-glossary.md#property), [landlord](platform-glossary.md#landlord), [tenancy](platform-glossary.md#tenancy), or [company](platform-glossary.md#company). Examples of transactions are rent payments and supplier invoices. A transaction can be associated with one or more of the aforementioned related entities.
+
 ### Vendor
 
 Vendors represents one or more [contact](platform-glossary.md#contact) or [companies](platform-glossary.md#company) who are interested in selling a [property](platform-glossary.md#property). A vendor is always associated to a single [property](platform-glossary.md#property) record and is automatically created when a [property](platform-glossary.md#property) with sales marketing is added to the platform.
