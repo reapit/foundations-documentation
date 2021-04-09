@@ -24,16 +24,13 @@ description: >-
 **2021-03-12**
 
 * [\#3658](https://github.com/reapit/foundations/issues/3658) - Fixed bug where using the `modifiedFrom` and/or `modifiedTo` query string filters was not always returning correct results from `GET /properties`
-* [\#3474](https://github.com/reapit/foundations/issues/3474) - Added support for retrieval of archived tenancies using new `fromArchive` query string parameter
 * [\#3602](https://github.com/reapit/foundations/issues/3602) - Added new `PATCH /tenancies/{id}` to support the updating of certain tenancy properties
 * [\#3559](https://github.com/reapit/foundations/issues/3559) - It is now possible to retrieve and set the profile image for an individual negotiator
-* [\#3473](https://github.com/reapit/foundations/issues/3473) - Added support for retrieval of archived appointments using new `fromArchive` query string parameter
 
 **2021-03-10**
 
 * [\#3701](https://github.com/reapit/foundations/issues/3701) - Fixed incorrect link to journal entry documentation in Swagger documentation
 * [\#3612](https://github.com/reapit/foundations/issues/3612) - Added `video2Url` and `video2Caption` properties to the property APIs
-* [\#3469](https://github.com/reapit/foundations/issues/3469) - Added support for retrieval of archived applicants using new `fromArchive` query string parameter
 
 **2021-03-08**
 
@@ -45,9 +42,7 @@ description: >-
 
 **2021-03-02**
 
-* [\#3468](https://github.com/reapit/foundations/issues/3468) - Added support for retrieval of archived vendors using new `fromArchive` query string parameter
 * [\#3566](https://github.com/reapit/foundations/issues/3566) - Resolved issue with trailing spaces in some enumeration options listed in the OpenAPI documentation
-* [\#3472](https://github.com/reapit/foundations/issues/3472) - Added support for retrieval of archived properties using new `fromArchive` query string parameter
 
 ## February 2021
 
@@ -59,11 +54,6 @@ description: >-
 **2021-02-24**
 
 * [\#2903](https://github.com/reapit/foundations/issues/2903) - Fixed bug where there was a minor risk of a duplicate property image being generated when issuing a request to `POST /propertyImages`
-
-**2021-02-23**
-
-* [\#3466](https://github.com/reapit/foundations/issues/3466) - Added support for the retrieval of archived contacts using new `fromArchive` query string parameter
-* [\#3467](https://github.com/reapit/foundations/issues/3467) - Added support for the retrieval of archived companies using new `fromArchive` query string parameter
 
 **2021-02-22**
 
