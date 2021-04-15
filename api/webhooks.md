@@ -89,6 +89,7 @@ We currently support the following topics, but this will increase over time. Ple
 | **companies.modified** | Occurs when an existing [company](https://foundations-documentation.reapit.cloud/platform-glossary#company) is modified | `companies.read` |
 | **contacts.created** | Occurs when a new [contact](https://foundations-documentation.reapit.cloud/platform-glossary#contact) is created | `contacts.read` |
 | **contacts.modified** | Occurs when an existing [contact](https://foundations-documentation.reapit.cloud/platform-glossary#contact) is modified | `contacts.read` |
+| **conveyancing.modified** | Occurs when an existing [conveyancing ](../platform-glossary.md#conveyancing)\(sales progression\) entity is modified | `conveyancing.read` |
 | **identitychecks.created** | Occurs when a new [identity check](https://foundations-documentation.reapit.cloud/platform-glossary#identity-check) is created against an existing [contact](https://foundations-documentation.reapit.cloud/platform-glossary#contact) | `identitychecks.read` |
 | **identitychecks.modified** | Occurs when an existing [identity check](https://foundations-documentation.reapit.cloud/platform-glossary#identity-check) is modified | `identitychecks.read` |
 | **landlords.created** | Occurs when a new [landlord](https://foundations-documentation.reapit.cloud/platform-glossary#landlord) is created | `landlords.read` |
