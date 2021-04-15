@@ -7,6 +7,12 @@ description: >-
 
 # Platform Change Log
 
+## April 2021
+
+**2021-04-15**
+
+* [\#1690](https://github.com/reapit/foundations/issues/1690) - It is now possible to subscribe to [conveyancing.modified](api/webhooks.md#available-topics) webhook events
+
 ## March 2021
 
 **2021-03-31**
