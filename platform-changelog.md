@@ -9,6 +9,10 @@ description: >-
 
 ## April 2021
 
+**2021-04-16**
+
+* [\#3233](https://github.com/reapit/foundations/issues/3233) - It is now possible to set/clear property brochures when updating existing properties at `PATCH /properties/{id}`
+
 **2021-04-15**
 
 * [\#1690](https://github.com/reapit/foundations/issues/1690) - It is now possible to subscribe to [conveyancing.modified](api/webhooks.md#available-topics) webhook events
