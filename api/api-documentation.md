@@ -238,6 +238,11 @@ For example, `GET /contacts?pageSize=10&pageNumber=2` will return the second pag
 | `totalCount` | The total number of resources available that fulfil the criteria of the current request |
 | `_embedded` | The list of resources that have been returned in this paged response |
 
+{% hint style="info" %}
+**Extras field**  
+If you represent an Agency Cloud customer and require access to data held in the 'extras' semi structured field, please submit a GitHub developer request using the issue template provided.
+{% endhint %}
+
 ### Creating data
 
 Our APIs support resource creation using the `POST` verb. When a creation request has been successfully fulfilled, you will receive a `201 Created` response.
