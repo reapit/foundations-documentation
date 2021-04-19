@@ -18,12 +18,12 @@ To best adhere to these limits, we recommend that your application maintains no 
 
 ## Appropriate usage
 
-### Our REST APIS are intended for:
+### Our REST APIs are intended for:
 
 * Retrieval of data in real-time as and when your application requires it
 * Storage of data as a transactional, operational data store for your application 
 
-### Our REST APIS should NOT be used for:
+### Our REST APIs should NOT be used for:
 
 * Bulk extraction of data into third party applications, databases, or data warehouses to support business intelligence \(BI\), data mining, and other decision support applications 
 * Automated or scheduled routines to acquire data without a requirement to immediately process it for your applications use case \(this does not include webhooks\) 
