@@ -7,6 +7,30 @@ description: >-
 
 # What’s New
 
+## 19/04/2021
+
+### Setting Predefined Property Brochure Details
+
+It is now possible to set or clear default property brochures when updating existing properties, using the PATCH method on /properties/{id}
+
+Updating the ‘brochureId’ field on the ‘Selling’ and/or ‘Lettings’ models with a document ID, will set a PDF as the predefined property details. Please see an example in the Property Details screen from within Agency Cloud \(Desktop CRM\) below:![](file:///C:/Users/HPHILL~1/AppData/Local/Temp/msohtmlclip1/01/clip_image004.png)
+
+![](.gitbook/assets/image%20%2898%29.png)
+
+### Inactive Webhooks
+
+To ensure data viability and security, we have made a change to the way 'Sandbox only' Webhooks are handled.
+
+Webhooks that have been setup specifically for Sandbox testing \(SBOX\) that have been dormant for 14 days \(unmodified/no traffic\), will automatically become deactivated.
+
+Should you wish to continue using Webhooks for Sandbox testing, you can reactivate it again by selecting the check box ‘Active’ when editing. ![](file:///C:/Users/HPHILL~1/AppData/Local/Temp/msohtmlclip1/01/clip_image007.png)
+
+![](.gitbook/assets/image%20%2897%29.png)
+
+### Large File Support
+
+We have added additional support for uploading files over 6MB \(Up to 30MB\) to the Property Images and Documents endpoints via the use of pre-signed URL's
+
 ## 01/04/2021
 
 ### Developer Portal and Marketplace Refresh
