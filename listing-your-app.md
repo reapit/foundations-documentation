@@ -3,7 +3,7 @@
 Listing your app in the Marketplace
 
 {% hint style="info" %}
-The review process from start to finish will typically take between 6-7 weeks. Please allow plenty of time as we often have a backlog of apps and integrations to review.
+The review process from start to finish can typically take between 2-7 weeks. Please allow plenty of time as we often have a backlog of apps and integrations to review.
 {% endhint %}
 
 When you are ready to list your app in the Marketplace, either publicly or as a private app, it will first need to be submitted for approval. For Marketplace apps, please see information on additional testing [here](whats-new.md#additional-testing). The approval process is started when you select the 'Submit for Approval' check box and 'Submit': 
