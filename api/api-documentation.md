@@ -106,7 +106,11 @@ In addition to the relevant response code, unsuccessful requests will return a J
 
 We apply rate limits on the API calls an application can make within a given time period. If this limit is exceeded the app will be throttled and API requests will fail.
 
-At present, your application is able to make up to 20 requests per second and up to 250,000 requests per day. If it exceeds those limits, your app will be presented with `429 Too Many Requests` responses.
+* 20 requests can be sent per second
+* 5 maximum concurrent requests at any time per customer 
+* 250,000 maximum requests per day 
+
+If your application exceeds these limits, your app will be presented with `429 Too Many Requests` responses.
 
 ## Authentication
 
