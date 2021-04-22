@@ -24,7 +24,7 @@ Ticking the ‘Submit for Approval’ check box on your app listing, will let us
 
 ![](.gitbook/assets/screenshot-2021-03-31-at-12.25.20.png)
 
-Depending on your app listing or integration and its complexity, the review process from start to finish will typically take between 6-7 weeks. Please allow plenty of time as we often have a backlog of apps and integrations to review.
+Depending on your app listing or integration and its complexity, the review process from start to finish can typically take between 2-7 weeks. Please allow plenty of time as we often have a backlog of apps and integrations to review.
 
 If your app is launchable inside of Agency Cloud or has a Client facing user interface, we will ask you to set your app to private, using Customer ID ‘RES’. We can then install your app as an external client \(still using sandbox data\). This step will give us the ability to test and view the following:
 

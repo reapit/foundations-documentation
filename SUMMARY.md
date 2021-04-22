@@ -22,4 +22,5 @@
 * [Platform Glossary](platform-glossary.md)
 * [Developer Terms and Conditions](developer-terms-and-conditions.md)
 * [Pricing](pricing.md)
+* [FAQ's](faqs.md)
 
