@@ -24,6 +24,12 @@ In order to access customer data, an installation will need to occur. This is do
 
 Please [click here](faqs.md#listing-your-app) for more information on Listing an App in Marketplace
 
+### When will my requested feature  be available?
+
+You can track the status of your issue [directly in GitHub](https://github.com/reapit/foundations/issues). 
+
+Please [click here](app-development/dev-requests.md) for details on our development processes.
+
 ## Registration
 
 ### We have created multiple accounts but want to work on the same app, what can we do? 
