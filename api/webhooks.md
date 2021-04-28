@@ -43,7 +43,7 @@ Any requests sent from our platform will include a `Reapit-Webhook-Signature`hea
 
 You can obtain your client id by clicking your applications details in the developer portal. 
 
-## Managing webhooks
+## Managing webhooks in the user interface
 
 We offer a user interface to allow you to manage webhooks in a simple and straightforward way. You're able to create, update and remove webhooks for all of your applications in a single place. 
 
@@ -124,6 +124,10 @@ By default, webhooks will not be emitted when only the entity's eTag and modifie
 {% hint style="info" %}
 **To test your webhook end to end with real data**, use the sandbox database available to you in the Developer Portal. Set up a webhook to listen to 'SBOX' events and make changes to the sandbox using our APIs or Interactive API Explorer.
 {% endhint %}
+
+## Managing webhooks using REST API
+
+We also provide a REST API to allow webhooks to be programmatically created for the customer/application that your access token has been issued on behalf of. Please see the swagger documentation for technical details on how to integrate. 
 
 ## Receiving events
 
