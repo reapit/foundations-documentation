@@ -7,6 +7,24 @@ description: >-
 
 # What’s New
 
+## 04/05/2021
+
+### New Desktop Integration Types
+
+Our desktop integration types have been extended to now include the following communication types included in Agency Cloud from version 12.130.1 :
+
+* Outbound – Email
+* Outbound – Landline
+* Outbound – Mobile
+
+On each communication type, the Desktop API will provide a 'cntCode' and relevant communication information, either email, landline number or mobile number.
+
+App that’s have any of the above desktop integration types will be visible in Agency Cloud when right clicking on the relevant icon, please see example below:
+
+![](.gitbook/assets/image%20%28100%29.png)
+
+The Developer Edition of Agency Cloud has automatically been updated to include the new communication types. 
+
 ## 19/04/2021
 
 ### Setting Predefined Property Brochure Details

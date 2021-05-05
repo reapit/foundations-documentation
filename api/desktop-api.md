@@ -342,6 +342,12 @@ From version 12.118.0 the following will also be available:
 * Sales Progression
 * Chain Management
 
+From version 12.130.1 the following will also be available:
+
+* Outbound - Email 
+* Outbound - Landline
+* Outbound - Mobile 
+
 ## Types
 
 ### Property
