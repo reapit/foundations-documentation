@@ -20,7 +20,7 @@ If you do want to work with the project, it is important to note there are certa
 
 ### Pre-requisites
 
-To get started working working with Foundations, you will first need to have [Git](https://git-scm.com/), [NodeJS](https://nodejs.org/en/) and [Yarn](https://yarnpkg.com/) installed globally on your local machine. Currently, we use `yarn@2.4.x` and `node@14.x.x` internally however, other versions may well work for you.
+To get started working with Foundations, you will first need to have [Git](https://git-scm.com/), [NodeJS](https://nodejs.org/en/) and [Yarn](https://yarnpkg.com/) installed globally on your local machine. Currently, we use `yarn@2.4.x` and `node@14.x.x` internally however, other versions may well work for you.
 
 For a clean build, then follow the steps below;
 
