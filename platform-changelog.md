@@ -11,6 +11,7 @@ description: >-
 
 **2021-05-18**
 
+* [\#3798](https://github.com/reapit/foundations/issues/3798) - It is now possible to subscribe to appointment confirmed or appointment cancelled change events
 * [\#3799](https://github.com/reapit/foundations/issues/3799) - It is now possible to subscribe to contact opt-out of marketing events
 * [\#3804](https://github.com/reapit/foundations/issues/3804) - It is now possible to subscribe to status change events for raised/completed/cancelled works orders
 * [\#3801](https://github.com/reapit/foundations/issues/3801) - It is now possible to subscribe to status change events for accepted/withdrawn/rejected offers
