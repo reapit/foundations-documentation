@@ -7,6 +7,14 @@ description: >-
 
 # Platform Change Log
 
+## May 2021
+
+**2021-05-18**
+
+* [\#3799](https://github.com/reapit/foundations/issues/3799) - It is now possible to subscribe to contact opt-out of marketing events
+* [\#3804](https://github.com/reapit/foundations/issues/3804) - It is now possible to subscribe to status change events for raised/completed/cancelled works orders
+* [\#3801](https://github.com/reapit/foundations/issues/3801) - It is now possible to subscribe to status change events for accepted/withdrawn/rejected offers
+
 ## April 2021
 
 **2021-04-16**

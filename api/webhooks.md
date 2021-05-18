@@ -113,13 +113,9 @@ In addition to being able to subscribe to created/modified event topics for whol
 
 | Topic | Description | Required scopes |
 | :--- | :--- | :--- |
-| **contacts.optedout** | Occurs when a new [contact ](../platform-glossary.md#contact)is created with marketing consent set to deny, or the marketing consent state of an existing contact is changed to deny | `contacts.read` |
 | **offers.accepted** | Occurs when a new [offer ](../platform-glossary.md#offer)is created in an accepted state, or the status of an existing offer is changed to accepted | `offers.read` |
 | **offers.withdrawn** | Occurs when a new [offer ](../platform-glossary.md#offer)is created in a rejected state, or the status of an existing offer is changed to rejected | `offers.read` |
 | **offers.rejected** | Occurs when a new [offer ](../platform-glossary.md#offer)is created in a withdrawn state, or the status of an existing offer is changed to withdrawn | `offers.read` |
-| **worksorders.cancelled** | Occurs when a new [works order](../platform-glossary.md#works-order) is created in a cancelled state, or the status of an existing works order is changed to cancelled | `worksorders.read` |
-| **worksorders.complete** | Occurs when a new [works order](../platform-glossary.md#works-order) is created in a complete state, or the status of an existing works order is changed to complete | `worksorders.read` |
-| **worksorders.raised** | Occurs when a new [works order](../platform-glossary.md#works-order) is created in a raised state, or the status of an existing works order is changed to raised | `worksorders.read` |
 
 ### Subscribe to customers
 
