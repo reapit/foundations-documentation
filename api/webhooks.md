@@ -109,6 +109,14 @@ We currently support the following topics, but this will increase over time. Ple
 | **worksorders.created** | Occurs when a new [works order](https://foundations-documentation.reapit.cloud/platform-glossary#works-order) is created | `worksorders.read` |
 | **worksorders.modified** | Occurs when an existing [works order](https://foundations-documentation.reapit.cloud/platform-glossary#works-order) is modified | `worksorders.read` |
 
+In addition to being able to subscribe to created/modified event topics for whole entities, it is also possible to subscribe to more granular events. The following granular event topics are currently available to subscribe to.
+
+| Topic | Description | Required scopes |
+| :--- | :--- | :--- |
+| **offers.accepted** | Occurs when a new [offer ](../platform-glossary.md#offer)is created in an accepted state, or the status of an existing offer is changed to accepted | `offers.read` |
+| **offers.withdrawn** | Occurs when a new [offer ](../platform-glossary.md#offer)is created in a rejected state, or the status of an existing offer is changed to rejected | `offers.read` |
+| **offers.rejected** | Occurs when a new [offer ](../platform-glossary.md#offer)is created in a withdrawn state, or the status of an existing offer is changed to withdrawn | `offers.read` |
+
 ### Subscribe to customers
 
 You must configure the customer\(s\) that your webhook will respond to events for. Only customers who have installed your listed application will appear here. 
