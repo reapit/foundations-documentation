@@ -9,6 +9,10 @@ description: >-
 
 ## May 2021
 
+**2021-05-19**
+
+* [\#3802](https://github.com/reapit/foundations/issues/3802) - It is now possible to subscribe to various property change events. See the [webhooks documentation ](api/webhooks.md#available-topics)for more details
+
 **2021-05-18**
 
 * [\#3798](https://github.com/reapit/foundations/issues/3798) - It is now possible to subscribe to appointment confirmed or appointment cancelled change events
