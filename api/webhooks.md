@@ -83,12 +83,15 @@ We currently support the following topics, but this will increase over time. Ple
 | **application.uninstall** | Occurs when a customer uninstalls an application in the Marketplace | None |
 | **applicants.created** | Occurs when a new [applicant](https://foundations-documentation.reapit.cloud/platform-glossary#applicant) is created | `applicants.read` |
 | **applicants.modified** | Occurs when an existing [applicant](https://foundations-documentation.reapit.cloud/platform-glossary#applicant) is modified, or any of the associated [contacts](https://foundations-documentation.reapit.cloud/platform-glossary#contact) are modified | `applicants.read` |
+| **appointments.cancelled** | Occurs when a new [appointment ](../platform-glossary.md#appointment)is created as cancelled, or an existing appointment is cancelled | `appointments.read` |
+| **appointments.confirmed** | Occurs when an [appointment ](../platform-glossary.md#appointment)is created or modified and all required parties have confirmed attendance | `appointments.read` |
 | **appointments.created** | Occurs when a new [appointment](https://foundations-documentation.reapit.cloud/platform-glossary#appointment) is created | `appointments.read` |
 | **appointments.modified** | Occurs when an existing [appointment](https://foundations-documentation.reapit.cloud/platform-glossary#appointment) is modified | `appointments.read` |
 | **companies.created** | Occurs when a new [company](https://foundations-documentation.reapit.cloud/platform-glossary#company) is created | `companies.read` |
 | **companies.modified** | Occurs when an existing [company](https://foundations-documentation.reapit.cloud/platform-glossary#company) is modified | `companies.read` |
 | **contacts.created** | Occurs when a new [contact](https://foundations-documentation.reapit.cloud/platform-glossary#contact) is created | `contacts.read` |
 | **contacts.modified** | Occurs when an existing [contact](https://foundations-documentation.reapit.cloud/platform-glossary#contact) is modified | `contacts.read` |
+| **contacts.optedout** | Occurs when a new [contact ](../platform-glossary.md#contact)is created with marketing consent set to deny, or the marketing consent state of an existing contact is changed to deny | `contacts.read` |
 | **conveyancing.modified** | Occurs when an existing [conveyancing ](../platform-glossary.md#conveyancing)\(sales progression\) entity is modified | `conveyancing.read` |
 | **enquiries.created** | Occurs when a new [enquiry ](../platform-glossary.md#enquiry)is created | `enquiries.read` |
 | **enquiries.modified** | Occurs when an existing [enquiry](../platform-glossary.md#enquiry) is modified | `enquiries.read` |
@@ -96,31 +99,13 @@ We currently support the following topics, but this will increase over time. Ple
 | **identitychecks.modified** | Occurs when an existing [identity check](https://foundations-documentation.reapit.cloud/platform-glossary#identity-check) is modified | `identitychecks.read` |
 | **landlords.created** | Occurs when a new [landlord](https://foundations-documentation.reapit.cloud/platform-glossary#landlord) is created | `landlords.read` |
 | **landlords.modified** | Occurs when an existing [landlord](https://foundations-documentation.reapit.cloud/platform-glossary#landlord) is modified, or any of the associated [contacts](https://foundations-documentation.reapit.cloud/platform-glossary#contact) are modified | `landlords.read` |
+| **offers.accepted** | Occurs when a new [offer ](../platform-glossary.md#offer)is created in an accepted state, or the status of an existing offer is changed to accepted | `offers.read` |
 | **offers.created** | Occurs when a new [offer](https://foundations-documentation.reapit.cloud/platform-glossary#offer) is created | `offers.read` |
 | **offers.modified** | Occurs when an existing [offer](https://foundations-documentation.reapit.cloud/platform-glossary#offer) is modified | `offers.read` |
+| **offers.rejected** | Occurs when a new [offer ](../platform-glossary.md#offer)is created in a withdrawn state, or the status of an existing offer is changed to withdrawn | `offers.read` |
+| **offers.withdrawn** | Occurs when a new [offer ](../platform-glossary.md#offer)is created in a rejected state, or the status of an existing offer is changed to rejected | `offers.read` |
 | **properties.created** | Occurs when a new [property](https://foundations-documentation.reapit.cloud/platform-glossary#property) is created | `properties.read` |
 | **properties.modified** | Occurs when an existing [property](https://foundations-documentation.reapit.cloud/platform-glossary#property) is modified | `properties.read` |
-| **propertyimages.created** | Occurs when a new [property image](https://foundations-documentation.reapit.cloud/platform-glossary#property-image) is created | `propertyimages.read` |
-| **propertyimages.modified** | Occurs when an existing [property image](https://foundations-documentation.reapit.cloud/platform-glossary#property-image) is modified or re-ordered | `propertyimages.read` |
-| **tasks.created** | Occurs when a new [task](https://foundations-documentation.reapit.cloud/platform-glossary#task) is created | `tasks.read` |
-| **tasks.modified** | Occurs when an existing [task](https://foundations-documentation.reapit.cloud/platform-glossary#task) is modified | `tasks.read` |
-| **tenancies.created** | Occurs when a new [tenancy](https://foundations-documentation.reapit.cloud/platform-glossary#tenancy) is created | `tenancies.read` |
-| **tenancies.modified** | Occurs when an existing [tenancy](https://foundations-documentation.reapit.cloud/platform-glossary#tenancy) is modified, or any of the associated contacts are modified | `tenancies.read` |
-| **vendors.created** | Occurs when [vendor](https://foundations-documentation.reapit.cloud/platform-glossary#vendor) information has been associated with a sales property for the first time | `vendors.read` |
-| **vendors.modified** | Occurs when vendor information is modified or any of the associated [vendor](https://foundations-documentation.reapit.cloud/platform-glossary#vendor) contacts are modified | `vendors.read` |
-| **worksorders.created** | Occurs when a new [works order](https://foundations-documentation.reapit.cloud/platform-glossary#works-order) is created | `worksorders.read` |
-| **worksorders.modified** | Occurs when an existing [works order](https://foundations-documentation.reapit.cloud/platform-glossary#works-order) is modified | `worksorders.read` |
-
-In addition to being able to subscribe to created/modified event topics for whole entities, it is also possible to subscribe to more granular events. The following granular event topics are currently available to subscribe to.
-
-| Topic | Description | Required scopes |
-| :--- | :--- | :--- |
-| **appointments.cancelled** | Occurs when a new [appointment ](../platform-glossary.md#appointment)is created as cancelled, or an existing appointment is cancelled | `appointments.read` |
-| **appointments.confirmed** | Occurs when an [appointment ](../platform-glossary.md#appointment)is created or modified and all required parties have confirmed attendance | `appointments.read` |
-| **contacts.optedout** | Occurs when a new [contact ](../platform-glossary.md#contact)is created with marketing consent set to deny, or the marketing consent state of an existing contact is changed to deny | `contacts.read` |
-| **offers.accepted** | Occurs when a new [offer ](../platform-glossary.md#offer)is created in an accepted state, or the status of an existing offer is changed to accepted | `offers.read` |
-| **offers.withdrawn** | Occurs when a new [offer ](../platform-glossary.md#offer)is created in a rejected state, or the status of an existing offer is changed to rejected | `offers.read` |
-| **offers.rejected** | Occurs when a new [offer ](../platform-glossary.md#offer)is created in a withdrawn state, or the status of an existing offer is changed to withdrawn | `offers.read` |
 | **properties.selling.askingpricechanged** | Occurs when the asking price of an existing sales [property](../platform-glossary.md#property) is changed | `properties.read` |
 | **properties.selling.completed** | Occurs when a new sales [property ](../platform-glossary.md#property)is created with a status of completed, or an existing sales property's status is changed to completed | `properties.read` |
 | **properties.selling.exchanged** | Occurs when a new sales [property ](../platform-glossary.md#property)is created with a status of exchanged, or an existing sales property's status is changed to exchanged | `properties.read` |
@@ -128,8 +113,11 @@ In addition to being able to subscribe to created/modified event topics for whol
 | **properties.selling.instructed** | Occurs when a new sales [property ](../platform-glossary.md#property)is created with a status of forSale or forSaleUnavailable, or an existing sales property's status is changed to forSale or forSaleUnavailable, and the previous status was one of preAppraisal, valuation or paidValuation | `properties.read` |
 | **properties.selling.lostinstruction** | Occurs when a new sales [property ](../platform-glossary.md#property)is created in a lost instruction state, or an existing sales property's lost instruction data has been set for the first time | `properties.read` |
 | **properties.selling.underoffer** | Occurs when a new sales [property ](../platform-glossary.md#property)is created with a status of underOffer or underOfferUnavailable, or an existing sales property's status is changed to underOffer or underOfferUnavailable | `properties.read` |
+| **vendors.created** | Occurs when [vendor](https://foundations-documentation.reapit.cloud/platform-glossary#vendor) information has been associated with a sales property for the first time | `vendors.read` |
+| **vendors.modified** | Occurs when vendor information is modified or any of the associated [vendor](https://foundations-documentation.reapit.cloud/platform-glossary#vendor) contacts are modified | `vendors.read` |
 | **worksorders.cancelled** | Occurs when a new [works order](../platform-glossary.md#works-order) is created in a cancelled state, or the status of an existing works order is changed to cancelled | `worksorders.read` |
 | **worksorders.complete** | Occurs when a new [works order](../platform-glossary.md#works-order) is created in a complete state, or the status of an existing works order is changed to complete | `worksorders.read` |
+| **worksorders.modified** | Occurs when an existing [works order](https://foundations-documentation.reapit.cloud/platform-glossary#works-order) is modified | `worksorders.read` |
 | **worksorders.raised** | Occurs when a new [works order](../platform-glossary.md#works-order) is created in a raised state, or the status of an existing works order is changed to raised | `worksorders.read` |
 
 ### Subscribe to customers
