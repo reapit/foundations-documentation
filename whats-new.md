@@ -39,7 +39,7 @@ Updating the ‘brochureId’ field on the ‘Selling’ and/or ‘Lettings’ m
 
 To ensure data viability and security, we have made a change to the way 'Sandbox only' Webhooks are handled.
 
-Webhooks that have been setup specifically for Sandbox testing \(SBOX\) that have been dormant for 14 days \(unmodified/no traffic\), will automatically become deactivated.
+Webhooks that have been setup specifically for Sandbox testing \(SBOX\) and have been unmodified for 14 days, will automatically be deactivated.
 
 Should you wish to continue using Webhooks for Sandbox testing, you can reactivate it again by selecting the check box ‘Active’ when editing. ![](file:///C:/Users/HPHILL~1/AppData/Local/Temp/msohtmlclip1/01/clip_image007.png)
 
