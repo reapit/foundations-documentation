@@ -93,6 +93,8 @@ We currently support the following topics, but this will increase over time. Ple
 | **contacts.modified** | Occurs when an existing [contact](https://foundations-documentation.reapit.cloud/platform-glossary#contact) is modified | `contacts.read` |
 | **contacts.optedout** | Occurs when a new [contact ](../platform-glossary.md#contact)is created with marketing consent set to deny, or the marketing consent state of an existing contact is changed to deny | `contacts.read` |
 | **conveyancing.modified** | Occurs when an existing [conveyancing ](../platform-glossary.md#conveyancing)\(sales progression\) entity is modified | `conveyancing.read` |
+| **documents.created** | Occurs when a new [document ](../platform-glossary.md#document)is created | `documents.read` |
+| **documents.modified** | Occurs when an existing [document](../platform-glossary.md#document) is modified | `documents.read` |
 | **enquiries.accepted** | Occurs when an existing [enquiry](../platform-glossary.md#enquiry) has a status change to added | `enquiries.read` |
 | **enquiries.created** | Occurs when a new [enquiry ](../platform-glossary.md#enquiry)is created | `enquiries.read` |
 | **enquiries.modified** | Occurs when an existing [enquiry](../platform-glossary.md#enquiry) is modified | `enquiries.read` |

@@ -9,6 +9,14 @@ description: >-
 
 ## May 2021
 
+**2021-05-27**
+
+* [\#3806](https://github.com/reapit/foundations/issues/3806) - It is now possible to subscribe to webhooks events for new and modified [documents](platform-glossary.md#document)
+
+**2021-05-21**
+
+* [\#3800](https://github.com/reapit/foundations/issues/3800) - It is now possible to subscribe to webhook events for new and modified [enquiries](platform-glossary.md#enquiry)
+
 **2021-05-19**
 
 * [\#3802](https://github.com/reapit/foundations/issues/3802) - It is now possible to subscribe to various property change events. See the [webhooks documentation ](api/webhooks.md#available-topics)for more details
