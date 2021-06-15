@@ -18,7 +18,6 @@
   * [Development requests](app-development/dev-requests.md)
   * [Contributing](app-development/contributing.md)
 * [What’s New](whats-new.md)
-* [Platform Change Log](platform-changelog.md)
 * [Platform Glossary](platform-glossary.md)
 * [Developer Terms and Conditions](developer-terms-and-conditions.md)
 * [Pricing](pricing.md)
