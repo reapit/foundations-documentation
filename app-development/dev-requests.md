@@ -1,9 +1,9 @@
 # Development requests
 
-To request a new feature or report a bug, please visit the help section of the developer portal. You'll be directed to GitHub where you'll be able to create an issue directly in our public board. You should track the progress of your issue and communicate with developer directly in GitHub.
+To request a new feature or report a bug, please visit the help section of the developer portal. You'll be directed to GitHub where you'll be able to create an issue directly in our public board. You should track the progress of your issue and communicate with developers directly in GitHub.
 
 {% hint style="info" %}
-Please do not raise requests though our service desk, customer success managers or other channels within the business with regard to the status of an issue.
+Please do not raise requests though our service desk, customer success managers or any other channels within the business with regard to the status of an issue.
 {% endhint %}
 
 ## Our processes
