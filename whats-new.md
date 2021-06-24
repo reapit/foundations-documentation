@@ -7,6 +7,63 @@ description: >-
 
 # What’s New
 
+## 25/06/2021
+
+### **Webhooks Transaction Logs**
+
+We have now included a ‘Transactions Logs’ section on the ‘Webhooks’ page, to allow you to filter your transactional Webhook history by date and app.   
+  
+To view your webhook transaction logs, simply navigate to the ‘Webhooks’ page inside of the Developer Portal, select a date range \(will default to the last 7 days\) and select an app: 
+
+![](.gitbook/assets/translogs.png)
+
+From each log item, you will be able to see the URL, the selected topic, status and the option to ‘Download’.
+
+Selecting ‘Download’ will save a copy of the specific payload as a JSON file.  
+
+
+### **New Webhook Topics**
+
+We have added the following new Webhook topics:  
+  
+appointments.cancelled  
+appointments.confirmed  
+contacts.optedout  
+enquiries.accepted  
+enquiries.rejected  
+offers.rejected  
+offers.withdrawn  
+offers.accepted  
+properties.selling.askingpricechanged  
+properties.selling.completed  
+properties.selling.exchanged  
+properties.selling.withdrawn  
+properties.selling.instructed  
+properties.selling.lostinstruction  
+properties.selling.underoffer  
+worksorders.cancelled  
+worksorders.complete  
+worksorders.raised  
+   
+If you wish to setup subscriptions to any of the new the topics listed above, you will need to have selected the associated scopes.  
+  
+For more information on the required scopes, please visit the associated documentation [here](https://foundations-documentation.reapit.cloud/api/webhooks#available-topics).  
+
+
+### **New REST Hooks Endpoint**
+
+We have introduced a new REST Hooks Endpoint. This functionality allows you to programmatically set up webhook notifications for your application rather than needing to do this manually using the ‘Webhooks’ page in the developer portal which can help you automate onboarding of customers.
+
+![](.gitbook/assets/resthooks.png)
+
+### **Updated Terms and Conditions**
+
+We continue to develop new features and products on the Foundations Platform and have updated our Terms and Conditions to reflect these changes.  
+  
+From 25th June, when you next login to the Developer Portal, you will be presented with the latest updated terms and will need to accept before continuing to use the Developer Portal.  
+  
+Our current and revised terms can be accessed through the Developer Portal documentation under ‘[**Developer Terms and Conditions**](https://foundations-documentation.reapit.cloud/developer-terms-and-conditions)’.
+
 ## 04/05/2021
 
 ### New Desktop Integration Types

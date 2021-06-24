@@ -10,10 +10,11 @@ description: >-
 
 | Date | File |
 | :--- | :--- |
+| 25th June 2021 | [Terms and Conditions.pdf](https://developers.reapit.cloud/foundations-terms-250621.pdf) |
 | 17th November 2020 | [Terms and Conditions.pdf](https://developers.reapit.cloud/foundations-terms-171120.pdf) |
 | 16th June 2020 | [Terms and Conditions.pdf](https://developers.reapit.cloud/foundations-terms-160620.pdf) |
 
-Version Date: 17th November 2020
+Version Date: 25th June 2021
 
 ### 1  DEFINITIONS AND INTERPRETATION
 
@@ -29,35 +30,37 @@ Version Date: 17th November 2020
 
 1.1.5       **API** or **Application Programming Interface** means a programming interface used to pass data back and forth between software applications and programs in a formalised way.
 
-1.1.6       **Application User Terms** means the terms of use for an Application on the App Marketplace.
+1.1.6       **API Call** means the messenger that delivers the Developer’s request to the Foundations Platform and then delivers the response back to the Developer
 
-1.1.7       **Application User Terms Principles** means the principles set out in Schedule 1.
+1.1.7       **Application User Terms** means the terms of use for an Application on the App Marketplace.
 
-1.1.8       **Business Day** means a day \(other than a Saturday or Sunday\) on which banks are generally open in London for normal business.
+1.1.8       **Application User Terms Principles** means the principles set out in Schedule 1.
 
-1.1.9       **Client Side Application** means an Application that \(i\) uses Reapit Connect and \(ii\) is a web application \(either a single page application or server rendered site\).
+1.1.9       **Business Day** means a day \(other than a Saturday or Sunday\) on which banks are generally open in London for normal business.
 
-1.1.10    **Commencement Date** means the earlier of \(i\) the date on which Reapit confirms the Developer’s access to the Foundations Platform and \(ii\) the date on which the Developer first accesses the Foundations Platform.
+1.1.10       **Client Side Application** means an Application that \(i\) uses Reapit Connect and \(ii\) is a web application \(either a single page application or server rendered site\).
 
-1.1.11    **Contract Year** means a period of one year commencing on the Commencement Date \(for the first Contract Year\) and thereafter commencing on each anniversary of the Commencement Date. 
+1.1.11    **Commencement Date** means the earlier of \(i\) the date on which Reapit confirms the Developer’s access to the Foundations Platform and \(ii\) the date on which the Developer first accesses the Foundations Platform.
 
-1.1.12    **Developer** means the entity identified as such in the Registration Details.
+1.1.12    **Contract Year** means a period of one year commencing on the Commencement Date \(for the first Contract Year\) and thereafter commencing on each anniversary of the Commencement Date. 
 
-1.1.13    **Developer Obligations** means the requirements set out in Schedule 3.
+1.1.13    **Developer** means the entity identified as such in the Registration Details.
 
-1.1.14    **Data** means any data that a Developer can access in an Application or otherwise by accessing the Foundations Platform and may include Personal Data.
+1.1.14    **Developer Obligations** means the requirements set out in Schedule 3.
 
-1.1.15    **Developer Edition** means a single user downloadable version of the Reapit RPS software for the purpose of testing integrations and Applications in the Developer environment by the Developer, for which a monthly fee is payable.
+1.1.15    **Data** means any data that a Developer can access in an Application or otherwise by accessing the Foundations Platform and may include Personal Data.
 
-1.1.16    **Developer Feedback** means any data, information, text, drawings, records, documents and other materials provided pursuant to clause 2.2.4.
+1.1.16    **Developer Edition** means a single user downloadable version of the Reapit RPS software for the purpose of testing integrations and Applications in the Developer environment by the Developer, for which a monthly fee is payable.
 
-1.1.17    **Data Protection Laws** means any applicable laws and regulations relating to privacy or the use or processing of data relating to natural persons, including: \(a\) the 2018 Data Protection Act \(the **DPA**\); \(b\) the Privacy and Electronic Communications \(EC Directive\) Regulations 2003; and \(c\) the General Data Protection Regulation \(EU Regulation 2016/679\) \(**GDPR**\); \(d\) at such time as the United Kingdom leaves the European Union and the GDPR no longer has direct effect in United Kingdom law, the GDPR as transposed into the national legislation of the United Kingdom by operation of section 3 of the European Union \(Withdrawal\) Act 2018 \("**UK GDPR**"\) and \(e\) any laws or regulations ratifying, implementing, adopting, supplementing or replacing GDPR, UK GDPR or DPA and in each case as amended or replaced from time to time, together with any binding guidance and codes of practice issued from time to time by relevant supervisory authorities.
+1.1.17    **Developer Feedback** means any data, information, text, drawings, records, documents and other materials provided pursuant to clause 2.2.4.
 
-1.1.18    **Dispute Resolution Procedure** means the procedure for the resolution of Disputes specified in clause 15.
+1.1.18    **Data Protection Laws** means any applicable laws and regulations relating to privacy or the use or processing of data relating to natural persons, including: \(a\) the 2018 Data Protection Act \(the **DPA**\); \(b\) the Privacy and Electronic Communications \(EC Directive\) Regulations 2003; and \(c\) the General Data Protection Regulation \(EU Regulation 2016/679\) \(**GDPR**\); \(d\) at such time as the United Kingdom leaves the European Union and the GDPR no longer has direct effect in United Kingdom law, the GDPR as transposed into the national legislation of the United Kingdom by operation of section 3 of the European Union \(Withdrawal\) Act 2018 \("**UK GDPR**"\) and \(e\) any laws or regulations ratifying, implementing, adopting, supplementing or replacing GDPR, UK GDPR or DPA and in each case as amended or replaced from time to time, together with any binding guidance and codes of practice issued from time to time by relevant supervisory authorities.
 
-1.1.19    **Documentation** means any technical information and documentation necessary for the use of the Application.
+1.1.19    **Dispute Resolution Procedure** means the procedure for the resolution of Disputes specified in clause 15.
 
-1.1.20    **Fees** means the fees which are set out in Schedule 2, or as otherwise agreed in writing between the Parties from time to time and which can include the following:
+1.1.20    **Documentation** means any technical information and documentation necessary for the use of the Application.
+
+1.1.21    **Fees** means the fees which are set out in Schedule 2, or as otherwise agreed in writing between the Parties from time to time and which can include the following:
 
 \(a\)           Annual Registration Fee;  
 \(b\)           Monthly App Marketplace Fee;  
@@ -65,17 +68,17 @@ Version Date: 17th November 2020
 \(d\)           Warehouse; and  
 \(e\)           Reapit Connect
 
-1.1.21    **Force Majeure Event** means any cause or causes beyond the reasonable control of the Party claiming to be subject to it, including: any extremely severe weather, landslide, storm, lightning, fire, subsidence, epidemic, outbreak of military hostilities \(whether or not war is declared\), expropriation by governmental authorities, act of God, governmental act \(other than a Regulatory Change\), act of terrorism, earthquake, flood, embargo, riot, sabotage, strike \(other than of its own employees\), failures of Third Parties \(other than Subcontractors\), explosion or civil commotion as well as any Applicable Laws which were enacted as a result of a Force Majeure Event .
+1.1.22    **Force Majeure Event** means any cause or causes beyond the reasonable control of the Party claiming to be subject to it, including: any extremely severe weather, landslide, storm, lightning, fire, subsidence, epidemic, outbreak of military hostilities \(whether or not war is declared\), expropriation by governmental authorities, act of God, governmental act \(other than a Regulatory Change\), act of terrorism, earthquake, flood, embargo, riot, sabotage, strike \(other than of its own employees\), failures of Third Parties \(other than Subcontractors\), explosion or civil commotion as well as any Applicable Laws which were enacted as a result of a Force Majeure Event .
 
-1.1.22    **Foundations Platform** means Reapit’s App Marketplace and online portal of developer tools, documentation and other reference materials which facilitate the development of Applications and their integration with Reapit Software.
+1.1.23    **Foundations Platform** means Reapit’s App Marketplace and online portal of developer tools, documentation and other reference materials which facilitate the development of Applications and their integration with Reapit Software.
 
-1.1.23    **Good Industry Practice** means, at any time during the term of this Agreement, the exercise of reasonable skill, care, prudence, efficiency, foresight and timeliness which would at that time be expected from a reasonably and suitably skilled, trained and experienced person providing services similar to the Services.
+1.1.24    **Good Industry Practice** means, at any time during the term of this Agreement, the exercise of reasonable skill, care, prudence, efficiency, foresight and timeliness which would at that time be expected from a reasonably and suitably skilled, trained and experienced person providing services similar to the Services.
 
-1.1.24    **Initial Term** means one Contract Year.
+1.1.25    **Initial Term** means one Contract Year.
 
-1.1.25    **Insolvency Event** means in relation to a Party, the convening of a meeting of its creditors or if a proposal shall be made for a voluntary arrangement within Part I of the Insolvency Act 1986 or a proposal for any other composition scheme or arrangement with \(or assignment for the benefit of\) its creditors or if the other shall be unable to pay its debts within the meaning of section 123 of the Insolvency Act 1986 or if a trustee receiver administrative receiver or similar officer is appointed in respect of its business or assets or if a petition is presented or a meeting is convened for the purpose of considering a resolution or other steps are taken for its winding or for the making of an administration order \(otherwise than for the purpose of an amalgamation or reconstruction\).
+1.1.26    **Insolvency Event** means in relation to a Party, the convening of a meeting of its creditors or if a proposal shall be made for a voluntary arrangement within Part I of the Insolvency Act 1986 or a proposal for any other composition scheme or arrangement with \(or assignment for the benefit of\) its creditors or if the other shall be unable to pay its debts within the meaning of section 123 of the Insolvency Act 1986 or if a trustee receiver administrative receiver or similar officer is appointed in respect of its business or assets or if a petition is presented or a meeting is convened for the purpose of considering a resolution or other steps are taken for its winding or for the making of an administration order \(otherwise than for the purpose of an amalgamation or reconstruction\).
 
-1.1.26    **Intellectual Property Rights** means:
+1.1.27    **Intellectual Property Rights** means:
 
 \(a\)          copyright, patents, database rights and rights in trademarks, designs, know-how and confidential information \(whether registered or unregistered\);
 
@@ -83,37 +86,37 @@ Version Date: 17th November 2020
 
 \(c\)          ****all other intellectual property rights and equivalent or similar forms of protection existing anywhere in the world.
 
-1.1.27    **Loss** means claims, demands, actions, awards, judgments, settlements, costs, expenses, liabilities, damages and losses \(including all interest, fines, penalties, management time and legal and other professional costs and expenses\).
+1.1.28    **Loss** means claims, demands, actions, awards, judgments, settlements, costs, expenses, liabilities, damages and losses \(including all interest, fines, penalties, management time and legal and other professional costs and expenses\).
 
-1.1.28    **Party** means Reapit or the Developer \(as the case may be\) and **Parties** means Reapit and the Developer.
+1.1.29    **Party** means Reapit or the Developer \(as the case may be\) and **Parties** means Reapit and the Developer.
 
-1.1.29    **Developer IPR Claim** is defined in clause 4.3.
+1.1.30    **Developer IPR Claim** is defined in clause 4.3.
 
-1.1.30    **Reapit** means Reapit Limited, registered in England \(registered number 03483017\) whose registered office is at 67 – 74 Saffron Hill, London, EC1N 8QX.
+1.1.31    **Reapit** means Reapit Limited, registered in England \(registered number 03483017\) whose registered office is at 67 – 74 Saffron Hill, London, EC1N 8QX.
 
-1.1.31    **Reapit Staff** means agents and sub-contractors and any other person working on behalf of Reapit and engaged in the provision of the Services.
+1.1.32    **Reapit Staff** means agents and sub-contractors and any other person working on behalf of Reapit and engaged in the provision of the Services.
 
-1.1.32    **Registration Details** means the data required to be entered by the Developer in order to be permitted to use the Foundations Platform.
+1.1.33    **Registration Details** means the data required to be entered by the Developer in order to be permitted to use the Foundations Platform.
 
-1.1.33    **Regulator** means any person having regulatory or supervisory authority over all or any part of \(a\) the Services or \(b\) the business of Reapit or \(c\) the business of Developer.
+1.1.34    **Regulator** means any person having regulatory or supervisory authority over all or any part of \(a\) the Services or \(b\) the business of Reapit or \(c\) the business of Developer.
 
-1.1.34    **Server Side Application** means ****authentication using a REST service on the server, typically pulling Data into an existing Application.
+1.1.35    **Server Side Application** means ****authentication using a REST service on the server, typically pulling Data into an existing Application.
 
-1.1.35    **Term** means the duration of the Agreement, as determined in accordance with the terms of clause 11.
+1.1.36    **Term** means the duration of the Agreement, as determined in accordance with the terms of clause 11.
 
-1.1.36    **Third Party** means any person which is not a Party.
+1.1.37    **Third Party** means any person which is not a Party.
 
-1.2          the words including and include shall mean including without limitation and include without limitation, respectively;
+1.2          The words including and include shall mean including without limitation and include without limitation, respectively.
 
-1.3          any reference to a time of day is to United Kingdom time;
+1.3          Any reference to a time of day is to United Kingdom time.
 
-1.4          the Schedules form part of this Agreement;
+1.4          The Schedules form part of this Agreement.
 
-1.5          the headings do not affect the interpretation of this Agreement;
+1.5          The headings do not affect the interpretation of this Agreement.
 
-1.6           any reference to a statute or statutory provision includes, unless the context otherwise requires, a reference to that statute or statutory provision as from time to time amended, consolidated, extended, re-enacted, or replaced and to all statutory instruments, orders, regulations or rules made pursuant to it; and
+1.6           Any reference to a statute or statutory provision includes, unless the context otherwise requires, a reference to that statute or statutory provision as from time to time amended, consolidated, extended, re-enacted, or replaced and to all statutory instruments, orders, regulations or rules made pursuant to it. 
 
-1.7           all references to the Parties include their permitted successors and assigns;
+1.7           All references to the Parties include their permitted successors and assigns.
 
 ### 2   FOUNDATIONS PLATFORM AND APPLICATIONS
 
@@ -176,7 +179,7 @@ Version Date: 17th November 2020
 
 ### 3          FEES AND PAYMENT
 
-3.1          Developer shall pay Reapit the Fees as calculated in accordance with Schedule 2 and as invoiced by Reapit in accordance with this clause 3. The Fees do not include value added tax or any locally applicable equivalent sales tax which Developer shall pay, in addition to the Fees, at the prevailing rate, and in the manner prescribed by applicable law. 
+3.1          Developer shall pay Reapit the Fees as calculated in accordance with Schedule 2 and as invoiced by Reapit in accordance with this clause 3. The Fees do not include value added tax or any locally applicable equivalent sales tax which Developer shall pay, in addition to the Fees, at the prevailing rate, and in the manner prescribed by applicable law. Without prejudice to the foregoing, Reapit reserves the right to invoice the Developer for any API Calls in excess of the Monthly API Call limit set out in Schedule 2 .
 
 3.2           The Fees are payable in accordance with the terms of Schedule 2 and the applicable invoice.  Fees will be collected by direct debit in accordance with the Direct Debit mandate that the Developer must complete at the same time as providing the Registration Details.
 
@@ -428,7 +431,15 @@ in each case whether arising from breach of contract, negligence, under any inde
 
 11.3        This Agreement may be terminated:
 
-11.3.1    by Reapit on written notice if the Developer fails to pay an undisputed, invoiced amount within 30 days following receipt of an initial written notice from Reapit stating that the amount is due and is unpaid;
+11.3.1    by Reapit: 
+
+\(a\)          on written notice if the Developer fails to pay an undisputed, invoiced amount within 30 days following receipt of an initial written notice from Reapit stating that the amount is due and is unpaid; 
+
+\(b\)          on written notice if the Developer: 
+
+\(i\)           breaches a Developer Obligation; and 
+
+\(ii\)          on 45 days’ written notice.
 
 11.3.2    by written notice from a Party if the other Party commits a material breach of this Agreement and which \(in the case of a breach capable of being remedied\) shall not have been remedied within 30 days of a written notice of the breach \(setting out the specific breaches and suggested steps to remedy the breach, if applicable\) ;
 
@@ -440,7 +451,11 @@ in each case whether arising from breach of contract, negligence, under any inde
 
 12.1        The following clauses shall survive termination or expiry of this Agreement: 3, 4, 5, 6, 7, 10, 12, 13, 15 and 16.
 
-12.2        Upon termination or expiry of this Agreement, the licence granted by the Developer in clause 4.2.1 shall terminate automatically and Reapit shall cease marketing the Application\(s\) from the effective date of termination or expiry.
+12.2        Upon termination or expiry of this Agreement: 
+
+\(a\)          the licence granted by the Developer in clause 4.2.1 shall terminate automatically and Reapit shall cease marketing the Application\(s\) from the effective date of termination or expiry; 
+
+\(b\)          by Reapit pursuant to clause 11.3.1 \(b\)\(ii\), Reapit shall refund the Developer on a pro-rata basis any pre-paid Fees that apply from the period starting on the effective date of termination until the date that applied to the pre-paid Fees.
 
 12.3        Termination of this Agreement in accordance with its terms shall not relieve the Developer of its payment obligations and all sums that would otherwise be due from the Developer to Reapit under this Agreement shall be payable on the date that they would otherwise become due and the number of Users applicable to any termination notice period \(whether early termination in accordance with the terms of clause 11.3 or a notice to prevent automatic renewal in accordance with clause 11.2.2\) shall be deemed to be the number of Users as at the date the applicable termination notice is sent.
 
@@ -461,7 +476,7 @@ in each case whether arising from breach of contract, negligence, under any inde
 
 ### 14        MISCELLANEOUS
 
-14.1     **Announcements**: Neither Party shall:
+14.1        **Announcements**: Neither Party shall:
 
 14.1.1    make or authorise any public or private announcement or communication concerning this Agreement; or
 
@@ -469,7 +484,7 @@ in each case whether arising from breach of contract, negligence, under any inde
 
 14.1.3    without the prior written consent of the other Party.
 
-14.2    **Further Assurance:** Each Party shall , at its own cost, promptly execute and deliver all such documents, and do all such things, as the other Party may from time to time reasonably require for the purpose of giving full effect to the provisions of this Agreement and to secure for the other Party the full benefit of the rights, powers and remedies conferred upon it under this Agreement.
+14.2        **Further Assurance:** Each Party shall , at its own cost, promptly execute and deliver all such documents, and do all such things, as the other Party may from time to time reasonably require for the purpose of giving full effect to the provisions of this Agreement and to secure for the other Party the full benefit of the rights, powers and remedies conferred upon it under this Agreement.
 
 14.3        **Entire Agreement:**
 
@@ -521,7 +536,7 @@ in each case whether arising from breach of contract, negligence, under any inde
 16.1        This Agreement shall be governed by, construed and interpreted in accordance with English law and the Parties hereby agree, for the purposes of this Agreement only and subject to the provisions of clause 15, to submit themselves and any claim or matter arising under or in connection with this Agreement to the exclusive jurisdiction of the English courts.  
 
 
-### SCHEDULE 1 – APPLICATION USER TERM PRINCIPLES
+### SCHEDULE 1 – APPLICATION USER TERMS PRINCIPLES
 
 ### 1               GENERAL
 
@@ -584,10 +599,12 @@ Calculation of Total Consumption Cost - Example for representative purposes only
 
 * access to the Foundations Platform is solely for the purpose of developing Applications and/or accessing Reapit’s Application Programming Interfaces;
 * it will not interfere with or access any other developer’s Application, without that developer and Reapit’s express prior written permission;
+* it will not interfere with or disrupt the Foundations Platform, or any services or network used to provide access to the Foundations Platform;
 * it will not collect any data or Personal Data on the Foundations Platform, other than through its Application and in accordance with the Application User Terms Principles;
+* it will not re-identify \(or seek to re-identify\) any anonymised data \(whether Personal Data or not\);
 * it will provide feedback when requested by Reapit, in relation to the performance of the Foundations Platform;
 * it will co-operate in all matters relating to this Agreement with Reapit;
-* it will not provide access to the Foundations Platform to anyone who has not entered into a direct agreement with Reapit on the same terms as this Agreement; 
+* it will not provide access to the Foundations Platform to anyone who has not entered into a direct agreement with Reapit on the same terms as this Agreement and, without prejudice to the foregoing, it will not share \(i\) any API access credentials provided by Reapit and/or \(ii\) the Registration Details with any third party;
 * it will conduct an industry-standard penetration test on each Application at least once every calendar year and provide Reapit with the results of such test;
 * it will not use the Foundations Platform in a manner, develop an Application, or share any content or Developer Feedback, that:
 * is false or misleading;
@@ -600,7 +617,7 @@ Calculation of Total Consumption Cost - Example for representative purposes only
 * contains a solicitation of funds, goods or services, or promotes or advertises goods or services \(other than the Application itself\); or
 * contains any viruses, Trojan horses, or other components designed to limit or harm the functionality of a computer.
 
-2.     The developer must make available upon request access to the Application in both test and production environments for Reapit to conduct random spot-checks.
+2.     The Developer must make available upon request access to the Application in both test and production environments for Reapit to conduct random spot-checks.
 
 3.     When reading Data from end points the Developer must update those end points and write back associated Data, for example, but not limited to, the “Negotiators diary” in order to ensure that the Foundations Platform remains the Single source of truth for the benefit of all Marketplace Applications
 
@@ -608,5 +625,23 @@ Calculation of Total Consumption Cost - Example for representative purposes only
 
 5.     The Developer must use Reapit Connect and Reapit Elements UI component library when building Client Side Applications for the Marketplace.
 
-6.     The Developer will conduct an industry-standard penetration test on each Application at least once every calendar year and provide Reapit with the results of such test.
+6.     The Developer must not exceed or circumvent \(or seek to circumvent\) the Monthly API Calls and the Developer is solely responsible for ensuring that it keeps track of its current consumption of Monthly API Calls.
+
+7.      The Monthly API Calls rates must not exceed:
+
+\(i\)      20 requests per second
+
+\(ii\)      5 concurrent requests for each customer that has installed your app
+
+8. \(iii\) a maximum of 250,000 requests per day The Developer acknowledges and agrees that the Foundations Platform API is to be used for a transactional basis only, including
+
+* Retrieval of data in real-time as and when the Application requires it; and
+
+9.       Storage of data as a transactional, operational data store for the Application. The Foundations Platform APIs must not be used for:
+
+* Bulk extraction of data, historical or otherwise, into third party applications, databases, or data warehouses to support business intelligence \(BI\), data mining, and other decision support applications.
+* Automated or scheduled routines to acquire non-transactional data without a requirement to immediately process it for your applications use case \(this does not include webhooks\).
+* Load or volume testing of your application using sandbox or customer data.
+
+10.    An Application must maintain no more than 5 API interaction threads and awaits completion of previous requests before submitting new ones
 
