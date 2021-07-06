@@ -11,6 +11,7 @@
 * [App Development](app-development/README.md)
   * [Usage Guidelines](app-development/usage-guidelines.md)
   * [Elements](app-development/elements.md)
+  * [GraphQL](app-development/graphql.md)
   * [Create React App Template](app-development/create-react-app-template.md)
   * [Connect Session](app-development/connect-session.md)
   * [Foundations TS Defintions](app-development/foundations-ts-defintions.md)
