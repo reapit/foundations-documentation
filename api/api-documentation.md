@@ -2,7 +2,7 @@
 description: Complete technical guidance on how to work with the Foundations REST APIs
 ---
 
-# Platform
+# REST API
 
 {% hint style="warning" %}
 The Foundations REST API will in-time replace our existing REST and SOAP web services, however, **the existing REST and SOAP web services are not at this time being deprecated** and will continue to operate side-by-side until appropriate notice given.

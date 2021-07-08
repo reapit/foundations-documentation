@@ -2,10 +2,10 @@
 
 * [Home](README.md)
 * [APIs](api/README.md)
-  * [Platform](api/api-documentation.md)
+  * [REST API](api/api-documentation.md)
+  * [Webhooks](api/webhooks.md)
   * [Reapit Connect](api/reapit-connect.md)
   * [Desktop](api/desktop-api.md)
-  * [Webhooks](api/webhooks.md)
 * [Developer Portal](developer-portal.md)
 * [Listing your App](listing-your-app.md)
 * [App Development](app-development/README.md)
