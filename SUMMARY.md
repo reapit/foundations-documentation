@@ -5,7 +5,7 @@
   * [REST API](api/api-documentation.md)
   * [Webhooks](api/webhooks.md)
   * [Reapit Connect](api/reapit-connect.md)
-  * [Desktop](api/desktop-api.md)
+  * [Desktop API](api/desktop-api.md)
 * [Developer Portal](developer-portal.md)
 * [Listing your App](listing-your-app.md)
 * [App Development](app-development/README.md)
