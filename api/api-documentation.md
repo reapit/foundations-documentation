@@ -251,11 +251,15 @@ If you represent an Agency Cloud customer and require access to data held in the
 
 Our APIs support resource creation using the `POST` verb. When a creation request has been successfully fulfilled, you will receive a `201 Created` response.
 
+The body of a `POST` request should always be sent as a JSON object, with the `Content-Type` header set to `application/json`
+
 Since the creation of new resources is often asynchronous, we do not include the payload of the newly created resource in the `POST` response. Instead, we include the the location of where the new resource can be retrieved from in the `Location` header of the `POST` response.
 
 ### Updating data
 
 Our APIs support resource updates using the `PATCH` verb. When an update request has been successfully fulfilled, you will receive a `204 No Content` response.
+
+The body of a `PATCH` request should always be sent as a JSON object, with the `Content-Type` header set to `application/json`
 
 When you provide an update to use using the `PATCH` verb, you're able to only update the parts of a resource that you care about, rather than completely replacing the entire resource. Usage is simple and you just need to specifically send us the data you wish to update.
 
