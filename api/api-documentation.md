@@ -273,6 +273,54 @@ The below example will only update the notes field on a representation that may 
 
 As with resource creation, we do not include the updated resource in the `PATCH` response. Instead, simply re-fetch the latest state of the resource by issuing a `GET` request.
 
+### Uploading files
+
+The following APIs allow consumers to upload certain types of documents to the Reapit Platform:
+
+* documents
+* propertyImages
+* identityChecks
+
+Each respective APIs `POST` endpoint supports uploads of files up to 6Mb in size, however we understand that there may sometimes be a legitimate need to upload larger files. To support this requirement, it is possible to obtain a pre-signed URL from each of these APIs which you can then send your data to. 
+
+#### Using pre-signed URLs
+
+To upload files between 6Mb and 30Mb in size, a pre-signed URL should be obtained from the Platform and used to upload your data. Each of the APIs listed in the [Uploading files](api-documentation.md#uploading-files) section of this documentation has a `POST /signedUrl` endpoint which can be called to generate up to 10 pre-signed URLs. This can be useful where you need to upload more than one file. 
+
+Use the following request body when calling the endpoint, setting amount to a value between 1 and 10 to have the respective number of URLs returned to you
+
+```text
+POST /documents/signedUrl
+{
+    "amount": 2
+}
+```
+
+The response will contain a collection of URLs which can then be used to upload your content to, along with an expiry date for the provided URLs, which will expire after 15 minutes
+
+```text
+{
+  "urls": [
+    "https://reapit-file-uploads-prod.s3.eu-west-2.amazonaws.com/443e4a98-dfcb-4345-abb2-e52031928ed1?X-Amz-Expires=900&x-amz-security-token=IQoJb3JpZ2luX2VjEBcaCWV1LXdlc3QtMiJHMEUCIQC0Lx67%2F6JwNS9X7faUwm%2BwHYYpTLQ1UM42ge5WXDHKrgIgPh7r4O%2BLSlV0xhCQ5qoifZmIHajay2%2BMSddWghyj1Acq6wMIEBABGgw1MDM2MTQ4Mjg1MTciDO3pV3zkZcZVtWhWxyrIA6%2Bt4yRlh3g4B%2FCgt7T7YJ7yX3VUcOg%2F2fOKATN2qSqAjshXNMQ2ZKkqDDiHbAgvbzuZBkQDbKirksRmhqVGVv1A8VBcJ7JYP5jqpiwUuwgKjjQtsHWocKsfPVYsiBReiP%2Fw%2FJD9d0hWLPAvl%2FGwUoQr4bFveQxTTbh59G%2FUJx%2B%2BJO1vX3iAPLaLGSbEk7vWsyEDHlnCZKt3FftJ6rLlPlldzTLSl0dxjXUuYHXtwfHr2xT%2FMEkznvCxfYvhkRq2JqMrRFDs9HhYmgNKGSq22RTXpG6H6bvPj2CB1%2F2wKOAXbeZxnrtcWdnHlgE3xqOYwr1QaoL0w4llwGwGKIv5bQndF8MOiqDYIKZmWoH%2Bd3oQRfX2lFsBx3Ou1VDc4T28PkN8nPUnAx5OZ%2Fqu4A%2FWAbNnxM6L9%2B0kwDU0ijXro%2FjKNaTynYmqzNHVei6MTeEv7l2IaBV4eYZcU76jNIa8qPntGZjfCNm3nHHoTalPj6jYVYQJLGGe5OAa5U5YLm%2FczFhjPNQdBW5QsUaFEdccAV5QDYoQdaQba%2FnuTXvPS2147LYNdNMiQsi1M5peEhe89kaIitGONn9GOBXdeh2OBIrfRDYVICmQKjDjlbqHBjqlAUlaHQsfcgpG0NXSVM4q0XaxTWUQs117DKno2d5kJpur35M%2Bmk1ywaOg%2BQQs1elOD5lWUW7iQU8OKP6OFFe4pEMQlM02lz%2BtdNCy7aUQ%2FBVl43buUyDgciDI5DTbhEJe0LZuv1Yf0bGhuhtS%2FZhesqgbAlMVTwy8TiKPd7hE3%2FfsrThEtrgvrAMVSr4hbrZSDItfdsFb976epf%2BZt%2Fb5aTsz%2BxHzgA%3D%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAXKQOIN7STXK57JEK/20210714/eu-west-2/s3/aws4_request&X-Amz-Date=20210714T082753Z&X-Amz-SignedHeaders=host;x-amz-security-token&X-Amz-Signature=f8f5fb8919dc1a4aff335be64bd0746e6c523480f27a47d17106ed9d98181799",
+    "https://reapit-file-uploads-prod.s3.eu-west-2.amazonaws.com/f6ea00ba-1b70-49ed-9a4a-d480d438d443?X-Amz-Expires=900&x-amz-security-token=IQoJb3JpZ2luX2VjEBcaCWV1LXdlc3QtMiJHMEUCIQC0Lx67%2F6JwNS9X7faUwm%2BwHYYpTLQ1UM42ge5WXDHKrgIgPh7r4O%2BLSlV0xhCQ5qoifZmIHajay2%2BMSddWghyj1Acq6wMIEBABGgw1MDM2MTQ4Mjg1MTciDO3pV3zkZcZVtWhWxyrIA6%2Bt4yRlh3g4B%2FCgt7T7YJ7yX3VUcOg%2F2fOKATN2qSqAjshXNMQ2ZKkqDDiHbAgvbzuZBkQDbKirksRmhqVGVv1A8VBcJ7JYP5jqpiwUuwgKjjQtsHWocKsfPVYsiBReiP%2Fw%2FJD9d0hWLPAvl%2FGwUoQr4bFveQxTTbh59G%2FUJx%2B%2BJO1vX3iAPLaLGSbEk7vWsyEDHlnCZKt3FftJ6rLlPlldzTLSl0dxjXUuYHXtwfHr2xT%2FMEkznvCxfYvhkRq2JqMrRFDs9HhYmgNKGSq22RTXpG6H6bvPj2CB1%2F2wKOAXbeZxnrtcWdnHlgE3xqOYwr1QaoL0w4llwGwGKIv5bQndF8MOiqDYIKZmWoH%2Bd3oQRfX2lFsBx3Ou1VDc4T28PkN8nPUnAx5OZ%2Fqu4A%2FWAbNnxM6L9%2B0kwDU0ijXro%2FjKNaTynYmqzNHVei6MTeEv7l2IaBV4eYZcU76jNIa8qPntGZjfCNm3nHHoTalPj6jYVYQJLGGe5OAa5U5YLm%2FczFhjPNQdBW5QsUaFEdccAV5QDYoQdaQba%2FnuTXvPS2147LYNdNMiQsi1M5peEhe89kaIitGONn9GOBXdeh2OBIrfRDYVICmQKjDjlbqHBjqlAUlaHQsfcgpG0NXSVM4q0XaxTWUQs117DKno2d5kJpur35M%2Bmk1ywaOg%2BQQs1elOD5lWUW7iQU8OKP6OFFe4pEMQlM02lz%2BtdNCy7aUQ%2FBVl43buUyDgciDI5DTbhEJe0LZuv1Yf0bGhuhtS%2FZhesqgbAlMVTwy8TiKPd7hE3%2FfsrThEtrgvrAMVSr4hbrZSDItfdsFb976epf%2BZt%2Fb5aTsz%2BxHzgA%3D%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAXKQOIN7STXK57JEK/20210714/eu-west-2/s3/aws4_request&X-Amz-Date=20210714T082753Z&X-Amz-SignedHeaders=host;x-amz-security-token&X-Amz-Signature=bc30d0325591bbb5a315440fcf3dc815b4339678282e737f7422fd926aba0d51"
+  ],
+  "expiration": "2021-07-14T08:42:53.6452618Z"
+}
+```
+
+When the file has been uploaded, you will still need to use the main `POST` endpoint of the relevant API to store your file to a customer's file system. Rather than sending the base64 encoded file content in the `fileData` property, you should use the `fileUrl` property and send the pre-signed URL that the file was sent to. The platform will then transfer the file from the holding area to the relevant customer's file system. It is not necessary to include all the query string parameters from the pre-signed URL in the subsequent `POST`, as per the example below
+
+```text
+POST /documents
+{
+  "associatedType": "property",
+  "associatedId": "OXF190347",
+  "typeId": "DET",
+  "name": "24 Smithson Road Details.pdf",
+  "fileUrl": "https://reapit-file-uploads-prod.s3.eu-west-2.amazonaws.com/443e4a98-dfcb-4345-abb2-e52031928ed1",
+}
+```
+
 ### Request validation
 
 To protect the integrity of our clients data, we enforce proper validation on all `POST` and `PATCH` requests
