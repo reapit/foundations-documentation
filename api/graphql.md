@@ -22,7 +22,7 @@ Visiting this Url in your browser will load the GraphQL [playground](https://www
 You will need to authenticate any request made to the GraphQL service using Reapit Connect. The scopes for the clientId that generates your tokens must map 1:1 to the downstream platform endpoints queries by GraphQL.
 {% endhint %}
 
-There are two required headers in the service as per below, you will need to obtain your `accessToken` and `idToken` from your Reapit Connect session as normal. See the [developer portal](../developer-portal.md#5-get-your-client-id), [Reapit Connect](../api/reapit-connect.md) and [Connect Session](connect-session.md) sections of these docs for details on how to obtain these tokens.
+There are two required headers in the service as per below, you will need to obtain your `accessToken` and `idToken` from your Reapit Connect session as normal. See the [developer portal](../developer-portal.md#5-get-your-client-id), [Reapit Connect](reapit-connect.md) and [Connect Session](../app-development/connect-session.md) sections of these docs for details on how to obtain these tokens.
 
 ```javascript
 {
