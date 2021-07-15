@@ -20,7 +20,7 @@
 * [What’s New](whats-new.md)
 * [Platform Glossary](platform-glossary.md)
 * [Developer Terms and Conditions](developer-terms-and-conditions.md)
-* [Development requests](dev-requests.md)
+* [Development Requests](dev-requests.md)
 * [Pricing](pricing.md)
 * [FAQ's](faqs.md)
 

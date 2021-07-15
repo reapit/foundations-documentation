@@ -1,4 +1,4 @@
-# Development requests
+# Development Requests
 
 To request a new feature or report a bug, please visit the help section of the developer portal. You'll be directed to GitHub where you'll be able to create an issue directly in our public board. You should track the progress of your issue and communicate with developers directly in GitHub.
 
