@@ -16,11 +16,11 @@
   * [Connect Session](app-development/connect-session.md)
   * [Foundations TS Defintions](app-development/foundations-ts-defintions.md)
   * [Web Components](app-development/web.md)
-  * [Development requests](app-development/dev-requests.md)
   * [Contributing](app-development/contributing.md)
 * [What’s New](whats-new.md)
 * [Platform Glossary](platform-glossary.md)
 * [Developer Terms and Conditions](developer-terms-and-conditions.md)
+* [Development requests](dev-requests.md)
 * [Pricing](pricing.md)
 * [FAQ's](faqs.md)
 

@@ -14,12 +14,42 @@ After submitting an issue, your ticket will get triaged and categorised. From he
 
 Issues that align to back end engineering \(such as our REST APIs and webhooks\) will be managed using [Scrum Agile Framework](https://www.scrum.org/resources/what-is-scrum) using a 1 week sprint cycle. 
 
-* Incoming issues that we identify as back end engineering will be given the `back end` label and assigned to the [Back end backlog](https://github.com/reapit/foundations/projects/6) public board
-* New issues in the board are reviewed weekly as part of our backlog refinement sessions. To ensure your issue can be progressed quickly, please provide as much relevant information as possible.
-* The team will discuss each issue and should we agree that development is warranted, we will commit to the work
-* The issue will then enter our backlog and be prioritised against the needs of other customers and developers
-* If we identity an issue as short term goal, we'll assess the effort required and outline a technical specification - please take the time to review this detail
-* **When we're ready to schedule the issue, it will be assigned to a** [**dated GitHub project board**](https://github.com/reapit/foundations/projects) **for that particular sprint where you can continue to track its progress to completion**
+* Incoming issues that we identify as back-end engineering will be given the `back end` label and assigned to the [Back end backlog](https://github.com/reapit/foundations/projects/6) public board to be reviewed.
+* New issues on the board are reviewed weekly as part of our backlog refinement sessions. To ensure your issue can be progressed quickly, please provide as much relevant information as possible. Whilst your issue is being reviewed it will remain in the ‘To Review’ column.
+* The team will discuss each issue and should we agree that development is warranted, we will commit to the work. However, if we need to gather more information or investigate, the relevant label will be added and if applicable, we will add a comment.
+* Depending on the nature of the request or bug, the issue will then enter one of 3 columns:
+
+**Not Ready**
+
+If an issue requires technical investigation, more information is required, a product decision is needed or the issue is deemed too large, it will be moved to ‘Not Ready’. We will update the issue with the relevant label and comment if required.
+
+**Near Term**  
+  
+If we identity an issue as short term goal, we'll assess the effort required and outline a technical specification - please take the time to review this detail.  
+  
+The issue will be prioritised against the needs of other customers and developers. **When we're ready to schedule the issue, it will be assigned to a** [**dated GitHub project board**](https://github.com/reapit/foundations/projects) **for that particular sprint where you can continue to track its progress to completion**
+
+**Long Term**
+
+Whilst the nature of the request has been accepted, we are unable to commit to a specified sprint and therefore will assign your issue to the ‘Long Term’ column. We will regularly review any issues and where development capacity is available, or work is aligned with our Roadmap you issue will be updated.
+
+### **Label definitions**
+
+**Agency Cloud**
+
+Your issue relates to Agency Cloud \(Desktop CRM\) and therefore will require information, action or input outside of the Platform team, please see [https://foundations-documentation.reapit.cloud/app-development/dev-requests\#agency-cloud](https://foundations-documentation.reapit.cloud/app-development/dev-requests#agency-cloud)
+
+**Investigate**
+
+We need to research or gather more information relating to your request.
+
+**Product Decision**
+
+The nature of your request requires product direction.
+
+**Too Big**
+
+The feature request is too large to be handled in a single issue and requires the issue to be broken down by our development team.
 
 ### Front end
 

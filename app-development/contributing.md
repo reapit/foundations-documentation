@@ -115,7 +115,7 @@ Raising an issue does not guarantee that we will work on it. In many cases we wi
 
 When raising an issue, you should add a project to the ticket, either[ Back End Backlog](https://github.com/reapit/foundations/projects/6) or [Front End Kanban](https://github.com/reapit/foundations/projects/1). This will alert one of our Product Owners that the issue requires investigation and they will move it into one of our development streams if it is accepted and ranked by priority.
 
-See the dedicated [Development Requests ](dev-requests.md)in these docs for more information on our product processes. 
+See the dedicated [Development Requests ](../dev-requests.md)in these docs for more information on our product processes. 
 
 {% hint style="warning" %}
 Ensure a triage project is added to your issue to make sure we process it as quickly as possible

@@ -148,7 +148,7 @@ Existing webhooks will remain as they are and you can edit your webhooks at any 
 
 ### New Developer Requests Documentation
 
-To '[Request a Feature'](https://github.com/reapit/foundations/issues/new?assignees=&labels=feature-request%2C+needs-triage&template=feature_request.md&title=) or to '[Report a Bug](https://github.com/reapit/foundations/issues/new?assignees=&labels=bug%2C+needs-triage&template=bug_report.md&title=)' you can visit the '[Help](https://developers.reapit.cloud/help)' page in the Developers Portal. To help with understanding the process for each new issue raised, we have added a new section in our documentation '[Developer Requests](app-development/dev-requests.md)'. 
+To '[Request a Feature'](https://github.com/reapit/foundations/issues/new?assignees=&labels=feature-request%2C+needs-triage&template=feature_request.md&title=) or to '[Report a Bug](https://github.com/reapit/foundations/issues/new?assignees=&labels=bug%2C+needs-triage&template=bug_report.md&title=)' you can visit the '[Help](https://developers.reapit.cloud/help)' page in the Developers Portal. To help with understanding the process for each new issue raised, we have added a new section in our documentation '[Developer Requests](dev-requests.md)'. 
 
 The new documentation will outline our processes, from what happens after submitting an issue to how your ticket will get triaged and categorised. Depending on the nature of the request or bug, it will determine which project board it may get assigned to. As our boards are public you will always be able to track the progress of any issue or request raised. 
 

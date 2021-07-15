@@ -28,7 +28,7 @@ Please [click here](faqs.md#listing-your-app) for more information on Listing an
 
 You can track the status of your issue [directly in GitHub](https://github.com/reapit/foundations/issues). 
 
-Please [click here](app-development/dev-requests.md) for details on our development processes.
+Please [click here](dev-requests.md) for details on our development processes.
 
 ## Registration
 
