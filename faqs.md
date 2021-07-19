@@ -24,7 +24,7 @@ In order to access customer data, an installation will need to occur. This is do
 
 Please [click here](faqs.md#listing-your-app) for more information on Listing an App in Marketplace
 
-### When will my requested feature  be available?
+### When will my requested feature be available?
 
 You can track the status of your issue [directly in GitHub](https://github.com/reapit/foundations/issues). 
 
@@ -143,4 +143,136 @@ Please [click here](pricing.md#website-integration-private-to-a-single-customer-
 ### I have looked at your pricing information and I have a query - who do I speak to?
 
 Should you have any questions or queries regarding the cost or pricing structure, please [click here](mailto:mgoddard@reapit.com?subject=Foundations%20Pricing%20Query) to contact a member of the team
+
+## Reapit Connect
+
+### **How do I find out information about a user?**
+
+When a user successfully logs in using Reapit Connect and your application has performed the code exchange, you will receive a JSON payload which will include an ‘id\_token’.
+
+The ID Token will contain information about the user and their organisation.
+
+See an example below for user [hollyjoyphillips+res@gmail.com](mailto:hollyjoyphillips+res@gmail.com), you can obtain the following information:
+
+* Email Address ‘email’
+* Negotiator ID ‘userCode’
+* Customer ID ‘clientCode’
+* Office ID ‘officeId’
+
+![](.gitbook/assets/idtoken.png)
+
+For more information on Reapit Connect, please click [here](https://foundations-documentation.reapit.cloud/api/reapit-connect)
+
+If you want to find out more information about an office, you can use the ‘officeId’ and make a request to the GET /offices/{id}
+
+If you want to find out more information about an individual negotiator, you can use the ‘userCode’ and make a request to GET /negotiators/{id}
+
+### **I’m unsure what some of the fields in the id\_token relate to?**
+
+**Cognito Groups**
+
+Reapit User  
+A level 1 user in Agency Cloud. Will have access to the AppMarketplace but do not have permissions to install or uninstall apps.
+
+**Reapit User Admin**  
+A level 2 user in Agency Cloud. Will have the permissions to install and uninstall apps from the AppMarketplace
+
+**Organisation Admin**  
+Users assigned to this group will have the same permissions as a Reapit User Admin/Marketplace Admin but will also have access to the Reapit Marketplace Management App
+
+**Marketplace Admin**  
+Will have permissions to install and uninstall apps from the AppMarkeplace
+
+**offGrouping**  
+‘offGrouping’ refers to Office Grouping. If present and set to ‘True’, the organisation will be using the Reapit Marketplace Management App. The app provides organisations the ability to control app visibility, setup office groups \(setup data boundaries between offices\) and control installs and uninstalls at an organisation level.
+
+**officeID**  
+The ID of the induvial office the user is associated to.
+
+**orgName**  
+The name of the organisation.
+
+**orgID**  
+The ID of the organisation \(mainly used for internal services\)
+
+**clientCode**  
+The Customer ID of the organisation
+
+**userCode**  
+The ID of the user in Reapit Connect
+
+**agencyCloudNegId**  
+The ID of the user in Agency Cloud
+
+**agenyCloudId**  
+The ID of the organisation in Agency Cloud
+
+## Installation
+
+### W**hat information can I obtain when my app is installed?**
+
+You will receive \(at the point of installation\) the following information:
+
+### **Email**
+
+An email will be sent to the email address used to register your [developer organisation](https://developers.reapit.cloud/settings/organisation) \(office email\) and to the support email address you have provided on your app listing. It will contain the following:
+
+* The Name of the organisation
+* The Customer ID of the organisation
+* The Address of the organisation
+* The Email Address of the user who installed your app
+
+**Example Email:**
+
+_Hi Joe Blogs,_
+
+_We just wanted to let you know that ‘Your App Name’ has just been installed by '_[_example@email.com_](mailto:example@email.com%20)_' for the following client:_
+
+_Sandbox Estates \(SBOX\)  
+Third Floor, 67-74 Saffron Hill, London, EC1N 8QX, GB_
+
+_A record of all installations can be viewed on your app in the Developers Portal under 'Installations'._
+
+_Best Regards,  
+****Reapit Team_
+
+### **Webhook**
+
+If you have setup a webhook for 'Application Install', you will receive a payload with the following information:
+
+* The Name of the organisation \(customerName\)
+* The Customer ID of the organisation \(customerID\)
+* The Name of the application that has been installed \(applicationName\)
+* The Address of the organisation \(customerAddress\)
+* The Email Address of the user who installed your app \(customerEmail\)
+
+**Example payload:**
+
+![](.gitbook/assets/image%20%28102%29.png)
+
+For more information on webhooks, please click [here](https://foundations-documentation.reapit.cloud/api/webhooks)
+
+### **Installations Table**
+
+On your app listing in the Developer Portal and via ‘[Analytics](https://developers.reapit.cloud/analytics)’, you will see a full record of all installations. The table will contain the following information:
+
+* The Customer ID of the organisation \(Client\)
+* The Name of the organisation \(Company Name\)
+* The Address of the organisation \(Company Address\)
+* The date the installation occurred \(Date of Installation\)
+* The Email Address of the user who installed your app \(Installed By\) 
+
+**Example Installations table:**
+
+![](.gitbook/assets/image%20%28101%29.png)
+
+## AppMarketplace
+
+### Why is my app not showing in the AppMarketplace? 
+
+Before your app can be listed in the AppMarketplace, it first needs to be submitted for approval, please see more information on listing your app [here](listing-your-app.md). 
+
+If your app has been approved and you have chosen to list it privately, ensure the Customer ID you have provided in the 'Private Apps' section is correct. For more information on obtaining a Customer ID, please click [here](faqs.md#how-do-i-find-a-customer-id). 
+
+If your app is public and is not visible to some customers, it is because your app is using data webhooks. Apps/Integrations that's have data webhooks \(not including application install and application uninstall\) will not be visible to customers still on the Rackspace environment. For more information on webhooks, please click [here](api/webhooks.md). 
 

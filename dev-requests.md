@@ -25,7 +25,7 @@ If an issue requires technical investigation, more information is required, a pr
 
 **Near Term**  
   
-If we identity an issue as short term goal, we'll assess the effort required and outline a technical specification - please take the time to review this detail.  
+If we identify an issue as short term goal, we'll assess the effort required and outline a technical specification - please take the time to review this detail.  
   
 The issue will be prioritised against the needs of other customers and developers. **When we're ready to schedule the issue, it will be assigned to a** [**dated GitHub project board**](https://github.com/reapit/foundations/projects) **for that particular sprint where you can continue to track its progress to completion**
 
