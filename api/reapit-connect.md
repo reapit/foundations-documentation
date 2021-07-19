@@ -151,6 +151,8 @@ You can access Foundations API endpoints by including the access token as an `Au
 
 Identity tokens are intended to provide proof of authentication with Reapit Connect. Your application should decode and [validate ](https://connect2id.com/blog/how-to-validate-an-openid-connect-id-token)the id token that it has been issued. There are a variety of [third party libraries](https://jwt.io/#libraries-io) to help accomplish this and **the token should not be trusted until validated**.
 
+When validating your id token, you will need the production well known public keys - these are publicly accessible at [https://cognito-idp.eu-west-2.amazonaws.com/eu-west-2\_eQ7dreNzJ/.well-known/jwks.json](https://cognito-idp.eu-west-2.amazonaws.com/eu-west-2_eQ7dreNzJ/.well-known/jwks.json). Our [Connect Session](../app-development/connect-session.md) JS module decodes and verifies the id token for you \(if you are using a client side application\). Our implementation comes from the [AWS examples here.](https://github.com/awslabs/aws-support-tools/tree/master/Cognito/decode-verify-jwt)
+
 Once decoded, your application can inspect the claims that the id token includes. Claims provide information about the users identity such as the customer they work for, their email address and name which your application can make use of.
 
 You can also issue a `GET` request to the following endpoint to get information on the user. Be sure to include your access token:
