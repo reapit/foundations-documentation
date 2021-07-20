@@ -72,6 +72,10 @@ We do not provide online or telephone support for the Developer Edition of Agenc
 
 Please [click here](https://developers.dev.paas.reapit.cloud/developer-edition-guide.pdf) to view the Developer Edition Guide
 
+### How can I update details of a Negotiator in Agency Cloud using the desktop application? 
+
+You cannot update negotiator information using the desktop CRM as Negotiator information is part of the the system configuration and is not available in the Developer Edition. However, you can use the Negotiators `PATCH`endpoint to update the required fields. Once you have made a valid request, you may need to restart Agency Cloud to see the changes reflected. 
+
 ## **Listing your App in the Marketplace**
 
 ### I’m ready to list my app, what do I need to do?
