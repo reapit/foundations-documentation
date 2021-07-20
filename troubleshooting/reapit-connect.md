@@ -10,9 +10,9 @@ To test your application locally, you can provide the following \(example\):
 
 **Redirect URI:** http://localhost:8080
 
-**Signout URI:** [http://localhost:8080/login](http://localhost:8080/login)
+**Signout URI:** http://localhost:8080/login
 
 ![](../.gitbook/assets/image%20%28103%29.png)
 
-Test
+
 
