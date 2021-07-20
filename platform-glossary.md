@@ -48,6 +48,8 @@ Customers represent estate agents who use Reapit software. We do not provide an 
 
 Departments represent a set of descriptive attributes used to describe a [property](platform-glossary.md#property). Departments are assigned to both [properties](platform-glossary.md#property) and [applicants ](platform-glossary.md#applicant)and are used to define which attributes can be used to describe a [property ](platform-glossary.md#property)or an [applicant](platform-glossary.md#applicant) property requirement.
 
+A Department is most commonly used to ring fence groups of [properties](platform-glossary.md#property) and [applicants](platform-glossary.md#applicant), particularly when it comes to matching \(the process of finding properties that meet specific applicant requirements and vice versa\). Typically, customers dealing with only residential sales and lettings will have a single department as there is no real need to separate any of the data, however an example of where multiple departments might be configured would be a customer who deals with both residential and commercial property transactions. In this scenario, a separate Department would normally be setup to separate the two disparate sets of data, as it would be undesirable for residential applicants to be sent details of commercial properties.
+
 ### Document
 
 Documents represent the details of a file asset that has added to our platform. Documents can be assigned a type to indicate its purpose \(eg. a brochure\) and associated to an associated entity \(eg. a [property](platform-glossary.md#property)\).
