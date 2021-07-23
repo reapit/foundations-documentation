@@ -22,6 +22,10 @@ If you are looking for Elements v2 components, this has moved to it's own Storyb
 
 {% embed url="https://elements-legacy.prod.paas.reapit.cloud/" %}
 
+{% hint style="success" %}
+You can use Elements v3 components in your v2 project - for more information on this see the [migration guide here](https://elements.reapit.cloud/?path=/docs/introduction--page#migrating-from-v2)
+{% endhint %}
+
 ### Elements v2 - Long Term Support
 
 {% hint style="info" %}
