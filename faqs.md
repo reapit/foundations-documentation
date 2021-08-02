@@ -137,12 +137,12 @@ Please [click here](https://foundations-documentation.reapit.cloud/developer-por
 
 You can find information regarding pricing using either the documentation listed below or using our ‘API Cost Calculator’ on the [Analytics](https://developers.reapit.cloud/analytics/costexplorer) page.
 
-Please [click here](pricing.md) for more information on pricing  
+Please [click here]() for more information on pricing  
 Please [click here](developer-terms-and-conditions.md#schedule-2-fees) to see pricing information on our Terms and Conditions
 
 ### I am an agency building a website for a Reapit Customer - will I be charged for using this service?
 
-Please [click here](pricing.md#website-integration-private-to-a-single-customer-id) for more information regarding pricing for website integrations
+Please [click here]() for more information regarding pricing for website integrations
 
 ### I have looked at your pricing information and I have a query - who do I speak to?
 

@@ -26,6 +26,5 @@
   * [Reapit Connect](troubleshooting/reapit-connect.md)
   * [Platform API](troubleshooting/platform-api.md)
 * [Development Requests](dev-requests.md)
-* [Pricing](pricing.md)
 * [FAQ's](faqs.md)
 
