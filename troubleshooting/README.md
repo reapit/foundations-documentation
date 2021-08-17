@@ -12,6 +12,8 @@ Please select from the topics below:
 
 {% page-ref page="authentication-issues.md" %}
 
+{% page-ref page="installation.md" %}
+
 {% page-ref page="platform-api.md" %}
 
 {% page-ref page="../api/reapit-connect.md" %}
