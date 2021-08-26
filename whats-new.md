@@ -570,9 +570,7 @@ Users should be able to clearly see what your app is about when browsing. You ha
 
 ### **Icon**
 
-We will soon be adding the ability to upload a company icon in addition to your app icon. You company icon will be shown in a new section \(About Developer\) on the left hand side of your app listing.
-
-Therefore, we suggest uploading an icon relating to the app rather than your company logo.
+Your company icon will be shown on the left hand side of your app listing in the AppMarket. 
 
 The suggested image size is 96px x 96px and the app icon is the first opportunity to communicate, along with the app summary, what you are offering. We recommend keeping the logo simple but should be recognisable and understandable. The icon will be placed on a white tile and background so ideally avoid text, screenshots or photos.
 
