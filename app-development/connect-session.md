@@ -35,6 +35,9 @@ export const reapitConnectBrowserSession = new ReapitConnectBrowserSession({
   // The relative path you want to re-direct in your application after a successful logout. You will have supplied this when you registered your app.
   // Defaults to '/login' if not supplied
   connectLogoutRedirectPath: '/some-login-path',
+  // The time in ms before your session times out when a user is inactive. 
+  // Defaults to 10800000 - 3hrs
+  connectApplicationTimeout: 10800000
 })
 ```
 
@@ -183,5 +186,5 @@ app.listen('3000', () => {
 
 As per the browser usage, you will need to instantiate the class with your initialisers, in this case `connectClientId`, `connectOAuthUrl` \(in the same way as the browser module\), but with the addition of the `connectClientSecret` you obtain from your app listing page.
 
-The module will fetch and refresh your session as the token expires, caching it locally to minimise calls to Reapit Connect token endpoint.
+The module will fetch and refresh your session as the token expires, caching it in session storage to minimise calls to Reapit Connect token endpoint. After closing a tab, the session cache is not persisted.
 
