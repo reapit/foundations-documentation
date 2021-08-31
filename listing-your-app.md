@@ -26,7 +26,7 @@ Ticking the ‘Submit for Approval’ check box on your app listing, will let us
 
 Depending on your app listing or integration and its complexity, the review process from start to finish can typically take between 2-7 weeks. Please allow plenty of time as we often have a backlog of apps and integrations to review.
 
-If your app is launchable inside of Agency Cloud or has a Client facing user interface, we will ask you to set your app to private, using Customer ID ‘RES’. We can then install your app as an external client \(still using sandbox data\). This step will give us the ability to test and view the following:
+If your app is launchable inside of Agency Cloud or has a Client facing user interface, we will ask you to set your app to private, using Customer ID 'RES-GRTA’. We can then install your app as an external client \(still using sandbox data\). This step will give us the ability to test and view the following:
 
 ### Apps - launchable inside of Agency Cloud
 
@@ -51,7 +51,7 @@ If the request to publish your app has been declined, you will be informed of th
 
 ### 4. Submission Approved
 
-As soon as your app has been approved, it will be available in the Marketplace and you will be informed via email automatically. If it has been set to Private for testing, simply remove ‘RES’ from the Private section and re submit. 
+As soon as your app has been approved, it will be available in the Marketplace and you will be informed via email automatically. If it has been set to Private for testing, simply remove ‘RES-GRTA’ from the Private section and re submit. 
 
 For more information about the requirements for listing an app in the Marketplace, please refer to your Developer Terms and Conditions. 
 
