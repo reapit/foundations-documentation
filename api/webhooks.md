@@ -245,7 +245,7 @@ The following table outlines the purpose of each property in the payload
 
 | Property | Description |
 | :--- | :--- |
-| `SendAttempts` | The number of attempts it took to successfully delivery the message. Please see [failure handling](webhooks.md#failure-handling-and-exponential-backoff) section regarding retry policy with exponential backoff |
+| `SendAttempts` | The number of attempts it took to successfully deliver the message. Please see [failure handling](webhooks.md#failure-handling-and-exponential-backoff) section regarding retry policy with exponential backoff |
 | `eventId` | A unique identifier for the event. Some events will trigger multiple notifications \(for example if the name of a contact changes, you'll also receive a notification for each of their associated roles. These will share the same event identifier\) |
 | `entityId` | If applicable, the unique identifier of the entity that the event is associated to. Please note that by itself this is _not_ a globally unique identifier. Uniqueness can be achieved by also including the `customerId` |
 | `customerId` | The unique identifier of the Reapit customer whom the data event is associated with |
