@@ -156,6 +156,7 @@ Below is an example of what a **contacts.modified** webhook event might look lik
 
 ```text
 {
+  "SendAttempts": 1
 	"eventId": "9e7e4181-6210-49ea-abf5-d5ce16d23647",
 	"entityId": "RPT20000029",
 	"customerId": "webhook-test",
@@ -244,6 +245,7 @@ The following table outlines the purpose of each property in the payload
 
 | Property | Description |
 | :--- | :--- |
+| `SendAttempts` | The number of attempts it took to successfully delivery the message. Please see [failure handling](webhooks.md#failure-handling-and-exponential-backoff) section regarding retry policy with exponential backoff |
 | `eventId` | A unique identifier for the event. Some events will trigger multiple notifications \(for example if the name of a contact changes, you'll also receive a notification for each of their associated roles. These will share the same event identifier\) |
 | `entityId` | If applicable, the unique identifier of the entity that the event is associated to. Please note that by itself this is _not_ a globally unique identifier. Uniqueness can be achieved by also including the `customerId` |
 | `customerId` | The unique identifier of the Reapit customer whom the data event is associated with |
@@ -268,6 +270,27 @@ We also recommend testing your webhooks using our sandbox environment before app
 {% hint style="info" %}
 **All events submitted from the Ping function** use example data and will have a `customerId` of 'webhook-test' and an `entityId` of '9e7e4181-6210-49ea-abf5-d5ce16d23647'. Receiving services need to handle this appropriately and not treat the payload as production event 
 {% endhint %}
+
+### Failure handling and exponential backoff
+
+As with any integrated system, there's always a possibility of the endpoint we try to send a webhook notification to being unavailable at certain periods. For this reason a retry policy with exponential backoff has been built so that small periods of downtime do not result in messages not being delivered to you.
+
+Where we fail to deliver a webhook on the first attempt, we will retry up to 5 times at the following intervals \(6 delivery attempts in total\):
+
+| Delivery attempt | Delivery delay \(seconds/minutes\) |
+| :--- | :--- |
+| 2 | 60s \(1m\) after the first delivery attempt |
+| 3 | 120s \(2m\) after the second delivery attempt |
+| 4 | 300s \(5m\) after the third delivery attempt |
+| 5 | 600s \(10m\) after the fourth delivery attempt |
+| 6 | 900s \(15m\) after the fifth delivery attempt. No more attempts to deliver the message will be made after this attempt |
+
+The number of attempts it took to deliver the message is available in the payload. See the [Example payload](webhooks.md#example-payload) for more information.
+
+Please note that we will not retry to send messages that were not delivered on the first attempt in the following scenarios:
+
+* Where the webhook event is associated to Sandbox data
+* Where the response code we received from your configured endpoint was 4XX. This is indicative of a misconfigured webhook or authentication problem on the target system
 
 ## Additional information
 
