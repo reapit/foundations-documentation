@@ -156,7 +156,7 @@ Below is an example of what a **contacts.modified** webhook event might look lik
 
 ```text
 {
-  "SendAttempts": 1
+  "SendAttempts": 1,
 	"eventId": "9e7e4181-6210-49ea-abf5-d5ce16d23647",
 	"entityId": "RPT20000029",
 	"customerId": "webhook-test",
