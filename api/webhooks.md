@@ -108,6 +108,8 @@ We currently support the following topics, but this will increase over time. Ple
 | **offers.modified** | Occurs when an existing [offer](https://foundations-documentation.reapit.cloud/platform-glossary#offer) is modified | `offers.read` |
 | **offers.rejected** | Occurs when a new [offer ](../platform-glossary.md#offer)is created in a withdrawn state, or the status of an existing offer is changed to withdrawn | `offers.read` |
 | **offers.withdrawn** | Occurs when a new [offer ](../platform-glossary.md#offer)is created in a rejected state, or the status of an existing offer is changed to rejected | `offers.read` |
+| **offices.created** | Occurs when a new [office](https://foundations-documentation.reapit.cloud/platform-glossary#office) is created | `offices.read` |
+| **offices.modified** | Occurs when an existing [office](https://foundations-documentation.reapit.cloud/platform-glossary#office) is modified | `offices.read` |
 | **properties.created** | Occurs when a new [property](https://foundations-documentation.reapit.cloud/platform-glossary#property) is created | `properties.read` |
 | **properties.modified** | Occurs when an existing [property](https://foundations-documentation.reapit.cloud/platform-glossary#property) is modified | `properties.read` |
 | **properties.selling.askingpricechanged** | Occurs when the asking price of an existing sales [property](../platform-glossary.md#property) is changed | `properties.read` |
