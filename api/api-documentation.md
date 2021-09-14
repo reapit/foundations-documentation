@@ -382,11 +382,11 @@ We consider the following to be examples of breaking changes:
 * Changing the data type of an existing field
 * Requiring a parameter that wasn't previously required
 
-### Depreciation
+### Deprecation
 
 Whenever a new version is released, the previous version enters its sunset period. This is presently six months though will be reviewed as our platform continues to grow and evolve.
 
-At the end of a versions sunset period it will become depreciated and you will be required to adopt more recent version. You will be notified if your application is using a version that is soon to be depreciated.
+At the end of a versions sunset period it will become deprecated and you will be required to adopt more recent version. You will be notified if your application is using a version that is soon to be deprecated.
 
 {% hint style="info" %}
 **Stay up to date:** please see the [help section](https://marketplace.reapit.cloud/developer/help) of our developer portal for information on recent and upcoming changes.
