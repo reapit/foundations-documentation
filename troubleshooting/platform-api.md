@@ -1,4 +1,4 @@
-# Platform API
+# REST API
 
 ### **Error: “Precondition failed: The ETag provided does not match the current version of this resource. Re-fetch the latest version of this resource before attempting to update it."**
 

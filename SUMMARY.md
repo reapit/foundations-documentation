@@ -25,7 +25,7 @@
   * [Authentication Issues](troubleshooting/authentication-issues.md)
   * [Installation](troubleshooting/installation.md)
   * [Reapit Connect](troubleshooting/reapit-connect.md)
-  * [Platform API](troubleshooting/platform-api.md)
+  * [REST API](troubleshooting/platform-api.md)
 * [Development Requests](dev-requests.md)
 * [FAQ's](faqs.md)
 

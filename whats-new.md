@@ -7,6 +7,46 @@ description: >-
 
 # What’s New
 
+## 13/09/21
+
+### Troubleshooting
+
+We have introduced a new section in our documentation ‘[Troubleshooting](troubleshooting/)’.
+
+The documentation is intended to provide guidance to our Developers when building apps and integrations through the Developer Portal.
+
+Currently, it offers support on the following topics:
+
+[Accessing Customer Data](troubleshooting/accessing-customer-data.md)  
+[Authentication Issues](troubleshooting/authentication-issues.md)  
+[Installation](troubleshooting/installation.md)  
+[REST API](troubleshooting/platform-api.md)  
+[Reapit Connect](troubleshooting/reapit-connect.md)
+
+We will continue to add and update this section but don’t forget, we also have a dedicated page for FAQ's, which can be found [here](faqs.md).
+
+Remember, if you are having an issue not covered in the documentation or you have discovered a bug, please raise an issue on our public board by clicking [here](https://github.com/reapit/foundations/issues/new/choose).
+
+### **Notification Email**
+
+The email address you entered when registering for the Developer Portal, is used by default to receive email notifications,. For example, when your app is installed from the AppMarket, you will receive an email with the details \(see more information [here](https://foundations-documentation.reapit.cloud/faqs#installation)\)
+
+As you cannot change the email address that registered your organisation, we have now provided the ability to supply an alternative ‘Notifications Email’.
+
+![](.gitbook/assets/image%20%28107%29.png)
+
+If you want to setup an alternative email address, simply go to ‘[Organisation](https://developers.reapit.cloud/settings/organisation)’ page. 
+
+**Please note:** Only an Admin will have the correct permissions to update this information.
+
+### **Certificates**
+
+We are pleased to announce have added new endpoints to the Properties endpoint to now allow for reading and writing of ‘Certificates’. 
+
+![](.gitbook/assets/image%20%28106%29.png)
+
+In conjunction with the new entities, we have also added to our Configuration endpoint, the ability to surface CertificateTypes.
+
 ## 25/06/2021
 
 ### **Webhooks Transaction Logs**
