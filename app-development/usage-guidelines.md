@@ -29,7 +29,7 @@ To best adhere to these limits, we recommend that your application maintains no 
 * Automated or scheduled routines to acquire data without a requirement to immediately process it for your applications use case \(this does not include webhooks\) 
 * Load or volume testing of your application using sandbox or customer data 
 
-Applications that do not use our APIs appropriately will be removed from the marketplace.
+Applications that do not use our APIs appropriately will be removed from the AppMarket.
 
 ## Being a responsible tenant
 

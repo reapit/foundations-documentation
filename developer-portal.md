@@ -4,7 +4,7 @@ description: A step-by-step guide to getting started in the developer portal
 
 # Developer Portal
 
-We want getting started with the Developer Portal to be as frictionless as possible. There is a lot of detail in the documentation for advanced concepts but to get started in as little as 5 mins with an authenticated marketplace app, you just need to follow these steps:
+We want getting started with the Developer Portal to be as frictionless as possible. There is a lot of detail in the documentation for advanced concepts but to get started in as little as 5 mins with an authenticated AppMarket app, you just need to follow these steps:
 
 ### 1. Login to the Portal
 
@@ -34,7 +34,7 @@ The next step is to register an app. We understand you won't have any code yet, 
 
 ![](.gitbook/assets/screenshot-2021-03-31-at-12.02.52.png)
 
-The wizard will then ask you if you want to create a Marketplace App. It is worth taking the time to consider here if you wish your application to be launched from within the Agency Cloud CRM. For the purposes of this example, we will assume that you do.
+The wizard will then ask you if you want to create a AppMarket App. It is worth taking the time to consider here if you wish your application to be launched from within the Agency Cloud CRM. For the purposes of this example, we will assume that you do.
 
 ![](.gitbook/assets/screenshot-2021-03-31-at-12.03.48.png)
 
@@ -56,7 +56,7 @@ Clicking finish, will take you back to the apps page where you can see your firs
 
 ### 4. Populate your app listing \(optional\)
 
-The previous section of this guide gives us enough detail to allow you to authenticate against our APIs and for you to be productive on the platform. When your app is in development, you will however want to get it ready to be listed in the Marketplace. To do this you will need to provide some additional information.
+The previous section of this guide gives us enough detail to allow you to authenticate against our APIs and for you to be productive on the platform. When your app is in development, you will however want to get it ready to be listed in the AppMarket. To do this you will need to provide some additional information.
 
 From the App Detail Page below, select "Edit Details".
 
@@ -66,7 +66,7 @@ You will be asked in the first section to provide details that populate your app
 
 ![](.gitbook/assets/screenshot-2021-03-31-at-12.11.23.png)
 
-Moving on, you will be asked if you wish to integrate with the Agency Cloud CRM and if so, what page you would like to integrate with. This will allow your app to be launched as a screen direct from Agency Cloud by a user. It is an optional step and is in addition to being able to launch from the top level "apps" menu in the CRM. More on this behaviour in the [Desktop](api/desktop-api.md#desktop-types) docs.
+Moving on, you will be asked if you wish to integrate with the AgencyCloud CRM and if so, what page you would like to integrate with. This will allow your app to be launched as a screen direct from AgencyCloud by a user. It is an optional step and is in addition to being able to launch from the top level "apps" menu in the CRM. More on this behaviour in the [Desktop](api/desktop-api.md#desktop-types) docs.
 
 ![](.gitbook/assets/screenshot-2021-03-31-at-12.12.15.png)
 
@@ -78,7 +78,7 @@ If you are developing a **server-side machine to machine** application such as a
 
 For the purposes of this example, because we are building a client side app, so my app uses the "Authorization Code" flow.
 
-The next section is applicable only if you want to restrict the marketplace listing to a single or limited sub-set of clients, for example if you are building some private in-house tooling. For the public beta we don't support surfacing the client ids you wish to restrict to since the marketplace is not live however, if you want your app to be private, you can select "yes" and ignore the customer code list. For most users, you will select "no".
+The next section is applicable only if you want to restrict the AppMarket listing to a single or limited sub-set of clients, for example if you are building some private in-house tooling. For the public beta we don't support surfacing the client ids you wish to restrict to since the AppMarket is not live however, if you want your app to be private, you can select "yes" and ignore the customer code list. For most users, you will select "no".
 
 ![](.gitbook/assets/screenshot-2021-03-31-at-12.13.45.png)
 
@@ -86,7 +86,7 @@ Then select an icon and a featured image for your app listing. You will be asked
 
 ![](.gitbook/assets/screenshot-2021-03-31-at-12.15.30.png)
 
-The next step is for external, non Marketplace apps and should be skipped if you are building a web-based marketplace listed app; if however you are building an integration that you don't want to appear in the marketplace, you can select this option. You app will still be listed for permission only purposes however, it will not be possible to launch from within the Agency Cloud desktop app. For the purposes of this example, we will leave unchecked.
+The next step is for external, non AppMarket apps and should be skipped if you are building a web-based AppMarket listed app; if however you are building an integration that you don't want to appear in the AppMarket, you can select this option. You app will still be listed for permission only purposes however, it will not be possible to launch from within the AgencyCloud desktop app. For the purposes of this example, we will leave unchecked.
 
 ![](.gitbook/assets/screenshot-2021-03-31-at-12.16.36.png)
 
@@ -118,7 +118,7 @@ Even if you don't use React or intend to write your own React app from scratch, 
 
 ### 8. A word on hosting...
 
-Whilst Marketplace apps are "submitted", "listed" and "installed" by clients, they are still hosted by you, the developer. This is both to ensure the integrity of your IP / source code, and so that you maintain control over your deployment pipelines.
+Whilst marketplace apps are "submitted", "listed" and "installed" by clients, they are still hosted by you, the developer. This is both to ensure the integrity of your IP / source code, and so that you maintain control over your deployment pipelines.
 
 Optional hosting as a service is something we are looking at in detail for future iterations of the platform however it is not on our immediate roadmap. You should continue to use your existing web hosting platform for your app and just submit the launch uri on the submit app form as above. 
 
@@ -132,7 +132,7 @@ To complete your Organisation information, click on ‘Settings’ and select �
 * Telephone Number
 * Website Address
 * VAT/Company Reg and or National Insurance Number
-* About Us – The section will be displayed on any app listing in the Marketplace in addition to information about the app. 
+* About Us – The section will be displayed on any app listing in the AppMarket in addition to information about the app. 
 * Company Address
 
 Please then complete the information on the 'Billing' tab.

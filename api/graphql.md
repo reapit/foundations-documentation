@@ -10,7 +10,7 @@ The Reapit GraphQL service is a GraphQL implementation of the Foundations API. I
 Whilst the service is beta, because the aim of the project is to be schema compliant with the REST platform API, you can rely on no breaking changes to the schema itself
 {% endhint %}
 
-We have been using the service internally in production at Reapit - it powers the Geo Diary App, which is currently the most installed Reapit Marketplace application. Having completed this initial internal Beta, we are now excited to release it publicly for the first time.
+We have been using the service internally in production at Reapit - it powers the Geo Diary App, which is currently the most installed Reapit AppMarket application. Having completed this initial internal Beta, we are now excited to release it publicly for the first time.
 
 ### Basic Usage & Authentication
 

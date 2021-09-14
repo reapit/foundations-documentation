@@ -1,12 +1,12 @@
 ---
-description: Reapit Elements is a UI library for building Marketplace Web Applications
+description: Reapit Elements is a UI library for building AppMarket Web Applications
 ---
 
 # Elements
 
 ### What is Elements?
 
-Elements is a React UI Component and CSS library we have developed internally and open sourced. The Developer Portal and Marketplace itself uses Elements extensively and if you are building a React app to be installed by clients, we recommend you do too.
+Elements is a React UI Component and CSS library we have developed internally and open sourced. The Developer Portal and AppMarket itself uses Elements extensively and if you are building a React app to be installed by clients, we recommend you do too.
 
 Elements v3 is a full re-write of the library that has a far better developer experience and a more flexible, lightweight approach as well as enjoying the benefits of the new Reapit Foundations Design Language.
 
@@ -34,7 +34,7 @@ Elements v2 is our new stable long term support library - you can update from v1
 
 Whilst Elements v1.x.x has it's limitations, we are very mindful our developers have already successfully built a number of applications with the library and as such, require both a Long Term Support schedule and a straightforward upgrade path where possible.
 
-Elements v2.x.x is a UI theme refresh, giving the style-guide a lift to ensure better visual consistency and appeal. The release includes a new font, typography, colour pallet, form inputs, notifications and dialogue boxes. Essentially in line with the changes you will see in the Reapit Developer Portal and Marketplace from March 2021 to April 2021.
+Elements v2.x.x is a UI theme refresh, giving the style-guide a lift to ensure better visual consistency and appeal. The release includes a new font, typography, colour pallet, form inputs, notifications and dialogue boxes. Essentially in line with the changes you will see in the Reapit Developer Portal and AppMarket from March 2021 to April 2021.
 
 Whilst we can't guarantee that you will have no work to do upgrading v1 to v2, we have taken care not to add any breaking changes to the TypeScript / React Components and generated CSS classes in the Elements Stylesheet. Upgrading should be a case of incrementing the version number from v1.x.x to v2.x.x, running an NPM install and making any small visual tweaks required to your application.
 

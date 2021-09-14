@@ -5,7 +5,7 @@ description: Technical guidance for working with webhooks for real time event no
 # Webhooks
 
 {% hint style="warning" %}
-Please note that apps and integrations developed using Webhooks for topics other than application install/uninstall will only be visible in the Marketplace to customers who have been migrated to AWS. 
+Please note that apps and integrations developed using Webhooks for topics other than application install/uninstall will only be visible in the AppMarket to customers who have been migrated to AWS. 
 {% endhint %}
 
 ## Introduction
@@ -20,7 +20,7 @@ Applications that use webhooks benefit from greater efficiency, reduced costs an
 
 ### Registering your app
 
-The first step to start receiving webhooks is to register your app within our Marketplace. You don't need to list the application at this stage, but note that some [subscription topics](webhooks.md#subscription-topics) require that your app is granted an associated scope. Please see our [developer portal documentation](../developer-portal.md) for more information on submitting an app.
+The first step to start receiving webhooks is to register your app within our AppMarket. You don't need to list the application at this stage, but note that some [subscription topics](webhooks.md#subscription-topics) require that your app is granted an associated scope. Please see our [developer portal documentation](../developer-portal.md) for more information on submitting an app.
 
 ### Provide an endpoint
 
@@ -65,9 +65,9 @@ Data changes from any application will result in a notification being sent to yo
 
 * [Reapit Agency Cloud](https://www.reapit.com/agency-cloud)
 * [Reapit Property Cloud](https://www.reapit.com/property-cloud/)
-* Any other Reapit Marketplace application
+* Any other Reapit AppMarket application
 
-For example, if a new offer is added in our Agency Cloud CRM and your application has a webhook set up containing the **offers.created** topic, your endpoint will be sent a specific, descriptive payload containing the full details of the new offer.
+For example, if a new offer is added in our AgencyCloud CRM and your application has a webhook set up containing the **offers.created** topic, your endpoint will be sent a specific, descriptive payload containing the full details of the new offer.
 
 {% hint style="success" %}
 **We recommend** registering your webhooks in an inactive state and using the **Ping** function. This allows you to test that your endpoint works as expected before opting to receive live customer updates. 
@@ -79,8 +79,8 @@ We currently support the following topics, but this will increase over time. Ple
 
 | Topic | Description | Required scopes |
 | :--- | :--- | :--- |
-| **application.install** | Occurs when a customer installs an application in the Marketplace | None |
-| **application.uninstall** | Occurs when a customer uninstalls an application in the Marketplace | None |
+| **application.install** | Occurs when a customer installs an application in the AppMarket | None |
+| **application.uninstall** | Occurs when a customer uninstalls an application in the AppMarket | None |
 | **applicants.created** | Occurs when a new [applicant](https://foundations-documentation.reapit.cloud/platform-glossary#applicant) is created | `applicants.read` |
 | **applicants.modified** | Occurs when an existing [applicant](https://foundations-documentation.reapit.cloud/platform-glossary#applicant) is modified, or any of the associated [contacts](https://foundations-documentation.reapit.cloud/platform-glossary#contact) are modified | `applicants.read` |
 | **appointments.cancelled** | Occurs when a new [appointment ](../platform-glossary.md#appointment)is created as cancelled, or an existing appointment is cancelled | `appointments.read` |

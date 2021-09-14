@@ -108,7 +108,7 @@ Our current and revised terms can be accessed through the Developer Portal docum
 
 ### New Desktop Integration Types
 
-Our desktop integration types have been extended to now include the following communication types included in Agency Cloud from version 12.130.1 :
+Our desktop integration types have been extended to now include the following communication types included in AgencyCloud from version 12.130.1 :
 
 * Outbound – Email
 * Outbound – Landline
@@ -116,11 +116,11 @@ Our desktop integration types have been extended to now include the following co
 
 On each communication type, the Desktop API will provide a 'cntCode' and relevant communication information, either email, landline number or mobile number.
 
-App that’s have any of the above desktop integration types will be visible in Agency Cloud when right clicking on the relevant icon, please see example below:
+App that’s have any of the above desktop integration types will be visible in AgencyCloud when right clicking on the relevant icon, please see example below:
 
 ![](.gitbook/assets/image%20%28100%29.png)
 
-The Developer Edition of Agency Cloud has automatically been updated to include the new communication types. 
+The Developer Edition of AgencyCloud has automatically been updated to include the new communication types. 
 
 ## 19/04/2021
 
@@ -128,7 +128,7 @@ The Developer Edition of Agency Cloud has automatically been updated to include 
 
 It is now possible to set or clear default property brochures when updating existing properties, using the PATCH method on /properties/{id}
 
-Updating the ‘brochureId’ field on the ‘Selling’ and/or ‘Lettings’ models with a document ID, will set a PDF as the predefined property details. Please see an example in the Property Details screen from within Agency Cloud \(Desktop CRM\) below:![](file:///C:/Users/HPHILL~1/AppData/Local/Temp/msohtmlclip1/01/clip_image004.png)
+Updating the ‘brochureId’ field on the ‘Selling’ and/or ‘Lettings’ models with a document ID, will set a PDF as the predefined property details. Please see an example in the Property Details screen from within AgencyCloud \(Desktop CRM\) below:![](file:///C:/Users/HPHILL~1/AppData/Local/Temp/msohtmlclip1/01/clip_image004.png)
 
 ![](.gitbook/assets/image%20%2898%29.png)
 
@@ -148,15 +148,15 @@ We have added additional support for uploading files over 6MB \(Up to 30MB\) to 
 
 ## 01/04/2021
 
-### Developer Portal and Marketplace Refresh
+### Developer Portal and AppMarket Refresh
 
-We are excited to announce today, the Developer Portal, Reapit Marketplace and Marketplace Apps UI have been updated in conjunction with the release of our Elements UI library version 2. The functionality of all apps remain the same but with UI enhancements to your user experience.
+We are excited to announce today, the Developer Portal, Reapit AppMarket and AppMarket Apps UI have been updated in conjunction with the release of our Elements UI library version 2. The functionality of all apps remain the same but with UI enhancements to your user experience.
 
-The visual changes you see are the first step towards a universal design language we have been working over the first part of the year. In the coming months you will see continued incremental updates as pages and flows are re-worked for better UI consistency, polish and UX. In keeping with our open source commitment, in the coming months we plan to make available publicly the design language, sample layouts and designs so that Reapit Developers can leverage our design resource to build better user experience into their own Marketplace apps.
+The visual changes you see are the first step towards a universal design language we have been working over the first part of the year. In the coming months you will see continued incremental updates as pages and flows are re-worked for better UI consistency, polish and UX. In keeping with our open source commitment, in the coming months we plan to make available publicly the design language, sample layouts and designs so that Reapit Developers can leverage our design resource to build better user experience into their own AppMarket apps.
 
 ![](.gitbook/assets/image%20%2896%29.png)
 
-Because we ask that all Marketplace Apps use our UI for visual consistency, we wanted to give the style guide a lift to ensure it best showcases of our development partner's work. This is the core of the Elements v2 release - it is a subtle evolution of the library, including a new font, typography, colour pallet, form inputs, notifications, dialogue boxes and much more.
+Because we ask that all AppMarket Apps use our UI for visual consistency, we wanted to give the style guide a lift to ensure it best showcases of our development partner's work. This is the core of the Elements v2 release - it is a subtle evolution of the library, including a new font, typography, colour pallet, form inputs, notifications, dialogue boxes and much more.
 
 Care has been taken to avoid breaking changes both to React Components and CSS Classes so that upgrading for all developers should be trivial and painless. We will also offer ongoing long term support in terms of security and bug fixes for the v2.x.x release. You can see the updates to the React Storybook here: [https://elements.reapit.cloud/?path=/docs/](https://elements.reapit.cloud/?path=/docs/)
 
@@ -196,7 +196,7 @@ The new documentation will outline our processes, from what happens after submit
 
 ### Virtual Viewing check box
 
-With the very significant increase in the number of listings carrying virtual viewings, we have introduced an additional 'Virtual' check box on appointments inside of Agency Cloud: 
+With the very significant increase in the number of listings carrying virtual viewings, we have introduced an additional 'Virtual' check box on appointments inside of AgencyCloud: 
 
 ![](.gitbook/assets/image%20%2892%29.png)
 
@@ -213,11 +213,11 @@ The virtual field is also now available in our 'Appointments' API in the Platfor
         "CustomField2": true
 ```
 
-The latest version of the Developer Edition of Agency Cloud will include the new checkbox
+The latest version of the Developer Edition of AgencyCloud will include the new checkbox
 
 ## 25/02/21
 
-With all enterprise customers now having access to the Marketplace, we wanted to use today’s What’s New update to highlight the features available to you on the ‘[Analytics](https://developers.reapit.cloud/analytics/)’ page in the Developers Portal.
+With all enterprise customers now having access to the AppMarket, we wanted to use today’s What’s New update to highlight the features available to you on the ‘[Analytics](https://developers.reapit.cloud/analytics/)’ page in the Developers Portal.
 
 The Analytics page provides useful information on the following:
 
@@ -247,7 +247,7 @@ For a more granular level of information, you can download a month by month CSV 
 
 ### Services Chart
 
-Any subscriptions or services you have subscribed to will be shown on the services chart and referenced by colour. Subscriptions/services may include, App Listings/Developer Edition of Agency Cloud/ Developer Registration etc:
+Any subscriptions or services you have subscribed to will be shown on the services chart and referenced by colour. Subscriptions/services may include, App Listings/Developer Edition of AgencyCloud/ Developer Registration etc:
 
 ![](.gitbook/assets/image%20%2882%29.png)
 
@@ -274,19 +274,19 @@ We have recently updated the Developers Portal to allow for 4 new fields on your
 * Pricing Info
 * This Application is Free
 
-For your App/Integrations to be submitted for approval and listed in the Marketplace, you will need to provide a secure URL \(https://\) for each field.
+For your App/Integrations to be submitted for approval and listed in the AppMarket, you will need to provide a secure URL \(https://\) for each field.
 
 ![New fields on the &apos;Edit Details&apos; app form](.gitbook/assets/image%20%2877%29.png)
 
 However, if your app is free of charge and occurs no cost to the end user, please use the ‘This Application is Free’ check box. If selected, you will not be required to enter your Pricing Information. 
 
-The information you provide in each field is then surfaced on your app listing in the Marketplace for agents to view:
+The information you provide in each field is then surfaced on your app listing in the AppMarket for agents to view:
 
 ![Example of the new Developer Links section](.gitbook/assets/image%20%2879%29.png)
 
-If your app is ‘Free’, the pricing link will not be present on the app listing. A 'FREE' tag will be displayed when browsing the Marketplace: 
+If your app is ‘Free’, the pricing link will not be present on the app listing. A 'FREE' tag will be displayed when browsing the AppMarket: 
 
-![&apos;Free&apos; App in the Marketplace](.gitbook/assets/image%20%2880%29.png)
+![&apos;Free&apos; App in the AppMarket](.gitbook/assets/image%20%2880%29.png)
 
 The URL you provide for your ‘Pricing Information’ will also be presented to an agent on the install confirmation modal.
 
@@ -294,11 +294,11 @@ If you have provided a URL we will display the following new section under 'Pric
 
 ![Example &apos;Install&apos; confirmation modal displaying a link to pricing](.gitbook/assets/image%20%2878%29.png)
 
-### Agency Cloud Apps now launchable after installation
+### AgencyCloud Apps now launchable after installation
 
 The latest release also includes a new ‘Launch App’ button after installation.
 
-This will allow the agent to have the ability to immediately launch your App. This option is only available for Agency Cloud Apps \(not available for ‘Integrations’\)
+This will allow the agent to have the ability to immediately launch your App. This option is only available for AgencyCloud Apps \(not available for ‘Integrations’\)
 
 ![New &apos;Launch App&apos; button](.gitbook/assets/image%20%2881%29.png)
 
@@ -310,9 +310,9 @@ As installations are only available to 'Admins', this is a great way to accelera
 
 ## 26/10/2020
 
-### **Seamless integration between the Developer Portal & the Reapit Marketplace**
+### **Seamless integration between the Developer Portal & the Reapit AppMarket**
 
-Access between the Marketplace & the Developer Portal with one click! When you next log into the Developer Portal, you will see a new ‘Marketplace’ icon appear on the navigation. Clicking on the icon will take you to the Reapit Marketplace and automatically log you in using your Developer credentials.
+Access between the AppMarket & the Developer Portal with one click! When you next log into the Developer Portal, you will see a new ‘Marketplace’ icon appear on the navigation. Clicking on the icon will take you to the Reapit AppMarket and automatically log you in using your Developer credentials.
 
 To go back to the Developer Portal, simply click on the ‘Developers’ icon in the nav bar. The introduction of this flow will save time when testing and viewing your integration.
 
@@ -320,7 +320,7 @@ To go back to the Developer Portal, simply click on the ‘Developers’ icon in
 
 ![](.gitbook/assets/devwn.jpg)
 
-### **Full Marketplace View**
+### **Full AppMarket View**
 
 Included in the new access flow, you will now see a full list of live and available apps, in addition to your own applications that are still in development. Previously, with your Developer account you could only see your own apps.
 
@@ -338,7 +338,7 @@ App installation remains the same and you still will only have the option to ins
 
 ### **Desktop API support for Emails & Websites**
 
-We are now supporting default mail client and browser loading for emails and external websites. If your marketplace application presents an link to an email, you will need to update the mailto link to include the new Agency Cloud scheme ‘agencycloud://process/email?’
+We are now supporting default mail client and browser loading for emails and external websites. If your AppMarket application presents an link to an email, you will need to update the mailto link to include the new AgencyCloud scheme ‘agencycloud://process/email?’
 
 This will allow you to launch the users default email client and send to an address.  An example would be:
 
@@ -360,17 +360,17 @@ For more information on the ‘Process’ scheme using the Desktop API, please c
 
 ## 10/10/2020
 
-It has been just over a month since we went into full production for the Foundations Developer Portal and since we officially launched the Reapit Marketplace.
+It has been just over a month since we went into full production for the Foundations Developer Portal and since we officially launched the Reapit AppMarket.
 
-We currently have the following apps live and available for agents that have access to the Marketplace to install.
+We currently have the following apps live and available for agents that have access to the AppMarket to install.
 
-Access to the Marketplace is dependent on the migration from our Rackspace environment to our AWS Infrastructure. The Migrations Team are still working hard on finalising the list of agents that will be part of Tranche 1. Once this has been confirmed we will share this information with our App Partners. 
+Access to the AppMarket is dependent on the migration from our Rackspace environment to our AWS Infrastructure. The Migrations Team are still working hard on finalising the list of agents that will be part of Tranche 1. Once this has been confirmed we will share this information with our App Partners. 
 
 ![](.gitbook/assets/image%20%2864%29.png)
 
 In addition to the apps that are publicly available, we also have several apps and integrations that are currently going through their final testing phase, most of which you will be able to see and follow on our coming soon section. 
 
-The coming soon section is visible on the Marketplace and provides agents the ability to click on any developer or company they are interested in to send an enquiry email. 
+The coming soon section is visible on the AppMarket and provides agents the ability to click on any developer or company they are interested in to send an enquiry email. 
 
 ![](.gitbook/assets/comingsoon1.jpg)
 
@@ -398,7 +398,7 @@ To complete your Organisation information, you will need to click on ‘Settings
 * Telephone Number
 * Website Address
 * VAT/Company Reg and or National Insurance Number
-* About Us – The section will be displayed on any app listing in the Marketplace in addition to information about the app. 
+* About Us – The section will be displayed on any app listing in the AppMarket in addition to information about the app. 
 * Company Address
 
 Once completed, please then switch to the 'Billing' tab.
@@ -422,13 +422,15 @@ Hopefully, you should have received an email from our Marketing team last week, 
 * App Listings
 * Reapit Connect
 
-The idea and goal behind the suspension is that it should provide you a head start in the development of your app whilst the Marketplace and it’s users continue to grow.
+The idea and goal behind the suspension is that it should provide you a head start in the development of your app whilst the AppMarket and it’s users continue to grow.
 
 In addition to this and quite exciting for us, Matt Goddard will now be leading our Reapit Partnership program. As the email quite rightly mentions, his knowledge and experience in the business will be an incredibly asset to you whilst you develop your integrations. Of course, our developers will still be available through Live Chat and I’ll be here to help if needed. Matt will be making contact with you in the coming weeks but if you have any questions, you can contact him [here](mailto:mgoddard@reapit.com).
 
 ### User Role Information
 
-As you may be aware, only Reapit Admins have the ability to install or uninstall apps from the Marketplace. The Admins of an organisation are set by the individual office and are made aware of who has been assigned to the which role when they are migrated over to the new AWS infrastructure.  However, to make it easier for you when speaking with Agents and for the users, we have introduced a ‘Role’ section within the marketplace.
+As you may be aware, only Reapit Admins have the ability to install or uninstall apps from the AppMarket. The Admins of an organisation are set by the individual office and are made aware of who has been assigned to the which role when they are migrated over to the new AWS infrastructure.  However, to make it easier for you when speaking with Agents and for the users, we have introduced a ‘Role’ section within the AppMarket
+
+.
 
 When on the ‘Settings’ page – accessed by clicking on the company profile or group icon, will see a new field ‘Role’:
 
@@ -460,7 +462,7 @@ Within the members section you will also have the ability to disable members and
 
 ### **About your Organisation**
 
-The ‘About’ field is a text box provided for you to give a bit of information about your company. This will then be automatically included on your app listings and will be visible to users viewing your app in the Marketplace:
+The ‘About’ field is a text box provided for you to give a bit of information about your company. This will then be automatically included on your app listings and will be visible to users viewing your app in the AppMarket:
 
 ![](.gitbook/assets/image%20%2859%29.png)
 
@@ -468,7 +470,7 @@ The ‘About’ field is a text box provided for you to give a bit of informatio
 
 Admins will also have access to setup and manage the account information for their organisation.
 
-Account information will be required before an app can be listed in the Marketplace or before any subscriptions can commence.  
+Account information will be required before an app can be listed in the AppMarket or before any subscriptions can commence.  
 
 If you are an existing customer of Reapit and already have an provided your account information, you can simply add your Reapit Reference \(you will still need to submit some additional account information such as a contact name, email address etc\). We will then send your information to our accounts department to be verified.
 
@@ -486,11 +488,11 @@ We have now increased the character limit for the ‘Description’ field on you
 
 ### Reapit Foundations App Developer Experience
 
-Over the Reapit Foundations public beta period, we have been working to improve the experience for Marketplace App Developers. Today we are announcing some significant updates to our front end tooling for web developers.
+Over the Reapit Foundations public beta period, we have been working to improve the experience for AppMarket App Developers. Today we are announcing some significant updates to our front end tooling for web developers.
 
 #### **New Create React App template**
 
-Firstly we have released a new Create React App template to replace the scaffolder we demoed at the November launch. As before the template represents the quickest way to get started building Marketplace Apps, now with the added benefit of long term support, familiar CLI and stability from the React Scripts package.
+Firstly we have released a new Create React App template to replace the scaffolder we demoed at the November launch. As before the template represents the quickest way to get started building AppMarket Apps, now with the added benefit of long term support, familiar CLI and stability from the React Scripts package.
 
 #### Reapit Connect OAuth enhancements
 
@@ -518,9 +520,9 @@ Customer Address \(Address of Estate Agent\)
 
 Setting up a Webhook is simple and easy to do. For more information on Webhooks please visit the documentation [here](https://foundations-documentation.reapit.cloud/api/webhooks)
 
-### Testing your app inside of Agency Cloud Developer Edition
+### Testing your app inside of AgencyCloud Developer Edition
 
-Following the recent successful launch of the Developer Edition of Agency Cloud, we have been gathering feedback on what we can do to help you further test your integration within our Desktop Software.
+Following the recent successful launch of the Developer Edition of AgencyCloud, we have been gathering feedback on what we can do to help you further test your integration within our Desktop Software.
 
  For the last couple of weeks, our Desktop Team have been working hard behind the scenes and we are pleased to announce a brand-new feature, ‘Remote Debugging’.
 
@@ -532,9 +534,9 @@ For more information on the Desktop API, please click [here](https://foundations
 
 ## 23/07/20
 
-### New Agency Cloud Integration types
+### New AgencyCloud Integration types
 
-The list of available Agency Cloud Integration types has been updated and now include the following additional options:
+The list of available AgencyCloud Integration types has been updated and now include the following additional options:
 
 * Landlord
 * Contact
@@ -544,7 +546,7 @@ The list of available Agency Cloud Integration types has been updated and now in
 * Sales Progression
 * Chain Management
 
-You can select the type of integration your app requires on the ‘Agency Cloud Integration’ section when you edit your app listing.
+You can select the type of integration your app requires on the ‘AgencyCloud Integration’ section when you edit your app listing.
 
 ![Agency Cloud Integration Section](.gitbook/assets/image%20%2850%29.png)
 
@@ -554,9 +556,9 @@ For more information on Integration Types, please click [here](https://foundatio
 
 ## 06/07/20
 
-### Agency Cloud Developer Edition
+### AgencyCloud Developer Edition
 
-The highly anticipated Developer Edition of the Reapit Agency Cloud CRM is now available to download. This is an incredible milestone that we have been working very hard to deliver and is now available to our developers free of charge during the Beta Phase.
+The highly anticipated Developer Edition of the Reapit AgencyCloud CRM is now available to download. This is an incredible milestone that we have been working very hard to deliver and is now available to our developers free of charge during the Beta Phase.
 
 ![](.gitbook/assets/image%20%2849%29.png)
 
@@ -572,9 +574,9 @@ When you submit an app through the Developers Portal, you will be presented with
 
 ![Create New App Wizard](.gitbook/assets/image%20%2847%29.png)
 
-There is no requirement at this stage to add an icon/images/description etc until you are ready to list your app in the Marketplace.
+There is no requirement at this stage to add an icon/images/description etc until you are ready to list your app in the AppMarket.
 
-When your app is ready to be listed, simple tick the ‘Is Listed’ box on the ‘Edit Details’ page. This will then let you know what information is needed to ensure your listing is meets the requirements to be available in the Marketplace. You can find more information on providing your app listing content, [here](https://foundations-documentation.reapit.cloud/developer-portal#3-register-an-app). 
+When your app is ready to be listed, simple tick the ‘Is Listed’ box on the ‘Edit Details’ page. This will then let you know what information is needed to ensure your listing is meets the requirements to be available in the AppMarket. You can find more information on providing your app listing content, [here](https://foundations-documentation.reapit.cloud/developer-portal#3-register-an-app). 
 
 For more information on submitting an app, please click [here. ](https://foundations-documentation.reapit.cloud/developer-portal#3-register-an-app)
 
@@ -586,7 +588,7 @@ We have changed how we handle app revisions. Previously, any revision \(edit\) w
 
 Thanks to the recent update in the Developers Portal, general revisions no longer require Admin approval, meaning no more delays.
 
-The only time your app will be required to be approved by our Admin team, will be when you are ready to list your app in the Marketplace. This is triggered by the ‘Is Listed’ status when editing your App. 
+The only time your app will be required to be approved by our Admin team, will be when you are ready to list your app in the AppMarket. This is triggered by the ‘Is Listed’ status when editing your App. 
 
 Along with the new app listing pages, as mentioned below, we are currently working on a simplified submit app wizard, which will change how we handle the requirements when editing your app. More on this to follow soon.
 
@@ -598,13 +600,13 @@ We are pleased to announce that the App listing pages in the Developers Portal h
 
 The description and imagery you upload, are incredibly important to help capture the user’s attention.  
 
-With that in mind we have also added a ‘Preview’ feature. When you next open your app, you will see a ‘See Listing Preview’ option. It will open a new tab displaying your app listing exactly as it will be seen by users inside the Marketplace.
+With that in mind we have also added a ‘Preview’ feature. When you next open your app, you will see a ‘See Listing Preview’ option. It will open a new tab displaying your app listing exactly as it will be seen by users inside the AppMarket.
 
 To maximise the space and to truly showcase your app, we have put together the following tips/guide to help.
 
 ### **Summary**
 
-The summary is a short description about your app and will be one of the first things shown in the Marketplace before a user clicks through for more information.
+The summary is a short description about your app and will be one of the first things shown in the AppMarket before a user clicks through for more information.
 
 Users should be able to clearly see what your app is about when browsing. You have a maximum of 150 character to utilise which will be displayed on both the app tiles and on your app listing.
 
@@ -628,7 +630,7 @@ With that in mind, we are looking for the Featured Image to be more of a graphic
 
 ### **Description**
 
-The next step after a user discovers your app in the Marketplace, is to read more about it.
+The next step after a user discovers your app in the AppMarket, is to read more about it.
 
 Creating a detailed and accurate description of your app is what will give users the full understanding of what your app has to offer. Appealing enough to encourage users to install.
 
@@ -699,9 +701,9 @@ Now you may have seen how our demonstration of how the desktop integration types
 
 
 
-In the video, it is showing how the Homeflow application set a desktop type of ‘Property’. This means that within Agency cloud, the application \(after being installed\) will appear within the native Property Screen.
+In the video, it is showing how the Homeflow application set a desktop type of ‘Property’. This means that within AgencyCloud, the application \(after being installed\) will appear within the native Property Screen.
 
-![Agency Cloud Integration](.gitbook/assets/image%20%2827%29.png)
+![AgencyCloud Integration](.gitbook/assets/image%20%2827%29.png)
 
 You can set your Integration Type when Submitting or Editing your app in the Developers Portal. Whilst we are still in Beta Phase the current Integration Types are still in development but you can follow the progress [here](https://foundations-documentation.reapit.cloud/api/desktop-api#desktop-types) 
 
@@ -713,7 +715,7 @@ The ‘Services’ bar chart will give you a month to month total of your cost \
 
 ![Example Services Bar Chart](.gitbook/assets/image%20%2821%29.png)
 
-But for a more detailed breakdown you can use the ‘Cost Explorer: Usage & Cost’. This will provide the ability to see on a granular level, the amount you are spending on each Resource. Notably, until the Marketplace is live and you have app installations, you won’t see any traffic but you can an example below:
+But for a more detailed breakdown you can use the ‘Cost Explorer: Usage & Cost’. This will provide the ability to see on a granular level, the amount you are spending on each Resource. Notably, until the AppMarket is live and you have app installations, you won’t see any traffic but you can an example below:
 
 ![Example Resource Table](.gitbook/assets/image%20%2819%29.png)
 
@@ -727,7 +729,7 @@ Finally, with the Cost Explorer we have also added a new feature the ‘Cost Cal
 
 ### Description Box
 
-As we are working on developing the Client Portal \(Marketplace\) we want to ensure your app will be presented in the best way, this means providing the ability to add a better formatted description.
+As we are working on developing the Client Portal \(AppMarket\) we want to ensure your app will be presented in the best way, this means providing the ability to add a better formatted description.
 
 The ‘Description’ box when submitting or editing an App, has now been updated to support HTML. You can create headers, bulleted or numbered lists, line breaks and paragraphs.
 
@@ -763,7 +765,7 @@ With that said, let us take a look at what we’ve been working on:
 
 #### Private Apps
 
-A new section is now available in on the Submit and Edit app forms, giving you the ability to specify which customers you would like to share your application with. You can enter the Customer ID or IDs and when the Marketplace is live, only those customers will see your application in the Marketplace. It is especially helpful to those building in private in-house applications. 
+A new section is now available in on the Submit and Edit app forms, giving you the ability to specify which customers you would like to share your application with. You can enter the Customer ID or IDs and when the AppMarket is live, only those customers will see your application in the AppMarket. It is especially helpful to those building in private in-house applications. 
 
 ![Private Apps section on the Submit and Edit App forms](.gitbook/assets/image%20%2810%29.png)
 
@@ -771,7 +773,7 @@ For more information, please [click here ](https://foundations-documentation.rea
 
 ####  Analytics
 
-The Analytics section has had a significant update, you can now see the specific Endpoints and ‘Total’ number of hits for your App\(s\) as well as a graph displaying your ‘Hits Per Day’. As the data is Sandbox data you will see ‘SBOX’ in your client filter list, but this will include Client IDs when your app has been installed in the Marketplace.
+The Analytics section has had a significant update, you can now see the specific Endpoints and ‘Total’ number of hits for your App\(s\) as well as a graph displaying your ‘Hits Per Day’. As the data is Sandbox data you will see ‘SBOX’ in your client filter list, but this will include Client IDs when your app has been installed in the AppMarket.
 
 In addition, you can now search the data using a date range filter or simply select a predefined option of ‘Yesterday’, ‘Last Week’ or ‘Last Month’. More to come on the Analytics page in the coming weeks.
 
@@ -820,7 +822,7 @@ There was a slight issue with the ‘Checkbox’ component in Elements not behav
 
 The Journal API is now read and write and available within the Interactive API explorer. It has the ability to read and write dated event information into the Reapit Journal system and automatic generation of these events from other services.  
 
-In addition, the Enquiries API is also available and gives the ability to read and write information about new leads into Agency Cloud.
+In addition, the Enquiries API is also available and gives the ability to read and write information about new leads into AgencyCloud.
 
 ## 11/03/20
 
@@ -899,7 +901,7 @@ Also, we would like to give a quick thumbs up to those that have used the Live C
 
 ## 19-02-2020
 
-What’s new? Well… everything! We have officially gone live with Reapit Foundations. Not only have we decided to create an independent Marketplace for all our Agency Cloud Users but it comes complete with a fully stocked Developers Portal, plus we’ve open sourced everything!
+What’s new? Well… everything! We have officially gone live with Reapit Foundations. Not only have we decided to create an independent Marketplace for all our AgencyCloud Users but it comes complete with a fully stocked Developers Portal, plus we’ve open sourced everything!
 
 We want to share with you all we can in order to help you develop and interact with our Foundations Platform.
 

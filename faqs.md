@@ -4,9 +4,9 @@
 
 ### How do I find a ‘Customer ID’?
 
-An agent can locate their Customer ID via the Marketplace inside of Agency Cloud.
+An agent can locate their Customer ID via the AppMarket inside of AgencyCloud.
 
-* Within Agency Cloud, click on ‘Apps’ and select ‘Browse’
+* Within AgencyCloud, click on ‘Apps’ and select ‘Browse’
 * Click on the ‘Settings’ icon in the bottom left-hand corner
 * The Customer ID can be located on the right-hand side of the screen.
 
@@ -18,11 +18,11 @@ An agent can locate their Customer ID via the Marketplace inside of Agency Cloud
 
 ### I just want to access my data, do I still need to create an app? 
 
-Yes, the app registration process gives you the required authentication, either to use as a client side/server-side integration or as an app that launches inside of the Desktop CRM \(Agency Cloud\).
+Yes, the app registration process gives you the required authentication, either to use as a client side/server-side integration or as an app that launches inside of the Desktop CRM \(AgencyCloud\).
 
-In order to access customer data, an installation will need to occur. This is done by creating and listing an app in the Marketplace. It can either be public or private to a specific agent. 
+In order to access customer data, an installation will need to occur. This is done by creating and listing an app in the AppMarket. It can either be public or private to a specific agent. 
 
-Please [click here](faqs.md#listing-your-app) for more information on Listing an App in Marketplace
+Please [click here](faqs.md#listing-your-app) for more information on Listing an App in AppMarket.
 
 ### When will my requested feature be available?
 
@@ -40,7 +40,7 @@ You can invite members to collaboratively work within the same Developer Portal 
 
 ### **How can I test my App or Integration?**
 
-The Developer Edition of Agency Cloud allows you to test your apps/integration within the desktop application using Sandbox data.
+The Developer Edition of AgencyCloud allows you to test your apps/integration within the desktop application using Sandbox data.
 
 Please [click here](https://developers.reapit.cloud/desktop) for more information on testing your App or Integration.
 
@@ -58,29 +58,29 @@ To test with a specific agent your app will need to be set to private and submit
 
 Using the ‘Private App’ section on your app listing, you will need to provide the Customer ID of the agent. However, it will first need to be approved and tested by our Admin department. 
 
-Once the app has been approved it will be available to the selected agent\(s\) to ‘Install’ from the Marketplace.
+Once the app has been approved it will be available to the selected agent\(s\) to ‘Install’ from the AppMarket.
 
 Please [click here](faqs.md#how-do-i-find-a-customer-id) for information on finding the Customer ID  
 Please [click here](faqs.md#listing-your-app) for more information on Listing your app  
 Please [click here](faqs.md#app-approvals) for more information on App Approvals
 
-## **Developer Edition of Agency Cloud**
+## **Developer Edition of AgencyCloud**
 
-### I need help with using Agency Cloud \(Desktop CRM\)
+### I need help with using AgencyCloud \(Desktop CRM\)
 
-We do not provide online or telephone support for the Developer Edition of Agency Cloud.
+We do not provide online or telephone support for the Developer Edition of AgencyCloud.
 
 Please [click here](https://developers.dev.paas.reapit.cloud/developer-edition-guide.pdf) to view the Developer Edition Guide
 
-### How can I update details of a Negotiator in Agency Cloud using the desktop application? 
+### How can I update details of a Negotiator in AgencyCloud using the desktop application? 
 
-You cannot update negotiator information using the desktop CRM as Negotiator information is part of the the system configuration and is not available in the Developer Edition. However, you can use the Negotiators `PATCH`endpoint to update the required fields. Once you have made a valid request, you may need to restart Agency Cloud to see the changes reflected. 
+You cannot update negotiator information using the desktop CRM as Negotiator information is part of the the system configuration and is not available in the Developer Edition. However, you can use the Negotiators `PATCH`endpoint to update the required fields. Once you have made a valid request, you may need to restart AgencyCloud to see the changes reflected. 
 
-## **Listing your App in the Marketplace**
+## **Listing your App in the AppMarket**
 
 ### I’m ready to list my app, what do I need to do?
 
-When you are ready to list your app in the Marketplace, either publicly or as a private app, it will first need to be submitted for approval privately to our testing environment 'RES'.   
+When you are ready to list your app in the AppMarket, either publicly or as a private app, it will first need to be submitted for approval privately to our testing environment 'RES'.   
   
 First, ensure your app is ready to be listed, please [click here](listing-your-app.md) to see a guide on what information is required. 
 
@@ -176,16 +176,16 @@ If you want to find out more information about an individual negotiator, you can
 **Cognito Groups**
 
 Reapit User  
-A level 1 user in Agency Cloud. Will have access to the AppMarketplace but do not have permissions to install or uninstall apps.
+A level 1 user in AgencyCloud. Will have access to the AppMarket but do not have permissions to install or uninstall apps.
 
 **Reapit User Admin**  
-A level 2 user in Agency Cloud. Will have the permissions to install and uninstall apps from the AppMarketplace
+A level 2 user in AgencyCloud. Will have the permissions to install and uninstall apps from the AppMarket.
 
 **Organisation Admin**  
 Users assigned to this group will have the same permissions as a Reapit User Admin/Marketplace Admin but will also have access to the Reapit Marketplace Management App
 
 **Marketplace Admin**  
-Will have permissions to install and uninstall apps from the AppMarkeplace
+Will have permissions to install and uninstall apps from the AppMarket
 
 **offGrouping**  
 ‘offGrouping’ refers to Office Grouping. If present and set to ‘True’, the organisation will be using the Reapit Marketplace Management App. The app provides organisations the ability to control app visibility, setup office groups \(setup data boundaries between offices\) and control installs and uninstalls at an organisation level.
@@ -206,10 +206,10 @@ The Customer ID of the organisation
 The ID of the user in Reapit Connect
 
 **agencyCloudNegId**  
-The ID of the user in Agency Cloud
+The ID of the user in AgencyCloud
 
 **agenyCloudId**  
-The ID of the organisation in Agency Cloud
+The ID of the organisation in AgencyCloud
 
 ## Installation
 
@@ -270,11 +270,11 @@ On your app listing in the Developer Portal and via ‘[Analytics](https://devel
 
 ![](.gitbook/assets/image%20%28101%29.png)
 
-## AppMarketplace
+## AppMarket
 
-### Why is my app not showing in the AppMarketplace? 
+### Why is my app not showing in the AppMarket? 
 
-Before your app can be listed in the AppMarketplace, it first needs to be submitted for approval, please see more information on listing your app [here](listing-your-app.md). 
+Before your app can be listed in the AppMarket, it first needs to be submitted for approval, please see more information on listing your app [here](listing-your-app.md). 
 
 If your app has been approved and you have chosen to list it privately, ensure the Customer ID you have provided in the 'Private Apps' section is correct. For more information on obtaining a Customer ID, please click [here](faqs.md#how-do-i-find-a-customer-id). 
 

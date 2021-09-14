@@ -15,9 +15,9 @@ How to verify the Customer ID:
 
 or 
 
-The Reapit Customer ID you have provided in your ‘reapit-customer’ header has not yet installed your application from the AppMarketplace. The installation process is the step that grants you access to live data \(not Sandbox\).
+The Reapit Customer ID you have provided in your ‘reapit-customer’ header has not yet installed your application from the AppMarket. The installation process is the step that grants you access to live data \(not Sandbox\).
 
 If you are a Reapit Agent looking to interact with your own data, you will still need to list \(privately\) and install your own app.
 
-For more information on how to list your app in the AppMarketplace, please click [here](https://foundations-documentation.reapit.cloud/listing-your-app)
+For more information on how to list your app in the AppMarket, please click [here](https://foundations-documentation.reapit.cloud/listing-your-app)
 

@@ -35,9 +35,9 @@ Whilst the nature of the request has been accepted, we are unable to commit to a
 
 ### **Label definitions**
 
-**Agency Cloud**
+**AgencyCloud**
 
-Your issue relates to Agency Cloud \(Desktop CRM\) and therefore will require information, action or input outside of the Platform team, please see [https://foundations-documentation.reapit.cloud/app-development/dev-requests\#agency-cloud](https://foundations-documentation.reapit.cloud/app-development/dev-requests#agency-cloud)
+Your issue relates to AgencyCloud \(Desktop CRM\) and therefore will require information, action or input outside of the Platform team, please see [https://foundations-documentation.reapit.cloud/app-development/dev-requests\#agency-cloud](https://foundations-documentation.reapit.cloud/app-development/dev-requests#agency-cloud)
 
 **Investigate**
 
@@ -63,9 +63,9 @@ Issues relating to services within the [Foundations Mono Repo on Github ](https:
 * When an issue is completed by the dev team, it will be moved to QA where it will be verified by a member of the dev or product team on our development environment and assuming this is successful, will be released straight to production.
 * Any issues failing QA will be re-opened and moved to "in progress" to be fixed before any new issues is worked on. Where possible the number of "in progress" issues should never exceed the number of developers in the team.
 
-### Agency cloud
+### AgencyCloud
 
-Tickets logged for features or bugs relating to Agency Cloud, will be handled by a different department, and therefore will not be triaged in the same way or added to a specific board.
+Tickets logged for features or bugs relating to AgencyCloud, will be handled by a different department, and therefore will not be triaged in the same way or added to a specific board.
 
 We will add comments where applicable or may request, depending the requirement, that you raise a ticket/log an issue externally \(outside of Github\).
 

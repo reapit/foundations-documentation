@@ -42,7 +42,7 @@ Our Conveyancing APIs also allow a chain to be managed, providing a means of lin
 
 ### Customer
 
-Customers represent estate agents who use Reapit software. We do not provide an API to obtain details of our customers, instead, their details will be known to you at the point that they install your marketplace application. 
+Customers represent estate agents who use Reapit software. We do not provide an API to obtain details of our customers, instead, their details will be known to you at the point that they install your AppMarket application. 
 
 ### Department
 

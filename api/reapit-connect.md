@@ -30,13 +30,13 @@ You can use Reapit Connect to authenticate users regardless of your front or bac
 
 ### Trust
 
-Your users will be presented with a unified login screen from a brand they already know and trust. They will receive the same user experience as they do from other Reapit applications and of those that exist in our marketplace.
+Your users will be presented with a unified login screen from a brand they already know and trust. They will receive the same user experience as they do from other Reapit applications and of those that exist in our AppMarket.
 
-## Marketplace integration
+## AppMarket integration
 
 ### Registering your application
 
-Registering your app in our Marketplace is the first step for it to be able to interact with Reapit customer data.
+Registering your app in our AppMarket is the first step for it to be able to interact with Reapit customer data.
 
 Our [application submission page](https://marketplace.reapit.cloud/developer/submit-app) will capture information about your application, including the details required for integration with Reapit Connect.
 
@@ -49,7 +49,7 @@ Once you have successfully registered, you will be issued with a client id. You 
 
 In order for Reapit Connect to authenticate your application on a users behalf, the user must belong to a Reapit customer that has opted to allow your application access to their data.
 
-Customer administrators are able to control your applications access by choosing to install from our Marketplace. As part of this process, they will grant your application with any permissions \(scopes\) it requires to interact with Foundations API endpoints.
+Customer administrators are able to control your applications access by choosing to install from our AppMarket. As part of this process, they will grant your application with any permissions \(scopes\) it requires to interact with Foundations API endpoints.
 
 {% hint style="info" %}
 **You can test Reapit Connect** with our [sandbox environment](api-documentation.md#sandbox-mode) which does not require the customer installation step. Simply provide your developer portal credentials when Reapit Connect prompts for a username and password.

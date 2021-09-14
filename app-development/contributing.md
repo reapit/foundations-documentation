@@ -10,7 +10,7 @@ At Reapit, we have made a company wide commitment to open sourcing as much sourc
 
 * Approach - we want our partners to see how we go about building things internally, to give you insight into how your own integrations may work.
 * Transparency - we want our partners to see what we are building, our future roadmap and progress against project milestones.
-* Tooling - we want to share the tools we use internally to build marketplace applications with our partners so they can get the benefits of quick-to-market efficient development.
+* Tooling - we want to share the tools we use internally to build AppMarket applications with our partners so they can get the benefits of quick-to-market efficient development.
 
 All our code is in a [mono-repo on Github](https://github.com/reapit/foundations), along with our project [Kanban board](https://github.com/reapit/foundations/projects) and an open [issues page.](https://github.com/reapit/foundations/issues) Most people will want to use this as a resource alongside their own project, as living code as documentation but if you do want to contribute to a project, fork and extend an app or fix a bug, we welcome pull requests from all.
 
