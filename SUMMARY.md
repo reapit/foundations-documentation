@@ -10,6 +10,7 @@
 * [Developer Portal](developer-portal.md)
 * [Listing your App](listing-your-app.md)
 * [App Development](app-development/README.md)
+  * [Developer Guidelines](app-development/developer-guidelines.md)
   * [Usage Guidelines](app-development/usage-guidelines.md)
   * [Elements](app-development/elements.md)
   * [Create React App Template](app-development/create-react-app-template.md)
