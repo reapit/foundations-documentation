@@ -14,17 +14,40 @@ All web components are served both as NPM packages and as downloadable scripts f
 
 The first component we have shipped is a small but powerful "Sign In With Reapit" button. The button leverages the Connect Session to handle the OAuth flow and returns a session object in a callback you provide.
 
-![](../.gitbook/assets/screenshot-2020-07-31-at-13.05.46.png)
+![Sign in With Reapit button](../.gitbook/assets/screenshot-2021-10-08-at-14.19.11.png)
 
-The Component is a single script served from our CDN, you instantiate with a target div, your client credentials as per the browser API and pass in a callback to receive your session object. As per the NPM module, all caching, redirection and refreshing is taken care of by the package. When you have a session, the button will change function to be a logout which will clear your cache and end your session in Reapit Connect.
+The Component is a single script served from our CDN or NPM package, you instantiate with a target div, your client credentials as per the browser API and pass in a callback to receive your session object. As per the NPM module, all caching, redirection and refreshing is taken care of by the package. When you have a session, the button will change function to be a logout which will clear your cache and end your session in Reapit Connect.
 
-The below example shows how to embed on any static or dynamic page with a single script. In the connectHasSessionCallback function we fetch a list of appointments from the Platform API to demonstrate the full flow. The  production `connectUserPoolId` is `eu-west-2_eQ7dreNzJ`.
+#### Agreeing to Permissions
+
+When clicking the Sign In With Reapit button, a dialog window will appear with the following details
+
+![Agree to terms and permissions dialog](../.gitbook/assets/screenshot-2021-10-08-at-14.19.03.png)
+
+
+
+#### CDN
+
+Use the script tag below in your code base to use the ReapitConnectComponent.
+
+```markup
+<script src="https://web-components.prod.paas.reapit.cloud/reapit-connect-component.js"></script>
+```
+
+#### NPM
+
+Install the `login-with-reapit` package using npm.
+
+```bash
+npm i --save @reapit/login-with-reapit
+```
+
+Below is an example of how to use the `ReapitConnectComponent` using the CDN. The below example shows how to embed on any static or dynamic page with a single script. In the connectHasSessionCallback function we fetch a list of appointments from the Platform API to demonstrate the full flow. The  production `connectUserPoolId` is `eu-west-2_eQ7dreNzJ`.
 
 ```markup
 <div id="reapit-connect-component"></div>
 <script src="https://web-components.prod.paas.reapit.cloud/reapit-connect-component.js"></script>
 <script>
-
   const connectHasSessionCallback = (reapitConnectBrowserSession) => {
     reapitConnectBrowserSession.connectSession().then(session => {
       console.log('Session is', session)
@@ -36,7 +59,7 @@ The below example shows how to embed on any static or dynamic page with a single
         }
       })
       .then(res => res.json())
-      .then(appointments => console.log('Appointmemts are', appointments))
+      .then(appointments => console.log('Appointments are', appointments))
     })
   }
 
@@ -46,8 +69,9 @@ The below example shows how to embed on any static or dynamic page with a single
     connectOAuthUrl: 'https://connect.reapit.cloud',
     connectLoginRedirectPath: '',
     connectLogoutRedirectPath: '/login',
-    connectContainerId: '#reapit-connect-component',
-    connectHasSessionCallback
+    rootElement: '#reapit-connect-component',
+    connectHasSessionCallback,
+    companyName: 'My Company',
   })
 </script>
 ```
