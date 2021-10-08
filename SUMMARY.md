@@ -16,7 +16,7 @@
   * [Create React App Template](app-development/create-react-app-template.md)
   * [Connect Session](app-development/connect-session.md)
   * [Foundations TS Defintions](app-development/foundations-ts-defintions.md)
-  * [Web Components](app-development/web.md)
+  * [Login With Reapit](app-development/web.md)
   * [Contributing](app-development/contributing.md)
 * [What’s New](whats-new.md)
 * [Platform Glossary](platform-glossary.md)
