@@ -44,7 +44,7 @@ Below is an example of how to use the `ReapitConnectComponent` . In the connectH
 <div id="reapit-connect-component"></div>
 
 <script>
-  import ReapitConnectComponent from '@reapit/login-with-reapit'
+  import { reapitConnectComponent } from '@reapit/login-with-reapit'
   
   const connectHasSessionCallback = (reapitConnectBrowserSession) => {
     reapitConnectBrowserSession.connectSession().then(session => {
@@ -61,7 +61,7 @@ Below is an example of how to use the `ReapitConnectComponent` . In the connectH
     })
   }
 
-  ReapitConnectComponent && new ReapitConnectComponent({
+  reapitConnectComponent && reapitConnectComponent({
     connectClientId: '<<clientId here>>>',
     connectUserPoolId: '<<userpool id here>>',
     connectOAuthUrl: 'https://connect.reapit.cloud',
