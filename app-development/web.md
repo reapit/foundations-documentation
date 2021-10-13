@@ -40,12 +40,17 @@ npm i --save @reapit/login-with-reapit
 
 Below is an example of how to use the `ReapitConnectComponent` . In the connectHasSessionCallback function we fetch a list of appointments from the Platform API to demonstrate the full flow. The  production `connectUserPoolId` is `eu-west-2_eQ7dreNzJ`.
 
-```markup
+### Single HTML page example
+
+```javascript
 <div id="reapit-connect-component"></div>
 
+<script
+  type="text/javascript"
+  src="./node_modules/@reapit/login-with-reapit/public/dist/login-with-reapit.js"
+></script>
+
 <script>
-  import { reapitConnectComponent } from '@reapit/login-with-reapit'
-  
   const connectHasSessionCallback = (reapitConnectBrowserSession) => {
     reapitConnectBrowserSession.connectSession().then(session => {
       console.log('Session is', session)
@@ -73,3 +78,54 @@ Below is an example of how to use the `ReapitConnectComponent` . In the connectH
   })
 </script>
 ```
+
+### ES6+ example
+
+```javascript
+import { reapitConnectComponent } from '@reapit/login-with-reapit'
+
+
+const connectHasSessionCallback = (reapitConnectBrowserSession) => {
+  reapitConnectBrowserSession.connectSession().then(session => {
+    console.log('Session is', session)
+    fetch('https://platform.reapit.cloud/appointments', {
+      headers: {
+        'Content-Type': 'application/json',
+        'Authorization': `Bearer ${session.accessToken}`,
+        'api-version': '2020-01-31'
+      }
+    })
+    .then(res => res.json())
+    .then(appointments => console.log('Appointments are', appointments))
+  })
+}
+
+reapitConnectComponent && reapitConnectComponent({
+  connectClientId: '<<clientId here>>>',
+  connectUserPoolId: '<<userpool id here>>',
+  connectOAuthUrl: 'https://connect.reapit.cloud',
+  connectLoginRedirectPath: '',
+  connectLogoutRedirectPath: '/login',
+  rootElement: '#reapit-connect-component',
+  connectHasSessionCallback,
+  companyName: 'My Company',
+})
+```
+
+### rootElement
+
+The `rootElement` property can be passed either query string, DOM element or shadow DOM element.
+
+```javascript
+reapitConnectComponent && reapitConnectComponent({
+  connectClientId: '<<clientId here>>>',
+  connectUserPoolId: '<<userpool id here>>',
+  connectOAuthUrl: 'https://connect.reapit.cloud',
+  connectLoginRedirectPath: '',
+  connectLogoutRedirectPath: '/login',
+  rootElement: document.getElementById('reapit-connect-component'),
+  connectHasSessionCallback,
+  companyName: 'My Company',
+})
+```
+
