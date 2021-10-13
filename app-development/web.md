@@ -63,7 +63,7 @@ Below is an example of how to use the `ReapitConnectComponent` . In the connectH
 
   ReapitConnectComponent && new ReapitConnectComponent({
     connectClientId: '<<clientId here>>>',
-    connectUserPoolId: '<<userpool id here>>'
+    connectUserPoolId: '<<userpool id here>>',
     connectOAuthUrl: 'https://connect.reapit.cloud',
     connectLoginRedirectPath: '',
     connectLogoutRedirectPath: '/login',
@@ -73,4 +73,3 @@ Below is an example of how to use the `ReapitConnectComponent` . In the connectH
   })
 </script>
 ```
-
