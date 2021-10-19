@@ -8,7 +8,7 @@ We want getting started with the Developer Portal to be as frictionless as possi
 
 ### 1. Login to the Portal
 
-You will receive an email with a link to the developer portal and temporary login credentials. The app will redirect you to the [Reapit Connect](api/reapit-connect.md) login screen and then back to the authenticated portal. 
+You will receive an email with a link to the developer portal and temporary login credentials. The app will redirect you to the [Reapit Connect](api/reapit-connect.md) login screen and then back to the authenticated portal.&#x20;
 
 The first screen you will see is a welcome wizard. You will only see this at the first login, although you can access from the help section later if you wish to revisit. It will walk you through some basic concepts when working with the developer portal.
 
@@ -18,11 +18,11 @@ You will then see the "My Apps" page which will initially be empty. There is als
 
 ![](.gitbook/assets/screenshot-2021-03-31-at-11.58.39.png)
 
-When you are in the portal, navigate to the API tab on the left hand side menu. 
+When you are in the portal, navigate to the API tab on the left hand side menu.&#x20;
 
 ### 2. Choose an API
 
-Assuming you have an idea of the data types / entities you are interested in, ensure that the endpoints you need are available in the platform by "trying out" the API explorer. 
+Assuming you have an idea of the data types / entities you are interested in, ensure that the endpoints you need are available in the platform by "trying out" the API explorer.&#x20;
 
 For the purposes of this example my app will need Applicant data. Don't worry if you find you need other endpoints later, you can add them at any time.
 
@@ -54,7 +54,7 @@ Clicking finish, will take you back to the apps page where you can see your firs
 
 ![](.gitbook/assets/screenshot-2021-03-31-at-12.07.12.png)
 
-### 4. Populate your app listing \(optional\)
+### 4. Populate your app listing (optional)
 
 The previous section of this guide gives us enough detail to allow you to authenticate against our APIs and for you to be productive on the platform. When your app is in development, you will however want to get it ready to be listed in the AppMarket. To do this you will need to provide some additional information.
 
@@ -90,7 +90,7 @@ The next step is for external, non AppMarket apps and should be skipped if you a
 
 ![](.gitbook/assets/screenshot-2021-03-31-at-12.16.36.png)
 
-The last step is to select any additional permissions \(OAuth scopes\) you need for your app to work. They must map to the endpoints you selected at point two above.
+The last step is to select any additional permissions (OAuth scopes) you need for your app to work. They must map to the endpoints you selected at point two above.
 
 ![](.gitbook/assets/screenshot-2021-03-31-at-12.17.18.png)
 
@@ -106,13 +106,13 @@ From the Apps screen above, you will need to obtain your application's client id
 
 ![](.gitbook/assets/screenshot-2021-03-31-at-12.18.57.png)
 
-The Client Id should now be visible. Keep this page open so you can copy the Client Id at the next step. Please note, if you have selected "Client Credentials" as your authentication flow, you will also see your client secret \(hidden\), on this page.
+The Client Id should now be visible. Keep this page open so you can copy the Client Id at the next step. Please note, if you have selected "Client Credentials" as your authentication flow, you will also see your client secret (hidden), on this page.
 
 ### 6. **Write some code!**
 
 The first step with your application will be to authenticate it against our Platform APIs. To do this you will need to use our authentication service [Reapit Connec](api/reapit-connect.md)t which supports the OAuth protocol. To make this easier on the client side, we have some JavaScript helpers you might find useful in our [Connect Session](app-development/connect-session.md) module, however, if you are familiar with OAuth, you can just roll your own.
 
-### 7. Scaffolding an app \(optional\)
+### 7. Scaffolding an app (optional)
 
 Even if you don't use React or intend to write your own React app from scratch, it is worth scaffolding an app with our new Create React App Template as initial playground, until you feel comfortable working with the platform. You can get full [documentation on this step here.](app-development/create-react-app-template.md)
 
@@ -120,30 +120,30 @@ Even if you don't use React or intend to write your own React app from scratch, 
 
 Whilst marketplace apps are "submitted", "listed" and "installed" by clients, they are still hosted by you, the developer. This is both to ensure the integrity of your IP / source code, and so that you maintain control over your deployment pipelines.
 
-Optional hosting as a service is something we are looking at in detail for future iterations of the platform however it is not on our immediate roadmap. You should continue to use your existing web hosting platform for your app and just submit the launch uri on the submit app form as above. 
+Optional hosting as a service is something we are looking at in detail for future iterations of the platform however it is not on our immediate roadmap. You should continue to use your existing web hosting platform for your app and just submit the launch uri on the submit app form as above.&#x20;
 
 ### 9. Organisation
 
-To complete your Organisation information, click on ‘Settings’ and select ‘Organisation’  
-  
- You will then be required to fill in the following information:
+To complete your Organisation information, click on ‘Settings’ and select ‘Organisation’\
+\
+&#x20;You will then be required to fill in the following information:
 
 * Company Name
 * Telephone Number
 * Website Address
 * VAT/Company Reg and or National Insurance Number
-* About Us – The section will be displayed on any app listing in the AppMarket in addition to information about the app. 
+* About Us – The section will be displayed on any app listing in the AppMarket in addition to information about the app.&#x20;
 * Company Address
 
 Please then complete the information on the 'Billing' tab.
 
 ### 10. Billing
 
-If you have an existing relationship with Reapit, you will already have a 'Reapit Reference' assigned to your company. You can find your reference on any previous accounting correspondence. Simply enter your account contact information, your reference and click 'Submit'.  
+If you have an existing relationship with Reapit, you will already have a 'Reapit Reference' assigned to your company. You can find your reference on any previous accounting correspondence. Simply enter your account contact information, your reference and click 'Submit'. &#x20;
 
 ![](.gitbook/assets/screenshot-2021-03-31-at-12.22.27.png)
 
-You account status will be updated to 'Pending' whilst we verify the  information with our Accounts Department. This is normally completed the same day.
+You account status will be updated to 'Pending' whilst we verify the information with our Accounts Department. This process can typically take between 1-2 working days to complete.
 
 You will receive an email once your account has been set to ‘Confirmed’.
 
@@ -153,5 +153,4 @@ If you do not have a Reapit Reference, please then complete a Direct Debit manda
 
 Again, our Accounts Department will setup your account and you’ll receive an email with your new Reapit Reference. No need to do anything with the reference,  as we will add this on your account automatically. Once received, you’ll be able to submit your app for approval or make any additional subscriptions.
 
-In order to list your App, please see the guidelines within the '[Listing your App](https://app.gitbook.com/@reapit-1/s/reapit-foundations/~/drafts/-MQMdhdEIqniO2BQbO_g/listing-your-app)' section 
-
+In order to list your App, please see the guidelines within the '[Listing your App](https://app.gitbook.com/@reapit-1/s/reapit-foundations/\~/drafts/-MQMdhdEIqniO2BQbO\_g/listing-your-app)' section&#x20;
