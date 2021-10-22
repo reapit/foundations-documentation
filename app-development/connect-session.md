@@ -12,7 +12,7 @@ Then follow the steps for either browsers, React or NodeJS below.
 
 ### Basic Browser Usage
 
-The module is intended to be browser framework agnostic although we ship a React Hook for React users \(see below\).
+The module is intended to be browser framework agnostic although we ship a React Hook for React users (see below).
 
 For all users, in a file at the root of the source of your project, first instantiate and export the `ReapitConnectBrowserSession` class.
 
@@ -89,6 +89,11 @@ reapitConnectBrowserSession.connectIsDesktop
 
 // A convenience getter to check if my app has a valid session
 reapitConnectBrowserSession.connectHasSession
+
+// Allows the current session in memory to be cleared programatically.
+// Useful if you want to trigger a refresh of your session from a refresh token in
+// session storage.
+reapitConnectBrowserSession.connectClearSession
 ```
 
 ### React Usage
@@ -184,7 +189,6 @@ app.listen('3000', () => {
 })
 ```
 
-As per the browser usage, you will need to instantiate the class with your initialisers, in this case `connectClientId`, `connectOAuthUrl` \(in the same way as the browser module\), but with the addition of the `connectClientSecret` you obtain from your app listing page.
+As per the browser usage, you will need to instantiate the class with your initialisers, in this case `connectClientId`, `connectOAuthUrl` (in the same way as the browser module), but with the addition of the `connectClientSecret` you obtain from your app listing page.
 
 The module will fetch and refresh your session as the token expires, caching it in session storage to minimise calls to Reapit Connect token endpoint. After closing a tab, the session cache is not persisted.
-
