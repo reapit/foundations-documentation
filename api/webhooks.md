@@ -45,15 +45,17 @@ You can obtain your client id by clicking your applications details in the devel
 
 ## Managing webhooks in the user interface
 
-We offer a user interface to allow you to manage webhooks in a simple and straightforward way. You're able to create, update and remove webhooks for all of your applications in a single place.&#x20;
+We offer a user interface to allow you to manage webhooks in a simple and straightforward way. You're able to create, update and remove webhooks for all of your applications in a single place.
 
-![](<../.gitbook/assets/image (33).png>)
+&#x20;
+
+![](<../.gitbook/assets/Webhook 1.png>)
 
 ### Creating a webhook
 
 First, select the application that you want to create a webhook for. You'll then be given the option to 'Add New Webhook', as above. The modal below allows you to [input the endpoint](webhooks.md#provide-an-endpoint) where information should be pushed.
 
-![](<../.gitbook/assets/image (94).png>)
+![](<../.gitbook/assets/Webhook 2.png>)
 
 Our webhooks system is designed to flexibly work with how your application is built and deployed. If you wish, you can set up a single endpoint to catch all **topics **for all **customers**. Alternatively, you may wish to set up a different webhook subscription per topic or per customer.
 
@@ -263,7 +265,7 @@ The content of the `new`, `old`, and `diff` properties in the webhook event payl
 
 When you have an endpoint configured, you can test it by using the **Ping **function. This will send a test event with an example payload to the URL stored against the webhook for the selected topic. You will only be able to select topics that are applicable to the webhook being tested.&#x20;
 
-![](<../.gitbook/assets/image (40).png>)
+![](<../.gitbook/assets/Webhook 3.png>)
 
 The user interface will show a success or failure based on the response back from the endpoint. In the event of a success response, you will have received the example payload to the configured endpoint.
 

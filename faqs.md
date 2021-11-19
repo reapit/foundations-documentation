@@ -10,33 +10,34 @@ An agent can locate their Customer ID via the AppMarket inside of AgencyCloud.
 * Click on the ‘Settings’ icon in the bottom left-hand corner
 * The Customer ID can be located on the right-hand side of the screen.
 
-![](.gitbook/assets/image%20%2899%29.png)
+![](<.gitbook/assets/image (99).png>)
 
 
 
 
 
-### I just want to access my data, do I still need to create an app? 
+### I just want to access my data, do I still need to create an app?&#x20;
 
-Yes, the app registration process gives you the required authentication, either to use as a client side/server-side integration or as an app that launches inside of the Desktop CRM \(AgencyCloud\).
+Yes, the app registration process gives you the required authentication, either to use as a client side/server-side integration or as an app that launches inside of the Desktop CRM (AgencyCloud).
 
-In order to access customer data, an installation will need to occur. This is done by creating and listing an app in the AppMarket. It can either be public or private to a specific agent. 
+In order to access customer data, an installation will need to occur. This is done by creating and listing an app in the AppMarket. It can either be public or private to a specific agent.&#x20;
 
 Please [click here](faqs.md#listing-your-app) for more information on Listing an App in AppMarket.
 
 ### When will my requested feature be available?
 
-You can track the status of your issue [directly in GitHub](https://github.com/reapit/foundations/issues). 
+You can track the status of your issue [directly in GitHub](https://github.com/reapit/foundations/issues).&#x20;
 
 Please [click here](dev-requests.md) for details on our development processes.
 
 ## Registration
 
-### We have created multiple accounts but want to work on the same app, what can we do? 
+### We have created multiple accounts but want to work on the same app, what can we do?&#x20;
 
 You can invite members to collaboratively work within the same Developer Portal organisation from the '[Organisations](https://developers.reapit.cloud/settings/organisation)' page using the 'Invite Member' option.
 
-## **Testing**
+**Testing**
+-----------
 
 ### **How can I test my App or Integration?**
 
@@ -56,38 +57,38 @@ Please [click here](https://foundations-documentation.reapit.cloud/api/api-docum
 
 To test with a specific agent your app will need to be set to private and submitted for approval.
 
-Using the ‘Private App’ section on your app listing, you will need to provide the Customer ID of the agent. However, it will first need to be approved and tested by our Admin department. 
+Using the ‘Private App’ section on your app listing, you will need to provide the Customer ID of the agent. However, it will first need to be approved and tested by our Admin department.&#x20;
 
-Once the app has been approved it will be available to the selected agent\(s\) to ‘Install’ from the AppMarket.
+Once the app has been approved it will be available to the selected agent(s) to ‘Install’ from the AppMarket.
 
-Please [click here](faqs.md#how-do-i-find-a-customer-id) for information on finding the Customer ID  
-Please [click here](faqs.md#listing-your-app) for more information on Listing your app  
+Please [click here](faqs.md#how-do-i-find-a-customer-id) for information on finding the Customer ID\
+Please [click here](faqs.md#listing-your-app) for more information on Listing your app\
 Please [click here](faqs.md#app-approvals) for more information on App Approvals
 
 ## **Developer Edition of AgencyCloud**
 
-### I need help with using AgencyCloud \(Desktop CRM\)
+### I need help with using AgencyCloud (Desktop CRM)
 
 We do not provide online or telephone support for the Developer Edition of AgencyCloud.
 
 Please [click here](https://developers.dev.paas.reapit.cloud/developer-edition-guide.pdf) to view the Developer Edition Guide
 
-### How can I update details of a Negotiator in AgencyCloud using the desktop application? 
+### How can I update details of a Negotiator in AgencyCloud using the desktop application?&#x20;
 
-You cannot update negotiator information using the desktop CRM as Negotiator information is part of the the system configuration and is not available in the Developer Edition. However, you can use the Negotiators `PATCH`endpoint to update the required fields. Once you have made a valid request, you may need to restart AgencyCloud to see the changes reflected. 
+You cannot update negotiator information using the desktop CRM as Negotiator information is part of the the system configuration and is not available in the Developer Edition. However, you can use the Negotiators `PATCH`endpoint to update the required fields. Once you have made a valid request, you may need to restart AgencyCloud to see the changes reflected.&#x20;
 
 ## **Listing your App in the AppMarket**
 
 ### I’m ready to list my app, what do I need to do?
 
-When you are ready to list your app in the AppMarket, either publicly or as a private app, it will first need to be submitted for approval privately to our testing environment 'RES'.   
-  
-First, ensure your app is ready to be listed, please [click here](listing-your-app.md) to see a guide on what information is required. 
+When you are ready to list your app in the AppMarket, either publicly or as a private app, it will first need to be submitted for approval privately to our testing environment 'RES'. \
+\
+First, ensure your app is ready to be listed, please [click here](listing-your-app.md) to see a guide on what information is required.&#x20;
 
-Once the content of your app has been added: 
+Once the content of your app has been added:&#x20;
 
 * Enter Customer ID 'RES' in the 'Private Apps' section on your app listing
-* Select the 'Submit for Approval' check box and Submit' 
+* Select the 'Submit for Approval' check box and Submit'&#x20;
 
 Please [click here ](https://foundations-documentation.reapit.cloud/listing-your-app#apps-launchable-inside-of-agency-cloud)for more information on testing
 
@@ -95,9 +96,9 @@ Please [click here ](https://foundations-documentation.reapit.cloud/listing-your
 
 ### I have submitted my App for approval. How long is the approval process?
 
-Depending on your app listing or integration and its complexity, from start to finish can typically take between 2-7 weeks.  A member of the reviewal team will make direct contact with you within 24 – 48 hours.  
+Depending on your app listing or integration and its complexity, from start to finish can typically take between 2-7 weeks.  A member of the reviewal team will make direct contact with you within 24 – 48 hours. &#x20;
 
-Please [click here](https://foundations-documentation.reapit.cloud/listing-your-app#2-submit-for-approval) for more information on the App Approval Process 
+Please [click here](https://foundations-documentation.reapit.cloud/listing-your-app#2-submit-for-approval) for more information on the App Approval Process&#x20;
 
 ## **Authentication**
 
@@ -125,7 +126,7 @@ Please [click here](https://foundations-documentation.reapit.cloud/developer-por
 
 ### My billing information is with accounts - how long will this take to process?
 
-Once you have submitted your billing information, it will be sent to our Accounts Department to verify/setup and your account status will be set to 'Pending'. 
+Once you have submitted your billing information, it will be sent to our Accounts Department to verify/setup and your account status will be set to 'Pending'.&#x20;
 
 This setup process is usually completed within 24-48 hours. Once the information has been verified you will receive an email confirmation and your account status will be set to 'Confirmed'
 
@@ -137,12 +138,12 @@ Please [click here](https://foundations-documentation.reapit.cloud/developer-por
 
 You can find information regarding pricing using either the documentation listed below or using our ‘API Cost Calculator’ on the [Analytics](https://developers.reapit.cloud/analytics/costexplorer) page.
 
-Please [click here]() for more information on pricing  
+Please [click here](broken-reference) for more information on pricing\
 Please [click here](developer-terms-and-conditions.md#schedule-2-fees) to see pricing information on our Terms and Conditions
 
 ### I am an agency building a website for a Reapit Customer - will I be charged for using this service?
 
-Please [click here]() for more information regarding pricing for website integrations
+Please [click here](broken-reference) for more information regarding pricing for website integrations
 
 ### I have looked at your pricing information and I have a query - who do I speak to?
 
@@ -150,7 +151,7 @@ Should you have any questions or queries regarding the cost or pricing structure
 
 ## Reapit Connect
 
-### **How do I find out information about a user?**
+### &#xD;**How do I find out information about a user?**
 
 When a user successfully logs in using Reapit Connect and your application has performed the code exchange, you will receive a JSON payload which will include an ‘id\_token’.
 
@@ -171,55 +172,55 @@ If you want to find out more information about an office, you can use the ‘off
 
 If you want to find out more information about an individual negotiator, you can use the ‘userCode’ and make a request to GET /negotiators/{id}
 
-### **I’m unsure what some of the fields in the id\_token relate to?**
+### &#xD;**I’m unsure what some of the fields in the id\_token relate to?**
 
 **Cognito Groups**
 
-Reapit User  
+Reapit User\
 A level 1 user in AgencyCloud. Will have access to the AppMarket but do not have permissions to install or uninstall apps.
 
-**Reapit User Admin**  
+**Reapit User Admin**\
 A level 2 user in AgencyCloud. Will have the permissions to install and uninstall apps from the AppMarket.
 
-**Organisation Admin**  
+**Organisation Admin**\
 Users assigned to this group will have the same permissions as a Reapit User Admin/Marketplace Admin but will also have access to the Reapit Marketplace Management App
 
-**Marketplace Admin**  
+**Marketplace Admin**\
 Will have permissions to install and uninstall apps from the AppMarket
 
-**offGrouping**  
-‘offGrouping’ refers to Office Grouping. If present and set to ‘True’, the organisation will be using the Reapit Marketplace Management App. The app provides organisations the ability to control app visibility, setup office groups \(setup data boundaries between offices\) and control installs and uninstalls at an organisation level.
+**offGrouping**\
+****‘offGrouping’ refers to Office Grouping. If present and set to ‘True’, the organisation will be using the Reapit Marketplace Management App. The app provides organisations the ability to control app visibility, setup office groups (setup data boundaries between offices) and control installs and uninstalls at an organisation level.
 
-**officeID**  
-The ID of the induvial office the user is associated to.
+**officeID**\
+****The ID of the induvial office the user is associated to.
 
-**orgName**  
-The name of the organisation.
+**orgName**\
+****The name of the organisation.
 
-**orgID**  
-The ID of the organisation \(mainly used for internal services\)
+**orgID**\
+****The ID of the organisation (mainly used for internal services)
 
-**clientCode**  
-The Customer ID of the organisation
+**clientCode**\
+****The Customer ID of the organisation
 
-**userCode**  
-The ID of the user in Reapit Connect
+**userCode**\
+****The ID of the user in Reapit Connect
 
-**agencyCloudNegId**  
-The ID of the user in AgencyCloud
+**agencyCloudNegId**\
+****The ID of the user in AgencyCloud
 
-**agenyCloudId**  
-The ID of the organisation in AgencyCloud
+**agenyCloudId**\
+****The ID of the organisation in AgencyCloud
 
 ## Installation
 
-### W**hat information can I obtain when my app is installed?**
+### &#xD;W**hat information can I obtain when my app is installed?**
 
-You will receive \(at the point of installation\) the following information:
+You will receive (at the point of installation) the following information:
 
 ### **Email**
 
-An email will be sent to the email address used to register your [developer organisation](https://developers.reapit.cloud/settings/organisation) \(office email\) and to the support email address you have provided on your app listing. It will contain the following:
+An email will be sent to the email address used to register your [developer organisation](https://developers.reapit.cloud/settings/organisation) (office email) and to the support email address you have provided on your app listing. It will contain the following:
 
 * The Name of the organisation
 * The Customer ID of the organisation
@@ -232,27 +233,27 @@ _Hi Joe Blogs,_
 
 _We just wanted to let you know that ‘Your App Name’ has just been installed by '_[_example@email.com_](mailto:example@email.com%20)_' for the following client:_
 
-_Sandbox Estates \(SBOX\)  
-Third Floor, 67-74 Saffron Hill, London, EC1N 8QX, GB_
+_Sandbox Estates (SBOX)_\
+_Third Floor, 67-74 Saffron Hill, London, EC1N 8QX, GB_
 
 _A record of all installations can be viewed on your app in the Developers Portal under 'Installations'._
 
-_Best Regards,  
-****Reapit Team_
+_Best Regards,_\
+_****Reapit Team_
 
 ### **Webhook**
 
 If you have setup a webhook for 'Application Install', you will receive a payload with the following information:
 
-* The Name of the organisation \(customerName\)
-* The Customer ID of the organisation \(customerID\)
-* The Name of the application that has been installed \(applicationName\)
-* The Address of the organisation \(customerAddress\)
-* The Email Address of the user who installed your app \(customerEmail\)
+* The Name of the organisation (customerName)
+* The Customer ID of the organisation (customerID)
+* The Name of the application that has been installed (applicationName)
+* The Address of the organisation (customerAddress)
+* The Email Address of the user who installed your app (customerEmail)
 
 **Example payload:**
 
-![](.gitbook/assets/image%20%28102%29.png)
+![](<.gitbook/assets/image (102).png>)
 
 For more information on webhooks, please click [here](https://foundations-documentation.reapit.cloud/api/webhooks)
 
@@ -260,23 +261,23 @@ For more information on webhooks, please click [here](https://foundations-docume
 
 On your app listing in the Developer Portal and via ‘[Analytics](https://developers.reapit.cloud/analytics)’, you will see a full record of all installations. The table will contain the following information:
 
-* The Customer ID of the organisation \(Client\)
-* The Name of the organisation \(Company Name\)
-* The Address of the organisation \(Company Address\)
-* The date the installation occurred \(Date of Installation\)
-* The Email Address of the user who installed your app \(Installed By\) 
+* The Customer ID of the organisation (Client)
+* The Name of the organisation (Company Name)
+* The Address of the organisation (Company Address)
+* The date the installation occurred (Date of Installation)
+* The Email Address of the user who installed your app (Installed By)\
+
 
 **Example Installations table:**
 
-![](.gitbook/assets/image%20%28101%29.png)
+![](<.gitbook/assets/image (101).png>)
 
 ## AppMarket
 
-### Why is my app not showing in the AppMarket? 
+### Why is my app not showing in the AppMarket?&#x20;
 
-Before your app can be listed in the AppMarket, it first needs to be submitted for approval, please see more information on listing your app [here](listing-your-app.md). 
+Before your app can be listed in the AppMarket, it first needs to be submitted for approval, please see more information on listing your app [here](listing-your-app.md).&#x20;
 
-If your app has been approved and you have chosen to list it privately, ensure the Customer ID you have provided in the 'Private Apps' section is correct. For more information on obtaining a Customer ID, please click [here](faqs.md#how-do-i-find-a-customer-id). 
+If your app has been approved and you have chosen to list it privately, ensure the Customer ID you have provided in the 'Private Apps' section is correct. For more information on obtaining a Customer ID, please click [here](faqs.md#how-do-i-find-a-customer-id).&#x20;
 
-If your app is public and is not visible to some customers, it is because your app is using data webhooks. Apps/Integrations that's have data webhooks \(not including application install and application uninstall\) will not be visible to customers still on the Rackspace environment. For more information on webhooks, please click [here](api/webhooks.md). 
-
+If your app is public and is not visible to some customers, it is because your app is using data webhooks. Apps/Integrations that's have data webhooks (not including application install and application uninstall) will not be visible to customers still on the Rackspace environment. For more information on webhooks, please click [here](api/webhooks.md).&#x20;

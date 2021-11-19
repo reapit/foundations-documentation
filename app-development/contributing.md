@@ -14,13 +14,13 @@ At Reapit, we have made a company wide commitment to open sourcing as much sourc
 
 All our code is in a [mono-repo on Github](https://github.com/reapit/foundations), along with our project [Kanban board](https://github.com/reapit/foundations/projects) and an open [issues page.](https://github.com/reapit/foundations/issues) Most people will want to use this as a resource alongside their own project, as living code as documentation but if you do want to contribute to a project, fork and extend an app or fix a bug, we welcome pull requests from all.
 
-If you do want to work with the project, it is important to note there are certain configurations that are not committed to Github for security and environment reasons. Should you need to get access to a local configuration file, please contact us on the developer live chat in the Developer Portal &gt; Help section.
+If you do want to work with the project, it is important to note there are certain configurations that are not committed to Github for security and environment reasons. Should you need to get access to a local configuration file, please contact us on the developer live chat in the Developer Portal > Help section.
 
 ## Getting Started
 
 ### Pre-requisites
 
-To get started working with Foundations, you will first need to have [Git](https://git-scm.com/), [NodeJS](https://nodejs.org/en/) and [Yarn](https://yarnpkg.com/) installed globally on your local machine. Currently, we use `yarn@2.4.x` and `node@14.x.x` internally however, other versions may well work for you.
+To get started working with Foundations, you will first need to have [Git](https://git-scm.com), [NodeJS](https://nodejs.org/en/) and [Yarn](https://yarnpkg.com) installed globally on your local machine. Currently, we use `yarn@2.4.x` and `node@14.x.x` internally however, other versions may well work for you.
 
 For a clean build, then follow the steps below;
 
@@ -28,24 +28,24 @@ For a clean build, then follow the steps below;
 2. CD into the root of the project: `cd foundations`
 3. Install dependencies `yarn`
 4. Either: Obtain developer AWS Access Keys from a Reapit Admin and add to your bash profile as per instructions [here](https://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/loading-node-credentials-shared.html) then run `yarn conf-all` to pull in remote configs from AWS Parameter Store
-5. Or: rename `config.example.json` file \(where relevant\) for the package you are working on - see Environment and Config below for more details on this.
+5. Or: rename `config.example.json` file (where relevant) for the package you are working on - see Environment and Config below for more details on this.
 6. Add an NPM token scoped to at least private read to your bash / zsh profile in the format of `export NPMTOKEN="<<your_token>>"`. You can obtain one of these from any of the Reapit Platform Applications team.
 
 ### Environment & Config
 
-Each of our applications that has environment specific or non secret configuration \(API Endpoints, API keys, OAuth client ids, environment variables etc\), has a `config.json` at the root of the package folder. These files are stored in AWS Parameter Store and are are either pulled at compile time and set on the server by the CI for Node projects, or for client side applications, injected at runtime into a `window.reapit.config` object.
+Each of our applications that has environment specific or non secret configuration (API Endpoints, API keys, OAuth client ids, environment variables etc), has a `config.json` at the root of the package folder. These files are stored in AWS Parameter Store and are are either pulled at compile time and set on the server by the CI for Node projects, or for client side applications, injected at runtime into a `window.reapit.config` object.
 
-Any secret config \(that cannot be leaked publicly\), we set in Github's secrets manager so we can reference in the CI only.
+Any secret config (that cannot be leaked publicly), we set in Github's secrets manager so we can reference in the CI only.
 
 Internally we manage the non confidential config using our Config Manager [see here](https://github.com/reapit/foundations/tree/master/packages/config-manager) for info on how to do this yourself. If you are working internally on the project, you should follow these steps.
 
-An example of the base config file is at the root of each relevant project \(not all packages have a config\), and named as `config.example.json`. If you are trying to build the apps yourself, you can rename this, place in the root directory, and add a values as required.
+An example of the base config file is at the root of each relevant project (not all packages have a config), and named as `config.example.json`. If you are trying to build the apps yourself, you can rename this, place in the root directory, and add a values as required.
 
-Typically you will need a `connectClientId`\(this is the client id, you can see in the app detail modal when you have submitted your app\), `connectOAuthUrl` and `connectUserPoolId` , as a minimum to make the app functional for development. These variables are used to populate the [Connect Session Module](connect-session.md) that we use to manage the OAuth Flow in [Reapit Connect](../api/reapit-connect.md).
+Typically you will need a `connectClientId`(this is the client id, you can see in the app detail modal when you have submitted your app), `connectOAuthUrl` and `connectUserPoolId` , as a minimum to make the app functional for development. These variables are used to populate the [Connect Session Module](connect-session.md) that we use to manage the OAuth Flow in [Reapit Connect](../api/reapit-connect.md).
 
 ### Working with the Mono Repo & Yarn Workspaces
 
-We use [Yarn 2.x \(Yarn Berry\), Workspaces](https://yarnpkg.com/cli/workspace) functionality to manage package and dependencies. If you are used to working with Yarn 1.x there are a number of fundamental differences to the API in v2. The main practical change is the way Yarn now moves all dependencies to the root node\_modules directory and loads them from a `.yarn/cache` directory at the root of the project.
+We use [Yarn 2.x (Yarn Berry), Workspaces](https://yarnpkg.com/cli/workspace) functionality to manage package and dependencies. If you are used to working with Yarn 1.x there are a number of fundamental differences to the API in v2. The main practical change is the way Yarn now moves all dependencies to the root node\_modules directory and loads them from a `.yarn/cache` directory at the root of the project.
 
 This caching ensures much faster local and CI builds as well as more deterministic behaviour and some useful new features like [Interactive Upgrading ](https://yarnpkg.com/cli/upgrade-interactive)and [Workspace Management tools](https://yarnpkg.com/cli/workspaces/foreach).
 
@@ -55,7 +55,7 @@ From the root of the project, you can run Workspace commands on individual packa
 
 `yarn workspace <<packagename>> run <<command_name>>`
 
-eg 
+eg&#x20;
 
 `yarn workspace developer-portal run start`
 
@@ -81,7 +81,7 @@ Given that you are in a package directory you can run the following commands:
 
 `yarn lint` will lint the project, typically using ESLint
 
-`yarn release` will release your app to a deployed environment in AWS, typically using [Serverless framework](https://www.serverless.com/) and by default to dev. If you want to deploy to production, add the `--stage prod` flag to this command.
+`yarn release` will release your app to a deployed environment in AWS, typically using [Serverless framework](https://www.serverless.com) and by default to dev. If you want to deploy to production, add the `--stage prod` flag to this command.
 
 `yarn publish` will publish the package to NPM, by default to the private registry unless the `--access public` flag is added.
 
@@ -95,7 +95,7 @@ You will notice there are no dependencies at the root of the workspace and that 
 
 Yarn will do the heavy lifting of resolving dependencies by package and we can use commands like `yarn dedupe` and `yarn upgrade-interactive` to keep things sane on a project wide basis.
 
-Furthermore because yarn 2 has no `node_modules/.bin` directory, any executable from the yarn cli MUST be in scope in the individual package eg `webpack` and `jest`. 
+Furthermore because yarn 2 has no `node_modules/.bin` directory, any executable from the yarn cli MUST be in scope in the individual package eg `webpack` and `jest`.&#x20;
 
 To keep some centralised configuration for our scripts we have a package `@reapit/ts-scripts` that exports our global WebPack and Jest configs. Each package then imports them individually and can add any "special sauce" as required. The same applies to `ts-config` files which again inherit from the base at the root of the project.
 
@@ -115,7 +115,7 @@ Raising an issue does not guarantee that we will work on it. In many cases we wi
 
 When raising an issue, you should add a project to the ticket, either[ Back End Backlog](https://github.com/reapit/foundations/projects/6) or [Front End Kanban](https://github.com/reapit/foundations/projects/1). This will alert one of our Product Owners that the issue requires investigation and they will move it into one of our development streams if it is accepted and ranked by priority.
 
-See the dedicated [Development Requests ](../dev-requests.md)in these docs for more information on our product processes. 
+See the dedicated [Development Requests ](../dev-requests.md)in these docs for more information on our product processes.&#x20;
 
 {% hint style="warning" %}
 Ensure a triage project is added to your issue to make sure we process it as quickly as possible
@@ -135,9 +135,9 @@ When working on the project, we ask that contributors follow a basic git flow, w
 
 ### Github Actions, Serverless, AWS & Releases
 
-All of our cloud infrastructure is in AWS. For releasing our code, we leverage [Serverless Framework](https://www.serverless.com/) where possible for it's convenience and clean, declarative code as infra approach. Under the hood it uses CloudFormation to spin up and tear down the infrastructure we need in AWS.
+All of our cloud infrastructure is in AWS. For releasing our code, we leverage [Serverless Framework](https://www.serverless.com) where possible for it's convenience and clean, declarative code as infra approach. Under the hood it uses CloudFormation to spin up and tear down the infrastructure we need in AWS.
 
-Anyone not familiar with Serverless and AWS Services should do some reading at this stage but the infra we use is declared for each project in a `serverless.yml` file at the root of each package. This is where you will add and remove required resources as required. 
+Anyone not familiar with Serverless and AWS Services should do some reading at this stage but the infra we use is declared for each project in a `serverless.yml` file at the root of each package. This is where you will add and remove required resources as required.&#x20;
 
 For web applications, this typically means an S3 bucket with Cloudfront CDN on the front end and a DNS record in Route53. For Node services, typically we use Lambda, S3, DynamoDB, Cloudwatch and API Gateway. A basic template for deploying the various flavours of application is included in the apps generated by our app scaffolder.
 
@@ -150,7 +150,7 @@ The basic flow for all projects is that;
 * **Build PR:** Build task runs to ensure the branch is sound.
 * **Test PR:** Test, and lint tasks run to verify a PR. Runs in parallel with Build PR.
 * **Release Dev:** Triggered on the successful merge of a PR, builds the project and releases to the relevant dev environment.
-* **Release Prod:** Triggered by tagging a release in Github, ****again, test, build and lint tasks run and the `release-prod` task runs to deploy the relevant tagged project. The release tag should be raised [here](https://github.com/reapit/foundations/releases) and be in the format `<<package>>_v<<version-number>>` to trigger the production workflow.  Will release a single package to production and if relevant, publish to NPM&gt;
+* **Release Prod: **Triggered by tagging a release in Github,** **again, test, build and lint tasks run and the `release-prod` task runs to deploy the relevant tagged project. The release tag should be raised [here](https://github.com/reapit/foundations/releases) and be in the format `<<package>>_v<<version-number>>` to trigger the production workflow.  Will release a single package to production and if relevant, publish to NPM>
 
 ### Definition of Done
 
@@ -168,7 +168,7 @@ As per the previous sections, all work on the project is performed against the s
 
 ### Linting & Formatting
 
-The vast majority of base code style is enforced by [ESLint](https://eslint.org/) with sensible community presets from [TSLint](https://palantir.github.io/tslint/) rules, and [Prettier](https://prettier.io/). The linter runs in a pre-commit hook on staged files with an auto-fix flag set to address any trivial issues.
+The vast majority of base code style is enforced by [ESLint](https://eslint.org) with sensible community presets from [TSLint](https://palantir.github.io/tslint/) rules, and [Prettier](https://prettier.io). The linter runs in a pre-commit hook on staged files with an auto-fix flag set to address any trivial issues.
 
 If you want to run the lint command manually, you can do this from the root of the project by executing `yarn lint-all.`
 
@@ -176,7 +176,7 @@ In addition to the lint rules, please also where possible, stick to the contribu
 
 ### Code Guidelines
 
-* The codebase is almost exclusively written in [TypeScript](https://www.typescriptlang.org/), with the exception of some node scripts that handle deployment and tooling. This decision was taken because of the level of robustness and scalability of the language over vanilla JS and we ask that contributors favour TypeScript where possible for future development.
+* The codebase is almost exclusively written in [TypeScript](https://www.typescriptlang.org), with the exception of some node scripts that handle deployment and tooling. This decision was taken because of the level of robustness and scalability of the language over vanilla JS and we ask that contributors favour TypeScript where possible for future development.
 * Code should be functional in style rather than Object Orientated or Imperative unless there are no clean alternatives.
   * Use pure functions where possible to make them testable and modular.
   * Avoid mutating variables and the `let` keyword.
@@ -190,10 +190,10 @@ In addition to the lint rules, please also where possible, stick to the contribu
 * Use Redux connect for nested components for better performance and reduced re-rendering over `prop drilling`. Use `React.memo` for the same reason and selectors if appropriate.
 * Type-safe everything! Use `any` and `unknown` types only when there is no alternative - try to avoid `implicit any` - types should be documentation as code for the project. We can relax this as a convenience in test scripts.
 * Where possible use auto generated types from Swagger documentation or GraphQL definitions to ensure shared contracts with front and back end. These auto-generated types live in the main types folder.
-* Styled Components or CSS / Sass Modules are used for styling in all cases where a third party library \(eg Bulma\) is not used.
+* Styled Components or CSS / Sass Modules are used for styling in all cases where a third party library (eg Bulma) is not used.
 * Styled Components & CSS / Sass Modules where they are generic should be kept out of the main components folder - they should live in the main styles folder to reduce duplication.
 * The styles project should make extensive use of variables and mix-ins for things like colours, layouts, font sizes, line heights and so on. This ensures re-usablility and maintainability.
-* Where possible, use `rems or ems`  over `px` as a unit for layout.
+* Where possible, use `rems or ems ` over `px` as a unit for layout.
 * Maintain where it makes sense to do so the separation of concerns laid out in the initial scaffold seen in the [React App Boilerplate](https://github.com/reapit/react-app) here. There are many TS projects in the company and they should all follow a broadly familiar structure and architecture.
 * Make extensive use of the constants files for significant strings and other re-usable constant variables used in the app.
 * When adding third party libraries to the project consider carefully the following;
@@ -207,7 +207,7 @@ In addition to the lint rules, please also where possible, stick to the contribu
   * All React templates have at least a snapshot, and any calls to action are tested to call their handlers with correct params.
   * Redux actions, reducers and sagas have test coverage for all cases.
   * Styled components do not require tests unless necessary, likewise constants and build scripts.
-  * Tests should live in the same folder as their source in a `__tests__` folder. 
+  * Tests should live in the same folder as their source in a `__tests__` folder.&#x20;
   * Mocks and stubs should also follow the same `__mocks__` & `__stubs__` pattern.
 * For e2e tests, the expectation is;
   * Happy path user journeys are all tested through the app.
@@ -219,7 +219,7 @@ In addition to the lint rules, please also where possible, stick to the contribu
 
 ### Styling
 
-We support two styling methods across our projects; [SASS with CSS Modules](https://sass-lang.com/) and [Linaria](https://github.com/callstack/linaria) \(CSS in JS\). For new projects we favour Linaria and are aiming to eventually deprecate / refactor our SASS from our projects.
+We support two styling methods across our projects; [SASS with CSS Modules](https://sass-lang.com) and [Linaria](https://github.com/callstack/linaria) (CSS in JS). For new projects we favour Linaria and are aiming to eventually deprecate / refactor our SASS from our projects.
 
 By convention, we store any Linaria components that are specific to an individual component in a sub folder of that component called `__styles__` however, if a style is re-usable, generic or global to the project, please use the `src/styles` directory to reduce duplication.
 
@@ -231,7 +231,7 @@ Our overriding aim is to write as little CSS as possible and focus on re-usable 
 
 Our code has a lot of automated testing, mostly unit tests, although we have some E2E tests and this is something we will be expanding going forward. In the previous section you saw the commands exported from each of the projects to run the test suites so this section deals with some basic conventions for working with tests on the codebase.
 
-We use [Jest](https://jestjs.io/) for our unit testing, with [Enzyme](https://airbnb.io/enzyme/) for rendering React components where relevant. If you are not familiar with these libraries, we would urge you to do some reading before getting started. Our goal is that each of our packages, where relevant, should have ~90% coverage of functions and lines. Whilst this target is an arbitrary value, the desired outcome is a high level of confidence in our CI / CD pipeline which means we can deploy straight to development and daily to production.
+We use [Jest](https://jestjs.io) for our unit testing, with [Enzyme](https://airbnb.io/enzyme/) for rendering React components where relevant. If you are not familiar with these libraries, we would urge you to do some reading before getting started. Our goal is that each of our packages, where relevant, should have \~90% coverage of functions and lines. Whilst this target is an arbitrary value, the desired outcome is a high level of confidence in our CI / CD pipeline which means we can deploy straight to development and daily to production.
 
 By convention, we keep our test scripts in a sub folder of the source code called `__tests__` with the same file name. Where we use mocks and stubs, as with tests, they live in the same folder of the source code with the same file name and sub folder convention `__stubs__` and `__mocks__` .
 
@@ -242,4 +242,3 @@ End to end functional tests are all written using the excellent Cypress framewor
 Where relevant, files e2e test specs are placed in the `src/tests/cypress` folder of the package. We use the `Page Object Model` pattern, storing anything related to a specific page; selectors and actions, to make them more re-usable and modular.
 
 When raising a pull request, please ensure that existing tests are passing locally and that where relevant, new tests are added to maintain our overall coverage levels.
-

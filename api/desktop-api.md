@@ -7,28 +7,28 @@ description: >-
 # Desktop API
 
 {% hint style="info" %}
-To obtain a copy of Reapit's AgencyCloud CRM \(Developer Edition\), please visit the '[Desktop](https://marketplace.reapit.cloud/developer/desktop)' page within the Developers Portal. NOTE Reapit does not provide technical support for Developer Edition.
+To obtain a copy of Reapit's AgencyCloud CRM (Developer Edition), please visit the '[Desktop](https://marketplace.reapit.cloud/developer/desktop)' page within the Developers Portal. NOTE Reapit does not provide technical support for Developer Edition.
 {% endhint %}
 
 {% hint style="warning" %}
-During the Beta period certain elements of AgencyCloud may not function end-to-end with a web application.  For example, pictures or documents added to Agency Cloud via the desktop will not be available via the platform. 
+During the Beta period certain elements of AgencyCloud may not function end-to-end with a web application.  For example, pictures or documents added to Agency Cloud via the desktop will not be available via the platform.&#x20;
 {% endhint %}
 
 ### Overview
 
 Applications that are built on our Foundations Platform are able to communicate with Reapit's AgencyCloud CRM system. Using a well-defined API, you are able to trigger a wide variety of actions in our award-winning desktop application to augment your own applications and build a rich integration between systems.
 
-_Note_ - apps cannot rely on cookies/local storage being available between separate instances of AgencyCloud.  Therefore any data which will need to be shared between separate sessions will need to be handled outside of these methods.
+_Note _- apps cannot rely on cookies/local storage being available between separate instances of AgencyCloud.  Therefore any data which will need to be shared between separate sessions will need to be handled outside of these methods.
 
 ### Debugging your App
 
-When you are testing your app inside of AgencyCloud Developer Edition then there is a button top left of the app window which will allow launching of the Chromium Developer Tools in a separate window.  
+When you are testing your app inside of AgencyCloud Developer Edition then there is a button top left of the app window which will allow launching of the Chromium Developer Tools in a separate window. &#x20;
 
-![Remote debugging button on the app ribbon bar](../.gitbook/assets/image%20%2851%29.png)
+![Remote debugging button on the app ribbon bar](<../.gitbook/assets/image (51).png>)
 
 Clicking this button will launch a separate window which hosts the developer tools:
 
-![Remote debugging via the developer tools window](../.gitbook/assets/image%20%2852%29.png)
+![Remote debugging via the developer tools window](<../.gitbook/assets/image (52).png>)
 
 ### URL Scheme
 
@@ -44,7 +44,7 @@ Links are structured in a REST style to provide a well-defined and descriptive m
 
 Opens the property edit screen for the property with specified id
 
-```text
+```
 agencycloud://properties/{id}
 ```
 
@@ -52,7 +52,7 @@ agencycloud://properties/{id}
 
 Performs a property to applicant match for the applicant with specified id
 
-```text
+```
 agencycloud://properties/{id}/match
 ```
 
@@ -60,7 +60,7 @@ agencycloud://properties/{id}/match
 
 Opens the journal screen for the specified property
 
-```text
+```
 agencycloud://properties/{id}/journal
 ```
 
@@ -68,7 +68,7 @@ agencycloud://properties/{id}/journal
 
 Opens the offers screen for the specified property
 
-```text
+```
 agencycloud://properties/{id}/offers
 ```
 
@@ -76,66 +76,18 @@ agencycloud://properties/{id}/offers
 
 Opens advanced search screen in property mode and runs a search with provided parameters. At least one parameter is required.
 
-```text
+```
 agencycloud://properties?address=MK43&mode=s
 ```
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">Parameter</th>
-      <th style="text-align:left">Type</th>
-      <th style="text-align:left">Description</th>
-      <th style="text-align:left">Required</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">name</td>
-      <td style="text-align:left">string</td>
-      <td style="text-align:left">A full or partial name fragment to search for</td>
-      <td style="text-align:left">No</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">address</td>
-      <td style="text-align:left">string</td>
-      <td style="text-align:left">An address fragment to search for (eg. a postcode)</td>
-      <td style="text-align:left">No</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">communication</td>
-      <td style="text-align:left">string</td>
-      <td style="text-align:left">An email address or phone number to search for</td>
-      <td style="text-align:left">No</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">mode</td>
-      <td style="text-align:left">string</td>
-      <td style="text-align:left">
-        <p>The marketing mode of the properties to search for:</p>
-        <ul>
-          <li>s or sales</li>
-          <li>l or lettings</li>
-        </ul>
-      </td>
-      <td style="text-align:left">Yes</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">appId</td>
-      <td style="text-align:left">string</td>
-      <td style="text-align:left">The GUID of the app to return the code of the selected property to (if
-        not present then search will not return to an app)</td>
-      <td style="text-align:left">No</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">appParam</td>
-      <td style="text-align:left">string</td>
-      <td style="text-align:left">The key to use in the query string when returning the property primary
-        key to an app (required if appId is set)</td>
-      <td style="text-align:left">No</td>
-    </tr>
-  </tbody>
-</table>
+| Parameter     | Type   | Description                                                                                                               | Required |
+| ------------- | ------ | ------------------------------------------------------------------------------------------------------------------------- | -------- |
+| name          | string | A full or partial name fragment to search for                                                                             | No       |
+| address       | string | An address fragment to search for (eg. a postcode)                                                                        | No       |
+| communication | string | An email address or phone number to search for                                                                            | No       |
+| mode          | string | <p>The marketing mode of the properties to search for:</p><ul><li>s or sales</li><li>l or lettings</li></ul>              | Yes      |
+| appId         | string | The GUID of the app to return the code of the selected property to (if not present then search will not return to an app) | No       |
+| appParam      | string | The key to use in the query string when returning the property primary key to an app (required if appId is set)           | No       |
 
 ## Applicants
 
@@ -143,7 +95,7 @@ agencycloud://properties?address=MK43&mode=s
 
 Opens the applicant edit screen for the applicant with specified id
 
-```text
+```
 agencycloud://applicants/{id}
 ```
 
@@ -151,7 +103,7 @@ agencycloud://applicants/{id}
 
 Performs a applicant to applicant match for the applicant with specified id
 
-```text
+```
 agencycloud://applicants/{id}/match
 ```
 
@@ -159,7 +111,7 @@ agencycloud://applicants/{id}/match
 
 Opens the journal screen for the specified applicant
 
-```text
+```
 agencycloud://applicants/{id}/journal
 ```
 
@@ -167,66 +119,18 @@ agencycloud://applicants/{id}/journal
 
 Opens advanced search screen in applicant mode and runs a search with provided parameters. At least one parameter is required.
 
-```text
+```
 agencycloud://applicants?name=smith&mode=lettings
 ```
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">Parameter</th>
-      <th style="text-align:left">Type</th>
-      <th style="text-align:left">Description</th>
-      <th style="text-align:left">Required</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">name</td>
-      <td style="text-align:left">string</td>
-      <td style="text-align:left">A full or partial name fragment to search for</td>
-      <td style="text-align:left">No</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">address</td>
-      <td style="text-align:left">string</td>
-      <td style="text-align:left">An address fragment to search for (eg. a postcode)</td>
-      <td style="text-align:left">No</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">communication</td>
-      <td style="text-align:left">string</td>
-      <td style="text-align:left">An email address or phone number to search for</td>
-      <td style="text-align:left">No</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">mode</td>
-      <td style="text-align:left">string</td>
-      <td style="text-align:left">
-        <p>The marketing mode of the properties to search for:</p>
-        <ul>
-          <li>s or sales</li>
-          <li>l or lettings</li>
-        </ul>
-      </td>
-      <td style="text-align:left">Yes</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">appId</td>
-      <td style="text-align:left">string</td>
-      <td style="text-align:left">The GUID of the app to return the code of the selected property to (if
-        not present then search will not return to an app)</td>
-      <td style="text-align:left">No</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">appParam</td>
-      <td style="text-align:left">string</td>
-      <td style="text-align:left">The key to use in the query string when returning the property primary
-        key to an app (required if appId is set)</td>
-      <td style="text-align:left">No</td>
-    </tr>
-  </tbody>
-</table>
+| Parameter     | Type   | Description                                                                                                               | Required |
+| ------------- | ------ | ------------------------------------------------------------------------------------------------------------------------- | -------- |
+| name          | string | A full or partial name fragment to search for                                                                             | No       |
+| address       | string | An address fragment to search for (eg. a postcode)                                                                        | No       |
+| communication | string | An email address or phone number to search for                                                                            | No       |
+| mode          | string | <p>The marketing mode of the properties to search for:</p><ul><li>s or sales</li><li>l or lettings</li></ul>              | Yes      |
+| appId         | string | The GUID of the app to return the code of the selected property to (if not present then search will not return to an app) | No       |
+| appParam      | string | The key to use in the query string when returning the property primary key to an app (required if appId is set)           | No       |
 
 ## Appointments
 
@@ -236,14 +140,14 @@ Opens the diary screen to provide a calendar view of appointments for the given 
 
 Note: the dates must be in the format _yyyy-MM-dd_ to be parsed correctly.
 
-```text
+```
 agencycloud://appointments?dateFrom=2019-12-25&dateTo=2019-12-26
 ```
 
-| Parameter | Type | Description | Required |
-| :--- | :--- | :--- | :--- |
-| dateFrom | date | Only display appointments scheduled after and including this date \(i.e. inclusive\) | No |
-| dateTo | date | Only display appointments scheduled before this date \(i.e. exclusive\) | No |
+| Parameter | Type | Description                                                                        | Required |
+| --------- | ---- | ---------------------------------------------------------------------------------- | -------- |
+| dateFrom  | date | Only display appointments scheduled after and including this date (i.e. inclusive) | No       |
+| dateTo    | date | Only display appointments scheduled before this date (i.e. exclusive)              | No       |
 
 ## Contacts
 
@@ -251,23 +155,23 @@ agencycloud://appointments?dateFrom=2019-12-25&dateTo=2019-12-26
 
 Opens advanced search screen in contact mode and runs a search with provided parameters. At least one parameter is required.
 
-```text
+```
 agencycloud://contacts?name=smith
 ```
 
-| Parameter | Type | Description | Required |
-| :--- | :--- | :--- | :--- |
-| name | string | A full or partial name fragment to search for | No |
-| address | string | An address fragment to search for \(eg. a postcode\) | No |
-| communication | string | An email address or phone number to search for | No |
-| appId | string | The GUID of the app to return the code of the selected contact to \(if not present then search will not return to an app\) | No |
-| appParam | string | The key to use in the query string when returning the contact primary key to an app \(required if appId is set\) | No |
+| Parameter     | Type   | Description                                                                                                              | Required |
+| ------------- | ------ | ------------------------------------------------------------------------------------------------------------------------ | -------- |
+| name          | string | A full or partial name fragment to search for                                                                            | No       |
+| address       | string | An address fragment to search for (eg. a postcode)                                                                       | No       |
+| communication | string | An email address or phone number to search for                                                                           | No       |
+| appId         | string | The GUID of the app to return the code of the selected contact to (if not present then search will not return to an app) | No       |
+| appParam      | string | The key to use in the query string when returning the contact primary key to an app (required if appId is set)           | No       |
 
 ### Load Contact
 
 Opens the contact edit screen for the contact with specified id
 
-```text
+```
 agencycloud://contacts/{id}
 ```
 
@@ -275,7 +179,7 @@ agencycloud://contacts/{id}
 
 Opens the journal screen for the specified contact
 
-```text
+```
 agencycloud://contacts/{id}/journal
 ```
 
@@ -290,7 +194,7 @@ From version 12.122.0 there will also be a resource called **process** which wil
 
 This will allow you to launch a webpage in the local default browser.  An example would be:
 
-```text
+```
 agencycloud://process/webpage?url=https://www.reapit.com
 ```
 
@@ -300,11 +204,11 @@ This will launch the https://www.reapit.com site in the default browser.  Note: 
 
 This will allow you to launch the users default e-mail client and send to an address.  An example would be:
 
-```text
+```
 agencycloud://process/email?address=help@reapit.com
 ```
 
-This will create a new e-mail in the users default mail client.  It will do this by taking the value of the address parameter, prefixing it with _mailto:_ and then starting a process with that argument.
+This will create a new e-mail in the users default mail client.  It will do this by taking the value of the address parameter, prefixing it with _mailto: _and then starting a process with that argument.
 
 ## AgencyCloud Interaction API
 
@@ -329,7 +233,7 @@ There are currently seven supported application desktop types which are based on
 * ID Check
 * Property Marketing Information
 * Vendor Marketing Report
-* Property Detail Generation \(print wizard\)
+* Property Detail Generation (print wizard)
 * Applicant Export
 
 From version 12.118.0 the following will also be available:
@@ -344,9 +248,9 @@ From version 12.118.0 the following will also be available:
 
 From version 12.130.1 the following will also be available:
 
-* Outbound - Email 
+* Outbound - Email&#x20;
 * Outbound - Landline
-* Outbound - Mobile 
+* Outbound - Mobile&#x20;
 
 ## Types
 
@@ -354,61 +258,61 @@ From version 12.130.1 the following will also be available:
 
 The type of _Property_ will be given to an application that can be launched for a specific property from AgencyCloud. The globals dictionary will contain the below key when launched by AgencyCloud for a specific property:
 
-```text
+```
 { "prpCode": "ABC200123" }
 ```
 
-| Parameter | Type | Description | Required |
-| :--- | :--- | :--- | :--- |
-| prpCode | string | The primary key of the property to load the application for \(note that this won’t be present when the app loads from the AppMarket, but the app needs to be able to accept this parameter when it is launched via the desktop type route\). | Yes |
+| Parameter | Type   | Description                                                                                                                                                                                                                                | Required |
+| --------- | ------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------- |
+| prpCode   | string | The primary key of the property to load the application for (note that this won’t be present when the app loads from the AppMarket, but the app needs to be able to accept this parameter when it is launched via the desktop type route). | Yes      |
 
 When an app with a type of Property is installed then an Apps menu will appear on the Property screen.  Clicking on an app will launch it with the property code.
 
-![Property apps launch point](../.gitbook/assets/image%20%2812%29%20%281%29.png)
+![Property apps launch point](<../.gitbook/assets/image (12) (1).png>)
 
 ### Applicant
 
 The type of _Applicant_ will be given to an application that can be launched for a specific applicant from AgencyCloud. The globals dictionary will contain the below key when launched by AgencyCloud for a specific property:
 
-```text
+```
 { "appCode": "ABC200123" }
 ```
 
-| Parameter | Type | Description | Required |
-| :--- | :--- | :--- | :--- |
-| appCode | string | The primary key of the applicant to load the application for \(note that this won’t be present when the app loads from the AppMarket, but the app needs to be able to accept this parameter when it is launched via the desktop type route\). | Yes |
+| Parameter | Type   | Description                                                                                                                                                                                                                                 | Required |
+| --------- | ------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------- |
+| appCode   | string | The primary key of the applicant to load the application for (note that this won’t be present when the app loads from the AppMarket, but the app needs to be able to accept this parameter when it is launched via the desktop type route). | Yes      |
 
 When an app with a type of Applicant is installed then an Apps menu will appear on the Applicant screen.  Clicking on an app will launch it with the applicant code.
 
-![Applicant apps launch point](../.gitbook/assets/image%20%286%29.png)
+![Applicant apps launch point](<../.gitbook/assets/image (6).png>)
 
 ### Id Check
 
 The type of _ID Check_ will be given to an application that can be used to replace the ID Check screen in AgencyCloud. The globals dictionary will contain the below key when launched by AgencyCloud for a specific contact:
 
-```text
+```
 { "cntCode": "ABC20012345" }
 ```
 
-| Parameter | Type | Description | Required |
-| :--- | :--- | :--- | :--- |
-| cntCode | string | The primary key of the contact to load the ID checks for \(note that this won’t be present when the app loads from the AppMarket, but the app needs to be able to accept this parameter when it is launched via the desktop type route\). | Yes |
+| Parameter | Type   | Description                                                                                                                                                                                                                             | Required |
+| --------- | ------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------- |
+| cntCode   | string | The primary key of the contact to load the ID checks for (note that this won’t be present when the app loads from the AppMarket, but the app needs to be able to accept this parameter when it is launched via the desktop type route). | Yes      |
 
-This desktop type will take affect in AgencyCloud when the following button is clicked \(this will be seen on various screens, for example contact and applicant\).
+This desktop type will take affect in AgencyCloud when the following button is clicked (this will be seen on various screens, for example contact and applicant).
 
-![Id Check button in AgencyCloud](../.gitbook/assets/image%20%285%29.png)
+![Id Check button in AgencyCloud](<../.gitbook/assets/image (5).png>)
 
 ### Property Marketing Information
 
 The type of _Property Marketing Information_ can be given to an application that can replace the standard property marketing screen in AgencyCloud. This is the most commonly customised screen in AgencyCloud as it allows clients the opportunity to store bespoke information for their business.  The globals dictionary will contain the below key when launched by AgencyCloud for a specific property:
 
-```text
+```
 { "prpCode": "ABC201023" }
 ```
 
-| Parameter | Type | Description | Required |
-| :--- | :--- | :--- | :--- |
-| prpCode | string | The primary key of the property to load the marketing information app for \(note that this won’t be present when the app loads from the AppMarket, but the app needs to be able to accept this parameter when it is launched via the app association route\). | Yes |
+| Parameter | Type   | Description                                                                                                                                                                                                                                                 | Required |
+| --------- | ------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------- |
+| prpCode   | string | The primary key of the property to load the marketing information app for (note that this won’t be present when the app loads from the AppMarket, but the app needs to be able to accept this parameter when it is launched via the app association route). | Yes      |
 
 An application of this type can be launched from the Marketing button on the property screen in AgencyCloud:
 
@@ -418,168 +322,166 @@ An application of this type can be launched from the Marketing button on the pro
 
 The type of _Vendor Marketing Report_ can be given to an application that can produce a customised Vendor Marketing Report. This is also one of the most commonly customised areas of AgencyCloud as different agents have different requirements for how their vendor marketing reports should look.  The globals dictionary will contain the below key when launched by AgencyCloud for a specific property:
 
-```text
+```
 { "prpCode": "ABC201023" }
 ```
 
-| Parameter | Type | Description | Required |
-| :--- | :--- | :--- | :--- |
-| prpCode | string | The primary key of the property to generate the report for \(note that this won’t be present when the app loads from the AppMarket, but the app needs to be able to accept this parameter when it is launched via the app association route\). | Yes |
+| Parameter | Type   | Description                                                                                                                                                                                                                                  | Required |
+| --------- | ------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------- |
+| prpCode   | string | The primary key of the property to generate the report for (note that this won’t be present when the app loads from the AppMarket, but the app needs to be able to accept this parameter when it is launched via the app association route). | Yes      |
 
-An application of this type can be launched from the Applicant Interest and Reports screen in AgencyCloud \(launched from the Property Journal window\):
+An application of this type can be launched from the Applicant Interest and Reports screen in AgencyCloud (launched from the Property Journal window):
 
-![Vendor Marketing App launch point](../.gitbook/assets/image%20%2817%29.png)
+![Vendor Marketing App launch point](<../.gitbook/assets/image (17).png>)
 
 ### Property Detail Generation
 
 The type of _Property Detail Generation_ can be given to an application that can replace the standard details template generation and brochure ordering process. This application could allow selection of a template as defined in the application – selection of pictures to include, what paper size to print the brochures on etc.  The globals dictionary will contain the below key when launched by AgencyCloud for a specific property:
 
-```text
+```
 { "prpCode": "ABC201023" }
 ```
 
-| Parameter | Type | Description | Required |
-| :--- | :--- | :--- | :--- |
-| prpCode | string | The primary key of the property to load generate the brochures for \(note that this won’t be present when the app loads from the AppMarket, but the app needs to be able to accept this parameter when it is launched via the app association route\). | Yes |
+| Parameter | Type   | Description                                                                                                                                                                                                                                          | Required |
+| --------- | ------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------- |
+| prpCode   | string | The primary key of the property to load generate the brochures for (note that this won’t be present when the app loads from the AppMarket, but the app needs to be able to accept this parameter when it is launched via the app association route). | Yes      |
 
 An application of this type can be launched from the Property Details screen in AgencyCloud:
 
-![Details generator app launch point ](../.gitbook/assets/image%20%2814%29%20%281%29.png)
+![Details generator app launch point ](<../.gitbook/assets/image (14) (1).png>)
 
 ### Applicant Export
 
 The category of _Applicant Export_ would enable an application to be used to export the details of an applicant to a separate system.  The globals dictionary will contain the below key when launched by AgencyCloud for a specific property:
 
-```text
+```
 { "appCode": "ABC201023" }
 ```
 
-| Parameter | Type | Description | Required |
-| :--- | :--- | :--- | :--- |
-| appCode | string | The primary key of the applicant to export \(note that this won’t be present when the app loads from the AppMarket, but the app needs to be able to accept this parameter when it is launched via the app association route\). | Yes |
+| Parameter | Type   | Description                                                                                                                                                                                                                  | Required |
+| --------- | ------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------- |
+| appCode   | string | The primary key of the applicant to export (note that this won’t be present when the app loads from the AppMarket, but the app needs to be able to accept this parameter when it is launched via the app association route). | Yes      |
 
 An application of this type would be triggered in two ways from AgencyCloud:
 
 1. Upon first save of the applicant
 2. As an option when clicking Print on the applicant screen:
 
-![Applicant Export launch point](../.gitbook/assets/image%20%2826%29.png)
+![Applicant Export launch point](<../.gitbook/assets/image (26).png>)
 
 ### Landlord
 
 The type of _Landlord_ will be given to an application that can be launched for a specific landlord from AgencyCloud. The globals dictionary will contain the below key when launched by AgencyCloud for a specific landlord:
 
-```text
+```
 { "lldCode": "ABC200123" }
 ```
 
-| Parameter | Type | Description | Required |
-| :--- | :--- | :--- | :--- |
-| lldCode | string | The primary key of the landlord to load the application for \(note that this won’t be present when the app loads from the AppMarket, but the app needs to be able to accept this parameter when it is launched via the desktop type route\). | Yes |
+| Parameter | Type   | Description                                                                                                                                                                                                                                | Required |
+| --------- | ------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------- |
+| lldCode   | string | The primary key of the landlord to load the application for (note that this won’t be present when the app loads from the AppMarket, but the app needs to be able to accept this parameter when it is launched via the desktop type route). | Yes      |
 
 When an app with a type of Landlord is installed then an Apps menu will appear on the Landlord screen.  Clicking on an app will launch it with the landlord code.
 
-![Apps button on landlord screen \(when lettings accounts is turned off\)](../.gitbook/assets/image%20%2842%29.png)
+![Apps button on landlord screen (when lettings accounts is turned off)](<../.gitbook/assets/image (42).png>)
 
-![Apps button on landlord screen \(when lettings accounts is turned on\) ](../.gitbook/assets/image%20%2841%29.png)
+![Apps button on landlord screen (when lettings accounts is turned on) ](<../.gitbook/assets/image (41).png>)
 
 ### Contact
 
 The type of _Contact_ will be given to an application that can be launched for a specific contact from AgencyCloud. The globals dictionary will contain the below key when launched by AgencyCloud for a specific contact:
 
-```text
+```
 { "cntCode": "ABC20012345" }
 ```
 
-| Parameter | Type | Description | Required |
-| :--- | :--- | :--- | :--- |
-| cntCode | string | The primary key of the contact to load the application for \(note that this won’t be present when the app loads from the AppMarket, but the app needs to be able to accept this parameter when it is launched via the desktop type route\). | Yes |
+| Parameter | Type   | Description                                                                                                                                                                                                                               | Required |
+| --------- | ------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------- |
+| cntCode   | string | The primary key of the contact to load the application for (note that this won’t be present when the app loads from the AppMarket, but the app needs to be able to accept this parameter when it is launched via the desktop type route). | Yes      |
 
 When an app with a type of Contact is installed then an Apps menu will appear on the Contact screen.  Clicking on an app will launch it with the contact code.
 
-![Apps button on the contact screen](../.gitbook/assets/image%20%2829%29.png)
+![Apps button on the contact screen](<../.gitbook/assets/image (29).png>)
 
 ### Company
 
-The type of _Company_ will be given to an application that can be launched for a specific company from AgencyCloud. The globals dictionary will contain the below key when launched by AgencyCloud for a specific company:
+The type of _Company _will be given to an application that can be launched for a specific company from AgencyCloud. The globals dictionary will contain the below key when launched by AgencyCloud for a specific company:
 
-```text
+```
 { "cmpCode": "ABC20012345" }
 ```
 
-| Parameter | Type | Description | Required |
-| :--- | :--- | :--- | :--- |
-| cmpCode | string | The primary key of the company to load the application for \(note that this won’t be present when the app loads from the AppMarket, but the app needs to be able to accept this parameter when it is launched via the desktop type route\). | Yes |
+| Parameter | Type   | Description                                                                                                                                                                                                                               | Required |
+| --------- | ------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------- |
+| cmpCode   | string | The primary key of the company to load the application for (note that this won’t be present when the app loads from the AppMarket, but the app needs to be able to accept this parameter when it is launched via the desktop type route). | Yes      |
 
 When an app with a type of Company is installed then an Apps menu will appear on the Company screen.  Clicking on an app will launch it with the company code.
 
-![Apps button on the company screen](../.gitbook/assets/image%20%2845%29.png)
+![Apps button on the company screen](<../.gitbook/assets/image (45).png>)
 
 ### Tenancy
 
-The type of _Tenancy_ will be given to an application that can be launched for a specific tenancy from AgencyCloud. The globals dictionary will contain the below key when launched by AgencyCloud for a specific tenancy:
+The type of _Tenancy _will be given to an application that can be launched for a specific tenancy from AgencyCloud. The globals dictionary will contain the below key when launched by AgencyCloud for a specific tenancy:
 
-```text
+```
 { "tenCode": "ABC200123" }
 ```
 
-| Parameter | Type | Description | Required |
-| :--- | :--- | :--- | :--- |
-| tenCode | string | The primary key of the tenancy to load the application for \(note that this won’t be present when the app loads from the AppMarket, but the app needs to be able to accept this parameter when it is launched via the desktop type route\). | Yes |
+| Parameter | Type   | Description                                                                                                                                                                                                                               | Required |
+| --------- | ------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------- |
+| tenCode   | string | The primary key of the tenancy to load the application for (note that this won’t be present when the app loads from the AppMarket, but the app needs to be able to accept this parameter when it is launched via the desktop type route). | Yes      |
 
 When an app with a type of Tenancy is installed then an Apps menu will appear on the Tenancy screen.  Clicking on an app will launch it with the tenancy code.
 
-![Apps button on tenancy screen](../.gitbook/assets/image%20%2831%29.png)
+![Apps button on tenancy screen](<../.gitbook/assets/image (31).png>)
 
 ### Offer
 
 The type of _Offer_ will be given to an application that can be launched for a specific offer from AgencyCloud. The globals dictionary will contain the below key when launched by AgencyCloud for a specific offer:
 
-```text
+```
 { "offerCode": "ABC200123" }
 ```
 
-| Parameter | Type | Description | Required |
-| :--- | :--- | :--- | :--- |
-| offerCode | string | The primary key of the offer to load the application for \(note that this won’t be present when the app loads from the AppMarket, but the app needs to be able to accept this parameter when it is launched via the desktop type route\). | Yes |
+| Parameter | Type   | Description                                                                                                                                                                                                                             | Required |
+| --------- | ------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------- |
+| offerCode | string | The primary key of the offer to load the application for (note that this won’t be present when the app loads from the AppMarket, but the app needs to be able to accept this parameter when it is launched via the desktop type route). | Yes      |
 
 When an app with a type of Offer is installed then an Apps menu will appear on the Offer screen.  Clicking on an app will launch it with the code of the **selected** offer.
 
-![Apps button on the offer screen](../.gitbook/assets/image%20%2846%29.png)
+![Apps button on the offer screen](<../.gitbook/assets/image (46).png>)
 
 ### Sales Progression
 
-The type of _Sales Progression_ will be given to an application that can be launched in place of the standard Sales Progression screen in AgencyCloud.  The globals dictionary will contain the below key when launched by AgencyCloud for a specific property:
+The type of _Sales Progression _will be given to an application that can be launched in place of the standard Sales Progression screen in AgencyCloud.  The globals dictionary will contain the below key when launched by AgencyCloud for a specific property:
 
-```text
+```
 { "prpCode": "ABC201023" }
 ```
 
-| Parameter | Type | Description | Required |
-| :--- | :--- | :--- | :--- |
-| prpCode | string | The primary key of the property to load the sales progression information app for \(note that this won’t be present when the app loads from the AppMarket, but the app needs to be able to accept this parameter when it is launched via the app association route\). | Yes |
+| Parameter | Type   | Description                                                                                                                                                                                                                                                         | Required |
+| --------- | ------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------- |
+| prpCode   | string | The primary key of the property to load the sales progression information app for (note that this won’t be present when the app loads from the AppMarket, but the app needs to be able to accept this parameter when it is launched via the app association route). | Yes      |
 
-An application of this type can be launched from the _Sales Progression_ button on the offers screen in AgencyCloud:
+An application of this type can be launched from the _Sales Progression _button on the offers screen in AgencyCloud:
 
-![Sales progression button on the offers screen](../.gitbook/assets/image%20%2844%29.png)
+![Sales progression button on the offers screen](<../.gitbook/assets/image (44).png>)
 
 ### Chain Management
 
-The type of _Chain Management_ will be given to an application that can be launched in place of the standard Chain screen in AgencyCloud.  The globals dictionary will contain the below key when launched by AgencyCloud for a specific property:
+The type of _Chain Management _will be given to an application that can be launched in place of the standard Chain screen in AgencyCloud.  The globals dictionary will contain the below key when launched by AgencyCloud for a specific property:
 
-```text
+```
 { "prpCode": "ABC201023" }
 ```
 
-| Parameter | Type | Description | Required |
-| :--- | :--- | :--- | :--- |
-| prpCode | string | The primary key of the property to load the chain management information app for \(note that this won’t be present when the app loads from the AppMarket, but the app needs to be able to accept this parameter when it is launched via the app association route\). | Yes |
+| Parameter | Type   | Description                                                                                                                                                                                                                                                        | Required |
+| --------- | ------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------- |
+| prpCode   | string | The primary key of the property to load the chain management information app for (note that this won’t be present when the app loads from the AppMarket, but the app needs to be able to accept this parameter when it is launched via the app association route). | Yes      |
 
 An application of this type can be launched from the _Chain_ button on the offers screen in AgencyCloud:
 
-![Chain button on the offers screen](../.gitbook/assets/image%20%2830%29.png)
-
-
+![Chain button on the offers screen](<../.gitbook/assets/image (30).png>)
 
 
 

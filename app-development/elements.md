@@ -16,7 +16,9 @@ If you are starting a new project with Elements, use v3 for a better dev experie
 
 Documentation for this package has moved to the dedicated UI tab in the Reapit Developer Portal and at the public link below to the elements standalone site.
 
-{% embed url="https://elements.reapit.cloud/?path=/docs/" caption="Elements Storybook for React Users" %}
+{% embed url="https://elements.reapit.cloud/?path=/docs/" %}
+Elements Storybook for React Users
+{% endembed %}
 
 If you are looking for Elements v2 components, this has moved to it's own Storybook here:
 
@@ -44,9 +46,9 @@ Whilst no future development in terms of features will be added to v2, we will e
 
 The documentation in the v2 Storybook is limited so it is worth reading this guide before using the v2 library.
 
-The styles are based on the excellent [Bulma UI](https://bulma.io/) library to provide sensible base defaults for common patterns. Although the components themselves are based on React, the project exports a regular stylesheet you can import as normal and markup in your preferred templating language see "What if I don't use React" below.
+The styles are based on the excellent [Bulma UI](https://bulma.io) library to provide sensible base defaults for common patterns. Although the components themselves are based on React, the project exports a regular stylesheet you can import as normal and markup in your preferred templating language see "What if I don't use React" below.
 
-All of the Elements modules are rendered out using [React Storybook](https://storybook.js.org/) and hosted on a [standalone sit](https://elements.reapit.cloud)e. If you are not familiar with Storybook as a tool, it allows the developer to interact in live time with the pre-rendered components and their variants. You can adjust the code and see how they behave in live time, as well as providing copy-paste snippets to insert into your project.
+All of the Elements modules are rendered out using [React Storybook](https://storybook.js.org) and hosted on a [standalone sit](https://elements.reapit.cloud)e. If you are not familiar with Storybook as a tool, it allows the developer to interact in live time with the pre-rendered components and their variants. You can adjust the code and see how they behave in live time, as well as providing copy-paste snippets to insert into your project.
 
 To get started, in your terminal, execute;
 
@@ -119,7 +121,5 @@ As a non-React developer you should navigate to the Canvas, HTML tab in each Sto
 
 To use in your code, you would import the stylesheet as above, and simply apply the classes to your markup as displayed in the image above.
 
-You can also selectors in the [Bulma documentation](https://bulma.io/) in most cases. We have deliberately not diverted from Bulma's conventions where possible and where we have, we have tried to follow sensible naming conventions and predictable markup.
-
-
+You can also selectors in the [Bulma documentation](https://bulma.io) in most cases. We have deliberately not diverted from Bulma's conventions where possible and where we have, we have tried to follow sensible naming conventions and predictable markup.
 
