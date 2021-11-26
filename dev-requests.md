@@ -17,12 +17,12 @@ Issues relating to services within the [Foundations Mono Repo on Github ](https:
 *   Incoming issues that we identify as back-end engineering will be given the `back-end` label and assigned to the [Back end backlog](https://github.com/reapit/foundations/projects/6) public board to be reviewed.&#x20;
 
     Issues that we identity as front-end engineering with be given front-end label and assigned to the [Frontend Kanban](https://github.com/reapit/foundations/projects/1) public board to be reviewed.
-* New issues on the board are reviewed weekly as part of our refinement sessions. To ensure your issue can be progressed quickly, please provide as much relevant information as possible. Whilst your issue is being reviewed it will remain in the ‘[To Review](development-requests.md#columns-definitions)’ column.
+* New issues on the board are reviewed weekly as part of our refinement sessions. To ensure your issue can be progressed quickly, please provide as much relevant information as possible. Whilst your issue is being reviewed it will remain in the ‘[To Review](dev-requests.md#columns-definitions)’ column.
 * The team will discuss each issue and should we agree that development is warranted, we will commit to the work. However, if we need to gather more information or investigate, the relevant label will be added and if applicable, we will add a comment.
-* Depending on the nature of the request or bug, the issue will then enter a specific column. For more information on columns, please [click here](development-requests.md#columns-definitions).
-* When an issue is completed by the dev team, it will be moved to [QA](development-requests.md#columns-definitions) where it will be verified by a member of the dev or product team on our development environment and assuming this is successful, will be released straight to production.
-* Any issues failing QA will be moved back to [In Progress](development-requests.md#columns-definitions) to be fixed before any new issues are worked on.
-* Once verified by QA and the work has been completed, the issue will be closed and moved to ‘[Done/Closed](development-requests.md#columns-definitions)’
+* Depending on the nature of the request or bug, the issue will then enter a specific column. For more information on columns, please [click here](dev-requests.md#columns-definitions).
+* When an issue is completed by the dev team, it will be moved to [QA](dev-requests.md#columns-definitions) where it will be verified by a member of the dev or product team on our development environment and assuming this is successful, will be released straight to production.
+* Any issues failing QA will be moved back to [In Progress](dev-requests.md#columns-definitions) to be fixed before any new issues are worked on.
+* Once verified by QA and the work has been completed, the issue will be closed and moved to ‘[Done/Closed](dev-requests.md#columns-definitions)’
 
 ## **FAQ’s**&#x20;
 
@@ -40,7 +40,7 @@ We take great pride in ensuring our documentation is as comprehensive and detail
 
 ### **How long will it take for my issue to be reviewed?**&#x20;
 
-Your issue will be reviewed in a weekly refinement session and depending on the complexity or requirement, will be assigned to a specific project board. From there it will be prioritised, (if applicable) a specification and relevant label will be added. Once we have scoped out the work it will be moved to the relevant column. Please [click here](development-requests.md#columns-definitions) for more information on columns and labels.&#x20;
+Your issue will be reviewed in a weekly refinement session and depending on the complexity or requirement, will be assigned to a specific project board. From there it will be prioritised, (if applicable) a specification and relevant label will be added. Once we have scoped out the work it will be moved to the relevant column. Please [click here](dev-requests.md#columns-definitions) for more information on columns and labels.&#x20;
 
 ### **How long will it take for my issue to be completed?**
 
@@ -72,7 +72,7 @@ When the new Desktop Integration type is available, you can then raise a feature
 
 #### **AgencyCloud**
 
-Your issue relates to AgencyCloud (Desktop CRM) and therefore will require information, action or input outside of the Platform team, please see [#agencycloud](development-requests.md#agencycloud "mention")
+Your issue relates to AgencyCloud (Desktop CRM) and therefore will require information, action or input outside of the Platform team, please see [#agencycloud](dev-requests.md#agencycloud "mention")
 
 **Investigate**
 
