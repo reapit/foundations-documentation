@@ -62,7 +62,7 @@ If you have created the issue, you will automatically receive updates via email.
 
 Desktop Integration types (also known as AgencyCloud Integration Types) are specific to the Desktop API and require initial work from another department before it can be available via the Platform or in the Developer Edition.&#x20;
 
-The request for a new integration type **should not be **submitted via the Foundations GitHub repo but should be requested via the Reapit Service Desk by a Reapit Customer.&#x20;
+The request for a new integration type **should not be** submitted via the Foundations GitHub repo but should be requested via the Reapit Service Desk by a Reapit Customer.&#x20;
 
 When the new Desktop Integration type is available, you can then raise a feature request for this to be implemented into the Platform.&#x20;
 
@@ -76,11 +76,11 @@ Your issue relates to AgencyCloud (Desktop CRM) and therefore will require infor
 
 **Investigate**
 
-We need to research or gather more information relating to your request.** **
+We need to research or gather more information relating to your request. ****&#x20;
 
 **Product Decision**
 
-The nature of your request requires product direction.** **
+The nature of your request requires product direction. ****&#x20;
 
 **Too Big**
 
@@ -88,7 +88,7 @@ The feature request is too large to be handled in a single issue and requires th
 
 &#x20;
 
-### **Columns Definitions **
+### **Columns Definitions**&#x20;
 
 **To Review**
 
@@ -98,7 +98,7 @@ All issues raised will be automatically added ‘To Review’. If the nature of 
 
 If an issue needs technical investigation, more information is required, a product decision is needed or the issue is deemed too large, it will be moved to ‘Not Ready’. We will update the issue with the relevant label and comment if required.&#x20;
 
-**Near term – 1 – 4 months**
+**Near term (1 – 4 months)**
 
 If we identify an issue as short-term goal, we'll assess the effort required and outline a technical specification - please take the time to review this detail. **When we're ready to schedule the issue, it will be assigned to the relevant board where you can continue to track its progress to completion.**&#x20;
 
