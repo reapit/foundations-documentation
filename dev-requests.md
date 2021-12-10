@@ -102,7 +102,7 @@ If an issue needs technical investigation, more information is required, a produ
 
 If we identify an issue as short-term goal, we'll assess the effort required and outline a technical specification - please take the time to review this detail. **When we're ready to schedule the issue, it will be assigned to the relevant board where you can continue to track its progress to completion.**&#x20;
 
-**Mid Term (5 – 9 months)**&#x20;
+**Mid Term (5 – 8 months)**&#x20;
 
 If we identify an issue as mid-term goal, we'll assess the effort required and may outline a technical specification. **When we're ready to schedule the issue, it will be moved to the ‘Near Term’ column.**&#x20;
 
