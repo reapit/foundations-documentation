@@ -36,6 +36,18 @@ Please [click here](broken-reference) for details on our development processes.
 
 You can invite members to collaboratively work within the same Developer Portal organisation from the '[Organisations](https://developers.reapit.cloud/settings/organisation)' page using the 'Invite Member' option.
 
+### **Notification Email**
+
+The email address you entered when registering for the Developer Portal, is used by default to receive email notifications,. For example, when your app is installed from the AppMarket, you will receive an email with the details (see more information [here](https://foundations-documentation.reapit.cloud/faqs#installation))
+
+As you cannot change the email address that registered your organisation, we have now provided the ability to supply an alternative ‘Notifications Email’.
+
+![](<.gitbook/assets/image (107).png>)
+
+If you want to setup an alternative email address, simply go to ‘[Organisation](https://developers.reapit.cloud/settings/organisation)’ page.&#x20;
+
+**Please note:** Only an Admin will have the correct permissions to update this information.
+
 **Testing**
 -----------
 

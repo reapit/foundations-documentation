@@ -24,7 +24,31 @@ Ticking the ‘Submit for Approval’ check box on your app listing, will let us
 
 ![](.gitbook/assets/screenshot-2021-03-31-at-12.25.20.png)
 
-Depending on your app listing or integration and its complexity, the review process from start to finish can typically take between 2-7 weeks. Please allow plenty of time as we often have a backlog of apps and integrations to review.
+&#x20;
+
+Depending on your app or integration and its complexity, the review process from start to finish can typically take between 2-7 weeks. However, there are circumstances in which this may not apply.
+
+To make it easier to understand, we have put together the following as a guide:
+
+
+
+**Publicly listed: App or Integration**
+
+Review time: Typically, 2 – 7 weeks
+
+&#x20;
+
+**Privately listed: Integration**
+
+Review Time: Typically, 1 – 2 days
+
+&#x20;
+
+**Privately listed: App**
+
+Review Time: Typically, 2-3 days
+
+
 
 If your app is launchable inside of AgencyCloud or has a Client facing user interface, we will ask you to set your app to private, using Customer ID 'RES-GRTA’. We can then install your app as an external client (still using sandbox data). This step will give us the ability to test and view the following:
 
