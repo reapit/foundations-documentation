@@ -12,17 +12,17 @@ The Foundations REST API will in-time replace our existing REST and SOAP web ser
 
 The Foundations API is organised around [REST](http://en.wikipedia.org/wiki/Representational\_State\_Transfer). Our API has predictable resource-oriented URLs using standard HTTP response codes and verbs. All requests and responses, including errors, are [JSON-encoded](http://www.json.org).
 
-You can immediately start testing our APIs in [sandbox mode](api-documentation.md#sandbox-mode) by using our [Interactive API Explorer](https://marketplace.reapit.cloud/developer/swagger). Please see our [help page](https://marketplace.reapit.cloud/developer/help) for support and information on preview / upcoming changes.
+You can immediately start testing our APIs in [sandbox mode](api-documentation.md#sandbox-mode) by using our [Interactive API Explorer](https://developers.reapit.cloud/swagger). Please see our [help page](https://marketplace.reapit.cloud/developer/help) for support and information on preview / upcoming changes.
 
 | Service base location                                                                    | Description                                                                                                                                                                                                 |
 | ---------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | <p><strong>Authentication service</strong></p><p>https://connect.reapit.cloud/</p>       | First, use our [authentication service](api-documentation.md#authentication) to receive an access token. Include this in the header of any request you issue to our other platform services.                |
 | <p><strong>All other platform services</strong></p><p>https://platform.reapit.cloud/</p> | Once authenticated, you can issue requests to our other platform services. For details on the endpoint we provide, see our [Interactive API Explorer](https://marketplace.reapit.cloud/developer/swagger).  |
 
-The current version of our APIs is **2020-01-31 **- please include it in your `api-version` request header. For more information, see our [versioning](api-documentation.md#versioning) information
+The current version of our APIs is **2020-01-31** - please include it in your `api-version` request header. For more information, see our [versioning](api-documentation.md#versioning) information
 
 {% hint style="success" %}
-**Our Platform is in** **beta **and we'll be continually building new features during this phase. Please see our [help section](https://marketplace.reapit.cloud/developer/help) to view our milestones or to submit a feature request or bug.
+**Our Platform is in** **beta** and we'll be continually building new features during this phase. Please see our [help section](https://marketplace.reapit.cloud/developer/help) to view our milestones or to submit a feature request or bug.
 {% endhint %}
 
 ## REST
@@ -413,7 +413,7 @@ You can use these metadata endpoints to use Foundations as a simple datastore. Y
 }
 ```
 
-If you'd like to associate your custom entity with an entity your hold outside of Foundations, you may pass in an `entityId `which you can later use for searching/filtering. If you do not, an `entityId` will be generated and returned to you automatically.&#x20;
+If you'd like to associate your custom entity with an entity your hold outside of Foundations, you may pass in an `entityId` which you can later use for searching/filtering. If you do not, an `entityId` will be generated and returned to you automatically.&#x20;
 
 ### Validating custom entities
 
@@ -514,7 +514,7 @@ In the example above, the presence of the `identityChecks` **key** indicates tha
 
 ### Embedding data
 
-Many of our GET APIs provide the ability to compose requests that automatically **embed related data **in their responses. This is a convenient tool that reduces the number of round trips your application needs to make to our Platform. Using this mechanism can result in improved application performance with less API interaction code required.
+Many of our GET APIs provide the ability to compose requests that automatically **embed related data** in their responses. This is a convenient tool that reduces the number of round trips your application needs to make to our Platform. Using this mechanism can result in improved application performance with less API interaction code required.
 
 If your application requires data from one or more related resource(s) (indicated by a link), you can simply specify the name of the related resource in the `embed` parameter and our APIs will do the rest. So long as the related data exists, it is returned to your app in the correct resource(s) `_embedded` data collection.
 
