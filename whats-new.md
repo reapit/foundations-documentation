@@ -7,6 +7,22 @@ description: >-
 
 # What’s New
 
+## 10/12/21
+
+We have recently updated our [Development Request documentation](https://foundations-documentation.reapit.cloud/dev-requests) to now include a [FAQ’s](https://github.com/reapit/foundations/milestone/105) section.\
+\
+Part of the update to the documentation includes a detailed description on each label, column and board.\
+\
+Please take the time to review the updated documentation and ensure you understand how feature requests and bugs are triaged via the Platform.\
+\
+In addition to the updated documentation, we will shortly be implementing a ‘GitBot’. The GitBot is designed to auto reply to specific issues raised, when issues are moved to certain columns, assigned specific project boards or certain labels added.\
+\
+Essentially, an automated comment to will be added to the issue which will help explain the reason a specific label was added, why it was moved to a certain column and the time frame in which we expect the work to be completed by. The automated email will be sent the person that raised the issue or anyone that has subscribed.\
+\
+If you would like to receive a notification (email) to an issue you are following but have not raised, please make sure you are subscribed, using the ‘Subscribe’ option from the right-hand navigation.\
+\
+Please do not contact our service desk, customer success managers or any other channels within Reapit with regard to the status or timeline of an issue. Please first refer to the [documentation](https://foundations-documentation.reapit.cloud/dev-requests) and communicate with developers directly in GitHub.
+
 ## 13/09/21
 
 ### Troubleshooting
@@ -178,7 +194,7 @@ A new configuration option is now available when editing existing/creating new w
 
 By default, webhooks will not be emitted when only the entity's eTag and modified timestamp has changed.&#x20;
 
-If you would prefer to receive notifications in this situation, please use the '**Ignore notifications where only the eTag has been modified' **toggle option when configuring your webhook. See example below:&#x20;
+If you would prefer to receive notifications in this situation, please use the '**Ignore notifications where only the eTag has been modified'** toggle option when configuring your webhook. See example below:&#x20;
 
 ![Adding a New Webhook](<.gitbook/assets/image (93).png>)
 
@@ -890,7 +906,7 @@ Thanks to **Navin Mahendran** who reported an issue with the Scaffolder when try
 
 ![Screenshot from the Reapit App Scaffolder ](<.gitbook/assets/screenshot-2020-02-16-at-13.48.28 (1).png>)
 
-**Bugs - Interactive API Explorer **\
+**Bugs - Interactive API Explorer** \
 \
 An issue was detected with the ‘CURL’ response, resulting in seeing an ‘Undefined’ error. This is now displaying the correct response.
 
