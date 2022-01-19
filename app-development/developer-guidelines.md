@@ -61,11 +61,8 @@ Task: To render a list of Properties from the Foundations API, using the Reapit 
 4. In your text editor, add your client id and user pool id to the reapit-config.json file as per the documentation in the previous step and start the Webpack dev server.
 5. Log into your scaffolded app using your developer portal credentials - you will see a welcome screen and in the console, you will see logged out an example of data being fetched from the platform API.
 6. Replace the fetched data with an API call to the GET /properties endpoint here [https://developers.reapit.cloud/swagger](https://developers.reapit.cloud/swagger) you should apply a marketingMode filter of “selling” to your query.
-7. Render this data on the page in a Table using the React version of our Table component here: [https://elements.reapit.cloud/?path=/docs/table--react-shorthand-usage](https://elements.reapit.cloud/?path=/docs/table--react-shorthand-usage). Add a Title to the page “Properties for Sale”\
+7. Render this data on the page in a Table using the React version of our Table component here: [https://elements.reapit.cloud/?path=/docs/table--react-shorthand-usage](https://elements.reapit.cloud/?path=/docs/table--react-shorthand-usage). Add a Title to the page “Properties for Sale”. There is an example Table laid out in the CRA scaffold app.
+8. Add a form to the table slide down component that updates the property address fields. On submit, the form should update the API and the table should refresh with the updated property info. There is an example form in the CRA template, you are free to add any third party form library you like. TIP: take time to read about [etags and the if-match header here.](https://foundations-documentation.reapit.cloud/api/api-documentation#optimistic-concurrency)\
 
 
-Bonus points - any of these you are able to complete will improve your application but are not essential.
-
-1. Add a slide down container to the table that Renders a single button. The button should say “Edit Me” and should open a Modal window that contains Lorem Ipsum. Refer to the Elements storybook on how to do this.
-2. Add unit or automated integration tests to your code.
-3. Deploy your code to any cloud platform of your choosing via a CI / CD pipeline eg Circle CI / Github Actions.
+Good luck!
