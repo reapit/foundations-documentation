@@ -150,7 +150,7 @@ The basic flow for all projects is that;
 * **Build PR:** Build task runs to ensure the branch is sound.
 * **Test PR:** Test, and lint tasks run to verify a PR. Runs in parallel with Build PR.
 * **Release Dev:** Triggered on the successful merge of a PR, builds the project and releases to the relevant dev environment.
-* **Release Prod: **Triggered by tagging a release in Github,** **again, test, build and lint tasks run and the `release-prod` task runs to deploy the relevant tagged project. The release tag should be raised [here](https://github.com/reapit/foundations/releases) and be in the format `<<package>>_v<<version-number>>` to trigger the production workflow.  Will release a single package to production and if relevant, publish to NPM>
+* **Release Prod:** Triggered by tagging a release in Github, **** again, test, build and lint tasks run and the `release-prod` task runs to deploy the relevant tagged project. The release tag should be raised [here](https://github.com/reapit/foundations/releases) and be in the format `<<package>>_v<<version-number>>` to trigger the production workflow.  Will release a single package to production and if relevant, publish to NPM>
 
 ### Definition of Done
 
@@ -193,7 +193,7 @@ In addition to the lint rules, please also where possible, stick to the contribu
 * Styled Components or CSS / Sass Modules are used for styling in all cases where a third party library (eg Bulma) is not used.
 * Styled Components & CSS / Sass Modules where they are generic should be kept out of the main components folder - they should live in the main styles folder to reduce duplication.
 * The styles project should make extensive use of variables and mix-ins for things like colours, layouts, font sizes, line heights and so on. This ensures re-usablility and maintainability.
-* Where possible, use `rems or ems ` over `px` as a unit for layout.
+* Where possible, use `rems or ems` over `px` as a unit for layout.
 * Maintain where it makes sense to do so the separation of concerns laid out in the initial scaffold seen in the [React App Boilerplate](https://github.com/reapit/react-app) here. There are many TS projects in the company and they should all follow a broadly familiar structure and architecture.
 * Make extensive use of the constants files for significant strings and other re-usable constant variables used in the app.
 * When adding third party libraries to the project consider carefully the following;

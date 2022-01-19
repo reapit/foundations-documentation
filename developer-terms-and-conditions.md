@@ -24,13 +24,13 @@ Version Date: 25th June 2021
 
 1.1.2       **Applicable Laws** means, in relation to a Party, all applicable laws, enactments, regulations, regulatory policies, binding industry codes, regulatory permits and regulatory licences which are in force from time to time during the term of this Agreement and that apply to the performance of that Party’s obligations pursuant to this Agreement.
 
-1.1.3       **Application **means a software application available from the App Marketplace.
+1.1.3       **Application** means a software application available from the App Marketplace.
 
 1.1.4       **App Marketplace** means the online marketplace through which Reapit makes available Applications and which is part of the Foundations Platform.
 
 1.1.5       **API** or **Application Programming Interface** means a programming interface used to pass data back and forth between software applications and programs in a formalised way.
 
-1.1.6       **API Call **means the messenger that delivers the Developer’s request to the Foundations Platform and then delivers the response back to the Developer
+1.1.6       **API Call** means the messenger that delivers the Developer’s request to the Foundations Platform and then delivers the response back to the Developer
 
 1.1.7       **Application User Terms** means the terms of use for an Application on the App Marketplace.
 
@@ -38,7 +38,7 @@ Version Date: 25th June 2021
 
 1.1.9       **Business Day** means a day (other than a Saturday or Sunday) on which banks are generally open in London for normal business.
 
-1.1.10       **Client Side Application **means an Application that (i) uses Reapit Connect and (ii) is a web application (either a single page application or server rendered site).
+1.1.10       **Client Side Application** means an Application that (i) uses Reapit Connect and (ii) is a web application (either a single page application or server rendered site).
 
 1.1.11    **Commencement Date** means the earlier of (i) the date on which Reapit confirms the Developer’s access to the Foundations Platform and (ii) the date on which the Developer first accesses the Foundations Platform.
 
@@ -46,11 +46,11 @@ Version Date: 25th June 2021
 
 1.1.13    **Developer** means the entity identified as such in the Registration Details.
 
-1.1.14    **Developer Obligations **means the requirements set out in Schedule 3.
+1.1.14    **Developer Obligations** means the requirements set out in Schedule 3.
 
 1.1.15    **Data** means any data that a Developer can access in an Application or otherwise by accessing the Foundations Platform and may include Personal Data.
 
-1.1.16    **Developer Edition **means a single user downloadable version of the Reapit RPS software for the purpose of testing integrations and Applications in the Developer environment by the Developer, for which a monthly fee is payable.
+1.1.16    **Developer Edition** means a single user downloadable version of the Reapit RPS software for the purpose of testing integrations and Applications in the Developer environment by the Developer, for which a monthly fee is payable.
 
 1.1.17    **Developer Feedback** means any data, information, text, drawings, records, documents and other materials provided pursuant to clause 2.2.4.
 
@@ -70,7 +70,7 @@ Version Date: 25th June 2021
 
 1.1.22    **Force Majeure Event** means any cause or causes beyond the reasonable control of the Party claiming to be subject to it, including: any extremely severe weather, landslide, storm, lightning, fire, subsidence, epidemic, outbreak of military hostilities (whether or not war is declared), expropriation by governmental authorities, act of God, governmental act (other than a Regulatory Change), act of terrorism, earthquake, flood, embargo, riot, sabotage, strike (other than of its own employees), failures of Third Parties (other than Subcontractors), explosion or civil commotion as well as any Applicable Laws which were enacted as a result of a Force Majeure Event .
 
-1.1.23    **Foundations Platform **means Reapit’s App Marketplace and online portal of developer tools, documentation and other reference materials which facilitate the development of Applications and their integration with Reapit Software.
+1.1.23    **Foundations Platform** means Reapit’s App Marketplace and online portal of developer tools, documentation and other reference materials which facilitate the development of Applications and their integration with Reapit Software.
 
 1.1.24    **Good Industry Practice** means, at any time during the term of this Agreement, the exercise of reasonable skill, care, prudence, efficiency, foresight and timeliness which would at that time be expected from a reasonably and suitably skilled, trained and experienced person providing services similar to the Services.
 
@@ -84,7 +84,7 @@ Version Date: 25th June 2021
 
 (b)         applications for registration, and the right to apply for registration, for any of these rights; and
 
-(c)   **       **all other intellectual property rights and equivalent or similar forms of protection existing anywhere in the world.
+(c)   ****       all other intellectual property rights and equivalent or similar forms of protection existing anywhere in the world.
 
 1.1.28    **Loss** means claims, demands, actions, awards, judgments, settlements, costs, expenses, liabilities, damages and losses (including all interest, fines, penalties, management time and legal and other professional costs and expenses).
 
@@ -100,7 +100,7 @@ Version Date: 25th June 2021
 
 1.1.34    **Regulator** means any person having regulatory or supervisory authority over all or any part of (a) the Services or (b) the business of Reapit or (c) the business of Developer.
 
-1.1.35    **Server Side Application **means** **authentication using a REST service on the server, typically pulling Data into an existing Application.
+1.1.35    **Server Side Application** means **** authentication using a REST service on the server, typically pulling Data into an existing Application.
 
 1.1.36    **Term** means the duration of the Agreement, as determined in accordance with the terms of clause 11.
 
@@ -157,7 +157,7 @@ Version Date: 25th June 2021
 
 (a)            approve the Application outright, in which case Reapit will notify the Developer electronically and the Application will be published by Reapit on the App Marketplace in accordance with Reapit’s usual processes; or\
 (b)            notify the Developer of any remedial actions or further development work required by Reapit (whether in relation to scope, functionality, or description); or\
-(c)             notify the Developer, at Reapit’s sole discretion, that the Application is not approved and that Reapit does not wish to proceed any further with that Application.**    **
+(c)             notify the Developer, at Reapit’s sole discretion, that the Application is not approved and that Reapit does not wish to proceed any further with that Application.    ****   &#x20;
 
 2.5.4       If Reapit requires remedial work or further development, in accordance with clause 2.5.3(b), the Developer must resubmit the Application in accordance with clause 2.5.2 or as otherwise directed by Reapit and the terms of clause 2.5.3 will apply to any res-submission.
 
@@ -272,7 +272,7 @@ Version Date: 25th June 2021
 6.1.4       The Developer’s rights to use Data and an  Application’s rights to use Data shall cease:
 
 (a)            upon termination of this Agreement, when the Developer  shall immediately cease using Data and delete any Data it has received via an Application or which is otherwise under the Developer’s control;\
-(b)            when an App is uninstalled by an end-user, the Developer shall immediately cease using Data and delete any Data it has received via an Application or which is otherwise under the Developer’s control.** **
+(b)            when an App is uninstalled by an end-user, the Developer shall immediately cease using Data and delete any Data it has received via an Application or which is otherwise under the Developer’s control. ****&#x20;
 
 6.1.5       Without prejudice to the foregoing clauses, Reapit reserves the right to suspend the Developer’s access to Data at any time. &#x20;
 
@@ -484,9 +484,9 @@ in each case whether arising from breach of contract, negligence, under any inde
 
 14.1.3    without the prior written consent of the other Party.
 
-14.2        **Further Assurance: **Each Party shall , at its own cost, promptly execute and deliver all such documents, and do all such things, as the other Party may from time to time reasonably require for the purpose of giving full effect to the provisions of this Agreement and to secure for the other Party the full benefit of the rights, powers and remedies conferred upon it under this Agreement.
+14.2        **Further Assurance:** Each Party shall , at its own cost, promptly execute and deliver all such documents, and do all such things, as the other Party may from time to time reasonably require for the purpose of giving full effect to the provisions of this Agreement and to secure for the other Party the full benefit of the rights, powers and remedies conferred upon it under this Agreement.
 
-14.3      **  Entire Agreement:**
+14.3      **Entire Agreement:**
 
 14.3.1    The Agreement sets out the entire agreement between the Parties relating to its subject matter and, save to the extent expressly set out in this Agreement, supersede and extinguish any prior drafts, agreements, undertakings, representations, warranties, promises, assurances and arrangements of any nature whatsoever, whether or not in writing, relating thereto.
 
@@ -515,9 +515,9 @@ in each case whether arising from breach of contract, negligence, under any inde
 
 14.7        **No Partnership or Agency**: Nothing in this Agreement is intended to, or shall be deemed to, establish any partnership or joint venture between any of the Parties, constitute any Party the agent of another Party, or authorise any Party to make or enter into any commitments for or on behalf of any other Party.
 
-14.8       ** Third Party Rights: ** A person who is not a Party to this Agreement may not enforce any of its terms under the Contracts (Rights of Third Parties) Act 1999.
+14.8       **Third Party Rights:** A person who is not a Party to this Agreement may not enforce any of its terms under the Contracts (Rights of Third Parties) Act 1999.
 
-14.9        **Costs: **Except as otherwise provided in this Agreement, each Party shall bear its own costs arising out of or in connection with the preparation, negotiation and implementation of this Agreement.
+14.9        **Costs:** Except as otherwise provided in this Agreement, each Party shall bear its own costs arising out of or in connection with the preparation, negotiation and implementation of this Agreement.
 
 14.10      **Counterparts**: This Agreement may be executed in any number of counterparts. Each counterpart shall constitute an original of this Agreement, but all the counterparts together shall constitute but one and the same instrument.
 

@@ -18,7 +18,7 @@ During the Beta period certain elements of AgencyCloud may not function end-to-e
 
 Applications that are built on our Foundations Platform are able to communicate with Reapit's AgencyCloud CRM system. Using a well-defined API, you are able to trigger a wide variety of actions in our award-winning desktop application to augment your own applications and build a rich integration between systems.
 
-_Note _- apps cannot rely on cookies/local storage being available between separate instances of AgencyCloud.  Therefore any data which will need to be shared between separate sessions will need to be handled outside of these methods.
+_Note_ - apps cannot rely on cookies/local storage being available between separate instances of AgencyCloud.  Therefore any data which will need to be shared between separate sessions will need to be handled outside of these methods.
 
 ### Debugging your App
 
@@ -208,7 +208,7 @@ This will allow you to launch the users default e-mail client and send to an add
 agencycloud://process/email?address=help@reapit.com
 ```
 
-This will create a new e-mail in the users default mail client.  It will do this by taking the value of the address parameter, prefixing it with _mailto: _and then starting a process with that argument.
+This will create a new e-mail in the users default mail client.  It will do this by taking the value of the address parameter, prefixing it with _mailto:_ and then starting a process with that argument.
 
 ## AgencyCloud Interaction API
 
@@ -405,7 +405,7 @@ When an app with a type of Contact is installed then an Apps menu will appear on
 
 ### Company
 
-The type of _Company _will be given to an application that can be launched for a specific company from AgencyCloud. The globals dictionary will contain the below key when launched by AgencyCloud for a specific company:
+The type of _Company_ will be given to an application that can be launched for a specific company from AgencyCloud. The globals dictionary will contain the below key when launched by AgencyCloud for a specific company:
 
 ```
 { "cmpCode": "ABC20012345" }
@@ -421,7 +421,7 @@ When an app with a type of Company is installed then an Apps menu will appear on
 
 ### Tenancy
 
-The type of _Tenancy _will be given to an application that can be launched for a specific tenancy from AgencyCloud. The globals dictionary will contain the below key when launched by AgencyCloud for a specific tenancy:
+The type of _Tenancy_ will be given to an application that can be launched for a specific tenancy from AgencyCloud. The globals dictionary will contain the below key when launched by AgencyCloud for a specific tenancy:
 
 ```
 { "tenCode": "ABC200123" }
@@ -453,7 +453,7 @@ When an app with a type of Offer is installed then an Apps menu will appear on t
 
 ### Sales Progression
 
-The type of _Sales Progression _will be given to an application that can be launched in place of the standard Sales Progression screen in AgencyCloud.  The globals dictionary will contain the below key when launched by AgencyCloud for a specific property:
+The type of _Sales Progression_ will be given to an application that can be launched in place of the standard Sales Progression screen in AgencyCloud.  The globals dictionary will contain the below key when launched by AgencyCloud for a specific property:
 
 ```
 { "prpCode": "ABC201023" }
@@ -463,13 +463,13 @@ The type of _Sales Progression _will be given to an application that can be laun
 | --------- | ------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------- |
 | prpCode   | string | The primary key of the property to load the sales progression information app for (note that this won’t be present when the app loads from the AppMarket, but the app needs to be able to accept this parameter when it is launched via the app association route). | Yes      |
 
-An application of this type can be launched from the _Sales Progression _button on the offers screen in AgencyCloud:
+An application of this type can be launched from the _Sales Progression_ button on the offers screen in AgencyCloud:
 
 ![Sales progression button on the offers screen](<../.gitbook/assets/image (44).png>)
 
 ### Chain Management
 
-The type of _Chain Management _will be given to an application that can be launched in place of the standard Chain screen in AgencyCloud.  The globals dictionary will contain the below key when launched by AgencyCloud for a specific property:
+The type of _Chain Management_ will be given to an application that can be launched in place of the standard Chain screen in AgencyCloud.  The globals dictionary will contain the below key when launched by AgencyCloud for a specific property:
 
 ```
 { "prpCode": "ABC201023" }

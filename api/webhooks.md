@@ -57,11 +57,11 @@ First, select the application that you want to create a webhook for. You'll then
 
 ![](<../.gitbook/assets/Webhook 2.png>)
 
-Our webhooks system is designed to flexibly work with how your application is built and deployed. If you wish, you can set up a single endpoint to catch all **topics **for all **customers**. Alternatively, you may wish to set up a different webhook subscription per topic or per customer.
+Our webhooks system is designed to flexibly work with how your application is built and deployed. If you wish, you can set up a single endpoint to catch all **topics** for all **customers**. Alternatively, you may wish to set up a different webhook subscription per topic or per customer.
 
 ### Subscribe to topics
 
-As part of creating a new webhook, you need to specify which of the available **topics **(type of event) that your application needs to respond to. If any application makes a change to a customers data that corresponds to a topic that your app is listening for, you'll receive a notification to describe the event.
+As part of creating a new webhook, you need to specify which of the available **topics** (type of event) that your application needs to respond to. If any application makes a change to a customers data that corresponds to a topic that your app is listening for, you'll receive a notification to describe the event.
 
 Data changes from any application will result in a notification being sent to your endpoint(s), including:
 
@@ -72,7 +72,7 @@ Data changes from any application will result in a notification being sent to yo
 For example, if a new offer is added in our AgencyCloud CRM and your application has a webhook set up containing the **offers.created** topic, your endpoint will be sent a specific, descriptive payload containing the full details of the new offer.
 
 {% hint style="success" %}
-**We recommend **registering your webhooks in an inactive state and using the **Ping **function. This allows you to test that your endpoint works as expected before opting to receive live customer updates.&#x20;
+**We recommend** registering your webhooks in an inactive state and using the **Ping** function. This allows you to test that your endpoint works as expected before opting to receive live customer updates.&#x20;
 {% endhint %}
 
 We currently support the following topics, but this will increase over time. Please note that you will only be  presented topics if your application has been assigned the associated scope.
@@ -140,7 +140,7 @@ You must configure the customer(s) that your webhook will respond to events for.
 
 ### Optional webhook behaviour
 
-By default, webhooks will not be emitted when only the entity's eTag and modified timestamp has changed. If you would prefer to receive notifications in this situation, please use the **Ignore notifications where only the eTag has been modified **toggle option when configuring your webhook
+By default, webhooks will not be emitted when only the entity's eTag and modified timestamp has changed. If you would prefer to receive notifications in this situation, please use the **Ignore notifications where only the eTag has been modified** toggle option when configuring your webhook
 
 {% hint style="info" %}
 **To test your webhook end to end with real data**, use the sandbox database available to you in the Developer Portal. Set up a webhook to listen to 'SBOX' events and make changes to the sandbox using our APIs or Interactive API Explorer.
@@ -154,7 +154,7 @@ We also provide a REST API to allow webhooks to be programmatically created for 
 
 ### Example payload
 
-We use a consistent schema to describe any event that we broadcast in a descriptive and self-contained way. The notifications we emit indicate that an **event has happened** - but additionally and where appropriate -  we provide details about the actual data change that has occurred.  This allows your application to ascertain **granular details about the event **without needing additional API calls.
+We use a consistent schema to describe any event that we broadcast in a descriptive and self-contained way. The notifications we emit indicate that an **event has happened** - but additionally and where appropriate -  we provide details about the actual data change that has occurred.  This allows your application to ascertain **granular details about the event** without needing additional API calls.
 
 Below is an example of what a **contacts.modified** webhook event might look like
 
@@ -263,7 +263,7 @@ The content of the `new`, `old`, and `diff` properties in the webhook event payl
 
 ### Testing
 
-When you have an endpoint configured, you can test it by using the **Ping **function. This will send a test event with an example payload to the URL stored against the webhook for the selected topic. You will only be able to select topics that are applicable to the webhook being tested.&#x20;
+When you have an endpoint configured, you can test it by using the **Ping** function. This will send a test event with an example payload to the URL stored against the webhook for the selected topic. You will only be able to select topics that are applicable to the webhook being tested.&#x20;
 
 ![](<../.gitbook/assets/Webhook 3.png>)
 

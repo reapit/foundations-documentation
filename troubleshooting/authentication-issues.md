@@ -1,6 +1,6 @@
 # Authentication Issues
 
-## **Client Credentials Flow - **Authentication Issues
+## **Client Credentials Flow -** Authentication Issues
 
 ### **Error: "invalid\_client"**
 
