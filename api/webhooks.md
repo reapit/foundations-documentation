@@ -79,6 +79,8 @@ We currently support the following topics, but this will increase over time. Ple
 
 ### Available topics
 
+> Webhook payload types are available from `@reapit/foundations-ts-definitions` [see here for moer info](https://foundations-documentation.reapit.cloud/app-development/foundations-ts-defintions#webhook-types)
+
 | Topic                                     | Description                                                                                                                                                                                                                                                                                     | Required scopes       |
 | ----------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------- |
 | **application.install**                   | Occurs when a customer installs an application in the AppMarket                                                                                                                                                                                                                                 | None                  |

@@ -20,9 +20,6 @@ For the latest version;
 
 `yarn add @reapit/foundations-ts-definitions`
 
-For a version tied to your API version;
-
-`yarn add @reapit/foundations-ts-definitions@2020-02-10`
 
 Then import the required type into your code with ES6 Modules or CommonJS. The naming maps directly to the model names in the API Explorer in the developer portal.
 
@@ -34,5 +31,28 @@ import { AppModel } from '@reapit/foundations-ts-definitions'
 const { AppModel } = require('@reapit/foundations-ts-definitions')
 ```
 
-## 
+### Webhook types
 
+Webhook event payloads are generic, however the types can be infered by the topicId. Here are some examples of how to use the webhook types
+
+```ts
+import {
+  ReapitWebhookPayloadType,
+  ReapitWebhookTopicEnum,
+  ReapitWebhookApplicantCreatedEvent,
+} from '@reapit/foundations-ts-definitions'
+
+export const webhookEventHandler = (event: ReapitWebookPayloadType) => {
+  switch (event.topicId) {
+    case ReapitWebhookTopicEnum.APPLICANTS_CREATED:
+      handleApplicantCreated(event) // event is of infered type ReapitWebhookApplicantCreatedEvent
+      break
+    default:
+      console.log(event.new) // event.new is of infered type any
+  }
+}
+
+const handleApplicantCreated = (event: ReapitWebhookApplicantCreatedEvent) => {
+  console.log(event.new) // new is of inferred type ApplicantModel
+}
+```
