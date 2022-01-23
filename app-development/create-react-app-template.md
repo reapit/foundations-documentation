@@ -26,7 +26,7 @@ The newly scaffolded application will initially redirect you to a landing page, 
 
 First execute&#x20;
 
-`npx create-react-app <<your-app-name-here>> --template @reapit/cra-template-foundations`
+`npx create-react-app@latest <<your-app-name-here>> --template @reapit/cra-template-foundations`
 
 Open the project in your text editor and insert your Reapit Connect ClientId from the Developer Portal along with the  production `connectUserPoolId,` `eu-west-2_eQ7dreNzJ` into the config file located at:
 
