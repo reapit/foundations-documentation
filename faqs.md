@@ -28,7 +28,33 @@ Please [click here](faqs.md#listing-your-app) for more information on Listing an
 
 You can track the status of your issue [directly in GitHub](https://github.com/reapit/foundations/issues).&#x20;
 
-Please [click here](broken-reference) for details on our development processes.
+Please [click here](dev-requests.md) for details on our development processes.
+
+### What are ‘Office Groups’?
+
+Office Groups are present when an organisation is using the Reapit Marketplace Management App They will setup specific office groups that provide data boundaries between offices. The management app also allows organisational level control for installations.
+
+Offices that are part of a group will have a distinct ‘Customer ID’. For example, Reapit Sales is an organisation comprised of 20 offices. Their customer ID is ‘RES’. However, they wish to set data boundaries between certain offices and create 2 office groups:
+
+**Office Group 1**
+
+This contains a list of 8 offices/branches within the organisation.
+
+The customer ID is now RES-GOGO
+
+**Office Group 2**
+
+This contains a list of 12 offices/branches within the organisation
+
+The customer ID is now RES-GOGT
+
+Using either the Management App or via the AppMarket, an Admin can choose to install an app for the whole organisation (Customer ID: RES) which will grant access to all 20 offices, or a specific group.
+
+If they choose to install for Office Group 1 (Customer ID: RES-GOGO) for example, an app will only have access to data for those 8 offices.
+
+They can install for multiple groups but the data boundaries for each group will be respected and exist across our core entities.
+
+You will be notified of the Customer ID at the point of installation. For more information, please [click here](https://foundations-documentation.reapit.cloud/faqs#installation).
 
 ## Registration
 
@@ -99,8 +125,8 @@ First, ensure your app is ready to be listed, please [click here](listing-your-a
 
 Once the content of your app has been added:&#x20;
 
-* Enter Customer ID 'RES' in the 'Private Apps' section on your app listing
-* Select the 'Submit for Approval' check box and Submit'&#x20;
+* Enter Customer ID 'RES-GTRA' in the 'Private Apps' section on your app listing
+* Select the 'Submit for Approval' check box and 'Submit'&#x20;
 
 Please [click here ](https://foundations-documentation.reapit.cloud/listing-your-app#apps-launchable-inside-of-agency-cloud)for more information on testing
 
