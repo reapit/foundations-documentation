@@ -20,6 +20,12 @@ Documentation for this package has moved to the dedicated UI tab in the Reapit D
 Elements Storybook for React Users
 {% endembed %}
 
+The UI library itself is based on the Reapit Foundations Design system which is distributed as a Figma Community file at the link below.
+
+{% embed url="https://www.figma.com/community/file/999608115908775282" %}
+
+To get a sense of the thinking behind the Elements library and for information on the base design principles behind it, we would advise strongly looking at the design system before getting started with your Elements project.
+
 If you are looking for Elements v2 components, this has moved to it's own Storybook here:
 
 {% embed url="https://elements-legacy.prod.paas.reapit.cloud/" %}
