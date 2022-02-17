@@ -164,8 +164,6 @@ Requests issued with access codes gained from the client credentials flow must a
 
 You must additionally include a `reapit-customer` header in your request so that it can be fulfilled appropriately. The header should be set to the customers unique id which becomes available to view after a customer has chosen to install your application. You find out out the unique ids and names of the clients that have installed your application in the [Analytics](https://marketplace.reapit.cloud/developer/analytics) area of the developer portal.
 
-For machine to machine integrations, you _must_ use a new access token when switching between customer datasets - done by adjusting the value passed in the `reapit-customer` header. The access associated with a particular token is cached for a short window to improve API perforance
-
 If a customer chooses to uninstall your application then your access to their data will be revoked.
 
 {% hint style="info" %}
