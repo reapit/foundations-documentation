@@ -160,7 +160,7 @@ Please [click here](https://foundations-documentation.reapit.cloud/api/webhooks)
 
 It is a reference that is assigned to your organisation/company and would have been setup with our Accounts Department. If you have an existing relationship with Reapit, you should be able to obtain your reference on previous correspondence. If you do not have an existing relationship, you will be required to complete a Direct Debit mandate.
 
-Please [click here](https://foundations-documentation.reapit.cloud/developer-portal#10-billing) for more information on setting up your Billing Information.
+
 
 ### My billing information is with accounts - how long will this take to process?
 
@@ -168,7 +168,7 @@ Once you have submitted your billing information, it will be sent to our Account
 
 This setup process is usually completed within 24-48 hours. Once the information has been verified you will receive an email confirmation and your account status will be set to 'Confirmed'
 
-Please [click here](https://foundations-documentation.reapit.cloud/developer-portal#10-billing) for more information on setting up your billing information.
+
 
 ## Pricing/Costs
 

@@ -7,6 +7,34 @@ description: >-
 
 # What’s New
 
+## 23/02/22
+
+### Property Featured Image
+
+The featured property image (featuredImageUrl) is now being returned in the properties object, without the need to embed or make an additional call to the property images endpoint. This will be mostly beneficial for website integrations for property results.
+
+
+
+![](.gitbook/assets/FeaturedURL.jpg)
+
+### Property Manager Information
+
+We are now returning the Property Manager ID (propertyManagerId) within the lettings object on a property.&#x20;
+
+![](.gitbook/assets/PropertyMan.jpg)
+
+
+
+### Addition Extras support for Landlords and Works Orders
+
+We have now added the ability for users to request additional extras fields for Works Orders and Landlords.&#x20;
+
+&#x20;Also, you can now filter by ‘QuotesAccepted’ on Works Orders.
+
+### Code generation
+
+We have now updated our code generation mechanism to now support office specific referencing.
+
 ## 10/12/21
 
 We have recently updated our [Development Request documentation](https://foundations-documentation.reapit.cloud/dev-requests) to now include a [FAQ’s](https://github.com/reapit/foundations/milestone/105) section.\

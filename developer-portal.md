@@ -137,20 +137,4 @@ To complete your Organisation information, click on ‘Settings’ and select �
 
 Please then complete the information on the 'Billing' tab.
 
-### 10. Billing
-
-If you have an existing relationship with Reapit, you will already have a 'Reapit Reference' assigned to your company. You can find your reference on any previous accounting correspondence. Simply enter your account contact information, your reference and click 'Submit'. &#x20;
-
-![](.gitbook/assets/screenshot-2021-03-31-at-12.22.27.png)
-
-You account status will be updated to 'Pending' whilst we verify the information with our Accounts Department. This process can typically take between 1-2 working days to complete.
-
-You will receive an email once your account has been set to ‘Confirmed’.
-
-If you do not have a Reapit Reference, please then complete a Direct Debit mandate. It is an online form that will open in another tab. For those of you that have cookies disabled by default, and we know most developers do, you will need to enable them to complete the form. It’s an Adobe requirement, you can of course, disable as soon as you’ve signed the form.
-
-![](.gitbook/assets/screenshot-2021-03-31-at-12.23.55.png)
-
-Again, our Accounts Department will setup your account and you’ll receive an email with your new Reapit Reference. No need to do anything with the reference,  as we will add this on your account automatically. Once received, you’ll be able to submit your app for approval or make any additional subscriptions.
-
 In order to list your App, please see the guidelines within the '[Listing your App](https://app.gitbook.com/@reapit-1/s/reapit-foundations/\~/drafts/-MQMdhdEIqniO2BQbO\_g/listing-your-app)' section&#x20;
