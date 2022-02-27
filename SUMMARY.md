@@ -8,7 +8,7 @@
   * [Reapit Connect](api/reapit-connect.md)
   * [Desktop API](api/desktop-api.md)
 * [Developer Portal](developer-portal.md)
-* [Listing your App](listing-your-app/README.md)
+* [Listing your App](listing-your-app.md)
   * [App Listing Review](listing-your-app/app-listing-review.md)
 * [App Development](app-development/README.md)
   * [Developer Guidelines](app-development/developer-guidelines.md)
