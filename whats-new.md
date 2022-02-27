@@ -303,7 +303,7 @@ You can use the ‘[Cost Explorer: Cost & Usage](https://developers.reapit.cloud
 
 ### New section in the documentation
 
-With an increase in apps now being submitted for approval, we have added a new section in our documentation ‘[Listing an App](listing-your-app.md)’.
+With an increase in apps now being submitted for approval, we have added a new section in our documentation ‘[Listing an App](listing-your-app/)’.
 
 It covers, in detail, how to prepare your app before listing, what information is required, our testing processes and what happens when your app has been approved. &#x20;
 

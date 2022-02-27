@@ -133,7 +133,7 @@ You cannot update negotiator information using the desktop CRM as Negotiator inf
 
 When you are ready to list your app in the AppMarket, either publicly or as a private app, it will first need to be submitted for approval privately to our testing environment 'RES'. \
 \
-First, ensure your app is ready to be listed, please [click here](listing-your-app.md) to see a guide on what information is required.&#x20;
+First, ensure your app is ready to be listed, please [click here](listing-your-app/) to see a guide on what information is required.&#x20;
 
 Once the content of your app has been added:&#x20;
 
@@ -321,7 +321,7 @@ On your app listing in the Developer Portal and via ‘[Analytics](https://devel
 
 ### Why is my app not showing in the AppMarket?&#x20;
 
-Before your app can be listed in the AppMarket, it first needs to be submitted for approval, please see more information on listing your app [here](listing-your-app.md).&#x20;
+Before your app can be listed in the AppMarket, it first needs to be submitted for approval, please see more information on listing your app [here](listing-your-app/).&#x20;
 
 If your app has been approved and you have chosen to list it privately, ensure the Customer ID you have provided in the 'Private Apps' section is correct. For more information on obtaining a Customer ID, please click [here](faqs.md#how-do-i-find-a-customer-id).&#x20;
 

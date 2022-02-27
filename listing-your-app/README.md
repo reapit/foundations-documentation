@@ -6,9 +6,9 @@ Listing your app in the Marketplace
 The review process from start to finish can typically take between 2-7 weeks. Please allow plenty of time as we often have a backlog of apps and integrations to review.
 {% endhint %}
 
-When you are ready to list your app in the AppMarket, either publicly or as a private app, it will first need to be submitted for approval. For AppMarket apps, please see information on additional testing [here](whats-new.md#additional-testing). The approval process is started when you select the 'Submit for Approval' check box and 'Submit':&#x20;
+When you are ready to list your app in the AppMarket, either publicly or as a private app, it will first need to be submitted for approval. For AppMarket apps, please see information on additional testing [here](../whats-new.md#additional-testing). The approval process is started when you select the 'Submit for Approval' check box and 'Submit':&#x20;
 
-Our Admin Department will be notified and will carry out the necessary checks. This includes but is not limited to content for your app listing, UI compliance (if building an application that is launched within AgencyCloud), authentication and permissions/scopes as well as architecture and security. There are other guidelines that also need to be followed, please refer to '[Schedule 3](developer-terms-and-conditions.md#schedule-3-developer-obligations)' on your Developer Terms and Conditions and make sure to read them carefully.
+Our Admin Department will be notified and will carry out the necessary checks. This includes but is not limited to content for your app listing, UI compliance (if building an application that is launched within AgencyCloud), authentication and permissions/scopes as well as architecture and security. There are other guidelines that also need to be followed, please refer to '[Schedule 3](../developer-terms-and-conditions.md#schedule-3-developer-obligations)' on your Developer Terms and Conditions and make sure to read them carefully.
 
 Please see below the steps to follow to submit your app for approval:&#x20;
 
@@ -22,7 +22,7 @@ To help with ensuring you are ready, have a look at our guide on adding your con
 
 Ticking the ‘Submit for Approval’ check box on your app listing, will let us know you are ready for our Admin Team to review and we will be notified immediately of your request.
 
-![](.gitbook/assets/screenshot-2021-03-31-at-12.25.20.png)
+![](../.gitbook/assets/screenshot-2021-03-31-at-12.25.20.png)
 
 &#x20;
 
@@ -74,7 +74,7 @@ For integrations, after installing, we will require a test and production user a
 * Functionality\
   Using your website or app in accordance with the service it is providing
 
-There are also other guidelines that need to be followed, please refer to '[Schedule 3](developer-terms-and-conditions.md#schedule-3-developer-obligations)' on your Developer Terms and Conditions.&#x20;
+There are also other guidelines that need to be followed, please refer to '[Schedule 3](../developer-terms-and-conditions.md#schedule-3-developer-obligations)' on your Developer Terms and Conditions.&#x20;
 
 ### 3. Submission Declined
 
@@ -90,4 +90,4 @@ If any changes are required you will be contacted by a member of the team.
 
 Once your listing has been approved, you will receive an email confirming your app has been approved and will be set to a status of 'Listed'.  You app will then be listed in the Reapit AppMarket ready for client installation.&#x20;
 
-![](.gitbook/assets/screenshot-2021-03-31-at-12.26.02.png)
+![](../.gitbook/assets/screenshot-2021-03-31-at-12.26.02.png)
