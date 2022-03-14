@@ -7,6 +7,18 @@ description: >-
 
 # What’s New
 
+## 10/03/22
+
+### Property URL
+
+We are now returning (when manually entered) the Property URL, which is accessible from the 'Marketing' screen:&#x20;
+
+![Properties Endpoint](<.gitbook/assets/image (108).png>)
+
+![Marketing Screen in AgencyCloud](.gitbook/assets/PropertyURL.jpg)
+
+**Please note:** The URL will only be returned when it has been explicitly set. Default URLs' will not be available.&#x20;
+
 ## 23/02/22
 
 ### Property Featured Image
