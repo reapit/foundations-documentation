@@ -183,6 +183,26 @@ Opens the journal screen for the specified contact
 agencycloud://contacts/{id}/journal
 ```
 
+
+
+## Works Orders
+
+### Load Works Orders
+
+Opens the specific works order screen
+
+```
+agencycloud://worksorders/{id} 
+```
+
+### Search Works Order
+
+Opens the works order search screen and prepopulate any search criteria as specified. As with other search urls it should also support the appId and appParam which will allow the selected item in the search to be sent back to an app.
+
+```
+agencycloud://worksorders?address={abc}&supplier={def}&status={ghi}&desc={jkl}
+```
+
 ## Process
 
 From version 12.122.0 there will also be a resource called **process** which will have two sub processes:
@@ -251,6 +271,12 @@ From version 12.130.1 the following will also be available:
 * Outbound - Email&#x20;
 * Outbound - Landline
 * Outbound - Mobile&#x20;
+
+
+
+From version 12.142.0 the following will also be available:
+
+* Match Output&#x20;
 
 ## Types
 
@@ -485,5 +511,22 @@ An application of this type can be launched from the _Chain_ button on the offer
 
 
 
+### Match Output
 
+The category of _Match Output_ would enable an application to be used to export the details of a match either from an applicant to a property or a property to an applicant. The globals dictionary will contain the below key when launched by AgencyCloud for a specific match:
+
+```
+'{"NegCode":"RTR","Matches":[{"OutputType":"PrpToAppMatch","SourceCode":"BCK160024","Results":["RPT210019"]}]}'
+```
+
+| Match type (PrpToappMatch/AppToPrpMatch)  | Property to applicant or applicant to property |
+| ----------------------------------------- | ---------------------------------------------- |
+| Property ID(s)                            | Single/Array of property IDs                   |
+| Applicant ID(s)                           | Single/Array of applicant IDs                  |
+| Negotiator ID - User (NegCode)            | Neg ID of the logged in Negotiator             |
+|                                           |                                                |
+
+An app with the integration type 'Match Output' will be visible by selecting 'Print' after running a match:&#x20;
+
+![](../.gitbook/assets/MatchOutput.jpg)
 
