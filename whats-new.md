@@ -7,6 +7,30 @@ description: >-
 
 # What’s New
 
+## 14/03/22
+
+### Works Orders&#x20;
+
+You can now interact and launch with the native works orders screen and pre populate certain search criteria using the newly added AgencyCloud scheme:&#x20;
+
+```
+agencycloud://worksorders/{id} 
+```
+
+![](.gitbook/assets/WorksOrders.jpg)
+
+For more information on Works Orders, please click [here](https://foundations-documentation.reapit.cloud/api/desktop-api#works-orders)
+
+### Match Output Integration Type
+
+The category of _Match Output_ would enable an application to be used to export the details of a match either from an applicant to a property or a property to an applicant.
+
+An app with the integration type 'Match Output' will be visible by selecting 'Print' after running a match:&#x20;
+
+![Example App with the type 'Match Output' ](.gitbook/assets/MatchOutput.jpg)
+
+For more information on Match Output, please click [here](https://foundations-documentation.reapit.cloud/api/desktop-api#match-output)
+
 ## 10/03/22
 
 ### Property URL
