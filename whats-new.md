@@ -27,7 +27,7 @@ The category of _Match Output_ would enable an application to be used to export 
 
 An app with the integration type 'Match Output' will be visible by selecting 'Print' after running a match:&#x20;
 
-![Example App with the type 'Match Output' ](.gitbook/assets/MatchOutput.jpg)
+![](.gitbook/assets/Matchoutput1.jpg)
 
 For more information on Match Output, please click [here](https://foundations-documentation.reapit.cloud/api/desktop-api#match-output)
 
@@ -61,11 +61,11 @@ We are now returning the Property Manager ID (propertyManagerId) within the lett
 
 
 
-### Addition Extras support for Landlords and Works Orders
+### Additional Extras support for Landlords and Works Orders
 
 We have now added the ability for users to request additional extras fields for Works Orders and Landlords.&#x20;
 
-&#x20;Also, you can now filter by ‘QuotesAccepted’ on Works Orders.
+&#x20;Also, you can now filter by ‘QuoteAccepted’ on Works Orders.
 
 ### Code generation
 
