@@ -55,13 +55,15 @@ If your app is launchable inside of AgencyCloud or has a Client facing user inte
 ### Apps - launchable inside of AgencyCloud
 
 * Authentication\
-  Ensuring an agent is not required to login with additional credentials or is presented with an additional login screen.
+  Ensuring an agent is not required to login with additional credentials or is presented with an additional login screen. Must use Reapit Connect.&#x20;
 * Onboarding\
   Understanding the flow for existing and new users.
 * Branding\
   We will look at your use of Elements, our UI Library, ensuring you have built the integration according to our branding guidelines
 * Functionality \
   Using the app in accordance with the service it is providing
+* Permissions\
+  Must use the Platform API and be using the permissions requested&#x20;
 
 ### Integrations&#x20;
 
