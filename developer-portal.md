@@ -10,15 +10,15 @@ We want getting started with the Developer Portal to be as frictionless as possi
 
 You will receive an email with a link to the developer portal and temporary login credentials. The app will redirect you to the [Reapit Connect](api/reapit-connect.md) login screen and then back to the authenticated portal.&#x20;
 
-The first screen you will see is a welcome wizard. You will only see this at the first login, although you can access from the help section later if you wish to revisit. It will walk you through some basic concepts when working with the developer portal.
+The first screen you will see is a the 'About Foundations' page. You will only see this at the first login:&#x20;
 
-![](.gitbook/assets/screenshot-2021-03-31-at-11.57.40.png)
+![](.gitbook/assets/First1.png)
 
-You will then see the "My Apps" page which will initially be empty. There is also a button in the top right hand corner to submit a new app. More on that at point 3 of this guide.
+Also on this page you will have the option to 'View Docs' and to 'Create App'.&#x20;
 
-![](.gitbook/assets/screenshot-2021-03-31-at-11.58.39.png)
+![](<.gitbook/assets/First 2.png>)
 
-When you are in the portal, navigate to the API tab on the left hand side menu.&#x20;
+When you are in the portal, navigate to the API tab on the left hand side menu.
 
 ### 2. Choose an API
 
@@ -26,87 +26,89 @@ Assuming you have an idea of the data types / entities you are interested in, en
 
 For the purposes of this example my app will need Applicant data. Don't worry if you find you need other endpoints later, you can add them at any time.
 
-![](.gitbook/assets/screenshot-2021-03-31-at-12.00.19.png)
+![](<.gitbook/assets/First 3.png>)
 
 ### 3. Register an app
 
-The next step is to register an app. We understand you won't have any code yet, this is all about setting up a client to work with the API. Firstly click on the "create app" button on the apps page from step 1. This will load a wizard asking you for your application name. This can be edited later on.
+The next step is to register an app. We understand you won't have any code yet, this is all about setting up a client to work with the API. Firstly click on the "Create App" button on the apps page from step 1. This will load a wizard asking you to select from the options the type of app or integration you are building.&#x20;
 
-![](.gitbook/assets/screenshot-2021-03-31-at-12.02.52.png)
+![](.gitbook/assets/Wizard1.png)
 
-The wizard will then ask you if you want to create a AppMarket App. It is worth taking the time to consider here if you wish your application to be launched from within the Agency Cloud CRM. For the purposes of this example, we will assume that you do.
-
-![](.gitbook/assets/screenshot-2021-03-31-at-12.03.48.png)
+Depending on your use case you will be presented with various options. For this example, we will be selecting the option for 'AgencyCloud Functionality'. You will see on the right-hand side all information relating to this selection, helpful documentation and links.&#x20;
 
 The next step is to provide routes for our OAuth service Reapit Connect to redirect back to your app. You can add production routes later but for now, we will add localhost for development.
 
-![](.gitbook/assets/screenshot-2021-03-31-at-12.04.29.png)
+![](<.gitbook/assets/First 4.png>)
 
 You will be then asked to select permissions that map directly to OAuth Scopes, and also the endpoints you selected at stage two of this guide.
 
-![](.gitbook/assets/screenshot-2021-03-31-at-12.05.43.png)
+![](<.gitbook/assets/First 5.png>)
 
-On completion of this step, your skeleton app will be generated and you will get your App Client Id. You will need this for authenticating via Reapit Connect OAuth.
+On completion of this step, you will be taken to your App Details page which will provide you with your App Client Id. You will need this for authenticating via Reapit Connect OAuth.
 
-![](.gitbook/assets/screenshot-2021-03-31-at-12.06.32.png)
+![](<.gitbook/assets/Wizard 3.png>)
 
-Clicking finish, will take you back to the apps page where you can see your first application. Clicking on it will load the app detail page where you can edit and populate more listing information about your app.
+Clicking on 'Edit Details' on the left hand-side will present you with more information about your app, where to amend your app details. permissions etc. Please note, the app name is pre-populated based on your company name and can be changed at any stage.&#x20;
 
-![](.gitbook/assets/screenshot-2021-03-31-at-12.07.12.png)
+![](.gitbook/assets/Editdetails1.png)
 
 ### 4. Populate your app listing (optional)
 
 The previous section of this guide gives us enough detail to allow you to authenticate against our APIs and for you to be productive on the platform. When your app is in development, you will however want to get it ready to be listed in the AppMarket. To do this you will need to provide some additional information.
 
-From the App Detail Page below, select "Edit Details".
+From the 'App Details' Page below, select "Edit App" and select 'AppMarket Listing':
 
-![](.gitbook/assets/screenshot-2021-03-31-at-12.07.54.png)
+![](<.gitbook/assets/Wizard 9.png>)
 
-You will be asked in the first section to provide details that populate your app listing, tell us how to launch your app and how your customers should contact you for support.
+You will be asked in the first section to provide details that populate your app listing, tell us how to launch your app and how your customers should contact you for support. As you go through the form we will ask for images such as an icon, featured image and screenshots. Fore more information on the requirements, please [click here](listing-your-app/app-listing-review.md).
 
-![](.gitbook/assets/screenshot-2021-03-31-at-12.11.23.png)
+### Other Sections
 
-Moving on, you will be asked if you wish to integrate with the AgencyCloud CRM and if so, what page you would like to integrate with. This will allow your app to be launched as a screen direct from AgencyCloud by a user. It is an optional step and is in addition to being able to launch from the top level "apps" menu in the CRM. More on this behaviour in the [Desktop](api/desktop-api.md#desktop-types) docs.
+Based on our selection from the wizard, will may  see a tab for 'AgencyCloud Integration' and a toggle if you wish to integrate with the AgencyCloud CRM and if so, what page you would like to integrate with. This will allow your app to be launched as a screen direct from AgencyCloud by a user. It is an optional step and is in addition to being able to launch from the top level "apps" menu in the CRM. More on this behaviour in the [Desktop](api/desktop-api.md#desktop-types) docs.
 
-![](.gitbook/assets/screenshot-2021-03-31-at-12.12.15.png)
+![](.gitbook/assets/AC.png)
 
-You will then see the OAuth Authentication flow you selected in the initial wizard. This step is not editable so if you need to change it, you will be required to register a new application.
+You will also then see the 'Authentication' tab, as this example is a user facing integration this section will allow you to use our hosted authentication service, [Reapit Connect](api/reapit-connect.md#overview). As part of this flow, you need will need to register one or more call back URLs and a log out URL to allow Reapit Connect to direct traffic back to your application in a secure way.
 
-If your application is **user facing**, you should have selected "Authorization Code". This will allow you to use our hosted authentication service, [Reapit Connect](api/reapit-connect.md#overview). As part of this flow, you need will need to register one or more call back URLs and a log out URL to allow Reapit Connect to direct traffic back to your application in a secure way.
+If you are developing a **server-side machine to machine** application such as a feed to another system, the tab will not be visible. You can find details on how this flow works in our [platform documentation](api/api-documentation.md#authentication).
 
-If you are developing a **server-side machine to machine** application such as a feed to another system, you should have selected "Client Credentials". You can find details on how this flow works in our [platform documentation](api/api-documentation.md#authentication).
+The next tab is 'Permissions', here you can select any additional permissions (OAuth scopes) you need for your app to work.&#x20;
 
-For the purposes of this example, because we are building a client side app, so my app uses the "Authorization Code" flow.
+Here you can also set the visibility of your app using the 'Private Apps' toggle. This is used if you wanted to restrict the AppMarket listing to a single or limited sub-set of clients, for example if you are building some private in-house tooling.&#x20;
 
-The next section is applicable only if you want to restrict the AppMarket listing to a single or limited sub-set of clients, for example if you are building some private in-house tooling. For the public beta we don't support surfacing the client ids you wish to restrict to since the AppMarket is not live however, if you want your app to be private, you can select "yes" and ignore the customer code list. For most users, you will select "no".
+![](<.gitbook/assets/Wizard 10.png>)
 
-![](.gitbook/assets/screenshot-2021-03-31-at-12.13.45.png)
+Finally, one you have completed the relevant details, simply click 'Save Changes' on the left-hand side.
 
-Then select an icon and a featured image for your app listing. You will be asked to crop these to the ideal dimensions for the listings page. Optionally you can other images about your app like screenshots.
+It is important to note, the app is not live yet. You can check the status of your app at any stage by going to 'About Listings' and click on 'Check Status'.
 
-![](.gitbook/assets/screenshot-2021-03-31-at-12.15.30.png)
+![](<.gitbook/assets/Wizard 8.png>)
 
-The next step is for external, non AppMarket apps and should be skipped if you are building a web-based AppMarket listed app; if however you are building an integration that you don't want to appear in the AppMarket, you can select this option. You app will still be listed for permission only purposes however, it will not be possible to launch from within the AgencyCloud desktop app. For the purposes of this example, we will leave unchecked.
+The check status button is a very quick and easy way to see the current status of your app, what information is missing, your AppMarket status and to see if have any changes that require saving.
 
-![](.gitbook/assets/screenshot-2021-03-31-at-12.16.36.png)
+![](<.gitbook/assets/Wizard 4.png>)
 
-The last step is to select any additional permissions (OAuth scopes) you need for your app to work. They must map to the endpoints you selected at point two above.
+The process for submitting your app for review is the same as before. Simply check the status of your app and once all checks have been completed (see example below):
 
-![](.gitbook/assets/screenshot-2021-03-31-at-12.17.18.png)
+![](<.gitbook/assets/Wizard 5.png>)
 
-Finally, submit the form and you will return via a success message to the Apps page where you will see your registered application.
+A button on the left-hand side will appear ‘Submit Review’. This will create a revision to our Admin team.
 
-![](.gitbook/assets/screenshot-2021-03-31-at-12.17.50.png)
+![](<.gitbook/assets/Wizard 6.png>)
 
-It is important to note, the app is not live yet, both because as we in developer beta only and because to set the live status, you need to edit your app and set the 'listed' status for approval. This behaviour is out of scope for this document.
+&#x20;
+
+Once your app has been approved (please [click here](listing-your-app.md) for more information on the reviewal process) the button will change to present the option to ‘Delist’ your app.
+
+![](<.gitbook/assets/Wizard 7.png>)
 
 ### 5. Get your Client Id
 
-From the Apps screen above, you will need to obtain your application's client id to authenticate your new app. To do this, click on the app to bring up the App Detail page as per below.
+From the 'App Details' page, you will need to obtain your application's client id to authenticate your new app.
 
-![](.gitbook/assets/screenshot-2021-03-31-at-12.18.57.png)
+![](<.gitbook/assets/Wizard 3.png>)
 
-The Client Id should now be visible. Keep this page open so you can copy the Client Id at the next step. Please note, if you have selected "Client Credentials" as your authentication flow, you will also see your client secret (hidden), on this page.
+Please note, if you have selected "Client Credentials" as your authentication flow, you will also see your client secret also, on this page.
 
 ### 6. **Write some code!**
 
@@ -134,7 +136,5 @@ To complete your Organisation information, click on ‘Settings’ and select �
 * VAT/Company Reg and or National Insurance Number
 * About Us – The section will be displayed on any app listing in the AppMarket in addition to information about the app.&#x20;
 * Company Address
-
-Please then complete the information on the 'Billing' tab.
 
 In order to list your App, please see the guidelines within the '[Listing your App](https://app.gitbook.com/@reapit-1/s/reapit-foundations/\~/drafts/-MQMdhdEIqniO2BQbO\_g/listing-your-app)' section&#x20;
