@@ -20,9 +20,11 @@ To help with ensuring you are ready, have a look at our guide on adding your con
 
 ### 2. Submit for Approval
 
-Ticking the ‘Submit for Approval’ check box on your app listing, will let us know you are ready for our Admin Team to review and we will be notified immediately of your request.
+When you are ready to submit your app for review, you will see the 'Submit Review' option appear on the left-hand navigation. It will only be visible if you have completed all the revenant information.  If you are unsure, you can alway check the status of your app by going to 'Edit Details' & 'Check Status'.&#x20;
 
-![](.gitbook/assets/screenshot-2021-03-31-at-12.25.20.png)
+After submitting your app the admin team we will be notified.&#x20;
+
+![](<.gitbook/assets/Wizard 6.png>)
 
 &#x20;
 
@@ -91,5 +93,3 @@ For more information about the requirements for listing an app in the AppMarket,
 If any changes are required you will be contacted by a member of the team.
 
 Once your listing has been approved, you will receive an email confirming your app has been approved and will be set to a status of 'Listed'.  You app will then be listed in the Reapit AppMarket ready for client installation.&#x20;
-
-![](.gitbook/assets/screenshot-2021-03-31-at-12.26.02.png)
