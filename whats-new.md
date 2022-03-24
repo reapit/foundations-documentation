@@ -7,6 +7,78 @@ description: >-
 
 # What’s New
 
+## 24/03/22
+
+### New Release
+
+This week, we have released a new version of the Developer Portal, specifically an updated version of the app creation flow and app edit pages.
+
+The new design has been developed to improve the UI (now using Elements V3) and to improve the user experience. We’ve also added a very helpful new feature. Read below to find out more.
+
+### App Creation
+
+To better help you navigate the app creation process, we have included a helpful app creation wizard. The wizard is designed to make creating an app as straightforward as possible by preselecting/populating certain fields based on your use case.
+
+You can select the type of integration from the list below:
+
+![](.gitbook/assets/Wizard1.png)
+
+Or if none of the above suit your requirements, simply scroll down and select either a Client-side app or Server-side Integration:
+
+![](<.gitbook/assets/Wizard 2.png>)
+
+With every selection, we will present the associated documentation on the right-hand side to help you with the process.
+
+You’ll find helpful links for more information or on certain selections, a short video.
+
+When you have completed the wizard, you’ll be directed to the ‘App Details’ page. This page will contain all the information you need to get started developing right away, such as the Client ID and or Client Secret:
+
+![](<.gitbook/assets/Wizard 3.png>)
+
+The app name will be pre-populated based on your company name. You can change this at any stage.
+
+To edit your app, simply click ‘Edit App’ from the left-hand navigation.
+
+Depending on what type of app you have selected from the wizard, you’ll be presented with various tabs. The first tab for all types is the ‘About Listings’.
+
+### **New Feature**
+
+On the ‘Edit App’ page is where we have introduced a new feature ‘Check Status’.
+
+![](<.gitbook/assets/Wizard 8.png>)
+
+The check status button is a very quick and easy way to see the current status of your app, what information is missing, your AppMarket status and to see if have any changes that require saving.
+
+![](<.gitbook/assets/Wizard 4.png>)
+
+The process for submitting your app for review is the same as before. Simply check the status of your app and once all checks have been completed (see example below):
+
+![](<.gitbook/assets/Wizard 5.png>)
+
+A button on the left-hand side will appear ‘Submit Review’. This will create a revision to our Admin team.
+
+![](<.gitbook/assets/Wizard 6.png>)
+
+&#x20;
+
+Once your app has been approved (please [click here](listing-your-app.md) for more information on the reviewal process) the button will change to present the option to ‘Delist’ your app.
+
+![](<.gitbook/assets/Wizard 7.png>)
+
+The additional tabs, as mentioned previously, will depend on your app type but in all cases, you will have an ‘AppMarket Listing’ and a ‘Permissions’ tab.
+
+The ‘AppMarket Listing’ tab captures the app listing content for the AppMarket and will need to be completed before submitting your app. Images, description, contact information etc.
+
+![](<.gitbook/assets/Wizard 9.png>)
+
+The ‘Permissions’ tab will relate to the endpoints and data sets you wish to interact with and the visibility of your app (either public or private).
+
+![](<.gitbook/assets/Wizard 10.png>)
+
+For other types of integrations, you will see the tabs for AgencyCloud Integration and Authentication.
+
+We will be continuing to update the Developer Portal in the coming months to further enhance the user experience and features available to you. &#x20;
+
 ## 14/03/22
 
 ### Works Orders&#x20;
