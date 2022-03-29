@@ -5,12 +5,12 @@ description: Technical guidance for working with webhooks for real time event no
 # Webhooks
 
 {% hint style="warning" %}
-Please note that apps and integrations developed using Webhooks for topics other than application install/uninstall will only be visible in the AppMarket to customers who have been migrated to AWS.&#x20;
+Please note that apps and integrations developed using Webhooks for topics other than application install/uninstall will only be visible in the AppMarket to customers who have been migrated to AWS.
 {% endhint %}
 
 ## Introduction
 
-Webhooks allow you set up an endpoint in your own application to receive programmatical notifications from the Foundations Platform about changes to our customers data as it happens.&#x20;
+Webhooks allow you set up an endpoint in your own application to receive programmatical notifications from the Foundations Platform about changes to our customers data as it happens.
 
 Rather than requiring you to pull information via our APIs, webhooks will **push** information to your endpoint. When one of those events is triggered (eg. a new offer is added), our Platform will send this notification as an HTTP `POST` request to the endpoint(s) you configure.
 
@@ -37,17 +37,15 @@ You must provide an endpoint to receive the payload the Platform will send to yo
 
 ### Securing your endpoint
 
-We provide your application with a simple means of verifying that requests to your webhook's endpoint are for the correct application and they originate from Reapit Foundations.&#x20;
+We provide your application with a simple means of verifying that requests to your webhook's endpoint are for the correct application and they originate from Reapit Foundations.
 
-Any requests sent from our platform will include a `Reapit-Webhook-Signature`header containing a base64 representation of your application's unique client id. You should make sure that this header matches your own base64 representation of client id before processing a webhook `POST`  request.
+Any requests sent from our platform will include a `Reapit-Webhook-Signature`header containing a base64 representation of your application's unique client id. You should make sure that this header matches your own base64 representation of client id before processing a webhook `POST` request.
 
-You can obtain your client id by clicking your applications details in the developer portal.&#x20;
+You can obtain your client id by clicking your applications details in the developer portal.
 
 ## Managing webhooks in the user interface
 
 We offer a user interface to allow you to manage webhooks in a simple and straightforward way. You're able to create, update and remove webhooks for all of your applications in a single place.
-
-&#x20;
 
 ![](<../.gitbook/assets/Webhook 1.png>)
 
@@ -72,10 +70,10 @@ Data changes from any application will result in a notification being sent to yo
 For example, if a new offer is added in our AgencyCloud CRM and your application has a webhook set up containing the **offers.created** topic, your endpoint will be sent a specific, descriptive payload containing the full details of the new offer.
 
 {% hint style="success" %}
-**We recommend** registering your webhooks in an inactive state and using the **Ping** function. This allows you to test that your endpoint works as expected before opting to receive live customer updates.&#x20;
+**We recommend** registering your webhooks in an inactive state and using the **Ping** function. This allows you to test that your endpoint works as expected before opting to receive live customer updates.
 {% endhint %}
 
-We currently support the following topics, but this will increase over time. Please note that you will only be  presented topics if your application has been assigned the associated scope.
+We currently support the following topics, but this will increase over time. Please note that you will only be presented topics if your application has been assigned the associated scope.
 
 ### Available topics
 
@@ -134,7 +132,7 @@ We currently support the following topics, but this will increase over time. Ple
 
 ### Subscribe to customers
 
-You must configure the customer(s) that your webhook will respond to events for. Only customers who have installed your listed application will appear here.&#x20;
+You must configure the customer(s) that your webhook will respond to events for. Only customers who have installed your listed application will appear here.
 
 * Specify one or more customers to receive only event originating from those customers
 * Specify 'SBOX' to listen to events triggered from our sandbox (useful for testing)
@@ -150,98 +148,98 @@ By default, webhooks will not be emitted when only the entity's eTag and modifie
 
 ## Managing webhooks using REST API
 
-We also provide a REST API to allow webhooks to be programmatically created for the customer/application that your access token has been issued on behalf of. Please see the swagger documentation for technical details on how to integrate.&#x20;
+We also provide a REST API to allow webhooks to be programmatically created for the customer/application that your access token has been issued on behalf of. Please see the swagger documentation for technical details on how to integrate.
 
 ## Receiving events
 
 ### Example payload
 
-We use a consistent schema to describe any event that we broadcast in a descriptive and self-contained way. The notifications we emit indicate that an **event has happened** - but additionally and where appropriate -  we provide details about the actual data change that has occurred.  This allows your application to ascertain **granular details about the event** without needing additional API calls.
+We use a consistent schema to describe any event that we broadcast in a descriptive and self-contained way. The notifications we emit indicate that an **event has happened** - but additionally and where appropriate - we provide details about the actual data change that has occurred. This allows your application to ascertain **granular details about the event** without needing additional API calls.
 
 Below is an example of what a **contacts.modified** webhook event might look like
 
 ```
 {
   "SendAttempts": 1,
-	"eventId": "9e7e4181-6210-49ea-abf5-d5ce16d23647",
-	"entityId": "RPT20000029",
-	"customerId": "webhook-test",
-	"eventTime": "2020-05-13T09:33:16.8811358Z",
-	"topicId": "contacts.modified",
-	"new": {
-		"id": "RPT20000029",
-		"created": "2020-05-13T09:32:24Z",
-		"modified": "2020-05-13T09:33:10Z",
-		"title": "Mr",
-		"forename": "John",
-		"surname": "Smith",
-		"dateOfBirth": null,
-		"active": true,
-		"marketingConsent": "notAsked",
-		"identityCheck": "unchecked",
-		"source": null,
-		"homePhone": null,
-		"workPhone": null,
-		"mobilePhone": "07123 456789",
-		"email": "john.smith@reapitestates.net",
-		"primaryAddress": {
-			"type": "primary",
-			"buildingName": "",
-			"buildingNumber": "12",
-			"line1": "High Street",
-			"line2": "Clacton-On-Sea",
-			"line3": "Essex",
-			"line4": "",
-			"postcode": "CO15 1AE",
-			"countryId": "GB"
-		},
-		"secondaryAddress": null,
-		"workAddress": null,
-		"officeIds": ["RPT"],
-		"negotiatorIds": ["RPT"],
-		"_eTag": "\"4DF107A6EB05D792EEAFDF1432F6E275\""
-	},
-	"old": {
-		"id": "RPT20000029",
-		"created": "2020-05-13T09:32:24Z",
-		"modified": null,
-		"title": "Mr",
-		"forename": "John",
-		"surname": "Smith",
-		"dateOfBirth": null,
-		"active": true,
-		"marketingConsent": "notAsked",
-		"identityCheck": "unchecked",
-		"source": null,
-		"homePhone": null,
-		"workPhone": null,
-		"mobilePhone": null,
-		"email": "john.smith@reapitestates.net",
-		"primaryAddress": {
-			"type": "primary",
-			"buildingName": "",
-			"buildingNumber": "1",
-			"line1": "High Street",
-			"line2": "Clacton-On-Sea",
-			"line3": "Essex",
-			"line4": "",
-			"postcode": "CO15 1AE",
-			"countryId": "GB"
-		},
-		"secondaryAddress": null,
-		"workAddress": null,
-		"officeIds": ["RPT"],
-		"negotiatorIds": ["RPT"],
-		"_eTag": "\"65D680519E9762519D203891A694B85B\""
-	},
-	"diff": {
-		"modified": [null, "2020-05-13T09:33:10Z"],
-		"mobilePhone": [null, "07123 456789"],
-		"primaryAddress": {
-			"buildingNumber": ["1", "12"]
-		},
-		"_eTag": ["\"65D680519E9762519D203891A694B85B\"", "\"4DF107A6EB05D792EEAFDF1432F6E275\""]
-	}
+  "eventId": "9e7e4181-6210-49ea-abf5-d5ce16d23647",
+  "entityId": "RPT20000029",
+  "customerId": "webhook-test",
+  "eventTime": "2020-05-13T09:33:16.8811358Z",
+  "topicId": "contacts.modified",
+  "new": {
+    "id": "RPT20000029",
+    "created": "2020-05-13T09:32:24Z",
+    "modified": "2020-05-13T09:33:10Z",
+    "title": "Mr",
+    "forename": "John",
+    "surname": "Smith",
+    "dateOfBirth": null,
+    "active": true,
+    "marketingConsent": "notAsked",
+    "identityCheck": "unchecked",
+    "source": null,
+    "homePhone": null,
+    "workPhone": null,
+    "mobilePhone": "07123 456789",
+    "email": "john.smith@reapitestates.net",
+    "primaryAddress": {
+      "type": "primary",
+      "buildingName": "",
+      "buildingNumber": "12",
+      "line1": "High Street",
+      "line2": "Clacton-On-Sea",
+      "line3": "Essex",
+      "line4": "",
+      "postcode": "CO15 1AE",
+      "countryId": "GB"
+    },
+    "secondaryAddress": null,
+    "workAddress": null,
+    "officeIds": ["RPT"],
+    "negotiatorIds": ["RPT"],
+    "_eTag": "\"4DF107A6EB05D792EEAFDF1432F6E275\""
+  },
+  "old": {
+    "id": "RPT20000029",
+    "created": "2020-05-13T09:32:24Z",
+    "modified": null,
+    "title": "Mr",
+    "forename": "John",
+    "surname": "Smith",
+    "dateOfBirth": null,
+    "active": true,
+    "marketingConsent": "notAsked",
+    "identityCheck": "unchecked",
+    "source": null,
+    "homePhone": null,
+    "workPhone": null,
+    "mobilePhone": null,
+    "email": "john.smith@reapitestates.net",
+    "primaryAddress": {
+      "type": "primary",
+      "buildingName": "",
+      "buildingNumber": "1",
+      "line1": "High Street",
+      "line2": "Clacton-On-Sea",
+      "line3": "Essex",
+      "line4": "",
+      "postcode": "CO15 1AE",
+      "countryId": "GB"
+    },
+    "secondaryAddress": null,
+    "workAddress": null,
+    "officeIds": ["RPT"],
+    "negotiatorIds": ["RPT"],
+    "_eTag": "\"65D680519E9762519D203891A694B85B\""
+  },
+  "diff": {
+    "modified": [null, "2020-05-13T09:33:10Z"],
+    "mobilePhone": [null, "07123 456789"],
+    "primaryAddress": {
+      "buildingNumber": ["1", "12"]
+    },
+    "_eTag": ["\"65D680519E9762519D203891A694B85B\"", "\"4DF107A6EB05D792EEAFDF1432F6E275\""]
+  }
 }
 ```
 
@@ -265,7 +263,7 @@ The content of the `new`, `old`, and `diff` properties in the webhook event payl
 
 ### Testing
 
-When you have an endpoint configured, you can test it by using the **Ping** function. This will send a test event with an example payload to the URL stored against the webhook for the selected topic. You will only be able to select topics that are applicable to the webhook being tested.&#x20;
+When you have an endpoint configured, you can test it by using the **Ping** function. This will send a test event with an example payload to the URL stored against the webhook for the selected topic. You will only be able to select topics that are applicable to the webhook being tested.
 
 ![](<../.gitbook/assets/Webhook 3.png>)
 
@@ -274,7 +272,7 @@ The user interface will show a success or failure based on the response back fro
 We also recommend testing your webhooks using our sandbox environment before applying them to customers.
 
 {% hint style="info" %}
-**All events submitted from the Ping function** use example data and will have a `customerId` of 'webhook-test' and an `entityId` of '9e7e4181-6210-49ea-abf5-d5ce16d23647'. Receiving services need to handle this appropriately and not treat the payload as production event&#x20;
+**All events submitted from the Ping function** use example data and will have a `customerId` of 'webhook-test' and an `entityId` of '9e7e4181-6210-49ea-abf5-d5ce16d23647'. Receiving services need to handle this appropriately and not treat the payload as production event
 {% endhint %}
 
 ### Failure handling and exponential backoff
@@ -300,7 +298,7 @@ Please note that we will not retry to send messages that were not delivered on t
 
 ## Additional information
 
-* Events are generated in near real-time and though extremely unlikely, we do not guarantee that you will only get a single notification for an event.&#x20;
+* Events are generated in near real-time and though extremely unlikely, we do not guarantee that you will only get a single notification for an event.
 * We do not guarantee that webhooks will be sent in the exact order that the events occurred. You can use the `eventTime` to determine when each event occurred.
 * Webhooks originated requests contribute to developer analytics and billing in the same way as regular API requests do
 
