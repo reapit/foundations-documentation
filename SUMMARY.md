@@ -30,3 +30,4 @@
   * [REST API](troubleshooting/platform-api.md)
 * [Development Requests](dev-requests.md)
 * [FAQ's](faqs.md)
+* [Help](help.md)
