@@ -7,6 +7,52 @@ description: >-
 
 # What’s New
 
+## 01/04/22
+
+### Trading Standards – Material Information Requirement
+
+We are pleased to confirm, the Properties API has been updated to provide the following information ahead of the Material Information requirement on 1st May 2022. Related information [here](https://www.nationaltradingstandards.uk/news/material-information-for-property-listings-announced/).&#x20;
+
+The following fields are available:
+
+* Council Tax Band (`councilTax`)
+* Local Authority (`localAuthorityCompanyId`)
+* Ground rent for leasehold properties (`groundRent` & `groundRentComment`)
+* Maintenance charges for leasehold properties (`serviceCharge` & `serviceChargeComment`)
+* Leasehold length (`tenure.expiry`)
+
+### Webhook Enhancements
+
+Last week, we updated our Webhook functionality to increase throughput and to reduce latency. We have seen a significant improvement already. We have enhanced the way in which we process webhook events. Nothing has changed for you in how you create or manage your webhooks but the background service has been re developed to better increase the rate in which they are emitted.
+
+### Additional fields
+
+Deposit Data (Type & Amount) is now available inside the Lettings object on Properties API under ‘deposit’:
+
+![](.gitbook/assets/DepositData.png)
+
+### Additional Filtering
+
+Properties by Negotiator ID(s)
+
+![](.gitbook/assets/negid.jpg)
+
+Properties by Country ID:
+
+![](.gitbook/assets/CountryID.jpg)
+
+### GitHub Username Field
+
+To better help us identify the company you are associated to and help with triaging tickets that are raised via GitHub, you can now save your GitHub username on your ‘[Profile](https://developers.reapit.cloud/settings/profile)’ page in the DeveloperPortal:
+
+&#x20;
+
+![](<.gitbook/assets/Github Username.jpg>)
+
+### Help is moving
+
+The 'Help' page is moving into our main documentation. The 'Help' icon on the main navigation will soon no longer be visible but you can still access help by going to '[Docs](https://foundations-documentation.reapit.cloud) > [Help](help.md)'.&#x20;
+
 ## 24/03/22
 
 ### New Release
