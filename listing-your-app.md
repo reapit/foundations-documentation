@@ -24,31 +24,55 @@ When you are ready to submit your app for review, you will see the 'Submit Revie
 
 After submitting your app the admin team we will be notified.&#x20;
 
-![](<.gitbook/assets/Wizard 6.png>)
-
-&#x20;
-
 Depending on your app or integration and its complexity, the review process from start to finish can typically take between 2-7 weeks. However, there are circumstances in which this may not apply.
+
+![](<.gitbook/assets/Wizard 6.png>)
 
 To make it easier to understand, we have put together the following as a guide:
 
+&#x20;
 
+
+
+Depending on your app or integration and its complexity, the review process from start to finish can typically take between 2-7 weeks. However, there are circumstances in which this may not apply.
 
 **Publicly listed: App or Integration**
 
+To make it easier to understand, we have put together the following as a guide:
+
 Review time: Typically, 2 – 7 weeks
+
+
 
 &#x20;
 
+**Publicly listed: App or Integration**
+
 **Privately listed: Integration**
 
+Review time: Typically, 2 – 7 weeks
+
 Review Time: Typically, 1 – 2 days
+
+&#x20;
+
+
+
+**Privately listed: Integration**
+
+**Privately listed: App**
+
+Review Time: Typically, 1 – 2 days
+
+Review Time: Typically, 2-3 days
 
 &#x20;
 
 **Privately listed: App**
 
 Review Time: Typically, 2-3 days
+
+
 
 
 
