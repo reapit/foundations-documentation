@@ -8,7 +8,7 @@ description: >-
 
 ### Applicant
 
-Applicants represent the [property](platform-glossary.md#property) buying or renting interests of one or more [contacts](platform-glossary.md#contact) or [companies](platform-glossary.md#company). This includes requirements such as the number of rooms, maximum budget and the geographical areas that the applicant is interested in. 
+Applicants represent the [property](platform-glossary.md#property) buying or renting interests of one or more [contacts](platform-glossary.md#contact) or [companies](platform-glossary.md#company). This includes requirements such as the number of rooms, maximum budget and the geographical areas that the applicant is interested in.&#x20;
 
 ### Area
 
@@ -20,7 +20,7 @@ Appointments represent calendar engagements used by [negotiators](platform-gloss
 
 ### Company
 
-Companies represent a business organisation that the agent \([customer](platform-glossary.md#customer)\) has a relationship with. Companies can be assigned a type which relates to the various roles they are able to fulfill such as solicitor or supplier, as well as being able to be involved in their own [property](platform-glossary.md#property) transactions.
+Companies represent a business organisation that the agent ([customer](platform-glossary.md#customer)) has a relationship with. Companies can be assigned a type which relates to the various roles they are able to fulfill such as solicitor or supplier, as well as being able to be involved in their own [property](platform-glossary.md#property) transactions.
 
 ### Configuration
 
@@ -34,33 +34,33 @@ Contacts represent the details of a person that the agent has a relationship wit
 
 ### Conveyancing
 
-Conveyancing represents the process of progressing an accepted [offer ](platform-glossary.md#offer)to the completion of the sale of a property. 
+Conveyancing represents the process of progressing an accepted [offer ](platform-glossary.md#offer)to the completion of the sale of a property.&#x20;
 
-Submitting new offers and transitioning them to an accepted status is done using the Offers API. The Conveyancing API is responsible for transitioning that existing, accepted offer into a completed property sale. 
+Submitting new offers and transitioning them to an accepted status is done using the Offers API. The Conveyancing API is responsible for transitioning that existing, accepted offer into a completed property sale.&#x20;
 
 Our Conveyancing APIs also allow a chain to be managed, providing a means of linking dependant offers together. It's possible to link to offers added to other properties that the customer has instructed, as well as those that are external and instructed to another agent.
 
 ### Customer
 
-Customers represent estate agents who use Reapit software. We do not provide an API to obtain details of our customers, instead, their details will be known to you at the point that they install your AppMarket application. 
+Customers represent estate agents who use Reapit software. We do not provide an API to obtain details of our customers, instead, their details will be known to you at the point that they install your AppMarket application.&#x20;
 
 ### Department
 
 Departments represent a set of descriptive attributes used to describe a [property](platform-glossary.md#property). Departments are assigned to both [properties](platform-glossary.md#property) and [applicants ](platform-glossary.md#applicant)and are used to define which attributes can be used to describe a [property ](platform-glossary.md#property)or an [applicant](platform-glossary.md#applicant) property requirement.
 
-A Department is most commonly used to ring fence groups of [properties](platform-glossary.md#property) and [applicants](platform-glossary.md#applicant), particularly when it comes to matching \(the process of finding properties that meet specific applicant requirements and vice versa\). Typically, customers dealing with only residential sales and lettings will have a single department as there is no real need to separate any of the data, however an example of where multiple departments might be configured would be a customer who deals with both residential and commercial property transactions. In this scenario, a separate Department would normally be setup to separate the two disparate sets of data, as it would be undesirable for residential applicants to be sent details of commercial properties.
+A Department is most commonly used to ring fence groups of [properties](platform-glossary.md#property) and [applicants](platform-glossary.md#applicant), particularly when it comes to matching (the process of finding properties that meet specific applicant requirements and vice versa). Typically, customers dealing with only residential sales and lettings will have a single department as there is no real need to separate any of the data, however an example of where multiple departments might be configured would be a customer who deals with both residential and commercial property transactions. In this scenario, a separate Department would normally be setup to separate the two disparate sets of data, as it would be undesirable for residential applicants to be sent details of commercial properties.
 
 ### Document
 
-Documents represent the details of a file asset that has added to our platform. Documents can be assigned a type to indicate its purpose \(eg. a brochure\) and associated to an associated entity \(eg. a [property](platform-glossary.md#property)\).
+Documents represent the details of a file asset that has added to our platform. Documents can be assigned a type to indicate its purpose (eg. a brochure) and associated to an associated entity (eg. a [property](platform-glossary.md#property)).
 
 ### Enquiry
 
-Enquiries represent a potential sales or lettings lead for the agent. An enquiry can either contain information about a valuation request from a [vendor](platform-glossary.md#vendor)/[landlord](platform-glossary.md#landlord) or can represent interest from a potential [applicant](platform-glossary.md#applicant) such as a viewing request. Enquiries are vetted by the agent before they are promoted into [property](platform-glossary.md#property) or [applicant ](platform-glossary.md#applicant)entities.
+Enquiries (Internet Registrations) represent a potential sales or lettings lead for the agent. An enquiry can either contain information about a valuation request from a [vendor](platform-glossary.md#vendor)/[landlord](platform-glossary.md#landlord) or can represent interest from a potential [applicant](platform-glossary.md#applicant) such as a viewing request. Enquiries are vetted by the agent before they are promoted into [property](platform-glossary.md#property) or [applicant ](platform-glossary.md#applicant)entities. Enquiries will appear in AgencyCloud under the 'Internet Registrations' section.&#x20;
 
 ### Identity check
 
-Identity checks represent the information captured to verify the identity of a [contact](platform-glossary.md#contact) or [company](platform-glossary.md#company). Agents must adhere to anti-money laundering regulations and are required to capture proof of identity and address for their customers. Identity checks can store textual information such as passport number as well as file assets associated as [documents](platform-glossary.md#document) \(such as scanned copies\).
+Identity checks represent the information captured to verify the identity of a [contact](platform-glossary.md#contact) or [company](platform-glossary.md#company). Agents must adhere to anti-money laundering regulations and are required to capture proof of identity and address for their customers. Identity checks can store textual information such as passport number as well as file assets associated as [documents](platform-glossary.md#document) (such as scanned copies).
 
 ### Journal entry
 
@@ -76,11 +76,11 @@ Negotiators represent a member of staff working for an agent. Details about the 
 
 ### Metadata
 
-Our [metadata ](api/api-documentation.md#metadata)system allows you to easily extend the data that our platform supports. Most of our POST and PATCH endpoints provide the ability to attach a JSON document to our entities which will be automatically included in future fetches of that entity. 
+Our [metadata ](api/api-documentation.md#metadata)system allows you to easily extend the data that our platform supports. Most of our POST and PATCH endpoints provide the ability to attach a JSON document to our entities which will be automatically included in future fetches of that entity.&#x20;
 
-When using our specific metadata endpoints for more direct, granular control on the data you provide, you can also build new, standalone entities that are specific to your application without needing to hosting your own datastore. 
+When using our specific metadata endpoints for more direct, granular control on the data you provide, you can also build new, standalone entities that are specific to your application without needing to hosting your own datastore.&#x20;
 
-Metadata is specific to a developer and any data that your application sets will not be presented to other developers who build on the Foundations platform. We do not recommend using metadata storage for any sensitive information \(personally identifiable details, bank accounts, etc\).
+Metadata is specific to a developer and any data that your application sets will not be presented to other developers who build on the Foundations platform. We do not recommend using metadata storage for any sensitive information (personally identifiable details, bank accounts, etc).
 
 ### Offer
 
@@ -100,15 +100,15 @@ Property images represent a picture that has been taken of a [property](platform
 
 ### Rest hook
 
-Rest hooks are a [loose standard](https://resthooks.org/) for providing a set of APIs to create a [web hook](api/webhooks.md) programmatically. If your application uses web hooks, this functionality can help you automate onboarding of customers and remove any manual steps needed in the portal.
+Rest hooks are a [loose standard](https://resthooks.org) for providing a set of APIs to create a [web hook](api/webhooks.md) programmatically. If your application uses web hooks, this functionality can help you automate onboarding of customers and remove any manual steps needed in the portal.
 
 ### Source
 
-Sources represent the origin of enquiry for a potential customer. Many entities such as [applicant](platform-glossary.md#applicant), [landlord](platform-glossary.md#landlord) and [contact](platform-glossary.md#contact) can capture source information which allows the agent to understand where their business is coming from \(for example, a portal or google search\).
+Sources represent the origin of enquiry for a potential customer. Many entities such as [applicant](platform-glossary.md#applicant), [landlord](platform-glossary.md#landlord) and [contact](platform-glossary.md#contact) can capture source information which allows the agent to understand where their business is coming from (for example, a portal or google search).
 
 ### Task
 
-Tasks represent details on an action that should be performed by a given date. Tasks are categorised by type and can optionally be related to another entity \(for example, a task to remind a [negotiator](platform-glossary.md#negotiator) to call a [landlord](platform-glossary.md#landlord)\). If no activation date is specified, tasks can be used to send messages to and from [negotiators](platform-glossary.md#negotiator)/[offices](platform-glossary.md#office).
+Tasks represent details on an action that should be performed by a given date. Tasks are categorised by type and can optionally be related to another entity (for example, a task to remind a [negotiator](platform-glossary.md#negotiator) to call a [landlord](platform-glossary.md#landlord)). If no activation date is specified, tasks can be used to send messages to and from [negotiators](platform-glossary.md#negotiator)/[offices](platform-glossary.md#office).
 
 ### Tenancy
 
@@ -125,4 +125,3 @@ Vendors represents one or more [contact](platform-glossary.md#contact) or [compa
 ### Works order
 
 Works orders represent one or more maintenance jobs that have been requested for a lettings [property](platform-glossary.md#property). Works orders are usually reported by the [landlord](platform-glossary.md#landlord) or [tenant ](platform-glossary.md#tenancy)and can be tracked from approval until the work has been completed. Approved works orders are assigned to a [company](platform-glossary.md#company) supplier who can then provide estimates and costings for the work.
-
