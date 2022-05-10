@@ -28,43 +28,21 @@ Depending on your app or integration and its complexity, the review process from
 
 ![](<.gitbook/assets/Wizard 6.png>)
 
-To make it easier to understand, we have put together the following as a guide:
-
-&#x20;
-
-
-
 Depending on your app or integration and its complexity, the review process from start to finish can typically take between 2-7 weeks. However, there are circumstances in which this may not apply.
 
-**Publicly listed: App or Integration**
-
-To make it easier to understand, we have put together the following as a guide:
-
-Review time: Typically, 2 – 7 weeks
+&#x20;To make it easier to understand, we have put together the following as a guide:
 
 
-
-&#x20;
 
 **Publicly listed: App or Integration**
 
-**Privately listed: Integration**
-
 Review time: Typically, 2 – 7 weeks
-
-Review Time: Typically, 1 – 2 days
 
 &#x20;
 
-
-
 **Privately listed: Integration**
 
-**Privately listed: App**
-
 Review Time: Typically, 1 – 2 days
-
-Review Time: Typically, 2-3 days
 
 &#x20;
 
@@ -72,9 +50,7 @@ Review Time: Typically, 2-3 days
 
 Review Time: Typically, 2-3 days
 
-
-
-
+&#x20;
 
 If your app is launchable inside of AgencyCloud or has a Client facing user interface, we will ask you to set your app to private, using Customer ID 'RES-GRTA’. We can then install your app as an external client (still using sandbox data). This step will give us the ability to test and view the following:
 
