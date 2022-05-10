@@ -28,6 +28,10 @@ At this point, you should visit the configure tab, to  complete the build detail
 
 When you have done this, if your app is on Github and private, you will need to install our Github App from this page: [https://github.com/apps/reapit](https://github.com/apps/reapit) following the steps to configure for your repo. This gives us the permission to pull from your private repo.
 
+{% hint style="info" %}
+You should only install the Github app for a single repo, not your whole organisation as it sets up a webhook on an app by app basis. If you delete your app or pipeline, and set up a new one for your repo, you need to uninstall and re-install the Github app each time.&#x20;
+{% endhint %}
+
 Having installed the app, you are ready to do your first build. Hit the "provision" button and the page will start to update in live time as we pull, build and deploy your code.
 
 ![](<../../.gitbook/assets/Screenshot 2022-05-05 at 13.30.02.png>)
@@ -40,3 +44,11 @@ From the top level nav you can also view the IaaS pipeline dashboard that gives 
 
 ![](<../../.gitbook/assets/Screenshot 2022-05-05 at 14.26.35.png>)
 
+### Troubleshooting&#x20;
+
+We will try to update this section regularly with frequently asked questions while we are in beta.
+
+* **My deployment fails immediately after hitting provision then deploy with a private repo.**  First check you have the Github app installed. Then check you have installed for a single repo, not your whole organisation as it sets up a webhook on an app by app basis. If you delete your app or pipeline, and set up a new one for your repo, you need to uninstall and re-install the Github app each time.&#x20;
+* **My deployment throws an error after hitting provision then deploy.** We validate your repo's existence before trying to pull it. It is likely therefore you have not configured your app from the configure tab.
+* **My deployment fails at one of the build steps.** This is likely because of an issue building you app itself. Check the download logs button in the expandable pipeline table row for build errors and check if you can replicate locally.
+* **My app deployed but I see a re-direct mismatch error when first clicking on the link.** We update your app re-direct uris when provisioning a pipeline however, if this fails you may need to update them manually to the location of your deployed app from the `apps/:id/edit` page,  authentication tab.
