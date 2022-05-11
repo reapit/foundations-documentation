@@ -11,7 +11,7 @@ description: >-
 
 ### Trading Standards – Material Information Requirement
 
-We are pleased to confirm, the Properties API has been updated to provide the following information ahead of the Material Information requirement on 1st May 2022. Related information [here](https://www.nationaltradingstandards.uk/news/material-information-for-property-listings-announced/).&#x20;
+We are pleased to confirm, the Properties API has been updated to provide the following information ahead of the Material Information requirement by the end of May 2022. Related information [here](https://www.nationaltradingstandards.uk/news/material-information-for-property-listings-announced/).&#x20;
 
 The following fields are available:
 
