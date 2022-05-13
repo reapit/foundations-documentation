@@ -155,7 +155,7 @@ For more information on Match Output, please click [here](https://foundations-do
 
 We are now returning (when manually entered) the Property URL, which is accessible from the 'Marketing' screen:&#x20;
 
-![Properties Endpoint](<.gitbook/assets/image (108).png>)
+![Properties Endpoint](<.gitbook/assets/image (108) (1).png>)
 
 ![Marketing Screen in AgencyCloud](.gitbook/assets/PropertyURL.jpg)
 

@@ -78,9 +78,9 @@ If you want to setup an alternative email address, simply go to ‘[Organisation
 
 ### **How to Invite New Members**
 
-To invite members to join your organisation, simply click on the ‘Invite New Member’ button from the ‘[Organisation](https://developers.reapit.cloud/settings/organisation)’ page in the Developer Portal. The recipient will receive your invitation via email and will have the option to reject or accept. You can track the status of any members in the ‘Members’ table on the organisations tab:
+To invite members to join your organisation, simply click on the ‘Invite Developer’ button from the '[Members](https://developers.reapit.cloud/settings/members)' page in the Developer Portal. The recipient will receive your invitation via email and will have the option to reject or accept. You can track the status of any members in the ‘Members’ table:
 
-![](https://632174406-files.gitbook.io/\~/files/v0/b/gitbook-28427.appspot.com/o/assets%2F-LzfbZymENafdjBels04%2F-MFf2D0OLYpSdhahlpp9%2F-MFf2n-1JmlNzBfsoDH6%2Fimage.png?alt=media\&token=c623f025-15b5-4071-8d56-4ac46ba14a37)
+![](<.gitbook/assets/image (108).png>)
 
 Within the members section you will also have the ability to disable members and to set other members as ‘Admins’.
 
