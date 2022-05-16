@@ -6,7 +6,7 @@ description: >-
 
 # Create React App Template
 
-The fastest way to get started building a Reapit AppMarket App is with our [Create-React-App](https://create-react-app.dev) template. This package extends the functionality offered by the Facebook CLI and React Scripts whilst adding Reapit Specific packages for AppMarket development. Out of the box you will have an app that;
+The fastest way to get started building a Reapit AppMarket App is with our [Create-React-App](https://create-react-app.dev/) template. This package extends the functionality offered by the Facebook CLI and React Scripts whilst adding Reapit Specific packages for AppMarket development. Out of the box you will have an app that;
 
 * Is authenticated against our Platform API using Reapit Connect and Connect Session
 * Has the Elements UI library installed with detailed examples of suggested layouts for lists, tables and forms.

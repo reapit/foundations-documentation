@@ -100,7 +100,7 @@ Property images represent a picture that has been taken of a [property](platform
 
 ### Rest hook
 
-Rest hooks are a [loose standard](https://resthooks.org) for providing a set of APIs to create a [web hook](api/webhooks.md) programmatically. If your application uses web hooks, this functionality can help you automate onboarding of customers and remove any manual steps needed in the portal.
+Rest hooks are a [loose standard](https://resthooks.org/) for providing a set of APIs to create a [web hook](api/webhooks.md) programmatically. If your application uses web hooks, this functionality can help you automate onboarding of customers and remove any manual steps needed in the portal.
 
 ### Source
 

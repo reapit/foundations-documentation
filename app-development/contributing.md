@@ -20,7 +20,7 @@ If you do want to work with the project, it is important to note there are certa
 
 ### Pre-requisites
 
-To get started working with Foundations, you will first need to have [Git](https://git-scm.com), [NodeJS](https://nodejs.org/en/) and [Yarn](https://yarnpkg.com) installed globally on your local machine. Currently, we use `yarn@2.4.x` and `node@14.x.x` internally however, other versions may well work for you.
+To get started working with Foundations, you will first need to have [Git](https://git-scm.com/), [NodeJS](https://nodejs.org/en/) and [Yarn](https://yarnpkg.com/) installed globally on your local machine. Currently, we use `yarn@2.4.x` and `node@14.x.x` internally however, other versions may well work for you.
 
 For a clean build, then follow the steps below;
 
@@ -81,7 +81,7 @@ Given that you are in a package directory you can run the following commands:
 
 `yarn lint` will lint the project, typically using ESLint
 
-`yarn release` will release your app to a deployed environment in AWS, typically using [Serverless framework](https://www.serverless.com) and by default to dev. If you want to deploy to production, add the `--stage prod` flag to this command.
+`yarn release` will release your app to a deployed environment in AWS, typically using [Serverless framework](https://www.serverless.com/) and by default to dev. If you want to deploy to production, add the `--stage prod` flag to this command.
 
 `yarn publish` will publish the package to NPM, by default to the private registry unless the `--access public` flag is added.
 
@@ -135,7 +135,7 @@ When working on the project, we ask that contributors follow a basic git flow, w
 
 ### Github Actions, Serverless, AWS & Releases
 
-All of our cloud infrastructure is in AWS. For releasing our code, we leverage [Serverless Framework](https://www.serverless.com) where possible for it's convenience and clean, declarative code as infra approach. Under the hood it uses CloudFormation to spin up and tear down the infrastructure we need in AWS.
+All of our cloud infrastructure is in AWS. For releasing our code, we leverage [Serverless Framework](https://www.serverless.com/) where possible for it's convenience and clean, declarative code as infra approach. Under the hood it uses CloudFormation to spin up and tear down the infrastructure we need in AWS.
 
 Anyone not familiar with Serverless and AWS Services should do some reading at this stage but the infra we use is declared for each project in a `serverless.yml` file at the root of each package. This is where you will add and remove required resources as required.&#x20;
 
@@ -168,7 +168,7 @@ As per the previous sections, all work on the project is performed against the s
 
 ### Linting & Formatting
 
-The vast majority of base code style is enforced by [ESLint](https://eslint.org) with sensible community presets from [TSLint](https://palantir.github.io/tslint/) rules, and [Prettier](https://prettier.io). The linter runs in a pre-commit hook on staged files with an auto-fix flag set to address any trivial issues.
+The vast majority of base code style is enforced by [ESLint](https://eslint.org/) with sensible community presets from [TSLint](https://palantir.github.io/tslint/) rules, and [Prettier](https://prettier.io/). The linter runs in a pre-commit hook on staged files with an auto-fix flag set to address any trivial issues.
 
 If you want to run the lint command manually, you can do this from the root of the project by executing `yarn lint-all.`
 
@@ -176,7 +176,7 @@ In addition to the lint rules, please also where possible, stick to the contribu
 
 ### Code Guidelines
 
-* The codebase is almost exclusively written in [TypeScript](https://www.typescriptlang.org), with the exception of some node scripts that handle deployment and tooling. This decision was taken because of the level of robustness and scalability of the language over vanilla JS and we ask that contributors favour TypeScript where possible for future development.
+* The codebase is almost exclusively written in [TypeScript](https://www.typescriptlang.org/), with the exception of some node scripts that handle deployment and tooling. This decision was taken because of the level of robustness and scalability of the language over vanilla JS and we ask that contributors favour TypeScript where possible for future development.
 * Code should be functional in style rather than Object Orientated or Imperative unless there are no clean alternatives.
   * Use pure functions where possible to make them testable and modular.
   * Avoid mutating variables and the `let` keyword.
@@ -219,7 +219,7 @@ In addition to the lint rules, please also where possible, stick to the contribu
 
 ### Styling
 
-We support two styling methods across our projects; [SASS with CSS Modules](https://sass-lang.com) and [Linaria](https://github.com/callstack/linaria) (CSS in JS). For new projects we favour Linaria and are aiming to eventually deprecate / refactor our SASS from our projects.
+We support two styling methods across our projects; [SASS with CSS Modules](https://sass-lang.com/) and [Linaria](https://github.com/callstack/linaria) (CSS in JS). For new projects we favour Linaria and are aiming to eventually deprecate / refactor our SASS from our projects.
 
 By convention, we store any Linaria components that are specific to an individual component in a sub folder of that component called `__styles__` however, if a style is re-usable, generic or global to the project, please use the `src/styles` directory to reduce duplication.
 
@@ -231,7 +231,7 @@ Our overriding aim is to write as little CSS as possible and focus on re-usable 
 
 Our code has a lot of automated testing, mostly unit tests, although we have some E2E tests and this is something we will be expanding going forward. In the previous section you saw the commands exported from each of the projects to run the test suites so this section deals with some basic conventions for working with tests on the codebase.
 
-We use [Jest](https://jestjs.io) for our unit testing, with [Enzyme](https://airbnb.io/enzyme/) for rendering React components where relevant. If you are not familiar with these libraries, we would urge you to do some reading before getting started. Our goal is that each of our packages, where relevant, should have \~90% coverage of functions and lines. Whilst this target is an arbitrary value, the desired outcome is a high level of confidence in our CI / CD pipeline which means we can deploy straight to development and daily to production.
+We use [Jest](https://jestjs.io/) for our unit testing, with [Enzyme](https://airbnb.io/enzyme/) for rendering React components where relevant. If you are not familiar with these libraries, we would urge you to do some reading before getting started. Our goal is that each of our packages, where relevant, should have \~90% coverage of functions and lines. Whilst this target is an arbitrary value, the desired outcome is a high level of confidence in our CI / CD pipeline which means we can deploy straight to development and daily to production.
 
 By convention, we keep our test scripts in a sub folder of the source code called `__tests__` with the same file name. Where we use mocks and stubs, as with tests, they live in the same folder of the source code with the same file name and sub folder convention `__stubs__` and `__mocks__` .
 

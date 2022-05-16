@@ -10,7 +10,7 @@ The Foundations REST API will in-time replace our existing REST and SOAP web ser
 
 ## Introduction
 
-The Foundations API is organised around [REST](http://en.wikipedia.org/wiki/Representational\_State\_Transfer). Our API has predictable resource-oriented URLs using standard HTTP response codes and verbs. All requests and responses, including errors, are [JSON-encoded](http://www.json.org).
+The Foundations API is organised around [REST](http://en.wikipedia.org/wiki/Representational\_State\_Transfer). Our API has predictable resource-oriented URLs using standard HTTP response codes and verbs. All requests and responses, including errors, are [JSON-encoded](http://www.json.org/).
 
 You can immediately start testing our APIs in [sandbox mode](api-documentation.md#sandbox-mode) by using our [Interactive API Explorer](https://developers.reapit.cloud/swagger). Please see our [help page](https://marketplace.reapit.cloud/developer/help) for support and information on preview / upcoming changes.
 
@@ -415,7 +415,7 @@ If you'd like to associate your custom entity with an entity your hold outside o
 
 ### Validating custom entities
 
-Our `metadataSchema` endpoints allow you to provide a [JSON Schema](https://json-schema.org) to validate the metadata JSON document that you provide the platform. Once you associate a schema with a custom entity type, you it will be used to validate future metadata submissions for entities of that type. If this content does not conform with the JSON schema you've provided for that entity type, the request with fail with a `422 Unprocessable Entity` response and a[ listing of the reasons why validation](api-documentation.md#request-validation) failed. For more information, see our Swagger documentation.
+Our `metadataSchema` endpoints allow you to provide a [JSON Schema](https://json-schema.org/) to validate the metadata JSON document that you provide the platform. Once you associate a schema with a custom entity type, you it will be used to validate future metadata submissions for entities of that type. If this content does not conform with the JSON schema you've provided for that entity type, the request with fail with a `422 Unprocessable Entity` response and a[ listing of the reasons why validation](api-documentation.md#request-validation) failed. For more information, see our Swagger documentation.
 
 ### Searching for metadata
 

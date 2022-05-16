@@ -51,7 +51,7 @@ To better help us identify the company you are associated to and help with triag
 
 ### Help is moving
 
-The 'Help' page is moving into our main documentation. The 'Help' icon on the main navigation will soon no longer be visible but you can still access help by going to '[Docs](https://foundations-documentation.reapit.cloud) > [Help](help.md)'.&#x20;
+The 'Help' page is moving into our main documentation. The 'Help' icon on the main navigation will soon no longer be visible but you can still access help by going to '[Docs](https://foundations-documentation.reapit.cloud/) > [Help](help.md)'.&#x20;
 
 ## 24/03/22
 
@@ -356,7 +356,7 @@ The visual changes you see are the first step towards a universal design languag
 
 Because we ask that all AppMarket Apps use our UI for visual consistency, we wanted to give the style guide a lift to ensure it best showcases of our development partner's work. This is the core of the Elements v2 release - it is a subtle evolution of the library, including a new font, typography, colour pallet, form inputs, notifications, dialogue boxes and much more.
 
-Care has been taken to avoid breaking changes both to React Components and CSS Classes so that upgrading for all developers should be trivial and painless. We will also offer ongoing long term support in terms of security and bug fixes for the v2.x.x release. You can see the updates to the React Storybook here: [https://elements.reapit.cloud/?path=/docs/](https://elements.reapit.cloud/?path=/docs)
+Care has been taken to avoid breaking changes both to React Components and CSS Classes so that upgrading for all developers should be trivial and painless. We will also offer ongoing long term support in terms of security and bug fixes for the v2.x.x release. You can see the updates to the React Storybook here: [https://elements.reapit.cloud/?path=/docs/](https://elements.reapit.cloud/?path=/docs/)
 
 ![](<.gitbook/assets/image (95).png>)
 

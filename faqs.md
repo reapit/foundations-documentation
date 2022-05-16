@@ -336,3 +336,70 @@ To launch an app, click on 'Apps' and 'Installed'. Click on your app to launch.&
 'Integrations' will not be launched from the 'Installed' page and instead will be accessed by a URL provided by the third-party.&#x20;
 
 As an 'Admin' you can view and manage your integrations from the '[Manage](https://marketplace.reapit.cloud/manage)' page.
+
+## What is an API call?&#x20;
+
+There are 3 ways to interact with our Platform API:
+
+* A direct request to the Platform API using one of the following methods:\
+  GET, POST, PUT, PATCH & DELETE
+* Receiving a payload via a Webhook
+* Embedding data in a request
+
+All methods to interact with our Platform API are API calls and are chargeable in accordance with our [Terms and Conditions](https://foundations-documentation.reapit.cloud/developer-terms-and-conditions#schedule-2-fees).&#x20;
+
+&#x20;
+
+### **API Direct Requests**
+
+As an example, a single request might be to call our ‘Properties’ endpoint (GET /Properties). This is calculated as follows:
+
+1-5 Endpoints & 1 Request
+
+![](.gitbook/assets/api1.png)
+
+When you increase the amount of requests you make and the number of endpoints you are using, the cost of an API call will decrease.
+
+For example, multiple requests would be calculated as follows:
+
+1-5 Endpoints & 50,000 Requests
+
+![](.gitbook/assets/api2.png)
+
+This is because you will be charged a certain rate for the first 1000 requests, a reduced rate for the next 2500 and so on.
+
+&#x20;
+
+### **Webhooks**
+
+Webhooks are calculated the same as making a request. It’s important to note, that when making a direct request to our Platform API, you are in control of how many requests you are making. Webhooks, however, are events that are emitted and controlled by the end user (the customer).
+
+We provide the ability to set general and granular levels of topics (events that you are interested in). For example, ‘Properties Modified’ will send an event when _any_ property has been modified. Or you could set a more specific request such as ‘Selling Property Exchanged’, which will emit a webhook when a property status has been set to ‘Exchanged’.
+
+As mentioned above, the rate and number of events that are emitted are based on the customer and their negotiators. It’s worth being mindful that bulk updates do occur. For example, if you are listening on event’s for ‘Properties Modified’ and a negotiator leaves that company, all of their properties will be transferred to a new negotiator, resulting in several properties being ‘Modified’.
+
+&#x20;
+
+### **Embedding**
+
+Embedding data allows to you make a single query to our Platform and also include related data from other endpoints.
+
+For example, you can make a query to our ‘Properties’ endpoint to search for a single property:
+
+‘GET /properties{ID}’ & also embed ‘Appointments’. This will show you all appointments related to that property.
+
+The core request to ‘Properties’ would be 1 endpoint and the embed ‘Appointments’ endpoint would be 1 endpoint, but the default page size for data returned is 25. If there are more than 25 associated appointments for that property, each page request is calculated as an additional request.
+
+You can reduce this by applying the maximum page size on the initial request, for example:
+
+‘Get /properties?pageSize=100\&embed=appointments’
+
+The page size you set would also be applied to any endpoints you have embedded. You will not be able to pass any other query string parameters to your embedded endpoints.
+
+This is apparent if you were, for example, only interested in associated appointments with the type ‘Viewings’, as it will return all appointments associated to that property.
+
+Therefore, it’s important to note that whilst using this mechanism can result in improved application performance with less API interaction code required, when embedding data, you will not know how many pages of data (requests) are required and therefore will not be able to forecast the API consumption accurately.
+
+![](.gitbook/assets/Embed.png)
+
+&#x20;
