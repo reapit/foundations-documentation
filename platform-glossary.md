@@ -98,6 +98,10 @@ Properties represent the details of a building that the agent has had an interac
 
 Property images represent a picture that has been taken of a [property](platform-glossary.md#property) to be used for marketing purposes. Property images are most frequently used for display on portals, agent web sites and for generation of printed materials.
 
+### Referral
+
+A referral is the action of directing a [contact ](platform-glossary.md#contact)or [vendor ](platform-glossary.md#vendor)to a third party where there may be interest in the services on offer. This could be anything from a solicitor to a removals company. Users of the AgencyCloud CRM will typically be the ones to initiate a referral.
+
 ### Rest hook
 
 Rest hooks are a [loose standard](https://resthooks.org/) for providing a set of APIs to create a [web hook](api/webhooks.md) programmatically. If your application uses web hooks, this functionality can help you automate onboarding of customers and remove any manual steps needed in the portal.
