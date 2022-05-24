@@ -7,6 +7,77 @@ description: >-
 
 # What’s New
 
+## 24/05/22
+
+### **Referrals - Phase 1**
+
+Last week, we released the first phase of the ‘Referrals’ endpoint which includes the following:
+
+![](.gitbook/assets/WN8.jpg)
+
+The second phase will include the ability to write to the endpoint, metadata & associated webhooks. You can track the phase 2 milestone [here](https://github.com/reapit/foundations/milestone/136)****
+
+### **New features**
+
+**Journal Entries**: You can now store a journal entry of Match (MA) against a property or applicant record\
+\
+**Bedroom Range**: The ‘Max’ bedroom range is now exposed in the Properties API – this is most useful for marketing of property developments.\
+\
+**Properties**: We have added support for Juliette Balcony (property situation), Studio (property style) and Villa (property type).\
+\
+**Companies**: Additional contact information is now available for companies. The additional information is available in ‘additionalContactDetails' object:&#x20;
+
+![](.gitbook/assets/WN9.jpg)
+
+**Transactions**: It is now possible to filter transactions by ‘Outstanding’ amount.
+
+### **Developer Portal Release**
+
+The latest release of the Developer Portal (v3.0.5) included the re design of the following pages…\
+\
+**Settings**: We have updated the UI within the settings section in accordance with our design system and the other pages within the portal. The options available to you when accessing settings will be dependent on your user level:
+
+![](.gitbook/assets/WN3.png)
+
+Admins of an organisation can set the level of users (members) on the ‘[Members](https://developers.reapit.cloud/settings/members)’ page.\
+&#x20;\
+**Analytics**: We have separated the features and information available to you in specific sections: ‘API Usage’, ‘Costs’ & ‘Installations’.\
+You can use the filters on the left-hand side to set the data results for each page.
+
+### **Design System**
+
+In the latest release of our Design System Figma file, we introduced new button states and a new component. We have also fixed a few bugs and revised/added additional documentation for buttons.\
+&#x20;\
+New Features
+
+* Disable and hover states for desktop buttons
+
+![](.gitbook/assets/WN4.jpg)
+
+* Disable state for mobile buttons
+
+![](.gitbook/assets/WN5.jpg)
+
+* New medium size infographic icon (Manage App Listing)
+
+![](.gitbook/assets/WN6.jpg)
+
+* File Upload component
+
+![](.gitbook/assets/WN7.jpg)
+
+### **Bug Fixes**
+
+* Measurements: misspelling on the red static button; it was 38px, now it’s 40px&#x20;
+* Measurements: misspelling on the ‘One Choice Chips’ component - active state, selected chip, padding was 4px and now it’s 3x, margins were 3px and now it’s 4px
+* Documentation about button types was added to all components that use them
+* Static button with icon has been documented
+* Static button width size for mobile has been increased to 120px
+* Guidelines for static and dynamic buttons have been revised
+* Desktop - Full Options Expansion Panel: button margins and distance between buttons and content have been revised
+
+
+
 ## 01/04/22
 
 ### Trading Standards – Material Information Requirement
