@@ -41,7 +41,13 @@ The latest release of the Developer Portal (v3.0.5) included the re design of th
 
 Admins of an organisation can set the level of users (members) on the ‘[Members](https://developers.reapit.cloud/settings/members)’ page.\
 &#x20;\
-**Analytics**: We have separated the features and information available to you in specific sections: ‘API Usage’, ‘Costs’ & ‘Installations’.\
+**Analytics**: We have separated the features and information available to you in specific sections: ‘API Usage’, ‘Costs’ & ‘Installations’.
+
+
+
+![](<.gitbook/assets/Screenshot 2022-05-24 164411.jpg>)
+
+\
 You can use the filters on the left-hand side to set the data results for each page.
 
 ### **Design System**
