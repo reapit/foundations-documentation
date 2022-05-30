@@ -19,6 +19,7 @@
   * [Foundations TS Defintions](app-development/foundations-ts-defintions.md)
   * [Login With Reapit](app-development/web.md)
   * [Contributing](app-development/contributing.md)
+  * [Website Development](app-development/website-development.md)
   * [IaaS (Coming Soon)](app-development/iaas-coming-soon/README.md)
     * [🖥 Developer Portal (Beta)](app-development/iaas-coming-soon/developer-portal-beta.md)
     * [💻 CLI (Beta)](app-development/iaas-coming-soon/cli-beta.md)
