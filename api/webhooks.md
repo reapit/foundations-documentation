@@ -37,11 +37,233 @@ You must provide an endpoint to receive the payload the Platform will send to yo
 
 ### Securing your endpoint
 
+**Legacy Method**
+
+{% hint style="warning" %}
+This method has been superseded by cryptographically signed requests. Both mechanisms will run side by side for a period of team before the legacy method described below is removed. Communication will be sent in good time before this feature becomes obsolete.
+{% endhint %}
+
 We provide your application with a simple means of verifying that requests to your webhook's endpoint are for the correct application and they originate from Reapit Foundations.
 
 Any requests sent from our platform will include a `Reapit-Webhook-Signature`header containing a base64 representation of your application's unique client id. You should make sure that this header matches your own base64 representation of client id before processing a webhook `POST` request.
 
 You can obtain your client id by clicking your applications details in the developer portal.
+
+**Cryptographic Signing**
+
+Asymmetric request signing with a public/private key pair has now been introduced and should be used over the legacy method above, which will become obsolete at some point in the future.
+
+When a new webhook is setup in the [DeveloperPortal](https://developers.reapit.cloud/webhooks/new), a public/private key pair will be generated and stored for the app that the webhook is associated with. The keys are associated to the app, rather than the webhook itself, so if you have two webhooks for the same app, they will be signed with the same key.
+
+As each event is prepared to be sent to your endpoint, it will be signed using the private key which is stored securely and only visible to the Platform Webhooks services. Once the message reaches you, you can verify it has come from the Reapit Platform by using the public key to check it's authenticity. To do this, complete the following steps
+
+1. Read the `X-Signature` header from the request. This will be in the following format:\
+   \
+   `s:keyId:timestamp:signature`\
+   \
+   Full example:\
+   \
+   `s:98da2881-0540-48db-8ffa-45d7003f1412:1650934596:LLD5mr9ynFEvjz8dVmwO4vNmEva32ZV6TjAcPzdIDO93Jhc82EhysiQPcw9ZdlbCcCUjDsaeHZUsFEMUVKbGBg`\
+   ``
+2.  Retrieve the public key for your app by using one of the following methods:\
+    \
+    A) Use the `Public Key` option in the DeveloperPortal to retrieve the key for your app or\
+    B) Make a call to `GET https://platform.reapit.cloud/webhooks/signing/{id}` where {id} is the id obtained from the X-Signature header (segment 2)\
+    \
+    Data from this endpoint will be returned in the following format:\
+
+
+    ```
+    {
+      "keys": [
+        {
+          "kid": "08da3720-99e7-42c3-8531-58bdc8f32ecf",
+          "crv": "Ed25519",
+          "x": "ijz3_2n1gmlfhqAa2XH_5uYmcL2L2VHb1IqDbRDLBnU"
+        }
+      ]
+    }
+    ```
+
+    \
+    Calls to this endpoint must include the Authorization header containing a valid Bearer token. It is only possible to retrieve keys associated to the calling app when accessing the key programmatically.\
+
+3. Decode the `x` value from the results using the Base64 URL scheme (if using method A above, this is the value displayed to you in the DeveloperPortal)
+4. Combine the timestamp (segment 3) from the `X-Signature` header and the webhook message body (do not include a separation character)
+5. Verify the signature (segment 4 of the `X-Signature` header) using the Ed25519 curve, using the public key and a combination of the timestamp/message body as above.
+
+There are various packages available for many popular programming languages that allow you to easily verify signatures generated using the Ed25519 curve. Whilst this algorithm is less widely used than RSA, it is considered more secure hence it's use in the Platform. The code examples below can be used as a reference point, but should not be considered production ready code:
+
+{% tabs %}
+{% tab title="NodeJS with Express" %}
+The following example uses Node JS with Express, Node Forge and Body Parser npm packages
+
+```javascript
+const express = require('express');
+const crypto = require('node-forge');
+const bodyParser = require('body-parser');
+
+// Configure Express
+const app = express();
+const port = 5000;
+
+// Be sure to read the raw request body, rather than
+// using a JSON pre-processor/JSON.stringify()
+app.use(bodyParser.raw({ inflate: true, type: 'application/json' }));
+
+// Setup POST handler
+app.post('/', function (req, res) {
+    const ED25519 = forgeCrypto.pki.ed25519;
+
+    // Read the X-Signature header
+    const sigHeader = req.header("x-signature");
+    const sigParts = sigHeader.split(":");
+    
+    // Read the signature segments
+    const keyId = sigParts[1];
+    const timestamp = sigParts[2];
+    const signature = sigParts[3];
+
+    // The message to verify is a concatenation of the timestamp (from the X-Signature header)
+    // and the raw request body, with no delimiting characters
+    const msgToVerify = `${timestamp}${req.body.toString()}`;
+
+    // Retrieve the public key from the respective endpoint
+    // or store OUTSIDE your code. This is an example only
+    const publicKeyBase64 = "ijz3_2n1gmlfhqAa2XH_5uYmcL2L2VHb1IqDbRDLBnU";
+
+    // Verify the signature
+    const verified = ED25519.verify({
+        message: msgToVerify,
+        encoding: "utf8",
+        signature: Buffer.from(signature, "base64"),
+        publicKey: Buffer.from(publicKeyBase64, "base64")
+    });
+
+    if (verified) {
+        console.log("Signature is valid");
+
+        // Continue to process webhook
+    }
+    else {
+        console.log("Signature is invalid");
+    }
+
+    res.send("Webhook processing complete");
+});
+
+// Start the server
+app.listen(port, () => {
+    console.log(`Now listening on port ${port}`);
+}); 
+```
+{% endtab %}
+
+{% tab title=".NET Core" %}
+The following example uses C# .NET Core with the BouncyCastle.NETCore NuGet package\
+
+
+```csharp
+using System;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.WebUtilities;
+using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Primitives;
+using Org.BouncyCastle.Crypto.Parameters;
+using Org.BouncyCastle.Crypto.Signers;
+
+namespace WebhookHandlerExample.Controllers
+{
+    [ApiController]
+    [Route("/")]
+    public class WebhookHandlerController : ControllerBase
+    {
+        private readonly ILogger<WebhookHandlerController> logger;
+
+        public WebhookHandlerController(ILogger<WebhookHandlerController> logger)
+        {
+            this.logger = logger ?? throw new ArgumentNullException(nameof(logger));
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> PostHandler([FromBody] dynamic body)
+        {
+            if (Request.Headers.TryGetValue("X-Signature", out StringValues signatureHeader))
+            {
+                string[] sigParts = signatureHeader.First().Split(":");
+
+                // Read the signature segments
+                var keyId = sigParts[1];
+                var timestamp = sigParts[2];
+                var signature = sigParts[3];
+
+                // The message to verify is a concatenation of the timestamp (from the X-Signature header)
+                // and the raw request body, with no delimiting characters
+                var msgToVerify = $"{timestamp}{body}";
+
+                // Retrieve the public key from the respective endpoint
+                // or store OUTSIDE your code. This is an example only
+                var publicKeyBase64 = "ijz3_2n1gmlfhqAa2XH_5uYmcL2L2VHb1IqDbRDLBnU";
+
+                CryptographyService cryptoService = new CryptographyService();
+
+                bool verified = cryptoService.VerifySignature(msgToVerify, publicKeyBase64, signature);
+
+                if (verified)
+                {
+                    this.logger.LogInformation("Signature is valid");
+
+                    // Continue to process webhook
+                }
+                else
+                {
+                    this.logger.LogError("Signature is invalid");
+                }
+
+                return Ok("Webhook processing complete");
+            }
+
+            return Ok("No signature was found in the message header collection");
+          
+        }
+    }
+
+    internal class CryptographyService
+    {
+        /// <summary>
+        /// Verifies the specified signature against the public key supplied
+        /// </summary>
+        /// <param name="message">The message used to generate the isngautre</param>
+        /// <param name="encodedPublicKey">The encoded public key</param>
+        /// <param name="signature">The signature to verify</param>
+        /// <returns>True if the signature is valid, else false</returns>
+        public bool VerifySignature(string message, string encodedPublicKey, string signature)
+        {
+            byte[] decodedPublicKey = WebEncoders.Base64UrlDecode(encodedPublicKey);
+            byte[] messageBytes = Encoding.ASCII.GetBytes(message);
+            byte[] signatureBytes = WebEncoders.Base64UrlDecode(signature);
+
+            // Setup validator using Ed25519 curve
+            var keyParams = new Ed25519PublicKeyParameters(decodedPublicKey, 0);
+
+            var validator = new Ed25519Signer();
+            validator.Init(false, keyParams);
+            validator.BlockUpdate(messageBytes, 0, messageBytes.Length);
+
+            bool isValidSignature = validator.VerifySignature(signatureBytes);
+
+            return isValidSignature;
+        }
+    }
+}
+```
+{% endtab %}
+{% endtabs %}
+
+****
 
 ## Managing webhooks in the user interface
 
