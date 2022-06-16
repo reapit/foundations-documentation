@@ -26,7 +26,7 @@ Please also be aware that whilst the service is free in Beta, charges will apply
 
 #### Hosting
 
-The Reapit IaaS Platform offers hosting for your React Application.
+The Reapit IaaS Platform offers hosting for your JavaScript single page application in our AWS infrastructure. In future iterations, we will also support NodeJS.
 
 #### Domain
 
@@ -42,11 +42,7 @@ The Reapit IaaS Platform offers real time updates on your Applications Deploymen
 
 #### Rollbacks and Version control
 
-The Reapit IaaS Platform enables Reapit customers to control their deployments by redeploying previously deployed versions. Rollbacks and targeted version deployments can be trigger via the Developer Portal or the CLI.
-
-#### On-the-go deployments with CLI
-
-Want to deploy your Application in real time as you're developing without making a commit? No Problem. Use the Reapit CLI to release instant deployments and watch your deployment from start to finish.
+The Reapit IaaS Platform enables Reapit customers to control their deployments by redeploying previously deployed versions. Rollbacks and targeted version deployments can be trigger via the CLI. In future versions we will support this in the developer portal too.
 
 #### Deploy from your repository&#x20;
 
