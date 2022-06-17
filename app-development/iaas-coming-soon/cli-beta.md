@@ -64,10 +64,6 @@ $ reapit pipeline list
 
 #### Create a Pipeline
 
-{% hint style="warning" %}
-Make sure that you don't already have a pipeline created for your chosen Reapit App or Repo
-{% endhint %}
-
 Use the below command to start creating a pipeline. The Reapit CLI will then prompt you for required options and configurations.
 
 ```
