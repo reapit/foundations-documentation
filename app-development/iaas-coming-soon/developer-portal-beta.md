@@ -34,6 +34,10 @@ If you created a new application, we pre-provision a Pipeline for your applicati
 
 Note the state of the application is "Pre provisioned". This means we have a shell pipeline and have reserved a domain name for your app in our infra.
 
+{% hint style="info" %}
+Please be aware, there is sometimes a slight delay between creating an app and the pipeline being available. We are actively working on a fix for this but as a workaround if you don't see the pipeline immediately, a page refresh will solve.&#x20;
+{% endhint %}
+
 The first step is to provision your app by hitting the "Provision" button. This will build your initial infrastructure on our services and can take a minute or two.&#x20;
 
 ![](<../../.gitbook/assets/Screenshot 2022-06-17 at 12.24.22 (1).png>)
