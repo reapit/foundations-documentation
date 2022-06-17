@@ -22,7 +22,7 @@ From here, you need to tell us about your application, the repo (we support Gith
 
 On saving this config, you have pre-provisioned an app and you will return to the Pre provisioned app screen.
 
-![](<../../.gitbook/assets/Screenshot 2022-06-16 at 15.44.26 (1).png>)
+![](<../../.gitbook/assets/Screenshot 2022-06-17 at 12.22.14.png>)
 
 You should now hit "Provision", to build your initial infrastructure on our services. This can take a minute or two. You can also move on to the [Next Steps](developer-portal-beta.md#next-steps-all-apps) section below.
 
@@ -30,17 +30,25 @@ You should now hit "Provision", to build your initial infrastructure on our serv
 
 If you created a new application, we pre-provision a Pipeline for your application by default. Visiting the "Pipeline" tab you will see this page:
 
-![](<../../.gitbook/assets/Screenshot 2022-06-16 at 15.27.06.png>)
+![](<../../.gitbook/assets/Screenshot 2022-06-17 at 12.24.22.png>)
 
-Note the state of the application is "Pre provisioned". This means we have a shell pipeline and have reserved a domain name for your app in our infra. The first step is to configure your app by clicking on the "Configure" tab.
+Note the state of the application is "Pre provisioned". This means we have a shell pipeline and have reserved a domain name for your app in our infra.
+
+The first step is to provision your app by hitting the "Provision" button. This will build your initial infrastructure on our services and can take a minute or two.&#x20;
+
+![](<../../.gitbook/assets/Screenshot 2022-06-17 at 12.24.22 (1).png>)
+
+The next step is to configure your app by clicking on the "Configure" tab or the left hand side button.
+
+![](<../../.gitbook/assets/Screenshot 2022-06-17 at 12.27.41.png>)
+
+On the configure screen, you need to tell us about your application, the repo (we support Github and BitBucket), the main branch, the command in your package.json that builds the app and the directory your assets are output to.&#x20;
 
 ![](<../../.gitbook/assets/Screenshot 2022-06-16 at 15.41.26.png>)
 
-From here, you need to tell us about your application, the repo (we support Github and BitBucket), the main branch, the command in your package.json that builds the app and the directory your assets are output to. Hit save config and return to the deployments page.
+Hit save config and return to the deployments page. You can then move on to the [Next Steps](developer-portal-beta.md#next-steps-all-apps) section below.
 
-![](<../../.gitbook/assets/Screenshot 2022-06-16 at 15.44.26.png>)
-
-You should now hit "Provision", to build your initial infrastructure on our services. This can take a minute or two. You can also move on to the [Next Steps](developer-portal-beta.md#next-steps-all-apps) section below.
+![](<../../.gitbook/assets/Screenshot 2022-06-17 at 12.30.23.png>)
 
 ### Next Steps - All Apps
 
@@ -54,21 +62,29 @@ You should only install the Github / Bitbucket app for a single repo, not your w
 
 Having installed the app, you are ready to do your first build. Hit the "deploy" button.
 
-![](<../../.gitbook/assets/Screenshot 2022-06-16 at 15.59.14.png>)
+![](<../../.gitbook/assets/Screenshot 2022-06-17 at 12.32.06.png>)
 
 The page will start to update in live time as we pull, build and deploy your code.
 
-![](<../../.gitbook/assets/Screenshot 2022-06-16 at 16.02.27 (2).png>)
+![](<../../.gitbook/assets/Screenshot 2022-06-17 at 12.34.28.png>)
 
 And that's it! On completion of all the steps, you can then visit your deployed application using the Location Link.
 
-![](<../../.gitbook/assets/Screenshot 2022-06-16 at 16.07.32.png>)
+![](<../../.gitbook/assets/Screenshot 2022-06-17 at 12.38.26.png>)
 
 ### Additional Features
 
 #### Logs
 
 You can view the logs of your deployment to check for any build errors. These are visible from the slide down in the deployments table you can see above. They will be in plain text form and will open in a new tab in your browser to download.
+
+#### Pushing to master
+
+When you have set up your pipeline, you can trigger a build by simply pushing to master (or your default branch). This is especially useful for setting up CI / CD pipelines with third party providers, if you want to trigger a build on Pull Requests, or if you need to do a local deployment without logging into the dev portal.
+
+Deployments from the master branch are noted as 'Git pushed' in the deployments table.
+
+![](<../../.gitbook/assets/Screenshot 2022-06-17 at 12.41.18.png>)
 
 #### Deleting Pipelines
 
@@ -78,7 +94,7 @@ Firstly, it will tear down all of your current infra and delete the pipeline rec
 
 Secondly, the command issues a request to delete the infra. This process is quite lengthy so you should check back after a few minutes to verify everything has been torn down. See below for an example of a pipeline in it's deletion state.
 
-![](<../../.gitbook/assets/Screenshot 2022-06-16 at 16.51.26.png>)
+![](<../../.gitbook/assets/Screenshot 2022-06-17 at 12.44.29.png>)
 
 #### Environment Variables
 
@@ -94,7 +110,7 @@ Currently we do not surface your variables over an API when you have stored them
 
 See below for the Environment Variables UI:
 
-![](<../../.gitbook/assets/Screenshot 2022-06-16 at 17.02.36.png>)
+![](<../../.gitbook/assets/Screenshot 2022-06-17 at 12.43.41.png>)
 
 #### API Keys
 

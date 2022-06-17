@@ -16,9 +16,9 @@ $ npm i -g @reapit/cli
 
 ### Configure the CLI
 
-First visit the developer portal and load any app page. From the pipelines page, visit the Manage API key tab and click "Create API Key" and copy the result to your clipboard. You can add multiple API keys from this view and delete them as required.
+First visit the developer portal and load any app page. Visit the pipelines page, and on the left hand side click the "API Keys" button to open a modal window. Click "Create API Key" and copy the result to your clipboard. You can add multiple API keys from this view and delete them as required.
 
-![](<../../.gitbook/assets/Screenshot 2022-06-16 at 17.06.15.png>)
+![](<../../.gitbook/assets/Screenshot 2022-06-17 at 12.46.49.png>)
 
 Once you've obtained an api-key. You can set this up with the Reapit Cli by running:
 
