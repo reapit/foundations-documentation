@@ -402,4 +402,12 @@ Therefore, it’s important to note that whilst using this mechanism can result 
 
 ![](.gitbook/assets/Embed.png)
 
-&#x20;
+### My app is live and has been installed, how do I request a new permission?
+
+When your app is installed, the end user agrees to the permissions you have specified at the point of installation. If you later need/request new additional permissions, we must give the end user the ability to agree to the new data requirements to ensure we adhere to client data protection.
+
+When you select a new permission and submit your changes for ‘Review’, a modal will pop up providing the ability to send a request to the person that installed your app. Once all who have installed your app have agreed, you’re app will be approved. You can monitor the status of each request by visiting ‘App Consents’ on your app listing.
+
+Please note, if you have submitted any other changes, the normal approval process will still be applied.
+
+For more information, please [click here](listing-your-app/app-permissions.md).
