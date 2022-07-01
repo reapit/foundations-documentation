@@ -7,6 +7,44 @@ description: >-
 
 # What’s New
 
+## 27/06/22
+
+**Rural** property data is now exposed with certain fields writeable under the ‘rural’ section on a property:
+
+![](.gitbook/assets/27061.png)
+
+**Lettings management fees**, type and amount now available under the ‘managementFee’ section:&#x20;
+
+![](.gitbook/assets/27062.png)
+
+**Number of units** (numberOfUnits) in a development now available:&#x20;
+
+![](.gitbook/assets/27063.png)
+
+**Minimum tenancy term** (minimumTerm) now available for lettings properties:&#x20;
+
+![](.gitbook/assets/27064.png)
+
+‘**smallHolding**’, ‘**estate**’ & ‘**developmentOpportunity**’ property types are now available via the Properties, Departments & Applicants endpoints. Please note, the additional types are only available in some customer's systems. The 'Departments' endpoint should be used to understand the configuration of a specific customer.
+
+**Contact categories** can now be retrieved using the ‘Configuration’ endpoint ‘contactCategories/{id} and can also be set on a ‘Contact’**:** &#x20;
+
+![](.gitbook/assets/27065.png)
+
+&#x20;**Public brochure URLs** (publicBrochureUrl) are now available in the Properties API under either the ‘Selling’ or ‘Letting’ object:&#x20;
+
+![](.gitbook/assets/27066.png)
+
+A **works order note** (worksOrderNote) can now be added at the property level which will cascade down to any works order for that property in Agency Cloud:&#x20;
+
+![](.gitbook/assets/27067.png)
+
+**Office status** can now be obtained from the Offices API so you can understand whether an office is open or closed based on the field type ‘active’:&#x20;
+
+![](.gitbook/assets/27068.png)
+
+&#x20;
+
 ## 24/05/22
 
 ### **Referrals - Phase 1**
