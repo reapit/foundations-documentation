@@ -52,7 +52,9 @@ A Department is most commonly used to ring fence groups of [properties](platform
 
 ### Document
 
-Documents represent the details of a file asset that has added to our platform. Documents can be assigned a type to indicate its purpose (eg. a brochure) and associated to an associated entity (eg. a [property](platform-glossary.md#property)).
+Documents represent the details of a file asset that has been added to our platform. Documents can be assigned a type to indicate its purpose (eg. a brochure) and associated to an associated entity (eg. a [property](platform-glossary.md#property)).
+
+When using the `GET /documents/{id}/download` endpoint to download the physical file asset, you must pass an `Accept` header with the value `application/octet-stream`
 
 ### Enquiry
 
