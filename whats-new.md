@@ -7,6 +7,36 @@ description: >-
 
 # What’s New
 
+## 29/07/22
+
+### Referrals API - Phase 2
+
+The Referrals API has now been enhanced to support updating (PATCH) and the ability to store metadata:&#x20;
+
+![](.gitbook/assets/WN108.png)
+
+### Properties API
+
+It is now possible to see the Id’s of disabled portals set against a property:
+
+![ The ID’s are stored on the configuration endpoint for portalTypes.](.gitbook/assets/WN208.png)
+
+&#x20;You can now filter properties by AreaId:&#x20;
+
+![](.gitbook/assets/WN308.png)
+
+Our multi currency support milestone has been completed. It will be most beneficial for UK customers that advertise international properties. For more information, please review our milestone [here](https://github.com/reapit/foundations/milestone/142?closed=1).
+
+### **Enquiries API**
+
+When creating a new enquiry (which is visible on the Internet Registration panel in AgencyCloud) you can now pass price/bedroom requirements for sales and lettings applicant enquiries:
+
+![](.gitbook/assets/WN408.png)
+
+### Journal API
+
+We have added support to allow retrieval of ‘tenancy’ journal entries.&#x20;
+
 ## 27/06/22
 
 **Rural** property data is now exposed with certain fields writeable under the ‘rural’ section on a property:
