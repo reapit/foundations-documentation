@@ -411,3 +411,15 @@ When you select a new permission and submit your changes for ‘Review’, a mod
 Please note, if you have submitted any other changes, the normal approval process will still be applied.
 
 For more information, please [click here](listing-your-app/app-permissions.md).
+
+### I have an issue that requires sharing private/sensitive information that I do not wish to be made public? &#x20;
+
+We understand that in some cases you may need to share screenshots and or personal information which may aid in the resolution of an issue or feature request.  \
+&#x20;\
+You must still raise the issue on GitHub first excluding any sensitive information, but highlighting you wish to share this information securely; after we have reviewed your issue, we will then ask you to send an accompanying email with the GitHub issue number as the subject.&#x20;
+
+Please note, the GitHub issue will be the main form of communication. The secure mailbox should only be used for sharing information that cannot be publicly visible. The address of this mailbox will be provided to you once we have reviewed your GitHub issue as above. When sharing sensitive information using this mailbox, your issue will still be prioritised as per our [documented Development Processes.](https://foundations-documentation.reapit.cloud/dev-requests)&#x20;
+
+**What is considered private/sensitive data:** &#x20;
+
+Any personal, personally identifiable, financial, sensitive or regulated information (including credit or debit card information, bank account information or usernames and passwords).&#x20;
