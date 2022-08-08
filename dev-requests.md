@@ -28,11 +28,11 @@ Issues relating to services within the [Foundations Mono Repo on Github ](https:
 
 ### **How do I request a feature?**
 
-You can raise a feature request through the Developer Portal from within the ‘[Help](https://developers.reapit.cloud/help)’ page, or direct on our GitHub board [here](https://github.com/reapit/foundations/issues/new?assignees=\&labels=external-request%2C+needs-triage\&template=feature\_request.md\&title=).&#x20;
+You can raise a feature request direct on our GitHub board [here](https://github.com/reapit/foundations/issues/new?assignees=\&labels=external-request%2C+needs-triage\&template=feature\_request.md\&title=).&#x20;
 
 ### **How do I report a bug?**
 
-You can report a bug through the Developer Portal from within the ‘[Help](https://developers.reapit.cloud/help)’ page, or direct on our GitHub board [here](https://github.com/reapit/foundations/issues/new?assignees=\&labels=bug%2C+needs-triage\&template=bug\_report.md\&title=).&#x20;
+You can report a bug direct on our GitHub board [here](https://github.com/reapit/foundations/issues/new?assignees=\&labels=bug%2C+needs-triage\&template=bug\_report.md\&title=).&#x20;
 
 ### **I have a question not covered in the documentation?**&#x20;
 
