@@ -24,6 +24,22 @@ In order to access customer data, an installation will need to occur. This is do
 
 Please [click here](faqs.md#listing-your-app) for more information on Listing an App in AppMarket.
 
+
+
+### How to privately list your app/integration in the AppMarket
+
+If you are building an app or integration for a specific customer or a subset of customers, you can set your app as a ‘Private App’. This means it will only be visible in the AppMarket to those customers.
+
+To set your app to private, you will need to navigate to the ‘Permissions’ tab which can be accessed when you ‘Edit App’: &#x20;
+
+<figure><img src=".gitbook/assets/Private.png" alt=""><figcaption></figcaption></figure>
+
+Simply set the toggle to ‘Yes’ and enter the client IDs (Customer IDs), for more information on how to obtain Customer IDs, please [click here](faqs.md#how-do-i-find-a-customer-id).
+
+You will still need to submit your app for approval and once approved, the app will be visible for the customer to install.
+
+For more information on listing your app, please [click here.](listing-your-app.md)
+
 ### When will my requested feature be available?
 
 You can track the status of your issue [directly in GitHub](https://github.com/reapit/foundations/issues).&#x20;
