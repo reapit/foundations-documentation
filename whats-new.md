@@ -1,11 +1,48 @@
 ---
 description: >-
-  We are constantly working to improve your experience with the Foundations
-  Platform. Have a look to see what new features and fixes have been released
-  direct from one of our Product Owners.
+  We are constantly working to improve your experience with the Platform. Have a
+  look to see what new features and fixes have been released.
 ---
 
 # What’s New
+
+## 30/08/22
+
+### Tenancies API
+
+It is now possible to read deposit and deposit holder information via the tenancies API. This information can also be written back up to a certain status:
+
+<figure><img src=".gitbook/assets/WN3008.png" alt=""><figcaption></figcaption></figure>
+
+&#x20;It is now possible to filter tenancy checks by type:
+
+<figure><img src=".gitbook/assets/WN30082.png" alt=""><figcaption></figcaption></figure>
+
+### Properties API
+
+Market Appraisal (valuation) price now available:
+
+<figure><img src=".gitbook/assets/WN30083.png" alt=""><figcaption></figcaption></figure>
+
+Pre-Instruction checks can now be managed via /properties/{id}/checks:
+
+<figure><img src=".gitbook/assets/WN30087.jpg" alt=""><figcaption></figcaption></figure>
+
+### Applicants API
+
+It is now possible to find applicants by phone number (and any other contact detail):
+
+<figure><img src=".gitbook/assets/WN30084.png" alt=""><figcaption></figcaption></figure>
+
+### Webhooks API
+
+Webhook transactions can now be filtered much more granularly to allow you to find transactions more easily (Topic name, Entity ID & Event ID):
+
+<figure><img src=".gitbook/assets/WN30085.png" alt=""><figcaption></figcaption></figure>
+
+### Enquiries API
+
+The validation has been updated to more closely match the contacts API&#x20;
 
 ## 29/07/22
 
