@@ -439,15 +439,16 @@ We support querying using up to eight different filter operations, depending on 
 | Less than or equal to    | **$lte**    | Works for datetime and numeric data types                                                                                           |
 | In list                  | **$in**     | Provide a comma separated list of values to check for the value provided within. Works for string, datetime and numeric data types. |
 | Not in list              | **$nin**    | Provide a comma separated list of values to check for the value provided within. Works for string, datetime and numeric data types. |
+| Contains                 | **$con**    | Provide a comma separate list of values to determine if they exist in the specified array                                           |
 
 ### Example usage
 
-| Criteria Type | Example filters                                                                                    | Information                                                            |
-| ------------- | -------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------- |
-| **Boolean**   | metadata.myBooleanField $eq true                                                                   | Only works for `$eq` and `$neq`. Criteria must be either true or false |
-| **Numeric**   | <p>metadata.myNumericField $gte 100</p><p>metadata.myNumericField $nin 30,50,60,100</p>            | Criteria decimal places                                                |
-| **String**    | <p>metadata.myStringField $neq ‘London’</p><p>metadata.myStringField $in ‘red’,’brown’,’green’</p> | Criteria must be contained within apostrophes                          |
-| **DateTime**  | <p>metadata.myDateField $lt 2020-11-05T13:15:30Z</p><p>metadata.myDateField $eq 2020-11-05</p>     | Time component is optional. Must be provided in ISO 8601 format.       |
+| Criteria Type | Example filters                                                                                                                                 | Information                                                            |
+| ------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------- |
+| **Boolean**   | metadata.myBooleanField $eq true                                                                                                                | Only works for `$eq` and `$neq`. Criteria must be either true or false |
+| **Numeric**   | <p>metadata.myNumericField $gte 100<br></p><p>metadata.myNumericField $nin 30,50,60,100</p>                                                     | Criteria decimal places                                                |
+| **String**    | <p>metadata.myStringField $neq ‘London’<br></p><p>metadata.myStringField $in ‘red’,’brown’,’green’<br><br>metadata.myArray $con 'ONE','TWO'</p> | Criteria must be contained within apostrophes                          |
+| **DateTime**  | <p>metadata.myDateField $lt <br>2020-11-05T13:15:30Z<br></p><p>metadata.myDateField $eq 2020-11-05</p>                                          | Time component is optional. Must be provided in ISO 8601 format.       |
 
 ### Additional information
 
