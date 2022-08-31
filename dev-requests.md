@@ -10,13 +10,11 @@ Please do not communicate though our service desk, customer success managers or 
 
 After submitting an issue, your ticket will get triaged and categorised. From here, it will be assigned to the relevant GitHub project, depending on the nature of the work requested.
 
-Issues that align to back-end engineering (such as our REST APIs and webhooks) will be managed using [Scrum Agile Framework](https://www.scrum.org/resources/what-is-scrum) using a 1 week sprint cycle.
+Issues that align to back-end engineering (such as our REST APIs and webhooks) will be managed using [Scrum Agile Framework](https://www.scrum.org/resources/what-is-scrum) using a 2 week sprint cycle.
 
 Issues relating to services within the [Foundations Mono Repo on Github ](https://github.com/reapit/foundations)(mostly Front End but some back end services), are managed using the [Kanban Agile methodology](https://kanbanize.com/kanban-resources/getting-started/what-is-kanban).
 
-*   Incoming issues that we identify as back-end engineering will be given the `back-end` label and assigned to the [Back end backlog](https://github.com/reapit/foundations/projects/6) public board to be reviewed.&#x20;
-
-    Issues that we identity as front-end engineering with be given front-end label and assigned to the [Frontend Kanban](https://github.com/reapit/foundations/projects/1) public board to be reviewed.
+* Incoming issues that we identify as back-end engineering will be given the `back-end` label, issues that we identity as front-end engineering with be given front-end label and assigned to the [Backlog](https://github.com/reapit/foundations/projects/6) public board to be reviewed.&#x20;
 * New issues on the board are reviewed weekly as part of our refinement sessions. To ensure your issue can be progressed quickly, please provide as much relevant information as possible. Whilst your issue is being reviewed it will remain in the ‘[To Review](dev-requests.md#columns-definitions)’ column.
 * The team will discuss each issue and should we agree that development is warranted, we will commit to the work. However, if we need to gather more information or investigate, the relevant label will be added and if applicable, we will add a comment.
 * Depending on the nature of the request or bug, the issue will then enter a specific column. For more information on columns, please [click here](dev-requests.md#columns-definitions).
@@ -49,10 +47,6 @@ Completion of your issue is dependent on the work required, complexity and align
 ### **My issue has been carried over to another sprint?**
 
 In the back end team, we work in 1 week sprints and estimate the amount of work we believe we can complete. However, due to other priorities or dependencies, we may not always complete every issue as intended. If your issue has moved to another sprint, we will comment on the ticket to explain why and if more information is needed.
-
-### **Why was my issue removed from the sprint / descoped on the Kanban?**
-
-If for some reason we are unable to agree to complete the work in our current cycle, or the development work required is not possible, we may have to re evaluate the issue. If your issue is descoped, we will comment on the ticket to explain why.&#x20;
 
 ### **How to do I track the progress of an issue?**&#x20;
 
