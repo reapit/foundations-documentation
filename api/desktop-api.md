@@ -272,11 +272,13 @@ From version 12.130.1 the following will also be available:
 * Outbound - Landline
 * Outbound - Mobile&#x20;
 
-
-
 From version 12.142.0 the following will also be available:
 
 * Match Output&#x20;
+
+From version 12.152.3 the following will also be available (upgrade scheduled for 12/09/22):
+
+* Diary
 
 ## Types
 
@@ -530,3 +532,24 @@ An app with the integration type 'Match Output' will be visible by selecting 'Pr
 
 ![](../.gitbook/assets/MatchOutput.jpg)
 
+
+
+### Diary
+
+The desktop type of _Diary_ can be given to an application that can be launched on an existing appointment in AgencyCloud. The globals dictionary will contain the below key when launched by AgencyCloud for a specific appointment:
+
+{diaryCode: 'OXF2202628'}
+
+
+
+```
+{ "diaryCode": 'OXF2202628'}
+```
+
+| Parameter | Type   | Description                                                                                                                                                                                                          | Required |
+| --------- | ------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------- |
+| diaryCode | string | The primary key of the appointment (note that this won’t be present when the app loads from the AppMarket, but the app needs to be able to accept this parameter when it is launched via the app association route). | Yes      |
+
+
+
+<figure><img src="../.gitbook/assets/DiaryAPI.png" alt=""><figcaption></figcaption></figure>
