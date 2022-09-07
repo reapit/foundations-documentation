@@ -276,9 +276,16 @@ From version 12.142.0 the following will also be available:
 
 * Match Output&#x20;
 
-From version 12.152.3 the following will also be available (upgrade scheduled for 12/09/22):
+From version 12.152.3 the following will also be available (Developer Edition upgrade scheduled for 12/09/22):
 
 * Diary
+
+From version 12.153+ the following will also be available (Developer Edition upgrade not yet scheduled):
+
+* Pre Tenancy Checks&#x20;
+* Works Order
+
+
 
 ## Types
 
