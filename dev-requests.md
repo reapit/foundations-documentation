@@ -89,7 +89,7 @@ All issues raised will be automatically added ‘To Review’. If the nature of 
 
 If an issue needs technical investigation, more information is required, a product decision is needed or the issue is deemed too large, it will be moved to ‘Not Ready’. We will update the issue with the relevant label and comment if required.&#x20;
 
-**Near term (1 – 4 months)**
+**Near term (0 – 4 months)**
 
 If we identify an issue as short-term goal, we'll assess the effort required and outline a technical specification - please take the time to review this detail. **When we're ready to schedule the issue, it will be assigned to the relevant board where you can continue to track its progress to completion.**&#x20;
 
