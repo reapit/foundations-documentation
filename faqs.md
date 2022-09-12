@@ -454,4 +454,4 @@ We will provide you the field name which you can add to your query as an additio
 
 Example query: [https://platform.reapit.cloud/properties/ABC00000?extrasfield=pDirections](https://platform.reapit.cloud/properties/ABC00000?extrasfield=pDirections)
 
-Semi Structured filed requests are not usually assigned to a sprint and can be completed within a few days.
+Semi Structured field requests are not usually assigned to a sprint and can be completed within a few days.
