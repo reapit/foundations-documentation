@@ -557,6 +557,48 @@ The desktop type of _Diary_ can be given to an application that can be launched 
 | --------- | ------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------- |
 | diaryCode | string | The primary key of the appointment (note that this won’t be present when the app loads from the AppMarket, but the app needs to be able to accept this parameter when it is launched via the app association route). | Yes      |
 
-
+test
 
 <figure><img src="../.gitbook/assets/DiaryAPI.png" alt=""><figcaption></figcaption></figure>
+
+
+
+### **Works Orders (Coming soon)**
+
+The desktop type of _Works Order_ can be given to an application that can be launched from a Works Orders screen in AgencyCloud. When an application has this desktop type, it will replace the native behaviour and will launch when selecting ‘Create’. The globals dictionary will contain the below key when launched by AgencyCloud:&#x20;
+
+```
+{ "prpCode": "ABC201023" }
+```
+
+
+
+| Parameter | Type   | Description                                                                                                                                                                                                                                                   | Required |
+| --------- | ------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------- |
+| prpCode   | string | The primary key of the property to load the Works Order information app for (note that this won’t be present when the app loads from the AppMarket, but the app needs to be able to accept this parameter when it is launched via the app association route). | Yes      |
+
+An application of t
+
+
+
+<figure><img src="../.gitbook/assets/WO1.png" alt=""><figcaption></figcaption></figure>
+
+
+
+
+
+&#x20;You can also launch the app from an existing works order and the globals dictionary will contain the below key when launched by AgencyCloud:
+
+```
+{woCode: 'MKT22000195'}
+```
+
+
+
+| Parameter | Type   | Description                                                                                                                                                                                                                                                      | Required |
+| --------- | ------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------- |
+| woCode    | string | The primary key of the works order to load the Works Order information app for (note that this won’t be present when the app loads from the AppMarket, but the app needs to be able to accept this parameter when it is launched via the app association route). | Yes      |
+
+
+
+<figure><img src="../.gitbook/assets/WO2.png" alt=""><figcaption></figcaption></figure>
