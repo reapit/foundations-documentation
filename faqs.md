@@ -439,3 +439,19 @@ Please note, the GitHub issue will be the main form of communication. The secure
 **What is considered private/sensitive data:** &#x20;
 
 Any personal, personally identifiable, financial, sensitive or regulated information (including credit or debit card information, bank account information or usernames and passwords).&#x20;
+
+
+
+### **Certain fields are not exposed by default in the Platform**
+
+Platform APIs are designed to be customer agnostic to make them easier for multiple external developers to work with them across different customers, unlike our legacy APIs which had customer specific customisations.
+
+Therefore, to ensure we adhere to this design, we do not automatically expose customers custom fields. Custom data is stored in a different place called ‘Extras’ and are stored as semi structured fields. They are unique to the customer.
+
+If you require access to those fields, you will need to make a request using [this ](https://github.com/reapit/foundations/issues/new?assignees=\&labels=back-end%2C+needs-triage\&template=extras\_field.md\&title=)template. We will then make the fields available to that customer only.
+
+We will provide you the field name which you can add to your query as an additional parameter using the filter ‘extrasfield=FIELDNAME’
+
+Example query: [https://platform.reapit.cloud/properties/ABC00000?extrasfield=pDirections](https://platform.reapit.cloud/properties/ABC00000?extrasfield=pDirections)
+
+Semi Structured filed requests are not usually assigned to a sprint and can be completed within a few days.
