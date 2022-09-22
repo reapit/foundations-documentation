@@ -50,6 +50,129 @@ Departments represent a set of descriptive attributes used to describe a [proper
 
 A Department is most commonly used to ring fence groups of [properties](platform-glossary.md#property) and [applicants](platform-glossary.md#applicant), particularly when it comes to matching (the process of finding properties that meet specific applicant requirements and vice versa). Typically, customers dealing with only residential sales and lettings will have a single department as there is no real need to separate any of the data, however an example of where multiple departments might be configured would be a customer who deals with both residential and commercial property transactions. In this scenario, a separate Department would normally be setup to separate the two disparate sets of data, as it would be undesirable for residential applicants to be sent details of commercial properties.
 
+#### Interpreting Department Data <a href="#interpreting-department-data" id="interpreting-department-data"></a>
+
+Departments are completely customisable for each agent and subsequently it can be difficult to understand how to interpret this data as it comes out of the various APIs that expose it. As the APIs are standardised across all our customers, Department data has also been standardised where possible using a mapping mechanism to map the customisable values from our CRM into standard values in the API. Any options that do not have a corresponding mapping and are selected on a [Property ](platform-glossary.md#property)or [Applicant ](platform-glossary.md#applicant)entity will be included in the `unmappedAttributes` and `unmappedRequirements` collections in their respective APIs. Additionally, the _Special_ attributes column in the CRM is mapped explicitly.&#x20;
+
+The tabbed content below provides the latest version of the mappings
+
+{% tabs %}
+{% tab title="Type" %}
+The following table shows the values exposed in the `type` collection returned by the [Applicant](platform-glossary.md#applicant), [Property ](platform-glossary.md#property)and [Department ](platform-glossary.md#department)APIs and their corresponding mappings back to the AgencyCloud CRM.
+
+
+
+| Platform Value         | AgencyCloud Mapping                                                      |
+| ---------------------- | ------------------------------------------------------------------------ |
+| bungalow               | Bungalow                                                                 |
+| commercial             | Commercial                                                               |
+| cottage                | Cottage                                                                  |
+| developmentOpportunity | Development Opportunity                                                  |
+| developmentPlot        | Development Plot, Single Plot, Plot, Building Plot                       |
+| estate                 | Estate, Farm/Estate, Residential Farm/Estate, Country Estate             |
+| farm                   | Farm                                                                     |
+| flatApartment          | Flat/Apartment, Flat / Apartment, Flat, Apartment, Unit/Apartment, Flats |
+| hotel                  | Hotel, Hotels                                                            |
+| house                  | House                                                                    |
+| industrial             | Industrial, Industrial/Storage                                           |
+| land                   | Land                                                                     |
+| leisure                | Leisure, Leisure Facility                                                |
+| maisonette             | Maisonette                                                               |
+| mixedUse               | Mixed Use, Mixed                                                         |
+| office                 | Office, Offices                                                          |
+| publicHouse            | Public House, Pub                                                        |
+| shop                   | Shop                                                                     |
+| smallHolding           | Small Holding                                                            |
+| studio                 | Studio, Studio Flat                                                      |
+| townhouse              | Townhouse, Town House                                                    |
+| villa                  | Villa                                                                    |
+| warehouse              | Warehouse, Warehouse/Distribution                                        |
+{% endtab %}
+
+{% tab title="Style" %}
+The following table shows the values exposed in the `style` collection returned by the [Applicant](platform-glossary.md#applicant), [Property ](platform-glossary.md#property)and [Department ](platform-glossary.md#department)APIs and their corresponding mappings back to the AgencyCloud CRM.
+
+
+
+| Platform Value     | AgencyCloud Mapping                                            |
+| ------------------ | -------------------------------------------------------------- |
+| basement           | Basement                                                       |
+| detached           | Detached                                                       |
+| duplex             | Duplex                                                         |
+| endTerrace         | End of Terrace                                                 |
+| firstFloor         | First Floor                                                    |
+| groundFloor        | Ground Floor                                                   |
+| linkDetached       | Link Detached, Link-Detached                                   |
+| lowerGroundFloor   | Lower Ground Floor, Lower Ground                               |
+| mews               | Mews                                                           |
+| penthouse          | Penthouse                                                      |
+| semiDetached       | Semi Detached, Semi-Detached                                   |
+| studio             | Studio, Studio Flat                                            |
+| terraced           | Terraced, Terrace                                              |
+| upperFloor         | Upper Floor, Upper Floor without Lift, Upper Floor w/out Lift  |
+| upperFloorWithLift | Upper Floor with Lift, Upper Floor w/Lift, Upper Flr with Lift |
+{% endtab %}
+
+{% tab title="Situation" %}
+The following table shows the values exposed in the `situation` collection returned by the [Applicant](platform-glossary.md#applicant), [Property ](platform-glossary.md#property)and [Department ](platform-glossary.md#department)APIs and their corresponding mappings back to the AgencyCloud CRM.
+
+
+
+| Platform Value | AgencyCloud Mapping                         |
+| -------------- | ------------------------------------------- |
+| balcony        | Balcony                                     |
+| communalGarden | Communal Garden                             |
+| conservatory   | Conservatory                                |
+| garden         | Garden                                      |
+| julietBalcony  | Juliette Balcony                            |
+| land           | Land/Paddock, Land / Paddock, Paddock Land  |
+| outsideSpace   | Outside Space                               |
+| patio          | Patio                                       |
+| roofTerrace    | Roof Terrace, Terrace, Roof Terrace/Terrace |
+{% endtab %}
+
+{% tab title="Locality" %}
+The following table shows the values exposed in the `locality` collection returned by the [Applicant](platform-glossary.md#applicant), [Property ](platform-glossary.md#property)and [Department ](platform-glossary.md#department)APIs and their corresponding mappings back to the AgencyCloud CRM.
+
+
+
+| Platform Value | AgencyCloud Mapping                                         |
+| -------------- | ----------------------------------------------------------- |
+| rural          | Rural                                                       |
+| townCity       | Town/City, Town / City, Town, Town Centre, Town/City Centre |
+| village        | Village                                                     |
+{% endtab %}
+
+{% tab title="Parking" %}
+The following table shows the values exposed in the `parking` collection returned by the [Applicant](platform-glossary.md#applicant), [Property ](platform-glossary.md#property)and [Department ](platform-glossary.md#department)APIs and their corresponding mappings back to the AgencyCloud CRM.
+
+
+
+| Platform Value | AgencyCloud Mapping                                                                                                                                       |
+| -------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| carport        | Carport, Car Port                                                                                                                                         |
+| doubleGarage   | Double Garage                                                                                                                                             |
+| garage         | Garage                                                                                                                                                    |
+| offStreet      | Off Street Parking, Off Road Parking, Driveway, Off Street                                                                                                |
+| residents      | Residents Parking, Resident Parking, Parking, Allocated Parking, Permit Parking, Garage/Parking Space, Allocated Parking Space, Allocated/Private Parking |
+| secure         | Secure Parking, Gated Parking                                                                                                                             |
+| tripleGarage   | Triple Garage                                                                                                                                             |
+| underground    | Underground, Underground Parking, Secure Underground Parking                                                                                              |
+{% endtab %}
+
+{% tab title="Age" %}
+The following table shows the values exposed in the `age` collection returned by the [Applicant](platform-glossary.md#applicant), [Property ](platform-glossary.md#property)and [Department ](platform-glossary.md#department)APIs and their corresponding mappings back to the AgencyCloud CRM.
+
+
+
+| Platform Value | AgencyCloud Mapping                                                                                           |
+| -------------- | ------------------------------------------------------------------------------------------------------------- |
+| modern         | Modern, Post War, Post-war, Modern (Post 1945), Modern (1920+)                                                |
+| new            | New, New Build, New Homes, New Home, New (Off Plan), Newly Built, New Property, New Development, New Property |
+| period         | Period, Pre-war, Period (to 1714), Period (Pre 1945), Period (Pre-1920)                                       |
+{% endtab %}
+{% endtabs %}
+
 ### Document
 
 Documents represent the details of a file asset that has been added to our platform. Documents can be assigned a type to indicate its purpose (eg. a brochure) and associated to an associated entity (eg. a [property](platform-glossary.md#property)).
