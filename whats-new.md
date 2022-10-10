@@ -6,7 +6,63 @@ description: >-
 
 # What’s New
 
-## 30/08/22
+## 30/09/22
+
+### Properties API
+
+Unmapped attributes:
+
+Property and Applicant attributes/requirements (department data) is completely customisable for each agent and subsequently it can be difficult to understand how to interpret this data as it comes out of the various APIs that expose it.
+
+As the Platform APIs are standardised across all our customers, Department data has also been standardised where possible using a mapping mechanism to map the customisable values from our CRM into standard values in the API.
+
+Any options that do not have a corresponding mapping and are selected on a Property or Applicant entity will be included in the `unmappedAttributes` and `unmappedRequirements` collections in their respective APIs. Additionally, the _Special_ attributes column in the CRM is mapped explicitly.
+
+Example payload:
+
+<figure><img src=".gitbook/assets/WN30091.png" alt=""><figcaption><p> </p></figcaption></figure>
+
+Fields:
+
+<figure><img src=".gitbook/assets/WN30092.png" alt=""><figcaption></figcaption></figure>
+
+To view the latest version of the mappings, please visit: [https://foundations-documentation.reapit.cloud/platform-glossary#interpreting-department-data](https://foundations-documentation.reapit.cloud/platform-glossary#interpreting-department-data)
+
+&#x20;
+
+The Properties API now displays the Maximum Reception/Bathroom ranges:
+
+<figure><img src=".gitbook/assets/WN30093.png" alt=""><figcaption></figcaption></figure>
+
+### Journals API
+
+It is now possible to create a Works Orders journal entry:
+
+<figure><img src=".gitbook/assets/WN30094.png" alt=""><figcaption></figcaption></figure>
+
+**Note**: TypeID must be set to 'WO' when passing worksOrder
+
+### Companies API
+
+We now support filtering on the Companies endpoint by Negotiator and Office:
+
+<figure><img src=".gitbook/assets/WN30095.png" alt=""><figcaption></figcaption></figure>
+
+### Applicant API
+
+Applicant ReasonID and SellingPosition now available using POST and PATCH methods:
+
+<figure><img src=".gitbook/assets/WN30096.png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src=".gitbook/assets/WN30097.png" alt=""><figcaption></figcaption></figure>
+
+### Integration Types
+
+New ‘Diary’ desktop integration type now available from version 12.152.3. App’s that have selected ‘Dairy’ as the integration type will be launched from an existing appointment. For more information, please [click here](https://foundations-documentation.reapit.cloud/api/desktop-api#diary).&#x20;
+
+<figure><img src=".gitbook/assets/WN30098.png" alt=""><figcaption></figcaption></figure>
+
+## &#x20;30/08/22
 
 ### Tenancies API
 
