@@ -45,7 +45,7 @@ Users should be able to clearly see what your app is about when browsing. You ha
 
 ### **Description**
 
-**Character Limit:** 1500 (special characters are included in the character limit)
+**Character Limit:** 20,000 (special characters are included in the character limit)
 
 The next step after a user discovers your app in the AppMarket, is to read more about it.
 
