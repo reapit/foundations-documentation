@@ -32,7 +32,7 @@ Part of the redesign will now allow customers on Rackspace, to view apps that we
 
 The new AppMarket now also includes the ability for Developers to add videos to their app listings. ‘Getting Started’ & a ‘Why’ video. For information on how to add a video to your app listing, please [click here](whats-new.md#developer-portal).
 
-We recommend strongly that if you do upload a video to use the online streaming site YouTube.
+
 
 ###
 
@@ -74,11 +74,25 @@ We have exposed the `ValuationDate` & `AgreementExpiry` dates under the property
 
 ### Developer Portal
 
+**Videos**
+
+Applistings now support the ability to add video URL's. Under the section 'AppMarket Listing', you'll see 2 new fields:&#x20;
+
+<figure><img src=".gitbook/assets/WN3110.jpg" alt=""><figcaption></figcaption></figure>
+
+The video's will then be rendered in the AppMarket:&#x20;
+
+<figure><img src=".gitbook/assets/WN311010.jpg" alt=""><figcaption></figcaption></figure>
+
+**Please note:** We recommend strongly that if you do upload videos, to use the online streaming site YouTube.
+
+**App Deletion**
+
 To prevent accidental data loss, we have added an additional layer of protection for apps. On each app, under the section ‘AppMarket Listing’, you will now see the following check box:
 
 <figure><img src=".gitbook/assets/WN31107.png" alt=""><figcaption></figcaption></figure>
 
-If you should then accidental select ‘Delete’, you’ll be prompted the following message and will need to disable the additional protection before you can delete the app:
+If you should then accidentally select ‘Delete’, you’ll be prompted the following message and will need to disable the additional protection before you can delete the app:
 
 <figure><img src=".gitbook/assets/WN31108.png" alt=""><figcaption></figcaption></figure>
 
@@ -1356,7 +1370,7 @@ Now let’s look at what we’ve been doing:
 **The release of the of Tenancies API**\
 ****The ‘read’ functionality of the Tenancies API is now available. We are still developing the ‘updating’ and ‘creating’ functionality, but you should now get great visibility what is available and what information you can use within your application.
 
-![Tenancies API ](<.gitbook/assets/image (2).png>)
+![Tenancies API ](<.gitbook/assets/image (2) (3).png>)
 
 To follow the milestone to see what is still to come and follow the progress, please [**click here**](https://github.com/reapit/foundations/milestone/13)
 

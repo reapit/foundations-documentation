@@ -237,7 +237,7 @@ If you want to find out more information about an individual negotiator, you can
 
 **Cognito Groups**
 
-Reapit User\
+**Reapit User**\
 A level 1 user in AgencyCloud. Will have access to the AppMarket but do not have permissions to install or uninstall apps.
 
 **Reapit User Admin**\
