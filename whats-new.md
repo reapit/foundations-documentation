@@ -6,6 +6,86 @@ description: >-
 
 # What’s New
 
+## 31/10/22
+
+### Analytics Schema
+
+'Referral' data is now available within the Analytics Schema:
+
+<figure><img src=".gitbook/assets/WN31101.png" alt=""><figcaption></figcaption></figure>
+
+### Contacts API&#x20;
+
+It is now possible to update the ‘marketingConsent’ field on an archived contact record:&#x20;
+
+<figure><img src=".gitbook/assets/WN31102.png" alt=""><figcaption></figcaption></figure>
+
+**Please note:** Only the Marketing Consent field on an archived record can be updated.&#x20;
+
+### AppMarket 2.0
+
+As you may have already seen, on Wednesday 26th, we launched the latest version of the AppMarket. The updated AppMarket includes and now supports, app name & developer searching, new categories and filter options plus featured apps and app collections:
+
+<figure><img src=".gitbook/assets/WN31109.png" alt=""><figcaption><p><a href="https://marketplace.reapit.cloud/">https://marketplace.reapit.cloud/</a></p></figcaption></figure>
+
+Part of the redesign will now allow customers on Rackspace, to view apps that were previously hidden due to the compatibility with AWS. Whilst they still will not be able to install or enable integrations that use data Webhooks, they will now be able to enquire about the app/integration, view the marketing materials and videos.
+
+The new AppMarket now also includes the ability for Developers to add videos to their app listings. ‘Getting Started’ & a ‘Why’ video. For information on how to add a video to your app listing, please [click here](whats-new.md#developer-portal).
+
+We recommend strongly that if you do upload a video to use the online streaming site YouTube.
+
+###
+
+### Applicants API
+
+Applicant Tenure information is now available in the Applicants ‘Buying’ modal:
+
+<figure><img src=".gitbook/assets/WN31103.png" alt=""><figcaption></figcaption></figure>
+
+### Companies API
+
+We now support filtering on the Companies endpoint by Office Groups.
+
+For more information on office groups, please visit [https://foundations-documentation.reapit.cloud/faqs#what-are-office-groups](https://foundations-documentation.reapit.cloud/faqs#what-are-office-groups)
+
+&#x20;
+
+### Tenancies API
+
+‘Allowances’ can now be created and updated:
+
+<figure><img src=".gitbook/assets/WN31104.png" alt=""><figcaption></figcaption></figure>
+
+‘Break Clauses’ can also be created and updated:
+
+<figure><img src=".gitbook/assets/WN31105.png" alt=""><figcaption></figcaption></figure>
+
+And also for ‘Responsibilities’:
+
+<figure><img src=".gitbook/assets/WN31106.png" alt=""><figcaption></figcaption></figure>
+
+### Metadata API
+
+It is now possible to patch nested objects in the Metadata API
+
+### Properties API
+
+We have exposed the `ValuationDate` & `AgreementExpiry` dates under the property selling modal
+
+### Developer Portal
+
+To prevent accidental data loss, we have added an additional layer of protection for apps. On each app, under the section ‘AppMarket Listing’, you will now see the following check box:
+
+<figure><img src=".gitbook/assets/WN31107.png" alt=""><figcaption></figcaption></figure>
+
+If you should then accidental select ‘Delete’, you’ll be prompted the following message and will need to disable the additional protection before you can delete the app:
+
+<figure><img src=".gitbook/assets/WN31108.png" alt=""><figcaption></figcaption></figure>
+
+**Please Note:** The app data protection check box is not selected by default so, to ensure your apps and its associated data are protected, please review your app listing.
+
+&#x20;
+
 ## 30/09/22
 
 ### Properties API
