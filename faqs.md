@@ -455,3 +455,14 @@ We will provide you the field name which you can add to your query as an additio
 Example query: [https://platform.reapit.cloud/properties/ABC00000?extrasfield=pDirections](https://platform.reapit.cloud/properties/ABC00000?extrasfield=pDirections)
 
 Semi Structured field requests are not usually assigned to a sprint and can be completed within a few days.
+
+### Why can I not see the option to 'Install App' or 'Enable Integration'?&#x20;
+
+If you cannot see the option to 'Install App' or for integrations 'Enable Integration', it will most likely be that you do not have the correct user permissions.&#x20;
+
+Only 'ReapitUserAdmins' (a 'Level 2' user in AgencyCloud) or a 'MarketplaceAdmin' can install/enable and uninstall/disable apps and integrations from the AppMarket.&#x20;
+
+A user can check their user role by going to 'Apps' and 'Settings' from the AppMarket.&#x20;
+
+<figure><img src=".gitbook/assets/Screenshot 2022-11-01 135545.jpg" alt=""><figcaption></figcaption></figure>
+

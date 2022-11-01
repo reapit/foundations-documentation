@@ -549,7 +549,7 @@ Currently, it offers support on the following topics:
 
 [Accessing Customer Data](troubleshooting/accessing-customer-data.md)\
 [Authentication Issues](troubleshooting/authentication-issues.md)\
-[Installation](troubleshooting/installation.md)\
+[Installation](broken-reference)\
 [REST API](troubleshooting/platform-api.md)\
 [Reapit Connect](troubleshooting/reapit-connect.md)
 
@@ -1465,7 +1465,7 @@ Those of you familiar with [GitBook, ](https://www.gitbook.com)will know they ar
 
 Available for a **limited time only**, direct access to our Foundations Platform Product Owners and Developers. You can access this feature from the ‘[Help](http://marketplace.reapit.cloud/developer/help)’ section in the developer portal. We hope you won’t need us and that everything you need can be found within our documentation but it’s nice to know we’re here if you do.
 
-![Live Chat feature](<.gitbook/assets/image (3).png>)
+![Live Chat feature](<.gitbook/assets/image (3) (1).png>)
 
 ### Full Visibility ([Roadmap](https://github.com/reapit/foundations/milestones?direction=asc\&sort=due\_date\&state=open))
 
