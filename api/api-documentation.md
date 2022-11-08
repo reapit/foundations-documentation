@@ -283,6 +283,8 @@ The response will contain a collection of URLs which can then be used to upload 
 }
 ```
 
+To then upload your file to the presigned URL, you will need to make a `PUT` to that URL with the 'Body' type set to 'Binary File'. Upload the file and 'Send'.&#x20;
+
 When the file has been uploaded, you will still need to use the main `POST` endpoint of the relevant API to store your file to a customer's file system. Rather than sending the base64 encoded file content in the `fileData` property, you should use the `fileUrl` property and send the pre-signed URL that the file was sent to. The platform will then transfer the file from the holding area to the relevant customer's file system. It is not necessary to include all the query string parameters from the pre-signed URL in the subsequent `POST`, as per the example below
 
 ```
@@ -295,6 +297,8 @@ POST /documents
   "fileUrl": "https://reapit-file-uploads-prod.s3.eu-west-2.amazonaws.com/443e4a98-dfcb-4345-abb2-e52031928ed1",
 }
 ```
+
+To watch a short video on pre-signed URLs, please [click here](https://www.youtube.com/watch?v=lBYzD7T5\_bQ).
 
 ### Request validation
 
