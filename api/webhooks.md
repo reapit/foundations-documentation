@@ -113,7 +113,7 @@ app.use(bodyParser.raw({ inflate: true, type: 'application/json' }));
 
 // Setup POST handler
 app.post('/', function (req, res) {
-    const ED25519 = forgeCrypto.pki.ed25519;
+    const ED25519 = crypto.pki.ed25519;
 
     // Read the X-Signature header
     const sigHeader = req.header("x-signature");
