@@ -70,7 +70,7 @@ It is now possible to patch nested objects in the Metadata API
 
 ### Properties API
 
-We have exposed the `ValuationDate` & `AgreementExpiry` dates under the property selling modal
+We have exposed the `ValuationDate` & `AgreementExpiry` dates under the property selling model
 
 ### Developer Portal
 
