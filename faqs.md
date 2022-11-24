@@ -351,7 +351,7 @@ To launch an app, click on 'Apps' and 'Installed'. Click on your app to launch.&
 
 'Integrations' will not be launched from the 'Installed' page and instead will be accessed by a URL provided by the third-party.&#x20;
 
-As an 'Admin' you can view and manage your integrations from the '[Manage](https://marketplace.reapit.cloud/manage)' page.
+As an 'Admin' (Reapit User Admin) you can view and manage your integrations from the '[Installation](https://marketplace.reapit.cloud/settings/installed)' section.
 
 ## What is an API call?&#x20;
 
