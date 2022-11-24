@@ -10,9 +10,7 @@ An agent can locate their Customer ID via the AppMarket inside of AgencyCloud.
 * Click on the ‘Settings’ icon in the bottom left-hand corner
 * The Customer ID can be located on the right-hand side of the screen.
 
-![](<.gitbook/assets/image (99).png>)
-
-
+<figure><img src=".gitbook/assets/CustomerCode.jpg" alt=""><figcaption></figcaption></figure>
 
 
 
