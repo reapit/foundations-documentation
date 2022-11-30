@@ -6,6 +6,51 @@ description: >-
 
 # What’s New
 
+## 30/11/22
+
+### Applicants API
+
+It is now possible to set an applicant as a Potential Client (`potentialClient`):
+
+<figure><img src=".gitbook/assets/WN30117.png" alt=""><figcaption><p>Applicant Status screen showing the 'Potential Client' field In AgencyCloud</p></figcaption></figure>
+
+<figure><img src=".gitbook/assets/WN30118.png" alt=""><figcaption><p>Potential Client field</p></figcaption></figure>
+
+We are now surfacing remaining lease (`leasereamining`) information on Applicants:
+
+<figure><img src=".gitbook/assets/WN30112.jpg" alt=""><figcaption><p>Applicant Requirements screen showing the 'Remaining Lease' fields in AgencyCloud  </p></figcaption></figure>
+
+<figure><img src=".gitbook/assets/WN30113.png" alt=""><figcaption><p>Reaming Lease field</p></figcaption></figure>
+
+&#x20;
+
+### Analytics Schema&#x20;
+
+'Pre Instruction Checks' data is now included in the Analytics Schema:  &#x20;
+
+<figure><img src=".gitbook/assets/WN30114.png" alt=""><figcaption></figcaption></figure>
+
+### Journal API
+
+We now support the option to POST to the Journals endpoint the following letter types:&#x20;
+
+Arrears Letter (AL),\
+Notice to Quit Letter (NQ),\
+Tenancy Renewal Letter (TR),\
+Letter Sent (LE)&#x20;
+
+**Please note**: In the case of AL/NQ/TR the associated type MUST be ‘tenancy’.&#x20;
+
+
+
+### Properties API
+
+&#x20;The ‘Text’ field (`urlcaption`) is now both read and write:
+
+<figure><img src=".gitbook/assets/WN30115.png" alt=""><figcaption><p>Marketing Screen showing the 'Text' field in AgencyCloud </p></figcaption></figure>
+
+<figure><img src=".gitbook/assets/WN30116.png" alt=""><figcaption><p>Text field</p></figcaption></figure>
+
 ## 31/10/22
 
 ### Analytics Schema
