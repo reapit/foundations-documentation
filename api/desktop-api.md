@@ -276,16 +276,18 @@ From version 12.142.0 the following will also be available:
 
 * Match Output&#x20;
 
-From version 12.152.3 the following will also be available (Developer Edition upgrade scheduled for 12/09/22):
+From version 12.152.3 the following will also be available:
 
 * Diary
 
-From version 12.153+ the following will also be available (Developer Edition upgrade not yet scheduled):
+From version 12.153+ the following will also be available:&#x20;
 
 * Pre Tenancy Checks&#x20;
 * Works Order
 
+From version 12.156+ the following with also be available (Developer Edition upgrade scheduled for 01/12/22):
 
+* Referrals
 
 ## Types
 
@@ -577,7 +579,7 @@ The desktop type of _Works Order_ can be given to an application that can be lau
 | --------- | ------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------- |
 | prpCode   | string | The primary key of the property to load the Works Order information app for (note that this won’t be present when the app loads from the AppMarket, but the app needs to be able to accept this parameter when it is launched via the app association route). | Yes      |
 
-An application of t
+
 
 
 
@@ -587,7 +589,7 @@ An application of t
 
 
 
-&#x20;You can also launch the app from an existing works order and the globals dictionary will contain the below key when launched by AgencyCloud:
+You can also launch the app from an existing works order and the globals dictionary will contain the below key when launched by AgencyCloud:
 
 ```
 {woCode: 'MKT22000195'}
@@ -602,3 +604,57 @@ An application of t
 
 
 <figure><img src="../.gitbook/assets/WO2.png" alt=""><figcaption></figcaption></figure>
+
+### Referral (Coming Soon)
+
+The desktop type of _Referral_ can be given to an application that can be launched after a user creates a referral in AgencyCloud. The globals dictionary will contain the below key when launched by AgencyCloud for a referral:
+
+`{refCode: 'MKT220075'}`
+
+&#x20;
+
+| Parameter | Type   | Description                                                                                                                                                                                                                                                       | Required |
+| --------- | ------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------- |
+| `refCode` | string | The primary key of the referral to load the referral information within the app (note that this won’t be present when the app loads from the AppMarket, but the app needs to be able to accept this parameter when it is launched via the app association route). | Yes      |
+
+&#x20;
+
+&#x20;
+
+#### Setup
+
+Referrals/Leads are part of the AgencyCloud configuration and will need to be setup before you can launch your app from the panel (this cannot be setup via Platform).
+
+Configuration can only be accessed by an Admin with the correct permissions or by the agent making a request to our service desk.
+
+#### Step 1 - Installation:
+
+The agent should first install your app from the AppMarket and after installation, restart AgencyCloud
+
+#### Step 2 – Setting up the Referral in AgencyCloud:
+
+Open the ‘Setup Referrals/Leads’ section under configuration:
+
+<figure><img src="../.gitbook/assets/RT01.png" alt=""><figcaption></figcaption></figure>
+
+Either click 'Add' or edit an existing referral and enter the required information and select ‘Marketplace App’, the menu should open to display any apps that have been installed with the desktop type of ‘Referral’:
+
+<figure><img src="../.gitbook/assets/RT02.png" alt=""><figcaption></figcaption></figure>
+
+Once the setup is saved, the new referral option should appear on the chosen screen. For example, on the Applicant screen 'Referral Example':
+
+<figure><img src="../.gitbook/assets/RT03.png" alt=""><figcaption></figcaption></figure>
+
+#### Process
+
+When a user clicks on the  referral, it will prompt them to ‘Create New Referral’:
+
+<figure><img src="../.gitbook/assets/RT04.png" alt=""><figcaption></figcaption></figure>
+
+&#x20;
+
+Once created, the app setup for that referral will automatically launch.
+
+If a user closes the app or wishes to make amendments/relaunch the app, they can simply right click on the referral and select ‘Launch App…’:
+
+<figure><img src="../.gitbook/assets/RT05.png" alt=""><figcaption></figcaption></figure>
