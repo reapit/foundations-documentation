@@ -565,7 +565,7 @@ test
 
 
 
-### **Works Orders (Coming soon)**
+### **Works Orders**
 
 The desktop type of _Works Order_ can be given to an application that can be launched from a Works Orders screen in AgencyCloud. When an application has this desktop type, it will replace the native behaviour and will launch when selecting ‘Create’. The globals dictionary will contain the below key when launched by AgencyCloud:&#x20;
 
@@ -605,7 +605,7 @@ You can also launch the app from an existing works order and the globals diction
 
 <figure><img src="../.gitbook/assets/WO2.png" alt=""><figcaption></figcaption></figure>
 
-### Referral (Coming Soon)
+### Referral
 
 The desktop type of _Referral_ can be given to an application that can be launched after a user creates a referral in AgencyCloud. The globals dictionary will contain the below key when launched by AgencyCloud for a referral:
 
