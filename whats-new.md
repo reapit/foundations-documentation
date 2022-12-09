@@ -16,7 +16,7 @@ It is now possible to set an applicant as a Potential Client (`potentialClient`)
 
 <figure><img src=".gitbook/assets/WN30118.png" alt=""><figcaption><p>Potential Client field</p></figcaption></figure>
 
-We are now surfacing remaining lease (`leasereamining`) information on Applicants:
+We are now surfacing remaining lease (`leaseRemaining`) information on Applicants:
 
 <figure><img src=".gitbook/assets/WN30112.jpg" alt=""><figcaption><p>Applicant Requirements screen showing the 'Remaining Lease' fields in AgencyCloud  </p></figcaption></figure>
 
