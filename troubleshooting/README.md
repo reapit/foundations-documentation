@@ -16,15 +16,11 @@ Please select from the topics below:&#x20;
 [authentication-issues.md](authentication-issues.md)
 {% endcontent-ref %}
 
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
-{% endcontent-ref %}
-
 {% content-ref url="platform-api.md" %}
 [platform-api.md](platform-api.md)
 {% endcontent-ref %}
 
-{% content-ref url="../api/reapit-connect.md" %}
-[reapit-connect.md](../api/reapit-connect.md)
+{% content-ref url="reapit-connect.md" %}
+[reapit-connect.md](reapit-connect.md)
 {% endcontent-ref %}
 
