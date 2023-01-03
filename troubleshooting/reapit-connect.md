@@ -16,3 +16,4 @@ To test your application locally, you can provide the following (example):
 
 <figure><img src="../.gitbook/assets/RC Auth.jpg" alt=""><figcaption></figcaption></figure>
 
+For more information on Reapit Connect, please [click here](https://foundations-documentation.reapit.cloud/api/reapit-connect).&#x20;
