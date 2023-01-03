@@ -6,6 +6,42 @@ description: >-
 
 # What’s New
 
+## 30/12/22
+
+### Applicants API
+
+Custom applicant attributes that are usually captured on the requirements screen under ‘Must Have’ or ‘Special/Special Requirements’, are now surfaced for applicants under ‘specialFeatures’:
+
+<figure><img src=".gitbook/assets/WN03011.jpg" alt=""><figcaption><p>Applicant Requirements screen in AgencyCloud</p></figcaption></figure>
+
+<figure><img src=".gitbook/assets/WN03012.jpg" alt=""><figcaption><p>Example Special Features Data</p></figcaption></figure>
+
+&#x20;The ‘Renting Position’ is now surfaced on an applicant under ‘`renting.positionId`’:
+
+<figure><img src=".gitbook/assets/WN03013.jpg" alt=""><figcaption><p>Applicant status screen in AgencyCloud</p></figcaption></figure>
+
+<figure><img src=".gitbook/assets/WN03014.jpg" alt=""><figcaption><p>Example 'positionId'</p></figcaption></figure>
+
+**Note:** The renting position list is configurable and can be cross referenced against a new sub-resource under the Configuration endpoint ‘GET /configuration/rentingPositions’.
+
+&#x20;
+
+### Transactions API
+
+You can now create pending supplier invoices using the new sub-resource under the Transactions endpoint ‘POST /transactions/supplierInvoices’:&#x20;
+
+<figure><img src=".gitbook/assets/WN03015.jpg" alt=""><figcaption></figcaption></figure>
+
+For the full specification, validation, and behaviours, please review ticket [https://github.com/reapit/foundations/issues/7764](https://github.com/reapit/foundations/issues/7764) in conjunction with the swagger documentation.
+
+&#x20;
+
+### Analytics Schema
+
+‘Tenancy Alterations’ data is now included in the Analytics Schema:
+
+<figure><img src=".gitbook/assets/WN03016.jpg" alt=""><figcaption><p>Analytics Schema </p></figcaption></figure>
+
 ## 30/11/22
 
 ### Applicants API
