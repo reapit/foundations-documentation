@@ -339,15 +339,13 @@ Before your app can be listed in the AppMarket, it first needs to be submitted f
 
 If your app has been approved and you have chosen to list it privately, ensure the Customer ID you have provided in the 'Private Apps' section is correct. For more information on obtaining a Customer ID, please click [here](faqs.md#how-do-i-find-a-customer-id).&#x20;
 
-If your app is public and is not visible to some customers, it is because your app is using data webhooks. Apps/Integrations that's have data webhooks (not including application install and application uninstall) will not be visible to customers still on the Rackspace environment. For more information on webhooks, please click [here](api/webhooks.md).&#x20;
-
 ### Launching an App
 
-AgencyCloud apps (an an app that loads inside of the AgencyCloud desktop application), can be launched direct from the 'Installed' page. This is also true when viewing the app within a web browser. AgencyCloud apps also work standalone. This means that you can still benefit from the product or service when out of the office and from outside of the Agency cloud desktop application.&#x20;
+AgencyCloud apps (an an app that loads inside of the AgencyCloud desktop application), can be launched direct from the 'My Apps' page. This is also true when viewing the app within a web browser. AgencyCloud apps also work standalone. This means that you can still benefit from the product or service when out of the office and from outside of the Agency cloud desktop application.&#x20;
 
-To launch an app, click on 'Apps' and 'Installed'. Click on your app to launch.&#x20;
+To launch an app, click on 'Apps' and 'My Apps'. Click on the app to launch.&#x20;
 
-'Integrations' will not be launched from the 'Installed' page and instead will be accessed by a URL provided by the third-party.&#x20;
+'Integrations' will not be launched from the 'My Apps' page and instead will be accessed by a URL provided by the third-party.&#x20;
 
 As an 'Admin' (Reapit User Admin) you can view and manage your integrations from the '[Installation](https://marketplace.reapit.cloud/settings/installed)' section.
 
@@ -460,7 +458,7 @@ If you cannot see the option to 'Install App' or for integrations 'Enable Integr
 
 Only 'ReapitUserAdmins' (a 'Level 2' user in AgencyCloud) or a 'MarketplaceAdmin' can install/enable and uninstall/disable apps and integrations from the AppMarket.&#x20;
 
-A user can check their user role by going to 'Apps' and 'Settings' from the AppMarket.&#x20;
+A user can check their user role by going to 'Settings' from the AppMarket.&#x20;
 
 <figure><img src=".gitbook/assets/Screenshot 2022-11-01 135545.jpg" alt=""><figcaption></figcaption></figure>
 
