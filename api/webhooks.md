@@ -299,7 +299,9 @@ We currently support the following topics, but this will increase over time. Ple
 
 ### Available topics
 
-> Webhook payload types are available from `@reapit/foundations-ts-definitions` [see here for moer info](https://foundations-documentation.reapit.cloud/app-development/foundations-ts-defintions#webhook-types)
+> Webhook payload types are available from `@reapit/foundations-ts-definitions` [see here for more info](https://foundations-documentation.reapit.cloud/app-development/foundations-ts-defintions#webhook-types)
+
+If you have a requirement to target very specific events in a customer's system, you may wish to look at [building your own event filter](webhooks.md#building-event-filters) to build on the default topic capability.
 
 | Topic                                     | Description                                                                                                                                                                                                                                                                                     | Required scopes       |
 | ----------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------- |
@@ -361,6 +363,191 @@ You must configure the customer(s) that your webhook will respond to events for.
 * Specify one or more customers to receive only event originating from those customers
 * Specify 'SBOX' to listen to events triggered from our sandbox (useful for testing)
 * Leave this field blank to respond to events for all customers who have installed your application. You will immediately receive events for new customers who install your application without any configuration change required. This does not include sandbox events.
+
+### Building event filters
+
+There are several scenarios where the list of available topics results in a large number of irrelevant events being submitted to your endpoint. In response to a high frequency of requests of additional topics, or more granular filtering capabilities, it is possible to attach one or more event schema filters to your webhooks. This is an advanced feature that allows you to build on top of the default topic availability and target specific events. Please note that this is still in beta testing and not generally available
+
+Webhook event filters are based on the [JSON Schema specification](https://json-schema.org/) and, put simply, a schema is used to validate the content of an event from our customer's systems which will only be sent to your endpoint in the event that validation is successful. This mechanism gives you the ability to define specific rules, for example if you want to target specific appointment types when listening to appointments.created and/or appointments.modified topics. An event filter is tied to a single specific topic so it is not necessary to check the topic id as part of the filter, however if can be good practice to include this, as is shown in the Starter Template. The tabs below provide some examples of event filters that can be used as a starting point.
+
+It is possible to stack event filters to keep each individual filter quite lightweight. For example, if you wanted to build a filter that ensured that an appointment was of valuation type AND associated to one of a defined list of negotiator ids, this could be achieved by creating two separate filters (one for each rule) or a single filter with both rules applied. All filters must pass validation for the event to be sent to your endpoint
+
+{% tabs %}
+{% tab title="Starter Template" %}
+```javascript
+{
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "description": "Filter Starter Template",
+    "type": "object",
+    "properties": {
+        "new": {
+        },
+        "topicId": {
+            "type": "string",
+            "oneOf": [
+                {
+                    "pattern": "appointments.modified"
+                },
+                {
+                    "pattern": "appointments.created"
+                }
+            ]
+        }
+    },
+    "required": [
+        "topicId",
+        "new"
+    ]
+}
+```
+{% endtab %}
+
+{% tab title="Specific Appointment Types" %}
+The following schema will target appointments with a typeId of VL (valuation). Note that whilst the topicId validation is done against both appointments.modified AND appointments.created events, the filter can only be applied to a single topic, and so would need to be configured twice, once for each topic
+
+```javascript
+{
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "description": "Valuation Appointments",
+    "type": "object",
+    "properties": {
+        "new": {
+            "type": "object",
+            "properties": {
+                "typeId": {
+                    "type": "string",
+                    "oneOf": [
+                        {
+                            "pattern": "VL"
+                        }
+                    ]
+                }
+            },
+            "required": [
+                "typeId"
+            ]
+        },
+        "topicId": {
+            "type": "string",
+            "oneOf": [
+                {
+                    "pattern": "appointments.modified"
+                },
+                {
+                    "pattern": "appointments.created"
+                }
+            ]
+        }
+    },
+    "required": [
+        "topicId"
+    ]
+}
+```
+{% endtab %}
+
+{% tab title="New Instructions Above Price" %}
+The following schema will target modified properties that have just been instructed with an asking price of 500,000 or greater. This might be used to specifically target high value properties for a more luxury property portal.
+
+```javascript
+{
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "description": "Instructions above 500,000",
+    "type": "object",
+    "properties": {
+        "new": {
+            "type": "object",
+            "properties": {
+                "selling": {
+                    "type": "object",
+                    "properties": {
+                        "price": {
+                            "type": "number",
+                            "minimum": 500000
+                        },
+                        "status": {
+                            "type": "string",
+                            "oneOf": [
+                                {
+                                    "pattern": "^forSale.*"
+                                }
+                            ]
+                        }
+                    },
+                    "required": [
+                        "price",
+                        "status"
+                    ]
+                }
+            },
+            "required": [
+                "selling"
+            ]
+        },
+        "diff": {
+            "type": "object",
+            "properties": {
+                "selling": {
+                    "type": "object",
+                    "properties": {
+                        "price": {
+                            "type": "array",
+                            "items": [
+                                {
+                                    "type": "number"
+                                },
+                                {
+                                    "type": "number",
+                                    "minimum": 500000
+                                }
+                            ]
+                        },
+                        "status": {
+                            "type": "array",
+                            "items": [
+                                {
+                                    "type": "string"
+                                },
+                                {
+                                    "type": "string",
+                                    "oneOf": [
+                                        {
+                                            "pattern": "^forSale.*"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    },
+                    "required": [
+                        "status"
+                    ]
+                }
+            },
+            "required": [
+                "selling"
+            ]
+        }
+    },
+    "anyOf": [
+        {
+            "required": [
+                "new"
+            ]
+        },
+        {
+            "required": [
+                "new",
+                "diff"
+            ]
+        }
+    ]
+}
+```
+{% endtab %}
+{% endtabs %}
+
+Once your event schema has been built, post it to the appropriate resthooks endpoint. If you wish to test your filter against a given event once it has been saved, the test endpoint can be used to validate your filter against the specified event payload, which you can take from the _Ping_ webhooks function, or by using a real event already being received by your endpoint
 
 ### Optional webhook behaviour
 
