@@ -6,6 +6,48 @@ description: >-
 
 # What’s New
 
+## 31/01/23
+
+### Property Images
+
+The property images endpoint now respects the maximum dimensions that are set in a customer's configuration. &#x20;
+
+### Tenancies
+
+When a tenancy is in an arranging status, we now expose the contacts associated to the attached applicant in the `related` collection.&#x20;
+
+### Contacts
+
+Company information is now returned on a contact under the company link.
+
+### Properties
+
+Converted room dimensions are now returned on a property under ‘`dimensionsAlt`’.&#x20;
+
+<figure><img src=".gitbook/assets/WN3101231.png" alt=""><figcaption><p>Property Rooms and Accommodation screen in AgencyCloud</p></figcaption></figure>
+
+<figure><img src=".gitbook/assets/WN3101232.png" alt=""><figcaption><p>Example 'dimensionsAlt'</p></figcaption></figure>
+
+### Design System
+
+Release 4.0.0
+
+<figure><img src=".gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+
+**New Features**
+
+* Visual Language has been revamped with detailed rules for icons, fresh new icons and improved styling for better visual consistency.
+* Iconography (Visual Language section) has been reorganised into new categories.
+* Product Brand Imagery (Visual Language section): a full set of illustrations was added to the collection.
+* Mobile navigation has been added to UI Elements&#x20;
+
+**Bug Fixes**
+
+* Reapit and ReapitConnect logo sizes have been adjusted
+* ReapitConnect logo is now a vectorial image
+* One Choice Chips (Segmented Control) has been renamed to Toggle Button. Its width size changed from static to dynamic.
+* Desktop - Full Options Expansion Panel style has been changed (shadow and outline)
+
 ## 30/12/22
 
 ### Applicants API
