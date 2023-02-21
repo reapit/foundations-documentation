@@ -285,7 +285,11 @@ From version 12.153+ the following will also be available:&#x20;
 * Pre Tenancy Checks&#x20;
 * Works Order
 
-From version 12.156+ the following with also be available (Developer Edition upgrade scheduled for 01/12/22):
+From version 12.156+ the following with also be available:
+
+* Referrals
+
+From version 12.160+ the following with also be available (Developer Edition upgrade to be scheduled):
 
 * Referrals
 
@@ -599,10 +603,6 @@ The desktop type of _Works Order_ can be given to an application that can be lau
 
 <figure><img src="../.gitbook/assets/WO1.png" alt=""><figcaption></figcaption></figure>
 
-
-
-
-
 You can also launch the app from an existing works order and the globals dictionary will contain the below key when launched by AgencyCloud:
 
 ```
@@ -672,3 +672,21 @@ Once created, the app setup for that referral will automatically launch.
 If a user closes the app or wishes to make amendments/relaunch the app, they can simply right click on the referral and select ‘Launch App…’:
 
 <figure><img src="../.gitbook/assets/RT05.png" alt=""><figcaption></figcaption></figure>
+
+### Renewal Negotiation Check
+
+The desktop type of _Renewal Negotiation Check_ can be given to an application that will replace the checks section on a Renewal Negotiation screen in AgencyCloud. The global dictionary will contain the below key when launched by AgencyCloud for a renewal:
+
+```
+{ "renewalCode": "ABC200123" }
+```
+
+| Parameter   | Type   | Description                                                                                                                                                                                                                               | Required |
+| ----------- | ------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------- |
+| renewalCode | string | The primary key of the renewal to load the application for (note that this won’t be present when the app loads from the AppMarket, but the app needs to be able to accept this parameter when it is launched via the desktop type route). | Yes      |
+
+
+
+<figure><img src="../.gitbook/assets/RenewalChecks.jpg" alt=""><figcaption><p>'Checks' section on a Renewal Negotiation in AgencyCloud</p></figcaption></figure>
+
+When an app with a type of _Renewal Negotiation Check_ is installed, it will replace the 'checks' on the Renewal Negotiation screen (when heavy weight renewals are enabled). If multiple apps with the same integration type are installed, an option to select will be presented).  Clicking on an app will launch it with the renewal code.
