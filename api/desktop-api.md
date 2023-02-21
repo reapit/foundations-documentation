@@ -291,7 +291,11 @@ From version 12.156+ the following with also be available:
 
 From version 12.160+ the following with also be available (Developer Edition upgrade to be scheduled):
 
-* Referrals
+* Renewal Negotiation Checks
+
+Coming soon:&#x20;
+
+* Property Images
 
 ## Types
 
