@@ -559,11 +559,25 @@ The desktop type of _Diary_ can be given to an application that can be launched 
 | --------- | ------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------- |
 | diaryCode | string | The primary key of the appointment (note that this won’t be present when the app loads from the AppMarket, but the app needs to be able to accept this parameter when it is launched via the app association route). | Yes      |
 
-test
+
 
 <figure><img src="../.gitbook/assets/DiaryAPI.png" alt=""><figcaption></figcaption></figure>
 
+### Pre Tenancy Checks
 
+The type of _Pre Tenancy Checks_ will be given to an application that replaces the Pre Tenancy screen from AgencyCloud. The globals dictionary will contain the below key when launched by AgencyCloud for a specific tenancy:
+
+```
+{ "tenCode": "ABC200123" }
+```
+
+| Parameter | Type   | Description                                                                                                                                                                                                                               | Required |
+| --------- | ------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------- |
+| tenCode   | string | The primary key of the tenancy to load the application for (note that this won’t be present when the app loads from the AppMarket, but the app needs to be able to accept this parameter when it is launched via the desktop type route). | Yes      |
+
+When an app with a type of Pre Tenancy Check is installed, it will be launched when accessing the Pre Tenancy screen (if multiple apps with the same integration type are installed, an option to select will be presented).  Clicking on an app will launch it with the tenancy code.
+
+<figure><img src="../.gitbook/assets/PTenancyCheck.jpg" alt=""><figcaption></figcaption></figure>
 
 ### **Works Orders**
 
