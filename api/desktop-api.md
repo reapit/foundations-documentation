@@ -289,7 +289,7 @@ From version 12.156+ the following with also be available:
 
 * Referrals
 
-From version 12.160+ the following with also be available (Developer Edition upgrade to be scheduled):
+From version 12.160+ the following with also be available (Developer Edition scheduled for 27/02/23):
 
 * Renewal Negotiation Checks
 
