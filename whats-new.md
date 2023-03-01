@@ -6,6 +6,42 @@ description: >-
 
 # What’s New
 
+## 28/02/23
+
+### Applicants
+
+Two new filters have been applied to the Applicants endpoint for allow filtering by ‘Last Call’ (`lastCall`) and ‘Next Call’ (`nextCall`):
+
+<figure><img src=".gitbook/assets/WN28021.png" alt=""><figcaption><p>'Next Call' section in AgencyCloud</p></figcaption></figure>
+
+<figure><img src=".gitbook/assets/WN28022.png" alt=""><figcaption><p>Example payload</p></figcaption></figure>
+
+### Configuration
+
+We have added additional information on the ‘preTenancyCheckTypes’ configuration endpoint to surface if a if check is ‘active or inactive’ and which offices the check applies to e.g. OXF, MKN:&#x20;
+
+<figure><img src=".gitbook/assets/WN28023.png" alt=""><figcaption><p>Example payload showing 'active' and 'officeIds' fields</p></figcaption></figure>
+
+&#x20;
+
+### Analytics Schema
+
+Management Fee information (percentage & amount) is now available in the Analytics Schema under the Tenancy Renewal table:
+
+<figure><img src=".gitbook/assets/WN280224.png" alt=""><figcaption><p>Fields available in the Analytics Schema</p></figcaption></figure>
+
+### Developer Edition&#x20;
+
+The Developer Edition has been upgraded to 12.160 which now includes a new desktop integration type of ‘Renewal Negotiation Check’
+
+‘Renewal Negotiation Check’ can be given to an application that will replace the checks section on a Renewal Negotiation screen in AgencyCloud.
+
+<figure><img src=".gitbook/assets/WN28025.jpg" alt=""><figcaption><p>Checks section in AgencyCloud</p></figcaption></figure>
+
+For more information on this desktop integration type, please [visit](https://foundations-documentation.reapit.cloud/api/desktop-api#renewal-negotiation-check).&#x20;
+
+Also coming soon, the ability to launch apps from the images section in AgencyCloud.
+
 ## 31/01/23
 
 ### Property Images
