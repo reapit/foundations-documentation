@@ -10,15 +10,15 @@ description: >-
 
 ### Applicants
 
-Two new filters have been applied to the Applicants endpoint for allow filtering by ‘Last Call’ (`lastCall`) and ‘Next Call’ (`nextCall`):
+Two new filters have been applied to the Applicants endpoint to allow filtering by ‘Last Call’ (`hasLastCall`) and ‘Next Call’ (`hasnextCall`):
 
 <figure><img src=".gitbook/assets/WN28021.png" alt=""><figcaption><p>'Next Call' section in AgencyCloud</p></figcaption></figure>
 
-<figure><img src=".gitbook/assets/WN28022.png" alt=""><figcaption><p>Example payload</p></figcaption></figure>
+<figure><img src=".gitbook/assets/WN28026.jpg" alt=""><figcaption><p>Filtering Options</p></figcaption></figure>
 
 ### Configuration
 
-We have added additional information on the ‘preTenancyCheckTypes’ configuration endpoint to surface if a if check is ‘active or inactive’ and which offices the check applies to e.g. OXF, MKN:&#x20;
+We have added additional information on the ‘preTenancyCheckTypes’ configuration endpoint to surface if a check is ‘active or inactive’ and which offices the check applies to e.g. OXF, MKN:&#x20;
 
 <figure><img src=".gitbook/assets/WN28023.png" alt=""><figcaption><p>Example payload showing 'active' and 'officeIds' fields</p></figcaption></figure>
 
