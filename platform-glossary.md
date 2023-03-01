@@ -97,6 +97,7 @@ The following table shows the values exposed in the `style` collection returned 
 | Platform Value     | AgencyCloud Mapping                                            |
 | ------------------ | -------------------------------------------------------------- |
 | basement           | Basement                                                       |
+| bungalow           | Bungalow                                                       |
 | detached           | Detached                                                       |
 | duplex             | Duplex                                                         |
 | endTerrace         | End of Terrace                                                 |
@@ -107,6 +108,7 @@ The following table shows the values exposed in the `style` collection returned 
 | mews               | Mews                                                           |
 | penthouse          | Penthouse                                                      |
 | semiDetached       | Semi Detached, Semi-Detached                                   |
+| steading           | Steading                                                       |
 | studio             | Studio, Studio Flat                                            |
 | terraced           | Terraced, Terrace                                              |
 | upperFloor         | Upper Floor, Upper Floor without Lift, Upper Floor w/out Lift  |
