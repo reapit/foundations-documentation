@@ -10,11 +10,11 @@ description: >-
 
 ### Applicants
 
-Two new filters have been applied to the Applicants endpoint to allow filtering by ‘Last Call’ (`hasLastCall`) and ‘Next Call’ (`hasnextCall`):
+Two new filters have been applied to the Applicants endpoint to allow filtering by ‘Last Call’ (`hasLastCall`) and ‘Next Call’ (`hasNextCall`):
 
 <figure><img src=".gitbook/assets/WN28021.png" alt=""><figcaption><p>'Next Call' section in AgencyCloud</p></figcaption></figure>
 
-<figure><img src=".gitbook/assets/WN28026.jpg" alt=""><figcaption><p>Filtering Options</p></figcaption></figure>
+<figure><img src=".gitbook/assets/WN28027.jpg" alt=""><figcaption><p>Filtering options </p></figcaption></figure>
 
 ### Configuration
 
