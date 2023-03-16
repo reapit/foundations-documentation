@@ -204,6 +204,8 @@ Some of the fields we provide are date-only and have no time component. Date onl
 
 Our APIs support retrieval of resources using the `GET` verb.  When a `GET` request has been successfully fulfilled, you will receive a `200 OK` response with results included as a JSON payload. To ensure that parameters that `GET` resources accept work as you expect, please ensure you URL encode the parameters you provide.
 
+When working with boolean query string parameters, if they are not provided then no filter is applied to the dataset returned. This can be confusing for some developers who assume that not passing these parameters is like passing them as false (typically the default value for a boolean property). If they are not passed at all, our APIs ignore them completely and so no filtering is applied to the respective field(s).
+
 For practical and performance reasons, our top level APIs enforce paging and require a standardised set of query strings in their requests. The `pageSize` and `pageNumber` parameters are used to cycle through the available results from a top level API.
 
 For example, `GET /contacts?pageSize=10&pageNumber=2` will return the second page of ten contact resources in the following structure:
