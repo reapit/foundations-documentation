@@ -547,9 +547,51 @@ The following schema will target modified properties that have just been instruc
 }
 ```
 {% endtab %}
+
+{% tab title="Changes to Latitude or Longitude" %}
+The following schema detects changes to either the latitude or longitude on a property resource. This might used by systems that generate map or geospatial data based on property information in a customers' database
+
+```
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "description": "Changes to latitude or longitude",
+  "type": "object",
+  "properties": {
+    "diff": {
+      "type": "object",
+      "properties": {
+        "address": {
+          "type": "object",
+          "properties": {
+            "geolocation": {
+              "type": "object",
+              "properties": {
+                "latitude": { "type": "array" },
+                "longitude": { "type": "array" }
+              },
+              "anyOf": [
+                { "required": [ "latitude" ] },
+                { "required": [ "longitude"] }
+              ]
+            }
+          },
+          "required": [ "geolocation" ]
+        }
+      },
+      "required": [ "address" ]
+    }
+  },
+  "required": [ "diff" ]
+}
+```
+{% endtab %}
 {% endtabs %}
 
 Once your event schema has been built, post it to the appropriate resthooks endpoint. If you wish to test your filter against a given event once it has been saved, the test endpoint can be used to validate your filter against the specified event payload, which you can take from the _Ping_ webhooks function, or by using a real event already being received by your endpoint
+
+{% hint style="warning" %}
+When using event filters, it is important to keep in mind that certain events will no longer be sent to you. As the diff is generated for each specific event (rather than being based on the last version you received as a consumer) you will likely encounter scenarios where it is necessary to use the `new` object to understand all changes to a resource since the last time you received an update
+{% endhint %}
 
 ### Optional webhook behaviour
 
