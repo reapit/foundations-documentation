@@ -81,6 +81,7 @@ The following table shows the values exposed in the `type` collection returned b
 | mixedUse               | Mixed Use, Mixed                                                         |
 | office                 | Office, Offices                                                          |
 | publicHouse            | Public House, Pub                                                        |
+| retail                 | Retail                                                                   |
 | shop                   | Shop                                                                     |
 | smallHolding           | Small Holding                                                            |
 | studio                 | Studio, Studio Flat                                                      |
