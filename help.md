@@ -6,7 +6,7 @@ You can raise a feature request direct on our GitHub board [here](https://github
 
 For more information on our process, please click [here](https://foundations-documentation.reapit.cloud/dev-requests).&#x20;
 
-****
+
 
 ### **How do I report a bug?**
 

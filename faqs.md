@@ -248,28 +248,28 @@ Users assigned to this group will have the same permissions as a Reapit User Adm
 Will have permissions to install and uninstall apps from the AppMarket
 
 **offGrouping**\
-****‘offGrouping’ refers to Office Grouping. If present and set to ‘True’, the organisation will be using the Reapit Marketplace Management App. The app provides organisations the ability to control app visibility, setup office groups (setup data boundaries between offices) and control installs and uninstalls at an organisation level.
+‘offGrouping’ refers to Office Grouping. If present and set to ‘True’, the organisation will be using the Reapit Marketplace Management App. The app provides organisations the ability to control app visibility, setup office groups (setup data boundaries between offices) and control installs and uninstalls at an organisation level.
 
 **officeID**\
-****The ID of the induvial office the user is associated to.
+The ID of the induvial office the user is associated to.
 
 **orgName**\
-****The name of the organisation.
+The name of the organisation.
 
 **orgID**\
-****The ID of the organisation (mainly used for internal services)
+The ID of the organisation (mainly used for internal services)
 
 **clientCode**\
-****The Customer ID of the organisation
+The Customer ID of the organisation
 
 **userCode**\
-****The ID of the user in Reapit Connect
+The ID of the user in Reapit Connect
 
 **agencyCloudNegId**\
-****The ID of the user in AgencyCloud
+The ID of the user in AgencyCloud
 
 **agenyCloudId**\
-****The ID of the organisation in AgencyCloud
+The ID of the organisation in AgencyCloud
 
 ## Installation
 
@@ -298,7 +298,7 @@ _Third Floor, 67-74 Saffron Hill, London, EC1N 8QX, GB_
 _A record of all installations can be viewed on your app in the Developers Portal under 'Installations'._
 
 _Best Regards,_\
-_****Reapit Team_
+_Reapit Team_
 
 ### **Webhook**
 

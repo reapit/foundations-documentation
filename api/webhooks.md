@@ -64,7 +64,7 @@ As each event is prepared to be sent to your endpoint, it will be signed using t
    Full example:\
    \
    `s:98da2881-0540-48db-8ffa-45d7003f1412:1650934596:LLD5mr9ynFEvjz8dVmwO4vNmEva32ZV6TjAcPzdIDO93Jhc82EhysiQPcw9ZdlbCcCUjDsaeHZUsFEMUVKbGBg`\
-   ``
+
 2.  Retrieve the public key for your app by using one of the following methods:\
     \
     A) Use the `Public Key` option in the DeveloperPortal to retrieve the key for your app or\
@@ -263,7 +263,7 @@ namespace WebhookHandlerExample.Controllers
 {% endtab %}
 {% endtabs %}
 
-****
+
 
 ## Managing webhooks in the user interface
 

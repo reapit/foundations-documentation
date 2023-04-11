@@ -16,7 +16,7 @@ Think of Reapit IaaS as CI/CD pipeline for your Reapit applications that also in
 
 ### Public Beta
 
-The IaaS services are part of a public beta that needs to be enabled by one of our team for your Developer Organisation.  If you are interested in trialing this service, please drop us a line at [**iaasbeta@reapitfoundations.zendesk.com**](mailto:iaasbeta@reapitfoundations.zendesk.com) **** to join the waiting list.
+The IaaS services are part of a public beta that needs to be enabled by one of our team for your Developer Organisation.  If you are interested in trialing this service, please drop us a line at [**iaasbeta@reapitfoundations.zendesk.com**](mailto:iaasbeta@reapitfoundations.zendesk.com) to join the waiting list.
 
 We will be inviting developer organisations in slowly while we scale up the infrastructure required to power the service so please be aware, whilst we will confirm your interest right away, it may take some time to get you live.&#x20;
 

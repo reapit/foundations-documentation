@@ -6,6 +6,52 @@ description: >-
 
 # What’s New
 
+## 31/03/23
+
+### **DeveloperPortal**
+
+Added Authentication Security: By default, the ‘Authentication Client Secret’ will now be hidden and only accessible by an ‘Admin’:
+
+<figure><img src=".gitbook/assets/WN31031.png" alt=""><figcaption><p>Client Secret - Admin only</p></figcaption></figure>
+
+\
+Non Admin users will see the following:
+
+<figure><img src=".gitbook/assets/WN31032.png" alt=""><figcaption><p>Client Secret - Non Admins</p></figcaption></figure>
+
+As an Admin, you can check or change the role of a user within your organisation by simply navigating to the ‘[Members](https://developers.reapit.cloud/settings/members)’ area.\
+&#x20;
+
+### **Applicants**
+
+We now support the option for 'Four Weekly' rent frequency on Applicants:
+
+<figure><img src=".gitbook/assets/WN31033.png" alt=""><figcaption><p>Rent frequency in AgencyCloud</p></figcaption></figure>
+
+<figure><img src=".gitbook/assets/WN31034.png" alt=""><figcaption><p>Rent frequency example </p></figcaption></figure>
+
+&#x20;\
+&#x20;\
+
+
+### **Properties**
+
+Agreement signed is now available under the Property Letting Model:
+
+<figure><img src=".gitbook/assets/WN31035.png" alt=""><figcaption><p>Agreement Signed field in AgencyCloud</p></figcaption></figure>
+
+### **Appointments**
+
+Other Agent information has now been added to appointments `otherAgent` with the otheragentId available in the \_links collection
+
+### **Journal Entries**
+
+The list of allowed journal entry types has been expanded to now include ON (offerNote):
+
+<figure><img src=".gitbook/assets/WN31036.png" alt=""><figcaption><p>Example offer note</p></figcaption></figure>
+
+
+
 ## 28/02/23
 
 ### Applicants
@@ -429,7 +475,7 @@ Last week, we released the first phase of the ‘Referrals’ endpoint which inc
 
 ![](.gitbook/assets/WN8.jpg)
 
-The second phase will include the ability to write to the endpoint, metadata & associated webhooks. You can track the phase 2 milestone [here](https://github.com/reapit/foundations/milestone/136)****
+The second phase will include the ability to write to the endpoint, metadata & associated webhooks. You can track the phase 2 milestone [here](https://github.com/reapit/foundations/milestone/136)
 
 ### **New features**
 
@@ -1527,7 +1573,7 @@ Now let’s look at what we’ve been doing:
 ### Changes
 
 **The release of the of Tenancies API**\
-****The ‘read’ functionality of the Tenancies API is now available. We are still developing the ‘updating’ and ‘creating’ functionality, but you should now get great visibility what is available and what information you can use within your application.
+The ‘read’ functionality of the Tenancies API is now available. We are still developing the ‘updating’ and ‘creating’ functionality, but you should now get great visibility what is available and what information you can use within your application.
 
 ![Tenancies API ](<.gitbook/assets/image (2) (3).png>)
 
@@ -1552,7 +1598,7 @@ For more information of this feature, please [click here](https://foundations-do
 ### Fixes
 
 **Custom URL Schemes**\
-****We are now supporting Custom URL Schemes for your App, for the ‘Redirect URI’ and ‘Sign Out URI’ fields.
+We are now supporting Custom URL Schemes for your App, for the ‘Redirect URI’ and ‘Sign Out URI’ fields.
 
 For example, ‘myapp://’ is now an accepted format, previously it was causing an issue when trying to save on a ‘Submit’ or ‘Edit’ app page unless the format was https:// or http://localhost
 
@@ -1570,7 +1616,7 @@ Firstly, thank you to all our Alpha partners for your feedback during the first 
 Whilst we continue to update the system in the background, here are the highlights of the things we’ve been doing: &#x20;
 
 **Changes**\
-****We have added a more informative way to display if the incorrect number of characters had been used in the ‘Summary’ and ‘Description’ fields on the ‘Submit’ app form. Previously, this wasn’t very obvious and resulted in delay when submitting an App.
+We have added a more informative way to display if the incorrect number of characters had been used in the ‘Summary’ and ‘Description’ fields on the ‘Submit’ app form. Previously, this wasn’t very obvious and resulted in delay when submitting an App.
 
 ![New, clearer validation now in place](.gitbook/assets/summaryfield.png)
 

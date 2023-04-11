@@ -84,7 +84,7 @@ Version Date: 25th June 2021
 
 (b)         applications for registration, and the right to apply for registration, for any of these rights; and
 
-(c)   ****       all other intellectual property rights and equivalent or similar forms of protection existing anywhere in the world.
+(c)          all other intellectual property rights and equivalent or similar forms of protection existing anywhere in the world.
 
 1.1.28    **Loss** means claims, demands, actions, awards, judgments, settlements, costs, expenses, liabilities, damages and losses (including all interest, fines, penalties, management time and legal and other professional costs and expenses).
 
@@ -100,7 +100,7 @@ Version Date: 25th June 2021
 
 1.1.34    **Regulator** means any person having regulatory or supervisory authority over all or any part of (a) the Services or (b) the business of Reapit or (c) the business of Developer.
 
-1.1.35    **Server Side Application** means **** authentication using a REST service on the server, typically pulling Data into an existing Application.
+1.1.35    **Server Side Application** means authentication using a REST service on the server, typically pulling Data into an existing Application.
 
 1.1.36    **Term** means the duration of the Agreement, as determined in accordance with the terms of clause 11.
 
@@ -157,7 +157,7 @@ Version Date: 25th June 2021
 
 (a)            approve the Application outright, in which case Reapit will notify the Developer electronically and the Application will be published by Reapit on the App Marketplace in accordance with Reapit’s usual processes; or\
 (b)            notify the Developer of any remedial actions or further development work required by Reapit (whether in relation to scope, functionality, or description); or\
-(c)             notify the Developer, at Reapit’s sole discretion, that the Application is not approved and that Reapit does not wish to proceed any further with that Application.    ****   &#x20;
+(c)             notify the Developer, at Reapit’s sole discretion, that the Application is not approved and that Reapit does not wish to proceed any further with that Application.   &#x20;
 
 2.5.4       If Reapit requires remedial work or further development, in accordance with clause 2.5.3(b), the Developer must resubmit the Application in accordance with clause 2.5.2 or as otherwise directed by Reapit and the terms of clause 2.5.3 will apply to any res-submission.
 
@@ -272,7 +272,7 @@ Version Date: 25th June 2021
 6.1.4       The Developer’s rights to use Data and an  Application’s rights to use Data shall cease:
 
 (a)            upon termination of this Agreement, when the Developer  shall immediately cease using Data and delete any Data it has received via an Application or which is otherwise under the Developer’s control;\
-(b)            when an App is uninstalled by an end-user, the Developer shall immediately cease using Data and delete any Data it has received via an Application or which is otherwise under the Developer’s control. ****&#x20;
+(b)            when an App is uninstalled by an end-user, the Developer shall immediately cease using Data and delete any Data it has received via an Application or which is otherwise under the Developer’s control.&#x20;
 
 6.1.5       Without prejudice to the foregoing clauses, Reapit reserves the right to suspend the Developer’s access to Data at any time. &#x20;
 
@@ -563,7 +563,7 @@ in each case whether arising from breach of contract, negligence, under any inde
 2.2.2       where such Personal Data is stored (identity and location of entity maintaining the relevant database); and
 
 2.2.3       whether any third parties are involved as sub-processors of the Personal Data.\
-****
+
 
 ### SCHEDULE 2 – FEES&#x20;
 

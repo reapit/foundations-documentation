@@ -150,7 +150,7 @@ The basic flow for all projects is that;
 * **Build PR:** Build task runs to ensure the branch is sound.
 * **Test PR:** Test, and lint tasks run to verify a PR. Runs in parallel with Build PR.
 * **Release Dev:** Triggered on the successful merge of a PR, builds the project and releases to the relevant dev environment.
-* **Release Prod:** Triggered by tagging a release in Github, **** again, test, build and lint tasks run and the `release-prod` task runs to deploy the relevant tagged project. The release tag should be raised [here](https://github.com/reapit/foundations/releases) and be in the format `<<package>>_v<<version-number>>` to trigger the production workflow.  Will release a single package to production and if relevant, publish to NPM>
+* **Release Prod:** Triggered by tagging a release in Github, again, test, build and lint tasks run and the `release-prod` task runs to deploy the relevant tagged project. The release tag should be raised [here](https://github.com/reapit/foundations/releases) and be in the format `<<package>>_v<<version-number>>` to trigger the production workflow.  Will release a single package to production and if relevant, publish to NPM>
 
 ### Definition of Done
 

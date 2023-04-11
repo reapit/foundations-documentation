@@ -67,11 +67,11 @@ Your issue relates to AgencyCloud (Desktop CRM) and therefore will require infor
 
 **Investigate**
 
-We need to research or gather more information relating to your request. ****&#x20;
+We need to research or gather more information relating to your request.&#x20;
 
 **Product Decision**
 
-The nature of your request requires product direction. ****&#x20;
+The nature of your request requires product direction.&#x20;
 
 **Too Big**
 
