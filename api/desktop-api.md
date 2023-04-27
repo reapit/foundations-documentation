@@ -289,9 +289,13 @@ From version 12.156+ the following with also be available:
 
 * Referrals
 
-From version 12.160+ the following with also be available (Developer Edition scheduled for 27/02/23):
+From version 12.160+ the following with also be available:
 
 * Renewal Negotiation Checks
+
+From version 12.163+ the following with also be available:
+
+* Property Licensing
 
 Coming soon:&#x20;
 
@@ -694,3 +698,22 @@ The desktop type of _Renewal Negotiation Check_ can be given to an application t
 <figure><img src="../.gitbook/assets/RenewalChecks.jpg" alt=""><figcaption><p>'Checks' section on a Renewal Negotiation in AgencyCloud</p></figcaption></figure>
 
 When an app with a type of _Renewal Negotiation Check_ is installed, it will replace the 'checks' on the Renewal Negotiation screen (when heavy weight renewals are enabled). If multiple apps with the same integration type are installed, an option to select will be presented).  Clicking on an app will launch it with the renewal code.
+
+
+
+### **Property Licensing**
+
+The desktop type of _Property Licensing_ can be given to an application that replaces the 'Licensing' button on the property attributes screen. When an application has this desktop type, it will replace the native behaviour and will launch when selecting ‘Licensing’. The globals dictionary will contain the below key when launched by AgencyCloud:&#x20;
+
+```
+{ "prpCode": "ABC201023" }
+```
+
+
+
+| Parameter | Type   | Description                                                                                                                                                                                                                                              | Required |
+| --------- | ------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------- |
+| prpCode   | string | The primary key of the property to load the property licensing app for (note that this won’t be present when the app loads from the AppMarket, but the app needs to be able to accept this parameter when it is launched via the app association route). | Yes      |
+
+<figure><img src="../.gitbook/assets/Licensing.jpg" alt=""><figcaption><p>Licensing optin in AgencyCloud</p></figcaption></figure>
+
