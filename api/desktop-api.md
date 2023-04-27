@@ -293,13 +293,15 @@ From version 12.160+ the following with also be available:
 
 * Renewal Negotiation Checks
 
+From version 12.161+ the following with also be available:
+
+* Property Images
+
 From version 12.163+ the following with also be available:
 
 * Property Licensing
 
-Coming soon:&#x20;
 
-* Property Images
 
 ## Types
 
@@ -700,6 +702,10 @@ The desktop type of _Renewal Negotiation Check_ can be given to an application t
 When an app with a type of _Renewal Negotiation Check_ is installed, it will replace the 'checks' on the Renewal Negotiation screen (when heavy weight renewals are enabled). If multiple apps with the same integration type are installed, an option to select will be presented).  Clicking on an app will launch it with the renewal code.
 
 
+
+### Property Images
+
+Currently being updated
 
 ### **Property Licensing**
 
