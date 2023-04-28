@@ -705,7 +705,21 @@ When an app with a type of _Renewal Negotiation Check_ is installed, it will rep
 
 ### Property Images
 
-Currently being updated
+The desktop type of _Property Image_ can be given to an application that can be launched from the 'Apps' menu on the property images screen. The globals dictionary will contain the below key when launched by AgencyCloud:&#x20;
+
+The below key when launched by AgencyCloud:&#x20;
+
+```
+{ "prpCode": "ABC201023" }
+```
+
+
+
+| Parameter | Type   | Description                                                                                                                                                                                                                                       | Required |
+| --------- | ------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------- |
+| prpCode   | string | The primary key of the property to load the property images app (note that this won’t be present when the app loads from the AppMarket, but the app needs to be able to accept this parameter when it is launched via the app association route). | Yes      |
+
+<figure><img src="../.gitbook/assets/Property Image.jpg" alt=""><figcaption><p>'Apps' option on the Property Images screen in Agency Cloud</p></figcaption></figure>
 
 ### **Property Licensing**
 
