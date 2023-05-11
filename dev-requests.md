@@ -45,6 +45,8 @@ Completion of your issue is dependent on the work required, complexity and align
 
 In the back end team, we work in 2 week sprints and estimate the amount of work we believe we can complete. However, due to other priorities or dependencies, we may not always complete every issue as intended. If your issue has moved to another sprint, we will comment on the ticket to explain why and if more information is needed.
 
+You can see the start and end dates of our sprints [here ](https://github.com/reapit/foundations/projects?type=classic)and access previous sprints [here](https://github.com/reapit/foundations/projects?query=is%3Aclosed\&type=classic).
+
 ### **How to do I track the progress of an issue?**&#x20;
 
 If you have created the issue, you will automatically receive updates via email. If you want to track the progress or status of an issue you did not raise, simply subscribe to the issue using the ‘Subscribe’ button from the right-hand navigation.
