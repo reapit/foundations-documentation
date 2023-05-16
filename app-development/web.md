@@ -10,7 +10,11 @@ The login With Reapit button is a singular stand alone component which can be ut
 
 The button leverages the Connect Session to handle the OAuth flow and returns a session object in a callback you provide.
 
-![Sign in With Reapit button](../.gitbook/assets/screenshot-2021-10-08-at-14.19.11.png)
+<div align="center">
+
+<img src="../.gitbook/assets/screenshot-2021-10-08-at-14.19.11.png" alt="Sign in With Reapit button">
+
+</div>
 
 The Component is a single script provided by NPM package, you instantiate with a target div, your client credentials as per the browser API and pass in a callback to receive your session object. As per the NPM module, all caching, redirection and refreshing is taken care of by the package. When you have a session, the button will change function to be a logout which will clear your cache and end your session in Reapit Connect.
 
@@ -18,7 +22,11 @@ The Component is a single script provided by NPM package, you instantiate with a
 
 When clicking the Sign In With Reapit button, a dialog window will appear with the following details
 
-![Agree to terms and permissions dialog](../.gitbook/assets/screenshot-2021-10-08-at-14.19.03.png)
+<div align="center">
+
+<img src="../.gitbook/assets/screenshot-2021-10-08-at-14.19.03.png" alt="Agree to terms and permissions dialog">
+
+</div>
 
 
 

@@ -6,6 +6,64 @@ description: >-
 
 # What’s New
 
+## 30/04/23
+
+### Tenancies
+
+The ‘Details/Notes’ field is now available on a tenancy under ‘feeNotes’:
+
+<figure><img src=".gitbook/assets/WN31041.png" alt=""><figcaption><p>Details/Notes field in AgencyCloud</p></figcaption></figure>
+
+<figure><img src=".gitbook/assets/WN31042.png" alt=""><figcaption><p>Example 'feeNotes' field</p></figcaption></figure>
+
+&#x20;
+
+&#x20;
+
+### Journal Entries
+
+A new POST /bulk endpoint has been added to allow a creation of multiple journal entries:
+
+<figure><img src=".gitbook/assets/WN31043.png" alt=""><figcaption><p>POST endpoint for Journal Entries </p></figcaption></figure>
+
+&#x20;
+
+### Configuration
+
+We have added a new configuration endpoint ‘terminology’ to help developers understand customer specific terminology.
+
+For example, some customers prefer to use 'Sold STC' instead of 'Under Offer' or 'Market Appraisal' instead of 'Valuation'.
+
+Using the new configuration endpoint, this will make it easier to understand for each customer. Please see example for our Sandbox configuration:
+
+<figure><img src=".gitbook/assets/WN31044.png" alt=""><figcaption><p>Example 'Terminology' payload </p></figcaption></figure>
+
+&#x20;
+
+It is now possible to filter by ‘Active’ status and by ‘OfficeIDs’ on the `/preTenancyCheckTypes` and `/renewalCheckTypes` configuration endpoints:
+
+<figure><img src=".gitbook/assets/WN310455.png" alt=""><figcaption><p>New filtering options</p></figcaption></figure>
+
+&#x20;
+
+### Appointments
+
+It is now possible to both read and write to the ‘Repeat’ field on appointments:
+
+<figure><img src=".gitbook/assets/WN31046.png" alt=""><figcaption><p>Example 'Repeat' field in AgencyCloud</p></figcaption></figure>
+
+&#x20;
+
+### Properties
+
+By default, the property payload will now return the name of the local authority ‘localAuthorityCompanyName’. Previously, it only returned the ID:&#x20;
+
+<figure><img src=".gitbook/assets/WN30049.jpg" alt=""><figcaption><p>Local Authority field in AgencyCloud</p></figcaption></figure>
+
+&#x20;
+
+<figure><img src=".gitbook/assets/WN31048.png" alt=""><figcaption><p>'localAuthorityCompanyName' field </p></figcaption></figure>
+
 ## 31/03/23
 
 ### **DeveloperPortal**
