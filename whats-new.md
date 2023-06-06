@@ -6,6 +6,62 @@ description: >-
 
 # What’s New
 
+## 31/05/23
+
+### Tenancies
+
+We have added the field ‘checkTypeId’ to the POST /tenancies/{ID}/checks endpoint:&#x20;
+
+<figure><img src=".gitbook/assets/WN3101.png" alt=""><figcaption><p>Example payload showing 'checkTypeId' field</p></figcaption></figure>
+
+&#x20;
+
+### Developer Portal
+
+It is now possible to view more information about an office group installation through the DeveloperPortal.
+
+If your app is installed by an office group, you will receive an email and a webhook (if configured) with the customer ID, for example XXX-XXXX. The first 3 characters represent the organisation, the remaining 4 characters represent the office group ID. For more information on office groups please visit: [https://foundations-documentation.reapit.cloud/faqs#what-are-office-groups](https://foundations-documentation.reapit.cloud/faqs#what-are-office-groups)&#x20;
+
+To see which offices are within that group, open your app in the developer portal and navigate to ‘Installations’:
+
+<figure><img src=".gitbook/assets/WN3102.png" alt=""><figcaption><p>'Installations' section on an App</p></figcaption></figure>
+
+&#x20;
+
+This will display all active installations for your app. If you have an office group installation, for example RES-GRTA:
+
+&#x20;
+
+<figure><img src=".gitbook/assets/WN3103.png" alt=""><figcaption><p>Example customer installation </p></figcaption></figure>
+
+You will have the option under the dropdown menu to ‘Show installed offices’:
+
+<figure><img src=".gitbook/assets/WN3104.png" alt=""><figcaption><p>Example office group installation information</p></figcaption></figure>
+
+This will provide you the name of the office group ‘Office Name’ and the office ID’s that form that group. From the example above, only office ‘BCK’ is in the office group ‘Market Town’.
+
+To retrieve further information about an office, you can use the ‘ID’ in conjunction with the ‘Offices’ endpoint.
+
+
+
+### Additional Contact Details
+
+**Related services**: Applicants, Landlords, Tenancies, Offers & Vendors
+
+AgencyCloud provides the option of a free text field to record additional contact information, such as ‘Wife’s Mobile’ in addition to the core fields such as Mobile, Home & E-mail.
+
+By default, we will now return those additional contact details under the ‘additionalContactDetails’ array on the above related services.
+
+<figure><img src=".gitbook/assets/WN3105.png" alt=""><figcaption><p>Example AgencyCloud Applicant Record</p></figcaption></figure>
+
+<figure><img src=".gitbook/assets/WN3106.png" alt=""><figcaption><p>Example core fields on the Applicants API</p></figcaption></figure>
+
+<figure><img src=".gitbook/assets/WN3107.png" alt=""><figcaption><p>Example 'additionalContactDetails' array on the Applicants API</p></figcaption></figure>
+
+
+
+&#x20;
+
 ## 30/04/23
 
 ### Tenancies

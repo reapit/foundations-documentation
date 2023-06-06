@@ -409,9 +409,7 @@ The category of _Applicant Export_ would enable an application to be used to exp
 { "appCode": "ABC201023" }
 ```
 
-| Parameter | Type   | Description                                                                                                                                                                                                                  | Required |
-| --------- | ------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------- |
-| appCode   | string | The primary key of the applicant to export (note that this won’t be present when the app loads from the AppMarket, but the app needs to be able to accept this parameter when it is launched via the app association route). | Yes      |
+<table data-header-hidden><thead><tr><th>Parameter</th><th width="403">Type</th><th>Description</th><th>Required</th></tr></thead><tbody><tr><td>Parameter</td><td>Type</td><td>Description</td><td>Required</td></tr><tr><td>appCode</td><td>string</td><td>The primary key of the applicant to export (note that this won’t be present when the app loads from the AppMarket, but the app needs to be able to accept this parameter when it is launched via the app association route).</td><td>Yes</td></tr></tbody></table>
 
 An application of this type would be triggered in two ways from AgencyCloud:
 
@@ -603,9 +601,7 @@ The desktop type of _Works Order_ can be given to an application that can be lau
 
 
 
-| Parameter | Type   | Description                                                                                                                                                                                                                                                   | Required |
-| --------- | ------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------- |
-| prpCode   | string | The primary key of the property to load the Works Order information app for (note that this won’t be present when the app loads from the AppMarket, but the app needs to be able to accept this parameter when it is launched via the app association route). | Yes      |
+<table data-header-hidden><thead><tr><th>Parameter</th><th width="280">Type</th><th>Description</th><th>Required</th></tr></thead><tbody><tr><td>Parameter</td><td>Type</td><td>Description</td><td>Required</td></tr><tr><td>prpCode</td><td>string</td><td>The primary key of the property to load the Works Order information app for (note that this won’t be present when the app loads from the AppMarket, but the app needs to be able to accept this parameter when it is launched via the app association route).</td><td>Yes</td></tr></tbody></table>
 
 
 
@@ -715,9 +711,7 @@ The below key when launched by AgencyCloud:&#x20;
 
 
 
-| Parameter | Type   | Description                                                                                                                                                                                                                                       | Required |
-| --------- | ------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------- |
-| prpCode   | string | The primary key of the property to load the property images app (note that this won’t be present when the app loads from the AppMarket, but the app needs to be able to accept this parameter when it is launched via the app association route). | Yes      |
+<table data-header-hidden><thead><tr><th>Parameter</th><th width="280">Type</th><th>Description</th><th>Required</th></tr></thead><tbody><tr><td>Parameter</td><td>Type</td><td>Description</td><td>Required</td></tr><tr><td>prpCode</td><td>string</td><td>The primary key of the property to load the property images app (note that this won’t be present when the app loads from the AppMarket, but the app needs to be able to accept this parameter when it is launched via the app association route).</td><td>Yes</td></tr></tbody></table>
 
 <figure><img src="../.gitbook/assets/Property Image.jpg" alt=""><figcaption><p>'Apps' option on the Property Images screen in Agency Cloud</p></figcaption></figure>
 
@@ -731,9 +725,7 @@ The desktop type of _Property Licensing_ can be given to an application that rep
 
 
 
-| Parameter | Type   | Description                                                                                                                                                                                                                                              | Required |
-| --------- | ------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------- |
-| prpCode   | string | The primary key of the property to load the property licensing app for (note that this won’t be present when the app loads from the AppMarket, but the app needs to be able to accept this parameter when it is launched via the app association route). | Yes      |
+<table data-header-hidden><thead><tr><th>Parameter</th><th width="280">Type</th><th>Description</th><th>Required</th></tr></thead><tbody><tr><td>Parameter</td><td>Type</td><td>Description</td><td>Required</td></tr><tr><td>prpCode</td><td>string</td><td>The primary key of the property to load the property licensing app for (note that this won’t be present when the app loads from the AppMarket, but the app needs to be able to accept this parameter when it is launched via the app association route).</td><td>Yes</td></tr></tbody></table>
 
 <figure><img src="../.gitbook/assets/Licensing.jpg" alt=""><figcaption><p>Licensing optin in AgencyCloud</p></figcaption></figure>
 
