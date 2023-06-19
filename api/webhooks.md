@@ -716,6 +716,8 @@ The following table outlines the purpose of each property in the payload
 
 The content of the `new`, `old`, and `diff` properties in the webhook event payload use the same schema that the respective API endpoints use. For example, if the payload received has a `topicId` of `contacts.modified` then these payload properties will use the same schema as the `GET /contacts` API endpoints
 
+Please note that metadata specific to your app/integration is not currently included in webhook event payloads
+
 ### Testing
 
 When you have an endpoint configured, you can test it by using the **Ping** function. This will send a test event with an example payload to the URL stored against the webhook for the selected topic. You will only be able to select topics that are applicable to the webhook being tested.
