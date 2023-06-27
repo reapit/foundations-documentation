@@ -6,6 +6,28 @@ description: >-
 
 # What’s New
 
+## 30/06/23
+
+### Developer Portal
+
+It is now possible to set the default window size of your app when it launches in AgencyCloud. Currently, all apps are launched based on the default configuration set by the customer. The standard configuration is set as Width 950 x Height 700.
+
+Within the ‘AgencyCloud Integration’ section on your app, you will be able to adjust the size in which your app is presented in AgencyCloud:
+
+<figure><img src=".gitbook/assets/App Size.jpg" alt=""><figcaption></figcaption></figure>
+
+Please note that only apps with a desktop integration type can modify the app size. If you do not have a desktop integration type, you will not be able to edit the default sizes.
+
+### Properties
+
+Floor Level (`floorLevel`), Property Internal Floors (`internalFloors`) & Total Building Floors (`totalFloors`) are now available both read and write:
+
+<figure><img src=".gitbook/assets/WN30063.jpg" alt=""><figcaption><p>Property Attributes in AgencyCloud</p></figcaption></figure>
+
+<figure><img src=".gitbook/assets/WN30062.png" alt=""><figcaption><p>Example payload </p></figcaption></figure>
+
+&#x20;
+
 ## 31/05/23
 
 ### Tenancies
