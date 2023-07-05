@@ -72,6 +72,7 @@ The following table shows the values exposed in the `type` collection returned b
 | estate                 | Estate, Farm/Estate, Residential Farm/Estate, Country Estate             |
 | farm                   | Farm                                                                     |
 | flatApartment          | Flat/Apartment, Flat / Apartment, Flat, Apartment, Unit/Apartment, Flats |
+| garage                 | Garage, Garage Lockup, Lockup, Garage Only                               |
 | hotel                  | Hotel, Hotels                                                            |
 | house                  | House                                                                    |
 | industrial             | Industrial, Industrial/Storage                                           |
