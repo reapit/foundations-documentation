@@ -6,6 +6,57 @@ description: >-
 
 # What’s New
 
+## 31/07/23
+
+### Properties API
+
+If enabled, Rental Insurance information is now available under the ‘PropertyLettingModel’:
+
+<figure><img src=".gitbook/assets/WN31071.png" alt=""><figcaption><p>Rent Insurance Model</p></figcaption></figure>
+
+This also includes a new configuration endpoint to surface Cancellation Reasons:
+
+<figure><img src=".gitbook/assets/WN31072.png" alt=""><figcaption><p>Configuration Endpoint to support Rental Insurance </p></figcaption></figure>
+
+Property Licensing Data is now available on the properties endpoint, displayed under the ‘PropertyLettingModel’:
+
+<figure><img src=".gitbook/assets/WN31073.png" alt=""><figcaption><p>Licencing Model </p></figcaption></figure>
+
+In addition to this, we have added a new documentation type ‘LIC/Licensing’ to the document type configuration endpoint:
+
+<figure><img src=".gitbook/assets/WN31074.png" alt=""><figcaption><p>New Documentation Type</p></figcaption></figure>
+
+### Companies API
+
+You now have the ability to embed ‘relationships’ via the companies endpoint:
+
+<figure><img src=".gitbook/assets/WN31075.png" alt=""><figcaption><p>Embed options on the Companies API </p></figcaption></figure>
+
+### **Tenancies API**
+
+We now support tenancy renewal options (Tenancy Agreement Clauses) in the Tenancies API:
+
+<figure><img src=".gitbook/assets/WN31076.png" alt=""><figcaption><p>Renewal Options Model</p></figcaption></figure>
+
+This also includes 2 new configuration endpoints to support the tenancy renewal options and renewal optional conditions:
+
+<figure><img src=".gitbook/assets/WN31077.png" alt=""><figcaption><p>Tenancy Renewal Options Configuration Endpoint</p></figcaption></figure>
+
+<figure><img src=".gitbook/assets/WN31078.png" alt=""><figcaption><p>Tenancy Renewal Option Conditions Configuration Endpoint</p></figcaption></figure>
+
+\
+In addition, we have also included a ‘lettertext’ field in the TenancyAllowanceModel (/tenancies/{id}/allowances endpoint) & the TenancyResponsibilityModel (/tenancies/{id}/responsibilities): &#x20;
+
+<figure><img src=".gitbook/assets/WN31079.png" alt=""><figcaption><p>Tenancies Allowances Endpoint</p></figcaption></figure>
+
+<figure><img src=".gitbook/assets/WN310710.png" alt=""><figcaption><p>Tenancies Responsibilities Endpoint</p></figcaption></figure>
+
+3 new fields have been added under the Tenancy Break Clauses endpoint (/tenancies/{id}/breakClauses) to surface Break From (breakFrom), Required Notice (noticeRequired) and Letter Text (letterText):&#x20;
+
+
+
+<figure><img src=".gitbook/assets/WN310711.png" alt=""><figcaption><p>Tenancies Break Clauses Endpoint</p></figcaption></figure>
+
 ## 30/06/23
 
 ### Developer Portal
