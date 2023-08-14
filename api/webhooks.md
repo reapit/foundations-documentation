@@ -599,6 +599,20 @@ Once your event schema has been built, post it to the appropriate resthooks endp
 When using event filters, it is important to keep in mind that certain events will no longer be sent to you. As the diff is generated for each specific event (rather than being based on the last version you received as a consumer) you will likely encounter scenarios where it is necessary to use the `new` object to understand all changes to a resource since the last time you received an update
 {% endhint %}
 
+### Including semi-structured data in webhook events
+
+The Foundations REST APIs allow semi-structured - known to customers as extra fields - data to be optionally included in responses and this data can also now be included in webhook payloads. This can be set up through the [Webhooks management section](https://developers.reapit.cloud/webhooks/manage) of the DeveloperPortal.
+
+When editing a webhook, semi structured fields can be optionally include as part of the configuration. If using this facility, it's likely you will already be aware that you can access these fields, and as with the APIs it's necessary for permission to be granted to these fields before you can use them, and an appropriate error message will be displayed if you attempt to configure a webhook with fields that are not permitted. To include semi-structured fields in webhook events, simply add each field you wish to include and have access to in the appropriate section of the configuration window, and click `Update`
+
+<figure><img src="../.gitbook/assets/image (112).png" alt=""><figcaption><p>Setting up semi structured configuration</p></figcaption></figure>
+
+Event payloads will now contain the selected fields, in the `new`, `old`, and `diff` objects where applicable. Note that when a field is not set in the database, it will not be returned at all which matches the behaviour of the APIs.
+
+{% hint style="info" %}
+When a webhook is configured for multiple customers, you must have been granted permission to the semi structured field(s) being configured for all customers. An error will be presented if this requirement is not met. In this scenario, either request access to the field for the additional customers, or consider splitting your webhook into multiple hook configurations
+{% endhint %}
+
 ### Optional webhook behaviour
 
 By default, webhooks will not be emitted when only the entity's eTag and modified timestamp has changed. If you would prefer to receive notifications in this situation, please use the **Ignore notifications where only the eTag has been modified** toggle option when configuring your webhook
