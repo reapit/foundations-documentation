@@ -17,7 +17,7 @@ You can immediately start testing our APIs in [sandbox mode](api-documentation.m
 | Service base location                                                                    | Description                                                                                                                                                                                                 |
 | ---------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | <p><strong>Authentication service</strong></p><p>https://connect.reapit.cloud/</p>       | First, use our [authentication service](api-documentation.md#authentication) to receive an access token. Include this in the header of any request you issue to our other platform services.                |
-| <p><strong>All other platform services</strong></p><p>https://platform.reapit.cloud/</p> | Once authenticated, you can issue requests to our other platform services. For details on the endpoint we provide, see our [Interactive API Explorer](https://marketplace.reapit.cloud/developer/swagger).  |
+| <p><strong>All other platform services</strong></p><p>https://platform.reapit.cloud/</p> | Once authenticated, you can issue requests to our other platform services. For details on the endpoint we provide, see our [Interactive API Explorer](https://developers.reapit.cloud/swagger).  |
 
 The current version of our APIs is **2020-01-31** - please include it in your `api-version` request header. For more information, see our [versioning](api-documentation.md#versioning) information
 
@@ -180,7 +180,7 @@ To access the sandbox, you just need to be registered as a developer on our Port
 * You can use **client credentials flow** by providing `SBOX` as your `reapit-customer` request header
 
 {% hint style="info" %}
-**For a quick start experience**, our [interactive API explorer](https://marketplace.reapit.cloud/developer/swagger) is connected to the sandbox automatically
+**For a quick start experience**, our [interactive API explorer](https://developers.reapit.cloud/swagger) is connected to the sandbox automatically
 {% endhint %}
 
 ## Issuing requests
@@ -191,7 +191,7 @@ The Foundations platform exclusively works with UTC date times to allow us to pr
 
 Our APIs enforce that any date information that your application issues to us adheres to the [ISO-8601](https://www.iso.org/iso-8601-date-and-time-format.html) format. If you provide a time component, then it must be accompanied by a [time zone designator](https://en.wikipedia.org/wiki/ISO\_8601#Time\_zone\_designators). If you provide a request body, query string or header that does not adhere to this standard, you will receive a validation error reporting the problem. Any date times issued from our endpoints will be returned to you in the same format.
 
-Some of the fields we provide are date-only and have no time component. Date only fields will not accept a time component in a request and will not include a time component in their response. You can see which fields these are by examining the model documentation and example responses provided by our [Interactive API Explorer](https://marketplace.reapit.cloud/developer/swagger).
+Some of the fields we provide are date-only and have no time component. Date only fields will not accept a time component in a request and will not include a time component in their response. You can see which fields these are by examining the model documentation and example responses provided by our [Interactive API Explorer](https://developers.reapit.cloud/swagger).
 
 ```javascript
 {
@@ -527,7 +527,7 @@ If your application requires data from one or more related resource(s) (indicate
 This mechanism allows your application to make fewer round trips to the server by allowing our APIs to make requests on your applications behalf. Any request triggered by the embed mechanism will still contribute to your usage statistics in the same way as if they were directly issued from your application.
 {% endhint %}
 
-You can embed as many related data sources in a request as your application requires. Our [interactive API explorer](https://marketplace.reapit.cloud/developer/swagger) provides a user interface which demonstrates the available `embed` parameter options for each API.
+You can embed as many related data sources in a request as your application requires. Our [interactive API explorer](https://developers.reapit.cloud/swagger) provides a user interface which demonstrates the available `embed` parameter options for each API.
 
 #### Example
 
