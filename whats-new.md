@@ -6,6 +6,55 @@ description: >-
 
 # What’s New
 
+## 31/08/23
+
+### Offices API
+
+The latitude and longitude are now populated under ‘geolocation’ for offices in the Offices API:
+
+<figure><img src=".gitbook/assets/WN31081.png" alt=""><figcaption><p>Example Sandbox Office</p></figcaption></figure>
+
+### Analytics Schema
+
+We have added a new view ‘PROPERTY\_STATUS\_CHANGES’, to the Analytics Schema to expose a simple view of property status changes.  The new view includes the following fields:
+
+* ID
+* PROPERTY\_ID
+* PROPERTY\_CODE
+* OLD\_STATUS
+* NEW\_STATUS
+* CHANGED\_AT
+* \_CUSTOMER\_ID
+* \_LAST\_SYNCH\_AT
+
+<figure><img src=".gitbook/assets/WN31082.png" alt=""><figcaption><p>Property Status Changes View</p></figcaption></figure>
+
+Property Manager field in AgencyCloud is now exposed under '‘LETTINGS\_PRIMARY\_PROPERTY\_MANAGER\_NEGOTIATOR\_I’ in the Analytics Schema.&#x20;
+
+&#x20;
+
+### Tenancies API
+
+We have extended both the POST and PATCH tenancies endpoint to support Letting Fee (`lettingFee`) and Management Fees (`managementFee`):
+
+<figure><img src=".gitbook/assets/WN31083.png" alt=""><figcaption><p>Letting &#x26; Management Fee fields (POST)</p></figcaption></figure>
+
+&#x20;
+
+### Properties API
+
+Next Call (nextCall) and Last Call (lastCall) are now exposed in the properties API:
+
+<figure><img src=".gitbook/assets/WN31084.png" alt=""><figcaption><p>Last and Next call fields</p></figcaption></figure>
+
+&#x20;
+
+### Enquiries API
+
+A new endpoint has been added to support updating existing enquiries:
+
+<figure><img src=".gitbook/assets/WN31085.png" alt=""><figcaption><p>New Enquires endpoint</p></figcaption></figure>
+
 ## 31/07/23
 
 ### Properties API
