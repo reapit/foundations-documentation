@@ -74,7 +74,7 @@ The following table shows the values exposed in the `type` collection returned b
 | flatApartment          | Flat/Apartment, Flat / Apartment, Flat, Apartment, Unit/Apartment, Flats |
 | garage                 | Garage, Garage Lockup, Lockup, Garage Only                               |
 | hotel                  | Hotel, Hotels                                                            |
-| house                  | House                                                                    |
+| house                  | House, House/Villa                                                       |
 | industrial             | Industrial, Industrial/Storage                                           |
 | land                   | Land                                                                     |
 | leisure                | Leisure, Leisure Facility                                                |
