@@ -6,6 +6,52 @@ description: >-
 
 # What’s New
 
+## 30/09/23
+
+### Tenancies API
+
+You can now POST the ‘breakFrom’ and ‘noticeRequired’ fields in the 'tenancies/{id}/breakClauses endpoint':
+
+<figure><img src=".gitbook/assets/WN30091.png" alt=""><figcaption><p>POST Endpoint</p></figcaption></figure>
+
+&#x20;
+
+### Journal Entries
+
+We are now automatically posting a journal entry using a new Journalisation package when the following occurs:
+
+* When a new property is registered:
+
+<figure><img src=".gitbook/assets/WN30092.png" alt=""><figcaption><p>Property Registered Journal Entry</p></figcaption></figure>
+
+* When a new applicant is registered:
+
+<figure><img src=".gitbook/assets/WN30093.png" alt=""><figcaption><p>Application Registered Journal Entry Example</p></figcaption></figure>
+
+* When a new contact is registered:
+
+<figure><img src=".gitbook/assets/WN30094.png" alt=""><figcaption><p>Contact Registered Journal Entry Example</p></figcaption></figure>
+
+* When we detect a change to the contact consent flag:
+
+<figure><img src=".gitbook/assets/WN30095.png" alt=""><figcaption><p>Marketing Consent Journal Entry Example</p></figcaption></figure>
+
+
+
+### Properties API
+
+Two new fields have been added to the EPC model to expose the ‘First Page URL’ (`firstPageDocumentUrl`) and ‘Full Document URL’ (`fullDocumentUrl):`
+
+&#x20;
+
+<figure><img src=".gitbook/assets/WN30096.png" alt=""><figcaption><p>EPC Section in AgencyCloud</p></figcaption></figure>
+
+
+
+<figure><img src=".gitbook/assets/WN30097.png" alt=""><figcaption><p>Example EPC Payload </p></figcaption></figure>
+
+&#x20;
+
 ## 31/08/23
 
 ### Offices API
@@ -555,11 +601,11 @@ Any options that do not have a corresponding mapping and are selected on a Prope
 
 Example payload:
 
-<figure><img src=".gitbook/assets/WN30091.png" alt=""><figcaption><p> </p></figcaption></figure>
+<figure><img src=".gitbook/assets/WN30091 (1).png" alt=""><figcaption><p> </p></figcaption></figure>
 
 Fields:
 
-<figure><img src=".gitbook/assets/WN30092.png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/WN30092 (1).png" alt=""><figcaption></figcaption></figure>
 
 To view the latest version of the mappings, please visit: [https://foundations-documentation.reapit.cloud/platform-glossary#interpreting-department-data](https://foundations-documentation.reapit.cloud/platform-glossary#interpreting-department-data)
 
@@ -567,13 +613,13 @@ To view the latest version of the mappings, please visit: [https://foundations-d
 
 The Properties API now displays the Maximum Reception/Bathroom ranges:
 
-<figure><img src=".gitbook/assets/WN30093.png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/WN30093 (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Journals API
 
 It is now possible to create a Works Orders journal entry:
 
-<figure><img src=".gitbook/assets/WN30094.png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/WN30094 (1).png" alt=""><figcaption></figcaption></figure>
 
 **Note**: TypeID must be set to 'WO' when passing worksOrder
 
@@ -581,15 +627,15 @@ It is now possible to create a Works Orders journal entry:
 
 We now support filtering on the Companies endpoint by Negotiator and Office:
 
-<figure><img src=".gitbook/assets/WN30095.png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/WN30095 (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Applicant API
 
 Applicant ReasonID and SellingPosition now available using POST and PATCH methods:
 
-<figure><img src=".gitbook/assets/WN30096.png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/WN30096 (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src=".gitbook/assets/WN30097.png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/WN30097 (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Integration Types
 
