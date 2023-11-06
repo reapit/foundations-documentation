@@ -8,11 +8,11 @@ description: >-
 
 ### Versions&#x20;
 
-| Date               | File                                                                                     |
-| ------------------ | ---------------------------------------------------------------------------------------- |
-| 25th June 2021     | [Terms and Conditions.pdf](https://developers.reapit.cloud/foundations-terms-250621.pdf) |
-| 17th November 2020 | [Terms and Conditions.pdf](https://developers.reapit.cloud/foundations-terms-171120.pdf) |
-| 16th June 2020     | [Terms and Conditions.pdf](https://developers.reapit.cloud/foundations-terms-160620.pdf) |
+| Date               | File                                                                                                                          |
+| ------------------ | ----------------------------------------------------------------------------------------------------------------------------- |
+| 25th June 2021     | [Terms and Conditions.pdf](https://reapit-marketplace-app-media-prod.s3.eu-west-2.amazonaws.com/Foundations-terms-250621.pdf) |
+| 17th November 2020 | [Terms and Conditions.pdf](https://reapit-marketplace-app-media-prod.s3.eu-west-2.amazonaws.com/foundations-terms-171120.pdf) |
+| 16th June 2020     | [Terms and Conditions.pdf](https://developers.reapit.cloud/foundations-terms-160620.pdf)                                      |
 
 Version Date: 25th June 2021
 
