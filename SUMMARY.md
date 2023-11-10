@@ -7,6 +7,7 @@
   * [GraphQL](api/graphql.md)
   * [Reapit Connect](api/reapit-connect.md)
   * [Desktop API](api/desktop-api.md)
+  * [Notifications](api/notifications.md)
 * [Developer Portal](developer-portal.md)
 * [Listing your App](listing-your-app.md)
   * [App Permissions](listing-your-app/app-permissions.md)
