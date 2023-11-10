@@ -6,6 +6,68 @@ description: >-
 
 # What’s New
 
+## 31/10/23
+
+### Appointments API
+
+Two new filters added to the Appointments endpoint, ‘followUpFrom' and 'followUpTo’:&#x20;
+
+<figure><img src=".gitbook/assets/WN311001.jpg" alt=""><figcaption><p>New Follow Up filters </p></figcaption></figure>
+
+**Related ticket:** [https://github.com/reapit/foundations/issues/10018](https://github.com/reapit/foundations/issues/10018)&#x20;
+
+### Tenancies API
+
+‘paymentPlan’ is now surfaced under the Tenancies endpoint:
+
+<figure><img src=".gitbook/assets/WN311002.jpg" alt=""><figcaption><p>Payment Plan field</p></figcaption></figure>
+
+**Related ticket:** [https://github.com/reapit/foundations/issues/9909](https://github.com/reapit/foundations/issues/9909)&#x20;
+
+### Negotiators API
+
+We are now returning the Business number in the negotiators endpoint under the 'additionalContactDetails' object:
+
+<figure><img src=".gitbook/assets/WN311003.jpg" alt=""><figcaption><p>Additional Contact Details Object</p></figcaption></figure>
+
+**Related ticket:** [https://github.com/reapit/foundations/issues/9792](https://github.com/reapit/foundations/issues/9792)
+
+### Landlords API
+
+You can now filter the Landlords endpoint by associated officeID:
+
+<figure><img src=".gitbook/assets/WN311004.jpg" alt=""><figcaption><p>Office ID Filter</p></figcaption></figure>
+
+**Related ticket:** [https://github.com/reapit/foundations/issues/9791](https://github.com/reapit/foundations/issues/9791)&#x20;
+
+### Properties API (Certificates)&#x20;
+
+Visibility of the ‘status’ is now presented on a property certificates with an associated up to our configurations endpoint (/configurations/certificateTypes):
+
+<figure><img src=".gitbook/assets/WN311005.jpg" alt=""><figcaption><p>New statusID field example</p></figcaption></figure>
+
+**Related ticket:** [https://github.com/reapit/foundations/issues/9126](https://github.com/reapit/foundations/issues/9126)&#x20;
+
+### Webhooks
+
+We have released an update to our webhooks package to support app authentication rotation
+
+**Related ticket:** [https://github.com/reapit/foundations/issues/9915](https://github.com/reapit/foundations/issues/9915)&#x20;
+
+### Enquiries API
+
+Revised support on the enquires endpoint for office groups (customers using the Marketplace Management App)
+
+**Related ticket:** [https://github.com/reapit/foundations/issues/10076](https://github.com/reapit/foundations/issues/10076)&#x20;
+
+### Documents API
+
+We are now returning a more meaningful error when the physical file does not exist
+
+**Related ticket**: [https://github.com/reapit/foundations/issues/10005](https://github.com/reapit/foundations/issues/10005)
+
+&#x20;
+
 ## 30/09/23
 
 ### Tenancies API
