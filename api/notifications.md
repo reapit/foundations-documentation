@@ -20,15 +20,13 @@ The API itself that is consumed by developers uses an envelope and message (payl
 
 The beta programme allows third party telephony providers to push telephony events through to end users of Reapit products. This enables invocation of certain pieces of product specific functionality, such as screen popping when a new call comes in directly inside AgencyCloud.
 
-
-
 ### Notification payload
 
 {% hint style="warning" %}
 Always refer to the Swagger documentation published in the Reapit DeveloperPortal for the most up to date JSON contracts
 {% endhint %}
 
-The payload pushed to POST /notifications can be thought of as a letter. It has an envelope - which has some basic information about the type of content and where it should be delivered - and a payload, the actual message.
+The payload pushed to `POST /notifications` can be thought of as a letter. It has an envelope - which has some basic information about the type of content and where it should be delivered - and a payload, the actual message.
 
 ```json
 {
@@ -52,7 +50,7 @@ The `targets` object allows the caller to specify where the event should be sent
 
 ### Notification Types
 
-The following notification types are currently supported. Please note that examples will eventually be available on our Swagger documentation which will superseded this page, however an update to Open API 3 is required before this can be supported
+The following notification types are currently supported. Please note that examples will eventually be available on our Swagger documentation which will supersede this page, however an update to Open API 3 is required before this can be supported
 
 In all payloads, the `id` property can optionally be used to correlate chained events from the source system. For example, the `id` for an `incomingCall` and `answeredCall` event could be the same value to notify our system that the two events are related.
 
