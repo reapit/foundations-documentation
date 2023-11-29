@@ -203,6 +203,10 @@ Landlords represent the details of one or more [contacts](platform-glossary.md#c
 
 Negotiators represent a member of staff working for an agent. Details about the individual negotiator are captured such as name, job title and email address – as well as the singular [office](platform-glossary.md#office) to which they are assigned.
 
+### Notification
+
+A notification is an event that can be passed through to Reapit products in real-time to notify users that something has happened (or is happening). You can read more about the Notifications API and it's associated functionality [here](api/notifications.md). Please note that this feature is currently in beta.
+
 ### Metadata
 
 Our [metadata ](api/api-documentation.md#metadata)system allows you to easily extend the data that our platform supports. Most of our POST and PATCH endpoints provide the ability to attach a JSON document to our entities which will be automatically included in future fetches of that entity.&#x20;
