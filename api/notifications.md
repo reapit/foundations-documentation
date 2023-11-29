@@ -5,7 +5,7 @@ description: Real time event delivery to Reapit products from your applications
 # Notifications
 
 {% hint style="info" %}
-This feature is in beta release and requires you to be invited to the Notifications beta programme
+This feature is in beta release and requires you to be invited to the Notifications beta programme. If you wish to join this programme, please [click here](mailto:tmatthews@reapit.com?subject=Notifications%20beta%20programme) to contact a member of the team.&#x20;
 {% endhint %}
 
 The Notifications API allows developers running apps with the `notifications.*.write` scopes to push certain events back through our Platform for delivery to users of Reapit products in real-time. For the beta programme, the only supported scope is`notifications.telephony.write` - the purpose of this mechanism is primarily to replace legacy TAPI support in the AgencyCloud CRM, but there are plans to expand it's use cases in the future.
