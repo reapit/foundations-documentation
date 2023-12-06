@@ -206,7 +206,7 @@ Please [click here](developer-terms-and-conditions.md#schedule-2-fees) to see pr
 
 ### I have looked at your pricing information and I have a query - who do I speak to?
 
-Should you have any questions or queries regarding the cost or pricing structure, please [click here ](mailto:dmann@reapit.com)to contact a member of the team
+Should you have any questions or queries regarding the cost or pricing structure, please [click here ](mailto:partners@reapit.com)to contact a member of the team
 
 ## Reapit Connect
 
