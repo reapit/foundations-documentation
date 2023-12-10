@@ -4,41 +4,45 @@ description: Reapit Elements is a UI library for building AppMarket Web Applicat
 
 # Elements
 
-### What is Elements?
-
-Elements is a React UI Component and CSS library we have developed internally and open sourced. The Developer Portal and AppMarket itself uses Elements extensively and if you are building a React app to be installed by clients, we recommend you do too.
-
-Elements v3 is a full re-write of the library that has a far better developer experience and a more flexible, lightweight approach as well as enjoying the benefits of the new Reapit Foundations Design Language.
-
-{% hint style="info" %}
-If you are starting a new project with Elements, use v3 for a better dev experience, documentation and support
+{% hint style="success" %}
+Announcing Elements v4! A full UI refresh, loads of new components and frictionless upgrade path from v3.
 {% endhint %}
 
-Documentation for this package has moved to the dedicated UI tab in the Reapit Developer Portal and at the public link below to the elements standalone site.
+### What is Elements?
+
+Elements is a React UI Component and CSS library Reapit has developed internally from the ground up and open sourced. The Developer Portal and AppMarket itself uses Elements extensively and if you are building a React app to be installed by clients, we recommend you do too.
+
+Documentation for this package is found as always at the dedicated UI tab in the Reapit Developer Portal and at the public link below to the elements standalone site.
 
 {% embed url="https://elements.reapit.cloud/?path=/docs/" %}
 Elements Storybook for React Users
 {% endembed %}
 
-The UI library itself is based on the Reapit Foundations Design system which is distributed as a Figma Community file at the link below.
+At v4, the UI of Elements has undergone a full refresh to align the Reapit Group of companies around a common design system, including:
 
-{% embed url="https://www.figma.com/community/file/999608115908775282" %}
+* A fresh new color palette, font family and more neutral, modern UI
+* Multiple new components, templates & layouts
+* New logos and iconography
 
-To get a sense of the thinking behind the Elements library and for information on the base design principles behind it, we would advise strongly looking at the design system before getting started with your Elements project.
+The changes are significant but in the vast majority of cases should not break your app. For a full [changelog see here.](https://elements.dev.paas.reapit.cloud/?path=/docs/changelog--page#version-history)
 
-If you are looking for Elements v2 components, this has moved to it's own Storybook here:
+### Migrating from earlier versions
 
-{% embed url="https://elements-legacy.prod.paas.reapit.cloud/" %}
+Significant care has been taken to make the upgrade from v3 to v4 as painless as possible. In most cases, apps will not break at all and only a few visual tweaks may be required.  For the v3 migration guide visit [the docs here](https://elements.dev.paas.reapit.cloud/?path=/docs/introduction--page#migrating-from-v3) and the [changelog here.](https://elements.dev.paas.reapit.cloud/?path=/docs/changelog--page#version-history)
 
-{% hint style="success" %}
-You can use Elements v3 components in your v2 project - for more information on this see the [migration guide here](https://elements.reapit.cloud/?path=/docs/introduction--page#migrating-from-v2)
-{% endhint %}
+When upgrading from v1 or 2, the process will be much more involved as v3 was a ground up re-write. You can however do this slowly by including v3 components in your code from the v2 library and be assured of compatibility with v4. See [this guide ](https://elements.dev.paas.reapit.cloud/?path=/docs/introduction--page#migrating-from-v2)for examples.
 
 ### Elements v2 - Long Term Support
 
-{% hint style="info" %}
-Elements v2 is our new stable long term support library - you can update from v1 to v2 with very minimal changes.
+{% hint style="warning" %}
+Elements v2 is nearing the end of LTS and **will be sunset in June '24** when v3 will take over as the LTS release. If you haven't yet attempted the upgrade from v1-2, we strongly recommend doing so before this date.
 {% endhint %}
+
+### v2 Documentation
+
+&#x20;Until the sunset date, we will keep the legacy docs live here:
+
+{% embed url="https://elements-legacy.prod.paas.reapit.cloud/" %}
 
 Whilst Elements v1.x.x has it's limitations, we are very mindful our developers have already successfully built a number of applications with the library and as such, require both a Long Term Support schedule and a straightforward upgrade path where possible.
 
