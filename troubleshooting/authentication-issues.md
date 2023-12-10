@@ -12,7 +12,7 @@ For more information on Authentication (using the Client Credentials Flow), plea
 
 Screenshot showing how to find your ‘Client ID’ and ‘Secret’ on your App listing:
 
-![](../.gitbook/assets/ServerSide.jpg)
+<figure><img src="../.gitbook/assets/AuthError.jpg" alt=""><figcaption></figcaption></figure>
 
 ### **Error:** "invalid\_request"
 

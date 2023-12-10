@@ -7,12 +7,10 @@
 An agent can locate their Customer ID via the AppMarket inside of AgencyCloud.
 
 * Within AgencyCloud, click on ‘Apps’ and select ‘Browse’
-* Click on the ‘Settings’ icon in the bottom left-hand corner
-* The Customer ID can be located on the right-hand side of the screen.
+* Click on the profile icon (top right) and select 'Profile'
+* The Customer ID (customer code) will be displayed under 'Your Details'
 
-<figure><img src=".gitbook/assets/CustomerCode.jpg" alt=""><figcaption></figcaption></figure>
-
-
+<figure><img src=".gitbook/assets/CustomerCode (1).jpg" alt=""><figcaption></figcaption></figure>
 
 ### I just want to access my data, do I still need to create an app?&#x20;
 
@@ -30,7 +28,7 @@ If you are building an app or integration for a specific customer or a subset of
 
 To set your app to private, you will need to navigate to the ‘Permissions’ tab which can be accessed when you ‘Edit App’: &#x20;
 
-<figure><img src=".gitbook/assets/Private.png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/Private.jpg" alt=""><figcaption></figcaption></figure>
 
 Simply set the toggle to ‘Yes’ and enter the client IDs (Customer IDs), for more information on how to obtain Customer IDs, please [click here](faqs.md#how-do-i-find-a-customer-id).
 
@@ -92,9 +90,9 @@ If you want to setup an alternative email address, simply go to ‘[Organisation
 
 ### **How to Invite New Members**
 
-To invite members to join your organisation, simply click on the ‘Invite Developer’ button from the '[Members](https://developers.reapit.cloud/settings/members)' page in the Developer Portal. The recipient will receive your invitation via email and will have the option to reject or accept. You can track the status of any members in the ‘Members’ table:
+To invite members to join your organisation, simply click on the ‘Invite Developer’ button from the '[Members](https://developers.reapit.cloud/settings/members)' page in the DeveloperPortal. The recipient will receive your invitation via email and will have the option to reject or accept. You can track the status of any members in the ‘Members’ table:
 
-![](<.gitbook/assets/image (108).png>)
+<figure><img src=".gitbook/assets/image (113).png" alt=""><figcaption></figcaption></figure>
 
 Within the members section you will also have the ability to disable members and to set other members as ‘Admins’.
 
@@ -329,7 +327,7 @@ On your app listing in the Developer Portal and via ‘[Analytics](https://devel
 
 **Example Installations table:**
 
-![](<.gitbook/assets/image (101).png>)
+<figure><img src=".gitbook/assets/image (114).png" alt=""><figcaption></figcaption></figure>
 
 ## AppMarket
 
@@ -458,7 +456,7 @@ If you cannot see the option to 'Install App' or for integrations 'Enable Integr
 
 Only 'ReapitUserAdmins' (a 'Level 2' user in AgencyCloud) or a 'MarketplaceAdmin' can install/enable and uninstall/disable apps and integrations from the AppMarket.&#x20;
 
-A user can check their user role by going to 'Settings' from the AppMarket.&#x20;
+A user can check their user role by going to the profile icon (top right) and clicking on 'Profile' from within the AppMarket.&#x20;
 
-<figure><img src=".gitbook/assets/Screenshot 2022-11-01 135545.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (115).png" alt=""><figcaption></figcaption></figure>
 

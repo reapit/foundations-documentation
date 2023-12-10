@@ -14,6 +14,6 @@ To test your application locally, you can provide the following (example):
 
 **Signout URI:** http://localhost:8080/login
 
-<figure><img src="../.gitbook/assets/RC Auth.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (126).png" alt=""><figcaption></figcaption></figure>
 
 For more information on Reapit Connect, please [click here](https://foundations-documentation.reapit.cloud/api/reapit-connect).&#x20;

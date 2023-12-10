@@ -10,13 +10,13 @@ Add the new permissions and click ‘Create Revision’.
 
 A modal will appear presenting you with the option to ‘Send Requests’. If you choose to send the requests, an email will be sent to the person that installed your app.
 
-![](../.gitbook/assets/AppReviewModal.jpg)
+<figure><img src="../.gitbook/assets/image (125).png" alt=""><figcaption></figcaption></figure>
 
 Each customer will have to agree to the new permission before our team can approve your revision.
 
 You can track this process on the ‘App Consents’ page or reach out to your customer to expedite their response to our message.
 
-![](../.gitbook/assets/Appname.png)
+<figure><img src="../.gitbook/assets/Consents.jpg" alt=""><figcaption></figcaption></figure>
 
 If you decide not to send the requests, our Admin team will send the requests.&#x20;
 
@@ -36,9 +36,7 @@ Kind regards
 
 Reapit Ltd”
 
-Please note, the email address for the customer to contact will be yours should they wish to discuss the requested permissions.
-
-&#x20;
+Please note, the email address for the customer to contact will be yours should they wish to discuss the requested permissions.&#x20;
 
 **Step 3:**
 

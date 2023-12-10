@@ -1,5 +1,7 @@
 ---
-description: Deprecated
+description: >-
+  A Create React App Template to get you immediately started with Reapit
+  Foundations
 ---
 
 # Create React App Template

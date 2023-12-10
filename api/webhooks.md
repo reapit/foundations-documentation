@@ -269,13 +269,13 @@ namespace WebhookHandlerExample.Controllers
 
 We offer a user interface to allow you to manage webhooks in a simple and straightforward way. You're able to create, update and remove webhooks for all of your applications in a single place.
 
-![](<../.gitbook/assets/Webhook 1.png>)
+<figure><img src="../.gitbook/assets/Webhooks 1.jpg" alt=""><figcaption></figcaption></figure>
 
 ### Creating a webhook
 
 First, select the application that you want to create a webhook for. You'll then be given the option to 'Add New Webhook', as above. The modal below allows you to [input the endpoint](webhooks.md#provide-an-endpoint) where information should be pushed.
 
-![](<../.gitbook/assets/Webhook 2.png>)
+<figure><img src="../.gitbook/assets/Webhooks 2.jpg" alt=""><figcaption></figcaption></figure>
 
 Our webhooks system is designed to flexibly work with how your application is built and deployed. If you wish, you can set up a single endpoint to catch all **topics** for all **customers**. Alternatively, you may wish to set up a different webhook subscription per topic or per customer.
 
@@ -605,7 +605,9 @@ The Foundations REST APIs allow semi-structured - known to customers as extra fi
 
 When editing a webhook, semi structured fields can be optionally include as part of the configuration. If using this facility, it's likely you will already be aware that you can access these fields, and as with the APIs it's necessary for permission to be granted to these fields before you can use them, and an appropriate error message will be displayed if you attempt to configure a webhook with fields that are not permitted. To include semi-structured fields in webhook events, simply add each field you wish to include and have access to in the appropriate section of the configuration window, and click `Update`
 
-<figure><img src="../.gitbook/assets/image (112).png" alt=""><figcaption><p>Setting up semi structured configuration</p></figcaption></figure>
+
+
+<figure><img src="../.gitbook/assets/Webhooks-3a.jpg" alt=""><figcaption></figcaption></figure>
 
 Event payloads will now contain the selected fields, in the `new`, `old`, and `diff` objects where applicable. Note that when a field is not set in the database, it will not be returned at all which matches the behaviour of the APIs.
 
