@@ -6,6 +6,20 @@ description: >-
 
 # What’s New
 
+## 30/11/23
+
+### Properties API
+
+We have added a new sub resource to our Properties endpoint to obtain Property Certificates without the need to specify a Property Reference (ID):
+
+<figure><img src=".gitbook/assets/WS30111.png" alt=""><figcaption></figcaption></figure>
+
+In addition to this and to support the 'Certificate Management' functionality in AgencyCloud (desktop CRM), an endpoint to understand the certificate responsibility (GET /properties/{id}/certificates/responsibilities):&#x20;
+
+<figure><img src=".gitbook/assets/WS3012.png" alt=""><figcaption><p>Certificate Management screen in AgencyCloud</p></figcaption></figure>
+
+<figure><img src=".gitbook/assets/WS30113.png" alt=""><figcaption><p>Example payload showing <code>responsibleParty</code></p></figcaption></figure>
+
 ## 31/10/23
 
 ### Appointments API
