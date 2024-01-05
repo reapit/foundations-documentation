@@ -10,6 +10,8 @@ description: >-
 
 ### Tenancies API
 
+**References and Guarantors**
+
 It is now possible to retrieve a guarantors '`id`', '`guarantorAssociatedId`', '`type`' & '`referenceStatus`' from the Tenancies/{id}/relationships endpoint:
 
 <figure><img src=".gitbook/assets/WS04011.png" alt=""><figcaption></figcaption></figure>
@@ -24,7 +26,15 @@ Multiple guarantors will be displayed as below:
 
 <figure><img src=".gitbook/assets/WS04013.png" alt=""><figcaption></figcaption></figure>
 
-&#x20;
+**References:**
+
+Below is an example of a single contact added as a reference to a tenant in AgencyCloud:
+
+<figure><img src=".gitbook/assets/WS05014.png" alt=""><figcaption></figcaption></figure>
+
+Using the tenancy ID and calling the GET Tenancies/\[id}/relationships, it will return an '`id`', ‘`referenceAssociatedId`’, ‘`type`’, ‘`referenceStatus`’ & ‘`referenceType`’ in the ‘references’ object:&#x20;
+
+<figure><img src=".gitbook/assets/5WS05014.png" alt=""><figcaption></figcaption></figure>
 
 ## 30/11/23
 
