@@ -12,13 +12,13 @@ description: >-
 
 **References and Guarantors**
 
-It is now possible to retrieve a guarantors '`id`', '`guarantorAssociatedId`', '`type`' & '`referenceStatus`' from the Tenancies/{id}/relationships endpoint:
+It is now possible to retrieve a guarantor's '`id`', '`guarantorAssociatedId`', '`type`' & '`referenceStatus`' from the tenancies/{id}/relationships endpoint:
 
 <figure><img src=".gitbook/assets/WS04011.png" alt=""><figcaption></figcaption></figure>
 
 Above is an example of a single guarantor associated to a tenant in AgencyCloud.
 
-Using the tenancy ID and calling the GET Tenancies/{id}/relationships endpoint, it will return the following in the ‘guarantors’ object:
+Using the tenancy ID and calling the GET tenancies/{id}/relationships endpoint, it will return the following in the ‘guarantors’ object:
 
 <figure><img src=".gitbook/assets/WS04012.png" alt=""><figcaption></figcaption></figure>
 
@@ -32,7 +32,7 @@ Below is an example of a single contact added as a reference to a tenant in Agen
 
 <figure><img src=".gitbook/assets/WS05014.png" alt=""><figcaption></figcaption></figure>
 
-Using the tenancy ID and calling the GET Tenancies/\[id}/relationships, it will return an '`id`', ‘`referenceAssociatedId`’, ‘`type`’, ‘`referenceStatus`’ & ‘`referenceType`’ in the ‘references’ object:&#x20;
+Using the tenancy ID and calling the GET tenancies/\[id}/relationships endpoint, it will return an '`id`', ‘`referenceAssociatedId`’, ‘`type`’, ‘`referenceStatus`’ & ‘`referenceType`’ in the ‘references’ object:&#x20;
 
 <figure><img src=".gitbook/assets/5WS05014.png" alt=""><figcaption></figcaption></figure>
 
