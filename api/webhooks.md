@@ -775,12 +775,10 @@ Please note that we will not retry to send messages that were not delivered on t
 * Where the webhook event is associated to Sandbox data
 * Where the response code we received from your configured endpoint was 4XX. This is indicative of a misconfigured webhook or authentication problem on the target system
 
+It is considered good practice to process webhook events asynchronously, meaning your endpoint should respond quickly (typically with a 202 Accepted response) _before_ invoking any processing logic. If a response from your endpoint is not received in a timely fashion (typically around 10 seconds), the event will go into the retry queue as described above. This can inflate webhook consumption which is included in monthly invoicing and so it is in your best interest to adhere to this practice. The 10 second limit is dynamic based on throughput from our system but will not drop below 5 seconds.
+
 ## Additional information
 
 * Events are generated in near real-time and though extremely unlikely, we do not guarantee that you will only get a single notification for an event.
 * We do not guarantee that webhooks will be sent in the exact order that the events occurred. You can use the `eventTime` to determine when each event occurred.
 * Webhooks originated requests contribute to developer analytics and billing in the same way as regular API requests do
-
-{% hint style="info" %}
-**We will be introducing** an automatic retry policy with exponential backoff as [an additional feature in due course](https://github.com/reapit/foundations/issues/1299)
-{% endhint %}
