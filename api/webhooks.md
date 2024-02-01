@@ -26,10 +26,10 @@ The first step to start receiving webhooks is to register your app within our Ap
 
 You must provide an endpoint to receive the payload the Platform will send to your app. The endpoint should:
 
-* Be a publicly available valid URI tha
-* Use the `https` scheme
-* Accept `POST` requests
-* Accept a request body with an `application-json` content type
+* Be a publicly available valid URI that:
+  * Uses the `https` scheme
+  * Accepts `POST` requests
+  * Accepts a request body with an `application-json` content type
 
 {% hint style="info" %}
 **You can use a third party service** to quickly get to grips with webhooks. Services like [RequestBin](https://www.requestbin.com) and [Webhook.site](https://webhook.site) instantly setup a secure URL to receive the `POST` request on your behalf and provide a UI to review what data has been sent.
