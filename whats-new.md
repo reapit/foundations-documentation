@@ -6,6 +6,40 @@ description: >-
 
 # What’s New
 
+## 31/01/24
+
+### Tenancies
+
+A new '`managerId'` (Tenancy Manager) field has been added to the TenancyModel:
+
+<figure><img src=".gitbook/assets/WS31011.png" alt=""><figcaption><p>Tenancy Manager field in Reapit</p></figcaption></figure>
+
+<figure><img src=".gitbook/assets/WS31012.png" alt=""><figcaption><p>Related <code>managerId</code> field</p></figcaption></figure>
+
+### Referrals
+
+A new POST referrals endpoint has been added to allow the creation of referrals via the Platform. Customers using the Marketplace Management app will have the option of restricting which referral types an app or integration has access to:&#x20;
+
+<figure><img src=".gitbook/assets/WS31013.png" alt=""><figcaption><p>Referral panel in Reapit</p></figcaption></figure>
+
+<figure><img src=".gitbook/assets/WS31014.png" alt=""><figcaption><p>POST referrals endpoint</p></figcaption></figure>
+
+&#x20;
+
+### Appointments
+
+Appointments in Reapit now provide an ‘Attendance’ option. This has been added to the Appointments API in the Platform under ‘`attended`’:&#x20;
+
+<figure><img src=".gitbook/assets/WS31015.png" alt=""><figcaption><p>Attendance field on an appointment in Reapit</p></figcaption></figure>
+
+<figure><img src=".gitbook/assets/WS31016.png" alt=""><figcaption><p><code>attended</code> field in the Appointments API</p></figcaption></figure>
+
+### WorksOrders
+
+A new ‘`reserveAmount`’ field has been added to the WorksOrder payloads that maps to the ‘main float’ in Reapit. The main float is the amount of funds to be held back by the agent in landlord payment runs to cover the cost of any works required by the works order item. For full validation and behaviour rules, please review the following ticket: [https://github.com/reapit/foundations/issues/8758](https://github.com/reapit/foundations/issues/8758):&#x20;
+
+<figure><img src=".gitbook/assets/WS31017.png" alt=""><figcaption><p>New <code>reserveAmount</code> field in the WorksOrders API </p></figcaption></figure>
+
 ## 31/12/23
 
 ### Tenancies API
