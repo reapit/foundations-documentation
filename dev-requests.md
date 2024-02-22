@@ -65,7 +65,7 @@ When the new Desktop Integration type is available, you can then raise a feature
 
 #### **AgencyCloud**
 
-Your issue relates to AgencyCloud (Desktop CRM) and therefore will require information, action or input outside of the Platform team, please see [#agencycloud](dev-requests.md#agencycloud "mention")
+Your issue relates to AgencyCloud (Desktop CRM) and therefore will require information, action or input outside of the Platform team, please see '[AgencyCloud](dev-requests.md#agencycloud-1)'.
 
 **Investigate**
 
