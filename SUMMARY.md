@@ -24,7 +24,7 @@
   * [Contributing](app-development/contributing.md)
   * [Website Development](app-development/website-development.md)
   * [IaaS (Coming Soon)](app-development/iaas-coming-soon/README.md)
-    * [🖥 Developer Portal (Beta)](app-development/iaas-coming-soon/developer-portal-beta.md)
+    * [🖥️ Developer Portal (Beta)](app-development/iaas-coming-soon/developer-portal-beta.md)
     * [💻 CLI (Beta)](app-development/iaas-coming-soon/cli-beta.md)
 * [What’s New](whats-new.md)
 * [Platform Glossary](platform-glossary.md)

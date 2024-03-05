@@ -4,8 +4,8 @@ description: Technical guidance for working with webhooks for real time event no
 
 # Webhooks
 
-{% hint style="warning" %}
-Please note that apps and integrations developed using Webhooks for topics other than application install/uninstall will only be visible in the AppMarket to customers who have been migrated to AWS.
+{% hint style="danger" %}
+The [legacy webhook signing mechanism](webhooks.md#securing-your-endpoint) will be deprecated on 1st September 2024. If you have any webhooks configured against any of the apps you have registered in the DeveloperPortal, you will receive a notification containing information about how to prepare your event handler accordingly.
 {% endhint %}
 
 ## Introduction
@@ -39,8 +39,8 @@ You must provide an endpoint to receive the payload the Platform will send to yo
 
 **Legacy Method**
 
-{% hint style="warning" %}
-This method has been superseded by cryptographically signed requests. Both mechanisms will run side by side for a period of team before the legacy method described below is removed. Communication will be sent in good time before this feature becomes obsolete.
+{% hint style="danger" %}
+This method has been superseded by cryptographically signed requests and will be deprecated on 1st September 2024. Please ensure you update your event handler before this date to ensure continuity of data processing.
 {% endhint %}
 
 We provide your application with a simple means of verifying that requests to your webhook's endpoint are for the correct application and they originate from Reapit Foundations.
