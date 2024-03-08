@@ -6,6 +6,79 @@ description: >-
 
 # What’s New
 
+## 29/02/24
+
+### Properties API
+
+Subplot identification is now available via the properties API under '`developmentSiteType'` and extended to webhooks for properties 'created' & 'modified':
+
+<figure><img src=".gitbook/assets/WS08031.png" alt=""><figcaption><p>Reapit CRM and Platform Mapping </p></figcaption></figure>
+
+A new sub resource on the property images endpoint (POST propertyImages/reindex) to support image reordering:
+
+<figure><img src=".gitbook/assets/WS08032.png" alt=""><figcaption><p>Example POST payload on popertyImages/reindex</p></figcaption></figure>
+
+&#x20;
+
+‘Other Agent Appraisals’ information for GET, POST & PATCH is now available and can be located as a sub resource on the properties endpoint:
+
+* GET properties/{id}/appraisals
+* GET properties/{id}/appraisals/{appraisalId}
+* POST properties/{id}/appraisals
+* PATCH properties/{id}/appraisals/{appraisalId}
+
+&#x20;
+
+<figure><img src=".gitbook/assets/WS08033.png" alt=""><figcaption><p>Other Agent Appraisals section on the Reapit CRM</p></figcaption></figure>
+
+### Offices
+
+&#x20;A new query string parameter has been added to the offices endpoint to support ‘Region’ filtering:
+
+<figure><img src=".gitbook/assets/WS08036.png" alt=""><figcaption><p>Region filter on 'Offices' </p></figcaption></figure>
+
+### Analytics Schema
+
+A negotiators profile images (PROFILE\_IMAGE\_URL) has been added to the NEGOTIATORS view:
+
+<figure><img src=".gitbook/assets/WS08037.png" alt=""><figcaption><p>Profile Image URL Field in the Analytics Schema documentation</p></figcaption></figure>
+
+
+
+### Companies API
+
+We now surface the following communication preferences (read and write) for companies:
+
+Email, Letter, Phone & SMS&#x20;
+
+
+
+<figure><img src=".gitbook/assets/WS08038.png" alt=""><figcaption><p>Communication preferences on a Company record in the Reapit CRM</p></figcaption></figure>
+
+
+
+<figure><img src=".gitbook/assets/WS08035.png" alt=""><figcaption><p>Communication Preferences fields in the Companies API </p></figcaption></figure>
+
+&#x20;
+
+### Webhooks
+
+**Deprecation Notice:** On **1st September 2024** we will be retiring the legacy webhook signing mechanism in favour of the now more widely adopted cryptographic signing method.&#x20;
+
+You only need to take action if you are currently reading and validating the `Reapit-Webhook-Signature` header that is included with all webhook events. You will need to update your webhook handler to switch over to using the `X-Signature` header instead, using the method outlined in the developer documentation here, which includes code samples for both Node and .NET.&#x20;
+
+If you are not currently validating the sender of the webhook event, it is highly recommended that you introduce this important security feature and implement validation of the X-Signature header to protect your own systems.&#x20;
+
+If you require any assistance updating your application, please reach out to us on Github where we will respond in line with our development processes.&#x20;
+
+### Reapit CRM
+
+Discover our latest comprehensive release notes for the Reapit CRM, detailing new features and enhancements to our desktop application [here](https://reapit.atlassian.net/wiki/spaces/RW/pages/138903634/Release+Notes+index).
+
+&#x20;
+
+&#x20;
+
 ## 31/01/24
 
 ### Tenancies
