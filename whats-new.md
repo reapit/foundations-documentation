@@ -12,11 +12,11 @@ description: >-
 
 Subplot identification is now available via the properties API under '`developmentSiteType'` and extended to webhooks for properties 'created' & 'modified':
 
-<figure><img src=".gitbook/assets/WS08031.png" alt=""><figcaption><p>Reapit CRM and Platform Mapping </p></figcaption></figure>
+<figure><img src=".gitbook/assets/WS11103.jpg" alt=""><figcaption><p>Development Site Types</p></figcaption></figure>
 
 A new sub resource on the property images endpoint (POST propertyImages/reindex) to support image reordering:
 
-<figure><img src=".gitbook/assets/WS08032.png" alt=""><figcaption><p>Example POST payload on popertyImages/reindex</p></figcaption></figure>
+<figure><img src=".gitbook/assets/WS08032.png" alt=""><figcaption><p>Example POST payload on propertyImages/reindex</p></figcaption></figure>
 
 &#x20;
 
@@ -39,11 +39,11 @@ A new sub resource on the property images endpoint (POST propertyImages/reindex)
 
 ### Analytics Schema
 
-A negotiators profile images (PROFILE\_IMAGE\_URL) has been added to the NEGOTIATORS view:
+A negotiator's profile image (PROFILE\_IMAGE\_URL) has been added to the NEGOTIATORS view:
 
 <figure><img src=".gitbook/assets/WS08037.png" alt=""><figcaption><p>Profile Image URL Field in the Analytics Schema documentation</p></figcaption></figure>
 
-
+We have also added alternate/old codes to the PROPERTIES view, they can provide a means of identifying properties either by giving them an alternate reference number that is more meaningful, or being able to locate properties by an old system code when a customer has migrated to a Reapit product.
 
 ### Companies API
 
@@ -65,11 +65,11 @@ Email, Letter, Phone & SMS&#x20;
 
 **Deprecation Notice:** On **1st September 2024** we will be retiring the legacy webhook signing mechanism in favour of the now more widely adopted cryptographic signing method.&#x20;
 
-You only need to take action if you are currently reading and validating the `Reapit-Webhook-Signature` header that is included with all webhook events. You will need to update your webhook handler to switch over to using the `X-Signature` header instead, using the method outlined in the developer documentation here, which includes code samples for both Node and .NET.&#x20;
+You only need to take action if you are currently reading and validating the `Reapit-Webhook-Signature` header that is included with all webhook events. You will need to update your webhook handler to switch over to using the `X-Signature` header instead, using the method outlined in the developer [documentation here](https://foundations-documentation.reapit.cloud/api/webhooks#securing-your-endpoint), which includes code samples for both Node and .NET.&#x20;
 
 If you are not currently validating the sender of the webhook event, it is highly recommended that you introduce this important security feature and implement validation of the X-Signature header to protect your own systems.&#x20;
 
-If you require any assistance updating your application, please reach out to us on Github where we will respond in line with our development processes.&#x20;
+If you require any assistance updating your application, please reach out to us on [Github](https://github.com/reapit/foundations/issues/new/choose) where we will respond in line with our development processes.&#x20;
 
 ### Reapit CRM
 
