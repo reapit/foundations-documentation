@@ -43,7 +43,7 @@ A negotiator's profile image (PROFILE\_IMAGE\_URL) has been added to the NEGOTIA
 
 <figure><img src=".gitbook/assets/WS08037.png" alt=""><figcaption><p>Profile Image URL Field in the Analytics Schema documentation</p></figcaption></figure>
 
-We have also added alternate/old codes to the PROPERTIES view, they can provide a means of identifying properties either by giving them an alternate reference number that is more meaningful, or being able to locate properties by an old system code when a customer has migrated to a Reapit product.
+We have also added alternate/old codes to the PROPERTIES view, which can provide a means of identifying properties either by giving them an alternate reference number that is more meaningful, or being able to locate properties by an old system code when a customer has migrated to a Reapit product.
 
 ### Companies API
 
