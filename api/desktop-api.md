@@ -7,7 +7,7 @@ description: >-
 # Desktop API
 
 {% hint style="info" %}
-To obtain a copy of Reapit's AgencyCloud CRM (Developer Edition), please visit the '[Desktop](https://marketplace.reapit.cloud/developer/desktop)' page within the Developers Portal. NOTE Reapit does not provide technical support for Developer Edition.
+To obtain a copy of Reapit's AgencyCloud CRM (Developer Edition), please visit the '[Desktop](https://developers.reapit.cloud/desktop)' page within the Developers Portal. NOTE Reapit does not provide technical support for Developer Edition.
 {% endhint %}
 
 {% hint style="warning" %}
