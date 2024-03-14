@@ -316,7 +316,7 @@ For more information on webhooks, please click [here](https://foundations-docume
 
 ### **Installations Table**
 
-On your app listing in the Developer Portal and via ‘[Analytics](https://developers.reapit.cloud/analytics)’, you will see a full record of all installations. The table will contain the following information:
+On your app listing in the Developer Portal (Apps > My Apps > Select App > Installations), you will see a full record of all installations. The table will contain the following information:
 
 * The Customer ID of the organisation (Client)
 * The Name of the organisation (Company Name)
