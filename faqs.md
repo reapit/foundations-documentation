@@ -4,7 +4,7 @@
 
 ### How do I find a ‘Customer ID’?
 
-An agent can locate their Customer ID via the AppMarket inside of AgencyCloud.
+An agent can locate their Customer ID via the AppMarket inside of AgencyCloud:
 
 * Within AgencyCloud, click on ‘Apps’ and select ‘Browse’
 * Click on the profile icon (top right) and select 'Profile'
