@@ -318,16 +318,17 @@ For more information on webhooks, please click [here](https://foundations-docume
 
 On your app listing in the Developer Portal (Apps > My Apps > Select App > Installations), you will see a full record of all installations. The table will contain the following information:
 
-* The Customer ID of the organisation (Client)
-* The Name of the organisation (Company Name)
-* The Address of the organisation (Company Address)
-* The date the installation occurred (Date of Installation)
-* The Email Address of the user who installed your app (Installed By)\
+* The Name of the organisation (Customer Name)
+* The Reapit Customer Code (Client ID)
+* The Address of the organisation (Customer Address)
+* The Date the installation occurred (Date Installed)
+* The Email Address of the user who installed your app (Installed By)
+* The option to terminate the installation (Uninstall)  \
 
 
 **Example Installations table:**
 
-<figure><img src=".gitbook/assets/image (114).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (127).png" alt=""><figcaption></figcaption></figure>
 
 ## AppMarket
 
