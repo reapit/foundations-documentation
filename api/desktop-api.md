@@ -367,7 +367,7 @@ The type of _Property Marketing Information_ can be given to an application that
 
 An application of this type can be launched from the Marketing button on the property screen in AgencyCloud:
 
-![Property Marketing app launch point ](<../.gitbook/assets/image (3).png>)
+![Property Marketing app launch point ](<../.gitbook/assets/image (3) (2).png>)
 
 ### Vendor Marketing Report
 

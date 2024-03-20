@@ -2,7 +2,7 @@
 description: Pipeline management within the Developer Portal
 ---
 
-# 🖥 Developer Portal (Beta)
+# 🖥️ Developer Portal (Beta)
 
 If you prefer a GUI to manage your deployments over a terminal based CLI, you can manage this from within the Developer Portal itself. When you have been enabled as part of the public beta, you will see both a top level navigation item `IaaS`, that gives you an overview dashboard of your pipelines, plus, each app has a Pipeline configuration page.
 
@@ -12,17 +12,17 @@ The first step to deploy an app is to visit the app detail page in the developer
 
 For apps that pre-exist the IaaS service, this was not possible so you will see this screen:
 
-![](<../../.gitbook/assets/Screenshot 2022-05-05 at 13.19.47.png>)
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 From here you should hit "Create Pipeline" to take you to the new pipeline page.
 
-![](<../../.gitbook/assets/Screenshot 2022-05-05 at 13.21.32.png>)
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 From here, you need to tell us about your application, the repo (we support Github and BitBucket), the main branch, the command in your package.json that builds the app and the directory your assets are output to.
 
 On saving this config, you have pre-provisioned an app and you will return to the Pre provisioned app screen.
 
-![](<../../.gitbook/assets/Screenshot 2022-06-17 at 12.22.14.png>)
+<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 You should now hit "Provision", to build your initial infrastructure on our services. This can take a minute or two. You can also move on to the [Next Steps](developer-portal-beta.md#next-steps-all-apps) section below.
 
@@ -30,7 +30,7 @@ You should now hit "Provision", to build your initial infrastructure on our serv
 
 If you created a new application, we pre-provision a Pipeline for your application by default. Visiting the "Pipeline" tab you will see this page:
 
-![](<../../.gitbook/assets/Screenshot 2022-06-17 at 12.24.22.png>)
+<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
 Note the state of the application is "Pre provisioned". This means we have a shell pipeline and have reserved a domain name for your app in our infra.
 
@@ -48,7 +48,7 @@ The next step is to configure your app by clicking on the "Configure" tab or the
 
 On the configure screen, you need to tell us about your application, the repo (we support Github and BitBucket), the main branch, the command in your package.json that builds the app and the directory your assets are output to.&#x20;
 
-![](<../../.gitbook/assets/Screenshot 2022-06-16 at 15.41.26.png>)
+<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
 Hit save config and return to the deployments page. You can then move on to the [Next Steps](developer-portal-beta.md#next-steps-all-apps) section below.
 
@@ -114,7 +114,7 @@ Currently we do not surface your variables over an API when you have stored them
 
 See below for the Environment Variables UI:
 
-![](<../../.gitbook/assets/Screenshot 2022-06-17 at 12.43.41.png>)
+<figure><img src="../../.gitbook/assets/image (128).png" alt=""><figcaption></figcaption></figure>
 
 #### API Keys
 
