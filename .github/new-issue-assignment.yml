@@ -1,0 +1,28 @@
+name: Add to internal Backlog
+
+on:
+  issues:
+    types:
+      - opened
+
+jobs:
+  label_issues:
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+    steps:
+      - run: gh issue edit "$NUMBER" --add-label "$LABELS"
+        env:
+          GH_TOKEN: ${{ secrets.GH_PLATFORM_BOT_PAT }}
+          GH_REPO: ${{ github.repository }}
+          NUMBER: ${{ github.event.issue.number }}
+          LABELS: refinement
+
+  add-to-project:
+    name: Add issue to project
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/add-to-project@v1.0.0
+        with:
+          project-url: https://github.com/orgs/reapit/projects/18
+          github-token: ${{ secrets.GH_PLATFORM_BOT_PAT }}
