@@ -279,6 +279,12 @@ First, select the application that you want to create a webhook for. You'll then
 
 Our webhooks system is designed to flexibly work with how your application is built and deployed. If you wish, you can set up a single endpoint to catch all **topics** for all **customers**. Alternatively, you may wish to set up a different webhook subscription per topic or per customer.
 
+
+
+{% hint style="info" %}
+If you are using AWS API Gateway as the entrypoint for your event handler, please note that you cannot use the AWS DNS namespace (in the format https://{api-id}.execute-api.{region}.{amazonaws}.com/) for your webhook URL due to the way some of the internal routing at Reapit is configured. To work around this, simply add a Custom Domain to your API Gateway, and use that in your webhook configuration instead
+{% endhint %}
+
 ### Subscribe to topics
 
 As part of creating a new webhook, you need to specify which of the available **topics** (type of event) that your application needs to respond to. If any application makes a change to a customers data that corresponds to a topic that your app is listening for, you'll receive a notification to describe the event.
@@ -760,13 +766,13 @@ As with any integrated system, there's always a possibility of the endpoint we t
 
 Where we fail to deliver a webhook on the first attempt, we will retry up to 5 times at the following intervals (6 delivery attempts in total):
 
-| Delivery attempt | Delivery delay (seconds/minutes)                                                                                     |
-| ---------------- | -------------------------------------------------------------------------------------------------------------------- |
-| 2                | 60s (1m) after the first delivery attempt                                                                            |
-| 3                | 120s (2m) after the second delivery attempt                                                                          |
-| 4                | 300s (5m) after the third delivery attempt                                                                           |
-| 5                | 600s (10m) after the fourth delivery attempt                                                                         |
-| 6                | 900s (15m) after the fifth delivery attempt. No more attempts to deliver the message will be made after this attempt |
+| Delivery attempt | Delivery delay (seconds/minutes)                                                                                              |
+| ---------------- | ----------------------------------------------------------------------------------------------------------------------------- |
+| 2                | At least 60s (1m) after the first delivery attempt                                                                            |
+| 3                | At least 120s (2m) after the second delivery attempt                                                                          |
+| 4                | At least 300s (5m) after the third delivery attempt                                                                           |
+| 5                | At least 600s (10m) after the fourth delivery attempt                                                                         |
+| 6                | At least 900s (15m) after the fifth delivery attempt. No more attempts to deliver the message will be made after this attempt |
 
 The number of attempts it took to deliver the message is available in the payload. See the [Example payload](webhooks.md#example-payload) for more information.
 
