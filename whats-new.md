@@ -10,7 +10,7 @@ description: >-
 
 ### Tenancies
 
-We now expose the occupy date (`occupyOn`) and vacate date (`vacateOn`) on an tenancy.
+We now expose the occupy date (`occupyOn`) and vacate date (`vacateOn`) on a tenancy.
 
 ### Properties
 
@@ -18,9 +18,11 @@ Within the property payload you can retrieve information relating to available s
 
 <figure><img src=".gitbook/assets/WS31031.png" alt=""><figcaption><p>Available services screen in Reapit</p></figcaption></figure>
 
+The list of services is configurable in the system and differs between customer systems. As such, the new GET /configuration/propertyServiceTypes endpoint should be used to when interpreting this data.
+
 Occupier information relating to a lettings property is now available within the links collection:
 
-<figure><img src=".gitbook/assets/WS31032.png" alt=""><figcaption><p>Occupier selection in Repit</p></figcaption></figure>
+<figure><img src=".gitbook/assets/WS31032.png" alt=""><figcaption><p>Occupier selection in Reapit</p></figcaption></figure>
 
 <figure><img src=".gitbook/assets/WS31033.png" alt=""><figcaption><p>Occupier details in the links collection </p></figcaption></figure>
 
@@ -38,7 +40,7 @@ A new string ‘marketingconsent’ has been added to:
 * Landlords
 * Offers
 
-<figure><img src=".gitbook/assets/WS31035.png" alt=""><figcaption><p>Marketing Consent Filed</p></figcaption></figure>
+<figure><img src=".gitbook/assets/WS31035.png" alt=""><figcaption><p>Marketing Consent Field</p></figcaption></figure>
 
 ### Analytics Schema
 
@@ -50,11 +52,11 @@ Added a new View ‘‘TENANCY\_STATUS\_CHANGES’. Similar to the view ‘PROPE
 
 <figure><img src=".gitbook/assets/WS31037.png" alt=""><figcaption><p>New Tenancy Status Changes View</p></figcaption></figure>
 
-Within the Analytics schema we are now surfacing ‘Management Period’ information to the Properties View:
+Within the Analytics schema we are now surfacing ‘Management Period’ information in the Properties View:
 
 <figure><img src=".gitbook/assets/WS31038.png" alt=""><figcaption><p>Management Period fields in Reapit</p></figcaption></figure>
 
-&#x20;The ‘ONE\_OFF\_FEE\_NARRATIVE’ column has been added to the TENANCY\_ALTERATIONS:&#x20;
+&#x20;The ‘ONE\_OFF\_FEE\_NARRATIVE’ column has been added to the TENANCY\_ALTERATIONS view:&#x20;
 
 <figure><img src=".gitbook/assets/Screenshot 2024-04-17 110848.png" alt=""><figcaption><p>One-off fee field in Reapit </p></figcaption></figure>
 
@@ -68,7 +70,7 @@ New fields ‘LETTINGS\_RENT\_COLLECTION\_PERCENTAGE’ and ‘LETTINGS\_RENT\_C
 
 &#x20;
 
-Added a new ‘EXCHANGE\_DUE’ field to OFFERS:
+Added a new ‘EXCHANGE\_DUE’ field to the OFFERS view:
 
 
 
@@ -88,10 +90,6 @@ Added a new ‘EXCHANGE\_DUE’ field to OFFERS:
 •       \_LAST\_SYNCH\_AT
 
 <figure><img src=".gitbook/assets/WS310312.png" alt=""><figcaption><p>Rent insurance information in Reapit</p></figcaption></figure>
-
-Added ‘Fee Split status’ (include\_exchanged\_properties\_in\_earned\_fees’) to the properties view:
-
-<figure><img src=".gitbook/assets/Screenshot 2024-04-17 111529.png" alt=""><figcaption><p>Fee split section in Reapit </p></figcaption></figure>
 
 Added a new ‘APPLICANT\_LOCATION\_REQUIREMENTS’ view:
 
