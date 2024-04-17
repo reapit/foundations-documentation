@@ -6,6 +6,103 @@ description: >-
 
 # What’s New
 
+## 31/03/24
+
+### Tenancies
+
+We now expose the occupy date (`occupyOn`) and vacate date (`vacateOn`) on an tenancy.
+
+### Properties
+
+Within the property payload you can retrieve information relating to available services:
+
+<figure><img src=".gitbook/assets/WS31031.png" alt=""><figcaption><p>Available services screen in Reapit</p></figcaption></figure>
+
+Occupier information relating to a lettings property is now available within the links collection:
+
+<figure><img src=".gitbook/assets/WS31032.png" alt=""><figcaption><p>Occupier selection in Repit</p></figcaption></figure>
+
+<figure><img src=".gitbook/assets/WS31033.png" alt=""><figcaption><p>Occupier details in the links collection </p></figcaption></figure>
+
+Sub Agent Terms are now available on the properties under the selling model:
+
+<figure><img src=".gitbook/assets/WS31034.png" alt=""><figcaption><p>Sub Agents Terms Model </p></figcaption></figure>
+
+### Marketing Consent
+
+A new string ‘marketingconsent’ has been added to:
+
+* Applicants
+* Vendors
+* Tenancies
+* Landlords
+* Offers
+
+<figure><img src=".gitbook/assets/WS31035.png" alt=""><figcaption><p>Marketing Consent Filed</p></figcaption></figure>
+
+### Analytics Schema
+
+New ' PROPERTY\_SALES\_CERTIFICATES' view:&#x20;
+
+<figure><img src=".gitbook/assets/Screenshot 2024-04-17 112153.png" alt=""><figcaption><p>New Property Sales Certificates View </p></figcaption></figure>
+
+Added a new View ‘‘TENANCY\_STATUS\_CHANGES’. Similar to the view ‘PROPERTY\_STATUS\_CHANGES’, we have created a view to surface: TA (Tenancy Arranging), TC (Tenancy Current), TX (Tenancy Cancelled), TF (Tenancy Finished):
+
+<figure><img src=".gitbook/assets/WS31037.png" alt=""><figcaption><p>New Tenancy Status Changes View</p></figcaption></figure>
+
+Within the Analytics schema we are now surfacing ‘Management Period’ information to the Properties View:
+
+<figure><img src=".gitbook/assets/WS31038.png" alt=""><figcaption><p>Management Period fields in Reapit</p></figcaption></figure>
+
+&#x20;The ‘ONE\_OFF\_FEE\_NARRATIVE’ column has been added to the TENANCY\_ALTERATIONS:&#x20;
+
+<figure><img src=".gitbook/assets/Screenshot 2024-04-17 110848.png" alt=""><figcaption><p>One-off fee field in Reapit </p></figcaption></figure>
+
+&#x20;
+
+New fields ‘LETTINGS\_RENT\_COLLECTION\_PERCENTAGE’ and ‘LETTINGS\_RENT\_COLLECTION\_AMOUNT’ have been added to the PROPERTIES view:&#x20;
+
+
+
+<figure><img src=".gitbook/assets/WS310310.png" alt=""><figcaption><p>New fields in the Properties View</p></figcaption></figure>
+
+&#x20;
+
+Added a new ‘EXCHANGE\_DUE’ field to OFFERS:
+
+
+
+<figure><img src=".gitbook/assets/WS310311.png" alt=""><figcaption></figcaption></figure>
+
+&#x20;
+
+‘HAS\_RENT\_INSURANCE’ has been added to the  tenancies view and we have also created a new ‘PROPERTY\_LETTINGS\_RENT\_INSURANCE’ view:
+
+•       ID\
+•       POLICY\_START\_DATE\
+•       POLICY\_END\_DATE\
+•       PREMIUM\_AMOUNT (take into account config)\
+•       PREMIUM\_PERCENTAGE (take into account config)\
+•       AUTO\_RENEWS (Yes/No)\
+•       \_CUSTOMER\_ID\
+•       \_LAST\_SYNCH\_AT
+
+<figure><img src=".gitbook/assets/WS310312.png" alt=""><figcaption><p>Rent insurance information in Reapit</p></figcaption></figure>
+
+Added ‘Fee Split status’ (include\_exchanged\_properties\_in\_earned\_fees’) to the properties view:
+
+<figure><img src=".gitbook/assets/Screenshot 2024-04-17 111529.png" alt=""><figcaption><p>Fee split section in Reapit </p></figcaption></figure>
+
+Added a new ‘APPLICANT\_LOCATION\_REQUIREMENTS’ view:
+
+<figure><img src=".gitbook/assets/Screenshot 2024-04-17 111725.png" alt=""><figcaption><p>Applicant Location Requirements view </p></figcaption></figure>
+
+&#x20;
+
+Added a new ‘REQUIRED\_BY\_DATE’ column to ‘TENANCY\_CHECKS’ view:
+
+<figure><img src=".gitbook/assets/image (129).png" alt=""><figcaption><p>Required By Date field </p></figcaption></figure>
+
 ## 29/02/24
 
 ### Properties API
