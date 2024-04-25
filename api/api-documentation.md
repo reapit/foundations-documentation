@@ -166,6 +166,8 @@ You must additionally include a `reapit-customer` header in your request so that
 
 If a customer chooses to uninstall your application then your access to their data will be revoked.
 
+Please note that the resource identifiers are only unique to a specific customer's database and _not_ globally unique. To determine uniqueness, create a composite key using the customer id and resource id.
+
 {% hint style="info" %}
 We recommend using our webhooks system to be instantly notified when a Reapit customer installs your application. See our [webhooks documentation](webhooks.md)  for more information.
 {% endhint %}

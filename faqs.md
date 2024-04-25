@@ -461,3 +461,6 @@ A user can check their user role by going to the profile icon (top right) and cl
 
 <figure><img src=".gitbook/assets/image (115).png" alt=""><figcaption></figcaption></figure>
 
+### Are your resource identifiers globally unique?
+
+Resource identifiers are unique to a specific customer and _not_ globally unique as some of the underlying systems are single tenant to provide adequate data separation for our customers. Uniqueness can be determined by creating a compose key of the customer id and resource identifier.&#x20;
