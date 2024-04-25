@@ -162,7 +162,7 @@ Our servers will validate this token and fulfill the request, subject to your ap
 
 Requests issued with access codes gained from the client credentials flow must also indicate which customers/agents data they wish to interact with.
 
-You must additionally include a `reapit-customer` header in your request so that it can be fulfilled appropriately. The header should be set to the customers unique id which becomes available to view after a customer has chosen to install your application. You find out out the unique ids and names of the clients that have installed your application in the [Analytics](https://marketplace.reapit.cloud/developer/analytics) area of the developer portal.
+You must additionally include a `reapit-customer` header in your request so that it can be fulfilled appropriately. The header should be set to the customers unique id which becomes available to view after a customer has chosen to install your application. You can find out the unique ids and names of the clients that have installed your application via the installations section on your app in the DeveloperPortal. Please [click here](https://foundations-documentation.reapit.cloud/faqs#installation) for more information on installation data.&#x20;
 
 If a customer chooses to uninstall your application then your access to their data will be revoked.
 
