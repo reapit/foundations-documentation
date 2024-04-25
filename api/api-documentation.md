@@ -524,7 +524,7 @@ Many of our GET APIs provide the ability to compose requests that automatically 
 If your application requires data from one or more related resource(s) (indicated by a link), you can simply specify the name of the related resource in the `embed` parameter and our APIs will do the rest. So long as the related data exists, it is returned to your app in the correct resource(s) `_embedded` data collection.
 
 {% hint style="info" %}
-This mechanism allows your application to make fewer round trips to the server by allowing our APIs to make requests on your applications behalf. Any request triggered by the embed mechanism will still contribute to your usage statistics in the same way as if they were directly issued from your application.
+This mechanism allows your application to make fewer round trips to the server by allowing our APIs to make requests on your applications behalf. Any request triggered by the embed mechanism will still contribute to your usage statistics in the same way as if they were directly issued from your application. See the [Billing Example](api-documentation.md#billing-example) for further information
 {% endhint %}
 
 You can embed as many related data sources in a request as your application requires. Our [interactive API explorer](https://developers.reapit.cloud/swagger) provides a user interface which demonstrates the available `embed` parameter options for each API.
@@ -596,5 +596,19 @@ The request above illustrates the means of requesting that related office and ne
 }
 ```
 
-##
+#### Billing Example
+
+It can be difficult to understand how using the embed mechanism affects your usage and overall bill. As mentioned previously, requests made using this feature are billed as though you made the request yourself. All embed operations use the maximum page size of 100 resources per page to limit the number of background API calls.&#x20;
+
+As an example, considering the following request:
+
+`GET https://platform.reapit.cloud/properties?embed=images&pageSize=50`
+
+If the above request returns 50 properties and each property has a total of 15 images, your usage is calculated as follows:
+
+1x request to properties endpoint
+
+(50 properties \* 15 images per property) / 100 = 8 requests to the property images endpoint as there are 7 full pages, and one partial page of images&#x20;
+
+Total of 9 billable calls
 
