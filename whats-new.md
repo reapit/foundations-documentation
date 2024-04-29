@@ -101,6 +101,10 @@ Added a new ‘REQUIRED\_BY\_DATE’ column to ‘TENANCY\_CHECKS’ view:
 
 <figure><img src=".gitbook/assets/image (129).png" alt=""><figcaption><p>Required By Date field </p></figcaption></figure>
 
+### Reapit CRM
+
+Discover our latest comprehensive release notes for the Reapit CRM, detailing new features and enhancements to our desktop application [here](https://reapit.atlassian.net/wiki/spaces/RW/pages/138903634/Release+Notes+index).
+
 ## 29/02/24
 
 ### Properties API
