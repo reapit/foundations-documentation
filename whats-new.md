@@ -6,6 +6,45 @@ description: >-
 
 # What’s New
 
+## 30/04/24
+
+### Journal Entries
+
+New endpoint ‘GET /journalEntries/landlords’ to support specific journal entries for landlords, with the following query parameters:
+
+* pageSize/pageNumber
+* landlordId
+* propertyId
+* negotiatorId
+* type
+* createdFrom/createdTo&#x20;
+
+**Note**: Your app/integration will need the ‘Read journal entries’ permission/scope to interact with this endpoint.
+
+
+
+### Applicants
+
+We have updated the applicants endpoint to support setting an archived record as ‘active’. This is the only change that can occur to archived data on the applicants endpoint:
+
+<figure><img src=".gitbook/assets/WS30041 (1).png" alt=""><figcaption></figcaption></figure>
+
+### Analytics Schema
+
+‘No Internet Advertising’ is now available on the PROPERTIES view as ‘INTERNET\_ADVERTISING’:
+
+<figure><img src=".gitbook/assets/WS30042.png" alt=""><figcaption><p>Internet Advertising field </p></figcaption></figure>
+
+### Properties
+
+A new field to support recording if deposit schemes are accepted on a lettings property. ‘`depositSchemeAccepted`’ has been added to the properties endpoint:
+
+<figure><img src=".gitbook/assets/WS30043.png" alt=""><figcaption><p>Deposit Scheme check box in the Reapit CRM</p></figcaption></figure>
+
+<figure><img src=".gitbook/assets/WS30044.png" alt=""><figcaption><p>Field in the Properties API</p></figcaption></figure>
+
+&#x20;**Note**: The field is only available in the Reapit CRM from versions 12.182 +&#x20;
+
 ## 31/03/24
 
 ### Tenancies
