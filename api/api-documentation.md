@@ -260,7 +260,9 @@ The following APIs allow consumers to upload certain types of documents to the R
 * propertyImages
 * identityChecks
 
-Each respective APIs `POST` endpoint supports uploads of files up to 6Mb in size, however we understand that there may sometimes be a legitimate need to upload larger files. To support this requirement, it is possible to obtain a pre-signed URL from each of these APIs which you can then send your data to.&#x20;
+Each respective APIs `POST` endpoint supports uploads of content up to 6Mb in size, however we understand that there may sometimes be a legitimate need to upload larger files. To support this requirement, it is possible to obtain a pre-signed URL from each of these APIs which you can then send your data to.&#x20;
+
+Please note that the 6Mb limit is the combined size of the different request components (headers, body etc). As a result the limit of the size of the encoded file being uploaded will in fact be slightly less than 6Mb.&#x20;
 
 #### Using pre-signed URLs
 
