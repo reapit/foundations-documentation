@@ -262,11 +262,11 @@ The following APIs allow consumers to upload certain types of documents to the R
 
 Each respective APIs `POST` endpoint supports uploads of content up to 6Mb in size, however we understand that there may sometimes be a legitimate need to upload larger files. To support this requirement, it is possible to obtain a pre-signed URL from each of these APIs which you can then send your data to.&#x20;
 
-Please note that the 6Mb limit is the combined size of the different request components (headers, body etc). As a result the limit of the size of the encoded file being uploaded will in fact be slightly less than 6Mb.&#x20;
+Please note that the 6Mb limit is the combined size of the different request components (headers, body etc). As a result the limit of the size of the encoded file being uploaded will in fact be slightly less than 6Mb.  In the case of endpoints that accept multiple documents, for example the POST /identityChecks endpoint, the _total_ request size cannot exceed 6Mb.
 
 #### Using pre-signed URLs
 
-To upload files between 6Mb and 30Mb in size, a pre-signed URL should be obtained from the Platform and used to upload your data. Each of the APIs listed in the [Uploading files](api-documentation.md#uploading-files) section of this documentation has a `POST /signedUrl` endpoint which can be called to generate up to 10 pre-signed URLs. This can be useful where you need to upload more than one file.&#x20;
+To upload larger files (between 6Mb and 30Mb), a pre-signed URL should be obtained from the Platform and used to upload your data. Each of the APIs listed in the [Uploading files](api-documentation.md#uploading-files) section of this documentation has a `POST /signedUrl` endpoint which can be called to generate up to 10 pre-signed URLs. This can be useful where you need to upload more than one file.&#x20;
 
 Use the following request body when calling the endpoint, setting amount to a value between 1 and 10 to have the respective number of URLs returned to you
 
