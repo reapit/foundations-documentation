@@ -473,4 +473,4 @@ Resource identifiers are unique to a specific customer and _not_ globally unique
 
 * Confirming deletion by clicking ‘Delete’.&#x20;
 
-**Note:** If an app has been tagged with the 'delete prevention' option, you will be unable to delete it. However, the information presented on screen will show you where to deselect this option before you can delete.
+**Please note:**  Only admins will see the option to delete an app. Also, if an app has been tagged with the 'delete prevention' option, you will be unable to delete it. However, the information presented on screen will show you where to deselect this option before you can delete.
