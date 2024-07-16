@@ -463,4 +463,14 @@ A user can check their user role by going to the profile icon (top right) and cl
 
 ### Are your resource identifiers globally unique?
 
-Resource identifiers are unique to a specific customer and _not_ globally unique as some of the underlying systems are single tenant to provide adequate data separation for our customers. Uniqueness can be determined by creating a compose key of the customer id and resource identifier.&#x20;
+Resource identifiers are unique to a specific customer and _not_ globally unique as some of the underlying systems are single tenant to provide adequate data separation for our customers. Uniqueness can be determined by creating a compose key of the customer id and resource identifier. &#x20;
+
+### How do I delete an app from the DeveloperPortal?
+
+* Go to ‘[My Apps](https://developers.reapit.cloud/apps)’ and select the app you want to delete and click ‘Delete App’ from the left-hand panel:
+
+![](<.gitbook/assets/image (130).png>)
+
+* Confirming deletion by clicking ‘Delete’.&#x20;
+
+**Note:** If an app has been tagged with the 'delete prevention' option, you will be unable to delete it. However, the information presented on screen will show you where to deselect this option before you can delete.
