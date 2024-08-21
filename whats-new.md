@@ -2,6 +2,7 @@
 description: >-
   We are constantly working to improve your experience with the Platform. Have a
   look to see what new features and fixes have been released.
+hidden: true
 ---
 
 # What’s New

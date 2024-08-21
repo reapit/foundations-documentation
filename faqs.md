@@ -36,11 +36,7 @@ You will still need to submit your app for approval and once approved, the app w
 
 For more information on listing your app, please [click here.](listing-your-app.md)
 
-### When will my requested feature be available?
 
-You can track the status of your issue [directly in GitHub](https://github.com/reapit/foundations/issues).&#x20;
-
-Please [click here](dev-requests.md) for details on our development processes.
 
 ### What are ‘Office Groups’?
 
