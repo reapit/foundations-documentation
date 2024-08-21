@@ -1,27 +1,13 @@
 # Help
 
-### **How do I request a new feature?**
+### **How do I request a new feature or report a bug?**
 
-You can raise a feature request direct on our GitHub board [here](https://github.com/reapit/foundations/issues/new?assignees=\&labels=external-request%2C+needs-triage\&template=feature\_request.md\&title=), (please copy the link and paste into a new browser window).
+You can raise a feature request/report a bug by logging a ticket via out [Reapit Support Platform](https://reapitsupport.refined.site/login).&#x20;
 
-For more information on our process, please click [here](https://foundations-documentation.reapit.cloud/dev-requests).&#x20;
+If you are a new user on the Reapit Support Platform, you will need set up an account. For more information on the setup process, please click [here](https://reapit.atlassian.net/wiki/spaces/RW/pages/1432912084/Using+the+Reapit+Service+Desk+Portal).&#x20;
 
-
-
-### **How do I report a bug?**
-
-You can report a bug direct on our GitHub board [here](https://github.com/reapit/foundations/issues/new?assignees=\&labels=bug%2C+needs-triage\&template=bug\_report.md\&title=), (please copy the link and paste into a new browser window).
-
-For more information on our process, please click [here](https://foundations-documentation.reapit.cloud/dev-requests).&#x20;
+When creating a ticket, please select the correct product type associated to your request to ensure it’s associated to the correct service.
 
 
-
-### **I have a question not covered in the documentation?**
-
-We take great pride in ensuring our documentation is as comprehensive and detailed as possible. However, there may be an instance in which you are unable to find the information you need. As we do not provide technical support via email or over the phone, please use the ‘[Question](https://github.com/reapit/foundations/issues/new?assignees=\&labels=needs-triage%2C+question\&template=question.md\&title=)’ template to raise an issue, (please copy the link and paste into a new browser window). Please note, it's important that you read the documentation before asking a question as we cannot answer questions which are already covered.
 
 &#x20;
-
-### Our Roadmap
-
-If you would like to see what we are building or check on the progress of your feature requests, simply take a look at our product roadmap milestones [here](https://github.com/reapit/foundations/milestones), (please copy the link and paste into a new browser window).
