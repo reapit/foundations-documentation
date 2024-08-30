@@ -439,7 +439,7 @@ Platform APIs are designed to be customer agnostic to make them easier for multi
 
 Therefore, to ensure we adhere to this design, we do not automatically expose customers custom fields. Custom data is stored in a different place called ‘Extras’ and are stored as semi structured fields. They are unique to the customer.
 
-If you require access to those fields, you will need to make a request using [this ](https://github.com/reapit/foundations/issues/new?assignees=\&labels=back-end%2C+needs-triage\&template=extras\_field.md\&title=)template. We will then make the fields available to that customer only.
+If you require access to those fields, you will need to raise a ticket [here ](https://reapitsupport.refined.site/login)(please ensure you select 'Reapit API' from the product types). We will then make the fields available to that customer only.
 
 We will provide you the field name which you can add to your query as an additional parameter using the filter ‘extrasfield=FIELDNAME’
 
