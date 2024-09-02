@@ -4,10 +4,6 @@ description: Technical guidance for working with webhooks for real time event no
 
 # Webhooks
 
-{% hint style="danger" %}
-The [legacy webhook signing mechanism](webhooks.md#securing-your-endpoint) will be deprecated on 1st September 2024. If you have any webhooks configured against any of the apps you have registered in the DeveloperPortal, you will receive a notification containing information about how to prepare your event handler accordingly.
-{% endhint %}
-
 ## Introduction
 
 Webhooks allow you set up an endpoint in your own application to receive programmatical notifications from the Foundations Platform about changes to our customers data as it happens.
@@ -36,18 +32,6 @@ You must provide an endpoint to receive the payload the Platform will send to yo
 {% endhint %}
 
 ### Securing your endpoint
-
-**Legacy Method**
-
-{% hint style="danger" %}
-This method has been superseded by cryptographically signed requests and will be deprecated on 1st September 2024. Please ensure you update your event handler before this date to ensure continuity of data processing.
-{% endhint %}
-
-We provide your application with a simple means of verifying that requests to your webhook's endpoint are for the correct application and they originate from Reapit Foundations.
-
-Any requests sent from our platform will include a `Reapit-Webhook-Signature`header containing a base64 representation of your application's unique client id. You should make sure that this header matches your own base64 representation of client id before processing a webhook `POST` request.
-
-You can obtain your client id by clicking your applications details in the developer portal.
 
 **Cryptographic Signing**
 
