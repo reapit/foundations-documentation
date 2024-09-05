@@ -227,7 +227,7 @@ namespace WebhookHandlerExample.Controllers
         public bool VerifySignature(string message, string encodedPublicKey, string signature)
         {
             byte[] decodedPublicKey = WebEncoders.Base64UrlDecode(encodedPublicKey);
-            byte[] messageBytes = Encoding.ASCII.GetBytes(message);
+            byte[] messageBytes = Encoding.UTF8.GetBytes(message);
             byte[] signatureBytes = WebEncoders.Base64UrlDecode(signature);
 
             // Setup validator using Ed25519 curve
