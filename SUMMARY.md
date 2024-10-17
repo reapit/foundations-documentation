@@ -37,3 +37,4 @@
 * [Development Requests](dev-requests.md)
 * [FAQ's](faqs.md)
 * [Help](help.md)
+* [Reapit Connect Updates](reapit-connect-updates.md)

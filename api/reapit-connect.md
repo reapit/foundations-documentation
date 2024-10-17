@@ -199,6 +199,8 @@ You can also issue a `GET` request to the following endpoint to get information 
 
 Access tokens issued from Reapit Connect will expire after 60 minutes. Refresh tokens provide your application with a means of retrieving a new set of tokens without requiring an interaction from the user. They are long lived and will continue to function until they are revoked.
 
+Applications registered after 4th November 2024 will have refresh token rotation enabled. This means refresh tokens will be single use a fresh refresh token will be returned from the token endpoint each time a fresh access token is requested. The connect-session library handles this as part of the `ReapitConnectBrowserSession` class. If your application manages it's own Reapit Connect session, ensure logic is in place to update the session's refresh token when using this endpoint.
+
 To use a refresh token, issue a `POST` request to the endpoint below with Content-type set to `application/x-www-form-urlencoded`:
 
 `https://connect.reapit.cloud/token`
