@@ -28,7 +28,7 @@ The local development portion of the [Authorisation Code flow Applications (clie
 
 #### Changes to URLs /Endpoints
 
-Instead of calling \`GET /logout\` use \`GET /oidc/logout\` with your client\_id and desired post\_logout\_redirect\_uri. The post\_logout\_redirect\_uri must be  registered against your app in the DeveloperPortal as one of the logout urls. For example `GET /logout?client_id=12345&logout_uri=https://myapp.io` becomes `GET /oidc/logout?client_id=12345&post_logout_redirect_uri=``https://myapp.io`.
+Instead of calling \`GET /logout\` use \`GET /oidc/logout\` with your client\_id and desired post\_logout\_redirect\_uri. The post\_logout\_redirect\_uri must be  registered against your app in the DeveloperPortal as one of the logout urls. For example `GET /logout?client_id=12345&logout_uri=https://myapp.io` becomes `GET /oidc/logout?client_id=12345&post_logout_redirect_uri=https://myapp.io`.
 
 Instead of calling /login call /oauth/authorize.
 
@@ -58,7 +58,26 @@ The format of the file is the same in each operating system. To add an entry for
 
 Save the file and close the editor. Confirm your changes by running `ping dev.reapit`. You should see that domain resolve to `127.0.0.1`. Note that you may need to reboot to reload your hosts configuration, depending on your operating system.
 
-Now update your app's configuration in the DeveloperPortal to use`http://dev.reapit` instead of `http://localhost`  for the redirect and signout urls.
+If you are using our [Vite template](app-development/vite-template.md) you can update the server's configuration to open your browser automatically at`http://dev.reapit` by making the following changes to `vite.config.ts`
+
+```typescript
+server: {
+    host: true,
+    port: 8080
+  },
+```
+
+to
+
+```typescript
+server: {
+    host: true,
+    port: 8080,
+    open: 'http://dev.reapit:8080'
+  },
+```
+
+Finally, update your app's configuration in the DeveloperPortal to use`http://dev.reapit` instead of `http://localhost`  for the redirect and signout urls.
 
 ### Machine to Machine flow Applications (server side)
 
