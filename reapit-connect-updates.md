@@ -1,7 +1,7 @@
 # Reapit Connect Updates
 
 {% hint style="info" %}
-The following documentation does not come into effect until 4th November 2024 at 20:00 GMT. No changes should be made to your applications prior to this date
+The following documentation does not come into effect until 18th November 2024 at 20:00 GMT. No changes should be made to your applications prior to this date
 {% endhint %}
 
 ### Overview
