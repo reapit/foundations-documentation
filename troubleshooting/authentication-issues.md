@@ -23,7 +23,7 @@ Screenshot showing how to find your ‘Client ID’ and ‘Secret’ on your App
   Authorization: Basic XBASE64SECRETX\
   content-type: application/x-www-form-urlencoded
 
-### **Example POST Request (**only applies to client\_credentials flow)
+### **Example POST Request (**&#x6F;nly applies to client\_credentials flow)
 
 You can use the example `POST` request to obtain an access token, simply replace XCLIENTIDX with your client ID and XBASE64SECRETX with your encoded Client ID and Secret:
 

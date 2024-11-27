@@ -65,7 +65,7 @@ Customer administrators are able to control your applications access by choosing
 
 OAuth 2.0 is an authorization framework that we use to allow a user to grant limited access to resources in our Foundations platform without having to expose their credentials.
 
-We use the [Authorization Code Grant](https://developer.okta.com/blog/2018/04/10/oauth-authorization-code-grant-type) _\*\*_flow to authenticate, which is broken down into the following steps.
+We use the [Authorization Code Grant](https://developer.okta.com/blog/2018/04/10/oauth-authorization-code-grant-type) _\*\*_&#x66;low to authenticate, which is broken down into the following steps.
 
 * Your application redirects the user to our Reapit Connect in the browser
 * Reapit Connect presents the user with a login screen to capture their credentials
@@ -163,7 +163,7 @@ When validating your id token, you will need the production well known public ke
 * https://cognito-idp.eu-west-2.amazonaws.com/${cognitoPoolId}
 
 {% hint style="warning" %}
-On or after 1st August 2024 tokens will begin to be issued by https://connect.reapit.cloud. If you integrated with our Platform before May 2024, you may have a single hard coded URL in your token validation routine, which will be [https://cognito-idp.eu-west-2.amazonaws.com/eu-west-2\_eQ7dreNzJ/.well-known/jwks.json](https://cognito-idp.eu-west-2.amazonaws.com/eu-west-2\_eQ7dreNzJ/.well-known/jwks.json).
+On or after 1st August 2024 tokens will begin to be issued by https://connect.reapit.cloud. If you integrated with our Platform before May 2024, you may have a single hard coded URL in your token validation routine, which will be [https://cognito-idp.eu-west-2.amazonaws.com/eu-west-2\_eQ7dreNzJ/.well-known/jwks.json](https://cognito-idp.eu-west-2.amazonaws.com/eu-west-2_eQ7dreNzJ/.well-known/jwks.json).
 {% endhint %}
 
 Once you have validated the issuer, you can then go on to fetch the JWKs and continue with token validation. An example of how you might do this is shown below

@@ -292,7 +292,7 @@ _Third Floor, 67-74 Saffron Hill, London, EC1N 8QX, GB_
 _A record of all installations can be viewed on your app in the Developers Portal under 'Installations'._
 
 _Best Regards,_\
-_Reapit Team_
+&#xNAN;_&#x52;eapit Team_
 
 ### **Webhook**
 
