@@ -1392,7 +1392,7 @@ Currently, it offers support on the following topics:
 [REST API](troubleshooting/platform-api.md)\
 [Reapit Connect](troubleshooting/reapit-connect.md)
 
-We will continue to add and update this section but don’t forget, we also have a dedicated page for FAQ's, which can be found [here](faqs.md).
+We will continue to add and update this section but don’t forget, we also have a dedicated page for FAQ's, which can be found [here](faqs/).
 
 Remember, if you are having an issue not covered in the documentation or you have discovered a bug, please raise an issue on our public board by clicking [here](https://github.com/reapit/foundations/issues/new/choose).
 
@@ -1497,7 +1497,7 @@ The Developer Edition of AgencyCloud has automatically been updated to include t
 
 It is now possible to set or clear default property brochures when updating existing properties, using the PATCH method on /properties/{id}
 
-Updating the ‘brochureId’ field on the ‘Selling’ and/or ‘Lettings’ models with a document ID, will set a PDF as the predefined property details. Please see an example in the Property Details screen from within AgencyCloud (Desktop CRM) below:![](file:///C:/Users/HPHILL\~1/AppData/Local/Temp/msohtmlclip1/01/clip\_image004.png)
+Updating the ‘brochureId’ field on the ‘Selling’ and/or ‘Lettings’ models with a document ID, will set a PDF as the predefined property details. Please see an example in the Property Details screen from within AgencyCloud (Desktop CRM) below:![](file:///C:/Users/HPHILL~1/AppData/Local/Temp/msohtmlclip1/01/clip_image004.png)
 
 ![](<.gitbook/assets/image (98).png>)
 
@@ -1507,7 +1507,7 @@ To ensure data viability and security, we have made a change to the way 'Sandbox
 
 Webhooks that have been setup specifically for Sandbox testing (SBOX) and have been unmodified for 14 days, will automatically be deactivated.
 
-Should you wish to continue using Webhooks for Sandbox testing, you can reactivate it again by selecting the check box ‘Active’ when editing. ![](file:///C:/Users/HPHILL\~1/AppData/Local/Temp/msohtmlclip1/01/clip\_image007.png)
+Should you wish to continue using Webhooks for Sandbox testing, you can reactivate it again by selecting the check box ‘Active’ when editing. ![](file:///C:/Users/HPHILL~1/AppData/Local/Temp/msohtmlclip1/01/clip_image007.png)
 
 ![](<.gitbook/assets/image (97).png>)
 
@@ -1557,7 +1557,7 @@ Existing webhooks will remain as they are and you can edit your webhooks at any 
 
 ### New Developer Requests Documentation
 
-To '[Request a Feature'](https://github.com/reapit/foundations/issues/new?assignees=\&labels=feature-request%2C+needs-triage\&template=feature\_request.md\&title=) or to '[Report a Bug](https://github.com/reapit/foundations/issues/new?assignees=\&labels=bug%2C+needs-triage\&template=bug\_report.md\&title=)' you can visit the '[Help](https://developers.reapit.cloud/help)' page in the Developers Portal. To help with understanding the process for each new issue raised, we have added a new section in our documentation '[Developer Requests](broken-reference)'.&#x20;
+To '[Request a Feature'](https://github.com/reapit/foundations/issues/new?assignees=\&labels=feature-request%2C+needs-triage\&template=feature_request.md\&title=) or to '[Report a Bug](https://github.com/reapit/foundations/issues/new?assignees=\&labels=bug%2C+needs-triage\&template=bug_report.md\&title=)' you can visit the '[Help](https://developers.reapit.cloud/help)' page in the Developers Portal. To help with understanding the process for each new issue raised, we have added a new section in our documentation '[Developer Requests](broken-reference)'.&#x20;
 
 The new documentation will outline our processes, from what happens after submitting an issue to how your ticket will get triaged and categorised. Depending on the nature of the request or bug, it will determine which project board it may get assigned to. As our boards are public you will always be able to track the progress of any issue or request raised.&#x20;
 
@@ -2306,7 +2306,7 @@ Available for a **limited time only**, direct access to our Foundations Platform
 
 ![Live Chat feature](<.gitbook/assets/image (3) (1).png>)
 
-### Full Visibility ([Roadmap](https://github.com/reapit/foundations/milestones?direction=asc\&sort=due\_date\&state=open))
+### Full Visibility ([Roadmap](https://github.com/reapit/foundations/milestones?direction=asc\&sort=due_date\&state=open))
 
 ![](<.gitbook/assets/image (2) (2).png>)
 

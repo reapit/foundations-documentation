@@ -10,7 +10,7 @@ An agent can locate their Customer ID via the AppMarket inside of AgencyCloud:
 * Click on the profile icon (top right) and select 'Profile'
 * The Customer ID (customer code) will be displayed under 'Your Details'
 
-<figure><img src=".gitbook/assets/CustomerCode (1).jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/CustomerCode (1).jpg" alt=""><figcaption></figcaption></figure>
 
 ### I just want to access my data, do I still need to create an app?&#x20;
 
@@ -18,7 +18,7 @@ Yes, the app registration process gives you the required authentication, either 
 
 In order to access customer data, an installation will need to occur. This is done by creating and listing an app in the AppMarket. It can either be public or private to a specific agent.&#x20;
 
-Please [click here](faqs.md#listing-your-app) for more information on Listing an App in AppMarket.
+Please [click here](./#listing-your-app) for more information on Listing an App in AppMarket.
 
 
 
@@ -28,13 +28,13 @@ If you are building an app or integration for a specific customer or a subset of
 
 To set your app to private, you will need to navigate to the ‘Permissions’ tab which can be accessed when you ‘Edit App’: &#x20;
 
-<figure><img src=".gitbook/assets/Private.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Private.jpg" alt=""><figcaption></figcaption></figure>
 
-Simply set the toggle to ‘Yes’ and enter the client IDs (Customer IDs), for more information on how to obtain Customer IDs, please [click here](faqs.md#how-do-i-find-a-customer-id).
+Simply set the toggle to ‘Yes’ and enter the client IDs (Customer IDs), for more information on how to obtain Customer IDs, please [click here](./#how-do-i-find-a-customer-id).
 
 You will still need to submit your app for approval and once approved, the app will be visible for the customer to install.
 
-For more information on listing your app, please [click here.](listing-your-app.md)
+For more information on listing your app, please [click here.](../listing-your-app.md)
 
 
 
@@ -76,7 +76,7 @@ The email address you entered when registering for the Developer Portal, is used
 
 As you cannot change the email address that registered your organisation, we have now provided the ability to supply an alternative ‘Notifications Email’.
 
-![](<.gitbook/assets/image (107).png>)
+![](<../.gitbook/assets/image (107).png>)
 
 If you want to setup an alternative email address, simply go to ‘[Organisation](https://developers.reapit.cloud/settings/organisation)’ page.&#x20;
 
@@ -88,7 +88,7 @@ If you want to setup an alternative email address, simply go to ‘[Organisation
 
 To invite members to join your organisation, simply click on the ‘Invite Developer’ button from the '[Members](https://developers.reapit.cloud/settings/members)' page in the DeveloperPortal. The recipient will receive your invitation via email and will have the option to reject or accept. You can track the status of any members in the ‘Members’ table:
 
-<figure><img src=".gitbook/assets/image (113).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (113).png" alt=""><figcaption></figcaption></figure>
 
 Within the members section you will also have the ability to disable members and to set other members as ‘Admins’.
 
@@ -119,9 +119,9 @@ Using the ‘Private App’ section on your app listing, you will need to provid
 
 Once the app has been approved it will be available to the selected agent(s) to ‘Install’ from the AppMarket.
 
-Please [click here](faqs.md#how-do-i-find-a-customer-id) for information on finding the Customer ID\
-Please [click here](faqs.md#listing-your-app) for more information on Listing your app\
-Please [click here](faqs.md#app-approvals) for more information on App Approvals
+Please [click here](./#how-do-i-find-a-customer-id) for information on finding the Customer ID\
+Please [click here](./#listing-your-app) for more information on Listing your app\
+Please [click here](./#app-approvals) for more information on App Approvals
 
 ## **Developer Edition of AgencyCloud**
 
@@ -141,7 +141,7 @@ You cannot update negotiator information using the desktop CRM as Negotiator inf
 
 When you are ready to list your app in the AppMarket, either publicly or as a private app, it will first need to be submitted for approval privately to our testing environment 'RES'. \
 \
-First, ensure your app is ready to be listed, please [click here](listing-your-app.md) to see a guide on what information is required.&#x20;
+First, ensure your app is ready to be listed, please [click here](../listing-your-app.md) to see a guide on what information is required.&#x20;
 
 Once the content of your app has been added:&#x20;
 
@@ -196,7 +196,7 @@ This setup process is usually completed within 24-48 hours. Once the information
 
 You can find information regarding pricing using either the documentation listed below or on the [Analytics](https://developers.reapit.cloud/analytics/costexplorer) page.
 
-Please [click here](developer-terms-and-conditions.md#schedule-2-fees) to see pricing information on our Terms and Conditions
+Please [click here](../developer-terms-and-conditions.md#schedule-2-fees) to see pricing information on our Terms and Conditions
 
 ### I have looked at your pricing information and I have a query - who do I speak to?
 
@@ -217,7 +217,7 @@ See an example below for user [hollyjoyphillips+res@gmail.com](mailto:hollyjoyph
 * Customer ID ‘clientCode’
 * Office ID ‘officeId’
 
-![](.gitbook/assets/idtoken.png)
+![](../.gitbook/assets/idtoken.png)
 
 For more information on Reapit Connect, please click [here](https://foundations-documentation.reapit.cloud/api/reapit-connect)
 
@@ -306,7 +306,7 @@ If you have setup a webhook for 'Application Install', you will receive a payloa
 
 **Example payload:**
 
-![](<.gitbook/assets/image (102).png>)
+![](<../.gitbook/assets/image (102).png>)
 
 For more information on webhooks, please click [here](https://foundations-documentation.reapit.cloud/api/webhooks)
 
@@ -324,15 +324,15 @@ On your app listing in the Developer Portal (Apps > My Apps > Select App > Insta
 
 **Example Installations table:**
 
-<figure><img src=".gitbook/assets/image (127).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (127).png" alt=""><figcaption></figcaption></figure>
 
 ## AppMarket
 
 ### Why is my app not showing in the AppMarket?&#x20;
 
-Before your app can be listed in the AppMarket, it first needs to be submitted for approval, please see more information on listing your app [here](listing-your-app.md).&#x20;
+Before your app can be listed in the AppMarket, it first needs to be submitted for approval, please see more information on listing your app [here](../listing-your-app.md).&#x20;
 
-If your app has been approved and you have chosen to list it privately, ensure the Customer ID you have provided in the 'Private Apps' section is correct. For more information on obtaining a Customer ID, please click [here](faqs.md#how-do-i-find-a-customer-id).&#x20;
+If your app has been approved and you have chosen to list it privately, ensure the Customer ID you have provided in the 'Private Apps' section is correct. For more information on obtaining a Customer ID, please click [here](./#how-do-i-find-a-customer-id).&#x20;
 
 ### Launching an App
 
@@ -363,7 +363,7 @@ As an example, a single request might be to call our ‘Properties’ endpoint (
 
 1-5 Endpoints & 1 Request
 
-![](.gitbook/assets/api1.png)
+![](../.gitbook/assets/api1.png)
 
 When you increase the amount of requests you make and the number of endpoints you are using, the cost of an API call will decrease.
 
@@ -371,7 +371,7 @@ For example, multiple requests would be calculated as follows:
 
 1-5 Endpoints & 50,000 Requests
 
-![](.gitbook/assets/api2.png)
+![](../.gitbook/assets/api2.png)
 
 This is because you will be charged a certain rate for the first 1000 requests, a reduced rate for the next 2500 and so on.
 
@@ -407,7 +407,7 @@ This is apparent if you were, for example, only interested in associated appoint
 
 Therefore, it’s important to note that whilst using this mechanism can result in improved application performance with less API interaction code required, when embedding data, you will not know how many pages of data (requests) are required and therefore will not be able to forecast the API consumption accurately.
 
-![](.gitbook/assets/Embed.png)
+![](../.gitbook/assets/Embed.png)
 
 ### My app is live and has been installed, how do I request a new permission?
 
@@ -417,7 +417,7 @@ When you select a new permission and submit your changes for ‘Review’, a mod
 
 Please note, if you have submitted any other changes, the normal approval process will still be applied.
 
-For more information, please [click here](listing-your-app/app-permissions.md).
+For more information, please [click here](../listing-your-app/app-permissions.md).
 
 ### I have an issue that requires sharing private/sensitive information that I do not wish to be made public? &#x20;
 
@@ -455,7 +455,7 @@ Only 'ReapitUserAdmins' (a 'Level 2' user in AgencyCloud) or a 'MarketplaceAdmin
 
 A user can check their user role by going to the profile icon (top right) and clicking on 'Profile' from within the AppMarket.&#x20;
 
-<figure><img src=".gitbook/assets/image (115).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (115).png" alt=""><figcaption></figcaption></figure>
 
 ### Are your resource identifiers globally unique?
 
@@ -465,7 +465,7 @@ Resource identifiers are unique to a specific customer and _not_ globally unique
 
 * Go to ‘[My Apps](https://developers.reapit.cloud/apps)’ and select the app you want to delete and click ‘Delete App’ from the left-hand panel:
 
-![](<.gitbook/assets/image (130).png>)
+![](<../.gitbook/assets/image (130).png>)
 
 * Confirming deletion by clicking ‘Delete’.&#x20;
 

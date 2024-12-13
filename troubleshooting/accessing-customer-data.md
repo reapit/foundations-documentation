@@ -8,16 +8,15 @@ When making a request to our Platform API’s using the Client Credentials Flow 
 
 How to verify the Customer ID:
 
-* Ask the agent to confirm their Customer ID – click [here ](../faqs.md#how-do-i-find-a-customer-id)for more information on how to obtain the Customer ID
-* View the [email ](../faqs.md#installation)notification you received when the app was installed 
-* View the [installations ](../faqs.md#installations-table)table on your app listing
-* If you had setup a [webhook ](../faqs.md#webhooks)for application.install, the payload will have included the ‘customerId’
+* Ask the agent to confirm their Customer ID – click [here ](../faqs/#how-do-i-find-a-customer-id)for more information on how to obtain the Customer ID
+* View the [email ](../faqs/#installation)notification you received when the app was installed&#x20;
+* View the [installations ](../faqs/#installations-table)table on your app listing
+* If you had setup a [webhook ](../faqs/#webhooks)for application.install, the payload will have included the ‘customerId’
 
-or 
+or&#x20;
 
-The Reapit Customer ID you have provided in your ‘reapit-customer’ header has not yet installed your application from the AppMarket. The installation process is the step that grants you access to live data \(not Sandbox\).
+The Reapit Customer ID you have provided in your ‘reapit-customer’ header has not yet installed your application from the AppMarket. The installation process is the step that grants you access to live data (not Sandbox).
 
-If you are a Reapit Agent looking to interact with your own data, you will still need to list \(privately\) and install your own app.
+If you are a Reapit Agent looking to interact with your own data, you will still need to list (privately) and install your own app.
 
 For more information on how to list your app in the AppMarket, please click [here](https://foundations-documentation.reapit.cloud/listing-your-app)
-
