@@ -6,7 +6,7 @@ description: A guide to assist website developers when working with the Foundati
 
 #### Quick Start
 
-To get a property feed up and running within a couple of minutes, we suggest you first watch [this short video](https://www.youtube.com/watch?v=EJWB5u1ja\_U) and visit our [code examples repo](https://github.com/reapit/foundations-code-examples) with boilerplate examples in Node, PHP and .NET.&#x20;
+To get a property feed up and running within a couple of minutes, we suggest you first watch [this short video](https://www.youtube.com/watch?v=EJWB5u1ja_U) and visit our [code examples repo](https://github.com/reapit/foundations-code-examples) with a boilerplate example in Node.
 
 It is important to note though, these guides are intended to get you up and running as quickly as possible. You should optimise your implementation to minimise API consumption charges and to give the best UX for your customers.
 
