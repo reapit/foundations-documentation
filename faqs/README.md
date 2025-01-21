@@ -125,12 +125,6 @@ Please [click here](./#app-approvals) for more information on App Approvals
 
 ## **Developer Edition of AgencyCloud**
 
-### I need help with using AgencyCloud (Desktop CRM)
-
-We do not provide online or telephone support for the Developer Edition of AgencyCloud.
-
-Please [click here](https://developers.dev.paas.reapit.cloud/developer-edition-guide.pdf) to view the Developer Edition Guide
-
 ### How can I update details of a Negotiator in AgencyCloud using the desktop application?&#x20;
 
 You cannot update negotiator information using the desktop CRM as Negotiator information is part of the the system configuration and is not available in the Developer Edition. However, you can use the Negotiators `PATCH`endpoint to update the required fields. Once you have made a valid request, you may need to restart AgencyCloud to see the changes reflected.&#x20;
