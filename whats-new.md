@@ -1,11 +1,241 @@
 ---
 description: >-
-  We are constantly working to improve your experience with the Platform. Have a
-  look to see what new features and fixes have been released.
-hidden: true
+  We are constantly working to improve your experience with the Public APIs.
+  Have a look to see what new features and fixes have been released.
 ---
 
 # What’s New
+
+## Feb 2024
+
+### Properties
+
+**Utilities**
+
+You can now retrieve (GET) and update (PATCH) the type ‘other’ for the following utilities for the endpoint ‘/properties/{id}/utilities’:
+
+* Water
+* Electrical
+* Sewerage
+* Heating
+* Broadband
+* Parking
+
+&#x20;
+
+<figure><img src=".gitbook/assets/1.png" alt=""><figcaption><p>Example of ‘Other’ selected as a type for Electricity in the Reapit CRM</p></figcaption></figure>
+
+<figure><img src=".gitbook/assets/2.png" alt=""><figcaption><p>Example payload showing ‘other’ as a type for electricity</p></figcaption></figure>
+
+&#x20;**Accessibility, Rights & Restrictions and Flood & Erosion Risk**
+
+The above additional information is now surfaced on the 'GET /properties' & 'GET /properties/{id}' endpoints:
+
+<figure><img src=".gitbook/assets/3.png" alt=""><figcaption><p>Example information in Reapit CRM</p></figcaption></figure>
+
+<figure><img src=".gitbook/assets/4.png" alt=""><figcaption><p>Example payload</p></figcaption></figure>
+
+&#x20;
+
+**Property Checks**
+
+Default property checks are now returned via '/properties/{id}/checks':
+
+<figure><img src=".gitbook/assets/5.png" alt=""><figcaption><p>Example of the default Pre-instruction property checks in the Reapit CRM</p></figcaption></figure>
+
+<figure><img src=".gitbook/assets/6.png" alt=""><figcaption><p>Example payload </p></figcaption></figure>
+
+**Sub Agent Fee**
+
+Sub Agent fee information is now returned on 'GET /properties' and 'GET /properties/{id}' under ‘`subAgentTerms`’:
+
+<figure><img src=".gitbook/assets/7.png" alt=""><figcaption><p>Example screen of Sub Agent information in the Reapit CRM</p></figcaption></figure>
+
+<figure><img src=".gitbook/assets/8.png" alt=""><figcaption><p>Example payload</p></figcaption></figure>
+
+
+
+**Sales Progressor**
+
+A new sub resource on the properties endpoint ‘GET /properties/{id}/negotiators’ has been added to support surfacing a sales progressor attached to a property (type : `salesprogressor`):
+
+<figure><img src=".gitbook/assets/9.png" alt=""><figcaption><p>Example screen in Reapit CRM of ‘John Smith’ as a ‘Sales Progressor’</p></figcaption></figure>
+
+<figure><img src=".gitbook/assets/10.png" alt=""><figcaption><p>Example payload</p></figcaption></figure>
+
+
+
+**Withdrawn Reason**
+
+The reason when a property is made ‘Withdrawn’, is now available via the properties endpoint under '`reason`':
+
+<figure><img src=".gitbook/assets/11.png" alt=""><figcaption><p>Example ‘Withdrawal Details’ screen in Reapit CRM</p></figcaption></figure>
+
+<figure><img src=".gitbook/assets/12.png" alt=""><figcaption><p>Example payload</p></figcaption></figure>
+
+&#x20;
+
+**Modern Method of Auction (MMoA)**
+
+The new disposal type (`modernMethodOfAuction`) added to the Reapit CRM, is now surfaced in the properties payload:
+
+<figure><img src=".gitbook/assets/13.png" alt=""><figcaption><p>Example of ‘Modern Method of Auction’ selected as disposal type in the Reapit CRM</p></figcaption></figure>
+
+<figure><img src=".gitbook/assets/14.png" alt=""><figcaption><p>Example payload</p></figcaption></figure>
+
+&#x20;
+
+**Gross Yield and Estimated Monthly Rental Value**
+
+Both the Gross Yield ‘`grossYieldPercentage`’ & Est Monthly Rental Value ‘`estimatedMonthlyRetailValue`’ are now available in the Properties payload:
+
+<figure><img src=".gitbook/assets/15.png" alt=""><figcaption><p>Example financial screen showing the two fields in the Reapit CRM</p></figcaption></figure>
+
+<figure><img src=".gitbook/assets/16.png" alt=""><figcaption><p>Example Payload</p></figcaption></figure>
+
+&#x20;
+
+**Keywords**
+
+We now support POST\PATCH for property keywords:
+
+<figure><img src=".gitbook/assets/17.png" alt=""><figcaption><p>Selected keywords in the Reapit CRM</p></figcaption></figure>
+
+<figure><img src=".gitbook/assets/18.png" alt=""><figcaption><p>Example payload</p></figcaption></figure>
+
+**Note**: This should be used in conjunction with 'GET /departments' configuration endpoint.
+
+&#x20;
+
+**Property Checklist**
+
+A new sub resource' GET /properties/{id}/checklists' has been added under the Properties endpoint to support customisable property checklists:
+
+<figure><img src=".gitbook/assets/19.png" alt=""><figcaption><p>New endpoint</p></figcaption></figure>
+
+<figure><img src=".gitbook/assets/20.png" alt=""><figcaption><p>Example ‘Checklist’ screen in the Reapit CRM</p></figcaption></figure>
+
+<figure><img src=".gitbook/assets/21.png" alt=""><figcaption><p>Example payload</p></figcaption></figure>
+
+### Certificates
+
+**New endpoint**
+
+We have introduced a new endpoint to support retrieving certificates without needing to specify a property ID:
+
+<figure><img src=".gitbook/assets/22.png" alt=""><figcaption><p>New endpoints</p></figcaption></figure>
+
+<figure><img src=".gitbook/assets/23.png" alt=""><figcaption><p>Example certificate screen in the Reapit CRM</p></figcaption></figure>
+
+<figure><img src=".gitbook/assets/24.png" alt=""><figcaption><p>Example payload</p></figcaption></figure>
+
+**Note**: This should be used in conjunction with the new Configuration endpoint 'GET /configuration/certificateTypes’.
+
+
+
+**Status ID**
+
+It is now possible to POST\PATCH the ‘`statusId`’ for a certificate:
+
+<figure><img src=".gitbook/assets/25.png" alt=""><figcaption><p>Example payload</p></figcaption></figure>
+
+**Note**: This should be used in conjunction with the new configuration endpoint 'GET /configuration/certificateTypes/{typeId}/statuses’
+
+&#x20;
+
+**Additional Descriptions Fields**
+
+If additional subscription fields are added via the Marketing screen in the Reapit CRM, they are now returned via the 'GET /Properties/{id}/marketing endpoint':
+
+<figure><img src=".gitbook/assets/26.png" alt=""><figcaption><p>Example of ‘Extra Descriptions’ screen in the Reapit CRM</p></figcaption></figure>
+
+<figure><img src=".gitbook/assets/27.png" alt=""><figcaption><p>Example Payload</p></figcaption></figure>
+
+### Alarms
+
+A new sub resource on Properties to support GET/POST /PATCH for ‘Alarms’:
+
+<figure><img src=".gitbook/assets/28.png" alt=""><figcaption><p>New endpoints</p></figcaption></figure>
+
+<figure><img src=".gitbook/assets/29.png" alt=""><figcaption><p>Alarms screen in the Reapit CRM</p></figcaption></figure>
+
+<figure><img src=".gitbook/assets/30.png" alt=""><figcaption><p>Example Payload</p></figcaption></figure>
+
+**Note**: This should be used in conjunction with the new configuration endpoints to support alarms:
+
+<figure><img src=".gitbook/assets/31.png" alt=""><figcaption><p>Configuration ednpoints for Alarms </p></figcaption></figure>
+
+### Companies
+
+You can now identify staff members that are full contacts via the links collection on the 'GET /companies/{id}/staffMembers' endpoint:
+
+<figure><img src=".gitbook/assets/32.png" alt=""><figcaption><p>Example of a contact and a non-contact registered as staff members on a company record in the Reapit CRM</p></figcaption></figure>
+
+<figure><img src=".gitbook/assets/33.png" alt=""><figcaption><p>Example payload showing the difference between the 2 staff members</p></figcaption></figure>
+
+**Identifying the main staff member**
+
+In the Reapit CRM, you can set a staff member as the main contact. This is now reflected in the payload via ‘`isMainContact`’ set as true:
+
+<figure><img src=".gitbook/assets/34.png" alt=""><figcaption><p>Example of ‘Staff Member 1’ set as the main contact</p></figcaption></figure>
+
+<figure><img src=".gitbook/assets/35.png" alt=""><figcaption><p>Example payload</p></figcaption></figure>
+
+### Configuration
+
+**Contact Categories**
+
+It is now easier to identify the parent group of a contact category, as we have introduced a new field ‘`value`’ under the ‘GET /configuration/contactCategories’:
+
+<figure><img src=".gitbook/assets/36.png" alt=""><figcaption><p>Example list of contact categories in the Reapit CRM</p></figcaption></figure>
+
+<figure><img src=".gitbook/assets/37.png" alt=""><figcaption><p>Example payload</p></figcaption></figure>
+
+### Tenancies
+
+The `'currency'` value is now surfaced on a tenancy (previously was only available on the  Properties, Applicants or Offer endpoints):
+
+<figure><img src=".gitbook/assets/38.png" alt=""><figcaption><p>Example payload showing the ‘currency’ field</p></figcaption></figure>
+
+
+
+**Inspection Frequency**
+
+Initial Inspection Frequency (`initialInspectionFrequencyInDays`) & Inspection Frequency (`regularInspectionFrequencyInDays`) are now available via the Tenancies endpoint:
+
+<figure><img src=".gitbook/assets/39.png" alt=""><figcaption><p>Example fields in the Reapit CRM</p></figcaption></figure>
+
+<figure><img src=".gitbook/assets/40.png" alt=""><figcaption><p>Example Payload</p></figcaption></figure>
+
+### Landlords
+
+**Preferences**&#x20;
+
+A Landlords ‘Send Statement’ preference is now available via 'GET /landlords/{id}':
+
+<figure><img src=".gitbook/assets/41.png" alt=""><figcaption><p>Send statement preferences in the Reapit CRM</p></figcaption></figure>
+
+<figure><img src=".gitbook/assets/42.png" alt=""><figcaption><p>Example payload</p></figcaption></figure>
+
+### Enquiries
+
+**Negotiator ID**
+
+You can now retrieve, create and update (GET/POST/PATCH) a ‘`negotiatorId`’ to the Enquires endpoint to associate a specific negotiator:
+
+<figure><img src=".gitbook/assets/1a.png" alt=""><figcaption><p>Example 'negotiatorId' field in the payload </p></figcaption></figure>
+
+### Tasks
+
+**New parameter**
+
+You can now run a partial (like) search/filter based on the ‘text’ field:
+
+<figure><img src=".gitbook/assets/43.png" alt=""><figcaption><p>Example 'text' filter</p></figcaption></figure>
+
+<figure><img src=".gitbook/assets/44.png" alt=""><figcaption><p>Example payload</p></figcaption></figure>
+
+
 
 ## 30/04/24
 
