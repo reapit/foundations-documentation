@@ -137,4 +137,4 @@ To complete your Organisation information, click on ‘Settings’ and select �
 * About Us – The section will be displayed on any app listing in the AppMarket in addition to information about the app.&#x20;
 * Company Address
 
-In order to list your App, please see the guidelines within the '[Listing your App](https://app.gitbook.com/@reapit-1/s/reapit-foundations/\~/drafts/-MQMdhdEIqniO2BQbO\_g/listing-your-app)' section&#x20;
+In order to list your App, please see the guidelines within the '[Listing your App](listing-your-app.md)' section&#x20;
