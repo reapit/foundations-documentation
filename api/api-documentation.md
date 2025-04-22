@@ -4,13 +4,9 @@ description: Complete technical guidance on how to work with the Foundations RES
 
 # REST API
 
-{% hint style="warning" %}
-The Foundations REST API will in-time replace our existing REST and SOAP web services, however, **the existing REST and SOAP web services are not at this time being deprecated** and will continue to operate side-by-side until appropriate notice given.
-{% endhint %}
-
 ## Introduction
 
-The Foundations API is organised around [REST](http://en.wikipedia.org/wiki/Representational\_State\_Transfer). Our API has predictable resource-oriented URLs using standard HTTP response codes and verbs. All requests and responses, including errors, are [JSON-encoded](http://www.json.org/).
+The Foundations API is organised around [REST](http://en.wikipedia.org/wiki/Representational_State_Transfer). Our API has predictable resource-oriented URLs using standard HTTP response codes and verbs. All requests and responses, including errors, are [JSON-encoded](http://www.json.org/).
 
 You can immediately start testing our APIs in [sandbox mode](api-documentation.md#sandbox-mode) by using our [Interactive API Explorer](https://developers.reapit.cloud/swagger). Please see our [help page](https://marketplace.reapit.cloud/developer/help) for support and information on preview / upcoming changes.
 
@@ -191,7 +187,7 @@ To access the sandbox, you just need to be registered as a developer on our Port
 
 The Foundations platform exclusively works with UTC date times to allow us to present a uniform interface and ensure that behavior remains predictable, regardless of your application or user timezone.
 
-Our APIs enforce that any date information that your application issues to us adheres to the [ISO-8601](https://www.iso.org/iso-8601-date-and-time-format.html) format. If you provide a time component, then it must be accompanied by a [time zone designator](https://en.wikipedia.org/wiki/ISO\_8601#Time\_zone\_designators). If you provide a request body, query string or header that does not adhere to this standard, you will receive a validation error reporting the problem. Any date times issued from our endpoints will be returned to you in the same format.
+Our APIs enforce that any date information that your application issues to us adheres to the [ISO-8601](https://www.iso.org/iso-8601-date-and-time-format.html) format. If you provide a time component, then it must be accompanied by a [time zone designator](https://en.wikipedia.org/wiki/ISO_8601#Time_zone_designators). If you provide a request body, query string or header that does not adhere to this standard, you will receive a validation error reporting the problem. Any date times issued from our endpoints will be returned to you in the same format.
 
 Some of the fields we provide are date-only and have no time component. Date only fields will not accept a time component in a request and will not include a time component in their response. You can see which fields these are by examining the model documentation and example responses provided by our [Interactive API Explorer](https://developers.reapit.cloud/swagger).
 
@@ -304,7 +300,7 @@ POST /documents
 }
 ```
 
-To watch a short video on pre-signed URLs, please [click here](https://www.youtube.com/watch?v=lBYzD7T5\_bQ).
+To watch a short video on pre-signed URLs, please [click here](https://www.youtube.com/watch?v=lBYzD7T5_bQ).
 
 ### Request validation
 
@@ -330,7 +326,7 @@ Should your request not pass the validation requirements of the endpoint, then y
 
 Our APIs serve Platform functionality and data to various different applications and users at the same time, which needs to be managed carefully to avoid concurrency problems.
 
-In some systems, when multiple systems perform updates at the same time without knowledge of each others changes, you can be left with the problem of **lost updates** whereby the last update "wins" and previous updates are lost. Our APIs enforce o[ptimistic concurrency control](https://en.wikipedia.org/wiki/Optimistic\_concurrency\_control) to help avoid this problem.
+In some systems, when multiple systems perform updates at the same time without knowledge of each others changes, you can be left with the problem of **lost updates** whereby the last update "wins" and previous updates are lost. Our APIs enforce o[ptimistic concurrency control](https://en.wikipedia.org/wiki/Optimistic_concurrency_control) to help avoid this problem.
 
 We use [entity tags](https://tools.ietf.org/html/rfc7232#section-2.3) as an indicator of the current version of any resource returned from our APIs and whenever a singular representation is served by any of our `GET` endpoints, it will include `eTag` in the response header. For convenience, we also include this as an `_eTag` attribute in the response for each object.
 
@@ -469,7 +465,7 @@ We support querying using up to eight different filter operations, depending on 
 
 ## Hypermedia
 
-Our APIs are **REST level 3**[ ](https://restfulapi.net/richardson-maturity-model/)and implement [hypermedia controls](https://restfulapi.net/richardson-maturity-model/) to improve the developer experience of using our platform. Hypermedia makes our APIs self documenting, easier to use and aids discovery. We adopt the [HAL hypertext application language](http://stateless.co/hal\_specification.html) to serve as our message format.
+Our APIs are **REST level 3**[ ](https://restfulapi.net/richardson-maturity-model/)and implement [hypermedia controls](https://restfulapi.net/richardson-maturity-model/) to improve the developer experience of using our platform. Hypermedia makes our APIs self documenting, easier to use and aids discovery. We adopt the [HAL hypertext application language](http://stateless.co/hal_specification.html) to serve as our message format.
 
 ### Links
 
