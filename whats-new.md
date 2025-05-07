@@ -6,7 +6,41 @@ description: >-
 
 # What’s New
 
-## Feb 2024
+## April 2025
+
+### Properties
+
+EPC ‘`created`’ date is now exposed within a property payload:&#x20;
+
+<figure><img src=".gitbook/assets/WN07051.png" alt=""><figcaption><p>EPC screen in the Reapit CRM</p></figcaption></figure>
+
+<figure><img src=".gitbook/assets/WN07052.png" alt=""><figcaption><p>Example payload showing the ‘<code>created</code>’ date</p></figcaption></figure>
+
+### Tenancies
+
+A new field ‘`deregisteredDate`’ has been added to the tenancies endpoint to track when a deposit is no longer protected.
+
+This is available in both GET & PATCH:
+
+<figure><img src=".gitbook/assets/WN07053.png" alt=""><figcaption><p>Tenancy Deposit Detail screen in Reapit CRM</p></figcaption></figure>
+
+<figure><img src=".gitbook/assets/WN07054.png" alt=""><figcaption><p>Payload showing the ‘<code>deregisteredDate</code>’ field</p></figcaption></figure>
+
+### Conveyancing
+
+It is now possible to retrieve the details of the solicitor dealing with an offer through the Conveyancing endpoint:
+
+The information is listed under ‘`vendorSolicitorContact`’:
+
+<figure><img src=".gitbook/assets/WN07055.png" alt=""><figcaption><p>Example offer screen in the Reapit CRM showing the main staff contact for a Solicitor/Company</p></figcaption></figure>
+
+&#x20;
+
+<figure><img src=".gitbook/assets/WN07056.png" alt=""><figcaption><p>Example payload showing 'vendorSolicitorContact'</p></figcaption></figure>
+
+
+
+## Feb 2025
 
 ### Properties
 
