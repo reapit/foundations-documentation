@@ -1,5 +1,6 @@
 ---
 description: Infrastructure As A Service platform
+hidden: true
 ---
 
 # IaaS (Coming Soon)
