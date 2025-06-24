@@ -191,6 +191,8 @@ Enquiries (Internet Registrations) represent a potential sales or lettings lead 
 
 Identity checks represent the information captured to verify the identity of a [contact](./#contact) or [company](./#company). Agents must adhere to anti-money laundering regulations and are required to capture proof of identity and address for their customers. Identity checks can store textual information such as passport number as well as file assets associated as [documents](./#document) (such as scanned copies).
 
+When a company Id is used to retrieve an identity check, the company Id is labelled `contactId` in the returning payload.
+
 ### Journal entry
 
 Journal entries indicate that an event has occurred for an associated entity. For example, if a [property](./#property) asking price was changed, this event would be recorded as a timestamped journal entry. Journal entries are used to drive the various activity feeds in our CRM systems.
