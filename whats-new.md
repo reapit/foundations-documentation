@@ -6,6 +6,52 @@ description: >-
 
 # What’s New
 
+## June 2025
+
+### Properties
+
+`matchTo` prices are exposed (GET) and can be edited (PATCH) within the property payload:
+
+<figure><img src=".gitbook/assets/image (131).png" alt=""><figcaption><p>Financial and Agency screen in the CRM</p></figcaption></figure>
+
+
+
+<figure><img src=".gitbook/assets/image (132).png" alt=""><figcaption><p>Example payload showing <code>matchPriceTo</code> retrieval</p></figcaption></figure>
+
+### Properties
+
+You can now retrieve (GET) and update (PATCH) the following licencing fields below for the endpoint `/properties`:
+
+* Licence Compliance Status
+* Section 257 Property
+* Article 4
+* Licence Type Granted
+* Licence Reference No.
+* Restrictions
+* Restrictions Details
+
+<figure><img src=".gitbook/assets/image (142).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src=".gitbook/assets/image (143).png" alt=""><figcaption><p>Example of new licencing fields available on the <code>Licencing</code> tab via <code>Attributes</code> screen in the CRM</p></figcaption></figure>
+
+<figure><img src=".gitbook/assets/image (139).png" alt=""><figcaption><p>Example payload showing new licencing fields available for PATCH and GET on <code>properties</code> endpoint.</p></figcaption></figure>
+
+### Companies
+
+Company `Commission paid to agent on a supplier invoices` percentage value can now be retrieved (GET) from a Company record and exposed on the Companies payload:
+
+<figure><img src=".gitbook/assets/image (140).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src=".gitbook/assets/image (134).png" alt=""><figcaption><p>Example payload showing an <code>agentCommissionPercentage</code> from the Companies endpoint.</p></figcaption></figure>
+
+### Companies
+
+Company `Referral Fee` amount can be retrieved (GET) from a Company record  and exposed on the Companies payload:
+
+<figure><img src=".gitbook/assets/image (135).png" alt=""><figcaption><p><code>Referral fee</code> amount displayed on a Company record in the CRM</p></figcaption></figure>
+
+<figure><img src=".gitbook/assets/image (136).png" alt=""><figcaption><p>Example payload showing a <code>referralFee</code> amount when calling the Companies endpoint</p></figcaption></figure>
+
 ## April 2025
 
 ### Properties
