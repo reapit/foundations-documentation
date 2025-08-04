@@ -16,9 +16,7 @@ description: >-
 
 Version Date: 1st September 2025
 
-
-
-1 DEFINITIONS AND INTERPRETATION&#x20;
+### 1 DEFINITIONS AND INTERPRETATION&#x20;
 
 1.1 The following words and expressions have the following meaning:&#x20;
 
@@ -38,7 +36,7 @@ Version Date: 1st September 2025
 | Consequential Loss                                       | <p>includes any loss of revenue, loss of profit, loss or corruption of data, loss of bargain, loss of actual or anticipated savings or business, loss of value of equipment, loss of opportunities (including opportunities to enter arrangements with third parties), and any other form of consequential, incidental, exemplary, punitive, special or indirect loss, but in the case of Reapit expressly excludes loss of contract, loss of actual or anticipated business and loss of opportunities in connection with or with respect to any future or prospective clients. </p><p> </p>                                                                                                                                                                                          |
 | Contract Year                                            | <p>means each period of one year commencing on the Commencement Date (for the first Contract Year) or each anniversary of the Commencement Date.  </p><p> </p>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
 | Data                                                     | <p>means any data that a Developer can access in an Application or otherwise by accessing the Platform and may include Personal Data. </p><p> </p>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
-| Data Protection Laws                                     | <p>means any applicable laws and regulations relating to privacy or the use or processing of data relating to natural persons, including: (a) the 2018 Data Protection Act (the DPA including the UK GDPR;) (b) the Privacy and Electronic Communications (EC Directive) Regulations 2003; and (c) the General Data Protection Regulation (EU Regulation 2016/679) (GDPR); and (d) any laws or regulations ratifying, implementing, adopting, supplementing or replacing the DPA, UK GDPR, or GDPR and in each case as amended or replaced from time to time, together with any binding guidance and codes of practice issued from time to time by relevant supervisory authorities. </p><p> </p>                                                                                     |
+| Data Protection Laws                                     | <p>means any applicable laws and regulations relating to privacy or the use or processing of data relating to natural persons, including: (a) the 2018 Data Protection Act (the <strong>DPA</strong> including the <strong>UK GDPR</strong>;) (b) the Privacy and Electronic Communications (EC Directive) Regulations 2003; and (c) the General Data Protection Regulation (EU Regulation 2016/679) (<strong>GDPR</strong>); and (d) any laws or regulations ratifying, implementing, adopting, supplementing or replacing the DPA, UK GDPR, or GDPR and in each case as amended or replaced from time to time, together with any binding guidance and codes of practice issued from time to time by relevant supervisory authorities. </p><p> </p>                                  |
 | Developer                                                | <p>means the entity identified as such in the Registration Details. </p><p> </p>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 | Developer Edition                                        | <p>means a single user downloadable version of the Reapit CRM software for the purpose of testing integrations and Applications in the Developer environment by the Developer. </p><p> </p>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
 | <p>Developer Edition Licence </p><p> </p>                | means a non-exclusive, royalty-free, worldwide licence to access a Developer Edition for the purpose of developing and testing Applications.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
@@ -80,7 +78,7 @@ Version Date: 1st September 2025
 
 
 
-**2 PLATFORM AND APPLICATIONS**&#x20;
+### **2 PLATFORM AND APPLICATIONS**&#x20;
 
 2.1 Reapit hereby grants the Developer access to the Platform for the purpose of:&#x20;
 
@@ -102,7 +100,7 @@ Version Date: 1st September 2025
 
 2.2.5 bears sole responsibility for integrating its systems with the App Marketplace and any request for technical support or assistance beyond standard documentation will require a separate written agreement and may incur additional Fees.&#x20;
 
-2.3 Working with other developers&#x20;
+#### 2.3 Working with other developers&#x20;
 
 2.3.1 The Developer may, solely at its own risk, permit other developers to work on an Application on behalf of the Developer, provided that such other developer enters into a developer agreement on the same terms as this Agreement with Reapit.&#x20;
 
@@ -116,7 +114,7 @@ outside an Approved Application and the purposes of that Approved Application. &
 
 2.3.3 All Applications must be owned, managed, and operated solely by the Developer using its approved account. &#x20;
 
-2.4 Application Development-Requirements&#x20;
+#### 2.4 Application Development-Requirements&#x20;
 
 2.4.1 Each Application must be developed in accordance with:&#x20;
 
@@ -132,7 +130,7 @@ and the relevant Application User Terms must comply with the Application User Te
 
 2.4.4 Each Application must consume APIs in line with the description of the Application.&#x20;
 
-2.5 Application Approval-First Approval&#x20;
+#### 2.5 Application Approval-First Approval&#x20;
 
 2.5.1 Each Application must be submitted to Reapit for approval:&#x20;
 
@@ -154,7 +152,7 @@ and the relevant Application User Terms must comply with the Application User Te
 
 2.5.5 For the avoidance of doubt, no Application will be listed by Reapit in the App Marketplace unless it has been explicitly approved by Reapit in writing and such approval will never be deemed. &#x20;
 
-2.6 Reapit’s Right of Approvals and Review-After First Approval&#x20;
+#### 2.6 Reapit’s Right of Approvals and Review-After First Approval&#x20;
 
 2.6.1 Notwithstanding that an Application has been approved by Reapit in accordance with the terms of clause 2.5, Reapit reserves the right to:&#x20;
 
@@ -184,7 +182,7 @@ and the relevant Application User Terms must comply with the Application User Te
 
 (b) induce or attempt to induce any Reapit employees, contractors, or subcontractors to terminate or alter their business relationship with Reapit.&#x20;
 
-3 FEES AND PAYMENT&#x20;
+### 3 FEES AND PAYMENT&#x20;
 
 3.1 Reapit will calculate the Fees in accordance with Schedules 2 and 4, and invoice the Fees to the Developer in accordance with this clause 3. The Developer must pay Reapit the Fees. The Fees will not include value added tax or any locally applicable equivalent sales tax, which the Developer must pay in addition to the Fees at the prevailing rate, and in the manner prescribed by applicable law. Without prejudice to the foregoing, Reapit reserves the right to invoice the Developer for any API calls in excess of the Monthly API Call Limit set out in Schedule 2.&#x20;
 
@@ -214,7 +212,7 @@ and the relevant Application User Terms must comply with the Application User Te
 
 The Developer must provide Reapit or its auditors with reasonable access to its premises, systems, records, and personnel for such purposes. Where discrepancies are identified, the Developer must immediately rectify non-compliance and reimburse Reapit for any underpaid amounts or losses incurred.&#x20;
 
-4 INTELLECTUAL PROPERTY RIGHTS AND INDEMNITY&#x20;
+### 4 INTELLECTUAL PROPERTY RIGHTS AND INDEMNITY&#x20;
 
 4.1 All Intellectual Property Rights belonging to a Party prior to the Commencement Date, including all enhancements and modifications to those Intellectual Property Rights, will remain vested in that Party. Unless expressly agreed in writing in an Order Form, the Parties do not intend that the ownership of any Intellectual Property Rights will transfer from one Party to another as a result of entering into this Agreement.&#x20;
 
@@ -222,7 +220,7 @@ The Developer must provide Reapit or its auditors with reasonable access to its 
 
 an exclusive, worldwide, royalty-free licence for the Term to make all Approved Applications available for sale, download and use on the App Marketplace. &#x20;
 
-4.3 Developer Edition Licence&#x20;
+#### 4.3 Developer Edition Licence&#x20;
 
 4.3.1 Reapit grants the Developer a Developer Edition Licence.&#x20;
 
@@ -238,9 +236,9 @@ an exclusive, worldwide, royalty-free licence for the Term to make all Approved 
 
 4.4 Subject to clause 4.2, no Intellectual Property Rights in or to either Party’s trade marks or brands will be used by the other Party for any purpose without the other Party’s prior written consent. If that consent is given, the relevant Party must use the relevant trade marks or brands only in compliance with the consenting Party’s brand guidelines and in accordance with the terms and conditions of the relevant trade mark licence between the Parties (if any). The Developer agrees not to represent itself as an authorised partner or affiliate of Reapit without Reapit’s written consent.&#x20;
 
-IPR Indemnity&#x20;
+#### **IPR Indemnity**&#x20;
 
-4.5 The Developer agrees to indemnify and hold harmless Reapit on demand for all Loss incurred by Reapit in connection with any claim or action against Reapit by any Third Party which alleges that the exercise by Reapit of its rights pursuant to this Agreement infringes either (i) the Intellectual Property Rights, other than patents, of that Third Party or (ii) any United Kingdom patent of that Third Party existing as at the Commencement Date (Developer IPR Claim) and to take all steps necessary to defend or settle any Developer IPR Claim.&#x20;
+4.5 The Developer agrees to indemnify and hold harmless Reapit on demand for all Loss incurred by Reapit in connection with any claim or action against Reapit by any Third Party which alleges that the exercise by Reapit of its rights pursuant to this Agreement infringes either (i) the Intellectual Property Rights, other than patents, of that Third Party or (ii) any United Kingdom patent of that Third Party existing as at the Commencement Date (**Developer IPR Claim**) and to take all steps necessary to defend or settle any Developer IPR Claim.&#x20;
 
 4.6 If any Developer IPR Claim is made against Reapit which results in Reapit being prevented from exercising its rights pursuant to this Agreement, the Developer must at its cost and expense either:&#x20;
 
@@ -248,7 +246,7 @@ IPR Indemnity&#x20;
 
 4.6.2 modify or replace the infringing part of the relevant Application or other subject of the Developer IPR Claim so as to avoid the infringement or alleged infringement.&#x20;
 
-Conduct of Developer IPR Claim&#x20;
+#### Conduct of Developer IPR Claim&#x20;
 
 4.7 The Parties agree that in respect of any Developer IPR Claim:&#x20;
 
@@ -260,7 +258,7 @@ Conduct of Developer IPR Claim&#x20;
 
 4.7.4 Reapit must (at the Developer’s request, cost and expense) give the Developer all required assistance in connection with the conduct of the Developer IPR Claim including access to personnel and provision of documents.&#x20;
 
-5 DEVELOPER FEEDBACK&#x20;
+### 5 DEVELOPER FEEDBACK&#x20;
 
 5.1 The Developer grants Reapit a worldwide, perpetual, royalty-free, irrevocable, non-exclusive, fully sublicensable licence to use edit, reproduce, modify and adapt any Developer Feedback in any form, medium, or technology now known or later developed for the purposes of:&#x20;
 
@@ -274,9 +272,9 @@ Conduct of Developer IPR Claim&#x20;
 
 5.1.5 for any purpose, commercial or otherwise.&#x20;
 
-6 DATA AND DATA PROTECTION&#x20;
+### 6 DATA AND DATA PROTECTION&#x20;
 
-6.1 Data&#x20;
+**6.1 Data**&#x20;
 
 6.1.1 Data which the Developer accesses in connection with an Application and/or the App Marketplace is accessed at the Developer’s sole risk, and Reapit is not liable for all or any part of that Data.&#x20;
 
@@ -298,7 +296,7 @@ Conduct of Developer IPR Claim&#x20;
 
 6.1.5 Without prejudice to the foregoing clauses, Reapit reserves the right to suspend the Developer’s access to Data at any time. &#x20;
 
-6.2 Data Protection&#x20;
+#### 6.2 Data Protection&#x20;
 
 6.2.1 Each Party must comply (and the Developer must ensure that ends-users of its Applications must comply) with the provisions imposed on them by the Data Protection Laws, including in relation to:&#x20;
 
@@ -334,11 +332,11 @@ Conduct of Developer IPR Claim&#x20;
 
 6.2.7 The Developer acknowledges and agrees that Reapit will act only as a data processor in connection with this Agreement.&#x20;
 
-7 CONFIDENTIALITY&#x20;
+### 7 CONFIDENTIALITY&#x20;
 
-7.1 Each Party (a Recipient) undertakes to the other Party (each, a Disclosing Party) to treat as confidential all information, whether commercial, financial, technical or otherwise, in any medium or format, which the Recipient receives from the Disclosing Party, either directly or from any other person, which concerns the business, operations, Developers or suppliers of the Disclosing Party (Confidential Information). The terms and conditions of this Agreement  constitute Confidential Information of each Party.&#x20;
+7.1 Each Party (a Recipient) undertakes to the other Party (each, a **Disclosing Party**) to treat as confidential all information, whether commercial, financial, technical or otherwise, in any medium or format, which the Recipient receives from the Disclosing Party, either directly or from any other person, which concerns the business, operations, Developers or suppliers of the Disclosing Party (**Confidential Information**). The terms and conditions of this Agreement  constitute Confidential Information of each Party.&#x20;
 
-7.2 The Recipient may use the Confidential Information only in accordance with this Agreement and must treat the Confidential Information with the same standard of care that it holds its own Confidential Information. The Recipient may provide its Staff and professional advisers (Permitted Users) with access to the Confidential Information to the extent reasonably necessary in order for Recipient to perform or receive the Services only. The Recipient must ensure that each of its Permitted Users is bound to hold all Confidential Information in confidence to the standard required under this Agreement. Where a Permitted User is not a member of the Recipient’s Staff (and is not under a professional duty to protect confidentiality), the Recipient must ensure that the Permitted User will be subject to the same duty of care as the Recipient is under the terms to this Agreement,&#x20;
+7.2 The Recipient may use the Confidential Information only in accordance with this Agreement and must treat the Confidential Information with the same standard of care that it holds its own Confidential Information. The Recipient may provide its Staff and professional advisers (**Permitted Users**) with access to the Confidential Information to the extent reasonably necessary in order for Recipient to perform or receive the Services only. The Recipient must ensure that each of its Permitted Users is bound to hold all Confidential Information in confidence to the standard required under this Agreement. Where a Permitted User is not a member of the Recipient’s Staff (and is not under a professional duty to protect confidentiality), the Recipient must ensure that the Permitted User will be subject to the same duty of care as the Recipient is under the terms to this Agreement,&#x20;
 
 7.3 This clause 7 will not apply to any information which:&#x20;
 
@@ -358,7 +356,7 @@ Conduct of Developer IPR Claim&#x20;
 
 (b) All Reapit Data stored within the Developer’s systems must be securely and irretrievably deleted within 30 days of termination (and the Developer must provide written certification of such deletion upon Reapit's request).&#x20;
 
-8 REPRESENTATIONS, WARRANTIES AND UNDERTAKINGS&#x20;
+### 8 REPRESENTATIONS, WARRANTIES AND UNDERTAKINGS&#x20;
 
 8.1 Each Party represents and warrants to the other Party that:&#x20;
 
@@ -384,7 +382,7 @@ Conduct of Developer IPR Claim&#x20;
 
 8.4 Save as provided in this Agreement, no representations, warranties or other terms, express or implied, statutory or otherwise, as to condition, quality, performance, or fitness for purpose are given or assumed by Reapit in respect of the Services, and all those representations, warranties and terms are excluded save to the extent that any exclusion is prohibited by law.&#x20;
 
-9 FORCE MAJEURE&#x20;
+### 9 FORCE MAJEURE&#x20;
 
 9.1 Subject to clause 10.1, neither Party will be liable to the other Party for any delay or non-performance of its obligations under this Agreement arising directly from a Force Majeure Event, provided that the affected Party:&#x20;
 
@@ -396,7 +394,7 @@ Conduct of Developer IPR Claim&#x20;
 
 9.3 If a Force Majeure Event occurs and Reapit has not restored full and uninterrupted Services within 72 hours, Developer will not be required to pay, and Reapit will not be entitled to charge, for Services affected by that Force Majeure Event for the duration of the period commencing on the date the Force Majeure Event occurred and ending on the date full and uninterrupted Services are resumed.&#x20;
 
-10 LIMITATION OF LIABILITY&#x20;
+### 10 LIMITATION OF LIABILITY&#x20;
 
 10.1 Nothing in this Agreement excludes or limits either Party’s liability:&#x20;
 
@@ -442,7 +440,7 @@ Conduct of Developer IPR Claim&#x20;
 
 10.8 The Parties agree that they have negotiated this clause 10 and that it represents a fair and equitable position.&#x20;
 
-11 TERM AND TERMINATION&#x20;
+### 11 TERM AND TERMINATION&#x20;
 
 11.1 The Agreement comes into effect on the Commencement Date and, subject to early termination in accordance with the terms of clause 11.3, will continue to be in force until the expiry of the Initial Term. Once the Developer achieves a cumulative total of 40 agent company installations, both Parties agree to enter into good faith negotiations to review and, if necessary, renegotiate the commercial terms of this Agreement. Such renegotiation may include adjustments to revenue shares, commission rates, or other financial terms. &#x20;
 
@@ -474,7 +472,7 @@ Conduct of Developer IPR Claim&#x20;
 
 11.4 Any termination of this Agreement pursuant to this clause will be without prejudice to any other rights or remedies a Party may be entitled to hereunder or at law and will not affect any accrued rights or liabilities of either Party nor the coming into or continuance in force of any provision hereof which is expressly or by implication intended to come into or continue in force on or after such termination.&#x20;
 
-12 CONSEQUENCES OF TERMINATION&#x20;
+### 12 CONSEQUENCES OF TERMINATION&#x20;
 
 12.1 The following clauses will survive termination or expiry of this Agreement: 3, 4, 5, 6, 7, 10, 12, 13, 15 and 16.&#x20;
 
@@ -488,7 +486,7 @@ Conduct of Developer IPR Claim&#x20;
 
 12.3 Termination of this Agreement in accordance with its terms will not relieve the Developer of its payment obligations and all sums that would otherwise be due from the Developer to Reapit under this Agreement will be payable on the date that they would otherwise become due and the number of Users applicable to any termination notice period (whether early termination in accordance with the terms of clause 11.3 or a notice to prevent automatic renewal in accordance with clause 11.2.2) will be deemed to be the number of Users as at the date the applicable termination notice is sent.&#x20;
 
-13 NOTICES&#x20;
+### 13 NOTICES&#x20;
 
 13.1 Any notice request instruction or other document to be given under this Agreement must be in writing and will be deemed to have been duly given if left at or sent by hand or by registered post or by e-mail to (i) a Party at its registered company address in England; or (ii) e-mail address set out below for such Party or such other address as one Party may from time to time designate by written notice to the other.&#x20;
 
@@ -504,9 +502,9 @@ Conduct of Developer IPR Claim&#x20;
 
 13.3.2 Notices to the Developer must be sent to the e-mail address submitted by the Developer as part of the Registration Details.&#x20;
 
-14 MISCELLANEOUS&#x20;
+### 14 MISCELLANEOUS&#x20;
 
-14.1 Announcements: Each Party must not:&#x20;
+14.1 **Announcements**: Each Party must not:&#x20;
 
 14.1.1 make or authorise any public or private announcement or communication concerning this Agreement; or&#x20;
 
@@ -514,9 +512,9 @@ Conduct of Developer IPR Claim&#x20;
 
 without the prior written consent of the other Party.&#x20;
 
-14.2 Further Assurance: Each Party must, at its own cost, promptly execute and deliver all such documents, and do all such things, as the other Party may from time to time reasonably require for the purpose of giving full effect to the provisions of this Agreement and to secure for the other Party the full benefit of the rights, powers and remedies conferred upon it under this Agreement.&#x20;
+14.2 **Further Assurance**: Each Party must, at its own cost, promptly execute and deliver all such documents, and do all such things, as the other Party may from time to time reasonably require for the purpose of giving full effect to the provisions of this Agreement and to secure for the other Party the full benefit of the rights, powers and remedies conferred upon it under this Agreement.&#x20;
 
-14.3 Entire Agreement:&#x20;
+14.3 **Entire Agreement**:&#x20;
 
 14.3.1 The Agreement sets out the entire agreement between the Parties relating to its subject matter and, save to the extent expressly set out in this Agreement, supersede and extinguish any prior drafts, agreements, undertakings, representations, warranties, promises, assurances and arrangements of any nature whatsoever, whether or not in writing, relating thereto.&#x20;
 
@@ -524,7 +522,7 @@ without the prior written consent of the other Party.&#x20;
 
 14.3.3 This clause 14.3 (Entire Agreement) will not exclude any liability for or remedy in respect of fraudulent misrepresentation.&#x20;
 
-14.4 Waiver and Variation:&#x20;
+14.4 **Waiver and Variation:**&#x20;
 
 14.4.1 A failure or delay by a Party to exercise any right or remedy provided under this Agreement or by Law, whether by conduct or otherwise, will not constitute a waiver of that or any other right or remedy, nor will it preclude or restrict any further exercise of that or any other right or remedy. No single or partial exercise of any right or remedy provided under this Agreement or by Law, whether by conduct or otherwise, will preclude or restrict the further exercise of that or any other right or remedy.&#x20;
 
@@ -534,7 +532,7 @@ without the prior written consent of the other Party.&#x20;
 
 14.5 Invalidity: Where any provision of this Agreement is or becomes illegal, invalid or unenforceable in any respect under the Applicable Law of any jurisdiction then such provision will be deemed to be severed from this Agreement and, if possible, replaced with a lawful provision which, as closely as possible, gives effect to the intention of the Parties and, where permissible, that will not affect or impair the legality, validity or enforceability in that, or any other, jurisdiction of any other provision of this Agreement.&#x20;
 
-14.6 Assignment:&#x20;
+14.6 **Assignment:**&#x20;
 
 14.6.1 The Developer must not assign, transfer, mortgage, charge, declare a trust over or deal in any other manner with any or all of its rights and obligations under this Agreement without Reapit’s prior written consent.&#x20;
 
@@ -544,33 +542,33 @@ without the prior written consent of the other Party.&#x20;
 
 (b) assign or novate this Agreement to a purchaser of the whole or substantially the whole of the business of Reapit.&#x20;
 
-14.7 No Partnership or Agency: Nothing in this Agreement is intended to, or will be deemed to, establish any partnership or joint venture between any of the Parties, constitute any Party the agent of another Party, or authorise any Party to make or enter into any commitments for or on behalf of any other Party.&#x20;
+14.7 **No Partnership or Agency**: Nothing in this Agreement is intended to, or will be deemed to, establish any partnership or joint venture between any of the Parties, constitute any Party the agent of another Party, or authorise any Party to make or enter into any commitments for or on behalf of any other Party.&#x20;
 
-14.8 Third Party Rights: A person who is not a Party to this Agreement may not enforce any of its terms under the Contracts (Rights of Third Parties) Act 1999.&#x20;
+14.8 **Third Party Rights**: A person who is not a Party to this Agreement may not enforce any of its terms under the Contracts (Rights of Third Parties) Act 1999.&#x20;
 
-14.9 Costs: Except as otherwise provided in this Agreement, each Party must bear its own costs arising out of or in connection with the preparation, negotiation and implementation of this Agreement.&#x20;
+14.9 **Costs**: Except as otherwise provided in this Agreement, each Party must bear its own costs arising out of or in connection with the preparation, negotiation and implementation of this Agreement.&#x20;
 
-14.10 Counterparts: This Agreement may be executed in any number of counterparts. Each counterpart will constitute an original of this Agreement, but all the counterparts together will constitute but one and the same instrument.&#x20;
+14.10 **Counterparts**: This Agreement may be executed in any number of counterparts. Each counterpart will constitute an original of this Agreement, but all the counterparts together will constitute but one and the same instrument.&#x20;
 
-15 DISPUTES&#x20;
+### 15 DISPUTES&#x20;
 
 15.1 Any Dispute must be referred for resolution by each Party’s Key Contact.&#x20;
 
 15.2 If the Dispute cannot be resolved by the persons referred to in clause 15.1 within 5 Business Days after the Dispute has arisen, either Party may give written notice to the other Party that a Dispute has arisen (Dispute Notice). Within 3 Business Days after receipt of the Dispute Notice, the Dispute must be referred to each Party’s Chief Executive Officer (or nominated representative) for resolution. If the Dispute is not resolved by agreement in writing between the Parties within 21 days of receipt of the Dispute Notice, the Dispute must be resolved in accordance with the remaining provisions of this clause 15.&#x20;
 
-15.3 Either Party may refer the Dispute for final resolution by arbitration under the LCIA (London Court of International Arbitration) Rules, which Rules are deemed to be incorporated by reference into this clause 15. The number of arbitrators will be 3 (Tribunal). Each of the Parties will appoint one arbitrator. The 2 arbitrators so appointed will choose the third arbitrator who will act as the Chairman of the Tribunal. The seat, or legal place, of arbitration will be London, United Kingdom. The language to be used in the arbitral proceedings will be English.&#x20;
+15.3 Either Party may refer the Dispute for final resolution by arbitration under the LCIA (London Court of International Arbitration) Rules, which Rules are deemed to be incorporated by reference into this clause 15. The number of arbitrators will be 3 (**Tribunal**). Each of the Parties will appoint one arbitrator. The 2 arbitrators so appointed will choose the third arbitrator who will act as the Chairman of the Tribunal. The seat, or legal place, of arbitration will be London, United Kingdom. The language to be used in the arbitral proceedings will be English.&#x20;
 
 15.4 This clause 15 is without prejudice to either Party’s right to seek interim relief against the other Party (such as an injunction) through the English courts to protect its rights and interests, or to enforce the obligations of the other Party.&#x20;
 
-16 GOVERNING LAW AND JURISDICTION&#x20;
+### 16 GOVERNING LAW AND JURISDICTION&#x20;
 
 16.1 This Agreement will be governed by, construed and interpreted in accordance with English law and the Parties hereby agree, for the purposes of this Agreement only and subject to the provisions of clause 15, to submit themselves and any claim or matter arising under or in connection with this Agreement to the exclusive jurisdiction of the English courts. &#x20;
 
 &#x20;
 
-SCHEDULE 1 – APPLICATION USER TERMS PRINCIPLES&#x20;
+### SCHEDULE 1 – APPLICATION USER TERMS PRINCIPLES&#x20;
 
-1 GENERAL&#x20;
+**1** **GENERAL**&#x20;
 
 1.1 The Developer must not include any terms in the Application User Terms, which conflict with the Developer’s obligations pursuant to this Agreement.&#x20;
 
@@ -586,7 +584,7 @@ SCHEDULE 1 – APPLICATION USER TERMS PRINCIPLES&#x20;
 
 1.5 The Developer acknowledges that certain functionalities of the Reapit Platform may depend on third-party services or components ("Third-Party Components"). Reapit reserves the right to update or replace these components without prior notice. Reapit will not be liable for any direct or indirect losses caused by changes, outages, or discontinuation of such Third-Party Components.&#x20;
 
-2 DATA PROTECTION&#x20;
+### 2 DATA PROTECTION&#x20;
 
 2.1 The Application User Terms must comply fully with Data Protection Laws.&#x20;
 
@@ -620,13 +618,9 @@ Calculation of Total Consumption Cost - Example for representative purposes only
 
 **Minimum Guarantee**&#x20;
 
-The Developer must ensure that its total monthly consumption cost for each of its Approved Applications is at least £200 per month. Where the Developer fails to meet this minimum in respect of any Approved Application, the Developer must pay (and Reapit will invoice) the balance of this minimum, in addition to all other applicable Fees.&#x20;
+The Developer must ensure that its total monthly consumption cost for each of its Approved Applications is at least £200 per month. Where the Developer fails to meet this minimum in respect of any Approved Application, the Developer must pay (and Reapit will invoice) the balance of this minimum, in addition to all other applicable Fees. &#x20;
 
-&#x20;
-
-&#x20;
-
-**DEVELOPER OBLIGATIONS**&#x20;
+### **DEVELOPER OBLIGATIONS**&#x20;
 
 1\. The Developer agrees that:&#x20;
 
@@ -639,16 +633,17 @@ The Developer must ensure that its total monthly consumption cost for each of it
 * it will co-operate in all matters relating to this Agreement with Reapit;&#x20;
 * it will not provide access to the Platform to anyone who has not entered into a direct agreement with Reapit on the same terms as this Agreement and, without prejudice to the foregoing, it will not share (i) any API access credentials provided by Reapit and/or (ii) the Registration Details with any third party;&#x20;
 * it will conduct an industry-standard penetration test on each Application at least once every calendar year and provide Reapit with the results of such test;&#x20;
-* it will not use the Platform in a manner, develop an Application, or share any content or Developer Feedback, that (in Reapit’s reasonable opinion):&#x20;
-* is false or misleading;&#x20;
-* is defamatory, derogatory, degrading or harassing of another or constitutes a personal attack;&#x20;
-* invades another’s privacy or includes, copies or transmits another’s confidential, sensitive or personal information;&#x20;
-* promotes bigotry, racism, hatred or harm against any group or individual;&#x20;
-* is obscene or not in good taste;&#x20;
-* infringes or promotes the infringement of a Third Party’s rights, including Intellectual Property Rights;&#x20;
-* promotes the infringement of any Applicable Laws;&#x20;
-* contains a solicitation of funds, goods or services, or promotes or advertises goods or services (other than the Application itself); or&#x20;
-* contains any viruses, Trojan horses, or other components designed to limit or harm the functionality of a computer.&#x20;
+* it will not use the Platform in a manner, develop an Application, or share any content or Developer Feedback, that (in Reapit’s reasonable opinion): \
+  \
+  \- is false or misleading; \
+  \- is defamatory, derogatory, degrading or harassing of another or constitutes a personal attack; \
+  \- invades another’s privacy or includes, copies or transmits another’s confidential, sensitive or personal information;\
+  \- promotes bigotry, racism, hatred or harm against any group or individual; \
+  \- is obscene or not in good taste; \
+  \- infringes or promotes the infringement of a Third Party’s rights, including Intellectual Property Rights; \
+  \- promotes the infringement of any Applicable Laws; \
+  \- contains a solicitation of funds, goods or services, or promotes or advertises goods or services (other than the Application itself); or \
+  \- contains any viruses, Trojan horses, or other components designed to limit or harm the functionality of a computer.&#x20;
 
 2\. The Developer must make available upon request access to the Application in both test and production environments for Reapit to conduct random spot-checks.&#x20;
 
@@ -664,21 +659,17 @@ The Developer must ensure that its total monthly consumption cost for each of it
 
 8\. The Developer must maintain no more than 5 API interaction threads in respect of any one Approved Application and must await completion of one or more previous requests before submitting new ones.&#x20;
 
-&#x20;
-
-&#x20;
-
-SCHEDULE 4 – ADMINISTRATION FEES AND INTEREST&#x20;
+### SCHEDULE 4 – ADMINISTRATION FEES AND INTEREST&#x20;
 
 In the following events, the Developer must pay Reapit on demand the following Administration Fees by way of liquidated damages for all loss and damage caused. The parties agree and acknowledge that these liquidated damages are reasonable and proportionate to cover the costs of dealing with the following events and to protect Reapit’s legitimate interest in its Intellectual Property Rights and the App Marketplace.&#x20;
 
 1. Breach of approval process - £595&#x20;
-2. Breach of support ticket process &#x20;
-3. Selecting wrong impact level - Initial incident £50 thereafter £200&#x20;
-4. Incorrectly describing the incident - Initial incident £50 thereafter £200&#x20;
-5. Inflating the number of clients/agents affected - Initial incident £50 thereafter £200&#x20;
-6. Interest on late payment of Fees - As outlined in this agreement regarding interest at 5% above the bank of England rate, all Fees not paid within 30 days will be subject to the same interest adjustment.&#x20;
-7. Termination for repeat breaches- Developers that are found to persistently breach the rules of this Agreement and incur Administration Fees (even if paid) may be subject to Reapit terminating this Agreement.&#x20;
+2. Breach of support ticket process\
+   (i)   Selecting wrong impact level - Initial incident £50 thereafter £200 \
+   (ii)  Incorrectly describing the incident - Initial incident £50 thereafter £200 \
+   (iii) Inflating the number of clients/agents affected - Initial incident £50 thereafter £200&#x20;
+3. Interest on late payment of Fees - As outlined in this agreement regarding interest at 5% above the bank of England rate, all Fees not paid within 30 days will be subject to the same interest adjustment.&#x20;
+4. Termination for repeat breaches- Developers that are found to persistently breach the rules of this Agreement and incur Administration Fees (even if paid) may be subject to Reapit terminating this Agreement.&#x20;
 
 \
 
