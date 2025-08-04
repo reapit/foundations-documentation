@@ -612,13 +612,13 @@ SCHEDULE 2 – FEES &#x20;
 
 Calculation of Total Consumption Cost - Methodology:&#x20;
 
-&#x20;
+&#x20;![](<.gitbook/assets/image (144).png>)
 
 Calculation of Total Consumption Cost - Example for representative purposes only:&#x20;
 
-&#x20;
+&#x20;![](<.gitbook/assets/image (145).png>)
 
-Minimum Guarantee&#x20;
+**Minimum Guarantee**&#x20;
 
 The Developer must ensure that its total monthly consumption cost for each of its Approved Applications is at least £200 per month. Where the Developer fails to meet this minimum in respect of any Approved Application, the Developer must pay (and Reapit will invoice) the balance of this minimum, in addition to all other applicable Fees.&#x20;
 
@@ -626,7 +626,7 @@ The Developer must ensure that its total monthly consumption cost for each of it
 
 &#x20;
 
-DEVELOPER OBLIGATIONS&#x20;
+**DEVELOPER OBLIGATIONS**&#x20;
 
 1\. The Developer agrees that:&#x20;
 
