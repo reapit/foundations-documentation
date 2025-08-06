@@ -85,7 +85,12 @@ Finally, update your app's configuration in the DeveloperPortal to use`http://de
 
 In response to developers not caching tokens locally, particularly where machine to machine applications are concerned, a server side caching layer has now been introduced. Repeated calls to `POST /oauth/token` will now return cached tokens where appropriate. The expiry of tokens is indicated by the `expires_in` property in the response payload. A five minute overlap is used in the server side caching layer to prevent any issues with imminently expiring tokens being returned back to your application. Only cached tokens with >= 5 minutes lifetime remaining will be returned, else a new access token will be issued. It is good practice to cache tokens locally to reduce round trips to the server.
 
+#### Access tokens
 
+Two minor changes are needed to any system using either the _client\_id_ or _token\_use_ claim returned in access tokens for machine to machine applications:
+
+* If using the _client\_id_ claim, please update your application to use the _azp_ claim. The values are the same
+* Remove any references to the _token\_use_ claim, which will eventually be removed from access tokens for machine to machine applications, since only an access token will ever be generated for applications using this authentication type.
 
 
 
