@@ -4,12 +4,6 @@ description: Real time event delivery to Reapit products from your applications
 
 # Notifications
 
-{% hint style="info" %}
-This feature is in beta release and requires you to be invited to the Notifications beta programme. If you wish to join this programme, please contact [Tan Matthews](mailto:tmatthews@reapit.com?subject=I%20would%20like%20to%20join%20the%20notifications%20beta%20programme)
-
-If you are a direct Reapit customer and would like to provide feedback on this area of the Platform, please use the [early adopter feedback form](https://reapitsupport.refined.site/portal/1?createRequest=true\&portalId=1\&requestTypeId=116)
-{% endhint %}
-
 The Notifications API allows developers running apps with the `notifications.*.write` scopes to push certain events back through our Platform for delivery to users of Reapit products in real-time. For the beta programme, the only supported scope is`notifications.telephony.write` - the purpose of this mechanism is primarily to replace legacy TAPI support in the AgencyCloud CRM, but there are plans to expand it's use cases in the future.
 
 ### How it works
@@ -60,3 +54,10 @@ In all payloads, the `id` property can optionally be used to correlate chained e
 
 
 
+### Testing
+
+To test the Notifications API in our sandbox environment, you’ll need to have a active Developer Edition subscription (please [click here](https://developers.reapit.cloud/desktop) to subscribe) and a dedicated negotiator ID.
+
+Once you have a Developer Edition subscription, please [click here](mailto:partners@reapit.com?subject=Notifications%20API%20Testing\&body=Please%20provide%20the%20email%20addresses%20below%20you%20wish%20to%20use%20for%20testing%20the%20Notifications%20API%20in%20our%20sandbox%20environment.%20We%20will%20then%20create%20dedicated%20negotiator%20ID's%20for%20each%20email%20and%20confirm%20when%20completed.%20%20) to email the team and include the email addresses you want to use for testing. We will reply and confirm via email, the dedicated negotiator ID’s.
+
+For notifications to display within Reapit for a customer, it requires configuration to be enabled with the Reapit CRM. Please ask the customer to log a ticket with support [here](https://reapitsupport.refined.site/login), requesting notifications are enabled.
