@@ -1,12 +1,20 @@
 # Help
 
-### **How do I request a new feature or report a bug?**
+**How do I request a new feature or report a bug?**&#x20;
 
-You can raise a feature request/report a bug by logging a ticket via our Reapit Support Desk (please copy and paste the following URL into a new browser: [https://reapitsupport.refined.site/login](https://reapitsupport.refined.site/login)). &#x20;
+The process depends on the impact level of your request. Full details of response and resolution times can be found in the [Partner Business Services Catalogue (BSC)](https://www.reapit.com/legal/terms-and-conditions/reapit-partner-business-service-catalogue)
 
-If you are a new user on the Reapit Support Platform, you will need set up an account. For more information on the setup process, please open the following URL in a new browser: [https://reapit.atlassian.net/wiki/spaces/RW/pages/1432912084/Using+the+Reapit+Service+Desk+Portal](https://reapit.atlassian.net/wiki/spaces/RW/pages/1432912084/Using+the+Reapit+Service+Desk+Portal)&#x20;
+Critical (P1) or High (P2) issues \
+Log a ticket via the Reapit Service Desk Portal: [https://reapitsupport.refined.site/](https://reapitsupport.refined.site/)&#x20;
 
-When creating a ticket, please select the correct product type associated to your request to ensure it’s associated to the correct service.
+* Select the correct impact level and product type as ‘Reapit API’ so your request is routed to the right team.&#x20;
+* Please note: Reapit will downgrade issues that are incorrectly logged as P1 or P2. Penalties will apply in line with Schedule 4 of the Developer Portal Terms & Conditions.&#x20;
+* New users will need to create an account. Setup guidance is here: [https://reapit.atlassian.net/wiki/spaces/RW/pages/1432912084/Using+the+Reapit+Service+Desk+Portal](https://reapit.atlassian.net/wiki/spaces/RW/pages/1432912084/Using+the+Reapit+Service+Desk+Portal)&#x20;
+
+Medium (P3) or Low (P4) issues, and all feature requests \
+Email [partners@reapit.com](mailto:partners@reapit.com). The Partnerships team will validate your request and, if appropriate, log a ticket on your behalf and provide a ticket reference number.&#x20;
+
+&#x20;
 
 
 
