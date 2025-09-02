@@ -6,6 +6,79 @@ description: >-
 
 # What’s New
 
+## August 2025
+
+### Properties
+
+Additional licencing fields have been added to the `/property` payload for retrieval (GET) and updates (PATCH).
+
+Note API-CRM mapping names:
+
+* `licenceTypeRequired`  - Licence Type Required
+* `licenceType` - Licence Type Granted
+* `referenceNumber` (under `licencing`)- Licence Reference No.
+* `referenceNumber` (under `application`) - Application Ref No.
+* Granted - `licenceGranted`
+* Expiry - `licenceExpiry`&#x20;
+
+<figure><img src=".gitbook/assets/rpa-401-crm.png" alt=""><figcaption><p><code>licencing</code> screen in the CRM</p></figcaption></figure>
+
+<figure><img src=".gitbook/assets/image (147).png" alt=""><figcaption><p>Example <code>licencing</code> payload retrieval</p></figcaption></figure>
+
+### Properties
+
+`commercial` EPC information can now be created (POST), retrieved (GET) and updated (PATCH) via the property endpoint.
+
+<figure><img src=".gitbook/assets/rpa-3-EPC- CRM.png" alt=""><figcaption><p>Commercial EPC screen in CRM</p></figcaption></figure>
+
+<figure><img src=".gitbook/assets/rpa-3 Commercial EPC GET (1).png" alt=""><figcaption><p>Example payload of <code>commercial</code> EPC retrieval</p></figcaption></figure>
+
+### Properties
+
+Property marketing fields including Extra Descriptions can be retrieved (GET) and updated (PATCH) via `properties/{id}/marketing`
+
+<figure><img src=".gitbook/assets/image (151).png" alt=""><figcaption><p>Marketing screen in CRM</p></figcaption></figure>
+
+
+
+<figure><img src=".gitbook/assets/image (152).png" alt=""><figcaption><p>Example of marketing extra descriptions retrieval in payload.</p></figcaption></figure>
+
+### IdentityChecks
+
+Company and Contact Ids are now distinguishable when retrieving Identity checks. A new field `contactType` is visible.
+
+<figure><img src=".gitbook/assets/rpa-405-swagger.png" alt=""><figcaption><p>Example <code>contactType</code> field in identityChecks payload</p></figcaption></figure>
+
+### Configuration
+
+A list of all Tenancy Finished Reasons used within a system can be retrieved (GET) .&#x20;
+
+When a single Tenancy Finished Reason ID is provided the Tenancy Finished Reason id , value and category are retrieved (GET).
+
+<figure><img src=".gitbook/assets/2025-08-29_18h55_24 (1).png" alt=""><figcaption><p>Tenancy Finished Reasons on Tenancy record in the CRM</p></figcaption></figure>
+
+<figure><img src=".gitbook/assets/2025-09-01_12h38_11.png" alt=""><figcaption><p>Screenshot of Finished Tenancy screen in the CRM</p></figcaption></figure>
+
+<figure><img src=".gitbook/assets/2025-08-29_19h04_37.png" alt=""><figcaption><p>Endpoint to retrieve all TenancyFinishedReasons</p></figcaption></figure>
+
+<figure><img src=".gitbook/assets/image.png" alt=""><figcaption><p>Endpoint to retrieve a single Tenancy Finished reason</p></figcaption></figure>
+
+<figure><img src=".gitbook/assets/rpa-302.png" alt=""><figcaption><p>Example payload displaying <code>id</code>, <code>value</code> and <code>category</code> fields</p></figcaption></figure>
+
+### Tenancies
+
+The `Payable` field on Tenancy Renewals and Alterations screen is now retrievable (GET) via `/{id}/extensions`
+
+<figure><img src=".gitbook/assets/2025-08-29_19h22_54.png" alt=""><figcaption><p>Tenancy Renewal and Alterations screen in CRM</p></figcaption></figure>
+
+<figure><img src=".gitbook/assets/2025-08-29_19h14_27.png" alt=""><figcaption><p>Example retrieval of <code>payable</code> field in  payload.</p></figcaption></figure>
+
+### Tenancies
+
+Arrears `status` and `followUp` date fields can now be updated (PATCH) on Current Tenancies.
+
+<figure><img src=".gitbook/assets/2025-08-29_19h50_03.png" alt="Example payload of arrears &#x60;status&#x60; and &#x60;followUp&#x60; retrieval."><figcaption><p>Example payload of arrears <code>Status</code> and <code>followUp</code> retrieval</p></figcaption></figure>
+
 ## June 2025
 
 ### Properties
@@ -1058,7 +1131,7 @@ Converted room dimensions are now returned on a property under ‘`dimensionsAlt
 
 Release 4.0.0
 
-<figure><img src=".gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **New Features**
 
@@ -2614,7 +2687,7 @@ Those of you familiar with [GitBook, ](https://www.gitbook.com)will know they ar
 
 Available for a **limited time only**, direct access to our Foundations Platform Product Owners and Developers. You can access this feature from the ‘[Help](http://marketplace.reapit.cloud/developer/help)’ section in the developer portal. We hope you won’t need us and that everything you need can be found within our documentation but it’s nice to know we’re here if you do.
 
-![Live Chat feature](<.gitbook/assets/image (3) (1).png>)
+![Live Chat feature](<.gitbook/assets/image (3) (1) (1).png>)
 
 ### Full Visibility ([Roadmap](https://github.com/reapit/foundations/milestones?direction=asc\&sort=due_date\&state=open))
 

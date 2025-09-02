@@ -351,7 +351,7 @@ The type of _ID Check_ will be given to an application that can be used to repla
 
 This desktop type will take affect in AgencyCloud when the following button is clicked (this will be seen on various screens, for example contact and applicant).
 
-![Id Check button in AgencyCloud](<../.gitbook/assets/image (5).png>)
+![Id Check button in AgencyCloud](<../.gitbook/assets/image (5) (1).png>)
 
 ### Property Marketing Information
 

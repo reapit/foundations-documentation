@@ -12,17 +12,17 @@ The first step to deploy an app is to visit the app detail page in the developer
 
 For apps that pre-exist the IaaS service, this was not possible so you will see this screen:
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
 
 From here you should hit "Create Pipeline" to take you to the new pipeline page.
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 From here, you need to tell us about your application, the repo (we support Github and BitBucket), the main branch, the command in your package.json that builds the app and the directory your assets are output to.
 
 On saving this config, you have pre-provisioned an app and you will return to the Pre provisioned app screen.
 
-<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 You should now hit "Provision", to build your initial infrastructure on our services. This can take a minute or two. You can also move on to the [Next Steps](developer-portal-beta.md#next-steps-all-apps) section below.
 
@@ -30,7 +30,7 @@ You should now hit "Provision", to build your initial infrastructure on our serv
 
 If you created a new application, we pre-provision a Pipeline for your application by default. Visiting the "Pipeline" tab you will see this page:
 
-<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 Note the state of the application is "Pre provisioned". This means we have a shell pipeline and have reserved a domain name for your app in our infra.
 
@@ -48,7 +48,7 @@ The next step is to configure your app by clicking on the "Configure" tab or the
 
 On the configure screen, you need to tell us about your application, the repo (we support Github and BitBucket), the main branch, the command in your package.json that builds the app and the directory your assets are output to.&#x20;
 
-<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
 
 Hit save config and return to the deployments page. You can then move on to the [Next Steps](developer-portal-beta.md#next-steps-all-apps) section below.
 
@@ -58,7 +58,7 @@ Hit save config and return to the deployments page. You can then move on to the 
 
 When you have done this, if your app is on Github, you will need to install our Github App from [this page](https://github.com/apps/reapit) following the steps to configure for your repo. This gives us the permission to pull from your repo and receive webhooks that inform us when you git push to your main branch.&#x20;
 
-For Bitbucket the process is the same but you will need to install the [dedicated app here.](https://bitbucket.org/site/addons/authorize?addon\_key=reapit)
+For Bitbucket the process is the same but you will need to install the [dedicated app here.](https://bitbucket.org/site/addons/authorize?addon_key=reapit)
 
 {% hint style="info" %}
 You should only install the Github / Bitbucket app for a single repo, not your whole organisation as it sets up a webhook on an app by app basis. If you delete your app or pipeline, and set up a new one for your repo, you need to uninstall and re-install the Github app each time.&#x20;
