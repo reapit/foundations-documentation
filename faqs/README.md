@@ -92,7 +92,17 @@ To invite members to join your organisation, simply click on the ‘Invite Devel
 
 Within the members section you will also have the ability to disable members and to set other members as ‘Admins’.
 
-**Please note:** Only Admins of the Developer Organisation will have access to the Organisation page.&#x20;
+**Please note:** Only Admins of the Developer Organisation will have access to the Organisation page.
+
+
+
+### How to delete a member&#x20;
+
+As an admin of a developer organisation, you have the ability to delete members from the ‘[members](https://developers.reapit.cloud/settings/members)’ section.
+
+Simply navigate to the members section, expand the user and click ‘Delete’. This will immediately remove the user from your organisation.&#x20;
+
+**Please note:** Only Admins of the Developer Organisation will have access to the members page.
 
 **Testing**
 -----------
