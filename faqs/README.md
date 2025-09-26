@@ -139,6 +139,10 @@ Please [click here](./#app-approvals) for more information on App Approvals
 
 You cannot update negotiator information using the desktop CRM as Negotiator information is part of the the system configuration and is not available in the Developer Edition. However, you can use the Negotiators `PATCH`endpoint to update the required fields. Once you have made a valid request, you may need to restart AgencyCloud to see the changes reflected.&#x20;
 
+### How do I download the Developer Edition?
+
+Navigate to [https://developers.reapit.cloud/desktop](https://developers.reapit.cloud/desktop), click 'Subscribe' and follow the instructions. If you already created a subscription, you will be presented with the option to 'Download' a copy.&#x20;
+
 ## **Listing your App in the AppMarket**
 
 ### I’m ready to list my app, what do I need to do?
