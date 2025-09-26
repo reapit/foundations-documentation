@@ -433,7 +433,13 @@ A new field to support recording if deposit schemes are accepted on a lettings p
 
 ### Tenancies
 
-We now expose the occupy date (`occupyOn`) and vacate date (`vacateOn`) on a tenancy.
+We now expose the occupy date (`occupyOn`) and vacate date (`vacateOn`) for each tenant on a tenancy.
+
+Retrieving a specific tenancy on the `/tenancies/{id}` endpoint will return a list of all tenants linked to that tenancy, both past and present.&#x20;
+
+The `vacateOn` field indicates the date a tenant vacated the property. The `occupyOn` field indicates the date the tenant became a tenant.
+
+All communications triggered via this endpoint will be sent to every tenant listed, unless logic is applied to remove them using relevant dates.
 
 ### Properties
 
