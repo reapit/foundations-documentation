@@ -6,6 +6,40 @@ description: >-
 
 # What’s New
 
+## October 2025
+
+### Tenancies
+
+Deposit Protection `registrationNumbers` and `deregisteredDate` can now be updated on Current Tenancies when updated (PATCH) on `/tenancies`
+
+<figure><img src=".gitbook/assets/tenancies-DeregisteredDate (1).png" alt=""><figcaption><p>deregisterDate and registrationNumber can be updated</p></figcaption></figure>
+
+### Tenancies
+
+Clearly identified current Tenants with the `isCurrent` flag.&#x20;
+
+When `isCurrent` is true, the Tenant retrieved is a current Tenant of the property. A current Tenant is also indicated by the vacateOn and occupyOn dates.
+
+<figure><img src=".gitbook/assets/isCurrentTenancies-flag.png" alt=""><figcaption><p><code>isCurrent</code> flag indicating a current Tenant</p></figcaption></figure>
+
+### Contacts
+
+Archived roles on a Contact can be retrieved now the new `includeArchived` parameter on  `/contacts/{id}/relationships`
+
+<figure><img src=".gitbook/assets/includeArchived-Contacts.png" alt=""><figcaption><p>archived Contact role parameters</p></figcaption></figure>
+
+### Contacts
+
+Subscribe/ Unsubscribe to parent Subscriptions. This bulk option allows your selection to be applied to all 'children' of the parent subscription via the PUT on `contact/{id}/subscriptions`
+
+<figure><img src=".gitbook/assets/subscibe-unsubscribeParents-Contacts.png" alt=""><figcaption><p>Bulk Subscribe/ Unsubscribe Mailings and Subscriptions on /contacts{id}/relationships</p></figcaption></figure>
+
+### Journal Entries
+
+Renewal Negotiation journal entries can be created (POST) using `"typeID": "RN"` on `/journalEntries`
+
+<figure><img src=".gitbook/assets/renewalNegotiation-JournalEntries.png" alt=""><figcaption><p>RN Renewal negotiation <code>typeID</code> can create journal entries on <code>journalEntries</code></p></figcaption></figure>
+
 ## August 2025
 
 ### Properties
