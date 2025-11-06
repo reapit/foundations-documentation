@@ -61,3 +61,30 @@ To test the Notifications API in our sandbox environment, you’ll need to have 
 Once you have a Developer Edition subscription, please [click here](mailto:partners@reapit.com?subject=Notifications%20API%20Testing\&body=Please%20provide%20the%20email%20addresses%20below%20you%20wish%20to%20use%20for%20testing%20the%20Notifications%20API%20in%20our%20sandbox%20environment.%20We%20will%20then%20create%20dedicated%20negotiator%20ID's%20for%20each%20email%20and%20confirm%20when%20completed.%20%20) to email the team and include the email addresses you want to use for testing. We will reply and confirm via email, the dedicated negotiator ID’s.
 
 For notifications to display within Reapit for a customer, it requires configuration to be enabled with the Reapit CRM. Please ask the customer to log a ticket with support [here](https://reapitsupport.refined.site/login), requesting notifications are enabled.
+
+
+
+### Enabling notifications
+
+Reapit clients must complete a [Standard Configuration Request](https://reapitsupport.refined.site/portal/1?createRequest=true\&portalId=1\&requestTypeId=87) before notifications can be configured in their system. Before the configuration request is processed, notifications will not appear.
+
+Configuration requests can take up to 3 working days to process.
+
+Company level configuration is best practice. When notifications are enabled all TAPI functionality will stop.
+
+
+
+### Click-to-dial settings
+
+Click-to-dial is a configurable option in the CRM that must be requested.&#x20;
+
+Enabling notifications and click-to-dial configuration requests can be made simultaneously by clients using the Standard Configuration Request.
+
+The desired app must be set as the default `URL: Tel protocol`  on the agent's device to launch the app when a telephone number is dialled in the CRM.
+
+
+
+
+
+
+
