@@ -8,13 +8,14 @@ description: >-
 
 ### Versions&#x20;
 
-| 1st September 2025 | [Terms and Conditions.pdf](https://reapit-marketplace-app-media-prod.s3.eu-west-2.amazonaws.com/Foundations-terms-010925.pdf) |
+| 1st December 2025  | Terms and Conditions.pdf                                                                                                      |
 | ------------------ | ----------------------------------------------------------------------------------------------------------------------------- |
+| 1st September 2025 | [Terms and Conditions.pdf](https://reapit-marketplace-app-media-prod.s3.eu-west-2.amazonaws.com/Foundations-terms-010925.pdf) |
 | 25th June 2021     | [Terms and Conditions.pdf](https://reapit-marketplace-app-media-prod.s3.eu-west-2.amazonaws.com/Foundations-terms-250621.pdf) |
 | 17th November 2020 | [Terms and Conditions.pdf](https://reapit-marketplace-app-media-prod.s3.eu-west-2.amazonaws.com/foundations-terms-171120.pdf) |
 | 16th June 2020     | [Terms and Conditions.pdf](https://developers.reapit.cloud/foundations-terms-160620.pdf)                                      |
 
-Version Date: 1st September 2025
+Version Date: 1st December 2025
 
 ### 1 DEFINITIONS AND INTERPRETATION&#x20;
 
