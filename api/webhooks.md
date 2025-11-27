@@ -47,15 +47,13 @@ As each event is prepared to be sent to your endpoint, it will be signed using t
    \
    Full example:\
    \
-   `s:98da2881-0540-48db-8ffa-45d7003f1412:1650934596:LLD5mr9ynFEvjz8dVmwO4vNmEva32ZV6TjAcPzdIDO93Jhc82EhysiQPcw9ZdlbCcCUjDsaeHZUsFEMUVKbGBg`\
-
+   `s:98da2881-0540-48db-8ffa-45d7003f1412:1650934596:LLD5mr9ynFEvjz8dVmwO4vNmEva32ZV6TjAcPzdIDO93Jhc82EhysiQPcw9ZdlbCcCUjDsaeHZUsFEMUVKbGBg`<br>
 2.  Retrieve the public key for your app by using one of the following methods:\
     \
     A) Use the `Public Key` option in the DeveloperPortal to retrieve the key for your app or\
     B) Make a call to `GET https://platform.reapit.cloud/webhooks/signing/{id}` where {id} is the id obtained from the X-Signature header (segment 2)\
     \
-    Data from this endpoint will be returned in the following format:\
-
+    Data from this endpoint will be returned in the following format:<br>
 
     ```
     {
@@ -70,8 +68,7 @@ As each event is prepared to be sent to your endpoint, it will be signed using t
     ```
 
     \
-    Calls to this endpoint must include the Authorization header containing a valid Bearer token. It is only possible to retrieve keys associated to the calling app when accessing the key programmatically.\
-
+    Calls to this endpoint must include the Authorization header containing a valid Bearer token. It is only possible to retrieve keys associated to the calling app when accessing the key programmatically.<br>
 3. Decode the `x` value from the results using the Base64 URL scheme (if using method A above, this is the value displayed to you in the DeveloperPortal)
 4. Combine the timestamp (segment 3) from the `X-Signature` header and the webhook message body (do not include a separation character)
 5. Verify the signature (segment 4 of the `X-Signature` header) using the Ed25519 curve, using the public key and a combination of the timestamp/message body as above.
@@ -144,8 +141,7 @@ app.listen(port, () => {
 {% endtab %}
 
 {% tab title=".NET Core" %}
-The following example uses C# .NET Core with the BouncyCastle.NETCore NuGet package\
-
+The following example uses C# .NET Core with the BouncyCastle.NETCore NuGet package<br>
 
 ```csharp
 using System;

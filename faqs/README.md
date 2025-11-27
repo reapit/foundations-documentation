@@ -327,8 +327,7 @@ On your app listing in the Developer Portal (Apps > My Apps > Select App > Insta
 * The Address of the organisation (Customer Address)
 * The Date the installation occurred (Date Installed)
 * The Email Address of the user who installed your app (Installed By)
-* The option to terminate the installation (Uninstall)  \
-
+* The option to terminate the installation (Uninstall)  <br>
 
 **Example Installations table:**
 

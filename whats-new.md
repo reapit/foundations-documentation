@@ -1088,8 +1088,7 @@ We now support the option for 'Four Weekly' rent frequency on Applicants:
 <figure><img src=".gitbook/assets/WN31034.png" alt=""><figcaption><p>Rent frequency example </p></figcaption></figure>
 
 &#x20;\
-&#x20;\
-
+&#x20;<br>
 
 ### **Properties**
 
@@ -1811,7 +1810,7 @@ Currently, it offers support on the following topics:
 
 [Accessing Customer Data](troubleshooting/accessing-customer-data.md)\
 [Authentication Issues](troubleshooting/authentication-issues.md)\
-[Installation](broken-reference)\
+[Installation](/broken/pages/-MfHjv7yrWkNatjMClJN)\
 [REST API](troubleshooting/platform-api.md)\
 [Reapit Connect](troubleshooting/reapit-connect.md)
 
@@ -1851,8 +1850,7 @@ To view your webhook transaction logs, simply navigate to the ‘Webhooks’ pag
 
 From each log item, you will be able to see the URL, the selected topic, status and the option to ‘Download’.
 
-Selecting ‘Download’ will save a copy of the specific payload as a JSON file.\
-
+Selecting ‘Download’ will save a copy of the specific payload as a JSON file.<br>
 
 ### **New Webhook Topics**
 
@@ -1879,8 +1877,7 @@ worksorders.raised\
 &#x20;\
 If you wish to setup subscriptions to any of the new the topics listed above, you will need to have selected the associated scopes.\
 \
-For more information on the required scopes, please visit the associated documentation [here](https://foundations-documentation.reapit.cloud/api/webhooks#available-topics).\
-
+For more information on the required scopes, please visit the associated documentation [here](https://foundations-documentation.reapit.cloud/api/webhooks#available-topics).<br>
 
 ### **New REST Hooks Endpoint**
 
@@ -1980,7 +1977,7 @@ Existing webhooks will remain as they are and you can edit your webhooks at any 
 
 ### New Developer Requests Documentation
 
-To '[Request a Feature'](https://github.com/reapit/foundations/issues/new?assignees=\&labels=feature-request%2C+needs-triage\&template=feature_request.md\&title=) or to '[Report a Bug](https://github.com/reapit/foundations/issues/new?assignees=\&labels=bug%2C+needs-triage\&template=bug_report.md\&title=)' you can visit the '[Help](https://developers.reapit.cloud/help)' page in the Developers Portal. To help with understanding the process for each new issue raised, we have added a new section in our documentation '[Developer Requests](broken-reference)'.&#x20;
+To '[Request a Feature'](https://github.com/reapit/foundations/issues/new?assignees=\&labels=feature-request%2C+needs-triage\&template=feature_request.md\&title=) or to '[Report a Bug](https://github.com/reapit/foundations/issues/new?assignees=\&labels=bug%2C+needs-triage\&template=bug_report.md\&title=)' you can visit the '[Help](https://developers.reapit.cloud/help)' page in the Developers Portal. To help with understanding the process for each new issue raised, we have added a new section in our documentation '[Developer Requests](/broken/pages/-MTzCNhRuWxZfj5frdpW)'.&#x20;
 
 The new documentation will outline our processes, from what happens after submitting an issue to how your ticket will get triaged and categorised. Depending on the nature of the request or bug, it will determine which project board it may get assigned to. As our boards are public you will always be able to track the progress of any issue or request raised.&#x20;
 
@@ -2576,8 +2573,7 @@ In addition, you can now search the data using a date range filter or simply sel
 
 #### Tags Input
 
-A new ‘Tags Input’ component has been added to Elements. We will be using this on the Submit and Edit app forms shortly, but it is available for you to use, as are all the components in Elements. Selecting an item from a drop-down list, it will automatically add as a tag in the field. It also offers a hover over state allowing the user to clearly see a brief description regarding each selection.\
-
+A new ‘Tags Input’ component has been added to Elements. We will be using this on the Submit and Edit app forms shortly, but it is available for you to use, as are all the components in Elements. Selecting an item from a drop-down list, it will automatically add as a tag in the field. It also offers a hover over state allowing the user to clearly see a brief description regarding each selection.<br>
 
 ![Tags Input Component in Elements](<.gitbook/assets/image (24).png>)
 
@@ -2645,8 +2641,7 @@ In addition and ahead of schedule, the ‘Works Order API’ is now up and runni
 **Embedding Data**\
 Now available in the Interactive API Documentation, the option to request additional resources when making a GET request on our APIs.
 
-If your application requires data from one or more related endpoints, you can simply specify the name of the related resource from the list provide in ‘Embed’ section and our APIs will do the rest.\
-
+If your application requires data from one or more related endpoints, you can simply specify the name of the related resource from the list provide in ‘Embed’ section and our APIs will do the rest.<br>
 
 ![](.gitbook/assets/embed.png)
 
@@ -2663,8 +2658,7 @@ Don’t forget, whilst the ‘What’s New’ page will give you a brief look at
 \
 [Click here](https://foundations-documentation.reapit.cloud/whats-new/platform-changelog) to the view the ‘Platform Change Log’
 
-To follow the release of our  Web Change Log, please [click here](https://github.com/reapit/foundations/issues/599) \
-
+To follow the release of our  Web Change Log, please [click here](https://github.com/reapit/foundations/issues/599) <br>
 
 ## 28/02/20
 
@@ -2737,8 +2731,7 @@ From every issue raised through to completion, you’ll have full visibility on 
 
 These are only a but a few of the features we have included with many more still yet to come.  \
 \
-If you're interested, we will also soon be including a release note section, giving you detailed information on everything that has been changed, fixed or showcasing something new.  \
-
+If you're interested, we will also soon be including a release note section, giving you detailed information on everything that has been changed, fixed or showcasing something new.  <br>
 
 #### Finally...&#x20;
 
