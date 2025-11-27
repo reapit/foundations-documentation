@@ -8,7 +8,7 @@ description: >-
 
 ### Versions&#x20;
 
-| 1st December 2025  | Terms and Conditions.pdf                                                                                                      |
+| 1st December 2025  | [Terms and Conditions.pdf](https://reapit-marketplace-app-media-prod.s3.eu-west-2.amazonaws.com/foundations-terms-011225.pdf) |
 | ------------------ | ----------------------------------------------------------------------------------------------------------------------------- |
 | 1st September 2025 | [Terms and Conditions.pdf](https://reapit-marketplace-app-media-prod.s3.eu-west-2.amazonaws.com/Foundations-terms-010925.pdf) |
 | 25th June 2021     | [Terms and Conditions.pdf](https://reapit-marketplace-app-media-prod.s3.eu-west-2.amazonaws.com/Foundations-terms-250621.pdf) |
