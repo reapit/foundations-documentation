@@ -35,7 +35,7 @@
   * [Authentication Issues](troubleshooting/authentication-issues.md)
   * [Reapit Connect](troubleshooting/reapit-connect.md)
   * [REST API](troubleshooting/platform-api.md)
-* [Development Requests](dev-requests.md)
+* [Feature Requests](dev-requests.md)
 * [FAQ's](faqs/README.md)
   * [Reapit Connect Emails](faqs/reapit-connect-emails.md)
 * [Help](help.md)

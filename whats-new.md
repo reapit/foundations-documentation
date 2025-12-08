@@ -6,6 +6,8 @@ description: >-
 
 # What’s New
 
+To submit a request, please refer to [Feature Requests](troubleshooting/platform-api.md) for more infomation.&#x20;
+
 ## October 2025
 
 ### Tenancies
