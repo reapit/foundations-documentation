@@ -16,7 +16,7 @@ The fastest way to get started building a Reapit AppMarket App is with our [Foun
 * Includes TypeScript Platform Type Definitions, and Unit Tests.
 * Includes Github Actions pipelines for pull request validation and production deployment.
 * Comes bundled with AWS CDK scripts to enable you to deploy to your own AWS environment with virtually zero configuration.
-* For a quick start development environment, you can deploy to our [Infra as a Service (IaaS)](iaas-coming-soon/) - contact us for beta access.
+* For a quick start development environment, you can deploy to our [Infra as a Service (IaaS)](iaas/) - contact us for beta access.
 
 {% hint style="info" %}
 For a demo deployed to our Infra as a Service (IaaS), [visit here.](https://handsome-zipper.iaas.paas.reapit.cloud/) You can use your developer credentials to log in with Reapit Connect.
