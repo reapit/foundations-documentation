@@ -1,24 +1,28 @@
 # App Permissions
 
-Requesting a new permission when your app is already in use (live and installed)
+External developers (Partners) are required to contact the Reapit Partnerships team (partners@reapit.com) before any app revision is submitted for access to new permissions. Please refer to the [Reapit Partner Business Service Catalogue](https://www.reapit.com/legal/terms-and-conditions/reapit-partner-business-service-catalogue) for response times.&#x20;
 
-**Step 1:**
+The Partnerships team will request additional information regarding the new permission, such as the business purpose, what info will be used from the new permission, how it fits into your product process, how you will use the data etc.&#x20;
+
+Once approved by the Partnerships team, the following process will need to be followed;&#x20;
+
+#### **Step 1:**
 
 Add the new permissions and click ‘Create Revision’.
 
-**Step 2:**
+#### **Step 2:**
 
 A modal will appear presenting you with the option to ‘Send Requests’. If you choose to send the requests, an email will be sent to the person that installed your app.
 
 <figure><img src="../.gitbook/assets/image (125).png" alt=""><figcaption></figcaption></figure>
 
-Each customer will have to agree to the new permission before our team can approve your revision.
+Every customer who has installed your app must agree to the new permission before our team can approve your revision.&#x20;
 
 You can track this process on the ‘App Consents’ page or reach out to your customer to expedite their response to our message.
 
 <figure><img src="../.gitbook/assets/Consents.jpg" alt=""><figcaption></figcaption></figure>
 
-If you decide not to send the requests, our Admin team will send the requests.&#x20;
+If you decide not to send the requests, our Partnerships team will send the requests on your behalf.&#x20;
 
 Please see an example email the customer will receive:
 
@@ -36,13 +40,13 @@ Kind regards
 
 Reapit Ltd”
 
-Please note, the email address for the customer to contact will be yours should they wish to discuss the requested permissions.&#x20;
+Please note, the email address for the customer to contact will be your own email address should they wish to discuss the requested permissions.&#x20;
 
-**Step 3:**
+#### **Step 3:**
 
 The customer will be redirected to the AppMarket and will be need to ‘Accept’ the request. This is to ensure data security.
 
-**Step 4:**
+#### **Step 4:**
 
 The admin team will be able to monitor the status of each request and once you have received approval from all customers, we will approve your request.&#x20;
 
