@@ -335,7 +335,7 @@ The type of _Applicant_ will be given to an application that can be launched for
 
 When an app with a type of Applicant is installed then an Apps menu will appear on the Applicant screen.  Clicking on an app will launch it with the applicant code.
 
-![Applicant apps launch point](<../.gitbook/assets/image (6).png>)
+![Applicant apps launch point](<../.gitbook/assets/image (6) (1).png>)
 
 ### Id Check
 
@@ -351,7 +351,7 @@ The type of _ID Check_ will be given to an application that can be used to repla
 
 This desktop type will take affect in AgencyCloud when the following button is clicked (this will be seen on various screens, for example contact and applicant).
 
-![Id Check button in AgencyCloud](<../.gitbook/assets/image (5) (1).png>)
+![Id Check button in AgencyCloud](<../.gitbook/assets/image (5) (1) (1).png>)
 
 ### Property Marketing Information
 
