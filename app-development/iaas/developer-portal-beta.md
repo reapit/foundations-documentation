@@ -16,13 +16,13 @@ For apps that pre-exist the IaaS service, this was not possible so you will see 
 
 From here you should hit "Create Pipeline" to take you to the new pipeline page.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 From here, you need to tell us about your application, the repo (we support Github and BitBucket), the main branch, the command in your package.json that builds the app and the directory your assets are output to.
 
 On saving this config, you have pre-provisioned an app and you will return to the Pre provisioned app screen.
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 You should now hit "Provision", to build your initial infrastructure on our services. This can take a minute or two. You can also move on to the [Next Steps](developer-portal-beta.md#next-steps-all-apps) section below.
 
@@ -30,7 +30,7 @@ You should now hit "Provision", to build your initial infrastructure on our serv
 
 If you created a new application, we pre-provision a Pipeline for your application by default. Visiting the "Pipeline" tab you will see this page:
 
-<figure><img src="../../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Note the state of the application is "Pre provisioned". This means we have a shell pipeline and have reserved a domain name for your app in our infra.
 

@@ -8,6 +8,18 @@ description: >-
 
 To submit a request, please refer to [Feature Requests](dev-requests.md) for more information.&#x20;
 
+## March 2026
+
+### Enquiries
+
+Filter incoming enquiries using two new parameters, `officeId` and `status` when reading (GET) enquiries on `/enquiries` and `/enquiries/{id}` .
+
+### Offices
+
+Retrieve (GET) configured branchId/ officeId in the new onlineServices array available on the `/offices` and `/offices/{id}` endpoints. Online service id, name and associated branch codes are visible.
+
+<figure><img src=".gitbook/assets/image (2).png" alt=""><figcaption><p>Online Services, id, name and code retrieved via API when calling GET /office and /office{id} </p></figcaption></figure>
+
 ## February 2026
 
 ### Properties
@@ -18,7 +30,7 @@ Read (GET) property Address, Strapline, Accommodation Summary, Brief description
 
 Read (GET) and update (PATCH) property Address, Straplines, Accommodation Summary, Brief Description, Rooms and Extra Descriptions for a single language via /`properties/{id}/multilingual/{langId}` . One language can be updated at a time.
 
-<figure><img src=".gitbook/assets/image.png" alt=""><figcaption><p>Property record strapline, accommodation summary, brief description, address lines and postcode API retrieval</p></figcaption></figure>
+<figure><img src=".gitbook/assets/image (3).png" alt=""><figcaption><p>Property record strapline, accommodation summary, brief description, address lines and postcode API retrieval</p></figcaption></figure>
 
 <figure><img src=".gitbook/assets/image (7).png" alt=""><figcaption><p>Accommodation Summary available on CRM Property record. Attributes. Rooms and Accommodation Screen</p></figcaption></figure>
 
@@ -26,7 +38,7 @@ Read (GET) and update (PATCH) property Address, Straplines, Accommodation Summar
 
 <figure><img src=".gitbook/assets/2026-02-24_10h26_07.png" alt=""><figcaption><p>API Rooms multi-lingual retrieval </p></figcaption></figure>
 
-<figure><img src=".gitbook/assets/image (3).png" alt=""><figcaption><p>CRM Property record, Marketing Details screen displaying Extra Descriptions and language options</p></figcaption></figure>
+<figure><img src=".gitbook/assets/image (3) (1).png" alt=""><figcaption><p>CRM Property record, Marketing Details screen displaying Extra Descriptions and language options</p></figcaption></figure>
 
 <figure><img src=".gitbook/assets/2026-02-24_10h26_29.png" alt=""><figcaption><p>Extra Descriptions API multi-lingual retrieval</p></figcaption></figure>
 
@@ -38,7 +50,7 @@ Retrieve all languages configured in a database using `configuration/activeLangu
 
 Retrieve (GET) the number of occupiers associated to a tenancy with the addition of `occupierCount` field on `/tenancies` and `/tenancies/{id}`&#x20;
 
-<figure><img src=".gitbook/assets/image (1).png" alt=""><figcaption><p>'occupierCount' field on GET /tenancies and GET /tenancies/id</p></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1) (1).png" alt=""><figcaption><p>'occupierCount' field on GET /tenancies and GET /tenancies/id</p></figcaption></figure>
 
 ## December 2025
 
@@ -46,7 +58,7 @@ Retrieve (GET) the number of occupiers associated to a tenancy with the addition
 
 Update (PATCH) additional contact details for Negotiators such as telephone numbers and email addresses on the CRM setup '_Negotiator and User_' screen via  `/negotiators/{id}`&#x20;
 
-<figure><img src=".gitbook/assets/image (2).png" alt=""><figcaption><p>additionalContactDetails PATCH on /negotiators/{id}</p></figcaption></figure>
+<figure><img src=".gitbook/assets/image (2) (1).png" alt=""><figcaption><p>additionalContactDetails PATCH on /negotiators/{id}</p></figcaption></figure>
 
 ## November 2025
 
@@ -1218,7 +1230,7 @@ Converted room dimensions are now returned on a property under ‘`dimensionsAlt
 
 Release 4.0.0
 
-<figure><img src=".gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **New Features**
 
@@ -2769,7 +2781,7 @@ Those of you familiar with [GitBook, ](https://www.gitbook.com)will know they ar
 
 Available for a **limited time only**, direct access to our Foundations Platform Product Owners and Developers. You can access this feature from the ‘[Help](http://marketplace.reapit.cloud/developer/help)’ section in the developer portal. We hope you won’t need us and that everything you need can be found within our documentation but it’s nice to know we’re here if you do.
 
-![Live Chat feature](<.gitbook/assets/image (3) (1) (1) (1).png>)
+![Live Chat feature](<.gitbook/assets/image (3) (1) (1) (1) (1).png>)
 
 ### Full Visibility ([Roadmap](https://github.com/reapit/foundations/milestones?direction=asc\&sort=due_date\&state=open))
 
