@@ -18,6 +18,10 @@ Areas represent a specific geographical location that an [applicant ](./#applica
 
 Appointments represent calendar engagements used by [negotiators](./#negotiator) to schedule meetings or arrange events, such as [property](./#property) viewings and valuations. Appointments can be set to recur by including recurrence information and can be scheduled to appear in multiple [negotiators](./#negotiator)’ calendars.
 
+### Auctions
+
+Auctions represent internal or external [property](https://foundations-documentation.reapit.cloud/platform-glossary#property) sales using lots. Properties can be organised into single and multiple lots for auction.
+
 ### Company
 
 Companies represent a business organisation that the agent ([customer](./#customer)) has a relationship with. Companies can be assigned a type which relates to the various roles they are able to fulfill such as solicitor or supplier, as well as being able to be involved in their own [property](./#property) transactions.

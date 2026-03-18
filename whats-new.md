@@ -10,6 +10,12 @@ To submit a request, please refer to [Feature Requests](dev-requests.md) for mor
 
 ## March 2026
 
+### Auctions
+
+New Auctions service retrieves (GET) all auction lots  `/lots` or retrieve auction lots by id `/lots/{id}`
+
+<figure><img src=".gitbook/assets/image.png" alt=""><figcaption><p>Example payload via /auctions/lots </p></figcaption></figure>
+
 ### Enquiries
 
 Filter incoming enquiries using two new parameters, `officeId` and `status` when reading (GET) enquiries on `/enquiries` and `/enquiries/{id}` .
@@ -50,7 +56,7 @@ Retrieve all languages configured in a database using `configuration/activeLangu
 
 Retrieve (GET) the number of occupiers associated to a tenancy with the addition of `occupierCount` field on `/tenancies` and `/tenancies/{id}`&#x20;
 
-<figure><img src=".gitbook/assets/image (1) (1).png" alt=""><figcaption><p>'occupierCount' field on GET /tenancies and GET /tenancies/id</p></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1) (1) (1).png" alt=""><figcaption><p>'occupierCount' field on GET /tenancies and GET /tenancies/id</p></figcaption></figure>
 
 ## December 2025
 
@@ -1230,7 +1236,7 @@ Converted room dimensions are now returned on a property under ‘`dimensionsAlt
 
 Release 4.0.0
 
-<figure><img src=".gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **New Features**
 

@@ -16,7 +16,7 @@ For apps that pre-exist the IaaS service, this was not possible so you will see 
 
 From here you should hit "Create Pipeline" to take you to the new pipeline page.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 From here, you need to tell us about your application, the repo (we support Github and BitBucket), the main branch, the command in your package.json that builds the app and the directory your assets are output to.
 
