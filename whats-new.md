@@ -10,6 +10,49 @@ To submit a request, please refer to [Feature Requests](dev-requests.md) for mor
 
 ## March 2026
 
+### Contacts
+
+Making Tax Digital (MTD). Landlord Opt-In Status
+
+Retrieve (GET) landlord details for a specific contact via\
+`/contacts/{id}/landlordDetails`&#x20;
+
+**'makingTaxDigitalOptInStatus'** \
+This field represents whether a landlord has agreed for the agent to share their landlord and transaction details via the agent’s CRM for HMRC tax reporting purposes. &#x20;
+
+&#x20;Possible values :
+
+* &#x20;`notSet` (default) &#x20;
+* `optedIn` &#x20;
+* `optedOut`&#x20;
+
+**'makingTaxDigitalOptInStatusDate'** \
+This field represents the date the 'makingTaxDigitalOptInStatus' was changed.
+
+**'makingTaxDigitalConsentStatus'**\
+This field indicates the landlord’s relationship with a digital tax integration/ app.
+
+Possible values:
+
+* `not Set` (default)&#x20;
+* `invited`&#x20;
+* `accepted`&#x20;
+* `revoked`&#x20;
+
+⚠️ **Note:** This field cannot be updated by agents via the CRM.
+
+<figure><img src=".gitbook/assets/image (170).png" alt=""><figcaption><p>Example makingTaxDigital status and optIn date retrieval via GET '/contacts{id}/landlordDetails'</p></figcaption></figure>
+
+### Contacts&#x20;
+
+Add (PUT) the relationship status between a specific landlord and a Making Tax Digital (MTD) integration/ app on the 'makingTaxDigitalConsentStatus' field via
+
+`/contacts/{id}/landlordDetails`&#x20;
+
+Possible values: (above)
+
+<figure><img src=".gitbook/assets/image (171).png" alt=""><figcaption><p>Example makingTaxDigitalConsentStatus via PUT '/contacts/{id}/landlordDetails'</p></figcaption></figure>
+
 ### Auctions
 
 New Auctions service retrieves (GET) all auction lots  `/lots` or retrieve auction lots by id `/lots/{id}`
