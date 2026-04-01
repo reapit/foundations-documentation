@@ -10,9 +10,29 @@ To submit a request, please refer to [Feature Requests](dev-requests.md) for mor
 
 ## March 2026
 
+### Properties
+
+Retrieve (GET), update (PATCH) and create (POST) `serviceChargeReviewDate` and `groundRentType`  on Lettings property records. These fields are accessible in the CRM 'Keywords & Charges' tab which is visible on the property Attributes screen. Available endpoints:
+
+GET `/properties`&#x20;
+
+GET, POST, PATCH `/properties/{id}`
+
+<figure><img src=".gitbook/assets/image (179).png" alt=""><figcaption><p>E.g., API '<em>groundRentType</em>' retrieval</p></figcaption></figure>
+
+<figure><img src=".gitbook/assets/image (180).png" alt=""><figcaption><p>E.g., API `<em>serviceChargeReviewDate</em>' retrieval</p></figcaption></figure>
+
+### Properties
+
+Retrieve (GET) `parking` related Material Information stored on a property record via `/properties/{id}/utilities`
+
+<figure><img src=".gitbook/assets/image (178).png" alt=""><figcaption><p>E.g., '<em>parking</em>' utilities data retrieved via API </p></figcaption></figure>
+
+<figure><img src=".gitbook/assets/image (177).png" alt=""><figcaption><p>E.g., '<em>Parking</em>' utilities field on a property record's Attribute screen in the CRM </p></figcaption></figure>
+
 ### Contacts
 
-Making Tax Digital (MTD). Landlord Opt-In Status
+Making Tax Digital (MTD).&#x20;
 
 Retrieve (GET) landlord details for a specific contact via\
 `/contacts/{id}/landlordDetails`&#x20;
