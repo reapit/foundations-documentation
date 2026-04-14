@@ -8,6 +8,14 @@ description: >-
 
 To submit a request, please refer to [Feature Requests](dev-requests.md) for more information.&#x20;
 
+## April 2026
+
+### Certificates
+
+Retrieve (GET) certificates with endDates from a specified date or up to specified date with two additional parameters 'endDateFrom' and 'endDateTo' available via:
+
+GET `/certificates`
+
 ## March 2026
 
 ### Properties
