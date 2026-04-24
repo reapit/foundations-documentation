@@ -10,6 +10,25 @@ To submit a request, please refer to [Feature Requests](dev-requests.md) for mor
 
 ## April 2026
 
+### Properties
+
+Retrieve (GET) property attributes per department via
+
+endpoint: \`/departments\` and \`/departments/{id}\`
+
+<figure><img src=".gitbook/assets/image (183).png" alt=""><figcaption><p>e.g., 'Commercial' attributes retrieved via API ‘/departments’, displaying attribute options configured for ‘Type’ and ‘Style’ in the CRM</p></figcaption></figure>
+
+### Properties
+
+Retrieve (GET) update (PATCH) and create (POST) additional International property attributes.
+
+New mapped attributes:\
+**Type**: penthouse,  farmhouse, mas, chalet, palace, chateau, countryHouse, developmentPlot
+
+**Locality**: resort, mountains, waterfront
+
+**Situation:** balcony, garage, vineyard, communalGarden
+
 ### Certificates
 
 Retrieve (GET) certificates with endDates from a specified date or up to specified date with two additional parameters 'endDateFrom' and 'endDateTo' available via:
