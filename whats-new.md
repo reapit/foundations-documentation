@@ -10,6 +10,142 @@ To submit a request, please refer to [Feature Requests](dev-requests.md) for mor
 
 ## April 2026
 
+### Renters Rights
+
+Tenancies – Rent Review Enhancements
+
+This section summarises new Rent Review related API capabilities across Initial Contact, Agreement, Terms, and Checks, alongside the independent Renters Rights field.\
+All functionality provides CRM parity and follows the Tenancies service model.
+
+***
+
+### Tenancies
+
+Retrieve (GET) unique rentReview identifiers, the date the rentReview was created and the last date and time the rentReview was updated via:
+
+Endpoints:
+
+GET `tenancies/{id}/rentReviews`
+
+GET `/tenancies/{id}/rentReviews/{rentReviewId}`
+
+
+
+**Rent Reviews: Initial Contact**
+
+Retrieve (GET) and update (PATCH) Initial Contact information for Landlords and Tenants via:
+
+Endpoints:\
+GET, POST `/tenancies/{id}/rentReviews`\
+GET, PATCH `/tenancies/{id}/rentReviews/{rentReviewId}`
+
+These fields capture when communication was Sent or Received.
+
+Fields:
+
+* landlordSentDate
+* landlordReceivedDate
+* tenantSentDate
+* tenantReceivedDate
+
+<figure><img src=".gitbook/assets/image (3).png" alt=""><figcaption><p><em>Initial Contact section of CRM Rent Review screen</em></p></figcaption></figure>
+
+<figure><img src=".gitbook/assets/image (5).png" alt=""><figcaption><p> <em>Initial Contact fields within GET /tenancies/{id}/rentReviews payload</em></p></figcaption></figure>
+
+### Tenancies
+
+**RentReview: Agreement**
+
+Retrieve (GET), create (POST), and update (PATCH) Rent Review Agreement details via:
+
+Endpoints:\
+GET, POST `/tenancies/{id}/rentReviews`\
+GET, PATCH `/tenancies/{id}/rentReviews/{rentReviewId}`
+
+Fields:
+
+* negotiatorId
+* status
+
+<figure><img src=".gitbook/assets/image (8).png" alt=""><figcaption><p> <em>Agreement section of CRM Rent Review screen</em></p></figcaption></figure>
+
+<figure><img src=".gitbook/assets/image (9).png" alt=""><figcaption><p><em>Agreement object within /tenancies/{id}/rentReviews</em></p></figcaption></figure>
+
+### Tenancies
+
+**Rent Reviews: Proposed Terms and Agreed Terms**
+
+The Terms section captures all adjustable financial values and agreement indicators associated with a rent review.
+
+Retrieve (GET), create (POST), and update (PATCH) Rent Review Terms via:
+
+Endpoints:\
+GET, POST `/tenancies/{id}/rentReviews`\
+GET, PATCH `/tenancies/{id}/rentReviews/{rentReviewId}`
+
+Fields include:
+
+* proposedRent
+  * amount
+  * frequency
+* proposedOn: (date)
+* proposedStart: (date)
+* agreedRent
+  * amount
+  * frequency
+* effectiveDate
+* tenantAgreed
+* landlordAgreed
+
+<figure><img src=".gitbook/assets/image (10).png" alt=""><figcaption><p>Proposed <em>Terms section of CRM Rent Review screen</em></p></figcaption></figure>
+
+<figure><img src=".gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src=".gitbook/assets/image (16).png" alt=""><figcaption><p><em>Example Proposed Terms and Agreed Terms object retrieved via API</em></p></figcaption></figure>
+
+### Tenancies
+
+**Rent Review: Checks**
+
+Retrieve (GET), create (POST), update (PATCH), and delete (DELETE) Rent Review Checks via:
+
+Endpoints:\
+GET, POST `/tenancies/{id}/rentReviews/{rentReviewId}/checks`\
+GET, PATCH, DELETE `/tenancies/{id}/rentReviews/{rentReviewId}/checks/{checkId}`
+
+<figure><img src=".gitbook/assets/image (18).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src=".gitbook/assets/image (20).png" alt=""><figcaption><p><em>Example rentReview Check retrieved via API</em></p></figcaption></figure>
+
+***
+
+POST Checks
+
+Create a new Rent Review Check by supplying:
+
+* status
+* checkTypeId
+
+<figure><img src=".gitbook/assets/image (21).png" alt=""><figcaption><p><em>Example rentReview checks POST fields available via API</em></p></figcaption></figure>
+
+***
+
+PATCH Checks
+
+Update the status of an existing Rent Review Check.
+
+<figure><img src=".gitbook/assets/image (23).png" alt=""><figcaption><p><em>Example PATCH rentReview check via API</em></p></figcaption></figure>
+
+***
+
+DELETE Checks
+
+Remove a Rent Review Check by supplying mandatory fields:
+
+* tenancyId
+* rentReviewId
+* checkId
+
 ### Properties
 
 Retrieve (GET) property attributes per department via
@@ -104,7 +240,7 @@ Possible values: (above)
 
 New Auctions service retrieves (GET) all auction lots  `/lots` or retrieve auction lots by id `/lots/{id}`
 
-<figure><img src=".gitbook/assets/image.png" alt=""><figcaption><p>Example payload via /auctions/lots </p></figcaption></figure>
+<figure><img src=".gitbook/assets/image (25).png" alt=""><figcaption><p>Example payload via /auctions/lots </p></figcaption></figure>
 
 ### Enquiries
 
@@ -114,7 +250,7 @@ Filter incoming enquiries using two new parameters, `officeId` and `status` when
 
 Retrieve (GET) configured branchId/ officeId in the new onlineServices array available on the `/offices` and `/offices/{id}` endpoints. Online service id, name and associated branch codes are visible.
 
-<figure><img src=".gitbook/assets/image (2).png" alt=""><figcaption><p>Online Services, id, name and code retrieved via API when calling GET /office and /office{id} </p></figcaption></figure>
+<figure><img src=".gitbook/assets/image (2) (1).png" alt=""><figcaption><p>Online Services, id, name and code retrieved via API when calling GET /office and /office{id} </p></figcaption></figure>
 
 ## February 2026
 
@@ -126,15 +262,15 @@ Read (GET) property Address, Strapline, Accommodation Summary, Brief description
 
 Read (GET) and update (PATCH) property Address, Straplines, Accommodation Summary, Brief Description, Rooms and Extra Descriptions for a single language via /`properties/{id}/multilingual/{langId}` . One language can be updated at a time.
 
-<figure><img src=".gitbook/assets/image (3).png" alt=""><figcaption><p>Property record strapline, accommodation summary, brief description, address lines and postcode API retrieval</p></figcaption></figure>
+<figure><img src=".gitbook/assets/image (3) (1).png" alt=""><figcaption><p>Property record strapline, accommodation summary, brief description, address lines and postcode API retrieval</p></figcaption></figure>
 
-<figure><img src=".gitbook/assets/image (7).png" alt=""><figcaption><p>Accommodation Summary available on CRM Property record. Attributes. Rooms and Accommodation Screen</p></figcaption></figure>
+<figure><img src=".gitbook/assets/image (7) (1).png" alt=""><figcaption><p>Accommodation Summary available on CRM Property record. Attributes. Rooms and Accommodation Screen</p></figcaption></figure>
 
-<figure><img src=".gitbook/assets/image (6).png" alt=""><figcaption><p>CRM Property Record. Attributes. Rooms and Accommodation Screen</p></figcaption></figure>
+<figure><img src=".gitbook/assets/image (6) (1).png" alt=""><figcaption><p>CRM Property Record. Attributes. Rooms and Accommodation Screen</p></figcaption></figure>
 
 <figure><img src=".gitbook/assets/2026-02-24_10h26_07.png" alt=""><figcaption><p>API Rooms multi-lingual retrieval </p></figcaption></figure>
 
-<figure><img src=".gitbook/assets/image (3) (1).png" alt=""><figcaption><p>CRM Property record, Marketing Details screen displaying Extra Descriptions and language options</p></figcaption></figure>
+<figure><img src=".gitbook/assets/image (3) (1) (1).png" alt=""><figcaption><p>CRM Property record, Marketing Details screen displaying Extra Descriptions and language options</p></figcaption></figure>
 
 <figure><img src=".gitbook/assets/2026-02-24_10h26_29.png" alt=""><figcaption><p>Extra Descriptions API multi-lingual retrieval</p></figcaption></figure>
 
@@ -146,7 +282,7 @@ Retrieve all languages configured in a database using `configuration/activeLangu
 
 Retrieve (GET) the number of occupiers associated to a tenancy with the addition of `occupierCount` field on `/tenancies` and `/tenancies/{id}`&#x20;
 
-<figure><img src=".gitbook/assets/image (1) (1) (1).png" alt=""><figcaption><p>'occupierCount' field on GET /tenancies and GET /tenancies/id</p></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption><p>'occupierCount' field on GET /tenancies and GET /tenancies/id</p></figcaption></figure>
 
 ## December 2025
 
@@ -154,7 +290,7 @@ Retrieve (GET) the number of occupiers associated to a tenancy with the addition
 
 Update (PATCH) additional contact details for Negotiators such as telephone numbers and email addresses on the CRM setup '_Negotiator and User_' screen via  `/negotiators/{id}`&#x20;
 
-<figure><img src=".gitbook/assets/image (2) (1).png" alt=""><figcaption><p>additionalContactDetails PATCH on /negotiators/{id}</p></figcaption></figure>
+<figure><img src=".gitbook/assets/image (2) (1) (1).png" alt=""><figcaption><p>additionalContactDetails PATCH on /negotiators/{id}</p></figcaption></figure>
 
 ## November 2025
 
@@ -251,7 +387,7 @@ When a single Tenancy Finished Reason ID is provided the Tenancy Finished Reason
 
 <figure><img src=".gitbook/assets/2025-08-29_19h04_37.png" alt=""><figcaption><p>Endpoint to retrieve all TenancyFinishedReasons</p></figcaption></figure>
 
-<figure><img src=".gitbook/assets/image (9).png" alt=""><figcaption><p>Endpoint to retrieve a single Tenancy Finished reason</p></figcaption></figure>
+<figure><img src=".gitbook/assets/image (9) (1).png" alt=""><figcaption><p>Endpoint to retrieve a single Tenancy Finished reason</p></figcaption></figure>
 
 <figure><img src=".gitbook/assets/rpa-302.png" alt=""><figcaption><p>Example payload displaying <code>id</code>, <code>value</code> and <code>category</code> fields</p></figcaption></figure>
 
@@ -1326,7 +1462,7 @@ Converted room dimensions are now returned on a property under ‘`dimensionsAlt
 
 Release 4.0.0
 
-<figure><img src=".gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **New Features**
 
@@ -2629,7 +2765,7 @@ With Foundations, you can now create a Webhook subscription which will allow you
 
 Setting up a Webhook is very simple and can be created from the new ‘Webhooks’ page in the Developers Portal [here ](https://marketplace.reapit.cloud/developer/webhooks)
 
-![Adding a new Webhook](<.gitbook/assets/image (23).png>)
+![Adding a new Webhook](<.gitbook/assets/image (23) (1).png>)
 
 It will give you the ability to chose which events to listen to with the option to select specific customers or all customers (once installed) for your selected applications.
 
@@ -2659,11 +2795,11 @@ An additional tab has been added on the ‘Analytics’ page, the ‘Cost Explor
 
 The ‘Services’ bar chart will give you a month to month total of your cost (excluding VAT).
 
-![Example Services Bar Chart](<.gitbook/assets/image (21).png>)
+![Example Services Bar Chart](<.gitbook/assets/image (21) (1).png>)
 
 But for a more detailed breakdown you can use the ‘Cost Explorer: Usage & Cost’. This will provide the ability to see on a granular level, the amount you are spending on each Resource. Notably, until the AppMarket is live and you have app installations, you won’t see any traffic but you can an example below:
 
-![Example Resource Table](<.gitbook/assets/image (19).png>)
+![Example Resource Table](<.gitbook/assets/image (19) (1).png>)
 
 Selecting the ‘Configuration’ entity from the table, I can see the breakdown of the specific endpoint my apps have been interacting with, how many API calls have been made and the total cost for that month.
 
@@ -2679,7 +2815,7 @@ As we are working on developing the Client Portal (AppMarket) we want to ensure 
 
 The ‘Description’ box when submitting or editing an App, has now been updated to support HTML. You can create headers, bulleted or numbered lists, line breaks and paragraphs.
 
-![Updated Description Box](<.gitbook/assets/image (22).png>)
+![Updated Description Box](<.gitbook/assets/image (22) (1).png>)
 
 We are also supporting ‘External Links’ which will no doubt be very handy to provide more information about your company and your app for potential clients.
 
@@ -2687,7 +2823,7 @@ We are also supporting ‘External Links’ which will no doubt be very handy to
 
 Elements Storybook now also supports a vanilla HTML. Simply apply the classes to your markup as displayed in the HTML tab in each Storybook component as per below:
 
-![HTML Tab in Elements](<.gitbook/assets/image (25).png>)
+![HTML Tab in Elements](<.gitbook/assets/image (25) (1).png>)
 
 ### Changes
 
@@ -2715,7 +2851,7 @@ With that said, let us take a look at what we’ve been working on:
 
 A new section is now available in on the Submit and Edit app forms, giving you the ability to specify which customers you would like to share your application with. You can enter the Customer ID or IDs and when the AppMarket is live, only those customers will see your application in the AppMarket. It is especially helpful to those building in private in-house applications.&#x20;
 
-![Private Apps section on the Submit and Edit App forms](<.gitbook/assets/image (10).png>)
+![Private Apps section on the Submit and Edit App forms](<.gitbook/assets/image (10) (2).png>)
 
 For more information, please [click here ](https://foundations-documentation.reapit.cloud/developer-portal#3-register-an-app)
 
@@ -2725,13 +2861,13 @@ The Analytics section has had a significant update, you can now see the specific
 
 In addition, you can now search the data using a date range filter or simply select a predefined option of ‘Yesterday’, ‘Last Week’ or ‘Last Month’. More to come on the Analytics page in the coming weeks.
 
-![Example Analytics Data ](<.gitbook/assets/image (8) (1).png>)
+![Example Analytics Data ](<.gitbook/assets/image (8) (1) (1).png>)
 
 #### Tags Input
 
 A new ‘Tags Input’ component has been added to Elements. We will be using this on the Submit and Edit app forms shortly, but it is available for you to use, as are all the components in Elements. Selecting an item from a drop-down list, it will automatically add as a tag in the field. It also offers a hover over state allowing the user to clearly see a brief description regarding each selection.<br>
 
-![Tags Input Component in Elements](<.gitbook/assets/image (24).png>)
+![Tags Input Component in Elements](<.gitbook/assets/image (24) (1).png>)
 
 To see the new the component, please [click here](https://elements.reapit.cloud/?path=/story/dropdownselect--primary)&#x20;
 
@@ -2751,7 +2887,7 @@ When you have submitted a revision on your app, you will now be able to click on
 
 For text or selections that has been added it will be highlighted in GREEN and for text deleted or options deselected, it will be highlighted in RED.
 
-![An example showing the diffing](<.gitbook/assets/image (16).png>)
+![An example showing the diffing](<.gitbook/assets/image (16) (1).png>)
 
 If you wish to cancel your pending revision to make additional changes for example, click ‘Cancel Pending Revision’. It will immediately cancel the revision and you will be able make any edits as usual.
 
@@ -2761,7 +2897,7 @@ If you wish to cancel your pending revision to make additional changes for examp
 
 There was a slight issue with the ‘Checkbox’ component in Elements not behaving correctly. This has been fixed and is now working as expected.
 
-![Checkbox component in Elements](<.gitbook/assets/image (20).png>)
+![Checkbox component in Elements](<.gitbook/assets/image (20) (1).png>)
 
 ### New
 
@@ -2877,7 +3013,7 @@ Those of you familiar with [GitBook, ](https://www.gitbook.com)will know they ar
 
 Available for a **limited time only**, direct access to our Foundations Platform Product Owners and Developers. You can access this feature from the ‘[Help](http://marketplace.reapit.cloud/developer/help)’ section in the developer portal. We hope you won’t need us and that everything you need can be found within our documentation but it’s nice to know we’re here if you do.
 
-![Live Chat feature](<.gitbook/assets/image (3) (1) (1) (1) (1).png>)
+![Live Chat feature](<.gitbook/assets/image (3) (1) (1) (1) (1) (1).png>)
 
 ### Full Visibility ([Roadmap](https://github.com/reapit/foundations/milestones?direction=asc\&sort=due_date\&state=open))
 

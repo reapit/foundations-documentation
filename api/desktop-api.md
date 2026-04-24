@@ -335,7 +335,7 @@ The type of _Applicant_ will be given to an application that can be launched for
 
 When an app with a type of Applicant is installed then an Apps menu will appear on the Applicant screen.  Clicking on an app will launch it with the applicant code.
 
-![Applicant apps launch point](<../.gitbook/assets/image (6) (1).png>)
+![Applicant apps launch point](<../.gitbook/assets/image (6) (1) (1).png>)
 
 ### Id Check
 
@@ -351,7 +351,7 @@ The type of _ID Check_ will be given to an application that can be used to repla
 
 This desktop type will take affect in AgencyCloud when the following button is clicked (this will be seen on various screens, for example contact and applicant).
 
-![Id Check button in AgencyCloud](<../.gitbook/assets/image (5) (1) (1).png>)
+![Id Check button in AgencyCloud](<../.gitbook/assets/image (5) (1) (1) (1).png>)
 
 ### Property Marketing Information
 
@@ -383,7 +383,7 @@ The type of _Vendor Marketing Report_ can be given to an application that can pr
 
 An application of this type can be launched from the Applicant Interest and Reports screen in AgencyCloud (launched from the Property Journal window):
 
-![Vendor Marketing App launch point](<../.gitbook/assets/image (17).png>)
+![Vendor Marketing App launch point](<../.gitbook/assets/image (17) (2).png>)
 
 ### Property Detail Generation
 
@@ -399,7 +399,7 @@ The type of _Property Detail Generation_ can be given to an application that can
 
 An application of this type can be launched from the Property Details screen in AgencyCloud:
 
-![Details generator app launch point ](<../.gitbook/assets/image (14) (1).png>)
+![Details generator app launch point ](<../.gitbook/assets/image (14) (1) (1).png>)
 
 ### Applicant Export
 
