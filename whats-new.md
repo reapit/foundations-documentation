@@ -10,6 +10,28 @@ To submit a request, please refer to [Feature Requests](dev-requests.md) for mor
 
 ## April 2026
 
+***
+
+### Works Orders
+
+Retrieve (GET), create (POST) and update (PATCH) the latest rentReview field date via:
+
+Endpoint:&#x20;
+
+GET `/worksOrders/`
+
+GET, POST, PATCH `/worksOrders/{id}`
+
+Fields:
+
+* reviewDate
+
+AWAITING API screenshot
+
+<figure><img src=".gitbook/assets/image (192).png" alt=""><figcaption><p>e.g., CRM Works Order screen section highlighting retrievable 'Review Date' field </p></figcaption></figure>
+
+<figure><img src=".gitbook/assets/image (193).png" alt=""><figcaption><p>e.g. reviewDate field retrieved via API '/worksOrders/{id}'</p></figcaption></figure>
+
 ### Renters Rights
 
 Tenancies – Rent Review Enhancements
@@ -17,19 +39,39 @@ Tenancies – Rent Review Enhancements
 This section summarises new Rent Review related API capabilities across Initial Contact, Agreement, Terms, and Checks, alongside the independent Renters Rights field.\
 All functionality provides CRM parity and follows the Tenancies service model.
 
-***
+### Tenancies&#x20;
 
-### Tenancies
-
-Retrieve (GET) unique rentReview identifiers, the date the rentReview was created and the last date and time the rentReview was updated via:
+Retrieve a tenancy’s Renters Rights status 'isRentersRights' via:
 
 Endpoints:
 
-GET `tenancies/{id}/rentReviews`
+GET `/tenancies/{id}`&#x20;
 
-GET `/tenancies/{id}/rentReviews/{rentReviewId}`
+GET `/tenancies/`
 
+Field:
 
+* isRentersRights
+
+CRM screenshot placeholder\
+&#xNAN;_&#x44;isplay of “Renters Rights” field within the tenancy record_
+
+API screenshot placeholder\
+&#xNAN;_&#x47;ET /tenancies/{id} response highlighting isRentersRights_
+
+### Tenancies
+
+Retrieve (GET) unique rentReview identifiers, the date the rentReview was created and the latest modified date:time via:
+
+Endpoints:
+
+GET `tenancies/{id}/rentReview`
+
+GET `/tenancies/{id}/rentReviews/{rentReviewId}`&#x20;
+
+<figure><img src=".gitbook/assets/image (189).png" alt=""><figcaption><p>example API rentReview retrieved displaying rent review 'Id', 'created' and 'modified' fields</p></figcaption></figure>
+
+### Tenancies
 
 **Rent Reviews: Initial Contact**
 
