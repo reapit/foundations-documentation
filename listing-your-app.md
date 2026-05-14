@@ -28,7 +28,7 @@ After submitting your app the Partnerships team we will be notified.&#x20;
 
 Depending on your app or integration and its complexity, the review process from start to finish can typically take up to 60 business days (12 weeks). However, there are circumstances in which this may not apply.
 
-![](<.gitbook/assets/Screenshot 2026-01-05 at 12.15.12.png>)
+<img src=".gitbook/assets/Screenshot 2026-01-05 at 12.15.12.png" alt="" width="215">
 
 &#x20;
 

@@ -8,6 +8,71 @@ description: >-
 
 To submit a request, please refer to [Feature Requests](dev-requests.md) for more information.&#x20;
 
+## May 2026
+
+***
+
+### Companies
+
+Update company accreditation 'details' and 'expiry' dates via
+
+Endpoint:\
+PATCH `/companies/{id}/accreditations/{type}`&#x20;
+
+<figure><img src=".gitbook/assets/image (206).png" alt=""><figcaption><p><em>e.g., Accreditations section on a Company record in the CRM</em></p></figcaption></figure>
+
+### Tenancies
+
+Retrieve and update Notice Management dates and reasons for Landlords and Tenants via:
+
+Endpoint:
+
+GET `/tenancies/{id}/noticeManagement`
+
+PATCH `/tenancies/{id}/noticeManagement`
+
+<figure><img src=".gitbook/assets/image (201).png" alt=""><figcaption><p><em>e.g., CRM Notice Management screen accessed from a Tenancy record</em></p></figcaption></figure>
+
+<figure><img src=".gitbook/assets/image (200).png" alt=""><figcaption><p><em>e.g., API notice management retrieval</em></p></figcaption></figure>
+
+### Tenancies
+
+Retrieve letting and management fee 'type', 'amount' and 'frequency' for a tenancy alteration via:
+
+Endpoint:
+
+GET  `/tenancies/{id}/extensions`
+
+GET `/tenancies/{id}/extensions/{extensionId}`&#x20;
+
+<figure><img src=".gitbook/assets/image (203).png" alt=""><figcaption><p>e.g., Letting and Management fees, fee types and collection frequencies on a Tenancy Alteration screen in the CRM.</p></figcaption></figure>
+
+<figure><img src=".gitbook/assets/image (202).png" alt=""><figcaption><p>e.g., lettingFee and managementFee retrieved via API</p></figcaption></figure>
+
+### Enquiries
+
+Retrieve and update the negotiator assigned to property enquiries via
+
+Endpoints:
+
+GET `/enquiries` \
+GET , PATCH `/enquiries/{id}`
+
+Fields:
+
+* negotiatorId
+
+<figure><img src=".gitbook/assets/image (205).png" alt=""><figcaption><p>E.G., 'negotiatorId' retrieval on a property valuation via '/enquiries'</p></figcaption></figure>
+
+### Enquiries
+
+'enquiryType' parameter accepts multiple values (salesApplicant/ lettingsApplicant/ salesProperty/ lettingsProperty) to retrieve specific enquiryTypes.
+
+Endpoint: \
+GET `/enquiries`&#x20;
+
+
+
 ## April 2026
 
 ***
@@ -18,15 +83,12 @@ Retrieve (GET), create (POST) and update (PATCH) the latest rentReview field dat
 
 Endpoint:&#x20;
 
-GET `/worksOrders/`
-
+GET `/worksOrders/`\
 GET, POST, PATCH `/worksOrders/{id}`
 
 Fields:
 
 * reviewDate
-
-AWAITING API screenshot
 
 <figure><img src=".gitbook/assets/image (192).png" alt=""><figcaption><p>e.g., CRM Works Order screen section highlighting retrievable 'Review Date' field </p></figcaption></figure>
 
@@ -45,8 +107,7 @@ Retrieve a tenancy’s Renters Rights status 'isRentersRights' via:
 
 Endpoints:
 
-GET `/tenancies/{id}`&#x20;
-
+GET `/tenancies/{id}` \
 GET `/tenancies/`
 
 Field:
