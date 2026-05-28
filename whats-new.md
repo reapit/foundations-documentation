@@ -12,6 +12,35 @@ To submit a request, please refer to [Feature Requests](dev-requests.md) for mor
 
 ***
 
+### Enquiries
+
+Retrieve and Update property enquiries with the addition of the 'createdPropertyId' field.
+
+Endpoint:&#x20;
+
+GET `/enquiries`
+
+GET `/enquiries/{id}`&#x20;
+
+PATCH `/enquiries/{id}`
+
+<figure><img src=".gitbook/assets/image (207).png" alt=""><figcaption><p><em>e.g., 'createdPropertyId' field retrieved via '/</em>enquiries/' endpoint</p></figcaption></figure>
+
+### Tenancies
+
+The Tenancies service now supports metadata on RentReviews.\
+GET, POST, and PATCH endpoints allow flexible key–value storage.
+
+Endpoint:
+
+GET `/tenancies/{Id}/rentReviews`&#x20;
+
+GET `/tenancies/{Id}/rentReviews/{rentReviewId}`&#x20;
+
+POST `/tenancies/{Id}/rentReviews`
+
+PATCH `/tenancies/{Id}/rentReviews/{rentReviewId}`
+
 ### Companies
 
 Update company accreditation 'details' and 'expiry' dates via
