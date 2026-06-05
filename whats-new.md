@@ -8,6 +8,32 @@ description: >-
 
 To submit a request, please refer to [Feature Requests](dev-requests.md) for more information.&#x20;
 
+## June 2026
+
+### Tenancies&#x20;
+
+When retrieving tenancies, the 'Days in Arrears' field value is now visible. Days in Arrears indicates the number of days a rent invoice can be overdue/ in arrears.
+
+Endpoint:
+
+GET `/tenancies`
+
+GET `/tenancies/{id}`
+
+<figure><img src=".gitbook/assets/image (208).png" alt=""><figcaption><p>e.g., 'daysInArrears' field retrieved via API</p></figcaption></figure>
+
+<figure><img src=".gitbook/assets/image (210).png" alt=""><figcaption><p>e.g., CRM Payable field on Financial &#x26; Renewals screen</p></figcaption></figure>
+
+### Contacts
+
+Embed 'landlordDetails' when retrieving all Contacts for visibility of Making Tax Digital (MTD) details across multiple contacts.
+
+Endpoint:
+
+GET `/contacts`&#x20;
+
+
+
 ## May 2026
 
 ***
