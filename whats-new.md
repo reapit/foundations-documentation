@@ -10,6 +10,38 @@ To submit a request, please refer to [Feature Requests](dev-requests.md) for mor
 
 ## June 2026
 
+### Tenancies
+
+Tenancy 'endDate' validation has been removed. Periodic tenancies can be created via API without an endDate.&#x20;
+
+Endpoint:
+
+POST `/tenancies/`
+
+### Tenancies
+
+Post EPC certificates on Sales properties.
+
+Endpoint: \
+POST `/properties/{id}/certificates`
+
+### Tenancies
+
+Meter readings and last read dates on Finished Tenancies can now be updated.&#x20;
+
+Endpoint:
+
+PATCH `/tenancies/{id}`
+
+Fields:
+
+* meterReadingGas
+* meterReadingGasLastRead
+* meterReadingElectrcity
+* meterReadingElectricityLastRead
+* meterReadingWater
+* meterReadingWaterLastRead
+
 ### Tenancies&#x20;
 
 When retrieving tenancies, the 'Days in Arrears' field value is now visible. Days in Arrears indicates the number of days a rent invoice can be overdue/ in arrears.
