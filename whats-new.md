@@ -10,6 +10,10 @@ To submit a request, please refer to [Feature Requests](dev-requests.md) for mor
 
 ## June 2026
 
+### Applicants
+
+API retrieval of applicant attributes: 'part-furnished' and 'unfurnished' mirrors CRM applicant attribute selection.
+
 ### Tenancies
 
 Tenancy 'endDate' validation has been removed. Periodic tenancies can be created via API without an endDate.&#x20;
