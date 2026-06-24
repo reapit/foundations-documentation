@@ -2,6 +2,7 @@
 
 * [Home](README.md)
 * [APIs](api/README.md)
+  * [MCP (Alpha)](api/mcp-alpha.md)
   * [REST API](api/api-documentation.md)
   * [Webhooks](api/webhooks.md)
   * [GraphQL](api/graphql.md)
