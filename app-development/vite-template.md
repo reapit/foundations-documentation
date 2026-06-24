@@ -4,8 +4,12 @@ description: A Vite Template to get you immediately started with Reapit Foundati
 
 # Vite Template
 
+{% hint style="warning" %}
+Stay tuned! We are in the process of migrating the Vite template to Elements v5.
+{% endhint %}
+
 {% hint style="info" %}
-Even if you aren't going to build a React App, we still suggest scaffolding an application with the Vite template as an example of how to get the best out of Reapit Elements.
+Even if you aren't going to build a React app, we still suggest scaffolding an application with the Vite template as an example of how to get the best out of Reapit Elements.
 {% endhint %}
 
 The fastest way to get started building a Reapit AppMarket App is with our [Foundations Vite Template](https://github.com/reapit/foundations-react-vite-template). Out of the box you will have an app that:
