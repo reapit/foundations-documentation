@@ -12,13 +12,11 @@ You will receive an email with a link to the developer portal and temporary logi
 
 The first screen you will see is a the 'About Foundations' page. You will only see this at the first login:&#x20;
 
-
-
-<figure><img src=".gitbook/assets/DP1.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 Also on this page you will have the option to 'View Docs' and to 'Create App'.&#x20;
 
-<figure><img src=".gitbook/assets/image (116).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 When you are in the portal, navigate to the API tab on the left hand side menu.
 
@@ -28,31 +26,31 @@ Assuming you have an idea of the data types / entities you are interested in, en
 
 For the purposes of this example my app will need Applicant data. Don't worry if you find you need other endpoints later, you can add them at any time.
 
-<figure><img src=".gitbook/assets/DP2.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
 ### 3. Register an app
 
 The next step is to register an app. We understand you won't have any code yet, this is all about setting up a client to work with the API. Firstly click on the "Create App" button on the apps page from step 1. This will load a wizard asking you to select from the options the type of app or integration you are building.&#x20;
 
-<figure><img src=".gitbook/assets/image (117).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
 Depending on your use case you will be presented with various options. For this example, we will be selecting the option for 'AgencyCloud Functionality'. You will see on the right-hand side all information relating to this selection, helpful documentation and links.&#x20;
 
 The next step is to provide routes for our OAuth service Reapit Connect to redirect back to your app. You can add production routes later but for now, we will add localhost for development.
 
-<figure><img src=".gitbook/assets/image (119).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
 
 You will be then asked to select permissions that map directly to OAuth Scopes, and also the endpoints you selected at stage two of this guide.
 
-<figure><img src=".gitbook/assets/image (118).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
 
 On completion of this step, you will be taken to your App Details page which will provide you with your App Client Id. You will need this for authenticating via Reapit Connect OAuth.
 
-<figure><img src=".gitbook/assets/CreatedApp1.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
 
 Clicking on 'Edit Details' on the left hand-side will present you with more information about your app, where to amend your app details. permissions etc. Please note, the app name is pre-populated based on your company name and can be changed at any stage.&#x20;
 
-<figure><img src=".gitbook/assets/EditApp.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
 
 ### 4. Populate your app listing (optional)
 
@@ -60,15 +58,15 @@ The previous section of this guide gives us enough detail to allow you to authen
 
 From the 'App Details' Page below, select "Edit App" and select 'AppMarket Listing':
 
-<figure><img src=".gitbook/assets/Listing.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
 
 You will be asked in the first section to provide details that populate your app listing, tell us how to launch your app and how your customers should contact you for support. As you go through the form we will ask for images such as an icon, featured image and screenshots. Fore more information on the requirements, please [click here](listing-your-app/app-listing-review.md).
 
 ### Other Sections
 
-Based on our selection from the wizard, will may  see a tab for 'AgencyCloud Integration' and a toggle if you wish to integrate with the AgencyCloud CRM and if so, what page you would like to integrate with. This will allow your app to be launched as a screen direct from AgencyCloud by a user. It is an optional step and is in addition to being able to launch from the top level "apps" menu in the CRM. More on this behaviour in the [Desktop](api/desktop-api.md#desktop-types) docs.
+Based on our selection from the wizard, will may  see a tab for 'Reapit CRM Integration' and a toggle if you wish to integrate with the AgencyCloud CRM and if so, what page you would like to integrate with. This will allow your app to be launched as a screen direct from AgencyCloud by a user. It is an optional step and is in addition to being able to launch from the top level "apps" menu in the CRM. More on this behaviour in the [Desktop](api/desktop-api.md#desktop-types) docs.
 
-<figure><img src=".gitbook/assets/ACInt.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
 
 You will also then see the 'Authentication' tab, as this example is a user facing integration this section will allow you to use our hosted authentication service, [Reapit Connect](api/reapit-connect.md#overview). As part of this flow, you need will need to register one or more call back URLs and a log out URL to allow Reapit Connect to direct traffic back to your application in a secure way.
 
@@ -78,35 +76,37 @@ The next tab is 'Permissions', here you can select any additional permissions (O
 
 Here you can also set the visibility of your app using the 'Private Apps' toggle. This is used if you wanted to restrict the AppMarket listing to a single or limited sub-set of clients, for example if you are building some private in-house tooling.&#x20;
 
-<figure><img src=".gitbook/assets/Permissions (1).jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
 
 Finally, one you have completed the relevant details, simply click 'Save Changes' on the left-hand side.
 
 It is important to note, the app is not live yet. You can check the status of your app at any stage by going to 'About Listings' and click on 'Check Status'.
 
-<figure><img src=".gitbook/assets/image (120).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
 
 The check status button is a very quick and easy way to see the current status of your app, what information is missing, your AppMarket status and to see if have any changes that require saving.
 
-<figure><img src=".gitbook/assets/image (121).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
 
 The process for submitting your app for review is the same as before. Simply check the status of your app and once all checks have been completed (see example below):
 
-<figure><img src=".gitbook/assets/image (122).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (214).png" alt=""><figcaption></figcaption></figure>
 
 A button on the left-hand side will appear ‘Submit Review’. This will create a revision to our Admin team.
 
-<figure><img src=".gitbook/assets/image (123).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (215).png" alt=""><figcaption></figcaption></figure>
 
 Once your app has been approved (please [click here](listing-your-app.md) for more information on the reviewal process) the button will change to present the option to ‘Delist’ your app.
 
-<figure><img src=".gitbook/assets/image (124).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (216).png" alt=""><figcaption></figcaption></figure>
 
 ### 5. Get your Client Id
 
 From the 'App Details' page, you will need to obtain your application's client id to authenticate your new app.
 
-<figure><img src=".gitbook/assets/CreatedApp1.jpg" alt=""><figcaption></figcaption></figure>
+
+
+<figure><img src=".gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
 
 Please note, if you have selected "Client Credentials" as your authentication flow, you will also see your client secret also, on this page.
 
