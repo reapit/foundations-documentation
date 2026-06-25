@@ -10,6 +10,10 @@ The Foundations MCP server exposes the Reapit Foundations platform as a set of [
 
 This guide covers how a third party connects to the server, authenticates, and what tools are available.
 
+{% hint style="warning" %}
+To register for early access, please complete this [form](https://share-eu1.hsforms.com/1N_JYy9RLS9qI0X1oqTRi6w2eoxls?utm_campaign=323420401-FY26%20l%20Q3%20Q4%20Tapi%20sunset\&utm_source=hs_email\&utm_medium=email&_hsenc=p2ANqtz--UZQS-606QhCTChwNmTKbIziCqw5h3KxqUdYy_ansSt-xJNapbQ9xyEVMXbumRv_H7Wkvw)
+{% endhint %}
+
 ### Endpoint
 
 The server uses **Streamable HTTP**. There is a single endpoint:
