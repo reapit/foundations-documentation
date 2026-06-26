@@ -170,7 +170,7 @@ GET `/enquiries`&#x20;
 
 ### Works Orders
 
-Retrieve (GET), create (POST) and update (PATCH) the latest rentReview field date via:
+Retrieve (GET), create (POST) and update (PATCH) the latest worksOrder field dates via:
 
 Endpoint:&#x20;
 
