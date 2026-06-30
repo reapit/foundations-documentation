@@ -10,6 +10,16 @@ To submit a request, please refer to [Feature Requests](dev-requests.md) for mor
 
 ## June 2026
 
+### Tenancies
+
+Retrieve links to occupier contact records on a tenancy. Links are only applicable to occupiers with contact records.
+
+<figure><img src=".gitbook/assets/image (220).png" alt=""><figcaption><p>e.g., CRM Tenancy record displaying Additional Occupiers </p></figcaption></figure>
+
+
+
+<figure><img src=".gitbook/assets/image (218).png" alt=""><figcaption><p><em>e.g., retrieval of 'occupierContacts' on '/tenancies/{id}'</em></p></figcaption></figure>
+
 ### Applicants
 
 API retrieval of applicant attributes: 'part-furnished' and 'unfurnished' mirrors CRM applicant attribute selection.
