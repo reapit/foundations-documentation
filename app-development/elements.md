@@ -11,13 +11,13 @@ description: >-
 Elements is a React component library that implements Reapit's Design System. Reapit's own products use Elements extensively and if you are building a React app that integrates with one, it enables you to deliver an experience that looks and feels native to our platform.
 
 {% columns %}
-{% column width="41.66666666666667%" %}
-{% embed url="https://zeroheight.com/1a7e83c3d" %}
+{% column width="50%" %}
+{% embed url="https://design.reapit.cloud" %}
 Elements Design System documentation
 {% endembed %}
 {% endcolumn %}
 
-{% column width="58.33333333333333%" %}
+{% column width="50%" %}
 {% embed url="https://elements.reapit.cloud" %}
 Elements component library Storybook
 {% endembed %}
