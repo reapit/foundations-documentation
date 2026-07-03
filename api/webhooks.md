@@ -764,6 +764,21 @@ Please note that we will not retry to send messages that were not delivered on t
 
 It is considered good practice to process webhook events asynchronously, meaning your endpoint should respond quickly (typically with a 202 Accepted response) _before_ invoking any processing logic. If a response from your endpoint is not received in a timely fashion (typically around 10 seconds), the event will go into the retry queue as described above. This can inflate webhook consumption which is included in monthly invoicing and so it is in your best interest to adhere to this practice. The 10 second limit is dynamic based on throughput from our system but will not drop below 5 seconds.
 
+### Webhook source IP addresses (allowlisting)
+
+When Reapit dispatches webhooks, requests originate from the following public source IP addresses:
+
+* `18.133.192.77`
+* `18.133.96.95`
+* `18.132.113.124`
+
+If your infrastructure uses IP allowlisting (for example, WAF, firewall, API gateway, or reverse proxy rules), permit inbound traffic from all of the above addresses to ensure reliable webhook delivery.
+
+#### Operational note
+
+These are static Elastic IP addresses used for webhook egress in `eu-west-2` (across multiple availability zones).\
+Future changes to Reapit IP addresses will be documented here and communicated in advance where possible.
+
 ## Additional information
 
 * Events are generated in near real-time and though extremely unlikely, we do not guarantee that you will only get a single notification for an event.
