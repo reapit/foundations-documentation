@@ -8,6 +8,136 @@ description: >-
 
 To submit a request, please refer to [Feature Requests](dev-requests.md) for more information.&#x20;
 
+## July 2026
+
+### Enquiries
+
+Enquiries can be created with 0 bedrooms, allowing support for enquiries such as 'land'.
+
+Endpoint:
+
+`POST /enquiries`
+
+Example Request
+
+```json
+{
+  "bedrooms": "0"
+}
+```
+
+***
+
+### Negotiators
+
+Negotiators with matching contact numbers can retrieved along with their `additionalContactDetails` .
+
+Endpoint:
+
+`GET /negotiators`
+
+`GET /negotiators/{id}`&#x20;
+
+Example Response
+
+```json
+{
+"id": "NEG",
+  "created": "2025-07-16T08:14:28Z",
+  "modified": "2026-07-08T19:20:03Z",
+  "name": "Tanya",
+  "jobTitle": "negotiator",
+  "officeId": "OXF",
+"workPhone": "09876543212",
+"mobilePhone": "09876543212",
+"email": "tTest@tTesting.com",
+  "profileImageUrl": null,
+  "active": true,
+  "diaryNegotiatorIds": [],
+  "diaryOfficeIds": [],
+  "additionalContactDetails": [
+    {
+      "type": "E-Mail",
+      "value": "tTesting@tTest.com"
+    },
+    {
+      "type": "Home",
+      "value": "01324567876"
+    },
+    {
+      "type": "Mobile",
+      "value": "07876767676"
+    },
+    {
+      "type": "Home",
+      "value": "01414312345"
+    }
+  ],
+  "_eTag": "\"X038FTDGXXEGT3748F93JF74HS62H10\"",
+  "links": {
+  }
+}
+```
+
+***
+
+### Works Orders
+
+The **Raised To Chase** works order status can now be created, updated and retrieved successfully via the API.
+
+Endpoint:
+
+`GET /worksOrders`
+
+`GET /worksOrders/{id}`
+
+`POST /worksOrders`
+
+`PATCH /worksOrders/{id}`
+
+<figure><img src=".gitbook/assets/image (224).png" alt=""><figcaption><p><em>e.g., API retrieval of 'raisedToChase' status and 'raisedToChaseDays'</em> </p></figcaption></figure>
+
+<figure><img src=".gitbook/assets/image (227).png" alt=""><figcaption><p><em>e.g., extract of CRM Works Order displaying Raised status and Chase days.</em></p></figcaption></figure>
+
+
+
+**Creating a worksOrder status of \`raisedtoChase\` status and interval**
+
+When creating a works order with a status of `raisedToChase`, the `raisedToChaseDays` value can be supplied.
+
+Example Response
+
+If `raisedToChaseDays` is not supplied, the default chase value is **1 day**.
+
+
+
+**Updating works order status to 'raisedToChase'**
+
+When updating a works order with a status of `raisedToChase`, _both_ the status and chase days interval must be supplied.
+
+Example Request
+
+```json
+{
+  "status": "raisedToChase",
+  "raisedToChaseDays": 9
+}
+```
+
+***
+
+### Properties
+
+The gas certificate field is not applicable to Sales properties and is not visible within the CRM UI.
+
+As a result, the gas status field `noGas` will be returned as false for Sales properties when retrieving property utilities.
+
+Endpoint:
+
+`GET /properties/{id}/utilities`
+
+***
+
 ## June 2026
 
 ### Tenancies
